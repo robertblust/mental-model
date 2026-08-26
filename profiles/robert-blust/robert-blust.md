@@ -10,8 +10,6 @@ location: Wallisellen, Switzerland
 
 ## Skills
 
-<!-- levels drafted — review -->
-
 | Skill | Level | Evidence |
 | --- | --- | --- |
 | Agentic AI development | Competent | Built LIKE MAGIC's internal AI marketplace on Claude (Claude Cowork) and is evolving the platform toward an MCP-server layer for AI agents. |

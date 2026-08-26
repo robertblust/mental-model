@@ -2,8 +2,6 @@
 source: Local
 ---
 
-<!-- drafted from the CV summary — review before merge -->
-
 # Grow the people with the platform
 
 > A platform that outgrows the team that runs it is a liability with good uptime.

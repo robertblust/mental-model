@@ -2,8 +2,6 @@
 source: Local
 ---
 
-<!-- drafted from the CV summary — review before merge -->
-
 # Model it before you build it
 
 > A business described as concepts and capabilities is one that people and AI can both act inside of.

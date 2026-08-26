@@ -2,8 +2,6 @@
 source: Local
 ---
 
-<!-- drafted from the CV summary — review before merge -->
-
 # Production is the finish line
 
 > A platform counts when it runs for customers under real security and compliance obligations, not when the demo works.

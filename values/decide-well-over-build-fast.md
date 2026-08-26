@@ -2,8 +2,6 @@
 source: Local
 ---
 
-<!-- drafted from the CV summary — review before merge -->
-
 # Decide well over build fast
 
 > AI moved the constraint from building quickly to deciding correctly; the decision is the work.
