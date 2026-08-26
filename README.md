@@ -17,7 +17,7 @@ proficiency-levels/            the four-rung ladder every skill claim uses
 skills/                        one file per capability
 values/                        one file per value
 profiles/robert-blust/         the profile, and the experiences it owns
-AGENTS.md                      the instance's own rules; every modelling rule is in meta/CONVENTIONS.md
+AGENTS.md                      the instance's own rules; every modeling rule is in meta/CONVENTIONS.md
 .claude/skills/companygraph-*  the portable skills: validate, add an entity, export as a skill
 ```
 
