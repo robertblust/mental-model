@@ -1,0 +1,16 @@
+---
+source: rob-cv
+source-id: swisscard-data-integration
+start: 2015-01
+organisation: Swisscard
+skills: [API design, Java platform engineering, Database design and operation]
+---
+
+# Swisscard — Data Integration Services Rewrite
+
+> 3AP · Backend Engineer.
+
+## Achievements
+
+- One of 3AP's first client mandates: replaced a proprietary Informatica Data Services SOAP layer fronting the core platform with a Spring Boot / Spring WS implementation — preserving the existing WSDL contract so no consumer had to change.
+- Built on Spring Boot / Spring Data / Spring WS with Jenkins, JUnit and MSSQL.
