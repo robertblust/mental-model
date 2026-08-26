@@ -4,7 +4,7 @@ source-id: eclipse-modeling-platform
 start: 2010-01
 end: 2011-01
 organisation: Eclipse Foundation
-skills: [Business architecture]
+skills: [Model-driven engineering]
 ---
 
 # Eclipse Modeling Platform Working Group
