@@ -11,4 +11,4 @@ group: Architecture
 
 Owned reference architecture at 3AP alongside technology strategy and delivery governance.
 At UBS, drove capability modeling and business architecture on EMF/Ecore. Also works with
-TOGAF and ArchiMate as enterprise-architecture notations.
+ArchiMate as an enterprise-architecture notation and TOGAF as the framework it sits within.

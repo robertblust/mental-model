@@ -20,10 +20,13 @@ Produces `dist/mental-model-skill.zip`, uploadable as an organization or persona
    folder's `README.md` first, then every entity file in path order, separated by a line
    holding `---`. Count the entities per type as you go.
 4. `model/meta.md`: `meta/CONVENTIONS.md`, then every `meta/*-schema.md`, separated by `---`.
-5. `SKILL.md`: frontmatter `name: mental-model` and `description: <the README tagline>`; then
-   `export/SKILL-intro.md` verbatim when it exists; then a table of `model/` files with the
-   entity count per type and the core version; then one paragraph on how to read the model —
-   H1 is the name, references are by name, `meta/meta.md` holds the rules.
+5. `SKILL.md`: frontmatter `name: mental-model` and a `description` field built from the
+   README tagline with Markdown link and emphasis syntax stripped to plain text (a link
+   becomes its link text; bold/italic markers are dropped), written as a double-quoted YAML
+   string with any inner double quotes escaped as `\"`; then `export/SKILL-intro.md` verbatim
+   when it exists; then a table of `model/` files with the entity count per type and the core
+   version; then one paragraph on how to read the model — H1 is the name, references are by
+   name, `meta/meta.md` holds the rules.
 6. `mkdir -p dist && zip -r dist/mental-model-skill.zip mental-model` from the staging root.
    Verify: `unzip -l` lists `SKILL.md`, `model/meta.md` and one file per folder; the counts in
    `SKILL.md` equal `find <folder> -name '*.md' ! -name README.md | wc -l` on disk.
