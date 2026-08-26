@@ -224,9 +224,8 @@ To be carried into the meta-model's reference-instance spec §7 later, in one PR
 ## 9. Order of work and verification
 
 1. Owner registers the free SFIA user licence (outside this repository).
-2. Vendor nothing. The SFIA A–Z (147 codes and names) and the framework view (category ·
-   subcategory per code) are read once at build time and written into `skills/README.md` as
-   an index table — `Code | Skill | Group` — so the folder is self-describing and the build
+2. The appendix below is the list. It is written into `skills/README.md` as an index table —
+   `Code | Skill | Group` — so the folder is self-describing and the build
    is checkable against it.
 3. Write the 147 SFIA skill files and the 7 instance skill files, §3 form. ESCO matched per
    skill through the ESCO search API at build time; `none` where nothing means the same thing.
@@ -241,3 +240,269 @@ To be carried into the meta-model's reference-instance spec §7 later, in one PR
 6. Run `companygraph-validate`. Run `companygraph-export` and confirm counts.
 7. One PR, `skills-on-sfia`, for the owner's review — levels and definitions are theirs to
    dispute.
+
+---
+
+## Appendix — the 147 SFIA 9 skills, as they will be filed
+
+One file each, H1 = the name below, `group` = `<Category> · <Subcategory>`. Source: the SFIA 9
+A–Z and the full framework view, cross-checked code for code. The seven instance skills of §4
+are not in this table.
+
+
+**Strategy and architecture · Strategy and planning**
+
+| Code | Skill |
+| --- | --- |
+| `ITSP` | Strategic planning |
+| `ISCO` | Information systems coordination |
+| `IRMG` | Information management |
+| `STPL` | Enterprise and business architecture |
+| `ARCH` | Solution architecture |
+| `INOV` | Innovation management |
+| `EMRG` | Emerging technology monitoring |
+| `RSCH` | Formal research |
+| `SUST` | Sustainability |
+
+**Strategy and architecture · Financial and value management**
+
+| Code | Skill |
+| --- | --- |
+| `FMIT` | Financial management |
+| `INVA` | Investment appraisal |
+| `BENM` | Benefits management |
+| `BUDF` | Budgeting and forecasting |
+| `FIAN` | Financial analysis |
+| `COMG` | Cost management |
+| `DEMM` | Demand management |
+| `MEAS` | Measurement |
+
+**Strategy and architecture · Security and privacy**
+
+| Code | Skill |
+| --- | --- |
+| `SCTY` | Information security |
+| `INAS` | Information assurance |
+| `PEDP` | Information and data compliance |
+| `VURE` | Vulnerability research |
+| `THIN` | Threat intelligence |
+
+**Strategy and architecture · Governance, risk and compliance**
+
+| Code | Skill |
+| --- | --- |
+| `GOVN` | Governance |
+| `BURM` | Risk management |
+| `AIDE` | Artificial intelligence (AI) and data ethics |
+| `AUDT` | Audit |
+| `QUMG` | Quality management |
+| `QUAS` | Quality assurance |
+
+**Strategy and architecture · Advice and guidance**
+
+| Code | Skill |
+| --- | --- |
+| `CNSL` | Consultancy |
+| `TECH` | Specialist advice |
+| `METL` | Methods and tools |
+
+**Change and transformation · Change implementation**
+
+| Code | Skill |
+| --- | --- |
+| `POMG` | Portfolio management |
+| `PGMG` | Programme management |
+| `PRMG` | Project management |
+| `PROF` | Portfolio, programme and project support |
+| `DEMG` | Delivery management |
+
+**Change and transformation · Change analysis**
+
+| Code | Skill |
+| --- | --- |
+| `BUSA` | Business situation analysis |
+| `FEAS` | Feasibility assessment |
+| `REQM` | Requirements definition and management |
+| `BSMO` | Business modelling |
+| `BPTS` | User acceptance testing |
+
+**Change and transformation · Change planning**
+
+| Code | Skill |
+| --- | --- |
+| `BPRE` | Business process improvement |
+| `OCDV` | Organisational capability development |
+| `ORDI` | Organisation design and implementation |
+| `CIPM` | Organisational change management |
+| `JADN` | Job analysis and design |
+| `OCEN` | Organisational change enablement |
+
+**Development and implementation · Systems development**
+
+| Code | Skill |
+| --- | --- |
+| `PROD` | Product management |
+| `DLMG` | Systems development management |
+| `SLEN` | Systems and software lifecycle engineering |
+| `DESN` | Systems design |
+| `SWDN` | Software design |
+| `NTDS` | Network design |
+| `IFDN` | Infrastructure design |
+| `HWDE` | Hardware design |
+| `PROG` | Programming/software development |
+| `SINT` | Systems integration and build |
+| `TEST` | Functional testing |
+| `NFTS` | Non-functional testing |
+| `PRTS` | Process testing |
+| `PORT` | Software configuration |
+| `RESD` | Real-time/embedded systems development |
+| `SFEN` | Safety engineering |
+| `SFAS` | Safety assessment |
+| `RFEN` | Radio frequency engineering |
+| `ADEV` | Animation development |
+
+**Development and implementation · Data and analytics**
+
+| Code | Skill |
+| --- | --- |
+| `DATM` | Data management |
+| `DTAN` | Data modelling and design |
+| `DBDS` | Database design |
+| `DAAN` | Data analytics |
+| `DATS` | Data science |
+| `MLNG` | Machine learning |
+| `BINT` | Business intelligence |
+| `DENG` | Data engineering |
+| `VISL` | Data visualisation |
+
+**Development and implementation · User centred design**
+
+| Code | Skill |
+| --- | --- |
+| `URCH` | User research |
+| `CEXP` | Customer experience |
+| `ACIN` | Accessibility and inclusion |
+| `UNAN` | User experience analysis |
+| `HCEV` | User experience design |
+| `USEV` | User experience evaluation |
+
+**Development and implementation · Content management**
+
+| Code | Skill |
+| --- | --- |
+| `INCA` | Content design and authoring |
+| `ICPM` | Content publishing |
+| `KNOW` | Knowledge management |
+| `GRDN` | Graphic design |
+
+**Development and implementation · Computational science**
+
+| Code | Skill |
+| --- | --- |
+| `SCMO` | Scientific modelling |
+| `NUAN` | Numerical analysis |
+| `HPCC` | High-performance computing |
+
+**Delivery and operation · Technology management**
+
+| Code | Skill |
+| --- | --- |
+| `ITMG` | Technology service management |
+| `ASUP` | Application support |
+| `ITOP` | Infrastructure operations |
+| `SYSP` | System software administration |
+| `NTAS` | Network support |
+| `HSIN` | Systems installation and removal |
+| `CFMG` | Configuration management |
+| `RELM` | Release management |
+| `DEPL` | Deployment |
+| `STMG` | Storage management |
+| `DCMA` | Facilities management |
+
+**Delivery and operation · Service management**
+
+| Code | Skill |
+| --- | --- |
+| `SLMO` | Service level management |
+| `SCMG` | Service catalogue management |
+| `AVMT` | Availability management |
+| `COPL` | Continuity management |
+| `CPMG` | Capacity management |
+| `USUP` | Incident management |
+| `PBMG` | Problem management |
+| `CHMG` | Change control |
+| `ASMG` | Asset management |
+| `SEAC` | Service acceptance |
+
+**Delivery and operation · Security services**
+
+| Code | Skill |
+| --- | --- |
+| `IAMT` | Identity and access management |
+| `SCAD` | Security operations |
+| `VUAS` | Vulnerability assessment |
+| `DGFS` | Digital forensics |
+| `CRIM` | Cybercrime investigation |
+| `OCOP` | Offensive cyber operations |
+| `PENT` | Penetration testing |
+
+**Delivery and operation · Data and records operations**
+
+| Code | Skill |
+| --- | --- |
+| `RMGT` | Records management |
+| `ANCC` | Analytical classification and coding |
+| `DBAD` | Database administration |
+
+**People and skills · People management**
+
+| Code | Skill |
+| --- | --- |
+| `PEMT` | Performance management |
+| `EEXP` | Employee experience |
+| `OFCL` | Organisational facilitation |
+| `PDSV` | Professional development |
+| `WFPL` | Workforce planning |
+| `RESC` | Resourcing |
+
+**People and skills · Skills management**
+
+| Code | Skill |
+| --- | --- |
+| `ETMG` | Learning and development management |
+| `TMCR` | Learning design and development |
+| `ETDL` | Learning delivery |
+| `LEDA` | Competency assessment |
+| `CSOP` | Certification scheme operation |
+| `TEAC` | Teaching |
+| `SUBF` | Subject formation |
+
+**Relationships and engagement · Stakeholder management**
+
+| Code | Skill |
+| --- | --- |
+| `SORC` | Sourcing |
+| `SUPP` | Supplier management |
+| `ITCM` | Contract management |
+| `RLMT` | Stakeholder relationship management |
+| `CSMG` | Customer service support |
+| `ADMN` | Business administration |
+
+**Relationships and engagement · Sales and bid management**
+
+| Code | Skill |
+| --- | --- |
+| `BIDM` | Bid/proposal management |
+| `SALE` | Selling |
+| `SSUP` | Sales support |
+
+**Relationships and engagement · Marketing**
+
+| Code | Skill |
+| --- | --- |
+| `MKTG` | Marketing management |
+| `MRCH` | Market research |
+| `BRMG` | Brand management |
+| `CELO` | Customer engagement and loyalty |
+| `MKCM` | Marketing campaign management |
+| `DIGM` | Digital marketing |
