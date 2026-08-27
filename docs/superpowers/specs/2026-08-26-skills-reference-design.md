@@ -1,8 +1,8 @@
 # Skills as our own vocabulary — design
 
 > The skills of this instance re-cut as a curated vocabulary of our own — 60 skills at the
-> grain the market hires for, each defined here, person-neutral, and anchored to SFIA 9 and
-> ESCO where those name the same thing.
+> grain the market hires for, each defined here, person-neutral. Public vocabularies were
+> consulted to find the grain; none is cited in the model.
 
 Status: design agreed, nothing built. Instance-owned: nothing here changes `meta/` or the
 meta-model. What it teaches core is in §8 and is proposed to the meta-model separately.
@@ -28,7 +28,7 @@ Both are core findings (§8). The instance fixes them by adopting a vocabulary �
 
 ---
 
-## 2. The vocabulary: ours, anchored
+## 2. The vocabulary: ours
 
 Four public sources were compared row by row — SFIA 9, ESCO v1.2, O*NET, Lightcast Open
 Skills — against 69 candidates drawn from the CV's `skills.yaml`, the 16 job postings under
@@ -48,10 +48,11 @@ What it showed:
 - **O*NET** is products.
 
 So the decision: **the skill set is curated by us, at the grain the postings use.** Every
-definition and every `In practice` is written here, in our words. Where SFIA or ESCO names
-the same skill, the file cites it; where they do not, it says so. Lightcast and O*NET were
-consulted and are not cited. Nothing is vendored, nothing is copied — the licence question
-disappears with the copying.
+definition and every `In practice` is written here, in our words. The four sources were
+consulted to find that grain and to check nothing obvious was missing; none is cited in a
+skill file. Nothing is vendored, nothing is copied, nothing is referenced — the licence
+question disappears with the copying, and the model does not depend on a vocabulary it does
+not own.
 
 Sixty skills (appendix). The rule for adding one: a capability a profile can claim with
 evidence, at the grain a job posting would name it, distinct from its neighbours in what
@@ -79,9 +80,6 @@ group: Data
 Turn a domain model into tables, keys, constraints and indexes. Decide what is normalized and
 what is deliberately not. Write the migration that gets a live system from the old shape to
 the new one without losing a row. Typical tools: PostgreSQL, Oracle, MSSQL, MongoDB.
-
-Reference: SFIA 9 DBDS — Database design · ESCO design database scheme
-http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511
 ```
 
 - **H1 is the curated name** (appendix), ours, in house style.
@@ -97,15 +95,10 @@ http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511
   profile. Products appear only in a closing `Typical tools:` clause, and only where a product
   is what the skill is done with. A reader who wants to know who claims the skill reads the
   profiles.
-- **The reference line is fixed in form**, last in the section, one line:
-  `Reference: SFIA 9 <CODE> — <SFIA name>` or `Reference: SFIA 9 none`, then
-  ` · ESCO <preferred label> <URI>` or ` · ESCO none`. Only a source that names the *same*
-  skill is cited — a broader parent is not a match. The form is what makes the line grep-able
-  and, later, promotable to schema fields without re-reading prose.
 
 Filename: kebab-case of the H1, as R2 and the existing files already do.
 
-The drafted texts for all 60 — definition, In practice, reference — are the third table of
+The drafted texts for all 60 — definition and In practice — are the third table of
 the comparison document. They were reviewed row by row before this spec was approved and are
 written into the files as they stand there; the build does not redraft them.
 
@@ -154,11 +147,7 @@ skills becomes one row per skill the CV evidences — the evidence decides, not 
 - **Experiences** re-point `skills:` at the new H1s. An entry lists a skill only where its own
   bullets evidence it — the rule from the first build, unchanged. Every entry keeps at least
   what it had, mapped.
-- **The ladder** keeps its four rungs and their `## What it means`; each rung's file gains one
-  sentence naming the SFIA levels of responsibility it spans, so a claim here can be read
-  against a SFIA profile elsewhere: Familiar spans levels 1–2 (follow, assist), Competent 3
-  (apply), Proficient 4–5 (enable, ensure and advise), Expert 6–7 (initiate and influence,
-  set strategy). The sentence names the levels; it does not reproduce SFIA's level text.
+- **The ladder** keeps its four rungs and their `## What it means`, unchanged.
 
 ---
 
@@ -183,18 +172,16 @@ not make it right.
 
 ## 7. Order of work and verification
 
-1. `skills/README.md` becomes the index: `Skill | Group | SFIA | ESCO`, generated from the
-   appendix, so the folder is self-describing and the build is checkable against it.
+1. `skills/README.md` becomes the index: `Skill | Group`, generated from the appendix, so the folder is self-describing and the build is checkable against it.
 2. Write the 60 skill files from the comparison's third table, §3 form, no redrafting.
 3. Delete the 23 old files. Rewrite the profile's Skills table (§5, §6). Re-point every
-   experience's `skills:`. Add the ladder sentences.
+   experience's `skills:`.
 4. Checks, throwaway, from the shell: 60 files; every H1 unique and equal to its README index
-   row; every `group` one of the nine; every file has a `Reference:` line in the fixed form;
-   no SFIA code cited twice; no file under `skills/` contains a profile's name, an employer, or
+   row; every `group` one of the nine; no file under `skills/` contains a profile's name, an employer, or
    a four-digit year (the person-neutral rule, mechanically); no `In practice` sentence starts
    with "Someone", "They" or "Practitioners"; no definition starts with "The practice", "The
    discipline" or "The ability"; every profile row and every experience `skills:` entry
-   resolves; ESCO URIs are `http://data.europa.eu/esco/skill/<uuid>`.
+   resolves.
 5. Run `companygraph-validate`. Run `companygraph-export` and confirm counts.
 6. One PR, `skills-curated`, for the owner's review — levels are theirs to dispute.
 
@@ -215,13 +202,120 @@ repository.
 - **Core, every schema** — the same gap generally: a schema says the *shape* (fields,
   sections) and nothing about the *purpose* of the type or *how to write* one. The first
   instance shows that shape alone does not produce usable entities.
-- **Core, `skill-schema.md`** — a skill wants a reference to an external vocabulary (a SFIA
-  code, an ESCO URI). Carried as a fixed-form prose line here; the schema's `group` question
-  and this one are the same question — what a skill is anchored to.
-- **Core, `proficiency-level-schema.md`** — a rung wants to say which levels of an external
-  ladder it spans, for the same reason.
 - **Core, the type set** — products (PostgreSQL, Camunda, Claude Code) are not skills and have
   no type; they are prose in `Typical tools:` here. Whether they become a type is a pack
   question.
 - **Meta-model, `example/`** — its three skills are written the first-cut way. It is the
   example adopters copy; it will need the same rewrite when core says so.
+
+---
+
+## Appendix — the 60 curated skills
+
+One file each, H1 = the name below; texts as in the comparison's third table.
+
+
+**Leadership and strategy**
+
+| Skill |
+| --- |
+| IT strategy |
+| IT governance |
+| AI strategy |
+| AI governance |
+| Engineering leadership |
+| Stakeholder management |
+| Vendor management |
+| Product management |
+| Agile delivery |
+| Program management |
+| Change management |
+
+**Architecture**
+
+| Skill |
+| --- |
+| Enterprise architecture |
+| Business architecture |
+| Solution architecture |
+| Software architecture |
+| Domain-driven design |
+| Event-driven architecture |
+| Microservices architecture |
+| API design |
+| Integration architecture |
+| Multi-tenant SaaS architecture |
+| Requirements engineering |
+
+**AI**
+
+| Skill |
+| --- |
+| Agentic AI development |
+| LLM application development |
+| Retrieval-augmented generation |
+| AI tool integration (MCP) |
+| Machine learning |
+| MLOps |
+| Responsible AI |
+
+**Cloud and platform**
+
+| Skill |
+| --- |
+| Cloud architecture |
+| Container orchestration (Kubernetes) |
+| Infrastructure as code |
+| CI/CD |
+| DevOps |
+| Site reliability engineering |
+| Observability |
+| Platform engineering |
+| Incident management |
+| FinOps |
+
+**Data**
+
+| Skill |
+| --- |
+| Database design |
+| Database administration |
+| Data modeling |
+| Data engineering |
+| Event streaming |
+| Data governance |
+
+**Software development**
+
+| Skill |
+| --- |
+| Software engineering |
+| Java |
+| Frontend development (TypeScript, React) |
+| Software testing |
+
+**Modeling and process**
+
+| Skill |
+| --- |
+| Software modeling (UML, SysML, C4) |
+| Business process modeling (BPMN, DMN) |
+| Process orchestration |
+| Model-driven engineering |
+| Domain-specific language design |
+
+**Security and compliance**
+
+| Skill |
+| --- |
+| Information security management |
+| Data protection (GDPR) |
+| Identity and access management |
+| Application security |
+
+**Advisory**
+
+| Skill |
+| --- |
+| Knowledge management |
+| Consulting |
