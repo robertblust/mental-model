@@ -67,14 +67,13 @@ group: Development and implementation · Data and analytics
 
 # Database design
 
-> Shaping how data is stored so that the systems that read and write it stay correct and fast as they change.
+> How data is stored so that the systems reading and writing it stay correct and fast as they change.
 
 ## In practice
 
-Someone doing this turns a domain model into tables, keys, constraints and indexes, decides
-what is normalised and what is deliberately not, and writes the migration that gets a live
-system from the old shape to the new one without losing a row. Typical tools: PostgreSQL,
-Oracle, MSSQL, MongoDB.
+Turn a domain model into tables, keys, constraints and indexes. Decide what is normalized and
+what is deliberately not. Write the migration that gets a live system from the old shape to
+the new one without losing a row. Typical tools: PostgreSQL, Oracle, MSSQL, MongoDB.
 
 Reference: SFIA 9 DBDS — Database design · ESCO design database scheme
 http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511
@@ -86,13 +85,16 @@ http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511
 - **`group` is `<Category> · <Subcategory>`** from the SFIA framework view, verbatim. Ten CV
   groups become nineteen SFIA subcategories; the schema's open question about groups gets
   147 data points on a published taxonomy.
-- **`> definition`** — one line, ours, saying what the skill is. Not SFIA's overall
-  description paraphrased; written from what the skill means to someone who has done it.
-- **`## In practice`** — two to four sentences, **person-neutral**: what someone doing this
-  does, in the present tense, with no name, employer, date or number from any profile. Products
-  appear only in a closing `Typical tools:` clause, and only where a product is what the skill
-  is done with. No profile is ever mentioned; a reader who wants to know who claims the skill
-  reads the profiles.
+- **`> definition`** — one line, ours, saying what the skill is. It starts with the thing
+  itself, never with a wrapper — no "The practice of", "The discipline of", "The ability to".
+  Not SFIA's overall description paraphrased; written from what the skill means to someone
+  who has done it.
+- **`## In practice`** — two to four sentences in the **imperative, without a subject**: each
+  sentence starts with the bare verb — "Assess …", "Translate …", "Engage …" — never "Someone
+  doing this …" or "They …". Person-neutral: no name, employer, date or number from any
+  profile. Products appear only in a closing `Typical tools:` clause, and only where a product
+  is what the skill is done with. A reader who wants to know who claims the skill reads the
+  profiles.
 - **The reference line is fixed in form**, last in the section, one line:
   `Reference: SFIA 9 <CODE> — <SFIA name>` then ` · ESCO <preferred label> <URI>` when ESCO has
   a match, else ` · ESCO none`. The form is what makes the line grep-able and, later,
