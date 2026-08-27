@@ -1,7 +1,7 @@
 # Skills
 
 One file per skill, written against `meta/skill-schema.md` and the rules in
-`docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. Sixty-two skills, ours; ten groups.
+`docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. Sixty-nine skills, ours; ten groups.
 
 | Skill | Group |
 | --- | --- |
@@ -11,6 +11,7 @@ One file per skill, written against `meta/skill-schema.md` and the rules in
 | AI governance | Strategy |
 | Company vision and strategy | Strategy |
 | Product management | Strategy |
+| Solution selling | Strategy |
 | Engineering leadership | Leadership |
 | Mentoring and coaching | Leadership |
 | Change management | Leadership |
@@ -18,6 +19,9 @@ One file per skill, written against `meta/skill-schema.md` and the rules in
 | Vendor management | Leadership |
 | Program management | Leadership |
 | Agile delivery | Leadership |
+| Public speaking | Leadership |
+| Community building | Leadership |
+| Organization design | Leadership |
 | Enterprise architecture | Architecture |
 | Business architecture | Architecture |
 | Solution architecture | Architecture |
@@ -29,6 +33,8 @@ One file per skill, written against `meta/skill-schema.md` and the rules in
 | Integration architecture | Architecture |
 | Multi-tenant SaaS architecture | Architecture |
 | Requirements engineering | Architecture |
+| Legacy modernization | Architecture |
+| IoT architecture | Architecture |
 | Agentic AI development | AI |
 | LLM application development | AI |
 | Retrieval-augmented generation | AI |
@@ -61,6 +67,7 @@ One file per skill, written against `meta/skill-schema.md` and the rules in
 | Process orchestration | Modeling and process |
 | Model-driven engineering | Modeling and process |
 | Domain-specific language design | Modeling and process |
+| Software process engineering | Modeling and process |
 | Information security management | Security and compliance |
 | Data protection (GDPR) | Security and compliance |
 | Identity and access management | Security and compliance |

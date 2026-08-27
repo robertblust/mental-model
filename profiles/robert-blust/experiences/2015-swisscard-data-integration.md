@@ -8,6 +8,7 @@ skills:
   - Java
   - Database design
   - CI/CD
+  - Legacy modernization
 ---
 
 # Swisscard — Data Integration Services Rewrite

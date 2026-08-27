@@ -54,7 +54,7 @@ skill file. Nothing is vendored, nothing is copied, nothing is referenced — th
 question disappears with the copying, and the model does not depend on a vocabulary it does
 not own.
 
-Sixty-two skills (appendix). The rule for adding one: a capability a profile can claim with
+Sixty-nine skills (appendix). The rule for adding one: a capability a profile can claim with
 evidence, at the grain a job posting would name it, distinct from its neighbours in what
 someone doing it does — not in which product they use.
 
@@ -205,12 +205,17 @@ repository.
 - **Core, the type set** — products (PostgreSQL, Camunda, Claude Code) are not skills and have
   no type; they are prose in `Typical tools:` here. Whether they become a type is a pack
   question.
+- **Core, the type set** — half of what makes a person hireable is domain knowledge:
+  hospitality technology, financial services, insurance, real estate, for this profile. It is
+  not a skill (there is no "In practice" for knowing how a hotel works) and the model has no
+  type for it. The roadmap's remaining clusters name `domain`; this instance holds its domains
+  back until that type exists rather than force them into `skill`.
 - **Meta-model, `example/`** — its three skills are written the first-cut way. It is the
   example adopters copy; it will need the same rewrite when core says so.
 
 ---
 
-## Appendix — the 62 curated skills
+## Appendix — the 69 curated skills
 
 One file each, H1 = the name below; texts as in the comparison's third table.
 
@@ -225,7 +230,7 @@ One file each, H1 = the name below; texts as in the comparison's third table.
 | AI governance |
 | Company vision and strategy |
 | Product management |
-
+| Solution selling |
 
 **Leadership**
 
@@ -238,7 +243,9 @@ One file each, H1 = the name below; texts as in the comparison's third table.
 | Vendor management |
 | Program management |
 | Agile delivery |
-
+| Public speaking |
+| Community building |
+| Organization design |
 
 **Architecture**
 
@@ -255,6 +262,8 @@ One file each, H1 = the name below; texts as in the comparison's third table.
 | Integration architecture |
 | Multi-tenant SaaS architecture |
 | Requirements engineering |
+| Legacy modernization |
+| IoT architecture |
 
 **AI**
 
@@ -312,6 +321,7 @@ One file each, H1 = the name below; texts as in the comparison's third table.
 | Process orchestration |
 | Model-driven engineering |
 | Domain-specific language design |
+| Software process engineering |
 
 **Security and compliance**
 

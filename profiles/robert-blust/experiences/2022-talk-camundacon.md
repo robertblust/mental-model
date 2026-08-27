@@ -5,6 +5,7 @@ start: 2022-01
 organisation: Camunda
 skills:
   - Process orchestration
+  - Public speaking
 ---
 
 # Conference Speaker — CamundaCon 2022, Berlin

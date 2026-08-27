@@ -15,6 +15,9 @@ skills:
   - Data modeling
   - IT governance
   - Platform engineering
+  - Software process engineering
+  - Public speaking
+  - Community building
 ---
 
 # IT Architect — Software Development Lifecycle Toolchain
@@ -28,3 +31,5 @@ skills:
 - Drove UBS's business architecture and capability modeling on EMF/Ecore, representing UBS internationally in the Eclipse Modeling Platform Working Group.
 - Designed an offshore-capable toolchain for decentralized agile development, including the security and network design for external partner access.
 - Scrum Master and technical lead in central group initiatives.
+- Co-led the Java Chief Programmer community of UBS Wealth Management & Swiss Banking (WM&SB) for five years.
+- Spoke at UBS-internal brown-bag sessions on modeling, toolchain and architecture.

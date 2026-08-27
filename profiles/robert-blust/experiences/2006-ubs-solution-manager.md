@@ -9,6 +9,8 @@ skills:
   - Knowledge management
   - Change management
   - Mentoring and coaching
+  - Community building
+  - Software process engineering
 ---
 
 # Solution Manager, Software Engineering — Analysis & Design

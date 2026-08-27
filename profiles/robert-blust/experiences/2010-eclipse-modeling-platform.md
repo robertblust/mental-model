@@ -6,6 +6,7 @@ end: 2011-01
 organisation: Eclipse Foundation
 skills:
   - Model-driven engineering
+  - Community building
 ---
 
 # Eclipse Modeling Platform Working Group
