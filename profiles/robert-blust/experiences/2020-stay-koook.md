@@ -8,11 +8,9 @@ skills:
   - Cloud architecture
   - Container orchestration (Kubernetes)
   - Process orchestration
-  - "Business process modeling (BPMN
-  - DMN)"
+  - Business process modeling (BPMN, DMN)
   - Java
-  - "Frontend development (TypeScript
-  - React)"
+  - Frontend development (TypeScript, React)
   - Database design
   - Integration architecture
   - Stakeholder management

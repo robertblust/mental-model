@@ -8,8 +8,7 @@ skills:
   - API design
   - Java
   - Integration architecture
-  - "Frontend development (TypeScript
-  - React)"
+  - Frontend development (TypeScript, React)
 ---
 
 # AXA Health — Digital Insurance Platform

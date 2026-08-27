@@ -26,12 +26,10 @@ skills:
   - Java
   - Software engineering
   - Process orchestration
-  - "Business process modeling (BPMN
-  - DMN)"
+  - Business process modeling (BPMN, DMN)
   - Engineering leadership
   - IT strategy
-  - "Frontend development (TypeScript
-  - React)"
+  - Frontend development (TypeScript, React)
   - Event streaming
   - Knowledge management
   - Site reliability engineering
