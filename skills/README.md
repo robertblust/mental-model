@@ -14,7 +14,7 @@ One file per skill, written against `meta/skill-schema.md` and the rules in
 | Vendor management | Leadership and strategy |
 | Product management | Leadership and strategy |
 | Agile delivery | Leadership and strategy |
-| Programme management | Leadership and strategy |
+| Program management | Leadership and strategy |
 | Change management | Leadership and strategy |
 | Enterprise architecture | Architecture |
 | Business architecture | Architecture |

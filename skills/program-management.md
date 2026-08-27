@@ -3,7 +3,7 @@ source: Local
 group: Leadership and strategy
 ---
 
-# Programme management
+# Program management
 
 > Coordinating a portfolio of related projects so that, together, they deliver a larger set of business benefits than any one project alone.
 
