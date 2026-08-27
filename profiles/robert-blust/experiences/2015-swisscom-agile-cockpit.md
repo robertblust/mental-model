@@ -3,7 +3,7 @@ source: rob-cv
 source-id: swisscom-agile-cockpit
 start: 2015-01
 organisation: Swisscom
-skills: [Enterprise integration]
+skills: [Integration architecture]
 ---
 
 # Swisscom — Agile Delivery Cockpit

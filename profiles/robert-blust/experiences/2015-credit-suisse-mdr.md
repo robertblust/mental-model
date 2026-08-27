@@ -4,7 +4,7 @@ source-id: credit-suisse-mdr
 start: 2015-01
 end: 2016-01
 organisation: Credit Suisse
-skills: [Model-driven engineering, Information security and compliance]
+skills: [Model-driven engineering, Data governance]
 ---
 
 # Credit Suisse — Master Data Repository

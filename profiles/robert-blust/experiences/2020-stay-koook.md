@@ -4,7 +4,7 @@ source-id: stay-koook
 start: 2020-01
 end: 2022-01
 organisation: SV Group
-skills: [Cloud platform engineering, Database design and operation, Process orchestration and automation, Java platform engineering, Web application development]
+skills: [Cloud architecture, Container orchestration (Kubernetes), Process orchestration, Business process modeling (BPMN, DMN), Java, Frontend development (TypeScript, React), Database design, Integration architecture, Stakeholder management, Software architecture]
 ---
 
 # Stay KooooK — Digital Hospitality Platform

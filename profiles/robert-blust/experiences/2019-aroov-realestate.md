@@ -4,7 +4,7 @@ source-id: aroov-realestate
 start: 2019-01
 end: 2021-01
 organisation: Aroov
-skills: [Cloud platform engineering, Event-driven architecture, Java platform engineering]
+skills: [Cloud architecture, Container orchestration (Kubernetes), Event-driven architecture, Java, Integration architecture, Stakeholder management]
 ---
 
 # Aroov — Digital Rental Platform

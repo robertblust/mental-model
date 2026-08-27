@@ -3,7 +3,7 @@ source: rob-cv
 source-id: talks-eclipse-2012
 start: 2012-01
 organisation: Eclipse Foundation
-skills: [Software modeling]
+skills: [Software modeling (UML, SysML, C4), Data modeling]
 ---
 
 # Conference Speaker — Eclipse 2012

@@ -3,7 +3,7 @@ source: rob-cv
 source-id: talk-camundacon-2022
 start: 2022-01
 organisation: Camunda
-skills: [Process orchestration and automation]
+skills: [Process orchestration]
 ---
 
 # Conference Speaker — CamundaCon 2022, Berlin

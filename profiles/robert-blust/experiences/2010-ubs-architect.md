@@ -4,7 +4,7 @@ source-id: 2010-ubs-architect
 start: 2010-01
 end: 2015-01
 organisation: UBS AG
-skills: [Enterprise architecture, Business architecture, Infrastructure as code and delivery automation, Agile delivery, Model-driven engineering, Domain-driven design]
+skills: [Enterprise architecture, Business architecture, Agile delivery, Model-driven engineering, Domain-specific language design, Integration architecture, API design, Data modeling, IT governance, Platform engineering, Information security management]
 ---
 
 # IT Architect — Software Development Lifecycle Toolchain

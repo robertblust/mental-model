@@ -3,7 +3,7 @@ source: rob-cv
 source-id: camunda-case-study
 start: 2020-01
 organisation: Camunda
-skills: [Process orchestration and automation]
+skills: [Process orchestration]
 ---
 
 # Featured Case Study — LIKE MAGIC on Camunda

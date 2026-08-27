@@ -4,7 +4,7 @@ source-id: 2006-ubs-solution-manager
 start: 2006-01
 end: 2010-01
 organisation: UBS AG
-skills: [Software modeling]
+skills: [Software modeling (UML, SysML, C4), Knowledge management, Change management]
 ---
 
 # Solution Manager, Software Engineering — Analysis & Design

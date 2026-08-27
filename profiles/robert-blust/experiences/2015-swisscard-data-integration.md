@@ -3,7 +3,7 @@ source: rob-cv
 source-id: swisscard-data-integration
 start: 2015-01
 organisation: Swisscard
-skills: [API design, Java platform engineering, Database design and operation]
+skills: [API design, Java, Database design, CI/CD]
 ---
 
 # Swisscard — Data Integration Services Rewrite
