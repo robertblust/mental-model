@@ -4,7 +4,7 @@ source-id: 2001-ubs-engineer
 start: 2001-01
 end: 2006-01
 organisation: UBS AG
-skills: [Java, Software engineering, Model-driven engineering, Database design, Integration architecture, Software architecture]
+skills: [Java, Software engineering, Model-driven engineering, Database design, Integration architecture, Software architecture, Domain-specific language design]
 ---
 
 # Software Engineer / IT Developer

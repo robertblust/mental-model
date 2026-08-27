@@ -24,22 +24,22 @@ location: Wallisellen, Switzerland
 | Change management | Proficient | Replaced UBS's proprietary engineering process with a market-standard one as owner of its Analysis & Design discipline, coaching project teams into it (2006-2010), then drove LIKE MAGIC's productive rollout of AI assistants across plan, change and run. |
 | CI/CD | Proficient | Built the Swisscard integration rewrite on Jenkins and JUnit and set LIKE MAGIC's CI/CD standards on GitHub Actions. |
 | Cloud architecture | Expert | Owned LIKE MAGIC's production cloud platform on Google Cloud and created the Aroov and Stay KooooK backend architectures on the same stack. |
-| Consulting | Expert | Created technical concepts, proposals and pitches as 3AP's CTO (2015-2022), delivering award-winning client platforms in insurance, real estate, IoT and hospitality. |
+| Consulting | Competent | Created technical concepts, proposals and pitches as 3AP's CTO (2015-2022), delivering award-winning client platforms in insurance, real estate, IoT and hospitality. |
 | Container orchestration (Kubernetes) | Proficient | Ran the Aroov, Stay KooooK and LIKE MAGIC backends on Google Kubernetes Engine. |
 | Data governance | Competent | Built Credit Suisse's Master Data Repository so data stewards could be assigned and the golden-source distribution across the core systems mapped. |
-| Data modeling | Expert | Built UBS's canonical data model for enterprise data management and presented "Eclipse Data Modeling at an Enterprise Scale" at Eclipse Day Florence 2012. |
+| Data modeling | Competent | Built UBS's canonical data model for enterprise data management (2010-2015). |
 | Data protection (GDPR) | Competent | Ran LIKE MAGIC's GDPR compliance including the guardrail that no internal context trained external LLMs. |
 | Database design | Proficient | Worked with Oracle in UBS's DynaRep repository, MSSQL in the Swisscard rewrite and PostgreSQL with R2DBC/jOOQ across the LIKE MAGIC platform. |
 | DevOps | Expert | Established software-delivery processes and sustainable DevOps practices at 3AP and built LIKE MAGIC's production platform to DevOps standards on Google Cloud. |
 | Domain-specific language design | Proficient | Built DynaRep's repository-based modeling tool and its code generators for UBS mainframe service interfaces (2001-2006) and defined data types, interfaces and service contracts platform-independently on EMF and Xtext (2010-2015). |
 | Engineering leadership | Expert | Grew LIKE MAGIC engineering from 5 to 25 and scaled 3AP to about 70 people as co-founder of both. |
-| Enterprise architecture | Expert | Architected UBS's group-wide Integration Architecture Tool Chain around a canonical data model with a central API and interface-portfolio repository (2010-2015). |
+| Enterprise architecture | Competent | Architected UBS's group-wide Integration Architecture Tool Chain around a canonical data model with a central API and interface-portfolio repository (2010-2015). |
 | Event streaming | Proficient | Ran LIKE MAGIC's event and data hub on Google Cloud Pub/Sub, processing 89M+ platform events annually. |
 | Event-driven architecture | Expert | Designed Aroov's event-driven backend on Google Cloud Pub/Sub and built the LIKE MAGIC platform on Pub/Sub as its event hub. |
 | Frontend development (TypeScript, React) | Proficient | Owned Stay KooooK's front-to-back architecture including its React frontend and shipped LIKE MAGIC's React/TypeScript/MUI frontend. |
 | Identity and access management | Competent | Built zero-trust API boundaries into the LIKE MAGIC platform. |
 | Incident management | Competent | Owned incident management for LIKE MAGIC's production cloud platform. |
-| Information security management | Proficient | Built LIKE MAGIC's information-security management toward ISO 27001 and designed the security and network access for UBS's offshore development toolchain. |
+| Information security management | Competent | Built LIKE MAGIC's information-security management toward ISO 27001 (in progress), GDPR compliance and zero-trust API boundaries. |
 | Infrastructure as code | Competent | Built LIKE MAGIC's production platform as Infrastructure-as-Code on Google Cloud. |
 | Integration architecture | Expert | Owned AXA Health's complete integration architecture into Adcubum Syrius and integrated 3 PMS (Mews, Apaleo, Oracle OHIP) plus 15+ smart-lock systems at LIKE MAGIC. |
 | IT governance | Expert | Ran delivery governance and technology-stack approvals at 3AP and set the role-based review process for UBS's central interface-portfolio repository. |
@@ -53,7 +53,7 @@ location: Wallisellen, Switzerland
 | Site reliability engineering | Competent | Owned site reliability engineering and performance for LIKE MAGIC's production cloud platform. |
 | Software architecture | Expert | Owned Stay KooooK's complete front-to-back architecture on reactive Spring Boot WebFlux and took software-architect responsibility for UBS's DynaRep platform (2001-2006). |
 | Software engineering | Expert | Built production systems across 25 years, from UBS's DynaRep repository (2001-2006) to LIKE MAGIC's Spring Boot WebFlux platform (2022-2026). |
-| Software modeling (UML, SysML, C4) | Expert | Owned the Analysis & Design discipline in UBS's group-wide Rational Unified Process rollout and developed its service-modeling methodology in Rational Method Composer and UML (2006-2010). |
+| Software modeling (UML, SysML, C4) | Competent | Owned the Analysis & Design discipline in UBS's group-wide Rational Unified Process rollout and developed its service-modeling methodology in Rational Method Composer and UML (2006-2010). |
 | Solution architecture | Expert | Led 3AP's client bids on solution architecture including public tenders under Swiss procurement law and designed Flawa iQ's RFID and LoRaWAN solution, delivered as 10 working prototypes. |
 | Stakeholder management | Proficient | Advised clients including Credit Suisse, Swisscard, AXA and Mobiliar as 3AP's CTO and presented the solution architecture in the winning Aroov and Stay KooooK pitches. |
 
