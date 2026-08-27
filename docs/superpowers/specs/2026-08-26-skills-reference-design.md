@@ -54,7 +54,7 @@ skill file. Nothing is vendored, nothing is copied, nothing is referenced — th
 question disappears with the copying, and the model does not depend on a vocabulary it does
 not own.
 
-Sixty skills (appendix). The rule for adding one: a capability a profile can claim with
+Sixty-two skills (appendix). The rule for adding one: a capability a profile can claim with
 evidence, at the grain a job posting would name it, distinct from its neighbours in what
 someone doing it does — not in which product they use.
 
@@ -210,7 +210,7 @@ repository.
 
 ---
 
-## Appendix — the 60 curated skills
+## Appendix — the 62 curated skills
 
 One file each, H1 = the name below; texts as in the comparison's third table.
 
@@ -230,6 +230,8 @@ One file each, H1 = the name below; texts as in the comparison's third table.
 | Agile delivery |
 | Program management |
 | Change management |
+| Mentoring and coaching |
+| Company vision and strategy |
 
 **Architecture**
 

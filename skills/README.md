@@ -16,6 +16,8 @@ One file per skill, written against `meta/skill-schema.md` and the rules in
 | Agile delivery | Leadership and strategy |
 | Program management | Leadership and strategy |
 | Change management | Leadership and strategy |
+| Mentoring and coaching | Leadership and strategy |
+| Company vision and strategy | Leadership and strategy |
 | Enterprise architecture | Architecture |
 | Business architecture | Architecture |
 | Solution architecture | Architecture |
