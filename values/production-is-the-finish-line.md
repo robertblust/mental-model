@@ -2,16 +2,14 @@
 source: Local
 ---
 
-<!-- drafted from the CV summary — review before merge -->
-
 # Production is the finish line
 
 > A platform counts when it runs for customers under real security and compliance obligations, not when the demo works.
 
 ## In practice
 
-Following it looks like owning reliability, incident management and the audit trail as part of
-building the thing, and treating ISO 27001 and GDPR as design inputs rather than a form to fill
-in after.
+Own reliability, incident management and the audit trail as part of building the thing.
+Treat ISO 27001 and GDPR as design inputs, not as a form to fill in after. Call it done when
+it runs for customers under real obligations, not when the demo works.
 
-Breaking it looks like a launch date met by a system nobody is on call for.
+Not this: a launch date met by a system nobody is on call for.

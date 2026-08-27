@@ -10,7 +10,6 @@ location: Wallisellen, Switzerland
 
 ## Skills
 
-<!-- levels drafted — review -->
 
 | Skill | Level | Evidence |
 | --- | --- | --- |
