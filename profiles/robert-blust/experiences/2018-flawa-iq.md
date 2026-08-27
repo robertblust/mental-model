@@ -7,6 +7,7 @@ organisation: Flawa
 skills:
   - Integration architecture
   - Solution architecture
+  - IoT architecture
 ---
 
 # Flawa iQ — Networked First-Aid Kit

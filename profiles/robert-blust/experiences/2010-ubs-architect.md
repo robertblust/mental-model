@@ -15,6 +15,7 @@ skills:
   - Data modeling
   - IT governance
   - Platform engineering
+  - Software process engineering
 ---
 
 # IT Architect — Software Development Lifecycle Toolchain

@@ -6,6 +6,7 @@ organisation: Eclipse Foundation
 skills:
   - Software modeling (UML, SysML, C4)
   - Data modeling
+  - Public speaking
 ---
 
 # Conference Speaker — Eclipse 2012

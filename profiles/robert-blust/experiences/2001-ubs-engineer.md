@@ -12,6 +12,7 @@ skills:
   - Integration architecture
   - Software architecture
   - Domain-specific language design
+  - Legacy modernization
 ---
 
 # Software Engineer / IT Developer

@@ -11,6 +11,7 @@ skills:
   - Java
   - Integration architecture
   - Stakeholder management
+  - Solution selling
 ---
 
 # Aroov — Digital Rental Platform

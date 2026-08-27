@@ -22,6 +22,13 @@ location: Wallisellen, Switzerland
 | Business process modeling (BPMN, DMN) | Proficient | Modeled the end-to-end guest journey from booking to check-out in Camunda BPMN at Stay KooooK and LIKE MAGIC. |
 | Mentoring and coaching | Proficient | Coached UBS project teams in the Analysis & Design methodology and built internal communities of practice (2006-2010), grew 3AP's engineering organization as it scaled to about 70 people, and developed the leaders of LIKE MAGIC's engineering organization as it grew from 5 to 25. |
 | Company vision and strategy | Expert | Co-founded 3AP and, on its management team, scaled it from 5 to about 70 people; co-founded LIKE MAGIC and built the platform behind 90+ customers and 16,000+ units. |
+| Public speaking | Proficient | Spoke at Eclipse 2012 on model-driven engineering and at CamundaCon 2022 in Berlin on process orchestration at LIKE MAGIC. |
+| Community building | Proficient | Built internal communities of practice at UBS (2006-2010), represented UBS in the Eclipse Modeling Platform Working Group and served on the board of JUG Switzerland (2011-2014). |
+| Solution selling | Proficient | Created technical concepts, proposals and pitches and led client bids including public tenders at 3AP, and presented the solution architecture in Aroov's winning pitch. |
+| Organization design | Proficient | Scaled 3AP to about 70 people including a near-shore team in Serbia, and designed LIKE MAGIC's engineering organization as it grew from 5 to 25. |
+| Software process engineering | Expert | Owned the Analysis & Design discipline in UBS's group-wide RUP rollout, replacing the proprietary process with a market standard (2006-2010), then architected the group-wide SDLC toolchain (2010-2015). |
+| Legacy modernization | Proficient | Architected DynaRep, generating COBOL and Java implementations for UBS mainframe service interfaces (2001-2006), and replaced Swisscard's proprietary SOAP data-integration layer (2015). |
+| IoT architecture | Competent | Designed Flawa iQ's sensing and LoRaWAN connectivity and the backend ingesting device telemetry into the ERP (2018-2019). |
 | Change management | Proficient | Replaced UBS's proprietary engineering process with a market-standard one as owner of its Analysis & Design discipline, coaching project teams into it (2006-2010), then drove LIKE MAGIC's productive rollout of AI assistants across plan, change and run. |
 | CI/CD | Proficient | Built the Swisscard integration rewrite on Jenkins and JUnit and set LIKE MAGIC's CI/CD standards on GitHub Actions. |
 | Cloud architecture | Expert | Owned LIKE MAGIC's production cloud platform on Google Cloud and created the Aroov and Stay KooooK backend architectures on the same stack. |

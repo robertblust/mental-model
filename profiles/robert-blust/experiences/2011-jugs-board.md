@@ -4,6 +4,8 @@ source-id: jugs-board
 start: 2011-01
 end: 2014-01
 organisation: JUG Switzerland
+skills:
+  - Community building
 ---
 
 # Board Member — Swiss Eclipse User Group

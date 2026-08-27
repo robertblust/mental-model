@@ -37,6 +37,7 @@ skills:
   - Change management
   - Mentoring and coaching
   - Company vision and strategy
+  - Organization design
 ---
 
 # Co-Founder & Head of Technology
