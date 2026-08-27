@@ -8,9 +8,9 @@ source: Local
 
 ## In practice
 
-You keep a written model — domains, capabilities, processes, rules — that the code, the org
-chart and the agents all refer back to, and you keep it where the people who own the facts
-can edit it. You build from the model, not beside it.
+I keep a written model — domains, capabilities, processes, rules — that the code, the org
+chart and the agents all refer back to, and I keep it where the people who own the facts can
+edit it. I build from the model, not beside it.
 
-You never let the model live in three heads and a slide deck, with every system encoding a
+I never let the model live in three heads and a slide deck, with every system encoding a
 slightly different version of it.
