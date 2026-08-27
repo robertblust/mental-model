@@ -1,21 +1,23 @@
 # Skills
 
 One file per skill, written against `meta/skill-schema.md` and the rules in
-`docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. Sixty skills, ours; nine groups.
+`docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. Sixty-two skills, ours; ten groups.
 
 | Skill | Group |
 | --- | --- |
-| IT strategy | Leadership and strategy |
-| IT governance | Leadership and strategy |
-| AI strategy | Leadership and strategy |
-| AI governance | Leadership and strategy |
-| Engineering leadership | Leadership and strategy |
-| Stakeholder management | Leadership and strategy |
-| Vendor management | Leadership and strategy |
-| Product management | Leadership and strategy |
-| Agile delivery | Leadership and strategy |
-| Program management | Leadership and strategy |
-| Change management | Leadership and strategy |
+| IT strategy | Strategy |
+| IT governance | Strategy |
+| AI strategy | Strategy |
+| AI governance | Strategy |
+| Company vision and strategy | Strategy |
+| Product management | Strategy |
+| Engineering leadership | Leadership |
+| Mentoring and coaching | Leadership |
+| Change management | Leadership |
+| Stakeholder management | Leadership |
+| Vendor management | Leadership |
+| Program management | Leadership |
+| Agile delivery | Leadership |
 | Enterprise architecture | Architecture |
 | Business architecture | Architecture |
 | Solution architecture | Architecture |

@@ -8,6 +8,7 @@ skills:
   - Software modeling (UML, SysML, C4)
   - Knowledge management
   - Change management
+  - Mentoring and coaching
 ---
 
 # Solution Manager, Software Engineering — Analysis & Design

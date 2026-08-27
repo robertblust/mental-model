@@ -1,6 +1,6 @@
 ---
 source: Local
-group: Leadership and strategy
+group: Leadership
 ---
 
 # Agile delivery

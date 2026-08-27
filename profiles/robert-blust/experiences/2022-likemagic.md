@@ -35,6 +35,8 @@ skills:
   - Site reliability engineering
   - Incident management
   - Change management
+  - Mentoring and coaching
+  - Company vision and strategy
 ---
 
 # Co-Founder & Head of Technology

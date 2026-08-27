@@ -54,7 +54,7 @@ skill file. Nothing is vendored, nothing is copied, nothing is referenced — th
 question disappears with the copying, and the model does not depend on a vocabulary it does
 not own.
 
-Sixty skills (appendix). The rule for adding one: a capability a profile can claim with
+Sixty-two skills (appendix). The rule for adding one: a capability a profile can claim with
 evidence, at the grain a job posting would name it, distinct from its neighbours in what
 someone doing it does — not in which product they use.
 
@@ -83,10 +83,10 @@ the new one without losing a row. Typical tools: PostgreSQL, Oracle, MSSQL, Mong
 ```
 
 - **H1 is the curated name** (appendix), ours, in house style.
-- **`group`** is one of nine: Leadership and strategy, Architecture, AI, Cloud and platform,
-  Data, Software development, Modeling and process, Security and compliance, Advisory. They
-  are the sections of the comparison; the schema's open question about groups gets 60 data
-  points on a grouping we chose.
+- **`group`** is one of ten: Strategy, Leadership, Architecture, AI, Cloud and platform, Data,
+  Software development, Modeling and process, Security and compliance, Advisory. They are the
+  sections of the comparison, with its leadership-and-strategy section split in two; the
+  schema's open question about groups gets 62 data points on a grouping we chose.
 - **`> definition`** — one line, ours, saying what the skill is. It starts with the thing
   itself, never with a wrapper — no "The practice of", "The discipline of", "The ability to".
 - **`## In practice`** — two to four sentences in the **imperative, without a subject**: each
@@ -177,7 +177,7 @@ not make it right.
 3. Delete the 23 old files. Rewrite the profile's Skills table (§5, §6). Re-point every
    experience's `skills:`.
 4. Checks, throwaway, from the shell: 60 files; every H1 unique and equal to its README index
-   row; every `group` one of the nine; no file under `skills/` contains a profile's name, an employer, or
+   row; every `group` one of the ten; no file under `skills/` contains a profile's name, an employer, or
    a four-digit year (the person-neutral rule, mechanically); no `In practice` sentence starts
    with "Someone", "They" or "Practitioners"; no definition starts with "The practice", "The
    discipline" or "The ability"; every profile row and every experience `skills:` entry
@@ -210,12 +210,12 @@ repository.
 
 ---
 
-## Appendix — the 60 curated skills
+## Appendix — the 62 curated skills
 
 One file each, H1 = the name below; texts as in the comparison's third table.
 
 
-**Leadership and strategy**
+**Strategy**
 
 | Skill |
 | --- |
@@ -223,13 +223,22 @@ One file each, H1 = the name below; texts as in the comparison's third table.
 | IT governance |
 | AI strategy |
 | AI governance |
+| Company vision and strategy |
+| Product management |
+
+
+**Leadership**
+
+| Skill |
+| --- |
 | Engineering leadership |
+| Mentoring and coaching |
+| Change management |
 | Stakeholder management |
 | Vendor management |
-| Product management |
-| Agile delivery |
 | Program management |
-| Change management |
+| Agile delivery |
+
 
 **Architecture**
 
