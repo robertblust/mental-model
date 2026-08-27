@@ -8,8 +8,9 @@ source: Local
 
 ## In practice
 
-Follow: keep a written model — domains, capabilities, processes, rules — that the code, the
-org chart and the agents all refer back to, where the people who own the facts can edit it.
+You keep a written model — domains, capabilities, processes, rules — that the code, the org
+chart and the agents all refer back to, and you keep it where the people who own the facts
+can edit it. You build from the model, not beside it.
 
-Break: let the model live in three heads and a slide deck, with every system encoding a
+You never let the model live in three heads and a slide deck, with every system encoding a
 slightly different version of it.

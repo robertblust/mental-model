@@ -8,7 +8,8 @@ source: Local
 
 ## In practice
 
-Follow: own reliability, incident management and the audit trail as part of building the
-thing, and treat ISO 27001 and GDPR as design inputs rather than a form to fill in after.
+You own reliability, incident management and the audit trail as part of building the thing.
+You treat ISO 27001 and GDPR as design inputs, not a form to fill in after. You call it done
+when it runs for customers under real obligations, not when the demo works.
 
-Break: meet the launch date with a system nobody is on call for.
+You never meet a launch date with a system nobody is on call for.

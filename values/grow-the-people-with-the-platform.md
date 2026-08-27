@@ -8,8 +8,8 @@ source: Local
 
 ## In practice
 
-Follow: scale the engineering organization on purpose — hiring, practices, ownership — at the
-pace the platform scales, so that every part of the system has someone who can be woken up
-for it and would know what to do.
+You grow the organization as deliberately as the platform — hiring, practices, ownership — so
+that every part of the system has someone who could be woken up for it and would know what
+to do. You judge a platform by the team that can run it without you.
 
-Break: let five people know everything while twenty wait for them.
+You never let five people know everything while twenty wait for them.
