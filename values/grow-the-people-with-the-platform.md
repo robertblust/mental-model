@@ -2,16 +2,14 @@
 source: Local
 ---
 
-<!-- drafted from the CV summary — review before merge -->
-
 # Grow the people with the platform
 
 > A platform that outgrows the team that runs it is a liability with good uptime.
 
 ## In practice
 
-Following it looks like scaling the engineering organization on purpose — hiring, practices,
-ownership — at the pace the platform scales, so that every part of the system has someone who
-can be woken up for it and would know what to do.
+You grow the organization as deliberately as the platform — hiring, practices, ownership — so
+that every part of the system has someone who could be woken up for it and would know what
+to do. You judge a platform by the team that can run it without you.
 
-Breaking it looks like five people who know everything and twenty who wait for them.
+You never let five people know everything while twenty wait for them.
