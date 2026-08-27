@@ -1,12 +1,14 @@
-# Skills on a reference vocabulary — design
+# Skills as our own vocabulary — design
 
-> The skills of this instance re-cut against SFIA 9, every skill written so that many profiles
-> can claim it, with the SFIA and ESCO references carried as prose until core learns a field
-> for them.
+> The skills of this instance re-cut as a curated vocabulary of our own — 60 skills at the
+> grain the market hires for, each defined here, person-neutral, and anchored to SFIA 9 and
+> ESCO where those name the same thing.
 
 Status: design agreed, nothing built. Instance-owned: nothing here changes `meta/` or the
-meta-model. The core findings this produces are listed in §8 and go to the meta-model's
-reference-instance spec §7 as one later PR.
+meta-model. What it teaches core is in §8 and is proposed to the meta-model separately.
+
+Supersedes an earlier draft of this spec that filed all 147 SFIA skills. That draft is in the
+branch history; §2 says why it was dropped.
 
 ---
 
@@ -20,37 +22,40 @@ written as what one person did with the skill. Two defects, one cause:
   narrates one person's history is the profile's row restated — and wrong the moment a second
   profile claims it. `## In practice` must be person-neutral.
 - **The grain was arbitrary.** "Database design and operation" is two skills to anyone who has
-  hired for either; "Cloud platform engineering" is design and operation folded together. With
-  no reference vocabulary there was nothing to check a cut against.
+  hired for either. With no reference vocabulary there was nothing to check a cut against.
 
-Both are core findings (§8). The instance fixes them by adopting a vocabulary.
+Both are core findings (§8). The instance fixes them by adopting a vocabulary — its own.
 
 ---
 
-## 2. The vocabulary: SFIA 9, all of it
+## 2. The vocabulary: ours, anchored
 
-[SFIA 9](https://sfia-online.org/en/sfia-9/sfia-9) — 147 skills in 6 categories and 19
-subcategories, each defined at some of 7 levels of responsibility. Chosen over ESCO, O*NET and
-Lightcast because it is the one built for exactly this grain: professional capability in
-technology work, split where practitioners split it (`DBDS` design / `DBAD` administration),
-and its own skill-versus-level split is the distinction this model already draws between
-`skill` and `proficiency-level`.
+Four public sources were compared row by row — SFIA 9, ESCO v1.2, O*NET, Lightcast Open
+Skills — against 69 candidates drawn from the CV's `skills.yaml`, the 16 job postings under
+`applications/`, and the first 23 skills. The comparison, with every source's name for every
+row and each source's licence, is
+[`docs/superpowers/research/2026-08-26-skill-sources-compared.md`](../research/2026-08-26-skill-sources-compared.md).
 
-**All 147, not the ones one person claims.** A reference vocabulary that is only the subset one
-CV happened to touch is not a reference; the next profile would start cutting again. An
-unclaimed skill file is a definition waiting for a claimant, and costs nothing.
+What it showed:
 
-**In our own words.** SFIA's names and codes are facts and are cited; its descriptions and
-level texts are copyright of the SFIA Foundation and are never reproduced. Every definition
-and every `## In practice` here is written for this repository. The owner registers the free
-SFIA user licence on sfia-online.org so that citing the framework in a public repository is
-inside its terms on their side too.
+- **SFIA 9** names every leadership, architecture, governance and operations skill at the right
+  grain, and nothing in the modern layer — no Kubernetes, no SRE, no RAG, no agentic
+  development. Filing all 147 (the earlier draft) would also have shipped Radio frequency
+  engineering and Marketing campaign management, which nobody here will claim.
+- **ESCO** is free for any reuse with stable URIs and German labels, and has a concept for
+  about half the rows — generic ones.
+- **Lightcast** has the market grain for almost every row and a licence that is not open.
+- **O*NET** is products.
 
-**ESCO as the second anchor.** Where [ESCO v1.2](https://esco.ec.europa.eu/en/classification/skill_main)
-has a concept that means the same thing, its URI is cited beside the SFIA code — free for any
-reuse, stable URIs, and a German label for later. ESCO's grain is generic ("design database
-scheme", "operate relational database management system") and it has nothing for
-domain-driven design or model-driven engineering; it anchors, it does not decide.
+So the decision: **the skill set is curated by us, at the grain the postings use.** Every
+definition and every `In practice` is written here, in our words. Where SFIA or ESCO names
+the same skill, the file cites it; where they do not, it says so. Lightcast and O*NET were
+consulted and are not cited. Nothing is vendored, nothing is copied — the licence question
+disappears with the copying.
+
+Sixty skills (appendix). The rule for adding one: a capability a profile can claim with
+evidence, at the grain a job posting would name it, distinct from its neighbours in what
+someone doing it does — not in which product they use.
 
 ---
 
@@ -62,7 +67,7 @@ optional `## In practice`. Every file here has all of them. The rules this spec 
 ```markdown
 ---
 source: Local
-group: Development and implementation · Data and analytics
+group: Data
 ---
 
 # Database design
@@ -79,16 +84,13 @@ Reference: SFIA 9 DBDS — Database design · ESCO design database scheme
 http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511
 ```
 
-- **H1 is the SFIA skill name**, spelled as SFIA spells it, British spelling included
-  (`Data modelling and design`) — it is a proper name, and R2 makes the H1 the thing every
-  claim references. House style applies to everything else in the file.
-- **`group` is `<Category> · <Subcategory>`** from the SFIA framework view, verbatim. Ten CV
-  groups become nineteen SFIA subcategories; the schema's open question about groups gets
-  147 data points on a published taxonomy.
+- **H1 is the curated name** (appendix), ours, in house style.
+- **`group`** is one of nine: Leadership and strategy, Architecture, AI, Cloud and platform,
+  Data, Software development, Modeling and process, Security and compliance, Advisory. They
+  are the sections of the comparison; the schema's open question about groups gets 60 data
+  points on a grouping we chose.
 - **`> definition`** — one line, ours, saying what the skill is. It starts with the thing
   itself, never with a wrapper — no "The practice of", "The discipline of", "The ability to".
-  Not SFIA's overall description paraphrased; written from what the skill means to someone
-  who has done it.
 - **`## In practice`** — two to four sentences in the **imperative, without a subject**: each
   sentence starts with the bare verb — "Assess …", "Translate …", "Engage …" — never "Someone
   doing this …" or "They …". Person-neutral: no name, employer, date or number from any
@@ -96,80 +98,59 @@ http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511
   is what the skill is done with. A reader who wants to know who claims the skill reads the
   profiles.
 - **The reference line is fixed in form**, last in the section, one line:
-  `Reference: SFIA 9 <CODE> — <SFIA name>` then ` · ESCO <preferred label> <URI>` when ESCO has
-  a match, else ` · ESCO none`. The form is what makes the line grep-able and, later,
-  promotable to schema fields without re-reading prose. The CODE in the line must equal the
-  code the H1 was taken from.
+  `Reference: SFIA 9 <CODE> — <SFIA name>` or `Reference: SFIA 9 none`, then
+  ` · ESCO <preferred label> <URI>` or ` · ESCO none`. Only a source that names the *same*
+  skill is cited — a broader parent is not a match. The form is what makes the line grep-able
+  and, later, promotable to schema fields without re-reading prose.
 
-Filename: kebab-case of the H1, as R2 and the existing files already do
-(`database-design.md`, `artificial-intelligence-ai-and-data-ethics.md`).
+Filename: kebab-case of the H1, as R2 and the existing files already do.
 
----
-
-## 4. Instance skills that SFIA does not cover
-
-Some of what the CV evidences has no SFIA skill: it is a method or an architecture style,
-below SFIA's grain. Those stay as instance-defined skills, same file shape, with the reference
-line reading `Reference: SFIA 9 none` and ESCO where it has one, and `group` set to the SFIA
-subcategory they would sit under, so they sort with their neighbours:
-
-| instance skill | group | why not a SFIA skill |
-| --- | --- | --- |
-| Domain-driven design | Development and implementation · Systems development | a design method inside `SWDN` |
-| Event-driven architecture | Development and implementation · Systems development | an architecture style inside `ARCH`/`DESN` |
-| Model-driven engineering | Development and implementation · Systems development | a method spanning `SWDN`, `PROG`, `METL` |
-| Process orchestration | Development and implementation · Systems development | executable BPMN/DMN — narrower than `BPRE` |
-| API design | Development and implementation · Systems development | the contract half of `SWDN`/`SINT` |
-| Multi-tenant SaaS architecture | Development and implementation · Systems development | a concern inside `ARCH` |
-| Agentic AI development | Development and implementation · Systems development | building with and for agents; SFIA 9 has `MLNG` and `AIDE`, neither is this |
-
-The rule for adding one: a capability the profile claims with evidence, that no SFIA skill
-names, and that a second profile could plausibly claim. Seven now; the list is reviewed
-whenever SFIA releases.
+The drafted texts for all 60 — definition, In practice, reference — are the third table of
+the comparison document. They were reviewed row by row before this spec was approved and are
+written into the files as they stand there; the build does not redraft them.
 
 ---
 
-## 5. What moves where — the 23 existing skills
+## 4. What moves where — the 23 existing skills
 
 | today | becomes |
 | --- | --- |
-| Scaling engineering organizations | `OCDV` Organisational capability development, `WFPL` Workforce planning |
-| Technology strategy and governance | `ITSP` Strategic planning, `GOVN` Governance |
-| AI strategy and governance | `ITSP` Strategic planning (claim), `AIDE` Artificial intelligence (AI) and data ethics |
-| Stakeholder and vendor management | `RLMT` Stakeholder relationship management, `SUPP` Supplier management |
-| Agentic AI development | instance skill, unchanged name |
-| Cloud platform engineering | `IFDN` Infrastructure design, `ITOP` Infrastructure operations |
-| Infrastructure as code and delivery automation | `DEPL` Deployment, `RELM` Release management, `CFMG` Configuration management |
-| Enterprise architecture | `STPL` Enterprise and business architecture |
-| Business architecture | `STPL` (same skill; the claim's evidence names the L0/L1 work), `BSMO` Business modelling |
-| Domain-driven design | instance skill |
-| Event-driven architecture | instance skill |
-| Process orchestration and automation | instance skill `Process orchestration`, plus `BPRE` where the evidence is process improvement |
-| Enterprise integration | `SINT` Systems integration and build |
-| Multi-tenant SaaS architecture | instance skill |
-| API design | instance skill |
-| Software modeling | `DTAN` Data modelling and design, `BSMO` Business modelling, `DESN` Systems design |
-| Model-driven engineering | instance skill |
-| Java platform engineering | `PROG` Programming/software development |
-| Web application development | `PROG` (the claim's evidence names the frontend work) |
-| Database design and operation | `DBDS` Database design, `DBAD` Database administration |
-| Information security and compliance | `SCTY` Information security, `PEDP` Information and data compliance |
-| Identity and access management | `IAMT` Identity and access management |
-| Agile delivery | `DEMG` Delivery management, `METL` Methods and tools |
+| Scaling engineering organizations | Engineering leadership |
+| Technology strategy and governance | IT strategy, IT governance |
+| AI strategy and governance | AI strategy, AI governance |
+| Stakeholder and vendor management | Stakeholder management, Vendor management |
+| Agentic AI development | Agentic AI development |
+| Cloud platform engineering | Cloud architecture, Container orchestration (Kubernetes), Platform engineering |
+| Infrastructure as code and delivery automation | Infrastructure as code, CI/CD, DevOps |
+| Enterprise architecture | Enterprise architecture |
+| Business architecture | Business architecture |
+| Domain-driven design | Domain-driven design |
+| Event-driven architecture | Event-driven architecture |
+| Process orchestration and automation | Process orchestration, Business process modeling (BPMN, DMN) |
+| Enterprise integration | Integration architecture |
+| Multi-tenant SaaS architecture | Multi-tenant SaaS architecture |
+| API design | API design |
+| Software modeling | Software modeling (UML, SysML, C4) |
+| Model-driven engineering | Model-driven engineering, Domain-specific language design |
+| Java platform engineering | Java, Software engineering |
+| Web application development | Frontend development (TypeScript, React) |
+| Database design and operation | Database design, Database administration |
+| Information security and compliance | Information security management, Data protection (GDPR) |
+| Identity and access management | Identity and access management |
+| Agile delivery | Agile delivery |
 
-The 23 files are deleted; nothing keeps the old names. A profile claim that mapped to two
-SFIA skills becomes two rows, each with the evidence that fits it, or one row if the CV
-evidences only one half — the evidence decides, not the mapping.
+The 23 files are deleted; nothing keeps the old names. A profile claim that mapped to several
+skills becomes one row per skill the CV evidences — the evidence decides, not the mapping.
 
 ---
 
-## 6. The profile, the experiences, the ladder
+## 5. The profile, the experiences, the ladder
 
-- **Profile Skills table**: one row per skill the CV evidences, and no other. Expect 25–35
-  rows against 154 files. The `<!-- levels drafted — review -->` marker returns above the
-  table because every level is re-drafted; PR review removes it, as before.
-- **The level rubric is not in the profile.** It lives in this spec (§7) and the PR body; the
-  table carries only the claims.
+- **Profile Skills table**: one row per skill the CV evidences, and no other. Expect 30–40
+  rows against 60 files. The `<!-- levels drafted — review -->` marker returns above the table
+  because every level is re-drafted; PR review removes it, as before.
+- **The level rubric is not in the profile.** It lives in §6 and the PR body; the table carries
+  only the claims.
 - **Experiences** re-point `skills:` at the new H1s. An entry lists a skill only where its own
   bullets evidence it — the rule from the first build, unchanged. Every entry keeps at least
   what it had, mapped.
@@ -181,13 +162,13 @@ evidences only one half — the evidence decides, not the mapping.
 
 ---
 
-## 7. Levels: the rubric for this profile
+## 6. Levels: the rubric for this profile
 
 Written down because the first build's reviewer found two rows contradicting the rubric the
 implementer had in their head.
 
 - **Expert** — owned the skill across two or more roles or projects, and the CV shows an
-  outcome others depended on (a platform in production, an organisation scaled, a standard
+  outcome others depended on (a platform in production, an organization scaled, a standard
   set).
 - **Proficient** — hands-on across two or more roles or projects, or one role with an
   outcome the CV quantifies.
@@ -200,311 +181,159 @@ not make it right.
 
 ---
 
-## 8. Findings for the meta-model (deferred, recorded here)
+## 7. Order of work and verification
 
-To be carried into the meta-model's reference-instance spec §7 later, in one PR:
+1. `skills/README.md` becomes the index: `Skill | Group | SFIA | ESCO`, generated from the
+   appendix, so the folder is self-describing and the build is checkable against it.
+2. Write the 60 skill files from the comparison's third table, §3 form, no redrafting.
+3. Delete the 23 old files. Rewrite the profile's Skills table (§5, §6). Re-point every
+   experience's `skills:`. Add the ladder sentences.
+4. Checks, throwaway, from the shell: 60 files; every H1 unique and equal to its README index
+   row; every `group` one of the nine; every file has a `Reference:` line in the fixed form;
+   no SFIA code cited twice; no file under `skills/` contains a profile's name, an employer, or
+   a four-digit year (the person-neutral rule, mechanically); no `In practice` sentence starts
+   with "Someone", "They" or "Practitioners"; no definition starts with "The practice", "The
+   discipline" or "The ability"; every profile row and every experience `skills:` entry
+   resolves; ESCO URIs are `http://data.europa.eu/esco/skill/<uuid>`.
+5. Run `companygraph-validate`. Run `companygraph-export` and confirm counts.
+6. One PR, `skills-curated`, for the owner's review — levels are theirs to dispute.
+
+---
+
+## 8. Findings for the meta-model
+
+Recorded here; proposed to the meta-model as its own spec (a section per schema stating its
+purpose and the rules for writing an entity of that type). Nothing in core changes from this
+repository.
 
 - **Core, `skill-schema.md`** — `## In practice` is described as "what someone using this skill
   actually does", which every first-cut file read as *what this person did*. A skill many
-  profiles claim must be person-neutral; the schema should say so, and say where the person's
-  evidence lives instead (the profile's Skills table).
+  profiles claim must be person-neutral, and the schema should say so and say where the
+  person's evidence lives instead (the profile's Skills table). The rules that make a
+  neutral text — imperative without a subject, definition starting with the thing itself,
+  products in a closing clause — are writing rules, and the schema has nowhere to put them.
+- **Core, every schema** — the same gap generally: a schema says the *shape* (fields,
+  sections) and nothing about the *purpose* of the type or *how to write* one. The first
+  instance shows that shape alone does not produce usable entities.
 - **Core, `skill-schema.md`** — a skill wants a reference to an external vocabulary (a SFIA
   code, an ESCO URI). Carried as a fixed-form prose line here; the schema's `group` question
-  and this one are the same question — what a skill is anchored to — and should be answered
-  together.
+  and this one are the same question — what a skill is anchored to.
 - **Core, `proficiency-level-schema.md`** — a rung wants to say which levels of an external
   ladder it spans, for the same reason.
 - **Core, the type set** — products (PostgreSQL, Camunda, Claude Code) are not skills and have
   no type; they are prose in `Typical tools:` here. Whether they become a type is a pack
   question.
-- **Meta-model, `example/`** — its three skills are written the first-cut way (Java
-  Programming's In practice names "the person who reads the stack trace"). It is the example
-  adopters copy; it will need the same rewrite when core says so.
+- **Meta-model, `example/`** — its three skills are written the first-cut way. It is the
+  example adopters copy; it will need the same rewrite when core says so.
 
 ---
 
-## 9. Order of work and verification
+## Appendix — the 60 curated skills
 
-1. Owner registers the free SFIA user licence (outside this repository).
-2. The appendix below is the list. It is written into `skills/README.md` as an index table —
-   `Code | Skill | Group` — so the folder is self-describing and the build
-   is checkable against it.
-3. Write the 147 SFIA skill files and the 7 instance skill files, §3 form. ESCO matched per
-   skill through the ESCO search API at build time; `none` where nothing means the same thing.
-4. Delete the 23 old files. Rewrite the profile's Skills table (§6, §7). Re-point every
-   experience's `skills:`. Add the ladder sentences.
-5. Checks, throwaway, from the shell: 154 files; every H1 unique and equal to its README index
-   row; every `group` one of the 19 `Category · Subcategory` strings; every file has a
-   `Reference:` line in the fixed form whose CODE matches the index (or `none` for the seven);
-   no reference line's CODE appears twice; no file under `skills/` contains a profile's name,
-   an employer, or a four-digit year (the person-neutral rule, mechanically); every profile
-   row and every experience `skills:` entry resolves; ESCO URIs are `http://data.europa.eu/esco/skill/<uuid>`.
-6. Run `companygraph-validate`. Run `companygraph-export` and confirm counts.
-7. One PR, `skills-on-sfia`, for the owner's review — levels and definitions are theirs to
-   dispute.
-
----
-
-## Appendix — the 147 SFIA 9 skills, as they will be filed
-
-One file each, H1 = the name below, `group` = `<Category> · <Subcategory>`. Source: the SFIA 9
-A–Z and the full framework view, cross-checked code for code. The seven instance skills of §4
-are not in this table.
+One file each, H1 = the name below; texts as in the comparison's third table.
 
 
-**Strategy and architecture · Strategy and planning**
+**Leadership and strategy**
 
-| Code | Skill |
-| --- | --- |
-| `ITSP` | Strategic planning |
-| `ISCO` | Information systems coordination |
-| `IRMG` | Information management |
-| `STPL` | Enterprise and business architecture |
-| `ARCH` | Solution architecture |
-| `INOV` | Innovation management |
-| `EMRG` | Emerging technology monitoring |
-| `RSCH` | Formal research |
-| `SUST` | Sustainability |
+| Skill | SFIA 9 | ESCO |
+| --- | --- | --- |
+| IT strategy | none | [define technology strategy](http://data.europa.eu/esco/skill/248894d1-42dc-474f-af6e-2da52ac0c679) |
+| IT governance | GOVN — Governance | none |
+| AI strategy | none | none |
+| AI governance | none | none |
+| Engineering leadership | none | none |
+| Stakeholder management | RLMT — Stakeholder relationship management | [maintain relationships with stakeholders](http://data.europa.eu/esco/skill/999286f1-22d9-4950-9422-89bd45265a5f) |
+| Vendor management | SUPP — Supplier management | [maintain relationship with suppliers](http://data.europa.eu/esco/skill/3cd35f5d-ce6d-4f14-9a09-53d7a28d834c) |
+| Product management | PROD — Product management | [plan product management](http://data.europa.eu/esco/skill/29fb886c-6be0-4e93-9ea1-232881f2092a) |
+| Agile delivery | DEMG — Delivery management | [Agile project management](http://data.europa.eu/esco/skill/0a9acb6b-1139-4be9-b431-3a80a959f2f4) |
+| Programme management | none | none |
+| Change management | CIPM — Organisational change management | [apply change management](http://data.europa.eu/esco/skill/3c03ee71-4a23-448f-b79e-81fd75d27dca) |
 
-**Strategy and architecture · Financial and value management**
+**Architecture**
 
-| Code | Skill |
-| --- | --- |
-| `FMIT` | Financial management |
-| `INVA` | Investment appraisal |
-| `BENM` | Benefits management |
-| `BUDF` | Budgeting and forecasting |
-| `FIAN` | Financial analysis |
-| `COMG` | Cost management |
-| `DEMM` | Demand management |
-| `MEAS` | Measurement |
+| Skill | SFIA 9 | ESCO |
+| --- | --- | --- |
+| Enterprise architecture | STPL — Enterprise and business architecture | [design enterprise architecture](http://data.europa.eu/esco/skill/ee3c1d54-f46a-43c7-a0f9-0ba3648164d0) |
+| Business architecture | STPL — Enterprise and business architecture | none |
+| Solution architecture | ARCH — Solution architecture | none |
+| Software architecture | SWDN — Software design | [create software design](http://data.europa.eu/esco/skill/3bddfd7c-ab6d-40c2-883d-5e97fb7640ba) |
+| Domain-driven design | none | none |
+| Event-driven architecture | none | none |
+| Microservices architecture | none | none |
+| API design | none | [design application interfaces](http://data.europa.eu/esco/skill/b0096dc5-2e2d-4bc1-8172-05bf486c3968) |
+| Integration architecture | none | [ICT system integration](http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c) |
+| Multi-tenant SaaS architecture | none | [SaaS (service-oriented modelling)](http://data.europa.eu/esco/skill/eeca3780-8049-499f-a268-95a7ad26642c) |
+| Requirements engineering | REQM — Requirements definition and management | none |
 
-**Strategy and architecture · Security and privacy**
+**AI**
 
-| Code | Skill |
-| --- | --- |
-| `SCTY` | Information security |
-| `INAS` | Information assurance |
-| `PEDP` | Information and data compliance |
-| `VURE` | Vulnerability research |
-| `THIN` | Threat intelligence |
+| Skill | SFIA 9 | ESCO |
+| --- | --- | --- |
+| Agentic AI development | none | none |
+| LLM application development | none | none |
+| Retrieval-augmented generation | none | none |
+| AI tool integration (MCP) | none | none |
+| Machine learning | MLNG — Machine learning | [utilise machine learning](http://data.europa.eu/esco/skill/8369c2d6-c100-4cf6-bd83-9668d8678433) |
+| MLOps | none | none |
+| Responsible AI | AIDE — Artificial intelligence (AI) and data ethics | none |
 
-**Strategy and architecture · Governance, risk and compliance**
+**Cloud and platform**
 
-| Code | Skill |
-| --- | --- |
-| `GOVN` | Governance |
-| `BURM` | Risk management |
-| `AIDE` | Artificial intelligence (AI) and data ethics |
-| `AUDT` | Audit |
-| `QUMG` | Quality management |
-| `QUAS` | Quality assurance |
+| Skill | SFIA 9 | ESCO |
+| --- | --- | --- |
+| Cloud architecture | none | none |
+| Container orchestration (Kubernetes) | none | none |
+| Infrastructure as code | none | none |
+| CI/CD | DEPL — Deployment | none |
+| DevOps | none | [DevOps](http://data.europa.eu/esco/skill/f0de4973-0a70-4644-8fd4-3a97080476f4) |
+| Site reliability engineering | none | none |
+| Observability | none | [monitor system performance](http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd) |
+| Platform engineering | none | none |
+| Incident management | USUP — Incident management | [manage major incidents](http://data.europa.eu/esco/skill/8071881c-d652-46e7-9cf4-e06a7f1e57c7) |
+| FinOps | COMG — Cost management | none |
 
-**Strategy and architecture · Advice and guidance**
+**Data**
 
-| Code | Skill |
-| --- | --- |
-| `CNSL` | Consultancy |
-| `TECH` | Specialist advice |
-| `METL` | Methods and tools |
+| Skill | SFIA 9 | ESCO |
+| --- | --- | --- |
+| Database design | DBDS — Database design | [design database scheme](http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511) |
+| Database administration | DBAD — Database administration | [operate relational database management system](http://data.europa.eu/esco/skill/7369f779-4b71-4aab-8836-48b69c676eec) |
+| Data modeling | DTAN — Data modelling and design | [create data models](http://data.europa.eu/esco/skill/fbafa41f-cd05-4109-a649-8b44d306d779) |
+| Data engineering | DENG — Data engineering | [develop data processing applications](http://data.europa.eu/esco/skill/f9670490-8aa4-4540-b121-d440a8294aab) |
+| Event streaming | none | none |
+| Data governance | DATM — Data management | none |
 
-**Change and transformation · Change implementation**
+**Software development**
 
-| Code | Skill |
-| --- | --- |
-| `POMG` | Portfolio management |
-| `PGMG` | Programme management |
-| `PRMG` | Project management |
-| `PROF` | Portfolio, programme and project support |
-| `DEMG` | Delivery management |
+| Skill | SFIA 9 | ESCO |
+| --- | --- | --- |
+| Software engineering | PROG — Programming/software development | [ICT system programming](http://data.europa.eu/esco/skill/b105ec9b-0857-41d6-8d07-a83e58b73d90) |
+| Java | none | [Java (computer programming)](http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389) |
+| Frontend development (TypeScript, React) | none | [TypeScript](http://data.europa.eu/esco/skill/867137fb-ff1b-4ca3-99f3-cb6969aa2c68) |
+| Software testing | none | [levels of software testing](http://data.europa.eu/esco/skill/85f46538-ae70-498a-bfbc-b8ddafe96c7d) |
 
-**Change and transformation · Change analysis**
+**Modeling and process**
 
-| Code | Skill |
-| --- | --- |
-| `BUSA` | Business situation analysis |
-| `FEAS` | Feasibility assessment |
-| `REQM` | Requirements definition and management |
-| `BSMO` | Business modelling |
-| `BPTS` | User acceptance testing |
+| Skill | SFIA 9 | ESCO |
+| --- | --- | --- |
+| Software modeling (UML, SysML, C4) | none | [unified modelling language](http://data.europa.eu/esco/skill/7193cb6d-8334-494f-86e5-21e6d03a47c3) |
+| Business process modeling (BPMN, DMN) | BSMO — Business modelling | [business process modelling](http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb) |
+| Process orchestration | none | none |
+| Model-driven engineering | none | none |
+| Domain-specific language design | none | none |
 
-**Change and transformation · Change planning**
+**Security and compliance**
 
-| Code | Skill |
-| --- | --- |
-| `BPRE` | Business process improvement |
-| `OCDV` | Organisational capability development |
-| `ORDI` | Organisation design and implementation |
-| `CIPM` | Organisational change management |
-| `JADN` | Job analysis and design |
-| `OCEN` | Organisational change enablement |
+| Skill | SFIA 9 | ESCO |
+| --- | --- | --- |
+| Information security management | SCTY — Information security | [information security strategy](http://data.europa.eu/esco/skill/11eebd42-44ab-401d-8a2c-bdb9fc9beb50) |
+| Data protection (GDPR) | PEDP — Information and data compliance | [data protection](http://data.europa.eu/esco/skill/a4346013-a967-4a58-a533-6b32ad1364c5) |
+| Identity and access management | IAMT — Identity and access management | [maintain ICT identity management](http://data.europa.eu/esco/skill/ab49f767-296b-47d5-af56-0b4a69515b03) |
+| Application security | none | [web application security threats](http://data.europa.eu/esco/skill/902fb91c-3113-4004-9b4f-79aa86b638b7) |
 
-**Development and implementation · Systems development**
+**Advisory**
 
-| Code | Skill |
-| --- | --- |
-| `PROD` | Product management |
-| `DLMG` | Systems development management |
-| `SLEN` | Systems and software lifecycle engineering |
-| `DESN` | Systems design |
-| `SWDN` | Software design |
-| `NTDS` | Network design |
-| `IFDN` | Infrastructure design |
-| `HWDE` | Hardware design |
-| `PROG` | Programming/software development |
-| `SINT` | Systems integration and build |
-| `TEST` | Functional testing |
-| `NFTS` | Non-functional testing |
-| `PRTS` | Process testing |
-| `PORT` | Software configuration |
-| `RESD` | Real-time/embedded systems development |
-| `SFEN` | Safety engineering |
-| `SFAS` | Safety assessment |
-| `RFEN` | Radio frequency engineering |
-| `ADEV` | Animation development |
-
-**Development and implementation · Data and analytics**
-
-| Code | Skill |
-| --- | --- |
-| `DATM` | Data management |
-| `DTAN` | Data modelling and design |
-| `DBDS` | Database design |
-| `DAAN` | Data analytics |
-| `DATS` | Data science |
-| `MLNG` | Machine learning |
-| `BINT` | Business intelligence |
-| `DENG` | Data engineering |
-| `VISL` | Data visualisation |
-
-**Development and implementation · User centred design**
-
-| Code | Skill |
-| --- | --- |
-| `URCH` | User research |
-| `CEXP` | Customer experience |
-| `ACIN` | Accessibility and inclusion |
-| `UNAN` | User experience analysis |
-| `HCEV` | User experience design |
-| `USEV` | User experience evaluation |
-
-**Development and implementation · Content management**
-
-| Code | Skill |
-| --- | --- |
-| `INCA` | Content design and authoring |
-| `ICPM` | Content publishing |
-| `KNOW` | Knowledge management |
-| `GRDN` | Graphic design |
-
-**Development and implementation · Computational science**
-
-| Code | Skill |
-| --- | --- |
-| `SCMO` | Scientific modelling |
-| `NUAN` | Numerical analysis |
-| `HPCC` | High-performance computing |
-
-**Delivery and operation · Technology management**
-
-| Code | Skill |
-| --- | --- |
-| `ITMG` | Technology service management |
-| `ASUP` | Application support |
-| `ITOP` | Infrastructure operations |
-| `SYSP` | System software administration |
-| `NTAS` | Network support |
-| `HSIN` | Systems installation and removal |
-| `CFMG` | Configuration management |
-| `RELM` | Release management |
-| `DEPL` | Deployment |
-| `STMG` | Storage management |
-| `DCMA` | Facilities management |
-
-**Delivery and operation · Service management**
-
-| Code | Skill |
-| --- | --- |
-| `SLMO` | Service level management |
-| `SCMG` | Service catalogue management |
-| `AVMT` | Availability management |
-| `COPL` | Continuity management |
-| `CPMG` | Capacity management |
-| `USUP` | Incident management |
-| `PBMG` | Problem management |
-| `CHMG` | Change control |
-| `ASMG` | Asset management |
-| `SEAC` | Service acceptance |
-
-**Delivery and operation · Security services**
-
-| Code | Skill |
-| --- | --- |
-| `IAMT` | Identity and access management |
-| `SCAD` | Security operations |
-| `VUAS` | Vulnerability assessment |
-| `DGFS` | Digital forensics |
-| `CRIM` | Cybercrime investigation |
-| `OCOP` | Offensive cyber operations |
-| `PENT` | Penetration testing |
-
-**Delivery and operation · Data and records operations**
-
-| Code | Skill |
-| --- | --- |
-| `RMGT` | Records management |
-| `ANCC` | Analytical classification and coding |
-| `DBAD` | Database administration |
-
-**People and skills · People management**
-
-| Code | Skill |
-| --- | --- |
-| `PEMT` | Performance management |
-| `EEXP` | Employee experience |
-| `OFCL` | Organisational facilitation |
-| `PDSV` | Professional development |
-| `WFPL` | Workforce planning |
-| `RESC` | Resourcing |
-
-**People and skills · Skills management**
-
-| Code | Skill |
-| --- | --- |
-| `ETMG` | Learning and development management |
-| `TMCR` | Learning design and development |
-| `ETDL` | Learning delivery |
-| `LEDA` | Competency assessment |
-| `CSOP` | Certification scheme operation |
-| `TEAC` | Teaching |
-| `SUBF` | Subject formation |
-
-**Relationships and engagement · Stakeholder management**
-
-| Code | Skill |
-| --- | --- |
-| `SORC` | Sourcing |
-| `SUPP` | Supplier management |
-| `ITCM` | Contract management |
-| `RLMT` | Stakeholder relationship management |
-| `CSMG` | Customer service support |
-| `ADMN` | Business administration |
-
-**Relationships and engagement · Sales and bid management**
-
-| Code | Skill |
-| --- | --- |
-| `BIDM` | Bid/proposal management |
-| `SALE` | Selling |
-| `SSUP` | Sales support |
-
-**Relationships and engagement · Marketing**
-
-| Code | Skill |
-| --- | --- |
-| `MKTG` | Marketing management |
-| `MRCH` | Market research |
-| `BRMG` | Brand management |
-| `CELO` | Customer engagement and loyalty |
-| `MKCM` | Marketing campaign management |
-| `DIGM` | Digital marketing |
+| Skill | SFIA 9 | ESCO |
+| --- | --- | --- |
+| Knowledge management | KNOW — Knowledge management | [manage business knowledge](http://data.europa.eu/esco/skill/41bf7ede-fc84-4a57-8c89-b548d11b0ba1) |
+| Consulting | CNSL — Consultancy | [use consulting techniques](http://data.europa.eu/esco/skill/414332e4-8347-4771-b947-65bd3801a620) |
