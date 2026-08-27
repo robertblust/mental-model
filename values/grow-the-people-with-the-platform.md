@@ -8,8 +8,8 @@ source: Local
 
 ## In practice
 
-Scale the engineering organization on purpose — hiring, practices, ownership — at the pace
-the platform scales, so that every part of the system has someone who can be woken up for it
-and would know what to do.
+Follow: scale the engineering organization on purpose — hiring, practices, ownership — at the
+pace the platform scales, so that every part of the system has someone who can be woken up
+for it and would know what to do.
 
-Not this: five people who know everything and twenty who wait for them.
+Break: let five people know everything while twenty wait for them.
