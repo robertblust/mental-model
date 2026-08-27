@@ -5,11 +5,12 @@ group: Architecture
 
 # Event-driven architecture
 
-> Building systems that communicate through events rather than calls.
+> Designing systems where components communicate by producing and reacting to events rather than through direct calls.
 
 ## In practice
 
-Built LIKE MAGIC's platform around an event/data hub processing more than 89 million
-platform events a year, using Google Pub/Sub as the backbone. Works with Kafka, RabbitMQ
-and CQRS as the broader vocabulary for event-driven systems that communicate through
-events rather than direct calls.
+Identify the events that matter to a system and design the producers, consumers and channels
+that carry events between them. Make decisions about ordering, delivery guarantees and how
+components stay decoupled while still working together. Design for failure modes specific to
+asynchronous systems, such as duplicate or out-of-order events. Typical tools: Kafka, RabbitMQ,
+AWS EventBridge.

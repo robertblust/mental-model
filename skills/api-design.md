@@ -5,12 +5,11 @@ group: Architecture
 
 # API design
 
-> Designing the contract a system offers, first, and as a product.
+> Designing the interfaces that let software systems and services exchange data and functionality.
 
 ## In practice
 
-Defined LIKE MAGIC's product and platform strategy as API-first, with a managed public
-API, GraphQL and an event/data hub, evolving toward an MCP-server layer so AI agents
-consume the platform directly. At UBS, defined platform-independent data types, interfaces
-and service contracts, with automatic generation of XML-Schema (XSD) artifacts. Also works
-with REST, OpenAPI, AsyncAPI and JSON Schema as the broader contract-design toolkit.
+Define the resources, operations and data contracts an interface exposes and document them so
+consumers can integrate against them. Make decisions about versioning, error handling and
+consistency that keep the interface usable as it evolves. Review real usage patterns and
+feedback from consumers to refine the design over time. Typical tools: REST, GraphQL, OpenAPI.
