@@ -1,7 +1,7 @@
 # Skills
 
 One file per skill, written against `meta/skill-schema.md` and the rules in
-`docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. Sixty-nine skills, ours; ten groups.
+`docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. Seventy-two skills, ours; ten groups.
 
 | Skill | Group |
 | --- | --- |
@@ -12,6 +12,7 @@ One file per skill, written against `meta/skill-schema.md` and the rules in
 | Company vision and strategy | Strategy |
 | Product management | Strategy |
 | Solution selling | Strategy |
+| Product discovery | Strategy |
 | Engineering leadership | Leadership |
 | Mentoring and coaching | Leadership |
 | Change management | Leadership |
@@ -62,6 +63,7 @@ One file per skill, written against `meta/skill-schema.md` and the rules in
 | Java | Software development |
 | Frontend development (TypeScript, React) | Software development |
 | Software testing | Software development |
+| Open-source stewardship | Software development |
 | Software modeling (UML, SysML, C4) | Modeling and process |
 | Business process modeling (BPMN, DMN) | Modeling and process |
 | Process orchestration | Modeling and process |
@@ -74,3 +76,4 @@ One file per skill, written against `meta/skill-schema.md` and the rules in
 | Application security | Security and compliance |
 | Knowledge management | Advisory |
 | Consulting | Advisory |
+| Technical writing | Advisory |
