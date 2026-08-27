@@ -71,7 +71,7 @@
 | Business process modeling (BPMN) | BSMO Business modelling | [business process modelling](http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb) | ≈ Unified modeling language UML | ≈ Business Process Modeling Language (BPML) | yes | 1 | Business process modeling (BPMN, DMN) |
 | Process orchestration (Camunda) | ≈ BPRE Business process improvement |  |  | ≈ Business Process Management | yes | 2 | Process orchestration |
 | Model-driven engineering | ≈ SLEN Systems and software lifecycle engineering | ≈ software architecture models |  | ≈ Agile Model Driven Development | yes | 1 | Model-driven engineering |
-| Metamodeling and DSLs | ≈ SWDN Software design |  |  | ≈ Unified Modeling Language | yes |  |  |
+| Metamodeling and DSLs | ≈ SWDN Software design |  |  | ≈ Unified Modeling Language | yes |  | Domain-specific language design |
 | **Security & compliance** |  |  |  |  |  |  |  |
 | Information security management (ISO 27001) | SCTY Information security | [information security strategy](http://data.europa.eu/esco/skill/11eebd42-44ab-401d-8a2c-bdb9fc9beb50) | ≈ Public Safety and Security | [ISO/IEC 27001](https://lightcast.io/open-skills/skills/KS125DK6CWSVBTFV17WW) | yes | 1 | Information security management |
 | Data protection and privacy compliance (GDPR) | PEDP Information and data compliance | [data protection](http://data.europa.eu/esco/skill/a4346013-a967-4a58-a533-6b32ad1364c5) | ≈ Law and Government | [General Data Protection Regulation (GDPR)](https://lightcast.io/open-skills/skills/ES7BC9A4E8143A261631) | yes | 1 | Data protection (GDPR) |
