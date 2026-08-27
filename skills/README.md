@@ -1,7 +1,7 @@
 # Skills
 
 One file per skill, written against `meta/skill-schema.md` and the rules in
-`docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. Seventy-two skills, ours; ten groups.
+`docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. Seventy-three skills, ours; ten groups.
 
 | Skill | Group |
 | --- | --- |
@@ -70,6 +70,7 @@ One file per skill, written against `meta/skill-schema.md` and the rules in
 | Model-driven engineering | Modeling and process |
 | Domain-specific language design | Modeling and process |
 | Software process engineering | Modeling and process |
+| Spec-driven development | Modeling and process |
 | Information security management | Security and compliance |
 | Data protection (GDPR) | Security and compliance |
 | Identity and access management | Security and compliance |

@@ -32,6 +32,7 @@ location: Wallisellen, Switzerland
 | Product discovery | Competent | Put CompanyGraph and GuestGraph up for scrutiny in the open, each with a talk, a billing model and a stated outcome including a clean no (2026). |
 | Open-source stewardship | Competent | Published CompanyGraph and GuestGraph as open core under Apache 2.0, with conventions, specs, a release contract and a reference instance (2026). |
 | Technical writing | Competent | Wrote the CompanyGraph conventions, design specs and worked example, and this instance's own specification, for readers who were not in the room (2026). |
+| Spec-driven development | Competent | Built GuestGraph's identity-resolution engine and CompanyGraph — meta-model, tooling design and this reference instance — from written specifications, each reviewed before its plan and build (2026). |
 | Change management | Proficient | Replaced UBS's proprietary engineering process with a market-standard one as owner of its Analysis & Design discipline, coaching project teams into it (2006-2010), then drove LIKE MAGIC's productive rollout of AI assistants across plan, change and run. |
 | CI/CD | Proficient | Built the Swisscard integration rewrite on Jenkins and JUnit and set LIKE MAGIC's CI/CD standards on GitHub Actions. |
 | Cloud architecture | Expert | Owned LIKE MAGIC's production cloud platform on Google Cloud and created the Aroov and Stay KooooK backend architectures on the same stack. |
