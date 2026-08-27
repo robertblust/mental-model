@@ -4,7 +4,39 @@ source-id: 2022-likemagic
 start: 2022-01
 end: 2026-01
 organisation: LIKE MAGIC AG
-skills: [Agentic AI development, AI strategy, AI governance, API design, Business architecture, Multi-tenant SaaS architecture, Cloud architecture, Container orchestration (Kubernetes), Platform engineering, Database design, Integration architecture, Event-driven architecture, Identity and access management, Information security management, Data protection (GDPR), Infrastructure as code, CI/CD, DevOps, Java, Software engineering, Process orchestration, "Business process modeling (BPMN, DMN)", Engineering leadership, IT strategy, "Frontend development (TypeScript, React)", Event streaming, Knowledge management, Site reliability engineering, Incident management, Change management]
+skills:
+  - Agentic AI development
+  - AI strategy
+  - AI governance
+  - API design
+  - Business architecture
+  - Multi-tenant SaaS architecture
+  - Cloud architecture
+  - Container orchestration (Kubernetes)
+  - Platform engineering
+  - Database design
+  - Integration architecture
+  - Event-driven architecture
+  - Identity and access management
+  - Information security management
+  - Data protection (GDPR)
+  - Infrastructure as code
+  - CI/CD
+  - DevOps
+  - Java
+  - Software engineering
+  - Process orchestration
+  - "Business process modeling (BPMN
+  - DMN)"
+  - Engineering leadership
+  - IT strategy
+  - "Frontend development (TypeScript
+  - React)"
+  - Event streaming
+  - Knowledge management
+  - Site reliability engineering
+  - Incident management
+  - Change management
 ---
 
 # Co-Founder & Head of Technology

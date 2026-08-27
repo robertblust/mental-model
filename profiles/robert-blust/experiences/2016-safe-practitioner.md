@@ -3,7 +3,8 @@ source: rob-cv
 source-id: 2016-safe-practitioner
 start: 2016-01
 organisation: Scaled Agile, Inc.
-skills: [Agile delivery]
+skills:
+  - Agile delivery
 ---
 
 # Certified SAFe 4 Practitioner

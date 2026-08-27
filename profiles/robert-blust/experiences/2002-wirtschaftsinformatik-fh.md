@@ -4,7 +4,8 @@ source-id: 2002-wirtschaftsinformatik-fh
 start: 2002-01
 end: 2006-01
 organisation: AKAD University of Applied Sciences
-skills: [Model-driven engineering]
+skills:
+  - Model-driven engineering
 ---
 
 # Wirtschaftsinformatiker FH

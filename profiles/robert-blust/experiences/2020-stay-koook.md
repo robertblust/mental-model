@@ -4,7 +4,19 @@ source-id: stay-koook
 start: 2020-01
 end: 2022-01
 organisation: SV Group
-skills: [Cloud architecture, Container orchestration (Kubernetes), Process orchestration, "Business process modeling (BPMN, DMN)", Java, "Frontend development (TypeScript, React)", Database design, Integration architecture, Stakeholder management, Software architecture]
+skills:
+  - Cloud architecture
+  - Container orchestration (Kubernetes)
+  - Process orchestration
+  - "Business process modeling (BPMN
+  - DMN)"
+  - Java
+  - "Frontend development (TypeScript
+  - React)"
+  - Database design
+  - Integration architecture
+  - Stakeholder management
+  - Software architecture
 ---
 
 # Stay KooooK — Digital Hospitality Platform
