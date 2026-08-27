@@ -32,6 +32,14 @@ check. A commit with an unresolved reference is not made.
   what ended.
 - Claim only what the CV states. No invented metrics, dates, employers or partners.
 
+## Writing a skill
+
+The rules are in `docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. In short:
+the definition starts with the thing itself, never "The practice of"; `## In practice` is in
+the imperative without a subject and names no person, employer, date or number; products
+appear only in a closing `Typical tools:` clause. A skill is claimed in a profile's Skills
+table — that is where one person's level and evidence live, never in the skill file.
+
 ## Sync slot
 
 Instance-owned skills would live at `.claude/skills/mental-model-<source>/`. None exist: the

@@ -1,18 +1,15 @@
 ---
 source: Local
-group: Model-Driven Engineering
+group: Modeling and process
 ---
 
 # Model-driven engineering
 
-> Generating software from models that are the primary artifact.
+> Using formal models as the primary artifact of software development, generating code or other artifacts from them rather than writing them by hand.
 
 ## In practice
 
-Architected and built DynaRep at UBS, a repository-based modeling tool with Eclipse
-plugins and code generators that produced the COBOL and Java service implementations
-directly from the model (MDSD). Later built the group-wide Integration Architecture Tool
-Chain on EMF, CDO and Xtext, and drove capability modeling on EMF/Ecore, representing UBS
-in the Eclipse Modeling Platform Working Group. This is the same territory as MDA, DSLs,
-MOF, Enterprise Architect and code generation more broadly — models as the primary
-artifact, not documentation.
+Define metamodels or domain-specific languages that capture a problem in a structured, formal
+way. Build or configure generators that transform those models into code, configuration or
+documentation. Keep the models as the source of truth, regenerating downstream artifacts as the
+models change rather than editing generated output directly.

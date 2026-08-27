@@ -4,7 +4,11 @@ source-id: axa-health-platform
 start: 2017-01
 end: 2019-01
 organisation: AXA Health
-skills: [API design, Java platform engineering]
+skills:
+  - API design
+  - Java
+  - Integration architecture
+  - Frontend development (TypeScript, React)
 ---
 
 # AXA Health — Digital Insurance Platform

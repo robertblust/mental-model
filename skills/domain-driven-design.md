@@ -5,11 +5,11 @@ group: Architecture
 
 # Domain-driven design
 
-> Cutting a system along the seams of the business it serves.
+> Structuring software around the business domain's own concepts and language rather than around technical layers.
 
 ## In practice
 
-Built UBS's Integration Architecture Tool Chain around a canonical data model that
-bridged business domain knowledge and technical interfaces. Cutting a system along
-bounded contexts means finding where one business concept ends and another begins, before
-writing the interface between them.
+Work with domain experts to build a shared vocabulary and model of the business domain.
+Identify bounded contexts and use them to draw system and team boundaries that mirror the
+domain's natural divisions. Keep the code's structure and terminology aligned with that domain
+model as understanding deepens.

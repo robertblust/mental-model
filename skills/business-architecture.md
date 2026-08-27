@@ -5,11 +5,11 @@ group: Architecture
 
 # Business architecture
 
-> Modeling a business as concepts and capabilities before modeling its systems.
+> Modeling an organization's capabilities, value streams and operating structures independent of the technology that supports them.
 
 ## In practice
 
-Defined and executed LIKE MAGIC's product and platform strategy across 12 business
-domains, using L0 concepts and L1 capabilities as the modeling layer before touching
-systems. Drove the same capability-based modeling approach at UBS, on EMF/Ecore, as part
-of the group's business architecture.
+Identify and map the capabilities, value streams and organizational structures a business
+relies on. Use those models to assess where capabilities are duplicated, missing or misaligned
+with strategy. Connect the business view to technology and process decisions so investment
+targets the right capabilities.

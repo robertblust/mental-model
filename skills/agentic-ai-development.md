@@ -1,16 +1,15 @@
 ---
 source: Local
-group: AI & Agentic Development
+group: AI
 ---
 
 # Agentic AI development
 
-> Building software with and for AI agents, from coding assistants to agent-consumable platforms.
+> Building software systems in which an AI model plans and takes multi-step actions toward a goal, often using tools, with limited step-by-step human direction.
 
 ## In practice
 
-Works with a range of coding agents and AI assistants, including Claude Code, Claude
-Cowork, OpenAI Codex, Gemini, GitHub Copilot, OpenRouter, Hermes and NotebookLM. Built an
-internal AI marketplace on Claude, Claude Cowork, giving teams governed access to AI
-assistants and agents, grounded in the LIKE MAGIC Mental Model — a structured knowledge
-base that serves as the shared context layer for AI-assisted work.
+Design the goals, tools and guardrails an AI agent can use to complete a task autonomously.
+Build the loop that lets the agent plan, act, observe results and adjust its next action. Test
+for failure modes specific to autonomous behavior, such as getting stuck in loops or taking
+unintended actions, and add safeguards to contain them.

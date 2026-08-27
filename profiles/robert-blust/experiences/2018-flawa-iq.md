@@ -4,7 +4,9 @@ source-id: flawa-iq
 start: 2018-01
 end: 2019-01
 organisation: Flawa
-skills: [Enterprise integration]
+skills:
+  - Integration architecture
+  - Solution architecture
 ---
 
 # Flawa iQ — Networked First-Aid Kit

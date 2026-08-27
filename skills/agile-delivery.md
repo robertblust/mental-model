@@ -1,14 +1,15 @@
 ---
 source: Local
-group: Agile & Delivery
+group: Leadership and strategy
 ---
 
 # Agile delivery
 
-> Delivering in short cycles with the work visible.
+> Running iterative, incremental delivery using frameworks such as Scrum, Kanban or SAFe to organize team work.
 
 ## In practice
 
-Served as Scrum Master and technical lead in central UBS group initiatives, delivering in
-short cycles with the work visible to the team. Also trained as a Certified SAFe
-Practitioner, and works with Kanban as part of the same delivery toolkit.
+Facilitate the planning, review and retrospective events that structure iterative delivery.
+Manage a backlog, track flow or velocity and remove impediments that block the team. Adapt the
+chosen framework's ceremonies and artifacts to fit the team and the scale of the work. Typical
+tools: Jira, Azure DevOps, Trello.
