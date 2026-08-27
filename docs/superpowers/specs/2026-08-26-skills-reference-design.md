@@ -228,7 +228,7 @@ One file each, H1 = the name below; texts as in the comparison's third table.
 | Vendor management |
 | Product management |
 | Agile delivery |
-| Programme management |
+| Program management |
 | Change management |
 
 **Architecture**
