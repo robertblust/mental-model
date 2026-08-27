@@ -1,6 +1,6 @@
 ---
 source: Local
-group: Leadership and strategy
+group: Strategy
 ---
 
 # Company vision and strategy
