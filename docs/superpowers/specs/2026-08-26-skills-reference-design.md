@@ -54,7 +54,7 @@ skill file. Nothing is vendored, nothing is copied, nothing is referenced — th
 question disappears with the copying, and the model does not depend on a vocabulary it does
 not own.
 
-Sixty-nine skills (appendix). The rule for adding one: a capability a profile can claim with
+Seventy-two skills (appendix). The rule for adding one: a capability a profile can claim with
 evidence, at the grain a job posting would name it, distinct from its neighbours in what
 someone doing it does — not in which product they use.
 
@@ -215,7 +215,7 @@ repository.
 
 ---
 
-## Appendix — the 69 curated skills
+## Appendix — the 72 curated skills
 
 One file each, H1 = the name below; texts as in the comparison's third table.
 
@@ -231,6 +231,7 @@ One file each, H1 = the name below; texts as in the comparison's third table.
 | Company vision and strategy |
 | Product management |
 | Solution selling |
+| Product discovery |
 
 **Leadership**
 
@@ -311,6 +312,7 @@ One file each, H1 = the name below; texts as in the comparison's third table.
 | Java |
 | Frontend development (TypeScript, React) |
 | Software testing |
+| Open-source stewardship |
 
 **Modeling and process**
 
@@ -338,3 +340,4 @@ One file each, H1 = the name below; texts as in the comparison's third table.
 | --- |
 | Knowledge management |
 | Consulting |
+| Technical writing |

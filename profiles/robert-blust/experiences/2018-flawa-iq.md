@@ -1,8 +1,8 @@
 ---
 source: rob-cv
 source-id: flawa-iq
-start: 2018-01
-end: 2019-01
+start: 2018-07
+end: 2019-02
 organisation: Flawa
 skills:
   - Integration architecture
