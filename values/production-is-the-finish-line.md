@@ -8,8 +8,8 @@ source: Local
 
 ## In practice
 
-You own reliability, incident management and the audit trail as part of building the thing.
-You treat ISO 27001 and GDPR as design inputs, not a form to fill in after. You call it done
-when it runs for customers under real obligations, not when the demo works.
+I own reliability, incident management and the audit trail as part of building the thing. I
+treat ISO 27001 and GDPR as design inputs, not a form to fill in after. I call it done when it
+runs for customers under real obligations, not when the demo works.
 
-You never meet a launch date with a system nobody is on call for.
+I never meet a launch date with a system nobody is on call for.
