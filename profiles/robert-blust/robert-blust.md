@@ -15,21 +15,23 @@ location: Wallisellen, Switzerland
 | Skill | Level | Evidence |
 | --- | --- | --- |
 | Agentic AI development | Competent | Built LIKE MAGIC's internal AI marketplace on Claude (Claude Cowork), giving teams governed access to AI assistants and agents grounded in the Mental Model. |
-| Agile delivery | Proficient | Served as Scrum Master and technical lead on central UBS group initiatives (2010-2015) and earned the Certified SAFe 4 Practitioner credential (2016). |
+| Agile delivery | Competent | Served as Scrum Master and technical lead on central UBS group initiatives (2010-2015). |
 | AI governance | Competent | Governed LIKE MAGIC's AI use under a Human Oversight principle with data-privacy guardrails against training external LLMs on internal context. |
 | AI strategy | Competent | Authored and executed LIKE MAGIC's company-wide AI strategy, rolling out AI assistants across plan, change and run. |
 | API design | Expert | Established UBS's enterprise API management with generated XML-Schema and WSDL service contracts and led LIKE MAGIC's API-first strategy with a managed public API. |
 | Business architecture | Expert | Drove UBS's business architecture and capability modeling on EMF/Ecore for five years (2010-2015) then mapped LIKE MAGIC's 12 business domains as L0 concepts and L1 capabilities. |
 | Business process modeling (BPMN, DMN) | Proficient | Modeled the end-to-end guest journey from booking to check-out in Camunda BPMN at Stay KooooK and LIKE MAGIC. |
+| Change management | Proficient | Replaced UBS's proprietary engineering process with a market-standard one as owner of its Analysis & Design discipline, coaching project teams into it (2006-2010), then drove LIKE MAGIC's productive rollout of AI assistants across plan, change and run. |
 | CI/CD | Proficient | Built the Swisscard integration rewrite on Jenkins and JUnit and set LIKE MAGIC's CI/CD standards on GitHub Actions. |
 | Cloud architecture | Expert | Owned LIKE MAGIC's production cloud platform on Google Cloud and created the Aroov and Stay KooooK backend architectures on the same stack. |
 | Consulting | Expert | Created technical concepts, proposals and pitches as 3AP's CTO (2015-2022), delivering award-winning client platforms in insurance, real estate, IoT and hospitality. |
 | Container orchestration (Kubernetes) | Proficient | Ran the Aroov, Stay KooooK and LIKE MAGIC backends on Google Kubernetes Engine. |
 | Data governance | Competent | Built Credit Suisse's Master Data Repository so data stewards could be assigned and the golden-source distribution across the core systems mapped. |
 | Data modeling | Expert | Built UBS's canonical data model for enterprise data management and presented "Eclipse Data Modeling at an Enterprise Scale" at Eclipse Day Florence 2012. |
-| Data protection (GDPR) | Competent | Ran LIKE MAGIC's GDPR compliance including the guardrail that no internal context trains external LLMs. |
+| Data protection (GDPR) | Competent | Ran LIKE MAGIC's GDPR compliance including the guardrail that no internal context trained external LLMs. |
 | Database design | Proficient | Worked with Oracle in UBS's DynaRep repository, MSSQL in the Swisscard rewrite and PostgreSQL with R2DBC/jOOQ across the LIKE MAGIC platform. |
 | DevOps | Expert | Established software-delivery processes and sustainable DevOps practices at 3AP and built LIKE MAGIC's production platform to DevOps standards on Google Cloud. |
+| Domain-specific language design | Proficient | Built DynaRep's repository-based modeling tool and its code generators for UBS mainframe service interfaces (2001-2006) and defined data types, interfaces and service contracts platform-independently on EMF and Xtext (2010-2015). |
 | Engineering leadership | Expert | Grew LIKE MAGIC engineering from 5 to 25 and scaled 3AP to about 70 people as co-founder of both. |
 | Enterprise architecture | Expert | Architected UBS's group-wide Integration Architecture Tool Chain around a canonical data model with a central API and interface-portfolio repository (2010-2015). |
 | Event streaming | Proficient | Ran LIKE MAGIC's event and data hub on Google Cloud Pub/Sub, processing 89M+ platform events annually. |
