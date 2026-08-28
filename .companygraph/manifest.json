@@ -1,20 +1,20 @@
 {
   "tooling": "0.0.0",
   "core": {
-    "version": "0.1.0",
+    "version": "0.3.1",
     "shape": 1,
-    "source": "fetched:v0.1.0"
+    "source": "fetched:v0.3.1"
   },
   "schemas": "meta",
   "packs": [],
   "files": {
-    "meta/CONVENTIONS.md": "sha256:23c6f88c602b70478d498833e634e0c5aeeba54bfbe17acd9ea6156c377b46c7",
+    "meta/CONVENTIONS.md": "sha256:c96f810486895bc9d39b2d5cac17b61c2cfd30c51f596cbd1fc32850c2977160",
     "meta/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-    "meta/experience-schema.md": "sha256:b122d4533e9161244cc86a795e04585f695fd42cd6e4d271c880a429664d7ae9",
-    "meta/proficiency-level-schema.md": "sha256:fdca785517beaac2f7c58a99582c166678f8611c1e7e80a09af9596e509810a9",
-    "meta/profile-schema.md": "sha256:a7c6aabb720daae12c777ab8fffcf1e13f0273abbab425aaa443429fa7cf6f39",
-    "meta/skill-schema.md": "sha256:dd497f779e3644d1256a1c725ba1eb74cf7e993f4bd1ef87da0171cb53a2ec78",
-    "meta/source-schema.md": "sha256:9108bede5265efd3a82016b3729ce663f50496952c125379289ce0215ae0582f",
-    "meta/value-schema.md": "sha256:8a3973e1ec88bcae979dd71f2d3dde7dda6548cfa934467c076deeed7ef7b2b2"
+    "meta/experience-schema.md": "sha256:9744c5ad5be3996901042bf147a8c27c79f1481316d10050c0c66ae76f314861",
+    "meta/proficiency-level-schema.md": "sha256:e68a48bf5da4fb2aa3799803b9fbe7fbbd92a2cbd91db4f2d334eb4d4f94b45a",
+    "meta/profile-schema.md": "sha256:5adcebf96cc7eca69e181f48f98efc4353035b665e094b3639e2c0c490bc2c26",
+    "meta/skill-schema.md": "sha256:d58baaa0b0084cd03485b3d875e0a05c42675ba565789070a84c92f4400afe53",
+    "meta/source-schema.md": "sha256:0f3d13960398b9b7cf3df8d1bd4823c5ea52a9d8cc59163ac053281c15eb3373",
+    "meta/value-schema.md": "sha256:09fe897d93ba2d4ac1634718c7441f08503b4839590f9300e92cee90fcc767ef"
   }
 }
