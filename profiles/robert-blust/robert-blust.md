@@ -13,10 +13,10 @@ location: Wallisellen, Switzerland
 
 | Skill | Level | Evidence |
 | --- | --- | --- |
-| Agentic AI development | Competent | Built LIKE MAGIC's internal AI marketplace on Claude (Claude Cowork), giving teams governed access to AI assistants and agents grounded in the Mental Model. |
+| Agentic AI development | Expert | Built CompanyGraph and GuestGraph agent-first under written conventions that encode the failure modes — an unresolvable reference is an error rather than a warning, so an agent cannot invent an entity; every validation pass must name what it did not check, so a clean report is never mistaken for a complete one. Earlier built LIKE MAGIC's internal AI marketplace on Claude (Claude Cowork), grounded in the Mental Model. |
 | Agile delivery | Competent | Served as Scrum Master and technical lead on central UBS group initiatives (2010-2015). |
-| AI governance | Competent | Governed LIKE MAGIC's AI use under a Human Oversight principle with data-privacy guardrails against training external LLMs on internal context. |
-| AI strategy | Competent | Authored and executed LIKE MAGIC's company-wide AI strategy, rolling out AI assistants across plan, change and run. |
+| AI governance | Expert | Defined LIKE MAGIC's AI governance as Head of Technology — a Human Oversight principle, data-privacy guardrails against training external LLMs on internal context, multi-provider tooling and cost governance — and held the company to it across plan, change and run. |
+| AI strategy | Expert | Authored and executed LIKE MAGIC's company-wide AI strategy, from the internal rollout of assistants across plan, change and run to shipped customer-facing AI: architected the integration of d3x, ailean and onsai into the platform's staff solution. |
 | API design | Expert | Established UBS's enterprise API management with generated XML-Schema and WSDL service contracts and led LIKE MAGIC's API-first strategy with a managed public API. |
 | Business architecture | Expert | Drove UBS's business architecture and capability modeling on EMF/Ecore for five years (2010-2015) then mapped LIKE MAGIC's 12 business domains as L0 concepts and L1 capabilities. |
 | Business process modeling (BPMN, DMN) | Proficient | Modeled the end-to-end guest journey from booking to check-out in Camunda BPMN at Stay KooooK and LIKE MAGIC. |
@@ -38,6 +38,8 @@ location: Wallisellen, Switzerland
 | Cloud architecture | Expert | Owned LIKE MAGIC's production cloud platform on Google Cloud and created the Aroov and Stay KooooK backend architectures on the same stack. |
 | Consulting | Competent | Created technical concepts, proposals and pitches as 3AP's CTO (2015-2022), delivering award-winning client platforms in insurance, real estate, IoT and hospitality. |
 | Container orchestration (Kubernetes) | Proficient | Ran the Aroov, Stay KooooK and LIKE MAGIC backends on Google Kubernetes Engine. |
+| Context engineering | Expert | Built the LIKE MAGIC Mental Model as the organization's shared context layer and shipped it as a skill into the company's Claude environment, then generalized the approach into CompanyGraph — a published meta-model for describing a company as a graph both people and agents can read (2022-2026). |
+| Conversational AI | Proficient | Architected the integration of d3x, ailean and onsai into LIKE MAGIC's staff solution — unified multi-channel guest messaging with AI agents answering, plus guest insights and staff handover. |
 | Data governance | Competent | Built Credit Suisse's Master Data Repository so data stewards could be assigned and the golden-source distribution across the core systems mapped. |
 | Data modeling | Competent | Built UBS's canonical data model for enterprise data management (2010-2015). |
 | Data protection (GDPR) | Competent | Ran LIKE MAGIC's GDPR compliance including the guardrail that no internal context trained external LLMs. |
@@ -53,7 +55,7 @@ location: Wallisellen, Switzerland
 | Incident management | Competent | Owned incident management for LIKE MAGIC's production cloud platform. |
 | Information security management | Competent | Built LIKE MAGIC's information-security management toward ISO 27001 (in progress), GDPR compliance and zero-trust API boundaries. |
 | Infrastructure as code | Competent | Built LIKE MAGIC's production platform as Infrastructure-as-Code on Google Cloud. |
-| Integration architecture | Expert | Owned AXA Health's complete integration architecture into Adcubum Syrius and integrated 3 PMS (Mews, Apaleo, Oracle OHIP) plus 15+ smart-lock systems at LIKE MAGIC. |
+| Integration architecture | Expert | Owned AXA Health's complete integration architecture into Adcubum Syrius and integrated 3 PMS (Mews, Apaleo, Oracle OHIP), 15+ smart-lock systems and 3 AI communication vendors (d3x, ailean, onsai) at LIKE MAGIC. |
 | IT governance | Expert | Ran delivery governance and technology-stack approvals at 3AP and set the role-based review process for UBS's central interface-portfolio repository. |
 | IT strategy | Expert | Owned technology strategy and reference architecture as 3AP's CTO (2015-2022) then defined LIKE MAGIC's product and platform strategy across 12 business domains. |
 | Java | Expert | Built Java systems from UBS's DynaRep repository (2001-2006) to Spring Boot and WebFlux platforms at Swisscard, AXA, Aroov, Stay KooooK and LIKE MAGIC. |
