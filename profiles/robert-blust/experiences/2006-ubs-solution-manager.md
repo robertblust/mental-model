@@ -19,6 +19,6 @@ skills:
 
 ## Achievements
 
-- Owned the Analysis & Design discipline in the Rational Unified Process (RUP) rollout at UBS Wealth Management & Swiss Banking (WM&SB), replacing the proprietary engineering process with a market-standard one.
+- Owned the Analysis & Design discipline in the Rational Unified Process (RUP) rollout at UBS Wealth Management & Swiss Banking (WM&SB), replacing the proprietary engineering process with a market-standard one that the division's project teams then worked to.
 - Developed methodology and guidance for service and data modeling (Rational Method Composer, UML).
 - Coached project teams in applying the methodology and built internal communities of practice.
