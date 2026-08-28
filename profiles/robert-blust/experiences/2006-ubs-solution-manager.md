@@ -15,10 +15,10 @@ skills:
 
 # Solution Manager, Software Engineering — Analysis & Design
 
-> Owned the Analysis & Design discipline in UBS's group-wide RUP rollout and developed methodology for service and data modeling.
+> Owned the Analysis & Design discipline in the RUP rollout at UBS Wealth Management & Swiss Banking and developed methodology for service and data modeling.
 
 ## Achievements
 
-- Owned the Analysis & Design discipline in UBS's group-wide Rational Unified Process (RUP) rollout, replacing the proprietary engineering process with a market-standard one.
+- Owned the Analysis & Design discipline in the Rational Unified Process (RUP) rollout at UBS Wealth Management & Swiss Banking (WM&SB), replacing the proprietary engineering process with a market-standard one.
 - Developed methodology and guidance for service and data modeling (Rational Method Composer, UML).
 - Coached project teams in applying the methodology and built internal communities of practice.
