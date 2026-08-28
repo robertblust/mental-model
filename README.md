@@ -11,7 +11,7 @@ meta-model's
 
 ```
 .companygraph/manifest.json    which core this vendors, and a hash per vendored file
-meta/                          core 0.1.0: CONVENTIONS.md, LICENSE, one schema per type — never edited here
+meta/                          core 0.3.1: CONVENTIONS.md, LICENSE, one schema per type — never edited here
 sources/                       where each page's facts are mastered
 proficiency-levels/            the four-rung ladder every skill claim uses
 skills/                        one file per capability
