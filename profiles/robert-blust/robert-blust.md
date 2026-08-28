@@ -50,6 +50,7 @@ location: Wallisellen, Switzerland
 | Enterprise architecture | Competent | Architected the Integration Architecture Tool Chain for UBS Wealth Management & Swiss Banking around a canonical data model with a central API and interface-portfolio repository (2010-2015). |
 | Event streaming | Proficient | Ran LIKE MAGIC's event and data hub on Google Cloud Pub/Sub, processing 89M+ platform events annually. |
 | Event-driven architecture | Expert | Designed Aroov's event-driven backend on Google Cloud Pub/Sub and built the LIKE MAGIC platform on Pub/Sub as its event hub. |
+| FinOps | Proficient | Budget holder for LIKE MAGIC's cloud platform and AI tooling. Forecast and governed spend across dev, test and production, with consumption KPIs defined in the Mental Model and weekly actuals generated from the Google Cloud billing API, routed to owners by role when a threshold was breached. Held platform cost flat as volume grew to 89M+ events annually, through continuous database and code optimization. |
 | Frontend development (TypeScript, React) | Proficient | Owned Stay KooooK's front-to-back architecture including its React frontend and shipped LIKE MAGIC's React/TypeScript/MUI frontend. |
 | Identity and access management | Competent | Built zero-trust API boundaries into the LIKE MAGIC platform. |
 | Incident management | Competent | Owned incident management for LIKE MAGIC's production cloud platform. |
@@ -64,12 +65,13 @@ location: Wallisellen, Switzerland
 | Multi-tenant SaaS architecture | Proficient | Built and scaled LIKE MAGIC's multi-tenant hospitality SaaS platform serving 90+ customers, 430+ properties and 16,000+ units across the DACH region. |
 | Platform engineering | Expert | Architected the SDLC toolchain for UBS Wealth Management & Swiss Banking (Jira, Confluence, GitHub Enterprise, Maven, Jenkins, Sonar) and owned the LIKE MAGIC platform serving 90+ customers. |
 | Process orchestration | Expert | Owned the Camunda (Zeebe) orchestration of the guest journey at Stay KooooK and LIKE MAGIC, the subject of a published Camunda case study citing a 95% self-check-in rate and 7,000 process instances per month. |
-| Site reliability engineering | Competent | Owned site reliability engineering and performance for LIKE MAGIC's production cloud platform. |
+| Site reliability engineering | Proficient | Owned site reliability engineering, incident management and performance for LIKE MAGIC's production cloud platform across three environments, with automated weekly reporting against defined thresholds. |
 | Software architecture | Expert | Owned Stay KooooK's complete front-to-back architecture on reactive Spring Boot WebFlux and took software-architect responsibility for UBS's DynaRep platform (2001-2006). |
 | Software engineering | Expert | Built production systems across 25 years, from UBS's DynaRep repository (2001-2006) to LIKE MAGIC's Spring Boot WebFlux platform (2022-2026). |
 | Software modeling (UML, SysML, C4) | Competent | Owned the Analysis & Design discipline in the Rational Unified Process rollout at UBS Wealth Management & Swiss Banking and developed its service-modeling methodology in Rational Method Composer and UML (2006-2010). |
 | Solution architecture | Expert | Led 3AP's client bids on solution architecture including public tenders under Swiss procurement law and designed Flawa iQ's RFID and LoRaWAN solution, delivered as 10 working prototypes. |
 | Stakeholder management | Proficient | Advised clients including Credit Suisse, Swisscard, AXA and Mobiliar as 3AP's CTO and presented the solution architecture in the winning Aroov and Stay KooooK pitches. |
+| Vendor management | Proficient | Ran LIKE MAGIC's AI and automation tooling as a managed portfolio — Claude Code per-seat team licences, multi-provider tooling across Claude, Gemini and Copilot, and the build-versus-buy decision to self-host n8n on the platform's own Kubernetes rather than take the hosted service. |
 
 ## Summary
 

@@ -35,6 +35,8 @@ skills:
   - Event streaming
   - Knowledge management
   - Site reliability engineering
+  - FinOps
+  - Vendor management
   - Incident management
   - Change management
   - Mentoring and coaching
@@ -59,6 +61,8 @@ skills:
 - Built the LIKE MAGIC Mental Model — a structured organizational knowledge base (roles, processes, features, strategies, architecture decisions) that serves as the shared context layer for AI-assisted operations.
 - Built an internal AI marketplace on Claude (Claude Cowork) — giving teams governed access to AI assistants and agents, grounded in the Mental Model.
 - Architected the integration of AI communication vendors (d3x, ailean and onsai) into the staff solution — unified multi-channel guest messaging with AI agents answering, guest insights and staff collaboration.
+- Budget holder for the cloud platform and AI tooling — forecast and governed spend across dev, test and production, with consumption KPIs defined in the Mental Model and weekly actuals generated automatically from the Google Cloud billing API, routed to owners by role when a threshold was breached.
+- Held platform cost flat as volume grew to 89M+ events annually, through continuous database and code optimization.
 - Built information-security management: ISO 27001 (in progress), GDPR compliance and zero-trust API boundaries.
 - Tech stack: Java, Spring Boot / WebFlux, Spring Cloud GCP, PostgreSQL, R2DBC/jOOQ, Google Pub/Sub, GraphQL, React / TypeScript / MUI, Kubernetes (GKE), Camunda BPMN, GitHub Actions.
 
