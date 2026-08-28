@@ -1,8 +1,8 @@
 ---
 source: rob-cv
 source-id: credit-suisse-mdr
-start: 2015-01
-end: 2016-01
+start: 2016-02
+end: 2016-09
 organisation: Credit Suisse
 skills:
   - Model-driven engineering
