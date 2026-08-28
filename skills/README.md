@@ -1,6 +1,6 @@
 # Skills
 
-One file per skill, written against the skill schema and its writing rules.
+One file per skill, written against `meta/skill-schema.md` and its writing rules.
 Seventy-five skills, ours; ten groups.
 
 | Skill | Group |

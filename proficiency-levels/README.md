@@ -1,3 +1,3 @@
 # Proficiency levels
 
-One file per rung, written against the proficiency-level schema.
+One file per rung, written against `meta/proficiency-level-schema.md`.
