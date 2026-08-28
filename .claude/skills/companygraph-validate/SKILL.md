@@ -20,8 +20,8 @@ mechanical rules it would cover are done here by hand as well.
    with a `Section | Required | Description` table; every `Table.` section has a column table
    introduced by `` `## X` is a table with these columns: `` and vice versa; no `:---`.
 4. List the root folders. Every schema's File Location folder exists (R7); every root folder
-   is one a schema names or `meta/`, `.companygraph/`, `.claude/`, `export/`, `dist/` (R6, R7).
-   No schema file sits inside a type folder (R9).
+   is one a schema names or `meta/`, `.companygraph/`, `.claude/`, `docs/`, `export/`, `dist/`
+   (R6, R7). No schema file sits inside a type folder (R9).
 5. For every entity file (every `.md` in a type folder except `README.md`): exactly one H1
    (R1, R2); filename is the kebab-case of the H1, or for an experience the start year plus a
    slug; a folder-form entity's own file is named for its folder (R6).
