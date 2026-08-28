@@ -1,3 +1,3 @@
 # Values
 
-One file per value, written against `meta/value-schema.md`.
+One file per value, written against the value schema.
