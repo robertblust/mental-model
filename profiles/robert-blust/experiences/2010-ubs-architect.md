@@ -33,3 +33,9 @@ skills:
 - Scrum Master and technical lead in central group initiatives.
 - Co-led the Java Chief Programmer community of UBS Wealth Management & Swiss Banking (WM&SB) for five years.
 - Spoke at UBS-internal brown-bag sessions on modeling, toolchain and architecture.
+
+## Ending
+
+Left in March 2015 after 16 years and four roles — engineering, methodology, then architecture.
+Enough to back myself as a founder, and probably a little naive about what founding takes; I
+wanted to find out. Co-founded 3AP the month after.
