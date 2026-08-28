@@ -1,7 +1,7 @@
 # Skills
 
 One file per skill, written against `meta/skill-schema.md` and the rules in
-`docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. Seventy-three skills, ours; ten groups.
+`docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. Seventy-five skills, ours; ten groups.
 
 | Skill | Group |
 | --- | --- |
@@ -43,6 +43,8 @@ One file per skill, written against `meta/skill-schema.md` and the rules in
 | Machine learning | AI |
 | MLOps | AI |
 | Responsible AI | AI |
+| Context engineering | AI |
+| Conversational AI | AI |
 | Cloud architecture | Cloud and platform |
 | Container orchestration (Kubernetes) | Cloud and platform |
 | Infrastructure as code | Cloud and platform |
