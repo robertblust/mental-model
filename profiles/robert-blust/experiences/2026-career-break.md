@@ -8,6 +8,7 @@ skills:
   - Company vision and strategy
   - Agentic AI development
   - Knowledge management
+  - Context engineering
   - Public speaking
   - Solution selling
   - Spec-driven development

@@ -6,6 +6,8 @@ end: 2026-05
 organisation: LIKE MAGIC AG
 skills:
   - Agentic AI development
+  - Context engineering
+  - Conversational AI
   - AI strategy
   - AI governance
   - API design
@@ -56,5 +58,6 @@ skills:
 - Owned the production cloud platform (site reliability engineering, incident management, performance), built as Infrastructure-as-Code on Google Cloud with DevOps and CI/CD standards.
 - Built the LIKE MAGIC Mental Model — a structured organizational knowledge base (roles, processes, features, strategies, architecture decisions) that serves as the shared context layer for AI-assisted operations.
 - Built an internal AI marketplace on Claude (Claude Cowork) — giving teams governed access to AI assistants and agents, grounded in the Mental Model.
+- Architected the integration of AI communication vendors (d3x, ailean and onsai) into the staff solution — unified multi-channel guest messaging with AI agents answering, guest insights and staff collaboration.
 - Built information-security management: ISO 27001 (in progress), GDPR compliance and zero-trust API boundaries.
 - Tech stack: Java, Spring Boot / WebFlux, Spring Cloud GCP, PostgreSQL, R2DBC/jOOQ, Google Pub/Sub, GraphQL, React / TypeScript / MUI, Kubernetes (GKE), Camunda BPMN, GitHub Actions.
