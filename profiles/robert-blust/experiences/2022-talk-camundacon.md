@@ -2,6 +2,7 @@
 source: rob-cv
 source-id: talk-camundacon-2022
 start: 2022-01
+end: 2022-01
 organisation: Camunda
 skills:
   - Process orchestration
@@ -14,4 +15,4 @@ skills:
 
 ## Achievements
 
-- Spoke at CamundaCon 2022 (Berlin) on orchestrating the end-to-end guest journey with Camunda for the SV Group hospitality platform (Stay KooooK / LIKE MAGIC).
+- Spoke at CamundaCon 2022 (Berlin) on orchestrating the end-to-end guest journey with Camunda for the SV Group hospitality platform (Stay KooooK / LIKE MAGIC). Recording: https://page.camunda.com/camundacon-2022-on-demand

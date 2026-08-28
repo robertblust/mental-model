@@ -1,7 +1,8 @@
 ---
 source: rob-cv
 source-id: swisscom-agile-cockpit
-start: 2015-01
+start: 2015-09
+end: 2015-11
 organisation: Swisscom
 skills:
   - Integration architecture

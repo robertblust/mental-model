@@ -1,7 +1,8 @@
 ---
 source: rob-cv
 source-id: swisscard-data-integration
-start: 2015-01
+start: 2015-12
+end: 2016-09
 organisation: Swisscard
 skills:
   - API design
