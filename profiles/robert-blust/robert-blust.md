@@ -6,7 +6,7 @@ location: Wallisellen, Switzerland
 
 # Robert Blust
 
-> Technology executive, head of technology and business architect — 25 years of building digital platforms and the organizations that run them.
+> Technology executive and business architect — 25 years building platforms and products from explicit models, now modeling the company itself so people and AI agents can both work inside it.
 
 ## Skills
 
@@ -73,4 +73,4 @@ location: Wallisellen, Switzerland
 
 ## Summary
 
-Technology executive with over 25 years building digital platforms, scaling engineering organizations and delivering complex transformation. Most recently co-founder and Head of Technology at LIKE MAGIC AG; previously CTO of 3AP AG, after 16 years at UBS AG. I turn business architecture, model-driven design, platform strategy, AI governance and software delivery into scalable products and high-performing teams. I believe AI is reshaping how we build software — moving the real constraint from "build fast" to "decide well" — and I bring business-critical platforms reliably into production under solid security and compliance standards (ISO 27001, GDPR / DSGVO).
+Technology executive with over 25 years building digital platforms, scaling engineering organizations and delivering complex transformation. Most recently co-founder and Head of Technology at LIKE MAGIC AG; previously CTO of 3AP AG, after 16 years at UBS AG. One thread runs through all of it: I build from explicit models rather than beside them — service contracts and a canonical data model at UBS, domains and capabilities at LIKE MAGIC. The newest turn is applying that to the company itself: LIKE MAGIC's Mental Model became the shared context layer for AI-assisted operations, and is now published as CompanyGraph. I believe AI is reshaping how we build software — moving the real constraint from "build fast" to "decide well" — and I bring business-critical platforms reliably into production under solid security and compliance standards (ISO 27001, GDPR / DSGVO).
