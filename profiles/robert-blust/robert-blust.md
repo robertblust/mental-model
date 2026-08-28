@@ -18,7 +18,7 @@ location: Wallisellen, Switzerland
 | AI governance | Expert | Defined LIKE MAGIC's AI governance as Head of Technology — a Human Oversight principle, data-privacy guardrails against training external LLMs on internal context, multi-provider tooling and cost governance — and held the company to it across plan, change and run. |
 | AI strategy | Expert | Authored and executed LIKE MAGIC's company-wide AI strategy, from the internal rollout of assistants across plan, change and run to shipped customer-facing AI: architected the integration of d3x, ailean and onsai into the platform's staff solution. |
 | API design | Expert | Established UBS's enterprise API management with generated XML-Schema and WSDL service contracts and led LIKE MAGIC's API-first strategy with a managed public API. |
-| Business architecture | Expert | Drove UBS's business architecture and capability modeling on EMF/Ecore for five years (2010-2015) then mapped LIKE MAGIC's 12 business domains as L0 concepts and L1 capabilities. |
+| Business architecture | Expert | Drove business architecture and capability modeling on EMF/Ecore at UBS Wealth Management & Swiss Banking for five years (2010-2015) then mapped LIKE MAGIC's 12 business domains as L0 concepts and L1 capabilities. |
 | Business process modeling (BPMN, DMN) | Proficient | Modeled the end-to-end guest journey from booking to check-out in Camunda BPMN at Stay KooooK and LIKE MAGIC. |
 | Mentoring and coaching | Proficient | Coached UBS project teams in the Analysis & Design methodology and built internal communities of practice (2006-2010), grew 3AP's engineering organization as it scaled to about 70 people, and developed the leaders of LIKE MAGIC's engineering organization as it grew from 5 to 25. |
 | Company vision and strategy | Expert | Co-founded 3AP and, on its management team, scaled it from 5 to about 70 people; co-founded LIKE MAGIC and built the platform behind 90+ customers and 16,000+ units. |
@@ -26,7 +26,7 @@ location: Wallisellen, Switzerland
 | Community building | Expert | Built internal communities of practice at UBS (2006-2010), co-led the Java Chief Programmer community of UBS Wealth Management & Swiss Banking for five years (2010-2015), represented UBS in the Eclipse Modeling Platform Working Group and served on the board of JUG Switzerland (2011-2014). |
 | Solution selling | Proficient | Created technical concepts, proposals and pitches and led client bids including public tenders at 3AP, and presented the solution architecture in Aroov's winning pitch. |
 | Organization design | Proficient | Scaled 3AP to about 70 people including a near-shore team in Serbia, and designed LIKE MAGIC's engineering organization as it grew from 5 to 25. |
-| Software process engineering | Expert | Owned the Analysis & Design discipline in UBS's group-wide RUP rollout, replacing the proprietary process with a market standard (2006-2010), then architected the group-wide SDLC toolchain (2010-2015). |
+| Software process engineering | Expert | Owned the Analysis & Design discipline in the Rational Unified Process rollout at UBS Wealth Management & Swiss Banking, replacing the proprietary process with a market standard (2006-2010), then architected the division's SDLC toolchain (2010-2015). |
 | Legacy modernization | Proficient | Architected DynaRep, generating COBOL and Java implementations for UBS mainframe service interfaces (2001-2006), and replaced Swisscard's proprietary SOAP data-integration layer (2015). |
 | IoT architecture | Competent | Designed Flawa iQ's sensing and LoRaWAN connectivity and the backend ingesting device telemetry into the ERP (2018-2019). |
 | Product discovery | Competent | Put CompanyGraph and GuestGraph up for scrutiny in the open, each with a talk, a billing model and a stated outcome including a clean no (2026). |
@@ -47,7 +47,7 @@ location: Wallisellen, Switzerland
 | DevOps | Expert | Established software-delivery processes and sustainable DevOps practices at 3AP and built LIKE MAGIC's production platform to DevOps standards on Google Cloud. |
 | Domain-specific language design | Proficient | Built DynaRep's repository-based modeling tool and its code generators for UBS mainframe service interfaces (2001-2006) and defined data types, interfaces and service contracts platform-independently on EMF and Xtext (2010-2015). |
 | Engineering leadership | Expert | Grew LIKE MAGIC engineering from 5 to 25 and scaled 3AP to about 70 people as co-founder of both. |
-| Enterprise architecture | Competent | Architected UBS's group-wide Integration Architecture Tool Chain around a canonical data model with a central API and interface-portfolio repository (2010-2015). |
+| Enterprise architecture | Competent | Architected the Integration Architecture Tool Chain for UBS Wealth Management & Swiss Banking around a canonical data model with a central API and interface-portfolio repository (2010-2015). |
 | Event streaming | Proficient | Ran LIKE MAGIC's event and data hub on Google Cloud Pub/Sub, processing 89M+ platform events annually. |
 | Event-driven architecture | Expert | Designed Aroov's event-driven backend on Google Cloud Pub/Sub and built the LIKE MAGIC platform on Pub/Sub as its event hub. |
 | Frontend development (TypeScript, React) | Proficient | Owned Stay KooooK's front-to-back architecture including its React frontend and shipped LIKE MAGIC's React/TypeScript/MUI frontend. |
@@ -62,12 +62,12 @@ location: Wallisellen, Switzerland
 | Knowledge management | Proficient | Built the LIKE MAGIC Mental Model as the organization's shared context layer and established communities of practice at UBS (2006-2010). |
 | Model-driven engineering | Expert | Built UBS's DynaRep model-driven repository and code generator (MDSD, 2001-2006), the EMF/Ecore Integration Architecture Tool Chain (2010-2015) and Credit Suisse's Eclipse-CDO Master Data Repository (2015-2016). |
 | Multi-tenant SaaS architecture | Proficient | Built and scaled LIKE MAGIC's multi-tenant hospitality SaaS platform serving 90+ customers, 430+ properties and 16,000+ units across the DACH region. |
-| Platform engineering | Expert | Architected UBS's group-wide SDLC toolchain (Jira, Confluence, GitHub Enterprise, Maven, Jenkins, Sonar) and owned the LIKE MAGIC platform serving 90+ customers. |
+| Platform engineering | Expert | Architected the SDLC toolchain for UBS Wealth Management & Swiss Banking (Jira, Confluence, GitHub Enterprise, Maven, Jenkins, Sonar) and owned the LIKE MAGIC platform serving 90+ customers. |
 | Process orchestration | Expert | Owned the Camunda (Zeebe) orchestration of the guest journey at Stay KooooK and LIKE MAGIC, the subject of a published Camunda case study citing a 95% self-check-in rate and 7,000 process instances per month. |
 | Site reliability engineering | Competent | Owned site reliability engineering and performance for LIKE MAGIC's production cloud platform. |
 | Software architecture | Expert | Owned Stay KooooK's complete front-to-back architecture on reactive Spring Boot WebFlux and took software-architect responsibility for UBS's DynaRep platform (2001-2006). |
 | Software engineering | Expert | Built production systems across 25 years, from UBS's DynaRep repository (2001-2006) to LIKE MAGIC's Spring Boot WebFlux platform (2022-2026). |
-| Software modeling (UML, SysML, C4) | Competent | Owned the Analysis & Design discipline in UBS's group-wide Rational Unified Process rollout and developed its service-modeling methodology in Rational Method Composer and UML (2006-2010). |
+| Software modeling (UML, SysML, C4) | Competent | Owned the Analysis & Design discipline in the Rational Unified Process rollout at UBS Wealth Management & Swiss Banking and developed its service-modeling methodology in Rational Method Composer and UML (2006-2010). |
 | Solution architecture | Expert | Led 3AP's client bids on solution architecture including public tenders under Swiss procurement law and designed Flawa iQ's RFID and LoRaWAN solution, delivered as 10 working prototypes. |
 | Stakeholder management | Proficient | Advised clients including Credit Suisse, Swisscard, AXA and Mobiliar as 3AP's CTO and presented the solution architecture in the winning Aroov and Stay KooooK pitches. |
 
