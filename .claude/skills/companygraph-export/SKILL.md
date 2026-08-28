@@ -17,16 +17,26 @@ Produces `dist/mental-model-skill.zip`, uploadable as an organization or persona
 2. Stage in a temporary directory: `mental-model/SKILL.md` and `mental-model/model/`.
 3. For every root type folder (every folder a schema in `meta/` names, plus `profiles/`
    recursively so experiences travel with their profile): write `model/<folder>.md` — the
-   folder's `README.md` first, then every entity file in path order, separated by a line
-   holding `---`. Count the entities per type as you go.
-4. `model/meta.md`: `meta/CONVENTIONS.md`, then every `meta/*-schema.md`, separated by `---`.
+   folder's `README.md` first, then every entity file in path order, each preceded by a line
+   `<!-- entity: <path from the repository root> -->` and a blank line. Count the entities per
+   type as you go.
+
+   Not a line holding `---`, which is what this produced before: every entity's frontmatter
+   opens and closes with that same line, so a consolidated file of seventy-five skills holds
+   two hundred and twenty-five of them and nothing says which seventy-five are boundaries. An
+   entity whose body carries a horizontal rule is indistinguishable from a boundary, and no
+   program can split the file at all. `<!--` collides with neither YAML nor Markdown's own
+   rule, it does not render, and the path gives back the provenance consolidation throws away.
+4. `model/meta.md`: `meta/CONVENTIONS.md`, then every `meta/*-schema.md`, each preceded by its
+   own `<!-- entity: meta/<file> -->` line.
 5. `SKILL.md`: frontmatter `name: mental-model` and a `description` field built from the
    README tagline with Markdown link and emphasis syntax stripped to plain text (a link
    becomes its link text; bold/italic markers are dropped), written as a double-quoted YAML
    string with any inner double quotes escaped as `\"`; then `export/SKILL-intro.md` verbatim
    when it exists; then a table of `model/` files with the entity count per type and the core
-   version; then one paragraph on how to read the model — H1 is the name, references are by
-   name, `meta/meta.md` holds the rules.
+   version; then one paragraph on how to read the model — each entity begins at its
+   `<!-- entity: … -->` line, H1 is the name, references are by name, `model/meta.md` holds the
+   rules.
 6. `mkdir -p dist && zip -r dist/mental-model-skill.zip mental-model` from the staging root.
    Verify: `unzip -l` lists `SKILL.md`, `model/meta.md` and one file per folder; the counts in
    `SKILL.md` equal `find <folder> -name '*.md' ! -name README.md | wc -l` on disk.
