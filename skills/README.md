@@ -1,7 +1,7 @@
 # Skills
 
-One file per skill, written against `meta/skill-schema.md` and the rules in
-`docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. Seventy-five skills, ours; ten groups.
+One file per skill, written against the skill schema and its writing rules.
+Seventy-five skills, ours; ten groups.
 
 | Skill | Group |
 | --- | --- |
