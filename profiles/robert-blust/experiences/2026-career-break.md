@@ -16,7 +16,7 @@ skills:
 
 # Career break — ideation and product building
 
-> Ongoing. Two open-core ideas built and validated in the open, and applications at 80% to test the market's need for the experience and return to a regular income.
+> Ongoing. Two open-core ideas built and published in the open, while looking for the next role.
 
 ## Achievements
 
@@ -31,5 +31,5 @@ skills:
 - Built the product work and the applications with AI coding agents as the primary tool,
   spec-driven — a reviewed specification before every plan and build — under written
   conventions and agent-run validation.
-- Applied for 80% roles to validate the market's need for the experience and to return to a
-  regular income, each application a tailored dossier from one source CV.
+- Applied for roles across technology leadership and architecture, each application a tailored
+  dossier generated from one source CV.
