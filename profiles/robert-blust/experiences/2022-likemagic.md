@@ -61,3 +61,8 @@ skills:
 - Architected the integration of AI communication vendors (d3x, ailean and onsai) into the staff solution — unified multi-channel guest messaging with AI agents answering, guest insights and staff collaboration.
 - Built information-security management: ISO 27001 (in progress), GDPR compliance and zero-trust API boundaries.
 - Tech stack: Java, Spring Boot / WebFlux, Spring Cloud GCP, PostgreSQL, R2DBC/jOOQ, Google Pub/Sub, GraphQL, React / TypeScript / MUI, Kubernetes (GKE), Camunda BPMN, GitHub Actions.
+
+## Ending
+
+Left in May 2026 after four years, with the platform mature at 90+ customers and 16,000+ units,
+to focus on where my own work was heading: modeling and AI, built in the open.

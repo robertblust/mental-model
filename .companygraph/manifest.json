@@ -1,12 +1,16 @@
 {
   "tooling": "0.0.0",
-  "core": { "version": "0.1.0", "shape": 1, "source": "fetched:v0.1.0" },
+  "core": {
+    "version": "0.1.0",
+    "shape": 1,
+    "source": "fetched:v0.1.0"
+  },
   "schemas": "meta",
   "packs": [],
   "files": {
     "meta/CONVENTIONS.md": "sha256:23c6f88c602b70478d498833e634e0c5aeeba54bfbe17acd9ea6156c377b46c7",
     "meta/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-    "meta/experience-schema.md": "sha256:b596f3cb7ab37ed69b1c72189a6722ecd45690695cbfca215c036f6d37027965",
+    "meta/experience-schema.md": "sha256:b122d4533e9161244cc86a795e04585f695fd42cd6e4d271c880a429664d7ae9",
     "meta/proficiency-level-schema.md": "sha256:fdca785517beaac2f7c58a99582c166678f8611c1e7e80a09af9596e509810a9",
     "meta/profile-schema.md": "sha256:a7c6aabb720daae12c777ab8fffcf1e13f0273abbab425aaa443429fa7cf6f39",
     "meta/skill-schema.md": "sha256:dd497f779e3644d1256a1c725ba1eb74cf7e993f4bd1ef87da0171cb53a2ec78",
