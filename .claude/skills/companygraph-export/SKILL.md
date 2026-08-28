@@ -27,6 +27,12 @@ Produces `dist/mental-model-skill.zip`, uploadable as an organization or persona
    entity whose body carries a horizontal rule is indistinguishable from a boundary, and no
    program can split the file at all. `<!--` collides with neither YAML nor Markdown's own
    rule, it does not render, and the path gives back the provenance consolidation throws away.
+
+   A README describes the repository's layout and the bundle has a different one, so rewrite
+   its references as it is inlined: `meta/<type>-schema.md` becomes `model/meta.md`, a folder
+   the bundle does not carry — `experiences/` — becomes the plain word, and a reference to
+   anything the bundle holds no copy of is dropped rather than left dangling. The source keeps
+   the paths that are correct where it lives; only the copy that travels is rewritten.
 4. `model/meta.md`: `meta/CONVENTIONS.md`, then every `meta/*-schema.md`, each preceded by its
    own `<!-- entity: meta/<file> -->` line.
 5. `SKILL.md`: frontmatter `name: mental-model` and a `description` field built from the

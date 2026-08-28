@@ -1,3 +1,3 @@
 # Profiles
 
-One folder per profile, written against the profile schema; each owns its experiences.
+One folder per profile, written against `meta/profile-schema.md`; each owns its `experiences/`.
