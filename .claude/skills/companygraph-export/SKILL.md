@@ -15,8 +15,8 @@ Produces `dist/mental-model-skill.zip`, uploadable as an organization or persona
    repository folder's name (`mental-model`); the description is the root `README.md`'s
    `>` line.
 2. Stage in a temporary directory: `mental-model/SKILL.md` and `mental-model/model/`.
-3. For every root type folder (every folder a schema in `meta/` names, plus `profiles/`
-   recursively so experiences travel with their profile): write `model/<folder>.md` — the
+3. For every type folder under `model/` (plus `model/profiles/` recursively so experiences
+   travel with their profile): write `model/<folder>.md` in the bundle — the
    folder's `README.md` first, then every entity file in path order, each preceded by a line
    `<!-- entity: <path from the repository root> -->` and a blank line. Count the entities per
    type as you go.
@@ -33,8 +33,11 @@ Produces `dist/mental-model-skill.zip`, uploadable as an organization or persona
    the bundle does not carry — `experiences/` — becomes the plain word, and a reference to
    anything the bundle holds no copy of is dropped rather than left dangling. The source keeps
    the paths that are correct where it lives; only the copy that travels is rewritten.
-4. `model/meta.md`: `meta/CONVENTIONS.md`, then every `meta/*-schema.md`, each preceded by its
-   own `<!-- entity: meta/<file> -->` line.
+4. `model/meta.md`: `meta/core/CONVENTIONS.md`, then every `*-schema.md` in every unit under
+   `meta/`, each preceded by its own `<!-- entity: meta/<unit>/<file> -->` line.
+
+   The singular entities travel too: `model/identity.md` and `model/vision.md` are copied
+   as they are, one file each, since there is nothing to consolidate.
 5. `SKILL.md`: frontmatter `name: mental-model` and a `description` field built from the
    README tagline with Markdown link and emphasis syntax stripped to plain text (a link
    becomes its link text; bold/italic markers are dropped), written as a double-quoted YAML

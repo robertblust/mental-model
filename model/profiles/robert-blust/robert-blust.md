@@ -1,7 +1,5 @@
 ---
 source: rob-cv
-email: robert.blust@flatland.ch
-location: Wallisellen, Switzerland
 ---
 
 # Robert Blust
