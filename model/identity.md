@@ -1,6 +1,6 @@
 ---
 source: Local
-email: robert.blust@flatland.ch
+email: robert@blust.ch
 location: Wallisellen, Switzerland
 url: https://blust.ch
 ---
