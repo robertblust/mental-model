@@ -126,6 +126,18 @@ Nothing else in the schema changes.
 
 ## 6. What this deliberately does not do
 
+> **Settled since, and the reasoning here did not survive.** `kind` shipped in core 0.6.0 as a
+> *type* — `experience-kind`, one file per member in the instance — not as the bare-token enum
+> point 2 below argues against. That point rejects the wrong alternative: it reads "making them
+> types puts them in `educations/`, `talks/` and `projects/` beside `experiences/`", which is
+> four types. One type with four members is what `proficiency-level` already is, and it leaves
+> the experiences folder whole. Point 3's conditional-requiredness problem never arose, because
+> no date rule was made to depend on a kind — §3's finding held, and precision follows the
+> source document rather than the category. Point 1 was right and is why the two are separate
+> specs at all. Kept as written, with this note, because a spec that quietly acquires the
+> conclusion it argued against is worth less than one that shows where it was wrong.
+
+
 No `kind` field, no per-kind date rules, no conditional requiredness. Three reasons, and the
 third is the one that needs a decision before that spec can be written:
 
@@ -175,7 +187,8 @@ pretend otherwise; it is the same class as the writing rules, which is where it 
 The re-vendor changes the hash of `CONVENTIONS.md` and `experience-schema.md` in
 `.companygraph/manifest.json`. Readers that assume `YYYY-MM` break on the new forms, so this is
 a breaking change for tooling and takes a minor bump, not a patch. Core is already at 0.5.0
-upstream while this instance vendors 0.4.1, so the target is **0.6.0**.
+upstream while this instance vendors 0.4.1, so the target is **0.7.0**. It shipped there:
+0.6.0 was taken by `experience-kind` while this spec sat open.
 
 Upstream tooling is untouched. `lib/instance.mjs` parses structure — it cites R2, R3, R4, R5,
 R6, R7, R9 and R13 — and validates neither a `date` form nor an `enum` value. Field-level types
