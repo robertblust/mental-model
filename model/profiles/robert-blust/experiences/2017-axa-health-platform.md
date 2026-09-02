@@ -1,8 +1,8 @@
 ---
 source: rob-cv
 source-id: axa-health-platform
-start: 2017-01
-end: 2019-01
+start: 2017-07
+end: 2019-05
 organisation: AXA Health
 skills:
   - API design

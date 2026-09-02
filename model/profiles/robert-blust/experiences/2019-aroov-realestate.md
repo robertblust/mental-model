@@ -1,8 +1,8 @@
 ---
 source: rob-cv
 source-id: aroov-realestate
-start: 2019-01
-end: 2021-01
+start: 2019-08
+end: 2020-09
 organisation: Aroov
 skills:
   - Cloud architecture

@@ -1,8 +1,8 @@
 ---
 source: rob-cv
 source-id: stay-koook
-start: 2020-01
-end: 2022-01
+start: 2020-03
+end: 2022-03
 organisation: SV Group
 skills:
   - Cloud architecture
