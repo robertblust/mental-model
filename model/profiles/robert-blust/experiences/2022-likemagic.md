@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: 2022-likemagic
+kind: Role
 start: 2022-04
 end: 2026-05
 organisation: LIKE MAGIC AG

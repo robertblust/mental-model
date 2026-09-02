@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Independent
 start: 2026-06
 skills:
   - Product discovery

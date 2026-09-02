@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: stay-koook
+kind: Project
 start: 2020-03
 end: 2022-03
 organisation: SV Group

@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: 2002-wirtschaftsinformatik-fh
+kind: Education
 start: 2002-01
 end: 2006-01
 organisation: AKAD University for Working Professionals

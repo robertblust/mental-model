@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: aroov-realestate
+kind: Project
 start: 2019-08
 end: 2020-09
 organisation: Aroov

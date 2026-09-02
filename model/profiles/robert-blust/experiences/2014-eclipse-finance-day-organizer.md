@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: eclipse-finance-day-2014
+kind: Community
 start: 2014-10
 end: 2014-10
 organisation: Eclipse Foundation

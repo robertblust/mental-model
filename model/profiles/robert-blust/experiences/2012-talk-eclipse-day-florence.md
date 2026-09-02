@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: talk-eclipse-day-florence-2012
+kind: Community
 start: 2012-05
 end: 2012-05
 organisation: Eclipse Foundation

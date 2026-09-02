@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: 2001-ubs-engineer
+kind: Role
 start: 2001-04
 end: 2004-07
 organisation: UBS AG

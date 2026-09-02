@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: 2004-ubs-solution-manager
+kind: Role
 start: 2004-08
 end: 2009-09
 organisation: UBS AG
