@@ -1,0 +1,142 @@
+# `kind` on `experience` — design
+
+> The master files these 24 entries in four folders; the model flattens them into one and the
+> distinction is lost. This proposes `kind` as a required bare-token enum that recovers it —
+> carrying no date rules, no folder split and no new schema.
+
+Status: proposed, nothing built. Changes `meta/core/experience-schema.md` only, so it is made
+upstream in the CompanyGraph repository and comes back through a re-vendor. Nothing in this
+repository changes until it does.
+
+Second of three. [`2026-09-02-date-precision.md`](2026-09-02-date-precision.md) is the first and
+is independent of this one: it deferred `kind` on the grounds that dates and kinds are separate
+questions, and this spec agrees — the case below never mentions a date except to say `kind` does
+not govern one.
+
+---
+
+## 1. The fact the model cannot hold
+
+rob-cv, which masters every page here except one, files these entries in four folders:
+
+| rob-cv folder | Entries | Examples |
+| --- | --- | --- |
+| `content/experience/` | 6 | the four UBS periods, 3AP, LIKE MAGIC |
+| `content/community/` | 8 | the four talks, the JUG board, the Modeling Platform, the case study |
+| `content/projects/` | 7 | AXA Health, Aroov, Stay KooooK, the CS MDR |
+| `content/education/` | 2 | the AKAD degree, the SAFe certification |
+
+The model puts all 24 in `profiles/robert-blust/experiences/` and records nothing about which
+folder they came from. The category is a fact the master states, and the model has nowhere to
+put it — the same shape of defect as the AKAD year in the first spec, and the same remedy:
+give it a field.
+
+What is lost is not cosmetic. "Which of these are jobs?" is unanswerable from the model today
+without reading 24 bodies and judging. A reader cannot separate a talk from an employment
+period, an employer from a client, or a degree from a role, and the graph is built to be read
+by things that do not judge.
+
+## 2. `kind`, and only `kind`
+
+```
+| `kind` | Yes | enum | What sort of period this is: `role`, `project`, `community`, `education` |
+```
+
+- **`role`** — a position held in an organisation. The employment history.
+- **`project`** — a delivery inside a role, worth naming on its own. Client and internal alike.
+- **`community`** — work in public: a talk, a board seat, a working group, a published case.
+- **`education`** — a degree, a certification, a course.
+
+`role` rather than `experience`, because a token named for its own type says nothing.
+
+### Why an enum and not four types
+
+R8 draws the line: *"A set whose members carry a definition of their own is not an enum — make
+it a type."* The instance already has both sides of that line, which is what makes the call
+easy. `proficiency-level` is a **type** — four files, each with a rank and a rubric that every
+skill claim would otherwise restate. A kind carries one line of gloss and nothing that needs a
+file. Bare tokens.
+
+The cost of getting this wrong the other way is concrete. Under R5 and R6, four types means
+`roles/`, `projects/`, `community/` and `educations/` beside each other in the profile's
+folder, and the experience schema's own reason for its filename rule — *"the folder then sorts
+chronologically and reads as a career"* — is spent. One folder, 24 files, one timeline. That
+is worth keeping.
+
+### Required
+
+`Yes`. An optional `kind` produces untyped entries, and then every consumer has to handle
+"unclassified" as a fifth case — which is the situation today, dressed up. The cost is a
+one-time fill: 24 entries here, plus whatever core's own example carries.
+
+## 3. What `kind` does not do
+
+**It does not govern dates.** A one-off writes `end` equal to `start`, as it does today and as
+the experience schema's writing rule already says. All six one-offs in this instance comply.
+With the precision change in the first spec a talk becomes `2012-05-04 .. 2012-05-04`, which is
+exactly a point; nothing about that depends on the kind.
+
+The rejected alternative is worth recording because it is the obvious one: let an absent `end`
+mean "one-off" when `kind` is `community`, and "ongoing" when it is `role`. That makes an
+absence mean two things and resolves it by a label, so every reader of a date must first read
+the kind. It also collides with the live case — `2026-career-break` is ongoing and has no
+`end` — so the two meanings are not hypothetical. Date semantics stay independent of `kind`.
+
+**It does not split the folder**, change a filename, or add a section. R12 is untouched: the
+filename is still the start year and a chosen slug.
+
+## 4. Filling it in this instance
+
+The value is derived, not decided: an entry takes the kind matching the rob-cv folder that
+masters it. That makes 23 of 24 mechanical —
+
+- `role` — `1999-ubs-trainee`, `2001-ubs-engineer`, `2004-ubs-solution-manager`,
+  `2009-ubs-architect`, `2015-3ap`, `2022-likemagic`
+- `project` — `2015-swisscard-data-integration`, `2015-swisscom-agile-cockpit`,
+  `2016-credit-suisse-mdr`, `2017-axa-health-platform`, `2018-flawa-iq`,
+  `2019-aroov-realestate`, `2020-stay-koook`
+- `community` — `2010-eclipse-modeling-platform`, `2011-jugs-board`,
+  `2012-talk-eclipse-day-florence`, `2012-talk-eclipse-finance-day`,
+  `2013-talk-eclipse-finance-day`, `2014-eclipse-finance-day-organizer`,
+  `2022-talk-camundacon`, `2023-camunda-case-study`
+- `education` — `2002-wirtschaftsinformatik-fh`, `2016-safe-practitioner`
+
+— and leaves one open.
+
+### The one that does not fit
+
+`2026-career-break` is `source: Local` and has no rob-cv folder to inherit from. Its H1 is
+*"Career break — ideation and product building"*: a self-directed period, ongoing, whose
+achievements are two published open-core products. Three readings, and the choice belongs to
+whoever owns the model rather than to this spec:
+
+1. **`project`** — what it produced. Understates it: the period is not a delivery inside a
+   role, and there is no role.
+2. **`role`** — a period held, self-employed. Overstates it: there is no organisation, and
+   `organisation` is where a reader would look for one.
+3. **A fifth token** — `independent`, for a self-directed period with no employer. Honest, and
+   it is a category many careers now have. The cost is a token added for one entry, which is
+   how a set of four becomes a set of nine.
+
+Recommended: (3) if a second such period is foreseeable, (1) if not. The decision is asked for
+here rather than made.
+
+## 5. Verification
+
+Mechanical, and fully so — which is the pleasant part of a bare-token enum. R8's check has had
+nothing to check since core 0.4.1: `kind` would be the first `enum` field in the instance, so
+the rule acquires its first subject. The pass gains:
+
+- every entity has `kind`, and its value is one of the four (five) listed in the schema;
+- nothing else, because `kind` implies nothing else.
+
+## 6. Findings for the third spec
+
+- **Core, `experience-schema.md`** — still no field for a reference. Unchanged from the first
+  spec's §9 and still the smallest remaining gap: zefix and companygraph.io are URLs inside
+  achievement prose because prose is the only place they can go.
+- **Core, `experience-schema.md`** — `organisation` is optional and means different things by
+  kind: an employer for a `role`, a client for a `project`, a host for a `community` entry, an
+  awarding body for `education`. The schema's writing rules already say the last one. Whether
+  that is one field with four meanings or a modelling smell is a question `kind` makes askable
+  for the first time, and it should be asked before anything is built on it.
