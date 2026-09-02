@@ -174,7 +174,13 @@ pretend otherwise; it is the same class as the writing rules, which is where it 
 
 The re-vendor changes the hash of `CONVENTIONS.md` and `experience-schema.md` in
 `.companygraph/manifest.json`. Readers that assume `YYYY-MM` break on the new forms, so this is
-a breaking change for tooling and takes a minor bump, not a patch: 0.4.1 → 0.5.0.
+a breaking change for tooling and takes a minor bump, not a patch. Core is already at 0.5.0
+upstream while this instance vendors 0.4.1, so the target is **0.6.0**.
+
+Upstream tooling is untouched. `lib/instance.mjs` parses structure — it cites R2, R3, R4, R5,
+R6, R7, R9 and R13 — and validates neither a `date` form nor an `enum` value. Field-level types
+are agent-enforced there as they are here, which is why the paragraph above matters more than
+the regex.
 
 ## 9. Findings for the next specs
 
