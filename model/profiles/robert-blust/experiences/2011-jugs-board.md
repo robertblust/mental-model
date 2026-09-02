@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: jugs-board
+kind: Community
 start: 2011-08
 end: 2014-12
 organisation: JUG Switzerland

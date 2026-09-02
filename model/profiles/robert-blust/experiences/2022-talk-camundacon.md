@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: talk-camundacon-2022
+kind: Community
 start: 2022-10
 end: 2022-10
 organisation: Camunda

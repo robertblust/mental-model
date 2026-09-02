@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: credit-suisse-mdr
+kind: Project
 start: 2016-02
 end: 2016-09
 organisation: Credit Suisse

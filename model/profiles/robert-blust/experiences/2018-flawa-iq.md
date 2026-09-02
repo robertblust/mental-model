@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: flawa-iq
+kind: Project
 start: 2018-07
 end: 2019-02
 organisation: Flawa

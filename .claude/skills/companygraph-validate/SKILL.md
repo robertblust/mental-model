@@ -11,7 +11,7 @@ mechanical rules it would cover are done here by hand as well.
 ## Procedure
 
 1. Read `meta/core/CONVENTIONS.md` in full. The rules it states are what is being checked —
-   R1–R13 at core 0.4.1 — and nothing it does not state. The count is read from the file, not
+   R1–R13 at core 0.6.0 — and nothing it does not state. The count is read from the file, not
    from here: a core upgrade adds rules and this list goes stale.
 2. Read `.companygraph/manifest.json`. Every folder under `meta/` is a vendored unit —
    `core` always, a pack beside it — and each carries its own `manifest.json` naming the
