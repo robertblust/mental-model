@@ -2,8 +2,8 @@
 source: rob-cv
 source-id: talk-eclipse-day-florence-2012
 kind: Community
-start: 2012-05
-end: 2012-05
+start: 2012-05-04
+end: 2012-05-04
 organisation: Eclipse Foundation
 skills:
   - Data modeling

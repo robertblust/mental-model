@@ -2,8 +2,8 @@
 source: rob-cv
 source-id: talk-eclipse-finance-day-2012
 kind: Community
-start: 2012-10
-end: 2012-10
+start: 2012-10-16
+end: 2012-10-16
 organisation: Eclipse Foundation
 skills:
   - Integration architecture

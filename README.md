@@ -11,7 +11,7 @@ meta-model's
 
 ```
 .companygraph/manifest.json    which units this vendors, and a hash per vendored file
-meta/core/                     core 0.6.0, copied whole and never edited here
+meta/core/                     core 0.7.0, copied whole and never edited here
 model/                         the company — everything under here is an entity, nothing else is
   identity.md                  who the company is
   vision.md                    the future it works toward
