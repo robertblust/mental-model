@@ -37,6 +37,6 @@ skills:
 
 ## Ending
 
-Left in January 2015 after 15 years and four roles — apprenticeship, engineering, methodology, then architecture.
+Left in January 2015 after 15 years and four roles — the IT-Developer program, engineering, methodology, then architecture.
 Enough to back myself as a founder, and probably a little naive about what founding takes; I
 wanted to find out. We had founded 3AP that November; I went operative there the month after.
