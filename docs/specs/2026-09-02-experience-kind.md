@@ -130,6 +130,11 @@ the rule acquires its first subject. The pass gains:
 - every entity has `kind`, and its value is one of the four (five) listed in the schema;
 - nothing else, because `kind` implies nothing else.
 
+Upstream is a different matter and worth stating: `lib/instance.mjs` parses structure — it cites
+R2, R3, R4, R5, R6, R7, R9 and R13 — and does not validate an `enum` value at all. So R8 gains
+its first subject in an instance, and remains agent-enforced in the parser. Whether the parser
+should learn enums is a question this spec raises and does not answer.
+
 ## 6. Findings for the third spec
 
 - **Core, `experience-schema.md`** — still no field for a reference. Unchanged from the first
