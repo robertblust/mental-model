@@ -1,8 +1,8 @@
 ---
 source: rob-cv
 source-id: 2016-safe-practitioner
-start: 2016-01
-end: 2016-07
+start: 2016-10
+end: 2016-10
 organisation: Scaled Agile, Inc.
 skills:
   - Agile delivery
@@ -11,3 +11,8 @@ skills:
 # Certified SAFe 4 Practitioner
 
 > Certified SAFe 4 Practitioner and SAFe 4 for Teams, Scaled Agile, Inc.
+
+## Achievements
+
+- Completed the SAFe 4.0 for Teams course and passed the SAFe Practitioner certification, effective 18 October 2016 (certificate 28616437-8064).
+- The certification was valid through 18 October 2017 and was not renewed; the practice it taught still informs how I run delivery.

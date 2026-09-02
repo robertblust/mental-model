@@ -1,8 +1,8 @@
 ---
 source: rob-cv
 source-id: jugs-board
-start: 2011-01
-end: 2014-01
+start: 2011-08
+end: 2014-12
 organisation: JUG Switzerland
 skills:
   - Community building
