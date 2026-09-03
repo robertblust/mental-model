@@ -18,4 +18,4 @@ skills:
 
 ## Achievements
 
-- Presented "Eclipse Data Modeling at an Enterprise Scale" at Eclipse Day Florence on 4 May 2012, co-presented with Eike Stepper, lead of the Eclipse CDO project. Recording: https://www.youtube.com/watch?v=53jrNcbd5N0
+- Presented "Eclipse Data Modeling at an Enterprise Scale" at Eclipse Day Florence on 4 May 2012, co-presented with Eike Stepper, lead of the Eclipse CDO project.

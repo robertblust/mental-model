@@ -18,4 +18,4 @@ skills:
 
 ## Achievements
 
-- Presented "Interface Management in a Large Enterprise" at Eclipse Finance Day on 16 October 2012 in Zürich — EMF-based visualization of subsystem communication and a toolchain for interface specification. Agenda: https://wiki.eclipse.org/Eclipse_Finance_Day_2012/
+- Presented "Interface Management in a Large Enterprise" at Eclipse Finance Day on 16 October 2012 in Zürich — EMF-based visualization of subsystem communication and a toolchain for interface specification.

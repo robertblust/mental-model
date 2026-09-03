@@ -21,10 +21,10 @@ skills:
 
 ## Achievements
 
-- Designed and published CompanyGraph https://companygraph.io, a meta-model for describing
+- Designed and published CompanyGraph, a meta-model for describing
   a company as a graph of Markdown — core vocabulary, conventions, a worked example, a
   tooling design — and built this repository as its reference instance.
-- Built GuestGraph https://guestgraph.io, an identity-resolution engine for hospitality:
+- Built GuestGraph, an identity-resolution engine for hospitality:
   deterministic and probabilistic matching, a guest graph and API, explainable and
   reversible merges.
 - Published both ideas as open core with a billing model and a talk each, deck, PDF and audio
