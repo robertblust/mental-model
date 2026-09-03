@@ -4,7 +4,7 @@ source-id: 2004-ubs-solution-manager
 kind: Role
 start: 2004-08
 end: 2009-09
-organisation: UBS AG
+organization: UBS AG
 skills:
   - Software modeling (UML, SysML, C4)
   - Knowledge management

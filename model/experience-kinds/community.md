@@ -10,7 +10,7 @@ source: Local
 
 A period whose output is addressed to people outside the organization paying for it: a
 conference talk, a board or committee seat, a user group, a case study published under someone
-else's name. `organisation` names the host — the conference, the group, the publisher — and not
+else's name. `organization` names the host — the conference, the group, the publisher — and not
 an employer.
 
 A talk writes `end` equal to `start`; a board seat held for years does not. Both are this kind:

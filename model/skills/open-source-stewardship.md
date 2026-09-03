@@ -9,7 +9,7 @@ group: Software development
 
 ## In practice
 
-Choose the licence for the outcome you want and say what is open and what could ever be
+Choose the license for the outcome you want and say what is open and what could ever be
 paid for. Write the README for the adopter, the conventions for the contributor and the
 spec for the person who will disagree with you later. Release on a contract — versions,
 tags, a manifest — so that nobody depends on a moving target. Keep the decisions and the

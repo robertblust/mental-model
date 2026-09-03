@@ -5,7 +5,7 @@ kind: Community
 start: 2022-10-06
 end: 2022-10-06
 url: https://page.camunda.com/talking-process-orchestration-with-likemagics-robert-blust
-organisation: Camunda
+organization: Camunda
 skills:
   - Process orchestration
   - Public speaking

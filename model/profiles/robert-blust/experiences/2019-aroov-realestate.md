@@ -5,7 +5,7 @@ kind: Project
 start: 2019-08
 end: 2020-09
 url: https://3ap.ch/case_studies/platform-for-digital-rental/
-organisation: Aroov
+organization: Aroov
 skills:
   - Cloud architecture
   - Container orchestration (Kubernetes)

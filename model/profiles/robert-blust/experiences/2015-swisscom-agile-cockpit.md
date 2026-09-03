@@ -4,7 +4,7 @@ source-id: swisscom-agile-cockpit
 kind: Project
 start: 2015-09
 end: 2015-11
-organisation: Swisscom
+organization: Swisscom
 skills:
   - Integration architecture
 ---
