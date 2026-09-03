@@ -4,6 +4,7 @@ source-id: axa-health-platform
 kind: Project
 start: 2017-07
 end: 2019-05
+url: https://3ap.ch/case_studies/digitale-gesundheitsplattform/
 organisation: AXA Health
 skills:
   - API design

@@ -4,6 +4,7 @@ source-id: talk-eclipse-finance-day-2013
 kind: Community
 start: 2013-11-05
 end: 2013-11-05
+url: https://wiki.eclipse.org/Eclipse_Finance_Day_2013/
 organisation: Eclipse Foundation
 skills:
   - Integration architecture

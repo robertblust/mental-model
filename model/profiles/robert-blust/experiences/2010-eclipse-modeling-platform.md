@@ -4,6 +4,7 @@ source-id: eclipse-modeling-platform
 kind: Community
 start: 2010-03
 end: 2011-08
+url: https://wiki.eclipse.org/ModelingPlatform/
 organisation: Eclipse Foundation
 skills:
   - Model-driven engineering

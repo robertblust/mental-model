@@ -4,6 +4,7 @@ source-id: jugs-board
 kind: Community
 start: 2011-08
 end: 2014-12
+url: https://www.jug.ch/
 organisation: JUG Switzerland
 skills:
   - Community building

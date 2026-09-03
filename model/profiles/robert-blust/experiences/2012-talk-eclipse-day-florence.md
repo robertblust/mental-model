@@ -4,6 +4,7 @@ source-id: talk-eclipse-day-florence-2012
 kind: Community
 start: 2012-05-04
 end: 2012-05-04
+url: https://www.youtube.com/watch?v=53jrNcbd5N0
 organisation: Eclipse Foundation
 skills:
   - Data modeling

@@ -1,9 +1,9 @@
 {
   "tooling": "0.0.0",
   "core": {
-    "version": "0.7.0",
+    "version": "0.11.0",
     "shape": 1,
-    "source": "fetched:v0.7.0"
+    "source": "fetched:v0.11.0"
   },
   "units": "meta",
   "packs": [],
@@ -11,9 +11,9 @@
     "meta/core/CONVENTIONS.md": "sha256:9b662070fec1cebc429f9a6c72d6e8b7b3e45de09cd407612592d0c7514cae70",
     "meta/core/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "meta/core/experience-kind-schema.md": "sha256:38b0457b1fc0150cce3a3a130975aa963acd6bd95e27d4e83c6fd3a42bed3a04",
-    "meta/core/experience-schema.md": "sha256:09c04b877567f3d08a9afd08c5c9cb56f23c48c8ee7a489dd3892a48dfd7fdcc",
+    "meta/core/experience-schema.md": "sha256:0c3e1cce9aa2b8625ea97e9b1cf1402964b892a41fcec599fe29969cd268cf5e",
     "meta/core/identity-schema.md": "sha256:6c99d12a7672275455624e9ca6cc80da1c097c0acec0a26639a6f894c8009198",
-    "meta/core/manifest.json": "sha256:6cbdc75c4e752e5a06b2fc50eaec29c8ebc825ab67012ed57b42f0782f874977",
+    "meta/core/manifest.json": "sha256:0a45001b606cf4d8b19148077ed7df9ea6645c84c7210a73ec62198dc24932d5",
     "meta/core/proficiency-level-schema.md": "sha256:9a2232f411d643aa4bd589714d2851102079cace3fcaf2400cb185eb1026c261",
     "meta/core/profile-schema.md": "sha256:7f28f8a7f2bfd1a6412a5487e5b93c60cf497aea7669264dd8458c13df0f2ac9",
     "meta/core/skill-schema.md": "sha256:5cb729ac1b5b59bffd3a786075a9c1b7900dd5e8e80b35cfe14d906c1f3517e6",

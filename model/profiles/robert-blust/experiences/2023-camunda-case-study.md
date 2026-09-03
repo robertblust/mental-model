@@ -4,6 +4,7 @@ source-id: camunda-case-study
 kind: Community
 start: 2023-04
 end: 2023-04
+url: https://camunda.com/case-studies/likemagic
 organisation: Camunda
 skills:
   - Process orchestration

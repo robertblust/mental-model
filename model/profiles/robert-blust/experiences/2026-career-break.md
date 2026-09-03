@@ -34,3 +34,10 @@ skills:
   conventions and agent-run validation.
 - Applied for roles across technology leadership and architecture, each application a tailored
   dossier generated from one source CV.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Product | https://companygraph.io |
+| Product | https://guestgraph.io |

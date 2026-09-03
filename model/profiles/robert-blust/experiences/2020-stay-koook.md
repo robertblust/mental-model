@@ -4,6 +4,7 @@ source-id: stay-koook
 kind: Project
 start: 2020-03
 end: 2022-03
+url: https://3ap.ch/case_studies/hospitality-platform/
 organisation: SV Group
 skills:
   - Cloud architecture
