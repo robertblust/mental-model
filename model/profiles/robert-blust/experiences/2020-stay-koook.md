@@ -1,8 +1,10 @@
 ---
 source: rob-cv
 source-id: stay-koook
+kind: Project
 start: 2020-03
 end: 2022-03
+url: https://3ap.ch/case_studies/hospitality-platform/
 organisation: SV Group
 skills:
   - Cloud architecture
@@ -29,3 +31,4 @@ skills:
 - Presented the solution architecture at the winning pitch.
 - Won Best Use of Technology at the Serviced Apartment Awards 2021; was nominated for the Best Swiss Web Award 2021 (Innovation).
 - The platform became LIKE MAGIC, a spin-off from SV Group — the point at which I left 3AP to co-found and build it up.
+- As likeMagic, the platform won gold for Best Digital Transformation and silver for Customer Driven Business Change and Transformation at the European Customer Experience Awards 2022: https://www.hocoso.com/asset-management/its-not-imagination-its-likemagic/

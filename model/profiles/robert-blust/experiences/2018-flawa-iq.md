@@ -1,8 +1,10 @@
 ---
 source: rob-cv
 source-id: flawa-iq
+kind: Project
 start: 2018-07
 end: 2019-02
+url: https://3ap.ch/case_studies/networked-first-aid-kit/
 organisation: Flawa
 skills:
   - Integration architecture
@@ -21,4 +23,4 @@ skills:
 - Evaluated the connectivity options (LoRaWAN vs. GSM); built the MVP on Swisscom's LoRaWAN network, with GSM selected for the later production version.
 - Together with comtac AG (a canton-St.-Gallen LoRaWAN electronics specialist), delivered an MVP of 10 working prototypes (RFID modules + LoRaWAN, backend on Google Cloud).
 - Built the backend that ingests device telemetry from Swisscom's LoRaWAN broker, plus an API feeding the data into the ERP — closing the loop so consumed or expired modules trigger automatic reordering.
-- Won the "smart IoT" Award 2021, University of St. Gallen.
+- Won the "smart IoT" Award 2021, University of St. Gallen: https://flawa-iq.ch/de/blog/flawa-gewinnt-smart-iot-award

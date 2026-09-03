@@ -1,8 +1,10 @@
 ---
 source: rob-cv
 source-id: eclipse-modeling-platform
+kind: Community
 start: 2010-03
 end: 2011-08
+url: https://wiki.eclipse.org/ModelingPlatform/
 organisation: Eclipse Foundation
 skills:
   - Model-driven engineering
@@ -15,4 +17,4 @@ skills:
 
 ## Achievements
 
-- Represented UBS in a cross-industry Eclipse Foundation initiative to build an integrated, open-source modeling toolchain https://wiki.eclipse.org/ModelingPlatform/ — contributing alongside Airbus, Alcatel-Lucent, Atos, CEA LIST, Ericsson, Euranova, Fraunhofer FOKUS, Geensys, Generic Concept, itemis, Obeo, SBB and SWIFT.
+- Represented UBS in a cross-industry Eclipse Foundation initiative to build an integrated, open-source modeling toolchain — contributing alongside Airbus, Alcatel-Lucent, Atos, CEA LIST, Ericsson, Euranova, Fraunhofer FOKUS, Geensys, Generic Concept, itemis, Obeo, SBB and SWIFT.

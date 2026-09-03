@@ -141,6 +141,18 @@ Required is `Yes` or `No`. Types come from the closed vocabulary: `string`, `num
 `array`, `enum`, `ref → <type>`, `array of ref → <type>`. A reference names one entity, so
 the type it points at is singular: `ref → skill`, never `ref → skills`.
 
+`date` is `YYYY`, `YYYY-MM` or `YYYY-MM-DD`. A date is written at the precision its source
+states and never at more; an author may deliberately record less. A shorter form is an
+interval, not a point: `2002` is the whole year, and a comparison takes its earliest instant,
+so `2002` orders before `2002-03`.
+
+The form is stated here rather than in the description of whichever field happens to use it,
+because a type in a closed vocabulary that means different things in two schemas is not closed.
+`date` was the only member whose lexical form was never written down, and while it went unsaid
+one schema's description fixed it at `YYYY-MM` — which made an instance invent a month for a
+diploma that states a year, and left a talk's known day in prose because no field could hold
+it. A rule that forces both an invention and a discard is the wrong rule.
+
 Where each form is legal follows from one distinction: **a frontmatter field may hold one
 value or a list; a table cell holds one value.** The whole vocabulary is therefore open to a
 frontmatter field, and both `ref → <type>` and `array of ref → <type>` there must resolve. In
@@ -254,16 +266,20 @@ Nothing is committed without a validation pass over the rules above. The pass is
 reading the files against these rules. A repository may also own a script that checks some of
 them; nothing here depends on having one.
 
-Which rules that script reaches is worth stating plainly. In the CompanyGraph repository,
+Which rules those scripts reach is worth stating plainly. In the CompanyGraph repository,
 `npm run verify` runs `verify/check.mjs`, which mechanically checks part of R4, R6, R9, R10,
 R11 and R12 against this repository's own files, plus a meta-check under R0 that fails if any
-check cites a rule this document does not define. R1, R2, R3, R5, R7 and R8 have no check of
-their own; where a check happens to touch one, it is incidental to the rule that check cites.
-Treat all six as agent-enforced — which is by design, not by omission: the claim this model
-ships under is that schemas written as prose are enforceable by agents.
+check cites a rule this document does not define. `npm run test:instance` exercises the
+instance parser's implementation of the rules it cites — R2, R3, R4, R5, R6, R7, R9 and R13 —
+against fixtures rather than files, and `npm run test:rules` extends that meta-check to the
+rules the parser cites in its comments and error messages. No file is checked against R1, R2,
+R3, R5, R7 or R8; where a check happens to touch one, it is incidental to the rule that check
+cites. Treat all six as agent-enforced — which is by design, not by omission: the claim this
+model ships under is that schemas written as prose are enforceable by agents.
 
-That script is this repository's own harness. Copying `CONVENTIONS.md` into a company brings
-the rules and not the script — there is no `verify` script there, and this one checks the
-files here. The agent pass is the portable part, and it is the only thing that covers what no
-script reaches: whether a schema's prose is portable, and whether a rule that has crept in is
-really about modelling rather than about one company's tooling.
+Those scripts are this repository's own harness. Copying `CONVENTIONS.md` into a company
+brings the rules and not the scripts — there is no `verify` script there, and what these run
+against is this repository's own files and its own parser, not yours. The agent pass is the
+portable part, and it is the only thing that covers what no script reaches: whether a schema's
+prose is portable, and whether a rule that has crept in is really about modelling rather than
+about one company's tooling.

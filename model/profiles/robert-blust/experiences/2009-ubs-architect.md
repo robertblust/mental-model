@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: 2009-ubs-architect
+kind: Role
 start: 2009-10
 end: 2015-01
 organisation: UBS AG

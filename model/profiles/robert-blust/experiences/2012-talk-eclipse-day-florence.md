@@ -1,8 +1,10 @@
 ---
 source: rob-cv
 source-id: talk-eclipse-day-florence-2012
-start: 2012-05
-end: 2012-05
+kind: Community
+start: 2012-05-04
+end: 2012-05-04
+url: https://www.youtube.com/watch?v=53jrNcbd5N0
 organisation: Eclipse Foundation
 skills:
   - Data modeling
@@ -16,4 +18,4 @@ skills:
 
 ## Achievements
 
-- Presented "Eclipse Data Modeling at an Enterprise Scale" at Eclipse Day Florence on 4 May 2012, co-presented with Eike Stepper, lead of the Eclipse CDO project. Recording: https://www.youtube.com/watch?v=53jrNcbd5N0
+- Presented "Eclipse Data Modeling at an Enterprise Scale" at Eclipse Day Florence on 4 May 2012, co-presented with Eike Stepper, lead of the Eclipse CDO project.

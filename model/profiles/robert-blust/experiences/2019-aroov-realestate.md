@@ -1,8 +1,10 @@
 ---
 source: rob-cv
 source-id: aroov-realestate
+kind: Project
 start: 2019-08
 end: 2020-09
+url: https://3ap.ch/case_studies/platform-for-digital-rental/
 organisation: Aroov
 skills:
   - Cloud architecture

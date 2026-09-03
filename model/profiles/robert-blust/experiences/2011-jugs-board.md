@@ -1,8 +1,10 @@
 ---
 source: rob-cv
 source-id: jugs-board
+kind: Community
 start: 2011-08
 end: 2014-12
+url: https://www.jug.ch/
 organisation: JUG Switzerland
 skills:
   - Community building
@@ -14,5 +16,5 @@ skills:
 
 ## Achievements
 
-- Board member of the Swiss Eclipse User Group — the Eclipse Special Interest Group within JUG Switzerland https://www.jug.ch/ — from 2011 to 2014.
+- Board member of the Swiss Eclipse User Group — the Eclipse Special Interest Group within JUG Switzerland — from 2011 to 2014.
 - Co-organized the annual Eclipse DemoCamp (Zürich) and Eclipse Finance Day.

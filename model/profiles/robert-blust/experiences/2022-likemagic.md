@@ -1,6 +1,7 @@
 ---
 source: rob-cv
 source-id: 2022-likemagic
+kind: Role
 start: 2022-04
 end: 2026-05
 organisation: LIKE MAGIC AG
@@ -50,7 +51,7 @@ skills:
 
 ## Achievements
 
-- Co-founder and Head of Technology of LIKE MAGIC AG https://www.zefix.ch/en/search/entity/list/firm/1576900.
+- Co-founder and Head of Technology of LIKE MAGIC AG.
 - Owned the technology direction and developed the technical leadership as the company grew from 5 to 25 people.
 - Built and scaled a multi-tenant hospitality SaaS platform serving 90+ customers, 430+ properties and 16,000+ units across the DACH region — processing 1.5M+ reservations, 8.1M+ guest communications and 89M+ platform events annually, integrating 3 PMS (Mews, Apaleo, Oracle OHIP) and 15+ smart-lock systems into a unified guest experience.
 - Developed and executed the company-wide AI strategy — governance under a Human Oversight principle, organizational knowledge management and the productive rollout of AI assistants across plan, change and run; data-privacy guardrails (no internal context used to train external LLMs), multi-provider tooling (Claude, Gemini, Copilot, n8n) and cost governance.
@@ -70,3 +71,9 @@ skills:
 
 Left in May 2026 after four years, with the platform mature at 90+ customers and 16,000+ units,
 to focus on where my own work was heading: modeling and AI, built in the open.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Commercial register entry | https://www.zefix.ch/en/search/entity/list/firm/1576900 |

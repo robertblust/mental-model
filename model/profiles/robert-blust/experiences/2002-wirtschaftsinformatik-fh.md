@@ -1,8 +1,9 @@
 ---
 source: rob-cv
 source-id: 2002-wirtschaftsinformatik-fh
-start: 2002-01
-end: 2006-01
+kind: Education
+start: 2002
+end: 2006
 organisation: AKAD University for Working Professionals
 skills:
   - Model-driven engineering
