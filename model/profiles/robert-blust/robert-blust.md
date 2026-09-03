@@ -68,7 +68,7 @@ source: rob-cv
 | Spec-driven development | Proficient | Built GuestGraph's identity-resolution engine and CompanyGraph — meta-model, tooling design and this reference instance — from written specifications, each reviewed before its plan and build, under conventions an agent pass enforces (2026). |
 | Stakeholder management | Proficient | Advised clients including Credit Suisse, Swisscard, AXA and Mobiliar as 3AP's CTO and presented the solution architecture in the winning Aroov and Stay KooooK pitches. |
 | Technical writing | Expert | Wrote the Analysis & Design methodology and guidance a UBS division worked to (2004-2009), built the LIKE MAGIC Mental Model as the organization's written context layer, and wrote CompanyGraph's conventions, design specs and worked example — prose other people follow, for readers who were not in the room. |
-| Vendor management | Proficient | Ran LIKE MAGIC's AI and automation tooling as a managed portfolio — Claude Code per-seat team licences, multi-provider tooling across Claude, Gemini and Copilot, and the build-versus-buy decision to self-host n8n on the platform's own Kubernetes rather than take the hosted service. |
+| Vendor management | Proficient | Ran LIKE MAGIC's AI and automation tooling as a managed portfolio — Claude Code per-seat team licenses, multi-provider tooling across Claude, Gemini and Copilot, and the build-versus-buy decision to self-host n8n on the platform's own Kubernetes rather than take the hosted service. |
 
 ## Summary
 

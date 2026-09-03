@@ -28,7 +28,7 @@ The content is the whole professional portfolio, in English, drawn from the CV. 
 `source: rob-cv` are mastered in the CV repository and copied here; pages with
 `source: Local` are written here. Nothing is invented.
 
-## Licence
+## License
 
 [CC BY 4.0](LICENSE) for everything written here — the skills, the values, the profile and its
 experiences, the documents under `docs/`. Use it, quote it, build on it; credit it. The prose is
