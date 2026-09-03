@@ -17,4 +17,4 @@ skills:
 
 ## Achievements
 
-- Represented UBS in a cross-industry Eclipse Foundation initiative to build an integrated, open-source modeling toolchain https://wiki.eclipse.org/ModelingPlatform/ — contributing alongside Airbus, Alcatel-Lucent, Atos, CEA LIST, Ericsson, Euranova, Fraunhofer FOKUS, Geensys, Generic Concept, itemis, Obeo, SBB and SWIFT.
+- Represented UBS in a cross-industry Eclipse Foundation initiative to build an integrated, open-source modeling toolchain — contributing alongside Airbus, Alcatel-Lucent, Atos, CEA LIST, Ericsson, Euranova, Fraunhofer FOKUS, Geensys, Generic Concept, itemis, Obeo, SBB and SWIFT.

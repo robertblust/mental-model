@@ -18,4 +18,4 @@ skills:
 
 ## Achievements
 
-- Presented "UBS Integration Architecture Tool Chain" at Eclipse Finance Day on 5 November 2013 at the Credit Suisse Tower in Zürich — the integration and interface toolchain built for UBS Wealth Management & Swiss Banking. Agenda: https://wiki.eclipse.org/Eclipse_Finance_Day_2013/
+- Presented "UBS Integration Architecture Tool Chain" at Eclipse Finance Day on 5 November 2013 at the Credit Suisse Tower in Zürich — the integration and interface toolchain built for UBS Wealth Management & Swiss Banking.
