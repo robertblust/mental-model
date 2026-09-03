@@ -4,7 +4,35 @@
 > lost outright, and four have no field in the master either. `experience` has nowhere to put a
 > link, so this proposes the two shapes a link actually takes.
 
-Status: proposed, nothing built. Changes `meta/core/experience-schema.md` only, so it is made
+> **Shipped. This spec held, with one exception and one prediction that came true twice.**
+>
+> Core 0.9.0 added `url` and `## References` exactly as §3 describes, and §2's test — *does the
+> link identify the entry, or support a claim inside it?* — is the sentence the schema's own
+> writing rules now carry. All sixteen links are placed: twelve `url`, four reference rows.
+>
+> **The exception is §7's opening.** *"The mechanical pass gains little"* is true, but this
+> spec also says the change is `experience-schema.md` only, and it was not: every table row had
+> to have one cell resolving to an entity or R4 threw, so a table of links to the outside world
+> broke the parser on the first instance that used it. The rule moved from the row to the table
+> upstream before any of this could land.
+>
+> **The prediction was §7's real subject**, and it proved itself twice inside a day. *An absent
+> optional field is indistinguishable from a fact that does not exist* — the four 3ap.ch case
+> studies were stated in rob-cv and absent here, exactly as §1 counted, and were only ever
+> going to be found by comparing the model against its master field by field. Then a fifth link
+> was copied in **wrong**, from a listing truncated at 64 characters, and the same comparison
+> caught that too. §7 calls a drift check the obvious fourth piece of work; two days of
+> evidence say it is the only thing that reaches this class of defect.
+>
+> Two things §4 and §6 flagged also came true. The `What` column is a classification the model
+> adds, and the writing rule keeping it a fact rather than a reading shipped with it. And the
+> zefix rows did need rob-cv to gain somewhere structured first — `references:`, added there
+> before those two rows could come down.
+>
+> Still open, unchanged: `organisation` means four things by kind, and the closed type
+> vocabulary still has no URI type.
+
+Status: proposed when written; shipped in core 0.9.0 and filled in here. Changes `meta/core/experience-schema.md` only, so it is made
 upstream in the CompanyGraph repository and comes back through a re-vendor. Nothing in this
 repository changes until it does.
 
