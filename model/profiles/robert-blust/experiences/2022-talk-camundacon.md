@@ -4,6 +4,7 @@ source-id: talk-camundacon-2022
 kind: Community
 start: 2022-10-06
 end: 2022-10-06
+url: https://page.camunda.com/talking-process-orchestration-with-robert-blust
 organisation: Camunda
 skills:
   - Process orchestration

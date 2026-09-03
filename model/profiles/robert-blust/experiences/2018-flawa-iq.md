@@ -4,6 +4,7 @@ source-id: flawa-iq
 kind: Project
 start: 2018-07
 end: 2019-02
+url: https://3ap.ch/case_studies/networked-first-aid-kit/
 organisation: Flawa
 skills:
   - Integration architecture

@@ -4,6 +4,7 @@ source-id: eclipse-finance-day-2014
 kind: Community
 start: 2014-10
 end: 2014-10
+url: https://wiki.eclipse.org/Eclipse_Finance_Day_2014/
 organisation: Eclipse Foundation
 skills:
   - Community building
