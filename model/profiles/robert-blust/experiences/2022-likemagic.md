@@ -71,3 +71,9 @@ skills:
 
 Left in May 2026 after four years, with the platform mature at 90+ customers and 16,000+ units,
 to focus on where my own work was heading: modeling and AI, built in the open.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Commercial register entry | https://www.zefix.ch/en/search/entity/list/firm/1576900 |
