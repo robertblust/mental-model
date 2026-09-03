@@ -5,7 +5,7 @@ kind: Community
 start: 2012-10-16
 end: 2012-10-16
 url: https://wiki.eclipse.org/Eclipse_Finance_Day_2012/
-organisation: Eclipse Foundation
+organization: Eclipse Foundation
 skills:
   - Integration architecture
   - Software modeling (UML, SysML, C4)

@@ -32,7 +32,7 @@ The content is the whole professional portfolio, in English, drawn from the CV. 
 
 [CC BY 4.0](LICENSE) for everything written here — the skills, the values, the profile and its
 experiences, the documents under `docs/`. Use it, quote it, build on it; credit it. The prose is
-the artefact, which is why this is a content licence rather than a code licence.
+the artefact, which is why this is a content license rather than a code license.
 
 `meta/core/` is not written here: it is CompanyGraph core, vendored at the release the manifest
 names, and stays under its own [Apache 2.0](meta/core/LICENSE).

@@ -11,7 +11,7 @@ mechanical rules it would cover are done here by hand as well.
 ## Procedure
 
 1. Read `meta/core/CONVENTIONS.md` in full. The rules it states are what is being checked —
-   R1–R13 at core 0.11.0 — and nothing it does not state. The count is read from the file, not
+   R1–R15 at core 0.13.0 — and nothing it does not state. The count is read from the file, not
    from here: a core upgrade adds rules and this list goes stale.
 2. Read `.companygraph/manifest.json`. Every folder under `meta/` is a vendored unit —
    `core` always, a pack beside it — and each carries its own `manifest.json` naming the
@@ -37,7 +37,8 @@ mechanical rules it would cover are done here by hand as well.
    of its H1 unless its schema states another derivation, and two do: an experience is its
    start year, a `-`, and a slug naming the period; a singular type's file is named for the
    type, which leaves its H1 free to be a name or a sentence.
-6. For every entity, against its schema: every required frontmatter field present; every
+6. For every entity, against its schema: every required frontmatter field present, and no
+   frontmatter field the schema does not declare (R15); every
    field typed `enum` holds a listed value (R8); every `ref → <type>` and
    `array of ref → <type>` value equals the H1 of an entity of that type (R3, R4); every
    list-valued field written as a block sequence, one entry per line, never a flow sequence
