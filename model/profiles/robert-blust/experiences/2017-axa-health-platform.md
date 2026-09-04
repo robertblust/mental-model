@@ -14,6 +14,7 @@ skills:
   - CI/CD
   - Frontend development (TypeScript, React)
   - Solution architecture
+  - Solution selling
   - Software architecture
 ---
 
@@ -28,4 +29,5 @@ skills:
 - Owned the complete integration architecture and its implementation, including the integration with the core insurance system Adcubum Syrius.
 - Built the Java/Spring Boot and Node.js backend with GraphQL APIs over MongoDB, to 3AP's microservice reference architecture and its delivery pipeline.
 - Built the React/Next.js frontend on AXA's own on-premise OpenShift — a platform the insurer ran itself, so the architecture had its elasticity without its managed services.
+- Won the work in a competitive pitch, presenting the solution architecture as the people who would build it.
 - Placed 3rd at the 2017 Swiss Insurance Innovation Prize.

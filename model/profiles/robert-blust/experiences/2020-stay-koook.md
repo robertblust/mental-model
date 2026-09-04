@@ -18,6 +18,7 @@ skills:
   - Software architecture
   - Stakeholder management
   - Solution architecture
+  - Solution selling
   - Event-driven architecture
   - Event streaming
   - Microservices architecture
