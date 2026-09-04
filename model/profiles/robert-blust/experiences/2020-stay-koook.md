@@ -18,6 +18,7 @@ skills:
   - Stakeholder management
   - Solution architecture
   - Event-driven architecture
+  - Event streaming
   - Microservices architecture
 ---
 
@@ -28,7 +29,7 @@ skills:
 ## Achievements
 
 - A digital hospitality platform for SV Group (“Stay KooooK”) putting the entire guest journey in one app — book, pay, check in, open the room, check out — replacing manual reception and paper processes (a 63-room hotel runs on just 2.4 FTE, ex-housekeeping).
-- Owned the complete architecture, front to back: React frontend; reactive Spring Boot WebFlux / Spring Cloud backend; Camunda (Zeebe) process orchestration; Google Cloud, Kubernetes, PostgreSQL and Pub/Sub.
+- Owned the complete architecture, front to back: React and TypeScript frontend, MUI from 2021; reactive Spring Boot WebFlux backend publishing and consuming through Spring Cloud Stream over Pub/Sub; Camunda (Zeebe) process orchestration; Google Cloud, Kubernetes and PostgreSQL.
 - Built the integrations into Apaleo PMS and Salto KS smart-door access.
 - Presented the solution architecture at the winning pitch.
 - Won Best Use of Technology at the Serviced Apartment Awards 2021; was nominated for the Best Swiss Web Award 2021 (Innovation).
