@@ -60,6 +60,12 @@ table — that is where one person's level and evidence live, never in the skill
 
 ## Sync slot
 
-Instance-owned skills would live at `.claude/skills/mental-model-<source>/`. None exist: the
-content was written once by hand. The `companygraph-*` skills are the portable ones from the
-tooling spec, carried here until the tooling installs them.
+Instance-owned skills live at `.claude/skills/mental-model-*/`, and one does:
+`mental-model-evidence-coverage` checks the Skills table's evidence cells against the
+experiences that carry them. It is here rather than in `companygraph-validate` because every
+check there cites a numbered rule from `CONVENTIONS.md` and there is none for this — the
+profile schema types `Evidence` as a string, so R4 never reaches inside it.
+
+The `companygraph-*` skills are the portable ones from the tooling spec, carried here until the
+tooling installs them. No skill syncs content into this repository; the content was written by
+hand.

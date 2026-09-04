@@ -8,6 +8,7 @@ organization: Eclipse Foundation
 skills:
   - Integration architecture
   - Software modeling (UML, SysML, C4)
+  - Model-driven engineering
   - Public speaking
 ---
 
