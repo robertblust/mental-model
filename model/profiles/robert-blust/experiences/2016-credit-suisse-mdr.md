@@ -10,6 +10,7 @@ skills:
   - Data engineering
   - Solution architecture
   - Software architecture
+  - Frontend development (TypeScript, React)
 ---
 
 # Credit Suisse — Master Data Repository
