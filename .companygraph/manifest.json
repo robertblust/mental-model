@@ -1,9 +1,9 @@
 {
   "tooling": "0.0.0",
   "core": {
-    "version": "0.13.0",
+    "version": "0.13.1",
     "shape": 1,
-    "source": "fetched:v0.13.0"
+    "source": "fetched:v0.13.1"
   },
   "units": "meta",
   "packs": [],
@@ -13,7 +13,7 @@
     "meta/core/experience-kind-schema.md": "sha256:d263d3eabfe8f092a67f2f1c3f2fffa4823dd276d0bbd747519cd30dbe049da0",
     "meta/core/experience-schema.md": "sha256:a916058f8198f65dc7c55ba3a94479890123ff4aa16097a400d1277cc5cfff6d",
     "meta/core/identity-schema.md": "sha256:6c99d12a7672275455624e9ca6cc80da1c097c0acec0a26639a6f894c8009198",
-    "meta/core/manifest.json": "sha256:4e4ad7cb02284086f40ceda7eaea8f7b3280c2538bcd2b06f6cfec9ecb312e4c",
+    "meta/core/manifest.json": "sha256:efb48c8674e624c71b5ecf09320d6cce0794a1c2e59d4834c77c2476d5780035",
     "meta/core/proficiency-level-schema.md": "sha256:cae2c9ea6dd25a563a157d06321b16e9515de34ec534b8d3622259bc13a6fc8d",
     "meta/core/profile-schema.md": "sha256:b81abb837c8b9c7df667c4a8bcc815d6031d7efd2e6a47a4cda7feaf64c6026b",
     "meta/core/skill-schema.md": "sha256:5cb729ac1b5b59bffd3a786075a9c1b7900dd5e8e80b35cfe14d906c1f3517e6",
