@@ -34,17 +34,18 @@ check. A commit with an unresolved reference is not made.
   repository and nowhere else. There is no upstream to correct first.
 - No page carries a `source-id`. That field is for a source that issues identifiers, and a
   repository does not.
-- A fact enters from Rob or from a document — a record, a deck, a published page. `WRITING.md`
-  asks that a claim be measured or verifiable; in a model of one person the person is where the
-  measurement comes from, so his own account of his work is a source and not a claim awaiting
-  one. The guard is against invention by whoever is editing, never against first-hand testimony.
+- A fact enters from Robert Blust or from a document — a record, a deck, a published page.
+  `WRITING.md` asks that a claim be measured or verifiable; in a model of one person the person
+  is where the measurement comes from, so his own account of his work is a source and not a
+  claim awaiting one. The guard is against invention by whoever is editing, never against
+  first-hand testimony.
 - A document that is public is linked; a document that is private is not held here. `url` and a
   `## References` row carry what a reader can open for themselves — a talk's recording, a
-  published case study, a commercial register entry. Zeugnisse, diplomas and certificates are a
-  deliberate exception: they are the source of dates and of what a period contained, they are
-  read when a page is written, and they stay in Rob's own vault and are shown on request. So an
-  entry whose evidence is private carries the fact and no link, and the missing link is the
-  decision rather than a gap to fill.
+  published case study, a commercial register entry. Employment references, diplomas and
+  certifications are a deliberate exception: they are the source of dates and of what a period
+  contained, they are read when a page is written, and they stay in Robert Blust's own vault and
+  are shown on request. So an entry whose evidence is private carries the fact and no link, and
+  the missing link is the decision rather than a gap to fill.
 
 Why the model masters itself, and what that decided beyond the field value, is in
 `docs/specs/2026-09-04-mastership-flip.md`.

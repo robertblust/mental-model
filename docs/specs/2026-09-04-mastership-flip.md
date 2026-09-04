@@ -45,14 +45,15 @@ rewriting them would falsify the history rather than update it.
 sentence had no referent, and the flip rewrote it as “claim only what something outside this
 repository can confirm — a document, a record, a published page”.
 
-That is not what the old rule meant. The CV was Rob's own account of himself, so his word was
-always the primary source and a document was the corroboration. The rewrite inverted that
+That is not what the old rule meant. The CV was Robert Blust's own account of himself, so his
+word was always the primary source and a document was the corroboration. The rewrite inverted that
 without anyone noticing, because it reads like a tightening and tightening a rule about
 invention feels safe.
 
-It surfaced when a skill claim rested on Rob describing his own practice, which the new wording
-refused and the old wording had always allowed. The rule now reads “claim only what Rob states
-or a document shows”, and names what the guard is actually against: invention by whoever is
+It surfaced when a skill claim rested on Robert Blust describing his own practice, which the new
+wording refused and the old wording had always allowed. The rule now reads “claim only what
+Robert Blust states or a document shows”, and names what the guard is actually against:
+invention by whoever is
 editing, not first-hand testimony.
 
 The finding is more general than the sentence. A rule whose referent is removed cannot simply be
