@@ -31,8 +31,14 @@ vendor, a product or a host, and telling them apart is reading, not parsing.
    - **an engagement the cell claims** — the finding. The experience is missing the skill, or
      the cell is claiming work that entry does not carry. Say which.
    - **a vendor, product, standard or host** — not a finding. Camunda in “a published Camunda
-     case study” is the publisher; Camunda in “owned the Camunda orchestration” is the tool.
-     Neither is an engagement.
+     case study” is the publisher; Camunda in “owned the Camunda orchestration” is the tool;
+     Eclipse in “an Eclipse-based tooling platform” is the technology and not the Foundation.
+     None of them is an engagement.
+   - **an organization named inside another engagement** — not a finding, and the subtlest of
+     the four. Credit Suisse and Swisscard are experiences of their own and also clients the
+     3AP entry says were advised; when the cell reads “advised clients including Credit Suisse
+     and Swisscard as 3AP’s CTO”, the engagement claimed is 3AP and the clients are its detail.
+     Only the sentence says which reading applies, so read the sentence and not the name.
    - **an artifact of splitting a name** — not a finding. “Analysis & Design” yields Analysis
      and Design as separate tokens and neither is an organization.
 4. Report each finding as the skill, the name, and which of the two repairs applies. Do not
