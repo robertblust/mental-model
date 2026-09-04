@@ -7,6 +7,7 @@ organization: Swisscard
 skills:
   - API design
   - Java
+  - Software testing
   - Database design
   - CI/CD
   - Legacy modernization

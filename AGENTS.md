@@ -37,10 +37,13 @@ above was drafted while it pointed the other way.
 - No Oxford comma.
 - One idea per bullet, leading with the outcome or the decision. Active voice. Past tense for
   what ended.
-- Claim only what something outside this repository can confirm — a document, a record, a
-  published page. No invented metrics, dates, employers or partners. This rule used to read
-  "claim only what the CV states"; the CV is archived and the rule it stood for is not, so it
-  now says what it always meant.
+- Claim only what Rob states or a document shows — a record, a deck, a published page. No
+  invented metrics, dates, employers or partners. This rule used to read "claim only what the
+  CV states", and the CV was Rob's own account of himself, so his word was always the primary
+  source and a document was the corroboration. Rewriting it as "what something outside this
+  repository can confirm" narrowed it by accident and would have locked out the one source the
+  model exists to hold. The guard is against invention by whoever is editing, not against
+  first-hand testimony.
 
 ## Writing a skill
 

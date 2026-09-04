@@ -29,6 +29,7 @@ skills:
   - DevOps
   - Java
   - Software engineering
+  - Software testing
   - Process orchestration
   - Business process modeling (BPMN, DMN)
   - Engineering leadership
@@ -62,7 +63,7 @@ skills:
 - Cut the platform into services by business capability — booking, guest, profile, payment, door access, messaging, operation and analytics — each stateless, self-contained, horizontally scalable and contract-first, with every integrated vendor reached through its own connector carrying a fallback path behind the realtime one.
 - Drove process orchestration with Camunda for the end-to-end guest journey (Booking → Check-in → Stay → Check-out).
 - Featured in a Camunda reference case citing a 95% self-check-in rate, 9.0/10 guest happiness and 7,000 process instances per month.
-- Owned the production cloud platform (site reliability engineering, incident management, performance), built as Infrastructure-as-Code on Google Cloud with DevOps and CI/CD standards.
+- Owned the production cloud platform (site reliability engineering, incident management, performance), built as Infrastructure-as-Code on Google Cloud with DevOps and CI/CD standards, unit and integration tests running on every pipeline.
 - Instrumented it on Cloud Monitoring and Cloud Trace with alerting driven by defined SLOs, end-to-end traceability and continuous monitoring being architecture principles the services were built to rather than instrumentation added afterward.
 - Built the LIKE MAGIC Mental Model — a structured organizational knowledge base (roles, processes, features, strategies, architecture decisions) that serves as the shared context layer for AI-assisted operations.
 - Built an internal AI marketplace on Claude (Claude Cowork) — giving teams governed access to AI assistants and agents, grounded in the Mental Model.
