@@ -59,3 +59,23 @@ editing, not first-hand testimony.
 The finding is more general than the sentence. A rule whose referent is removed cannot simply be
 reworded around the gap — what it meant has to be recovered first, and the recovery is not
 obvious from the words that are left.
+
+## When a document and the person disagree about the person
+
+The mastership rule says a fact enters from Robert Blust or from a document. It does not say
+what happens when the two conflict, and they did.
+
+The January 2015 Zeugnis lists among his responsibilities “Erstellung einer Anwendungsarchitektur
+zur Reduktion der Komplexität von Mengen von Punkt-zu-Punkt-Verbindungen mit Hilfe eines
+Integrationsbusses”. A bullet was written from it. He removed it: he did not create that
+architecture, he built the tooling that measured conformance to it, which the entry already
+claims through the coupling metric and the source-code analysis.
+
+His word governs, and the reason is not seniority. A Zeugnis is written by an employer
+summarizing a role, often generously and at one remove from who did what; the person is the
+only source that can distinguish the architecture from the tooling that checked it. So on a
+claim about what he personally did, the document is evidence and he is the authority.
+
+This is recorded because the document still says it. Anyone re-deriving the entry from the
+Zeugnis will find that line, see no matching bullet, and take the model for incomplete. It is
+not: the omission is a correction.
