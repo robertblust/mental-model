@@ -7,6 +7,7 @@ organization: Credit Suisse
 skills:
   - Model-driven engineering
   - Data governance
+  - Data engineering
 ---
 
 # Credit Suisse — Master Data Repository
