@@ -21,34 +21,24 @@ check. A commit with an unresolved reference is not made.
 - No page carries a `source-id`. That field is for a source that issues identifiers, and a
   repository does not.
 
-Until September 2026 the profile and 23 of the 24 experiences read `source: rob-cv` and were
-mastered in a private CV repository, written to generate tailored application dossiers and
-copied down here. That repository is archived: the role it was written to find starts on
-1 October 2026, and what it did — one source of facts, many rendered forms — is work this model
-can carry itself. The flip lost nothing, because the prose here was already the copy. What it
-changed is the direction of the arrow, and that is worth writing down, because every convention
-above was drafted while it pointed the other way.
+Why the model masters itself, and what that decided beyond the field value, is in
+`docs/specs/2026-09-04-mastership-flip.md`.
 
 ## House style
 
 - American English — `organization`, `modeling`, `color`. Proper nouns and quotations stay as
-  they are. This is core's R14 as of 0.13.1, so it binds the schema's field names too. It used
-  to say the opposite here, and named `organisation` as the exception that proved it.
+  they are. This is core's R14 as of 0.13.1, so it binds the schema's field names too.
 - No Oxford comma.
 - One idea per bullet, leading with the outcome or the decision. Active voice. Past tense for
   what ended.
 - Claim only what Rob states or a document shows — a record, a deck, a published page. No
-  invented metrics, dates, employers or partners. This rule used to read "claim only what the
-  CV states", and the CV was Rob's own account of himself, so his word was always the primary
-  source and a document was the corroboration. Rewriting it as "what something outside this
-  repository can confirm" narrowed it by accident and would have locked out the one source the
-  model exists to hold. The guard is against invention by whoever is editing, not against
-  first-hand testimony.
+  invented metrics, dates, employers or partners. The guard is against invention by whoever is
+  editing, never against first-hand testimony.
 
 ## Writing a skill
 
 The rules are in `docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. In short:
-the definition starts with the thing itself, never "The practice of"; `## In practice` is in
+the definition starts with the thing itself, never “The practice of”; `## In practice` is in
 the imperative without a subject and names no person, employer, date or number; products
 appear only in a closing `Typical tools:` clause. A skill is claimed in a profile's Skills
 table — that is where one person's level and evidence live, never in the skill file.
