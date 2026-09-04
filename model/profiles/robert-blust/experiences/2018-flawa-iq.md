@@ -8,6 +8,7 @@ organization: Flawa
 skills:
   - Integration architecture
   - Solution architecture
+  - Solution selling
   - Microservices architecture
   - CI/CD
   - IoT architecture
@@ -30,4 +31,5 @@ skills:
 - Together with comtac AG (a canton-St.-Gallen LoRaWAN electronics specialist), delivered an MVP of 10 working prototypes (RFID modules + LoRaWAN, backend on Google Cloud).
 - Built a small React front end for the MVP so the sensor readings could be seen rather than inferred from the telemetry.
 - Built the backend that ingests device telemetry from Swisscom's LoRaWAN broker, plus an API feeding the data into the ERP — closing the loop so consumed or expired modules trigger automatic reordering, on MongoDB and to 3AP's microservice reference architecture and its delivery pipeline.
+- Won the work in a competitive pitch, on a solution architecture for a problem the client had described rather than specified.
 - Won the “smart IoT” Award 2021, University of St. Gallen: https://flawa-iq.ch/de/blog/flawa-gewinnt-smart-iot-award
