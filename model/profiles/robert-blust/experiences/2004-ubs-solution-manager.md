@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: 2004-ubs-solution-manager
+source: Local
 kind: Role
 start: 2004-08
 end: 2009-09
@@ -12,6 +11,7 @@ skills:
   - Mentoring and coaching
   - Community building
   - Software process engineering
+  - Requirements engineering
   - Java
   - Model-driven engineering
   - Domain-specific language design
@@ -28,7 +28,7 @@ skills:
 ## Achievements
 
 - Owned the Analysis & Design discipline in the Rational Unified Process (RUP) rollout at UBS Wealth Management & Swiss Banking (WM&SB), replacing the proprietary engineering process with a market-standard one that the division's project teams then worked to.
-- Developed methodology and guidance for service and data modeling (Rational Method Composer, UML).
+- Developed methodology and guidance for service and data modeling (Rational Method Composer, UML) — how a requirement was elicited, written and carried into a design the delivery teams worked from.
 - Architected and built "DynaRep – Dynamic Repository", a repository-based modeling tool for managing UBS mainframe service interfaces — Eclipse plugins, web services and code generators producing the COBOL/Java service implementations (Java, SOAP, Oracle, MDSD).
 - Took on software-architect and project-management responsibility for the DynaRep platform.
 - Joined the division's Java Chief Developer committee and led it for two years.

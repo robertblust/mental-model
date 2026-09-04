@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: swisscom-agile-cockpit
+source: Local
 kind: Project
 start: 2015-09
 end: 2015-11

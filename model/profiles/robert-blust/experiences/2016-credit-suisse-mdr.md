@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: credit-suisse-mdr
+source: Local
 kind: Project
 start: 2016-02
 end: 2016-09
@@ -8,6 +7,7 @@ organization: Credit Suisse
 skills:
   - Model-driven engineering
   - Data governance
+  - Data engineering
 ---
 
 # Credit Suisse — Master Data Repository

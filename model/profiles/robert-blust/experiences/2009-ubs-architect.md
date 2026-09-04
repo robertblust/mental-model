@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: 2009-ubs-architect
+source: Local
 kind: Role
 start: 2009-10
 end: 2015-01
@@ -8,6 +7,7 @@ organization: UBS AG
 skills:
   - Enterprise architecture
   - Business architecture
+  - Domain-driven design
   - Agile delivery
   - Model-driven engineering
   - Domain-specific language design

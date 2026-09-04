@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: talk-camundacon-2022
+source: Local
 kind: Community
 start: 2022-10-06
 end: 2022-10-06

@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: 1999-ubs-trainee
+source: Local
 kind: Role
 start: 1999-10
 end: 2001-03

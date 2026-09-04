@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: swisscard-data-integration
+source: Local
 kind: Project
 start: 2015-12
 end: 2016-09
@@ -8,6 +7,7 @@ organization: Swisscard
 skills:
   - API design
   - Java
+  - Software testing
   - Database design
   - CI/CD
   - Legacy modernization

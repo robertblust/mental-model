@@ -24,9 +24,10 @@ AGENTS.md                      the instance's own rules; every modeling rule is 
 .claude/skills/companygraph-*  the portable skills: validate, add an entity, export as a skill
 ```
 
-The content is the whole professional portfolio, in English, drawn from the CV. Pages with
-`source: rob-cv` are mastered in the CV repository and copied here; pages with
-`source: Local` are written here. Nothing is invented.
+The content is the whole professional portfolio, in English. Every page is mastered here —
+`source: Local`, corrected in this repository and nowhere else. It began as a copy of a private
+CV repository written to generate job applications; that repository is archived now and this one
+took over as the master. Nothing is invented.
 
 ## License
 

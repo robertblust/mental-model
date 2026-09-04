@@ -1,7 +1,7 @@
 # Skills
 
 One file per skill, written against `meta/skill-schema.md` and its writing rules.
-Seventy-five skills, ours; ten groups.
+Sixty-nine skills, ours; ten groups.
 
 | Skill | Group |
 | --- | --- |
@@ -18,7 +18,6 @@ Seventy-five skills, ours; ten groups.
 | Change management | Leadership |
 | Stakeholder management | Leadership |
 | Vendor management | Leadership |
-| Program management | Leadership |
 | Agile delivery | Leadership |
 | Public speaking | Leadership |
 | Community building | Leadership |
@@ -37,12 +36,9 @@ Seventy-five skills, ours; ten groups.
 | Legacy modernization | Architecture |
 | IoT architecture | Architecture |
 | Agentic AI development | AI |
-| LLM application development | AI |
-| Retrieval-augmented generation | AI |
 | AI tool integration (MCP) | AI |
 | Machine learning | AI |
 | MLOps | AI |
-| Responsible AI | AI |
 | Context engineering | AI |
 | Conversational AI | AI |
 | Cloud architecture | Cloud and platform |
@@ -56,7 +52,6 @@ Seventy-five skills, ours; ten groups.
 | Incident management | Cloud and platform |
 | FinOps | Cloud and platform |
 | Database design | Data |
-| Database administration | Data |
 | Data modeling | Data |
 | Data engineering | Data |
 | Event streaming | Data |
@@ -76,7 +71,6 @@ Seventy-five skills, ours; ten groups.
 | Information security management | Security and compliance |
 | Data protection (GDPR) | Security and compliance |
 | Identity and access management | Security and compliance |
-| Application security | Security and compliance |
 | Knowledge management | Advisory |
 | Consulting | Advisory |
 | Technical writing | Advisory |

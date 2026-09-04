@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: eclipse-modeling-platform
+source: Local
 kind: Community
 start: 2010-03
 end: 2011-08
