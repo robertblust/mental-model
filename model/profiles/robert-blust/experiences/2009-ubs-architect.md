@@ -37,7 +37,6 @@ skills:
 - Co-organized the Eclipse events that brought the open-source modeling community to UBS in Zürich — MDD Day in 2010, then the Eclipse Finance Days, the Swiss forum for cross-company exchange on open source in financial services, in 2012 and 2014.
 - Built UBS's network into open-source communities and their standards, assessing where the firm could adopt them.
 - Continued on the division's Java Chief Developer committee, co-leading it for five years — the forum in which its lead engineers set common practice.
-- Worked from Corporate Center within Group Technology, the group unit that served the division — introduced publicly in 2013 as an IT architect for UBS WM&SB IT.
 - Led the team that implemented the tooling platform, an integrated Eclipse Modeling Framework stack built for model-based engineering, scalability and collaboration.
 - Scrum Master and technical lead in central WM&SB initiatives.
 - Spoke at UBS-internal brown-bag sessions on modeling, toolchain and architecture.
