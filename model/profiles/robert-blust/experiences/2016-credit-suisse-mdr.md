@@ -8,6 +8,8 @@ skills:
   - Model-driven engineering
   - Data governance
   - Data engineering
+  - Solution architecture
+  - Software architecture
 ---
 
 # Credit Suisse — Master Data Repository

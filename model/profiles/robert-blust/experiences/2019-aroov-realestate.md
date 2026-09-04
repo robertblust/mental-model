@@ -12,8 +12,9 @@ skills:
   - Microservices architecture
   - Java
   - Integration architecture
-  - Stakeholder management
   - Solution selling
+  - Stakeholder management
+  - Solution architecture
 ---
 
 # Aroov — Digital Rental Platform

@@ -6,6 +6,7 @@ end: 2006
 organization: AKAD University for Working Professionals
 skills:
   - Model-driven engineering
+  - Software architecture
 ---
 
 # Business Information Systems UAS

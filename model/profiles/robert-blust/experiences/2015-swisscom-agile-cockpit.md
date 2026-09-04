@@ -6,6 +6,9 @@ end: 2015-11
 organization: Swisscom
 skills:
   - Integration architecture
+  - Java
+  - API design
+  - Software engineering
 ---
 
 # Swisscom — Agile Delivery Cockpit

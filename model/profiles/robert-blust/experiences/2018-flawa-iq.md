@@ -11,6 +11,8 @@ skills:
   - Microservices architecture
   - IoT architecture
   - Data engineering
+  - Cloud architecture
+  - API design
 ---
 
 # Flawa iQ — Networked First-Aid Kit

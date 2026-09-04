@@ -7,7 +7,6 @@ url: https://wiki.eclipse.org/Eclipse_Finance_Day_2014/
 organization: Eclipse Foundation
 skills:
   - Community building
-  - Open-source stewardship
 ---
 
 # Conference Organizer — Eclipse Finance Day 2014, Zürich

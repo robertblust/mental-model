@@ -14,6 +14,7 @@ skills:
   - Solution selling
   - Spec-driven development
   - Requirements engineering
+  - Software architecture
 ---
 
 # Career break — ideation and product building
