@@ -24,7 +24,7 @@ skills:
 
 ## Achievements
 
-- A digital hospitality platform for SV Group ("Stay KooooK") putting the entire guest journey in one app — book, pay, check in, open the room, check out — replacing manual reception and paper processes (a 63-room hotel runs on just 2.4 FTE, ex-housekeeping).
+- A digital hospitality platform for SV Group (“Stay KooooK”) putting the entire guest journey in one app — book, pay, check in, open the room, check out — replacing manual reception and paper processes (a 63-room hotel runs on just 2.4 FTE, ex-housekeeping).
 - Owned the complete architecture, front to back: React frontend; reactive Spring Boot WebFlux / Spring Cloud backend; Camunda (Zeebe) process orchestration; Google Cloud, Kubernetes, PostgreSQL and Pub/Sub.
 - Built the integrations into Apaleo PMS and Salto KS smart-door access.
 - Presented the solution architecture at the winning pitch.

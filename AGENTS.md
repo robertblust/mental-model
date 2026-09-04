@@ -1,3 +1,17 @@
+<!-- conventions · v1.2.0 -->
+Shared conventions of the robertblust, guestgraph and companygraph organizations live in
+`conventions/`, vendored from robertblust/conventions at the release `conventions.json`
+names. Read them before writing or committing anything here.
+
+- `conventions/WRITING.md` — how we write: one voice, three registers, English and German.
+- `conventions/WORKING.md` — how we work with git and GitHub.
+- `conventions/REPOSITORIES.md` — the family: what each repository is and what pins what.
+
+Everything below this block is this repository's own. `sh conventions/conventions-sync check`
+says whether the copy matches the release; `sync` brings it to the release the pin names.
+Edit a shared file in robertblust/conventions, never here.
+<!-- end conventions -->
+
 # AGENTS.md
 
 Guidance for agents working in this repository — the instance's own rules. Every modeling
@@ -20,35 +34,26 @@ check. A commit with an unresolved reference is not made.
   repository and nowhere else. There is no upstream to correct first.
 - No page carries a `source-id`. That field is for a source that issues identifiers, and a
   repository does not.
-
-Until September 2026 the profile and 23 of the 24 experiences read `source: rob-cv` and were
-mastered in a private CV repository, written to generate tailored application dossiers and
-copied down here. That repository is archived: the role it was written to find starts on
-1 October 2026, and what it did — one source of facts, many rendered forms — is work this model
-can carry itself. The flip lost nothing, because the prose here was already the copy. What it
-changed is the direction of the arrow, and that is worth writing down, because every convention
-above was drafted while it pointed the other way.
-
-## House style
-
-- American English — `organization`, `modeling`, `color`. Proper nouns and quotations stay as
-  they are. This is core's R14 as of 0.13.1, so it binds the schema's field names too. It used
-  to say the opposite here, and named `organisation` as the exception that proved it.
-- No Oxford comma.
-- One idea per bullet, leading with the outcome or the decision. Active voice. Past tense for
-  what ended.
-- Claim only what Rob states or a document shows — a record, a deck, a published page. No
-  invented metrics, dates, employers or partners. This rule used to read "claim only what the
-  CV states", and the CV was Rob's own account of himself, so his word was always the primary
-  source and a document was the corroboration. Rewriting it as "what something outside this
-  repository can confirm" narrowed it by accident and would have locked out the one source the
-  model exists to hold. The guard is against invention by whoever is editing, not against
+- A fact enters from Robert Blust or from a document — a record, a deck, a published page.
+  `WRITING.md` asks that a claim be measured or verifiable; in a model of one person the person
+  is where the measurement comes from, so his own account of his work is a source and not a
+  claim awaiting one. The guard is against invention by whoever is editing, never against
   first-hand testimony.
+- A document that is public is linked; a document that is private is not held here. `url` and a
+  `## References` row carry what a reader can open for themselves — a talk's recording, a
+  published case study, a commercial register entry. Employment references, diplomas and
+  certifications are a deliberate exception: they are the source of dates and of what a period
+  contained, they are read when a page is written, and they stay in Robert Blust's own vault and
+  are shown on request. So an entry whose evidence is private carries the fact and no link, and
+  the missing link is the decision rather than a gap to fill.
+
+Why the model masters itself, and what that decided beyond the field value, is in
+`docs/specs/2026-09-04-mastership-flip.md`.
 
 ## Writing a skill
 
 The rules are in `docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. In short:
-the definition starts with the thing itself, never "The practice of"; `## In practice` is in
+the definition starts with the thing itself, never “The practice of”; `## In practice` is in
 the imperative without a subject and names no person, employer, date or number; products
 appear only in a closing `Typical tools:` clause. A skill is claimed in a profile's Skills
 table — that is where one person's level and evidence live, never in the skill file.
