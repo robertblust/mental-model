@@ -8,6 +8,7 @@ skills:
   - Software modeling (UML, SysML, C4)
   - Knowledge management
   - Change management
+  - Organization design
   - Mentoring and coaching
   - Community building
   - Software process engineering
@@ -31,6 +32,7 @@ skills:
 - Developed methodology and guidance for service and data modeling (Rational Method Composer, UML) — how a requirement was elicited, written and carried into a design the delivery teams worked from.
 - Architected and built “DynaRep – Dynamic Repository”, a repository-based modeling tool for managing UBS mainframe service interfaces — Eclipse plugins, web services and code generators producing the COBOL/Java service implementations (Java, SOAP, Oracle, MDSD).
 - Took on software-architect and project-management responsibility for the DynaRep platform, leading its project team of ten.
+- Defined the department-wide role model — each role with its tasks and the competencies it carried — and put it through a formal consultation before it took effect.
 - Worked with the Eclipse Modeling project from inside the methodology work — bringing requirements to it, reviewing concepts and building prototypes — and the cross-industry working group grew out of that cooperation.
 - Joined the division's Java Chief Developer committee and led it for two years.
 - Coached project teams in applying the methodology and built internal communities of practice.
