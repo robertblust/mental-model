@@ -13,6 +13,7 @@ skills:
   - Java
   - Integration architecture
   - Solution selling
+  - Stakeholder management
   - Solution architecture
 ---
 

@@ -15,6 +15,7 @@ skills:
   - Database design
   - Integration architecture
   - Software architecture
+  - Stakeholder management
   - Solution architecture
   - Event-driven architecture
   - Microservices architecture
