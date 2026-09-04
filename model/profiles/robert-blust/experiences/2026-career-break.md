@@ -8,6 +8,7 @@ skills:
   - Technical writing
   - Company vision and strategy
   - Agentic AI development
+  - Cloud architecture
   - Knowledge management
   - Context engineering
   - Public speaking
@@ -28,7 +29,8 @@ skills:
   tooling design — and built this repository as its reference instance.
 - Built GuestGraph, an identity-resolution engine for hospitality:
   deterministic and probabilistic matching, a guest graph and API, explainable and
-  reversible merges.
+  reversible merges. Designed for managed platform services and deliberately agnostic of
+  which cloud runs them, so adopting it is not also adopting a provider.
 - Published both ideas as open core with a billing model and a talk each, deck, PDF and audio
   in German and English, and put them up for scrutiny to a professional network.
 - Built the product work and the applications with AI coding agents as the primary tool,

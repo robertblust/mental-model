@@ -26,5 +26,5 @@ skills:
 - Built its signature automated health-insurer switching service: AXA sells only complementary insurance, not the mandatory basic insurance (which, by Swiss law, every resident must hold and no insurer may refuse). The service compares basic-insurance premiums each year and automatically moves AXA's complementary-insurance customers to the cheapest basic insurer — saving about CHF 426 per year on average, with AXA taking no basic-insurance commission to keep the advice neutral.
 - Owned the complete integration architecture and its implementation, including the integration with the core insurance system Adcubum Syrius.
 - Built the Java/Spring Boot and Node.js backend with GraphQL APIs, to 3AP's microservice reference architecture and its delivery pipeline.
-- Built the React/Next.js frontend on OpenShift.
+- Built the React/Next.js frontend on AXA's own on-premise OpenShift — a platform the insurer ran itself, so the architecture had its elasticity without its managed services.
 - Placed 3rd at the 2017 Swiss Insurance Innovation Prize.
