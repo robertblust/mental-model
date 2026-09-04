@@ -7,6 +7,7 @@ organization: UBS AG
 skills:
   - Enterprise architecture
   - Business architecture
+  - Domain-driven design
   - Agile delivery
   - Model-driven engineering
   - Domain-specific language design

@@ -13,6 +13,7 @@ skills:
   - Public speaking
   - Solution selling
   - Spec-driven development
+  - Requirements engineering
 ---
 
 # Career break — ideation and product building
