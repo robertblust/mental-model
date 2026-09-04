@@ -14,8 +14,10 @@ skills:
   - Frontend development (TypeScript, React)
   - Database design
   - Integration architecture
-  - Stakeholder management
   - Software architecture
+  - Solution architecture
+  - Event-driven architecture
+  - Microservices architecture
 ---
 
 # Stay KooooK — Digital Hospitality Platform

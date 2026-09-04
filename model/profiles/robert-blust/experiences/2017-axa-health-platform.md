@@ -11,6 +11,8 @@ skills:
   - Integration architecture
   - Microservices architecture
   - Frontend development (TypeScript, React)
+  - Solution architecture
+  - Software architecture
 ---
 
 # AXA Health — Digital Insurance Platform

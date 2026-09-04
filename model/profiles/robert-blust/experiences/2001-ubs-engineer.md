@@ -7,6 +7,8 @@ organization: UBS AG
 skills:
   - Java
   - Software engineering
+  - Mentoring and coaching
+  - Software architecture
 ---
 
 # Software Engineer / IT Developer
