@@ -23,15 +23,14 @@ skills:
 
 # Solution Manager, Software Engineering — Analysis & Design
 
-> Owned the Analysis & Design discipline in the RUP rollout at UBS Wealth Management & Business Banking, and architected DynaRep, the model-driven repository behind the division's mainframe service interfaces.
+> Owned the Analysis & Design discipline in the software development life cycle rollout at UBS Wealth Management & Business Banking — RUP and EUP based — and architected DynaRep, the model-driven repository behind the division's mainframe service interfaces.
 
 ## Achievements
 
 - Owned the Analysis & Design discipline in the rollout of a software development life cycle based on the Rational Unified Process and the Enterprise Unified Process at UBS Wealth Management & Business Banking (WM&BB), replacing the proprietary engineering process with a market-standard one that the division's project teams then worked to.
 - Worked from Corporate Center Group Technology, in its Software Development Life Cycle area — the group unit that served the division rather than a post inside it.
 - Developed methodology and guidance for service and data modeling (Rational Method Composer, UML) — how a requirement was elicited, written and carried into a design the delivery teams worked from.
-- Led the project team of ten that built and ran it.
 - Architected and built “DynaRep – Dynamic Repository”, a repository-based modeling tool for managing UBS mainframe service interfaces — Eclipse plugins, web services and code generators producing the COBOL/Java service implementations (Java, SOAP, Oracle, MDSD).
-- Took on software-architect and project-management responsibility for the DynaRep platform.
+- Took on software-architect and project-management responsibility for the DynaRep platform, leading its project team of ten.
 - Joined the division's Java Chief Developer committee and led it for two years.
 - Coached project teams in applying the methodology and built internal communities of practice.
