@@ -7,11 +7,13 @@ organization: UBS AG
 skills:
   - Software modeling (UML, SysML, C4)
   - Knowledge management
+  - Technical writing
   - Change management
   - Organization design
   - Mentoring and coaching
   - Community building
   - Software process engineering
+  - Engineering leadership
   - Requirements engineering
   - Java
   - Model-driven engineering

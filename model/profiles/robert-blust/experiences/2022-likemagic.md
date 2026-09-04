@@ -40,6 +40,7 @@ skills:
   - Event streaming
   - Data engineering
   - Knowledge management
+  - Technical writing
   - Site reliability engineering
   - Observability
   - FinOps
