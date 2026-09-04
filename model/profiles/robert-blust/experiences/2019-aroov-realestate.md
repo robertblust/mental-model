@@ -10,6 +10,7 @@ skills:
   - Container orchestration (Kubernetes)
   - Event-driven architecture
   - Microservices architecture
+  - API design
   - Java
   - Integration architecture
   - Solution selling
