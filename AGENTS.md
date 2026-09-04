@@ -34,20 +34,13 @@ check. A commit with an unresolved reference is not made.
   repository and nowhere else. There is no upstream to correct first.
 - No page carries a `source-id`. That field is for a source that issues identifiers, and a
   repository does not.
+- A fact enters from Rob or from a document — a record, a deck, a published page. `WRITING.md`
+  asks that a claim be measured or verifiable; in a model of one person the person is where the
+  measurement comes from, so his own account of his work is a source and not a claim awaiting
+  one. The guard is against invention by whoever is editing, never against first-hand testimony.
 
 Why the model masters itself, and what that decided beyond the field value, is in
 `docs/specs/2026-09-04-mastership-flip.md`.
-
-## House style
-
-- American English — `organization`, `modeling`, `color`. Proper nouns and quotations stay as
-  they are. This is core's R14 as of 0.13.1, so it binds the schema's field names too.
-- No Oxford comma.
-- One idea per bullet, leading with the outcome or the decision. Active voice. Past tense for
-  what ended.
-- Claim only what Rob states or a document shows — a record, a deck, a published page. No
-  invented metrics, dates, employers or partners. The guard is against invention by whoever is
-  editing, never against first-hand testimony.
 
 ## Writing a skill
 
