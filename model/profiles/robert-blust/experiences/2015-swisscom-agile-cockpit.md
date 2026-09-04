@@ -9,6 +9,7 @@ skills:
   - Java
   - API design
   - Software engineering
+  - Frontend development (TypeScript, React)
 ---
 
 # Swisscom — Agile Delivery Cockpit
@@ -19,4 +20,4 @@ skills:
 
 - Early 3AP client mandate for Swisscom: as integration architect and developer, built a real-time cockpit that surfaces agile delivery status on a TV dashboard.
 - Integrated and aggregated data from Rally (agile ALM) and HP Quality Center (test management) via MuleSoft (Mule ESB): the Agile Release Train broken down into sprints per project/team, and test coverage against Quality Center.
-- Built with MuleSoft and the Rally and Quality Center REST/SOAP APIs plus a dashboard front end.
+- Built with MuleSoft and the Rally and Quality Center REST/SOAP APIs, with a React front end putting the release train on a wall-mounted screen.
