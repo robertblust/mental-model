@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: credit-suisse-mdr
+source: Local
 kind: Project
 start: 2016-02
 end: 2016-09

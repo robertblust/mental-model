@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: eclipse-finance-day-2014
+source: Local
 kind: Community
 start: 2014-10
 end: 2014-10

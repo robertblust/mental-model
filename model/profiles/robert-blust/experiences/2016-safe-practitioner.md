@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: 2016-safe-practitioner
+source: Local
 kind: Education
 start: 2016-10
 end: 2016-10

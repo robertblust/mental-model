@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: camunda-case-study
+source: Local
 kind: Community
 start: 2023-04
 end: 2023-04

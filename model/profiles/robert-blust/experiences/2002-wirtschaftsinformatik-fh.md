@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: 2002-wirtschaftsinformatik-fh
+source: Local
 kind: Education
 start: 2002
 end: 2006

@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: talk-eclipse-finance-day-2012
+source: Local
 kind: Community
 start: 2012-10-16
 end: 2012-10-16

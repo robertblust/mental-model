@@ -16,11 +16,18 @@ check. A commit with an unresolved reference is not made.
 
 ## Mastership
 
-- A page with `source: rob-cv` is mastered in the CV repository. Correct it there first, then
-  copy the fact here. Editing it here alone is drift.
-- A page with `source: Local` is mastered here.
-- `source-id` on a `rob-cv` page is the CV entry's `id`. It is a pointer a person follows;
-  there is no sync.
+- Every page is mastered here. `source: Local` on all of them, and a correction is made in this
+  repository and nowhere else. There is no upstream to correct first.
+- No page carries a `source-id`. That field is for a source that issues identifiers, and a
+  repository does not.
+
+Until September 2026 the profile and 23 of the 24 experiences read `source: rob-cv` and were
+mastered in a private CV repository, written to generate tailored application dossiers and
+copied down here. That repository is archived: the role it was written to find starts on
+1 October 2026, and what it did — one source of facts, many rendered forms — is work this model
+can carry itself. The flip lost nothing, because the prose here was already the copy. What it
+changed is the direction of the arrow, and that is worth writing down, because every convention
+above was drafted while it pointed the other way.
 
 ## House style
 
@@ -30,7 +37,10 @@ check. A commit with an unresolved reference is not made.
 - No Oxford comma.
 - One idea per bullet, leading with the outcome or the decision. Active voice. Past tense for
   what ended.
-- Claim only what the CV states. No invented metrics, dates, employers or partners.
+- Claim only what something outside this repository can confirm — a document, a record, a
+  published page. No invented metrics, dates, employers or partners. This rule used to read
+  "claim only what the CV states"; the CV is archived and the rule it stood for is not, so it
+  now says what it always meant.
 
 ## Writing a skill
 

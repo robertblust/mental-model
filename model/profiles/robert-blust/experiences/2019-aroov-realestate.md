@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: aroov-realestate
+source: Local
 kind: Project
 start: 2019-08
 end: 2020-09

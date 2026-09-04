@@ -1,6 +1,5 @@
 ---
-source: rob-cv
-source-id: talk-eclipse-day-florence-2012
+source: Local
 kind: Community
 start: 2012-05-04
 end: 2012-05-04
