@@ -206,3 +206,27 @@ obvious fourth piece of work.
   and now with a second reason to answer it.
 - **Tooling, this repository** — the drift check in §7. It is the only thing that would have
   caught four missing links, and by construction no schema rule can.
+
+## The organization link, taken on the cheap
+
+§6 held `company_url` back: 3ap.ch and likemagic.tech link to the *organization*, not to the
+entry or to a claim in it, and where they belong waits on whether `organisation` stays one
+string meaning an employer, a client, a host and an awarding body at once.
+
+They are in `## References` now anyway, as "The company", on the two entries whose organization
+Robert Blust founded. That is a decision to take the link now and pay for the modeling later,
+made with the cost known rather than missed.
+
+The cost is what a reference row means. Every other row on this profile is something a reader
+opens to check a claim the entry makes — a register record, a case study, an award, the API
+documentation. A homepage checks nothing the entry says: 3AP's entry claims a company that
+scaled to about seventy people and led bids under Swiss procurement law, and 3ap.ch supports
+none of it. So the column now means "links belonging to this entry" rather than "evidence for
+it", and nothing distinguishes the two kinds by looking.
+
+It is deliberately narrow. Only the two companies Robert Blust founded, not every client or
+host, because a client's homepage would be someone else's marketing on a page about him.
+
+The proper answer is still §6's: decide whether `organisation` stays a plain string, and if it
+does not, give it somewhere structured to carry an address. When that lands these two rows come
+out.
