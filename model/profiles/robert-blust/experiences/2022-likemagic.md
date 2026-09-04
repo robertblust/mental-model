@@ -6,6 +6,7 @@ end: 2026-05
 organization: LIKE MAGIC AG
 skills:
   - Agentic AI development
+  - AI tool integration (MCP)
   - Context engineering
   - Conversational AI
   - AI strategy
@@ -67,6 +68,7 @@ skills:
 - Owned the production cloud platform (site reliability engineering, incident management, performance), built as Infrastructure-as-Code on Google Cloud with DevOps and CI/CD standards, unit and integration tests running on every pipeline.
 - Instrumented it on Cloud Monitoring and Cloud Trace with alerting driven by defined SLOs, end-to-end traceability and continuous monitoring being architecture principles the services were built to rather than instrumentation added afterward.
 - Built the LIKE MAGIC Mental Model — a structured organizational knowledge base (roles, processes, features, strategies, architecture decisions) that serves as the shared context layer for AI-assisted operations.
+- Kept it in step with the systems it described through MCP rather than bespoke integrations — Atlassian, Google Drive and Slack servers wired into the agent that maintained it, reading and writing Confluence pages, Jira issues, Google Docs and Sheets, each command scoped to a named allowlist of the tools it was allowed to call.
 - Built an internal AI marketplace on Claude (Claude Cowork) — giving teams governed access to AI assistants and agents, grounded in the Mental Model.
 - Architected the integration of AI communication vendors (d3x, ailean and onsai) into the staff solution — unified multi-channel guest messaging with AI agents answering, guest insights and staff collaboration.
 - Budget holder for the cloud platform and AI tooling — forecast and governed spend across dev, test and production, with consumption KPIs defined in the Mental Model and weekly actuals generated automatically from the Google Cloud billing API, routed to owners by role when a threshold was breached.
