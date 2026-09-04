@@ -16,6 +16,7 @@ skills:
   - Data modeling
   - IT governance
   - Platform engineering
+  - CI/CD
   - Engineering leadership
   - Software process engineering
   - Public speaking
