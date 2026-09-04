@@ -1,0 +1,11 @@
+{
+  "repo": "robertblust/conventions",
+  "tag": "v1.2.0",
+  "files": {
+    "conventions/WRITING.md": "sha256:b490bc45be749d431aa32ecb9acc070111de95fe244764b4546da1eb8745296c",
+    "conventions/WORKING.md": "sha256:c70b97073a10a8c30a939f7945b58628bcd16c8b85054566a67d0fb567b97b2e",
+    "conventions/REPOSITORIES.md": "sha256:b85d4a80144d46b432ee569eacee79644275f146d186c2cec2990b0a3e7be58f",
+    "conventions/AGENTS.md": "sha256:c6b1de498f075903f467d5870273c2f168d3dde3150a2b74373cb198fecadcd0",
+    "conventions/conventions-sync": "sha256:6cf64a6674b3c17956a961ad0f072b424f20703eef7f73550dc9e988bf21490c"
+  }
+}
