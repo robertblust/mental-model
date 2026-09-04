@@ -7,6 +7,7 @@ url: https://3ap.ch/case_studies/platform-for-digital-rental/
 organization: Aroov
 skills:
   - Cloud architecture
+  - Database design
   - Container orchestration (Kubernetes)
   - Event-driven architecture
   - Microservices architecture
@@ -27,7 +28,7 @@ skills:
 
 - Digital rental platform — applicants apply for apartments in a few clicks; property managers get automated workflows and radically simpler applicant communication.
 - Founded by Mobiliar and Garaio REM (2019), merged with market leader flatfox.ch (2021).
-- Created the backend architecture — 3AP's microservice reference architecture in its event-driven form, delivery pipeline included, on Google Cloud (Spring Boot, Kubernetes/GKE, Cloud Pub/Sub).
+- Created the backend architecture — 3AP's microservice reference architecture in its event-driven form, delivery pipeline included, on Google Cloud (Spring Boot, Kubernetes/GKE, Cloud Pub/Sub) — and the first of the platforms to hold its data in PostgreSQL rather than a document store.
 - Designed the integration architecture connecting Aroov to Garaio REM, one of Switzerland's leading property-management systems (and an Aroov co-founder).
 - Presented the solution architecture in the winning sales pitch.
 - Placed in the Top 4 for the Digital Real Estate Award 2021.
