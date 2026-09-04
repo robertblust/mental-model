@@ -90,3 +90,4 @@ to focus on where my own work was heading: modeling and AI, built in the open.
 | What | URL |
 | --- | --- |
 | Commercial register entry | https://www.zefix.ch/en/search/entity/list/firm/1576900 |
+| Developer documentation for the public API | https://api-docs.likemagic.tech/ |
