@@ -13,6 +13,7 @@ skills:
   - API design
   - Business architecture
   - Multi-tenant SaaS architecture
+  - Microservices architecture
   - Cloud architecture
   - Container orchestration (Kubernetes)
   - Platform engineering
@@ -55,6 +56,7 @@ skills:
 - Built and scaled a multi-tenant hospitality SaaS platform serving 90+ customers, 430+ properties and 16,000+ units across the DACH region — processing 1.5M+ reservations, 8.1M+ guest communications and 89M+ platform events annually, integrating 3 PMS (Mews, Apaleo, Oracle OHIP) and 15+ smart-lock systems into a unified guest experience.
 - Developed and executed the company-wide AI strategy — governance under a Human Oversight principle, organizational knowledge management and the productive rollout of AI assistants across plan, change and run; data-privacy guardrails (no internal context used to train external LLMs), multi-provider tooling (Claude, Gemini, Copilot, n8n) and cost governance.
 - Defined and executed the product and platform strategy across 12 business domains (L0 concepts, L1 capabilities) — API-first, with a managed public API and event/data hub, evolving toward an MCP-server layer so AI agents consume the platform directly.
+- Cut the platform into services by business capability — booking, guest, profile, payment, door access, messaging, operation and analytics — each stateless, self-contained, horizontally scalable and contract-first, with every integrated vendor reached through its own connector carrying a fallback path behind the realtime one.
 - Drove process orchestration with Camunda for the end-to-end guest journey (Booking → Check-in → Stay → Check-out).
 - Featured in a Camunda reference case citing a 95% self-check-in rate, 9.0/10 guest happiness and 7,000 process instances per month.
 - Owned the production cloud platform (site reliability engineering, incident management, performance), built as Infrastructure-as-Code on Google Cloud with DevOps and CI/CD standards.
