@@ -18,7 +18,7 @@ skills:
   - Software architecture
 ---
 
-# Career break — ideation and product building
+# Career break
 
 > Ongoing. Two open-core ideas built and published in the open, while looking for the next role.
 

@@ -11,7 +11,7 @@ skills:
   - Public speaking
 ---
 
-# Conference Speaker — Eclipse Finance Day 2013, Zürich
+# Eclipse Finance Day 2013
 
 > Spoke at Eclipse Finance Day in November 2013 on the UBS Integration Architecture Tool Chain.
 

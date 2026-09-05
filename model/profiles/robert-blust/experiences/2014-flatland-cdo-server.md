@@ -16,9 +16,9 @@ skills:
   - Java
 ---
 
-# Flatland CDO Server — A Model Repository Anyone Can Run
+# Flatland CDO Server
 
-> Published an Eclipse CDO server that serves any model over REST without code written for that model, then described a company on it.
+> A model repository anyone can run: an Eclipse CDO server published in the open that serves any model over REST without code written for that model, and the company described on it.
 
 ## Achievements
 

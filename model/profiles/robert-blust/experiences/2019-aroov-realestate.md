@@ -20,9 +20,9 @@ skills:
   - Solution architecture
 ---
 
-# Aroov — Digital Rental Platform
+# Aroov
 
-> 3AP · Backend & Integration Architect.
+> 3AP · Backend & Integration Architect — a digital rental platform on the reference architecture in its event-driven form, the first of them on PostgreSQL, integrated with Garaio REM.
 
 ## Achievements
 

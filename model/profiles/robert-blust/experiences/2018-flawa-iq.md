@@ -21,9 +21,9 @@ skills:
   - API design
 ---
 
-# Flawa iQ — Networked First-Aid Kit
+# Flawa iQ
 
-> 3AP · Solution Architect — IoT sensing & connectivity.
+> 3AP · Solution Architect — a networked first-aid kit that detects missing or expired modules over LoRaWAN and reorders them, from the sensing research to 10 working prototypes.
 
 ## Achievements
 

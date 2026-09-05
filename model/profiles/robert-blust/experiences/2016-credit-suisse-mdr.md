@@ -14,9 +14,9 @@ skills:
   - Frontend development
 ---
 
-# Credit Suisse — Master Data Repository
+# Credit Suisse Master Data Repository
 
-> 3AP · Lead Architect & Developer.
+> 3AP · Lead Architect & Developer — the Master Data Repository for Client Data Management, built on the Flatland CDO Server so data stewards and golden sources could be assigned and mapped for a FINMA requirement.
 
 ## Achievements
 
