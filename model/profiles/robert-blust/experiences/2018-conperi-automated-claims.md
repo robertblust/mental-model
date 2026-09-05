@@ -15,6 +15,7 @@ skills:
   - CI/CD
   - MLOps
   - Machine learning
+  - Event-driven architecture
   - Event streaming
 ---
 
