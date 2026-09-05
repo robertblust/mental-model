@@ -13,9 +13,9 @@ skills:
   - Legacy modernization
 ---
 
-# Swisscard — Data Integration Services Rewrite
+# Swisscard data integration rewrite
 
-> 3AP · Backend Engineer.
+> 3AP · Backend Engineer — replaced the proprietary SOAP layer in front of Swisscard's core platform with Spring Boot behind the same WSDL contract, so no consumer had to change.
 
 ## Achievements
 

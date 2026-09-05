@@ -9,7 +9,7 @@ skills:
   - Community building
 ---
 
-# Board Member — Swiss Eclipse User Group
+# Swiss Eclipse User Group board
 
 > Served on the board of the Swiss Eclipse User Group within JUG Switzerland.
 

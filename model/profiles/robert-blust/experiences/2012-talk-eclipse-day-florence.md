@@ -11,7 +11,7 @@ skills:
   - Public speaking
 ---
 
-# Conference Speaker — Eclipse Day Florence 2012
+# Eclipse Day Florence 2012
 
 > Spoke at Eclipse Day Florence in May 2012 on data modeling at enterprise scale.
 

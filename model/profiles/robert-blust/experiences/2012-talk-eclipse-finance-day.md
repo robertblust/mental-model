@@ -12,7 +12,7 @@ skills:
   - Public speaking
 ---
 
-# Conference Speaker — Eclipse Finance Day 2012, Zürich
+# Eclipse Finance Day 2012
 
 > Spoke at Eclipse Finance Day in October 2012 on interface management in a large enterprise.
 

@@ -10,7 +10,7 @@ skills:
   - Public speaking
 ---
 
-# Conference Speaker — CamundaCon 2022, Berlin
+# CamundaCon 2022
 
 > Co-presented at CamundaCon 2022 in Berlin on how SV Group became a SaaS business in six months on Camunda.
 

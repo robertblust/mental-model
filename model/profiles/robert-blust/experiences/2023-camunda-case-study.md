@@ -9,7 +9,7 @@ skills:
   - Process orchestration
 ---
 
-# Featured Case Study — LIKE MAGIC on Camunda
+# Camunda case study on LIKE MAGIC
 
 > Featured in Camunda's published case study on the SV Group hospitality platform behind Stay KooooK and LIKE MAGIC.
 

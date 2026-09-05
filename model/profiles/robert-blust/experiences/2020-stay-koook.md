@@ -25,9 +25,9 @@ skills:
   - API design
 ---
 
-# Stay KooooK — Digital Hospitality Platform
+# Stay KooooK
 
-> 3AP · Lead Architect (front-to-back) & Integrations.
+> 3AP · Lead Architect, front to back, and integrations — a digital hospitality platform putting the whole guest journey in one app, and the platform that became LIKE MAGIC.
 
 ## Achievements
 

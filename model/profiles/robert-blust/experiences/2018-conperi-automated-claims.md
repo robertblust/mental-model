@@ -19,9 +19,9 @@ skills:
   - Event streaming
 ---
 
-# Conperi — Automated Claims Processing
+# Conperi
 
-> 3AP · Architect — the platform, the labeling tool and the serving path, in an applied-research project with ZHAW.
+> 3AP · Architect — the platform, the labeling tool and the serving path of an applied-research proof of concept with ZHAW for reading health-insurance invoices into claims.
 
 ## Achievements
 

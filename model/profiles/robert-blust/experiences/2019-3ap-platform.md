@@ -20,7 +20,7 @@ skills:
   - Java
 ---
 
-# 3AP Platform — the Company's Own Runtime
+# 3AP Platform
 
 > 3AP · Built the platform 3AP's own projects and internal systems ran on, and ran part of it on two clouds at once to show it depended on neither.
 

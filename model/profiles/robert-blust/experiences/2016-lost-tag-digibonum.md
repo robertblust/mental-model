@@ -16,9 +16,9 @@ skills:
   - CI/CD
 ---
 
-# Lost-Tag — Lost-and-Found Platform for Digibonum
+# Lost-Tag
 
-> 3AP · Architect and hands-on lead across the whole stack, from the model to the app in the store.
+> 3AP · Architect and hands-on lead of Digibonum's lost-and-found platform across the whole stack, from the model to the app in the store.
 
 ## Achievements
 

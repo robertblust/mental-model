@@ -13,7 +13,7 @@ skills:
   - Java
 ---
 
-# Published Article — Process Monitoring with BPMN
+# Process Monitoring with BPMN
 
 > 3AP · Wrote the article and built the sample it runs on: finding a stalled guest journey by the message that never arrives.
 

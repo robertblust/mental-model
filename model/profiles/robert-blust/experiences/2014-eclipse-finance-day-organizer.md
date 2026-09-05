@@ -9,7 +9,7 @@ skills:
   - Community building
 ---
 
-# Conference Organizer — Eclipse Finance Day 2014, Zürich
+# Eclipse Finance Day 2014
 
 > Co-organized Eclipse Finance Day 2014 for the JUG Swiss Eclipse User Group and hosted it at UBS.
 

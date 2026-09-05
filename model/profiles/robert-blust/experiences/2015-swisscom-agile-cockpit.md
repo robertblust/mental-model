@@ -12,9 +12,9 @@ skills:
   - Frontend development
 ---
 
-# Swisscom — Agile Delivery Cockpit
+# Swisscom agile delivery cockpit
 
-> 3AP · Integration Architect & Engineer.
+> 3AP · Integration Architect & Engineer — a real-time cockpit that put the agile release train and its test coverage on a wall screen, fed from Rally and Quality Center through MuleSoft.
 
 ## Achievements
 

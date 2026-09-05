@@ -18,9 +18,9 @@ skills:
   - Software architecture
 ---
 
-# AXA Health — Digital Insurance Platform
+# AXA Health digital insurance platform
 
-> 3AP · Lead Architect & Backend Engineer, about two years hands-on.
+> 3AP · Lead Architect & Backend Engineer, about two years hands-on — a digital-first platform for complementary health insurance, its integration into Adcubum Syrius and the automated insurer-switching service.
 
 ## Achievements
 

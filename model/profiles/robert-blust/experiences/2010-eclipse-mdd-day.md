@@ -11,7 +11,7 @@ skills:
   - Community building
 ---
 
-# Conference Speaker — Eclipse MDD Day 2010, Zürich
+# Eclipse MDD Day 2010
 
 > Co-organized Eclipse MDD Day, brought it to UBS in Zürich-Altstetten and spoke on models as the enterprise's first-class artifacts.
 
