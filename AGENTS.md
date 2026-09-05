@@ -21,7 +21,7 @@ rule lives in `meta/core/CONVENTIONS.md` and is not restated here; read it first
 ## What this is
 
 Robert Blust, described in CompanyGraph: one profile, its experiences, the skills and values
-it claims and the ladder it claims them on. `meta/core/` is core 0.13.1, vendored and never edited
+it claims and the ladder it claims them on. `meta/core/` is core 0.13.2, vendored and never edited
 here; `.companygraph/manifest.json` records which release and a hash per file.
 
 ## Checks
