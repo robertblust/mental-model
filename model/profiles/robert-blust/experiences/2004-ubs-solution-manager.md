@@ -16,6 +16,7 @@ skills:
   - Engineering leadership
   - Requirements engineering
   - Java
+  - Software engineering
   - Model-driven engineering
   - Domain-specific language design
   - Software architecture
