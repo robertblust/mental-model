@@ -1,4 +1,4 @@
-<!-- conventions · v1.3.2 -->
+<!-- conventions · v1.4.0 -->
 Shared conventions of the robertblust, guestgraph and companygraph organizations live in
 `conventions/`, vendored from robertblust/conventions at the release `conventions.json`
 names. Read them before writing or committing anything here.
@@ -28,7 +28,8 @@ here; `.companygraph/manifest.json` records which release and a hash per file.
 
 The only job is `conventions`, called from robertblust/conventions at the pinned tag; the
 ruleset on `main` requires it. `meta/` is excluded from the prose check because it is core,
-vendored and never edited here; its words are core's to hold.
+vendored and never edited here; its words are core's to hold. `docs/superpowers/` is excluded
+too, as in every other member: its research quotes the taxonomy labels it compares.
 
 ## Before every commit
 
