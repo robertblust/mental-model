@@ -2,11 +2,13 @@
 source: Local
 kind: Project
 start: 2019-04
-end: 2020-06
+end: 2021-10
 organization: 3AP AG
 skills:
   - Platform engineering
   - Cloud architecture
+  - Identity and access management
+  - Data engineering
   - Microservices architecture
   - Event-driven architecture
   - Integration architecture
@@ -18,13 +20,17 @@ skills:
   - Java
 ---
 
-# 3AP Platform — Notification Services
+# 3AP Platform — the Company's Own Runtime
 
-> 3AP · Built the shared notification capability the company's own platform offered its projects, and ran it on two clouds at once to show it depended on neither.
+> 3AP · Built the platform 3AP's own projects and internal systems ran on, and ran part of it on two clouds at once to show it depended on neither.
 
 ## Achievements
 
-- A notification service on 3AP's internal platform that any project could call instead of integrating messaging vendors of its own: one authenticated POST, delivered as e-mail, SMS or a Slack message, with the vendor behind each channel a detail of the platform rather than of the project.
+- A platform of the company's own, so that a project or an internal system started from a running gateway, a running identity provider and shared capabilities rather than from an empty cluster — one architecture, drawn in the repository, with everything reaching the internet through a single reverse proxy that terminates TLS and enforces strict transport security.
+- Made identity the platform's job rather than each service's: Keycloak issuing the tokens, social sign-in trusted into it, and the gateway verifying the token before routing, so a service behind it receives requests already authenticated and no service holds a login of its own.
+- Put the company's own administration on it — a directory service reading from Google Directory, time tracking pulling from the system the company billed through, and a scheduler running the jobs that keep both current — because internal work justifies a platform the same way client work does, and it was the first thing to prove it.
+- Gave the organization model an interface a normal application can use: a GraphQL service reading the CDO repository through its client, which is what turned circles, roles and assignments from something only a modeling tool could open into something a front end could ask questions of.
+- A notification service any project could call instead of integrating messaging vendors of its own: one authenticated POST, delivered as e-mail, SMS or a Slack message, with the vendor behind each channel a detail of the platform rather than of the project.
 - Ran the same services on two clouds at once, which was the point of building them in the open like this: pushed to Swisscom's Cloud Foundry with a manifest and a bound message broker, and deployed to Google Kubernetes Engine as containers with the broker running beside them. Only the deployment descriptor and a Spring profile differed, so what a project depended on was the service and not the cloud under it.
 - Separated accepting a message from delivering one — the receiving service publishes to a queue for each channel and a service per channel consumes it — so a vendor that is slow or down delays delivery instead of failing the caller.
 - Traced a message across that hand-off with Spring Cloud Sleuth, so a message that never arrived can be followed past the queue rather than lost at it, and wired each service's health endpoint to its readiness and liveness probes with a request and a limit set for every container.
