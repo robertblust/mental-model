@@ -14,7 +14,7 @@ skills:
   - CI/CD
   - IoT architecture
   - Data engineering
-  - Frontend development (TypeScript, React)
+  - Frontend development
   - Java
   - Database design
   - Cloud architecture

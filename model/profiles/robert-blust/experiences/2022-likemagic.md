@@ -36,7 +36,7 @@ skills:
   - Engineering leadership
   - IT strategy
   - Product management
-  - Frontend development (TypeScript, React)
+  - Frontend development
   - Event streaming
   - Data engineering
   - Knowledge management

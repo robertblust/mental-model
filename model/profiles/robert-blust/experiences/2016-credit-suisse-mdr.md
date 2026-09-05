@@ -11,7 +11,7 @@ skills:
   - Solution architecture
   - Solution selling
   - Software architecture
-  - Frontend development (TypeScript, React)
+  - Frontend development
 ---
 
 # Credit Suisse — Master Data Repository
@@ -23,4 +23,4 @@ skills:
 - Built the Master Data Repository (MDR) for Credit Suisse Client Data Management — managing data items and classifying their source systems so data stewards could be assigned, and mapping the distribution of data across the core systems (golden source vs. slave), identified and visualized for governance.
 - Delivered to satisfy a FINMA regulatory requirement.
 - Won without a tender: the problem was known inside the bank and reached 3AP through its network, and the work followed a proposed solution architecture rather than a specification.
-- Implemented on Eclipse CDO (EMF model repository) with an Angular frontend; CDO fed by static source-code analysis and multiple data sources to discover and connect the model.
+- Implemented on the Flatland CDO Server rather than on stock Eclipse CDO — the model repository published as open source two years earlier, brought to a bank as the foundation of paid work — with a front end built along the same lines as the generic model browser published beside that server, and fed by static source-code analysis and several data sources to discover and connect the model.
