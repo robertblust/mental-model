@@ -27,6 +27,7 @@ skills:
 - Designed and published CompanyGraph, a meta-model for describing
   a company as a graph of Markdown — core vocabulary, conventions, a worked example, a
   tooling design — and built this repository as its reference instance.
+- Came to CompanyGraph the second time. The Flatland CDO Server carried a model of a company from 2014 — circles, roles, responsibilities and people, in a base vocabulary the models above it inherited, served over an API. The idea is the same one; what changed is what the model is made of. Markdown a person reads and edits, in a repository with a history, rather than a repository only a running server can open — because the earlier version was true for as long as the server ran, and this one is true for as long as the files exist.
 - Built GuestGraph, an identity-resolution engine for hospitality:
   deterministic and probabilistic matching, a guest graph and API, explainable and
   reversible merges. Designed for managed platform services and deliberately agnostic of
