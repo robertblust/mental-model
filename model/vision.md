@@ -9,7 +9,7 @@ source: Local
 ## What it means
 
 Everything public about my work is derived rather than maintained. One model holds the facts:
-what I have built, which capabilities I claim and on what evidence, and what I hold to. The CV
+what I have built, the capabilities I claim with their evidence and what I hold to. The CV
 and its per-application dossiers, the website and its talks, the LinkedIn profile and the
 loadable skill bundle are outputs of it. When two of them disagree the model is what gets
 corrected and the surfaces are rebuilt; none of them is edited on its own.

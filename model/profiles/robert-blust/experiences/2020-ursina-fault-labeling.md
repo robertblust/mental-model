@@ -20,7 +20,7 @@ skills:
 
 ## Achievements
 
-- A tool for a cable-broadband operator that turns network faults into a training set: an operator assigns a cause to a device over a time window, a scheduled job proposes assignments from event mappings, and every assignment carries a verification status, so what reaches the training database has been accepted by a person rather than inferred.
+- A tool for a cable-broadband operator that turns network faults into a training set: an operator assigns a cause to a device over a time window, a scheduled job proposes assignments from event mappings and every assignment carries a verification status, so what reaches the training database has been accepted by a person rather than inferred.
 - Designed the path from a public cloud application to the operator's own data platform — device telemetry read from an HBase cluster on their network and the labeled set held in their PostgreSQL — over tunnels that kept both databases unexposed.
 - Built the runtime on Google Kubernetes Engine as a script that creates it: the cluster, the managed PostgreSQL, certificate issuance and renewal, an nginx ingress on a fixed address, the tunnels and the routing, in nine steps run in order. What a console can build, only the person who clicked it can rebuild.
 - Wrote the API gateway in Java and Spring Cloud Gateway, with Keycloak as the identity provider and OAuth2 in front of every route.

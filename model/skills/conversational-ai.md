@@ -5,7 +5,7 @@ group: AI
 
 # Conversational AI
 
-> Systems that hold a dialogue with guests, customers or staff across several channels, increasingly with an AI agent answering rather than a person.
+> Systems that hold a dialogue with customers or staff across several channels, increasingly with an AI agent answering rather than a person.
 
 ## In practice
 

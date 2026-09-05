@@ -3,7 +3,7 @@ source: Local
 kind: Education
 start: 2002
 end: 2006
-organization: AKAD University for Working Professionals
+organization: Fachhochschule Aargau
 skills:
   - Model-driven engineering
   - Software architecture
