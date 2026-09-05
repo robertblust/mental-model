@@ -77,7 +77,7 @@ skills:
 - Held platform cost flat as volume grew to 89M+ events annually, through continuous database and code optimization.
 - Built information-security management: ISO 27001 (in progress), GDPR compliance and zero-trust API boundaries.
 - Published and consumed the platform's events through Spring Cloud Stream over a Pub/Sub binder, so a service declared its bindings and the transport stayed swappable underneath them.
-- Built the event and data hub every service published its business events to — ingesting them into BigQuery for analytics, idempotent on the event id so a redelivery cannot double-count, and serving them back as a queryable event log with webhook subscriptions for systems that needed them pushed.
+- Built the event and data hub every service published its business events to — ingesting them into BigQuery for analytics, idempotent on the event id so a redelivery cannot double-count and serving them back as a queryable event log with webhook subscriptions for systems that needed them pushed.
 - Tech stack: Java, Spring Boot / WebFlux, Spring Cloud GCP, Spring Cloud Stream, PostgreSQL, R2DBC/jOOQ, Google Pub/Sub, BigQuery, GraphQL, React / TypeScript / MUI, Kubernetes (GKE), Camunda BPMN, GitHub Actions.
 
 ## Ending

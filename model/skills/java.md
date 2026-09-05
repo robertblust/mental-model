@@ -13,4 +13,4 @@ Write and maintain Java code, applying its object-oriented features and concurre
 solve application problems. Use the surrounding ecosystem, such as build tools, frameworks and
 libraries, to structure and package applications. Tune and debug applications running on the
 Java virtual machine, including memory and performance issues specific to that runtime. Typical
-tools: Java, Spring, Maven.
+tools: Spring, Maven, JUnit.

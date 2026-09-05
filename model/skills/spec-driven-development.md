@@ -13,4 +13,4 @@ Write the specification first: purpose, decisions, the alternatives rejected and
 out of scope. Get it reviewed by the people who will disagree later, then derive the plan and
 the tests from it rather than from the code. Keep the spec in the repository beside the code
 it governs and change it before changing the behavior. Let agents and people build from the
-same text. Typical tools: spec-kit, Markdown specs and plans in the repository.
+same text. Typical tools: spec-kit.

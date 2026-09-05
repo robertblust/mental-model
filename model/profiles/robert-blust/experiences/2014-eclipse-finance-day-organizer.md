@@ -15,5 +15,5 @@ skills:
 
 ## Achievements
 
-- Co-organized Eclipse Finance Day on 31 October 2014 for the JUG Swiss Eclipse User Group, alongside Matthias Zimmermann of BSI and Serano Colameo of itemis.
+- Co-organized Eclipse Finance Day on October 31, 2014 for the JUG Swiss Eclipse User Group, alongside Matthias Zimmermann of BSI and Serano Colameo of itemis.
 - Brought the conference to UBS in Zürich Altstetten, giving Swiss financial institutions a venue to compare open-source practice.
