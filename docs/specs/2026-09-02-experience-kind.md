@@ -45,7 +45,7 @@ by things that do not judge.
 
 A new type, `experience-kind`, with one file per member in `model/experience-kinds/`:
 
-- **Role** — a position held in an organisation. The employment history.
+- **Role** — a position held in an organization. The employment history.
 - **Project** — a delivery inside a role, worth naming on its own. Client and internal alike.
 - **Community** — work in public: a talk, a board seat, a working group, a published case.
 - **Education** — a degree, a certification, a course.
@@ -168,12 +168,12 @@ achievements are two published open-core products. Three readings:
 
 1. **Project** — what it produced. Understates it: the period is not a delivery inside a role,
    and there is no role.
-2. **Role** — a period held, self-employed. Overstates it: there is no organisation, and
+2. **Role** — a period held, self-employed. Overstates it: there is no organization, and
    `organisation` is where a reader would look for one.
 3. **A fifth kind, `Independent`** — a self-directed period with no employer. Honest, and a
    category many careers now have.
 
-**Recommended: (3), and the recommendation changed with the modelling.** As an enum token this
+**Recommended: (3), and the recommendation changed with the modeling.** As an enum token this
 was the expensive option and the draft hedged it against "if a second such period is
 foreseeable". As a type it is one file in this repository — no core edit, no release, no
 re-vendor — so the question collapses back to the only one that should have mattered: is it
@@ -219,7 +219,7 @@ discovered.
   each kind: an employer for a role, a client for a project, a host for a community entry, an
   awarding body for education. The schema's writing rules already say the last one. With `kind`
   as a type there is now a place to say the other three — each kind's own `## What it means`
-  section — which turns the question from "one field with four meanings, or a modelling smell?"
+  section — which turns the question from "one field with four meanings, or a modeling smell?"
   into something answerable in prose the model actually holds. Whether that is enough, or
   whether `organisation` should split, is still the question to ask before anything is built on
   it.

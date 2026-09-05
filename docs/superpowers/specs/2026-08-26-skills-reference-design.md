@@ -33,7 +33,7 @@ Both are core findings (§8). The instance fixes them by adopting a vocabulary �
 Four public sources were compared row by row — SFIA 9, ESCO v1.2, O*NET, Lightcast Open
 Skills — against 69 candidates drawn from the CV's `skills.yaml`, the 16 job postings under
 `applications/`, and the first 23 skills. The comparison, with every source's name for every
-row and each source's licence, is
+row and each source's license, is
 [`docs/superpowers/research/2026-08-26-skill-sources-compared.md`](../research/2026-08-26-skill-sources-compared.md).
 
 What it showed:
@@ -44,18 +44,18 @@ What it showed:
   engineering and Marketing campaign management, which nobody here will claim.
 - **ESCO** is free for any reuse with stable URIs and German labels, and has a concept for
   about half the rows — generic ones.
-- **Lightcast** has the market grain for almost every row and a licence that is not open.
+- **Lightcast** has the market grain for almost every row and a license that is not open.
 - **O*NET** is products.
 
 So the decision: **the skill set is curated by us, at the grain the postings use.** Every
 definition and every `In practice` is written here, in our words. The four sources were
 consulted to find that grain and to check nothing obvious was missing; none is cited in a
-skill file. Nothing is vendored, nothing is copied, nothing is referenced — the licence
+skill file. Nothing is vendored, nothing is copied, nothing is referenced — the license
 question disappears with the copying, and the model does not depend on a vocabulary it does
 not own.
 
 Seventy-three skills (appendix). The rule for adding one: a capability a profile can claim with
-evidence, at the grain a job posting would name it, distinct from its neighbours in what
+evidence, at the grain a job posting would name it, distinct from its neighbors in what
 someone doing it does — not in which product they use.
 
 ---

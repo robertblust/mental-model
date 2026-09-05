@@ -136,7 +136,7 @@ that keeps it a fact rather than an opinion, and the schema should carry one as 
 ## 5. What this does not do
 
 - **It does not touch `organisation`.** rob-cv also carries `company_url` (3ap.ch,
-  likemagic.tech), which is a link to the *organisation*, not to the entry or to a claim.
+  likemagic.tech), which is a link to the *organization*, not to the entry or to a claim.
   Where that belongs depends on the question the kind spec raised — whether `organisation` stays
   one string meaning four things — and it should be answered before a link is hung off it.
 - **It does not add a `url` type.** The closed vocabulary in R9 has `string` and nothing for a

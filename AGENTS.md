@@ -1,4 +1,4 @@
-<!-- conventions · v1.2.0 -->
+<!-- conventions · v1.3.2 -->
 Shared conventions of the robertblust, guestgraph and companygraph organizations live in
 `conventions/`, vendored from robertblust/conventions at the release `conventions.json`
 names. Read them before writing or committing anything here.
@@ -8,8 +8,9 @@ names. Read them before writing or committing anything here.
 - `conventions/REPOSITORIES.md` — the family: what each repository is and what pins what.
 
 Everything below this block is this repository's own. `sh conventions/conventions-sync check`
-says whether the copy matches the release; `sync` brings it to the release the pin names.
-Edit a shared file in robertblust/conventions, never here.
+says whether the copy matches the release, `sync` brings it to the release the pin names, and
+`sh conventions/conventions-check` holds this repository's own Markdown to `WRITING.md`. Edit
+a shared file in robertblust/conventions, never here.
 <!-- end conventions -->
 
 # AGENTS.md
@@ -22,6 +23,12 @@ rule lives in `meta/core/CONVENTIONS.md` and is not restated here; read it first
 Robert Blust, described in CompanyGraph: one profile, its experiences, the skills and values
 it claims and the ladder it claims them on. `meta/core/` is core 0.13.1, vendored and never edited
 here; `.companygraph/manifest.json` records which release and a hash per file.
+
+## Checks
+
+The only job is `conventions`, called from robertblust/conventions at the pinned tag; the
+ruleset on `main` requires it. `meta/` is excluded from the prose check because it is core,
+vendored and never edited here; its words are core's to hold.
 
 ## Before every commit
 
