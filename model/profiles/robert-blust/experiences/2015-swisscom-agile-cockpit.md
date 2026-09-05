@@ -9,7 +9,7 @@ skills:
   - Java
   - API design
   - Software engineering
-  - Frontend development (TypeScript, React)
+  - Frontend development
 ---
 
 # Swisscom — Agile Delivery Cockpit

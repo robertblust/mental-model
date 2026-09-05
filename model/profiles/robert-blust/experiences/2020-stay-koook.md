@@ -12,7 +12,7 @@ skills:
   - Process orchestration
   - Business process modeling (BPMN, DMN)
   - Java
-  - Frontend development (TypeScript, React)
+  - Frontend development
   - Database design
   - Integration architecture
   - Software architecture

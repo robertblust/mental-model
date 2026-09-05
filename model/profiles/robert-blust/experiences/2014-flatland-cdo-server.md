@@ -9,6 +9,7 @@ skills:
   - Model-driven engineering
   - Domain-specific language design
   - Data modeling
+  - Frontend development
   - Organization design
   - API design
   - Identity and access management
@@ -22,6 +23,7 @@ skills:
 ## Achievements
 
 - Published the server in August 2014 and kept it public since, under the Eclipse Public License: seven people have starred it and three have forked it to build on, none of whom he knows.
+- Published a client beside it that browses any model the server holds rather than one model in particular, so a new metamodel is explorable without a screen built for it, and the organization above was worked with through that client.
 - Ran it in a bank. Credit Suisse's Master Data Repository was built on this server in 2016, which is a heavier kind of adoption than a fork: a regulated institution depending on it, and the same person answering for both the product and the delivery.
 - Made the REST interface generic by going through EMF's reflective API rather than generated accessors, so a model added to the repository is readable and writable the same day without an endpoint written for its types.
 - Shipped it as something to run rather than assemble — an OSGi product with its own target platform, build and product tests, packaged as a container image — because a model repository that takes a week to stand up is one nobody tries.

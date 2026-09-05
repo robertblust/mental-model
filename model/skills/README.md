@@ -58,7 +58,7 @@ Sixty-nine skills, ours; ten groups.
 | Data governance | Data |
 | Software engineering | Software development |
 | Java | Software development |
-| Frontend development (TypeScript, React) | Software development |
+| Frontend development | Software development |
 | Software testing | Software development |
 | Open-source stewardship | Software development |
 | Software modeling (UML, SysML, C4) | Modeling and process |

@@ -12,7 +12,7 @@ skills:
   - Integration architecture
   - Microservices architecture
   - CI/CD
-  - Frontend development (TypeScript, React)
+  - Frontend development
   - Solution architecture
   - Solution selling
   - Software architecture

@@ -10,6 +10,7 @@ skills:
   - Software modeling (UML, SysML, C4)
   - Requirements engineering
   - Microservices architecture
+  - Frontend development
   - API design
   - Java
   - CI/CD
