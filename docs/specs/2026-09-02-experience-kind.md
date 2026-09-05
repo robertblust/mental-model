@@ -116,7 +116,7 @@ question first and a `rank` field only if rendering cannot answer it.
 
 ## 4. What it adds
 
-**A schema, upstream.** `meta/core/experience-kind-schema.md`, modelled on
+**A schema, upstream.** `meta/core/experience-kind-schema.md`, modeled on
 `proficiency-level-schema.md` and shorter, since it carries no `rank`:
 
 | Field | Required | Type | Description |
@@ -128,7 +128,7 @@ question first and a `rank` field only if rendering cannot answer it.
 means` section — the same three-part shape every other singular-value type here uses.
 
 **A folder, here.** `model/experience-kinds/` with `role.md`, `project.md`, `community.md`,
-`education.md`. R7 singularises the folder to `experience-kind`; R12 gives each file the slug of
+`education.md`. R7 singularizes the folder to `experience-kind`; R12 gives each file the slug of
 its H1.
 
 **One field on `experience`**, `kind`, required, `ref → experience-kind`.

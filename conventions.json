@@ -1,1 +1,1 @@
-{ "repo": "robertblust/conventions", "tag": "v1.3.2", "exclude": ["meta"] }
+{"repo": "robertblust/conventions", "tag": "v1.4.0", "exclude": ["meta", "docs/superpowers"]}

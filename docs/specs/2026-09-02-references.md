@@ -192,7 +192,7 @@ field is indistinguishable from a fact that does not exist.** No pass over the i
 only thing that finds it is comparing the model against its master field by field — which is
 what found it here, and which nothing in the repository does routinely.
 
-That is worth stating plainly because it generalises: for every optional field, mastership is
+That is worth stating plainly because it generalizes: for every optional field, mastership is
 enforced by nobody. A drift check between rob-cv and the model — every `source: rob-cv` page,
 every field the master states — is a tooling question rather than a schema one, and it is the
 obvious fourth piece of work.
