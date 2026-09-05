@@ -1,1 +1,1 @@
-{ "repo": "robertblust/conventions", "tag": "v1.2.0" }
+{ "repo": "robertblust/conventions", "tag": "v1.3.2", "exclude": ["meta"] }
