@@ -18,3 +18,9 @@ increasingly work alongside them.
 
 This instance is both the description and the proof: the same discipline sold to a company,
 applied first to its author.
+
+## Also at
+
+| Where | URL |
+| --- | --- |
+| GitHub | https://github.com/robertblust |
