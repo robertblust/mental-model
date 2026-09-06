@@ -84,3 +84,11 @@ source: Local
 ## Summary
 
 Technology executive with over 25 years building digital platforms, scaling engineering organizations and delivering complex transformation. Most recently co-founder and Head of Technology at LIKE MAGIC AG; previously CTO of 3AP AG, after 15 years at UBS AG, where I owned the engineering process and the toolchain several hundred engineers across the division worked inside. One thread runs through all of it: I build from explicit models rather than beside them — service contracts and a canonical data model at UBS, domains and capabilities at LIKE MAGIC. The newest turn is applying that to the company itself: LIKE MAGIC's Mental Model became the shared context layer for AI-assisted operations, and is now published as CompanyGraph. I believe AI is reshaping how we build software — moving the real constraint from “build fast” to “decide well” — and I bring business-critical platforms reliably into production under solid security and compliance standards (ISO 27001 in progress, GDPR / DSGVO).
+
+## Also at
+
+| Where | URL |
+| --- | --- |
+| GitHub | https://github.com/robertblust |
+| LinkedIn | https://www.linkedin.com/in/robertblust/ |
+| Substack | https://substack.com/@robblust |
