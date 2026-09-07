@@ -118,6 +118,20 @@ def title_of(name):
     return text[:1].upper() + text[1:]
 
 
+def filename_of(title):
+    """A source's title, as the name of the file it is written to.
+
+    A title is what a citation carries and reads with its spaces; a file name is what a reader
+    types, quotes in a shell and sees in a directory listing, where a space is awkward in all
+    three. So the file name is the title with every run of whitespace collapsed to one dash —
+    `Experience kinds` becomes `Experience-kinds.md` — while the title itself, and the H1 the
+    source opens with, keeps the space. The same rule holds for a title a declaration writes in
+    `export/notebooklm-sources.md`, so the two paths that produce a title can never reintroduce
+    a space into a file name.
+    """
+    return re.sub(r"\s+", "-", title.replace("/", "-").strip()) + ".md"
+
+
 def folder_of(paths, name=None):
     """The folder a source is named for, as a POSIX path.
 
@@ -313,11 +327,14 @@ def main():
 
     # Two sources cannot share a file name. One would overwrite the other, the entities in the
     # loser would leave the bundle, and the run would still exit 0 — which is the exact way a
-    # bundle goes quietly short. The document names are taken first, so a declared source named
-    # `README` cannot quietly replace the repository's own.
+    # bundle goes quietly short. The check is against the file name rather than the title,
+    # because the file name is what collides on disk: two titles differing only in whitespace,
+    # `Experience kinds` and `Experience  kinds`, would still want one file and must fail here.
+    # The document names are taken first, so a declared source named `README` cannot quietly
+    # replace the repository's own.
     names, clash = {name for name, _ in DOCUMENTS}, False
     for source in sources:
-        name = source["title"].replace("/", "-") + ".md"
+        name = filename_of(source["title"])
         if name in names:
             print(f"FAIL  two sources want {name}: give one a heading of its own in "
                   f"export/notebooklm-sources.md")

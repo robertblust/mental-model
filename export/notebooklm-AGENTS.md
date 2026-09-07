@@ -28,8 +28,8 @@ The rest carry its {{entities}} entities.
 | `Profiles.md` | the profile and its {{count:model/profiles/robert-blust/experiences}} experiences, {{count:Profiles}} entities | Ask what he did, where, when and what it produced |
 | `Skills.md` | {{count:Skills}} skills, one per capability | Look up what a capability is and what practicing it looks like |
 | `Values.md` | {{count:Values}} values | Ask how he decides and what he refuses |
-| `Experience kinds.md` | the {{count:Experience kinds}} kinds an experience can be | Understand why a break, a talk or a degree is filed as it is |
-| `Proficiency levels.md` | the {{count:Proficiency levels}} rungs a skill is claimed on | Weigh what Expert or Competent means here |
+| `Experience-kinds.md` | the {{count:Experience kinds}} kinds an experience can be | Understand why a break, a talk or a degree is filed as it is |
+| `Proficiency-levels.md` | the {{count:Proficiency levels}} rungs a skill is claimed on | Weigh what Expert or Competent means here |
 | `Sources.md` | the {{count:Sources}} source the pages are mastered in | Check where a fact would be corrected |
 | `Identity.md` | who the model is about | Find the name, the location and the public addresses |
 | `Vision.md` | the future the model works toward | Ask what the work is building toward |
