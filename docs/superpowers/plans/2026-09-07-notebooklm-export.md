@@ -203,7 +203,8 @@ claimed, dup = {}, []
 for b in blocks:
     title = b.splitlines()[0].strip()
     for pat in re.findall(r"^- `([^`]+)`", b, re.M):
-        hits = [p for p in glob.glob(pat, recursive=True) if p.endswith(".md")]
+        hits = [p for p in glob.glob(pat, recursive=True)
+                if p.endswith(".md") and not p.endswith("README.md")]
         if not hits: print(f"DEAD PATTERN  {title}: {pat}")
         for h in hits:
             if h in claimed: dup.append((h, claimed[h], title))
@@ -215,7 +216,7 @@ print(f"{len(claimed)} of {len(allm)} entities claimed; {len(allm - set(claimed)
 PY
 ```
 
-Expected: no `DEAD PATTERN`, no `CLAIMED TWICE`, and a fall-back count that is the experiences not named by a heading — 26 of the 36, plus nothing else.
+Expected: no `DEAD PATTERN`, no `CLAIMED TWICE`, and `107 of 133 entities claimed; 26 fall back to their type`. The 26 are the experiences no heading names. A README is not an entity — the verifier's entity set excludes `model/**/README.md`, so the pattern expansion here excludes it too, or the two disagree by the four READMEs sitting inside the globbed folders.
 
 - [ ] **Step 3: Commit**
 
@@ -261,7 +262,10 @@ description: Package this CompanyGraph instance twice — dist/<instance>-skill.
    first thing a reader of the source list sees. Then each entity it claims, in path order:
 
    - the `<!-- entity: <path> -->` marker, kept — this reader strips comments, so it costs the
-     listener nothing and it is what `export/notebooklm-verify` reads coverage from;
+     listener nothing and it is what `export/notebooklm-verify` reads coverage from. A folder's
+     `README.md` is not an entity and never carries the marker: inline it as the source's
+     opening context or leave it out, but do not claim it, or the bundle and the model disagree
+     by every README a pattern happened to match;
    - the entity's H1 demoted to H2, so the file's own H1 is the source and the entities are
      its parts;
    - its `>` tagline directly under that heading, untouched: one sentence written to stand
