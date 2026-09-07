@@ -133,11 +133,19 @@ carrying the model's own pages as they are written.
    exactly one source, no source exceeds 500,000 words and the folder holds at most 50 files.
 
 8. Remove the staging directory. `dist/` is gitignored; neither artifact is ever committed.
-   The two artifacts carry the same entity count as each other and as the repository:
-   `find model -name '*.md' ! -name README.md | wc -l` plus
-   `find meta -name '*.md' ! -name README.md | wc -l`. The README is excluded on both halves
-   because it is never an entity on either, and the core vendored under `meta/` carries none
-   today: the day a release ships one, a count without the exclusion disagrees with both
-   artifacts and the hand-run check is the thing that looks wrong.
+
+   The assertion that both artifacts are the model, whole, is running
+   `./export/notebooklm-verify`, not counting lines. A marker count cannot tell a file that
+   carries no marker because it is copied whole from a file that carries no marker because an
+   entity is missing, and it cannot tell a real `<!-- entity: … -->` from one a reading guide
+   uses as a prose example of itself — a naive count of both artifacts against the repository
+   raises exactly that false alarm on a correct export, and a check that cries wolf on a
+   correct export is a check the next operator learns to skip. The verifier reads paths
+   instead: every entity the zip and the bundle each carry, compared against the model's own
+   and against each other. Its final line names what it checked —
+   `PASS  11 sources, 133 entities, largest 15,383 words; zip agrees` when both artifacts hold,
+   `zip not built` in its place when only the bundle was rebuilt, and a `FAIL` line naming the
+   path that does not agree when one of them is wrong.
+
    A difference is the failure this design exists to catch — a bundle built two days ago and
    five experiences short reads as correct and is not.

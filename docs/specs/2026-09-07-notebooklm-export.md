@@ -33,12 +33,25 @@ so experiences travel with their profile, and count the entities as they go. A s
 would repeat that traversal, and the day a root type is added one of the two would keep
 forgetting it — silently, because neither would know what the other saw.
 
-**Because they share a walk they can share a count, and a shared count is what stops them
-drifting.** The export asserts the same number against both artifacts and against the
-repository, and fails naming the difference. That failure is the one this design exists for: on
-Sep 7 the committed bundle had been built on Sep 5 and held 31 experiences against the model's
-36, with a skills table that disagreed too, and nothing anywhere said so. An episode recorded
-from it would have been accurate to a model that no longer existed.
+**Because they share a walk they can be held to the same set of entity paths, and that is what
+stops them drifting.** `export/notebooklm-verify` reads the paths each artifact actually
+carries — a marker in a bundle source, and in the zip either a marker or, for the two singular
+entities step 4 of the skill copies whole, the file's own path — and compares them against the
+model's walk and against each other, failing by naming the path that is missing or extra
+rather than a bare number that cannot say which entity moved. A raw count of `.md` files
+cannot make that comparison: it cannot tell a file copied whole with no marker from one an
+entity went missing from, and it cannot tell a real marker from the one `AGENTS.md` uses as a
+prose example of itself, so it raises a false alarm on an export that is in fact correct: 131
+marks in a correctly built zip, 134 in a correctly built bundle, 133 in the repository, three
+different numbers from one walk and nothing wrong with any of them. Until the verifier read
+the zip too, nothing checked the zip at all — a hand-run count was the only assertion the
+procedure named there, and a check that cries wolf on a correct export is a check the next
+operator learns to skip.
+
+The failure the design exists for is a true one: on Sep 7 the committed bundle had been built
+on Sep 5 and held 31 experiences against the model's 36, with a skills table that disagreed
+too, and nothing anywhere said so. An episode recorded from it would have been accurate to a
+model that no longer existed.
 
 ## Shape differs, coverage never does
 
