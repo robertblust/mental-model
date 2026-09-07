@@ -90,9 +90,13 @@ titles against a cap of fifty, each one a phrase a host would say out loud.
 
 ## Every entity lands in exactly one source
 
-**An entity a declaration does not claim goes to its root type's source, and the export names
-how many did.** Coverage is then true by construction rather than by discipline: there is
-nowhere for an entity to fall out, and the count assertion holds whatever the declaration says.
+**An entity a declaration does not claim goes to a source named for the folder it sits in —
+`Experiences` and never `Profiles` — and the export names how many did.** The folder it sits in
+rather than its root type, because `model/profiles/` is the one folder the walk recurses into:
+an experience's root type is the profile holding it, and a source called `Profiles` names
+nothing a listener would ask about. Coverage is then true by construction rather than by
+discipline: there is nowhere for an entity to fall out, and the count assertion holds whatever
+the declaration says.
 
 Failing instead was the first draft of this rule and is wrong. What it would catch is a new
 experience sitting in a general source rather than the era it belongs to, which is a grouping
@@ -109,18 +113,20 @@ already produces and what a company is actually asked about — who does what, h
 what we measure, who we serve.
 
 **A complete company graph in one notebook is the case this serves, not the case it survives.**
-The reference instance holds 342 entities across 20 root types — 104 customers, 71 features, 42
-KPIs, 27 roles, 26 people — and it fits with room nobody will use: 20 sources against a cap of
-50 on the free tier, its largest source 23,563 words against a per-source cap of 500,000, a
-twentieth of it. The room is worth naming because it says where the limit is not: an instance
-twenty times the size of that one still has sources inside the cap, and would meet the source
-count long before it met the word count.
+The company graph measured for this holds 342 entities across 20 root types — 104 customers,
+71 features, 42 KPIs, 27 roles, 26 people — and it fits with room nobody will use: 20 sources
+against a cap of 50 on the free tier, its largest source 23,563 words against a per-source cap
+of 500,000, a twentieth of it. The room is worth naming because it says where the limit is
+not: an instance twenty times the size of that one still has sources inside the cap, and would
+meet the source count long before it met the word count.
 
 So the declaration is a refinement for an instance small enough to have a narrative, not a rung
 above a fallback. Absent it the export groups by root type, which is the right answer for a
 company and a merely adequate one for a person. Where a declaration would produce more sources
-than the tier allows, the export consolidates to root type and says it did, rather than
-emitting a bundle that cannot be uploaded.
+than the tier allows, nothing consolidates it: `export/notebooklm-verify` refuses a bundle of
+more than 50 files, and the instance answers by rewriting its declaration. An export that
+regrouped on its own would hand back a bundle grouped the way the instance did not write, which
+is a worse answer than a build that stops and says the number.
 
 ## What the rendering does
 
@@ -133,10 +139,12 @@ be stale again.
 
 Per entity, as it is inlined into a source:
 
-- The frontmatter becomes a dateline a person can read — `Role · UBS AG · Oct 2009 – Mar 2015` —
+- The frontmatter becomes a dateline a person can read — `Role · UBS AG · Oct 2009–Mar 2015` —
   because `source: Local` and `rank: 20` are instructions to a validator and noise to a host.
 - Not every field survives into the dateline. A field a listener could use travels — `url`,
-  `group`, `skills` and the like — because the dateline is what a host reads aloud. `source`,
+  `group`, `skills` and the like — because the dateline is what a host reads aloud. `skills`
+  travels on a line of its own under it: one role claims forty-five, and a thousand characters
+  on one line is neither read to the end nor read aloud. `source`,
   `source-id` and `rank` do not: they name the mastering system and order the ladder, which is
   a validator's business, not this reader's. Coverage is of entities, which the marker carries,
   not of frontmatter keys.

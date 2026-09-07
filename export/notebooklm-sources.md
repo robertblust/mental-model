@@ -3,8 +3,9 @@
 > One heading per source, and the heading is the file name — which is the title a citation
 > carries and the name a brief steers with, so it is written as a phrase a host would say. The
 > paths under it are from the repository root and may glob. An entity no heading claims goes to
-> its root type's source, which is the safe default and not a silent one: `notebooklm-verify`
-> counts them.
+> a source named for the folder it sits in — `Experiences`, never `Profiles` — which is the safe
+> default and not a silent one: the build prints how many landed there, and that source's own
+> opening paragraph says it holds what no heading claimed.
 
 ## Robert Blust — the short version
 

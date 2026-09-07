@@ -27,6 +27,12 @@ MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
 # so the two artifacts cover the same entities and the same claims about them.
 DATELINE_FIELDS = ("kind", "organization", "start", "end")
 
+# `skills` leaves the dateline for a line of its own. One role claims forty-five of them, which
+# is 1,012 characters no host reads aloud in one breath and no reader finds the end of; and they
+# cannot simply be dropped, because the frontmatter is the only place a skill meets the
+# experience that shows it. So the fix is the line break.
+OWN_LINE_FIELDS = ("skills",)
+
 # These never travel. They address a validator, not a listener: `source` and `source-id` say
 # which system masters the page and `rank` orders the proficiency ladder, and a host reading
 # `Source: Local` aloud on all 133 entities is reading bookkeeping. Coverage is of entities,
@@ -106,6 +112,12 @@ def title_of(name):
 def assign(walked, sources):
     """Give every entity to the first heading that claims it, and the rest to a fallback.
 
+    A source carries its entities in the order the declaration writes its globs, and inside one
+    glob in path order, because the order a declaration writes is an argument. `How this model
+    works` opens on the five kinds an experience can be and closes on the schema underneath
+    them; path order alone would sort `meta/**` ahead of `model/**` and open it on the vendored
+    schema instead, which is the reader meeting the appendix before the point.
+
     Where a declaration groups the model, a straggler goes to a source named for its own type
     folder — `experiences`, not `profiles` — because `model/profiles/` is the one folder the
     walk recurses into, so the root type there is not the entity's type.
@@ -115,18 +127,24 @@ def assign(walked, sources):
     `model/`, one for `meta/` and one for each singular entity. That is the cut the agent
     bundle already makes, so the two artifacts are grouped alike until the instance says
     otherwise.
+
+    A glob matching nothing on disk comes back as dead, with the source that wrote it, for the
+    caller to fail on. A renamed folder would otherwise empty a whole source and drop it in
+    silence, and the verifier would still pass: it holds the bundle against the model, and the
+    model has no opinion about which heading an entity was meant to sit under.
     """
-    left = list(walked)
+    left, dead = list(walked), []
     for source in sources:
         source["entities"] = []
         for pattern in source["globs"]:
             matched = {pathlib.Path(m) for m in glob.glob(pattern, recursive=True)}
-            taken = [p for p in left if p in matched]
-            source["entities"] += taken
+            if not matched:
+                dead.append((source["title"], pattern))
+                continue
+            source["entities"] += [p for p in left if p in matched]
             left = [p for p in left if p not in matched]
-        source["entities"].sort(key=lambda p: p.as_posix())
     if not left:
-        return sources
+        return sources, dead
 
     declared = bool(sources)
     groups = {}
@@ -147,7 +165,7 @@ def assign(walked, sources):
             "globs": [],
             "entities": sorted(groups[name], key=lambda p: p.as_posix()),
         })
-    return sources
+    return sources, dead
 
 
 def frontmatter(text):
@@ -194,11 +212,12 @@ def label(key):
 
 
 def dateline(fields):
-    """`<Kind> · <organization> · <start> – <end>`, then every field a listener could use.
+    """The dateline as its lines: `<Kind> · <organization> · <start>–<end>`, then the rest.
 
     A field the entity does not carry is dropped, and a start equal to its end is written
     once. What follows the four is labeled because `AI` says nothing standing on its own where
-    `Group: AI` does. What is in VALIDATOR_FIELDS is dropped whatever the entity carries.
+    `Group: AI` does. What is in VALIDATOR_FIELDS is dropped whatever the entity carries, and
+    what is in OWN_LINE_FIELDS comes back as a line under the dateline rather than on it.
     """
     bits = [fields[key] for key in ("kind", "organization") if fields.get(key)]
     start, end = fields.get("start"), fields.get("end")
@@ -207,10 +226,20 @@ def dateline(fields):
     elif start or end:
         bits.append(readable(start or end))
     for key, value in fields.items():
-        if key in DATELINE_FIELDS or key in VALIDATOR_FIELDS or not value:
+        if key in DATELINE_FIELDS or key in VALIDATOR_FIELDS or key in OWN_LINE_FIELDS:
             continue
-        bits.append(f"{label(key)}: {', '.join(value) if isinstance(value, list) else value}")
-    return " · ".join(bits)
+        if value:
+            bits.append(f"{label(key)}: {listed(value)}")
+    lines = [" · ".join(bits)] if bits else []
+    for key in OWN_LINE_FIELDS:
+        if fields.get(key):
+            lines.append(f"{label(key)}: {listed(fields[key])}")
+    return lines
+
+
+def listed(value):
+    """A field's value as one string, a block sequence as the comma-separated list."""
+    return ", ".join(value) if isinstance(value, list) else value
 
 
 def shift(lines):
@@ -252,8 +281,7 @@ def render(path):
     out = [f"<!-- entity: {path.as_posix()} -->", "", f"## {name}"]
     if tagline:
         out += [""] + tagline
-    line = dateline(fields)
-    if line:
+    for line in dateline(fields):
         out += ["", line]
     rest = "\n".join(shift(lines)).strip("\n")
     if rest:
@@ -273,21 +301,30 @@ def main():
         return 1
 
     declared = pathlib.Path("export/notebooklm-sources.md")
-    sources = [s for s in assign(walked, declaration(declared) if declared.is_file() else [])
-               if s["entities"]]
+    sources, dead = assign(walked, declaration(declared) if declared.is_file() else [])
+
+    # A pattern that matches nothing is a source about to go missing: the folder it named was
+    # renamed, its entities fall to the fallback, the emptied source is dropped on the next
+    # line, and the verifier still passes because it holds the bundle against the model rather
+    # than against the declaration. So the build says which pattern died and writes nothing.
+    for title, pattern in dead:
+        print(f"FAIL  {title}: nothing matches `{pattern}` in export/notebooklm-sources.md")
+    if dead:
+        return 1
+    sources = [s for s in sources if s["entities"]]
 
     # Two sources cannot share a file name. One would overwrite the other, the entities in the
     # loser would leave the bundle, and the run would still exit 0 — which is the exact way a
     # bundle goes quietly short. Two profiles each holding an unclaimed `experiences/` folder
     # is how it happens, so this is checked before anything is written.
-    names, clash = {}, False
+    names, clash = set(), False
     for source in sources:
         name = source["title"].replace("/", "-") + ".md"
         if name in names:
             print(f"FAIL  two sources want {name}: give one a heading of its own in "
                   f"export/notebooklm-sources.md")
             clash = True
-        names[name] = source
+        names.add(name)
         source["file"] = name
     if clash:
         return 1
@@ -304,9 +341,12 @@ def main():
             parts.append(source["prose"])
         parts += [render(p) for p in source["entities"]]
         (out / source["file"]).write_text("\n\n".join(parts).rstrip() + "\n", encoding="utf-8")
-        print(f"{len(source['entities']):4d} entities  {source['file']}")
+        held = len(source["entities"])
+        print(f"{held:4d} {'entity' if held == 1 else 'entities':<8}  {source['file']}")
 
-    print(f"{len(walked):4d} entities  in {len(list(out.glob('*.md')))} sources under {out}")
+    written = len(list(out.glob("*.md")))
+    print(f"{len(walked):4d} {'entity' if len(walked) == 1 else 'entities':<8}  in {written} "
+          f"{'source' if written == 1 else 'sources'} under {out}")
     return 0
 
 

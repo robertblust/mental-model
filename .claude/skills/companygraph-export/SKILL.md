@@ -77,11 +77,19 @@ skill: `SKILL.md` at the root, `model/<type>.md` per root type folder, `model/me
    folder. Two sources may not share a title: one file would overwrite the other and the
    entities in the loser would leave the bundle with the run still reporting success, which is
    the way a bundle goes quietly short. The build fails instead, before it writes anything, and
-   names the file both wanted.
+   names the file both wanted. A pattern matching nothing on disk fails the same way and for the
+   same reason: a renamed folder would empty a source and drop it without a word, and the
+   verifier would still pass because it holds the bundle against the model and not against the
+   declaration.
 
    Each source opens with its heading as an H1 and the paragraph the declaration wrote under
    it, because that paragraph is what NotebookLM's per-source summary is built from and the
-   first thing a reader of the source list sees. Then each entity it claims, in path order:
+   first thing a reader of the source list sees. Then each entity it claims, in the order the
+   declaration writes its globs and, inside one glob, in path order — because the order a
+   declaration writes is an argument. `How this model works` opens on the five kinds an
+   experience can be and closes on the schema underneath them; path order alone sorts `meta/**`
+   ahead of `model/**` and opens it on the schema, which is the appendix reaching the reader
+   before the point:
 
    - the `<!-- entity: <path> -->` marker, kept — this reader strips comments, so it costs the
      listener nothing and it is what `export/notebooklm-verify` reads coverage from. A folder's
@@ -104,17 +112,23 @@ skill: `SKILL.md` at the root, `model/<type>.md` per root type folder, `model/me
      the same line, labeled and in the order the file wrote it — `Group: AI`, `URL: …`, a block
      sequence as a comma-separated list. Labeled because `AI` standing alone says nothing where
      `Group: AI` does, and carried at all because a fact the agent bundle holds and the folder
-     drops is a listener answering from less than the model knows. `source`, `source-id` and
-     `rank` are the exception and never travel: they say which system masters the page and how
-     the ladder is ordered, which is a validator's business, and `Source: Local` read aloud on
-     every entity is bookkeeping. Coverage is of entities, which the marker carries, and not of
-     frontmatter keys;
+     drops is a listener answering from less than the model knows. `skills` is the one field
+     that leaves the dateline for a line of its own directly under it: a role can claim
+     forty-five of them, and a thousand characters on one line is neither read to the end nor
+     read aloud. `source`, `source-id` and `rank` are the exception and never travel: they say
+     which system masters the page and how the ladder is ordered, which is a validator's
+     business, and `Source: Local` read aloud on every entity is bookkeeping. Coverage is of
+     entities, which the marker carries, and not of frontmatter keys;
    - then the body as it is.
 
    Verify: `./export/notebooklm-verify` exits 0. It asserts every walked entity appears in
    exactly one source, no source exceeds 500,000 words and the folder holds at most 50 files.
 8. Remove the staging directory. `dist/` is gitignored; neither artifact is ever committed.
    The two artifacts carry the same entity count as each other and as the repository:
-   `find model -name '*.md' ! -name README.md | wc -l` plus `find meta -name '*.md' | wc -l`.
+   `find model -name '*.md' ! -name README.md | wc -l` plus
+   `find meta -name '*.md' ! -name README.md | wc -l`. The README is excluded on both halves
+   because it is never an entity on either, and the core vendored under `meta/` carries none
+   today: the day a release ships one, a count without the exclusion disagrees with both
+   artifacts and the hand-run check is the thing that looks wrong.
    A difference is the failure this design exists to catch — a bundle built two days ago and
    five experiences short reads as correct and is not.
