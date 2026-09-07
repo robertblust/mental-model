@@ -46,3 +46,8 @@ skills:
 | What | URL |
 | --- | --- |
 | Article | https://www.hocoso.com/asset-management/its-not-imagination-its-likemagic/ |
+| Award announcement | https://servicedapartmentnews.com/news/industry/the-industry-gathers-once-again-at-the-2021-serviced-apartment-awards/ |
+| Award shortlist | https://www.netzwoche.ch/best-of-swiss-web-2021-shortlist |
+| Case study | https://apaleo.com/customer-stories/serviced-apartments/staykooook-apaleo |
+| Technology partner page | https://saltosystems.com/en-us/technology-partners/magic/ |
+| Trade article on the award | https://www.htr.ch/story/hotellerie/award-fuer-digitale-gaesteplattform-von-stay-kooook-32273 |

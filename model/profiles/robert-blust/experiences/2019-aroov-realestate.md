@@ -31,4 +31,11 @@ skills:
 - Created the backend architecture — 3AP's microservice reference architecture in its event-driven form, delivery pipeline included, on Google Cloud (Spring Boot, Kubernetes/GKE, Cloud Pub/Sub) — and the first of the platforms to hold its data in PostgreSQL rather than a document store.
 - Designed the integration architecture connecting Aroov to Garaio REM, one of Switzerland's leading property-management systems (and an Aroov co-founder).
 - Presented the solution architecture in the winning sales pitch.
-- Placed in the Top 4 for the Digital Real Estate Award 2021.
+- One of four winners of the Digital Top 10 2021, voted by over 5,000 participants ahead of the Digital Real Estate Summit.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Article | https://www.finews.ch/news/versicherungen/47571-flatfox-aroov-mobiliar-matthias-frieden-bernhard-maeder-fusion |
+| Award announcement | https://www.gebaeudetechnik-news.ch/digital-top-10-gewinner-stehen-fest/ |
