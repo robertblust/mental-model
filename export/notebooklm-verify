@@ -12,9 +12,14 @@ BUNDLE = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "dist/mental
 SOURCE_CAP, WORD_CAP = 50, 500_000          # NotebookLM, free tier, per notebook and per source
 
 def model_entities():
-    """Every file the export walks: model entities, plus the vendored meta it carries."""
+    """Every file the export walks: model entities, plus the vendored meta it carries.
+
+    A README is excluded on both halves of the walk. `meta/` carries none today, so leaving it
+    in matched nothing and the asymmetry was invisible — until a core release adds one, when
+    the bundle would have to claim it to pass.
+    """
     out = {str(p.relative_to(ROOT)) for p in (ROOT / "model").rglob("*.md") if p.name != "README.md"}
-    out |= {str(p.relative_to(ROOT)) for p in (ROOT / "meta").rglob("*.md")}
+    out |= {str(p.relative_to(ROOT)) for p in (ROOT / "meta").rglob("*.md") if p.name != "README.md"}
     return out
 
 def bundle_entities(files):

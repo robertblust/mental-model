@@ -1,13 +1,16 @@
 ---
 name: companygraph-export
-description: Package this CompanyGraph instance as a loadable agent skill — dist/<instance>-skill.zip with SKILL.md and one consolidated file per root type.
+description: Package this CompanyGraph instance twice — dist/<instance>-skill.zip for an agent, dist/<instance>-notebooklm/ for NotebookLM. One walk, two renderings, the same entity count asserted against both.
 allowed-tools: Bash(*)
 ---
 
 # companygraph-export
 
-Produces `dist/mental-model-skill.zip`, uploadable as an organization or personal skill:
-`SKILL.md` at the root, `model/<type>.md` per root type folder, `model/meta.md`.
+Two artifacts from one walk of the model, because the two readers want the same facts in
+different shapes. `dist/mental-model-skill.zip` is uploadable as an organization or personal
+skill: `SKILL.md` at the root, `model/<type>.md` per root type folder, `model/meta.md`.
+`dist/mental-model-notebooklm/` is a flat folder of Markdown sources, grouped the way
+`export/notebooklm-sources.md` says and rendered for a host who reads them aloud.
 
 ## Procedure
 
@@ -50,4 +53,68 @@ Produces `dist/mental-model-skill.zip`, uploadable as an organization or persona
 6. `mkdir -p dist && zip -r dist/mental-model-skill.zip mental-model` from the staging root.
    Verify: `unzip -l` lists `SKILL.md`, `model/meta.md` and one file per folder; the counts in
    `SKILL.md` equal `find <folder> -name '*.md' ! -name README.md | wc -l` on disk.
-7. Remove the staging directory. `dist/` is gitignored; the zip is never committed.
+7. The NotebookLM rendering, from the same walk, into `dist/<instance>-notebooklm/` — a folder
+   and not an archive, because NotebookLM accepts Word, plain text, Markdown, PDF, CSV,
+   PowerPoint, ePub, images, audio and URLs, and no archive among them.
+
+   Run `python3 .claude/skills/companygraph-export/build.py` from the instance root. It is a
+   script and not a procedure followed by hand because the failure the second artifact exists
+   to catch is a bundle that went quietly stale, and a rendering nobody can re-run cheaply is
+   a rendering that will be stale again. What it does, so a reader can hold it to this:
+
+   It reads `export/notebooklm-sources.md` when it exists: each `##` heading is a source's file
+   name, the paths under it claim entities, and an entity no heading claims goes to a source
+   named for its own type folder — `experiences` and never `profiles`, because
+   `model/profiles/` is the one folder the walk recurses into, so the root type there is not
+   the entity's type. Absent the file entirely, which is where an instance starts, the cut is
+   by root type instead: one source per type folder under `model/`, one for `meta/` and one
+   for each singular entity such as `model/identity.md`, which is the cut the agent bundle
+   already makes — so the two artifacts are grouped alike until the instance says otherwise.
+   A fallback title raises the folder name's first letter and leaves the rest as the folder
+   spells it, because the title is what a citation carries.
+
+   It writes `<title>.md` per source, the heading text verbatim, and nothing else in the
+   folder. Two sources may not share a title: one file would overwrite the other and the
+   entities in the loser would leave the bundle with the run still reporting success, which is
+   the way a bundle goes quietly short. The build fails instead, before it writes anything, and
+   names the file both wanted.
+
+   Each source opens with its heading as an H1 and the paragraph the declaration wrote under
+   it, because that paragraph is what NotebookLM's per-source summary is built from and the
+   first thing a reader of the source list sees. Then each entity it claims, in path order:
+
+   - the `<!-- entity: <path> -->` marker, kept — this reader strips comments, so it costs the
+     listener nothing and it is what `export/notebooklm-verify` reads coverage from. A folder's
+     `README.md` describes the repository's layout rather than a thing in the model, so it is
+     left out of the bundle, under `meta/` as much as under `model/`. Claiming one would make
+     the bundle and the model disagree by every README a pattern happened to match;
+   - every heading in the entity shifted down one level, so the file's own H1 is the source,
+     the entity's name is an H2 and the entity's own sections sit under it rather than beside
+     it. Demoting the H1 alone would leave an entity's `## Achievements` a sibling of the
+     entity it belongs to, which says the opposite of what the demotion is for. A `#` inside a
+     fenced code block is code and stays where it is;
+   - its `>` tagline directly under that heading, untouched: one sentence written to stand
+     alone is what a host reads aloud;
+   - a dateline in place of the frontmatter, leading with
+     `<Kind> · <organization> · <start>–<end>` — dropping a field the entity does not carry
+     and writing `<start>` alone where start equals end. A date is written the way
+     `WRITING.md` writes one, Oct 1999 and May 4, 2012, and a range is closed the way
+     `WRITING.md` closes one, Oct 1999–Mar 2001, because the source is read aloud and nobody
+     says `1999-10`. Every other field that carries a fact about the subject follows on
+     the same line, labeled and in the order the file wrote it — `Group: AI`, `URL: …`, a block
+     sequence as a comma-separated list. Labeled because `AI` standing alone says nothing where
+     `Group: AI` does, and carried at all because a fact the agent bundle holds and the folder
+     drops is a listener answering from less than the model knows. `source`, `source-id` and
+     `rank` are the exception and never travel: they say which system masters the page and how
+     the ladder is ordered, which is a validator's business, and `Source: Local` read aloud on
+     every entity is bookkeeping. Coverage is of entities, which the marker carries, and not of
+     frontmatter keys;
+   - then the body as it is.
+
+   Verify: `./export/notebooklm-verify` exits 0. It asserts every walked entity appears in
+   exactly one source, no source exceeds 500,000 words and the folder holds at most 50 files.
+8. Remove the staging directory. `dist/` is gitignored; neither artifact is ever committed.
+   The two artifacts carry the same entity count as each other and as the repository:
+   `find model -name '*.md' ! -name README.md | wc -l` plus `find meta -name '*.md' | wc -l`.
+   A difference is the failure this design exists to catch — a bundle built two days ago and
+   five experiences short reads as correct and is not.
