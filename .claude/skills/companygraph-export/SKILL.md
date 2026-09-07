@@ -73,7 +73,8 @@ carrying the model's own pages as they are written.
 
    An instance with a narrative to make declares its own grouping in
    `export/notebooklm-sources.md`, and the mechanism stays for it: each `##` heading is a
-   source's title and its H1, the file name is that title with whitespace turned to dashes, the
+   source's title and its H1, the file name is that title lowercased with whitespace turned to
+   dashes, so a `##` heading cannot reintroduce a capital any more than a folder name does, the
    paths under it claim entities and may glob, the paragraph under it opens the file, and an
    entity no heading claims goes to a source named for the folder it sits in — `experiences` and
    never `profiles`, because `model/profiles/` is the one folder the walk recurses into, so the
@@ -98,12 +99,14 @@ carrying the model's own pages as they are written.
    Each source is then written as:
 
    - `# <the source's title>`, and one sentence saying what the source holds and when to read
-     it. The title is what a citation carries and keeps its spaces, `Experience kinds`; the file
-     name is that title with every run of whitespace turned to a single dash,
-     `Experience-kinds.md`, because a file name with a space in it is awkward to type, to quote
-     in a shell and to read in a citation. The sentence is what NotebookLM's per-source summary
-     is built from and the first thing a reader of the source list sees. Where the instance
-     declares its own grouping the sentence is the one the declaration wrote;
+     it. The title is what a citation carries and keeps its spaces and its capital,
+     `Experience kinds`; the file name is that title lowercased, with every run of whitespace
+     turned to a single dash, `experience-kinds.md`, because a space or a capital in a file name
+     is awkward to type, to quote in a shell and to read in a directory listing. A name the
+     export invents this way is spelled the way the folder it came from spells it, so the file
+     name and that folder are the same string. The sentence is what NotebookLM's per-source
+     summary is built from and the first thing a reader of the source list sees. Where the
+     instance declares its own grouping the sentence is the one the declaration wrote;
    - the folder's `README.md` when there is one, less an opening H1 that only repeats the title
      the source has just written; a heading that differs is saying something and stays. It is
      context and never an entity — it says how the folder is laid out and against which schema

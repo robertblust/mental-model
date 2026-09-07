@@ -25,15 +25,15 @@ The rest carry its {{entities}} entities.
 | --- | --- | --- |
 | `AGENTS.md` | this guide | Read anything else here |
 | `README.md` | the repository's README | See how the model is laid out and licensed |
-| `Profiles.md` | the profile and its {{count:model/profiles/robert-blust/experiences}} experiences, {{count:Profiles}} entities | Ask what he did, where, when and what it produced |
-| `Skills.md` | {{count:Skills}} skills, one per capability | Look up what a capability is and what practicing it looks like |
-| `Values.md` | {{count:Values}} values | Ask how he decides and what he refuses |
-| `Experience-kinds.md` | the {{count:Experience kinds}} kinds an experience can be | Understand why a break, a talk or a degree is filed as it is |
-| `Proficiency-levels.md` | the {{count:Proficiency levels}} rungs a skill is claimed on | Weigh what Expert or Competent means here |
-| `Sources.md` | the {{count:Sources}} source the pages are mastered in | Check where a fact would be corrected |
-| `Identity.md` | who the model is about | Find the name, the location and the public addresses |
-| `Vision.md` | the future the model works toward | Ask what the work is building toward |
-| `Meta.md` | CompanyGraph core: its conventions and its schemas, {{count:Meta}} entities | Check what a page must carry and how a reference resolves |
+| `profiles.md` | the profile and its {{count:model/profiles/robert-blust/experiences}} experiences, {{count:Profiles}} entities | Ask what he did, where, when and what it produced |
+| `skills.md` | {{count:Skills}} skills, one per capability | Look up what a capability is and what practicing it looks like |
+| `values.md` | {{count:Values}} values | Ask how he decides and what he refuses |
+| `experience-kinds.md` | the {{count:Experience kinds}} kinds an experience can be | Understand why a break, a talk or a degree is filed as it is |
+| `proficiency-levels.md` | the {{count:Proficiency levels}} rungs a skill is claimed on | Weigh what Expert or Competent means here |
+| `sources.md` | the {{count:Sources}} source the pages are mastered in | Check where a fact would be corrected |
+| `identity.md` | who the model is about | Find the name, the location and the public addresses |
+| `vision.md` | the future the model works toward | Ask what the work is building toward |
+| `meta.md` | CompanyGraph core: its conventions and its schemas, {{count:Meta}} entities | Check what a page must carry and how a reference resolves |
 
 ## How to read the model
 
@@ -45,14 +45,14 @@ an experience evidences. The `#` heading under the fence is the entity's name, a
 the handle everything else uses.
 
 **References between entities are by name, not by link.** An experience's `skills:` list names
-skill entities that live in `Skills.md`, spelled exactly as their headings spell them. The
-Skills table in the profile in `Profiles.md` claims each of those skills at a level and gives an
+skill entities that live in `skills.md`, spelled exactly as their headings spell them. The
+Skills table in the profile in `profiles.md` claims each of those skills at a level and gives an
 Evidence cell naming the experiences that show it, one sentence per experience, in the order
 they happened. A skill page itself claims nothing about him: it defines the capability and says
 what practicing it looks like, because the level and the evidence are one person's and belong in
 the profile. To follow a claim, take the name and find the heading.
 
-`Meta.md` holds the rules every entity obeys — which fields a page of each type must carry, how
+`meta.md` holds the rules every entity obeys — which fields a page of each type must carry, how
 a date is written, and the rule that a reference naming something that does not exist is an
 error rather than a note. Read it when an answer turns on whether the model is allowed to say
 something, not on what it says.

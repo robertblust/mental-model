@@ -121,15 +121,19 @@ def title_of(name):
 def filename_of(title):
     """A source's title, as the name of the file it is written to.
 
-    A title is what a citation carries and reads with its spaces; a file name is what a reader
-    types, quotes in a shell and sees in a directory listing, where a space is awkward in all
-    three. So the file name is the title with every run of whitespace collapsed to one dash —
-    `Experience kinds` becomes `Experience-kinds.md` — while the title itself, and the H1 the
-    source opens with, keeps the space. The same rule holds for a title a declaration writes in
-    `export/notebooklm-sources.md`, so the two paths that produce a title can never reintroduce
-    a space into a file name.
+    A title is what a citation carries and reads with its spaces and its capital; a file name
+    is what a reader types, quotes in a shell and sees in a directory listing, where a space
+    and a capital are both awkward there. So the file name is the title lowercased, with every
+    run of whitespace collapsed to one dash — `Experience kinds` becomes
+    `experience-kinds.md` — while the title itself, and the H1 the source opens with, keeps
+    the space and the capital. A name the export invents this way is spelled the way the
+    folder it came from spells it: `title_of` raises the folder name's first letter for the
+    title, this lowers it back for the file name, and the file name and the folder are the
+    same string again. The same rule holds for a title a declaration writes in
+    `export/notebooklm-sources.md`, so the two paths that produce a title can never
+    reintroduce a space or a capital into a file name.
     """
-    return re.sub(r"\s+", "-", title.replace("/", "-").strip()) + ".md"
+    return re.sub(r"\s+", "-", title.replace("/", "-").strip()).lower() + ".md"
 
 
 def folder_of(paths, name=None):
@@ -329,9 +333,11 @@ def main():
     # loser would leave the bundle, and the run would still exit 0 — which is the exact way a
     # bundle goes quietly short. The check is against the file name rather than the title,
     # because the file name is what collides on disk: two titles differing only in whitespace,
-    # `Experience kinds` and `Experience  kinds`, would still want one file and must fail here.
-    # The document names are taken first, so a declared source named `README` cannot quietly
-    # replace the repository's own.
+    # `Experience kinds` and `Experience  kinds`, would still want one file and must fail here —
+    # and so would two differing only in case, `Skills` and `SKILLS`, which the lowercasing in
+    # `filename_of` collides on disk where the titles themselves did not. The document names
+    # are taken first, so a declared source named `README` cannot quietly replace the
+    # repository's own.
     names, clash = {name for name, _ in DOCUMENTS}, False
     for source in sources:
         name = filename_of(source["title"])

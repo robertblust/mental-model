@@ -100,9 +100,11 @@ sentence saying why it is one source — which is the sentence the rendering the
 the file. The declaration sits beside the `export/SKILL-intro.md` the export already reads from
 the same folder. Each entry names a source title and a path pattern, never a list of entity
 names: a list is a second place to add an experience and the one everybody forgets. The title
-is the source's own H1 and keeps its spaces; the file name is that title with every run of
-whitespace turned to a single dash, because a space in a file name is awkward to type, to quote
-in a shell and to read in a citation.
+is the source's own H1 and keeps its spaces and its capital; the file name is that title
+lowercased, with every run of whitespace turned to a single dash, because a space or a capital
+in a file name is awkward to type, to quote in a shell and to read in a directory listing. A
+name the export invents this way is spelled the way the folder it came from spells it, so the
+file name and that folder are the same string.
 
 This instance writes no declaration, so the sentence that opens each of its sources is the
 export's own: what the source holds, and when a reader wants it.
