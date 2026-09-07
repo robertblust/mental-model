@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+"""Assert that a NotebookLM bundle is the model, whole.
+
+Coverage is the whole point of the second artifact, and it is checkable only because each
+inlined entity keeps its `<!-- entity: <path> -->` marker: NotebookLM strips the comment, and
+this script reads the file from disk where it survives.
+"""
+import re, sys, pathlib
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+BUNDLE = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "dist/mental-model-notebooklm"
+SOURCE_CAP, WORD_CAP = 50, 500_000          # NotebookLM, free tier, per notebook and per source
+
+def model_entities():
+    """Every file the export walks: model entities, plus the vendored meta it carries."""
+    out = {str(p.relative_to(ROOT)) for p in (ROOT / "model").rglob("*.md") if p.name != "README.md"}
+    out |= {str(p.relative_to(ROOT)) for p in (ROOT / "meta").rglob("*.md")}
+    return out
+
+def bundle_entities(files):
+    seen = {}
+    for f in files:
+        for m in re.finditer(r"<!--\s*entity:\s*(\S+?)\s*-->", f.read_text(encoding="utf-8")):
+            seen.setdefault(m.group(1), []).append(f.name)
+    return seen
+
+def main():
+    if not BUNDLE.is_dir():
+        print(f"FAIL  no bundle at {BUNDLE}"); return 1
+    files = sorted(BUNDLE.glob("*.md"))
+    if not files:
+        print(f"FAIL  {BUNDLE} holds no .md source"); return 1
+
+    want, seen = model_entities(), bundle_entities(files)
+    missing = sorted(want - set(seen))
+    extra = sorted(set(seen) - want)
+    twice = sorted(p for p, w in seen.items() if len(w) > 1)
+    bad = False
+
+    for p in missing: print(f"FAIL  not in the bundle: {p}"); bad = True
+    for p in extra:   print(f"FAIL  in the bundle, not in the model: {p}"); bad = True
+    for p in twice:   print(f"FAIL  claimed by {len(seen[p])} sources: {p} — {', '.join(seen[p])}"); bad = True
+
+    if len(files) > SOURCE_CAP:
+        print(f"FAIL  {len(files)} sources, cap is {SOURCE_CAP}"); bad = True
+    for f in files:
+        n = len(f.read_text(encoding="utf-8").split())
+        if n > WORD_CAP:
+            print(f"FAIL  {f.name} is {n:,} words, cap is {WORD_CAP:,}"); bad = True
+
+    print(f"{'FAIL' if bad else 'PASS'}  {len(files)} sources, {len(want)} entities, "
+          f"largest {max(len(f.read_text(encoding='utf-8').split()) for f in files):,} words")
+    return 1 if bad else 0
+
+sys.exit(main())
