@@ -67,27 +67,25 @@ An export that ships with CompanyGraph cannot know that this model's experiences
 employer. That is true of Robert Blust and not of a company graph, and a rule that reached into
 the instance to guess would be wrong on the first instance that filed things differently.
 
-The instance declares it, in `export/notebooklm-sources.json`, beside the `export/SKILL-intro.md`
-the export already reads from the same folder. Each entry names a source title and a path
-pattern, never a list of entity names: a list is a second place to add an experience and the
-one everybody forgets. The title is the filename the reader sees:
+The instance declares it, in `export/notebooklm-sources.md`. It is Markdown and not JSON
+because the export is a procedure an agent follows rather than a program parsing config, and
+Markdown lets each source carry the sentence saying why it is one source — which is the
+sentence the rendering then uses to open the file. The declaration sits beside the
+`export/SKILL-intro.md` the export already reads from the same folder. Each entry names a
+source title and a path pattern, never a list of entity names: a list is a second place to add
+an experience and the one everybody forgets. The title is the filename the reader sees:
 
 ```
 Robert Blust — the short version
 How this model works
-Timeline — every experience in order
 Skills, and the evidence for each
 UBS, 1999–2015
-3AP, 2015–2022
-LIKE MAGIC, 2022–2026
 The career break, 2026
-CompanyGraph and GuestGraph
-Talks, boards and published cases
-Education and qualifications
+Experiences
 ```
 
 Absent the file, the export falls back to one source per root type under a readable name, which
-is the skill bundle's grouping with better titles. Present, it produces the list above: eleven
+is the skill bundle's grouping with better titles. Present, it produces the list above: six
 titles against a cap of fifty, each one a phrase a host would say out loud.
 
 ## Every entity lands in exactly one source
@@ -104,7 +102,7 @@ report is read once and acted on when it is worth acting on.
 
 ## Two instance shapes, one export
 
-The eleven titles above are a model of one person, where profiles is not a question anyone asks
+The six titles above are a model of one person, where profiles is not a question anyone asks
 and the career break is. An instance of a company is a different shape and takes a different
 grouping rather than a coarser one: one source per root type, which is what the skill bundle
 already produces and what a company is actually asked about — who does what, how teams work,
@@ -126,16 +124,29 @@ emitting a bundle that cannot be uploaded.
 
 ## What the rendering does
 
+The rendering is a script, `.claude/skills/companygraph-export/build.py`, run by the procedure
+that also builds the skill bundle. It lives with the skill rather than in `export/`, because
+shape belongs to the tool and `export/` holds the instance's own inputs — the declaration and
+the intro paragraph. It has to be a script and not a one-off pass: the failure this artifact
+exists to catch is a bundle going quietly stale, and a rendering nobody can re-run cheaply will
+be stale again.
+
 Per entity, as it is inlined into a source:
 
 - The frontmatter becomes a dateline a person can read — `Role · UBS AG · Oct 2009 – Mar 2015` —
   because `source: Local` and `rank: 20` are instructions to a validator and noise to a host.
+- Not every field survives into the dateline. A field a listener could use travels — `url`,
+  `group`, `skills` and the like — because the dateline is what a host reads aloud. `source`,
+  `source-id` and `rank` do not: they name the mastering system and order the ladder, which is
+  a validator's business, not this reader's. Coverage is of entities, which the marker carries,
+  not of frontmatter keys.
 - The entity's H1 demotes to H2, so the file's own H1 is the source's subject and the entities
   are its parts.
 - The `>` tagline stays directly under its heading. It is one sentence written to stand alone,
   which is what a host reads aloud.
-- The entity comment is dropped. It is invisible to this reader, and the heading with its
-  dateline carries what a listener could use of it.
+- The entity comment is kept. This reader strips comments, so it says nothing to a listener —
+  and it is the only thing that makes coverage checkable from disk without re-deriving the
+  grouping, which is the guarantee the second artifact exists to make.
 - Each file opens with a paragraph saying what it holds, because that paragraph is what the
   per-source summary is built from and the first thing a reader of the source list sees.
 
