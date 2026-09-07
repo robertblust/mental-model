@@ -29,10 +29,11 @@ Produces `dist/mental-model-skill.zip`, uploadable as an organization or persona
    rule, it does not render, and the path gives back the provenance consolidation throws away.
 
    A README describes the repository's layout and the bundle has a different one, so rewrite
-   its references as it is inlined: `meta/<type>-schema.md` becomes `model/meta.md`, a folder
-   the bundle does not carry — `experiences/` — becomes the plain word, and a reference to
-   anything the bundle holds no copy of is dropped rather than left dangling. The source keeps
-   the paths that are correct where it lives; only the copy that travels is rewritten.
+   its references as it is inlined: `meta/<unit>/<type>-schema.md` becomes `model/meta.md`,
+   a folder the bundle does not carry — `experiences/` — becomes the plain word, and a
+   reference to anything the bundle holds no copy of is dropped rather than left dangling.
+   The source keeps the paths that are correct where it lives; only the copy that travels is
+   rewritten.
 4. `model/meta.md`: `meta/core/CONVENTIONS.md`, then every `*-schema.md` in every unit under
    `meta/`, each preceded by its own `<!-- entity: meta/<unit>/<file> -->` line.
 

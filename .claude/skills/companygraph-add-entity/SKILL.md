@@ -10,7 +10,9 @@ read the schema by the R9 fixed shape, write the shell, then fill it.
 
 ## Procedure
 
-1. Take the type and the name from the prompt. Read `meta/<type>-schema.md` — its tables only.
+1. Take the type and the name from the prompt. Read `meta/<unit>/<type>-schema.md` — its
+   tables only. A unit is a folder under `meta/`: `core`, and any pack
+   `.companygraph/manifest.json` names.
 2. Resolve the path from `## File Location`. An owned type (`**Owner:**` line) needs its owner
    named in the prompt and lands inside the owner's folder; refuse an owner that resolves to
    no entity of the owning type. A type that owns collections becomes a folder holding its own
