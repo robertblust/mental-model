@@ -31,3 +31,11 @@ skills:
 - Built the React/Next.js frontend on AXA's own on-premise OpenShift — a platform the insurer ran itself, so the architecture had its elasticity without its managed services.
 - Won the work in a competitive pitch, presenting the solution architecture as the people who would build it.
 - Placed 3rd at the 2017 Swiss Insurance Innovation Prize.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Award announcement | https://www.m-q.ch/de/innovationspreis-der-schweizer-assekuranz/ |
+| Product page | https://www.axa.ch/de/privatkunden/angebote/gesundheit-unfall/krankenkasse-wechselservice.html |
+| Trade article on the award | https://www.moneycab.com/finanz/innovationspreis-der-schweizer-assekuranz-kreativ-bis-ins-detail/ |

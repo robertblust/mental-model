@@ -89,7 +89,13 @@ to focus on where my own work was heading: modeling and AI, built in the open.
 
 | What | URL |
 | --- | --- |
-| Commercial register entry | https://www.zefix.ch/en/search/entity/list/firm/1576900 |
-| Developer documentation for the public API | https://api-docs.likemagic.tech/ |
+| App store listing | https://store.apaleo.com/apps/likemagic |
 | Case study | https://camunda.com/case-studies/likemagic |
+| Commercial register entry | https://www.zefix.ch/en/search/entity/list/firm/1576900 |
+| Customer story | https://apaleo.com/customer-stories/hotel-groups-chains/mcdreams-adopts-apaleo |
+| Developer documentation for the public API | https://api-docs.likemagic.tech/ |
+| Marketplace listing | https://www.mews.com/en/products/marketplace/likemagic |
+| Partner page | https://www.ailean.io/ailean_for_hospitality |
+| Software integration page | https://www.masunt.com/en/software-integrations/like-magic/ |
+| Technology partner page | https://saltosystems.com/en-us/technology-partners/magic/ |
 | The company | https://likemagic.tech/ |

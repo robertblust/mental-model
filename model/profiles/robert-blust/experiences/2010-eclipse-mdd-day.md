@@ -19,3 +19,11 @@ skills:
 
 - Co-organized Eclipse MDD Day on October 28, 2010 and hosted it at UBS in Zürich-Altstetten, with itemis co-supporting — the first of the Eclipse events brought to UBS.
 - Presented “User Story: Models as First Class Citizens in the Enterprise”, on a program with Ed Merks (EMF project lead), Sven Efftinge (Xtext project lead), Eike Stepper (CDO project lead) and practitioners from SAP, Robert Bosch, RWE and Nord/LB.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Event write-up | https://madmeierslife.blogspot.com/2010/10/eclipse-enterprise-modeling-day-ubs.html |
+| Presentation slides | https://wiki.eclipse.org/images/8/8e/MDDDay2010_UBS.pdf |
+| Session abstract | https://wiki.eclipse.org/User_Story:_Models_as_First_Class_Citizens_in_the_Enterprise |
