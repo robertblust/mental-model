@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Render a CompanyGraph instance into a NotebookLM bundle: dist/<instance>-notebooklm/.
 
-The bundle is a flat folder of Markdown sources, one file per heading in the instance's
-`export/notebooklm-sources.md`, because NotebookLM takes files and not an archive.
+The bundle is a flat folder of Markdown sources, because NotebookLM takes files and not an
+archive. A source is one content area of the model, named for the area, and it carries the
+model's own pages verbatim: an entity keeps the frontmatter, the H1 and the body it has on
+disk, so nothing a reader could be answered from is rewritten on the way out.
 
 This is a script rather than a procedure an agent follows by hand: the failure the second
 artifact exists to catch is a bundle that went quietly stale, and a rendering nobody can
@@ -19,29 +21,31 @@ import re
 import shutil
 import sys
 
-MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+# Two documents ship as sources of their own, beside the sources that carry entities: the
+# reading guide the instance writes for this bundle, and the repository's own README. A
+# reader who opens a notebook cold has no other way to learn that references between entities
+# are by name, and a guide that lives outside the bundle is a guide that reader never sees.
+# Neither is an entity and neither carries a marker; `export/notebooklm-verify` counts them as
+# sources and looks for no coverage in them.
+DOCUMENTS = (("AGENTS.md", "export/notebooklm-AGENTS.md"), ("README.md", "README.md"))
 
-# These four lead the dateline, in this order, because they are what a listener places an
-# experience by. Every other field that carries a fact about the subject follows them labeled,
-# so the two artifacts cover the same entities and the same claims about them.
-DATELINE_FIELDS = ("kind", "organization", "start", "end")
-
-# `skills` leaves the dateline for a line of its own. One role claims forty-five of them, which
-# is 1,012 characters no host reads aloud in one breath and no reader finds the end of; and they
-# cannot simply be dropped, because the frontmatter is the only place a skill meets the
-# experience that shows it. So the fix is the line break.
-OWN_LINE_FIELDS = ("skills",)
-
-# These never travel. They address a validator, not a listener: `source` and `source-id` say
-# which system masters the page and `rank` orders the proficiency ladder, and a host reading
-# `Source: Local` aloud on all 133 entities is reading bookkeeping. Coverage is of entities,
-# which the entity marker carries, and not of frontmatter keys.
-VALIDATOR_FIELDS = ("source", "source-id", "rank")
+# A count a document states in prose is a count nothing checks: the guide would tell a reader
+# 36 experiences while the bundle held 37, and the verifier would pass, because a document is
+# not an entity and holds no marker. So a document writes `{{entities}}`, `{{sources}}` or
+# `{{count:<source title>}}` / `{{count:<path under the root>}}` where a number goes, and the
+# build substitutes what it counted on this run. A token that resolves to nothing is left
+# standing and fails the build, because `{{count:Skils}}` shipped to a reader is worse than a
+# build that stops.
+TOKEN = re.compile(r"\{\{([a-z]+)(?::([^{}]+))?\}\}")
 
 
 def entities():
-    """Every file the export walks, in path order.
+    """Every file the export walks, shallowest first and then in path order.
+
+    Shallowest first because a folder that owns another holds the entity the others belong to:
+    `model/profiles/robert-blust/robert-blust.md` is the profile that owns everything under
+    `experiences/`, and path order alone would open the source on the first experience and
+    reach the profile 36 entities later.
 
     A folder's README.md describes the repository's layout rather than a thing in the model,
     so it is not an entity here and never carries an entity marker: claiming one would make
@@ -51,7 +55,12 @@ def entities():
     """
     found = [p for p in pathlib.Path("model").rglob("*.md") if p.name != "README.md"]
     found += [p for p in pathlib.Path("meta").rglob("*.md") if p.name != "README.md"]
-    return sorted(found, key=lambda p: p.as_posix())
+    return sorted(found, key=order)
+
+
+def order(path):
+    """The order entities are written in: depth, then path."""
+    return (len(path.parts), path.as_posix())
 
 
 def declaration(path):
@@ -109,24 +118,75 @@ def title_of(name):
     return text[:1].upper() + text[1:]
 
 
+def folder_of(paths, name=None):
+    """The folder a source is named for, as a POSIX path.
+
+    Its type folder where the source is one root type, because that is the folder whose README
+    describes it and the path a reader would go to: `model/profiles/` and not
+    `model/profiles/robert-blust/`, which is only where this instance's entities happen to
+    share a parent. Otherwise the folder the entities do share.
+    """
+    if name:
+        found = pathlib.Path("model") / name
+        if found.is_dir():
+            return found.as_posix()
+    return os.path.commonpath([p.parent.as_posix() for p in paths])
+
+
+def readme_of(paths, name=None):
+    """The README that describes a source's folder, when there is one.
+
+    It is context and never an entity: it says how the folder is laid out and what is written
+    against which schema, which is what a reader needs before the first page and not a thing
+    the model claims. So it carries no marker and is not counted.
+
+    Only a folder under a root, never a root itself: `model/skills/README.md` describes the
+    skills, where a README at `model/` would describe the whole model and say nothing about
+    the one entity a source such as `Identity` holds.
+    """
+    folder = pathlib.Path(folder_of(paths, name))
+    if len(folder.parts) < 2:
+        return None
+    found = folder / "README.md"
+    return found if found.is_file() else None
+
+
+def opening(name, paths):
+    """One sentence: what the source holds and when a reader wants it.
+
+    Written by the export rather than by the instance because this is the shape an instance
+    gets before it has declared one, and a sentence the tool writes is a sentence that stays
+    true as the model grows. An instance with a narrative to make writes its own, in
+    `export/notebooklm-sources.md`.
+    """
+    topic = name.replace("-", " ").replace("_", " ")
+    if len(paths) == 1:
+        return (f"`{paths[0].as_posix()}`, reproduced whole — read this source when the "
+                f"question is about {topic}.")
+    return (f"The {len(paths)} entities under `{folder_of(paths, name)}/`, each reproduced "
+            f"whole — read this source when the question is about {topic}.")
+
+
 def assign(walked, sources):
     """Give every entity to the first heading that claims it, and the rest to a fallback.
 
     A source carries its entities in the order the declaration writes its globs, and inside one
-    glob in path order, because the order a declaration writes is an argument. `How this model
-    works` opens on the five kinds an experience can be and closes on the schema underneath
-    them; path order alone would sort `meta/**` ahead of `model/**` and open it on the vendored
-    schema instead, which is the reader meeting the appendix before the point.
+    glob in the walk's own order, because the order a declaration writes is an argument. `How
+    this model works` opens on the five kinds an experience can be and closes on the schema
+    underneath them; path order alone would sort `meta/**` ahead of `model/**` and open it on
+    the vendored schema instead, which is the reader meeting the appendix before the point.
 
     Where a declaration groups the model, a straggler goes to a source named for its own type
     folder — `experiences`, not `profiles` — because `model/profiles/` is the one folder the
     walk recurses into, so the root type there is not the entity's type.
 
     Where there is no declaration at all, which is the path an instance takes before it writes
-    one, the whole model is cut by root type instead: one source per type folder under
-    `model/`, one for `meta/` and one for each singular entity. That is the cut the agent
-    bundle already makes, so the two artifacts are grouped alike until the instance says
-    otherwise.
+    one and the path this instance stays on, the whole model is cut by root type instead: one
+    source per type folder under `model/`, one for `meta/` and one for each singular entity.
+    That is the cut the agent bundle already makes, so the two artifacts are grouped alike
+    until the instance says otherwise — and it is the cut that survives a model growing,
+    because it groups by what the instance has actually declared about every entity rather
+    than by a pattern that happens to match some of them.
 
     A glob matching nothing on disk comes back as dead, with the source that wrote it, for the
     caller to fail on. A renamed folder would otherwise empty a whole source and drop it in
@@ -152,141 +212,79 @@ def assign(walked, sources):
         groups.setdefault(path.parent.name if declared else root_type(path), []).append(path)
 
     for name in sorted(groups):
+        held = sorted(groups[name], key=order)
         if declared:
             prose = (f"The `{name}` entities that no heading in "
                      f"`export/notebooklm-sources.md` claims, gathered here so the bundle "
                      f"carries the model whole.")
         else:
-            prose = (f"Every `{name}` entity in the model. This instance declares no grouping "
-                     f"in `export/notebooklm-sources.md`, so each root type is one source.")
+            prose = opening(name, held)
         sources.append({
             "title": title_of(name),
             "prose": prose,
             "globs": [],
-            "entities": sorted(groups[name], key=lambda p: p.as_posix()),
+            "entities": held,
+            "type": None if declared else name,
         })
     return sources, dead
 
 
-def frontmatter(text):
-    """Split leading YAML from the rest, keeping the order the file wrote its fields in.
+def context(readme, title):
+    """A folder README as it opens a source, less an H1 that only repeats the source's own.
 
-    A block sequence comes back as a list of its entries. Nothing else is expected here: R11
-    says a list-valued field is written one entry per line, so there is no flow sequence to
-    parse and no nesting under a key.
+    The source has already written `# Skills`, and `model/skills/README.md` opens by writing it
+    again. A heading that differs is saying something and stays.
     """
-    if not text.startswith("---\n"):
-        return {}, text
-    end = text.find("\n---", 3)
-    if end < 0:
-        return {}, text
-    fields, key = {}, None
-    for line in text[4:end].splitlines():
-        item = re.match(r"^\s+-\s+(.*)$", line)
-        if item and isinstance(fields.get(key), list):
-            fields[key].append(item.group(1).strip().strip("\"'"))
-            continue
-        found = re.match(r"^([A-Za-z0-9_-]+):\s*(.*)$", line)
-        if found:
-            key = found.group(1)
-            value = found.group(2).strip().strip("\"'")
-            fields[key] = value if value else []
-    rest = text[end + len("\n---"):]
-    return fields, rest.split("\n", 1)[1] if "\n" in rest else ""
+    lines = readme.read_text(encoding="utf-8").strip("\n").splitlines()
+    if lines and lines[0].strip() == f"# {title}":
+        lines.pop(0)
+        while lines and not lines[0].strip():
+            lines.pop(0)
+    return "\n".join(lines).strip("\n")
 
 
-def readable(value):
-    """A date a host can read aloud: 1999-10 becomes Oct 1999, 2012-05-04 May 4, 2012."""
-    parts = str(value).split("-")
-    if len(parts) == 1:
-        return parts[0]
-    month = MONTHS[int(parts[1]) - 1]
-    if len(parts) == 2:
-        return f"{month} {parts[0]}"
-    return f"{month} {int(parts[2])}, {parts[0]}"
+def counted(text, sources, walked, written):
+    """A document with every `{{...}}` token replaced by the count this run measured.
 
-
-def label(key):
-    """A frontmatter key as a reader meets it, sentence case, with the one initialism kept."""
-    return "URL" if key == "url" else key.replace("-", " ").replace("_", " ").capitalize()
-
-
-def dateline(fields):
-    """The dateline as its lines: `<Kind> · <organization> · <start>–<end>`, then the rest.
-
-    A field the entity does not carry is dropped, and a start equal to its end is written
-    once. What follows the four is labeled because `AI` says nothing standing on its own where
-    `Group: AI` does. What is in VALIDATOR_FIELDS is dropped whatever the entity carries, and
-    what is in OWN_LINE_FIELDS comes back as a line under the dateline rather than on it.
+    A token nothing resolves is left as it is: `count_of` gives back 0 for a source title or a
+    path that names nothing, and a zero is a typo rather than a fact worth printing.
     """
-    bits = [fields[key] for key in ("kind", "organization") if fields.get(key)]
-    start, end = fields.get("start"), fields.get("end")
-    if start and end and start != end:
-        bits.append(f"{readable(start)}\u2013{readable(end)}")
-    elif start or end:
-        bits.append(readable(start or end))
-    for key, value in fields.items():
-        if key in DATELINE_FIELDS or key in VALIDATOR_FIELDS or key in OWN_LINE_FIELDS:
-            continue
-        if value:
-            bits.append(f"{label(key)}: {listed(value)}")
-    lines = [" · ".join(bits)] if bits else []
-    for key in OWN_LINE_FIELDS:
-        if fields.get(key):
-            lines.append(f"{label(key)}: {listed(fields[key])}")
-    return lines
+    def found(match):
+        number = count_of(match.group(1), match.group(2), sources, walked, written)
+        return str(number) if number else match.group(0)
+    return TOKEN.sub(found, text)
 
 
-def listed(value):
-    """A field's value as one string, a block sequence as the comma-separated list."""
-    return ", ".join(value) if isinstance(value, list) else value
-
-
-def shift(lines):
-    """Every heading one level down, so an entity's sections sit under its name, not beside it.
-
-    A `#` inside a fenced code block is code and is left as it is, and an H6 stays where it is
-    because there is no seventh level to move it to.
-    """
-    out, fenced = [], False
-    for line in lines:
-        if re.match(r"^\s*(```|~~~)", line):
-            fenced = not fenced
-        elif not fenced:
-            found = re.match(r"^(#{1,5}) (.*)$", line)
-            if found:
-                line = f"#{found.group(1)} {found.group(2)}"
-        out.append(line)
-    return out
+def count_of(kind, arg, sources, walked, written):
+    """What a token asks for: every entity, every source, or the entities one name holds."""
+    if kind == "entities" and not arg:
+        return len(walked)
+    if kind == "sources" and not arg:
+        return written
+    if kind == "count" and arg:
+        if "/" in arg:
+            head = arg.rstrip("/") + "/"
+            return len([p for p in walked if p.as_posix().startswith(head)])
+        return sum(len(s["entities"]) for s in sources if s["title"] == arg)
+    return 0
 
 
 def render(path):
-    """One entity, ready to be inlined: marker, H2, tagline, dateline, body."""
-    fields, body = frontmatter(path.read_text(encoding="utf-8"))
-    lines = body.splitlines()
+    """One entity, ready to be inlined: its marker, then the page exactly as it is on disk.
 
-    name, cut = path.stem, 0
-    for i, line in enumerate(lines):
-        if line.startswith("# "):
-            name, cut = line[2:].strip(), i + 1
-            break
-    lines = lines[cut:]
+    Verbatim because every rewriting loses something a reader could have been answered from,
+    and the frontmatter loses the most: a role naming 45 skills carries them as a YAML list one
+    entry per line, which is a list a reader can follow to the skills that hold each claim, and
+    prose made from it is a thousand characters nobody reads to the end of. The reader here
+    handles Markdown; it does not need the model translated for it.
 
-    while lines and not lines[0].strip():
-        lines.pop(0)
-    tagline = []
-    while lines and lines[0].startswith(">"):
-        tagline.append(lines.pop(0))
-
-    out = [f"<!-- entity: {path.as_posix()} -->", "", f"## {name}"]
-    if tagline:
-        out += [""] + tagline
-    for line in dateline(fields):
-        out += ["", line]
-    rest = "\n".join(shift(lines)).strip("\n")
-    if rest:
-        out += ["", rest]
-    return "\n".join(out) + "\n"
+    The marker stays. NotebookLM strips comments, so it costs the reader nothing, and it is an
+    unambiguous boundary where a bare `---` is not: the source holding 69 skills holds 138 lines
+    reading `---`, two per entity, and an entity whose body carries a horizontal rule adds one
+    that nothing tells apart from a fence. It is also what `export/notebooklm-verify` reads
+    coverage from.
+    """
+    return f"<!-- entity: {path.as_posix()} -->\n\n" + path.read_text(encoding="utf-8").strip("\n")
 
 
 def main():
@@ -315,9 +313,9 @@ def main():
 
     # Two sources cannot share a file name. One would overwrite the other, the entities in the
     # loser would leave the bundle, and the run would still exit 0 — which is the exact way a
-    # bundle goes quietly short. Two profiles each holding an unclaimed `experiences/` folder
-    # is how it happens, so this is checked before anything is written.
-    names, clash = set(), False
+    # bundle goes quietly short. The document names are taken first, so a declared source named
+    # `README` cannot quietly replace the repository's own.
+    names, clash = {name for name, _ in DOCUMENTS}, False
     for source in sources:
         name = source["title"].replace("/", "-") + ".md"
         if name in names:
@@ -329,22 +327,48 @@ def main():
     if clash:
         return 1
 
+    # The documents are counted and checked before anything is written, so a token nobody
+    # resolves stops the build with the old bundle still on disk rather than shipping a reader
+    # a pair of braces.
+    documents, stale = [], False
+    for name, origin in DOCUMENTS:
+        found = pathlib.Path(origin)
+        if not found.is_file():
+            print(f"{'':>4} {'missing':<8}  {name}: no {origin} in this instance")
+            continue
+        documents.append((name, origin, found.read_text(encoding="utf-8")))
+    written = len(sources) + len(documents)
+    for i, (name, origin, text) in enumerate(documents):
+        text = counted(text, sources, walked, written)
+        for match in TOKEN.finditer(text):
+            print(f"FAIL  {origin}: nothing counts `{match.group(0)}`")
+            stale = True
+        documents[i] = (name, origin, text)
+    if stale:
+        return 1
+
     # Written from scratch every run: a renamed heading would otherwise leave its old file
     # behind, and a bundle claiming an entity twice is the failure the verifier reports.
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
 
+    for name, origin, text in documents:
+        (out / name).write_text(text, encoding="utf-8")
+        print(f"{'':>4} {'document':<8}  {name}")
+
     for source in sources:
         parts = [f"# {source['title']}"]
         if source["prose"]:
             parts.append(source["prose"])
+        readme = readme_of(source["entities"], source.get("type"))
+        if readme:
+            parts.append(context(readme, source["title"]))
         parts += [render(p) for p in source["entities"]]
         (out / source["file"]).write_text("\n\n".join(parts).rstrip() + "\n", encoding="utf-8")
         held = len(source["entities"])
         print(f"{held:4d} {'entity' if held == 1 else 'entities':<8}  {source['file']}")
 
-    written = len(list(out.glob("*.md")))
     print(f"{len(walked):4d} {'entity' if len(walked) == 1 else 'entities':<8}  in {written} "
           f"{'source' if written == 1 else 'sources'} under {out}")
     return 0

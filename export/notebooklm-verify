@@ -11,6 +11,13 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 BUNDLE = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "dist/mental-model-notebooklm"
 SOURCE_CAP, WORD_CAP = 50, 500_000          # NotebookLM, free tier, per notebook and per source
 
+# Two sources carry documents about the model rather than entities of it: the reading guide the
+# bundle ships as `AGENTS.md` and the repository's own `README.md`. They count against the source
+# cap like any other file and hold no marker, so they are not read for coverage — a stray
+# `<!-- entity: ... -->` in either would otherwise be reported as an entity the model does not
+# have.
+DOCUMENTS = {"AGENTS.md", "README.md"}
+
 def model_entities():
     """Every file the export walks: model entities, plus the vendored meta it carries.
 
@@ -25,6 +32,8 @@ def model_entities():
 def bundle_entities(files):
     seen = {}
     for f in files:
+        if f.name in DOCUMENTS:
+            continue
         for m in re.finditer(r"<!--\s*entity:\s*(\S+?)\s*-->", f.read_text(encoding="utf-8")):
             seen.setdefault(m.group(1), []).append(f.name)
     return seen
