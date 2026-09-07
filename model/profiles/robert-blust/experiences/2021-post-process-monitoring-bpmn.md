@@ -24,3 +24,9 @@ skills:
 - Turned each milestone into a receive task waiting for its message — booking confirmed, onboarding notification, online check-in, property access issued, check-out — with a boundary timer beside it, so the alert fires on the message that never came rather than on an error somebody has to notice.
 - Published a runnable sample alongside it, still public: a Spring Boot service taking the webhooks behind an OpenAPI description, a Zeebe engine and Camunda Operate in one Docker Compose file and the guest-journey model itself.
 - Put BPMN and Zeebe to work in the open a year before the CamundaCon talk and two before the published case study, while the platform they describe was still being built.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Sample repository | https://github.com/3AP-AG/process-monitoring-with-bpmn |
