@@ -33,3 +33,9 @@ skills:
 - Shipped it as a Spring Boot service on PostgreSQL with Flyway migrations and a REST API, runnable from one compose file, designed for managed platform services and agnostic of which cloud runs them — so adopting it is not also adopting a provider.
 - Published it under Apache 2.0 as open core, with a billing model on one meter, arrivals, and a narrated introduction talk in German and English with a PDF in each.
 - Put it in front of a professional network with a stated outcome each way, a clean no included.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Source repository | https://github.com/guestgraph/engine |

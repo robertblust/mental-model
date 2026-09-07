@@ -31,3 +31,9 @@ skills:
 - Built the reference instance from it: this profile, 36 experiences, 69 skills on a four-level ladder and 5 values, every claim traced to an experience that shows it.
 - Came to it the second time. The Flatland CDO Server carried a model of a company from 2014, served over an API and true for as long as the server ran; this one is Markdown a person reads and edits, in a repository with a history, true for as long as the files exist.
 - Published it under Apache 2.0 as open core with a billing model and a narrated introduction talk in German and English, and put it in front of a professional network with a stated outcome each way.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Source repository | https://github.com/companygraph/meta-model |

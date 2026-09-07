@@ -24,3 +24,10 @@ skills:
 - Delivered to satisfy a FINMA regulatory requirement.
 - Won without a tender: the problem was known inside the bank and reached 3AP through its network, and the work followed a proposed solution architecture rather than a specification.
 - Implemented on the Flatland CDO Server rather than on stock Eclipse CDO — the model repository published as open source two years earlier, brought to a bank as the foundation of paid work — with a front end built along the same lines as the generic model browser published beside that server, and fed by static source-code analysis and several data sources to discover and connect the model.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Flatland CDO Server repository | https://github.com/robertblust/cdo-server |
+| Model browser repository | https://github.com/robertblust/cdo-web |
