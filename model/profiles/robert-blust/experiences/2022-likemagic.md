@@ -91,4 +91,5 @@ to focus on where my own work was heading: modeling and AI, built in the open.
 | --- | --- |
 | Commercial register entry | https://www.zefix.ch/en/search/entity/list/firm/1576900 |
 | Developer documentation for the public API | https://api-docs.likemagic.tech/ |
+| Case study | https://camunda.com/case-studies/likemagic |
 | The company | https://likemagic.tech/ |
