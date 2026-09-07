@@ -2,6 +2,16 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
+> **Executed, then the shape it built was rejected.** All four tasks ran and the artifact they
+> produced was read by the owner, who compared it against `magic-mental-model`'s export and
+> refused four of its decisions: a dateline that replaced frontmatter with prose and turned a
+> 45-item `skills:` list into one sentence, a declaration that gave UBS a source of its own
+> because `*-ubs-*` globbed cleanly while 3AP and LIKE MAGIC did not, no account of how
+> references between entities resolve, and no `AGENTS.md`. The rebuild in `a748c99` keeps
+> entities verbatim, cuts by root type into eleven sources and ships a reading guide. The tasks
+> below are the record of what was done and are not rewritten — the current design is
+> `docs/specs/2026-09-07-notebooklm-export.md`, which carries the finding as well as the rule.
+
 **Goal:** `companygraph-export` produces a second artifact, `dist/mental-model-notebooklm/`, carrying the whole model in a shape NotebookLM can cite, verified against the model by a script.
 
 **Architecture:** One walk, two renderers. The existing skill already walks `model/` and counts entities; it gains a second rendering pass and a second output. A new `export/notebooklm-verify` asserts that the bundle is the model whole — that is the test, and it is written before the bundle exists. The instance declares its own source grouping in `export/notebooklm-sources.md`; absent a claim, an entity falls to its root type's source and the verifier says how many did.
