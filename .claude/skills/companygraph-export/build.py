@@ -39,8 +39,8 @@ import zipfile
 # reading guide the instance writes for this bundle, and the repository's own README. A
 # reader who opens a notebook cold has no other way to learn that references between entities
 # are by name, and a guide that lives outside the bundle is a guide that reader never sees.
-# Neither is an entity and neither carries a marker; `export/notebooklm-verify` counts them as
-# sources and looks for no coverage in them.
+# Neither is an entity and neither carries a marker; `verify.py` counts them as sources and
+# looks for no coverage in them.
 DOCUMENTS = (("AGENTS.md", "export/notebooklm-AGENTS.md"), ("README.md", "README.md"))
 
 # A count a document states in prose is a count nothing checks: the guide would tell a reader
@@ -146,8 +146,8 @@ def singular(path):
     """Whether a path is an entity that stands alone: `model/identity.md`, `model/vision.md`.
 
     It has no folder and so nothing to consolidate with. In the zip it is copied whole and
-    carries no marker; `export/notebooklm-verify` knows that and claims a marker-less
-    `model/*.md` member as the entity `model/<basename>`.
+    carries no marker; `verify.py` knows that and claims a marker-less `model/*.md` member as
+    the entity `model/<basename>`.
     """
     return path.parts[0] == "model" and len(path.parts) == 2
 
@@ -347,7 +347,7 @@ def render(path):
     frontmatter, so a consolidated file of 69 skills holds no line that says which of its `---`
     are boundaries, and no program can split it at all. `<!--` collides with neither YAML nor
     Markdown's own rule, it does not render, and the path gives back the provenance
-    consolidation throws away. It is also what `export/notebooklm-verify` reads coverage from.
+    consolidation throws away. It is also what `verify.py` reads coverage from.
     """
     return f"<!-- entity: {path.as_posix()} -->\n\n" + path.read_text(encoding="utf-8").strip("\n")
 

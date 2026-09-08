@@ -16,15 +16,13 @@ carrying the model's own pages as they are written.
 
 1. Run `python3 .claude/skills/companygraph-export/build.py` from the instance root. It walks
    the model once and writes both artifacts.
-2. Verify: `./export/notebooklm-verify` exits 0.
+2. Verify: `python3 .claude/skills/companygraph-export/verify.py` exits 0.
 3. `dist/` is gitignored; neither artifact is ever committed.
 
 ## Why one program and not a procedure
 
-Both artifacts were once built by hand from steps written here, and they diverged: the rule
-that a folder's `README.md` is never an entity landed in the rendering and in
-`export/notebooklm-verify` and not in the hand-run count, which kept the old asymmetric form
-for two more commits. Same intent, two implementations, one of them updated.
+One intent implemented twice drifts apart one rule at a time: a rule lands in one copy and not
+the other, and nothing says so.
 
 **A procedure followed by hand is a different program each time somebody follows it.** That is
 the same failure seen from the other side: the failure the second artifact exists to catch is a
@@ -51,12 +49,12 @@ recursively so experiences travel with their profile: the folder's `README.md` f
 entity in path order, each preceded by a line `<!-- entity: <path from the repository root> -->`
 and a blank line.
 
-Not a line holding `---`, which is what this produced before: every entity's frontmatter opens
-and closes with that same line, so a consolidated file of sixty-nine skills holds a hundred and
-thirty-eight of them and nothing says which sixty-nine are boundaries. An entity whose body
-carries a horizontal rule is indistinguishable from a boundary, and no program can split the
-file at all. `<!--` collides with neither YAML nor Markdown's own rule, it does not render, and
-the path gives back the provenance consolidation throws away.
+Not a line holding `---`: every entity's frontmatter opens and closes with that same line, so a
+consolidated file of sixty-nine skills holds a hundred and thirty-eight of them and nothing says
+which sixty-nine are boundaries. An entity whose body carries a horizontal rule is
+indistinguishable from a boundary, and no program can split the file at all. `<!--` collides
+with neither YAML nor Markdown's own rule, it does not render, and the path gives back the
+provenance consolidation throws away.
 
 A README describes the repository's layout and the zip has a different one, so its references
 are rewritten as it is inlined: `meta/<unit>/<type>-schema.md` becomes `model/meta.md`, a folder
@@ -67,9 +65,8 @@ paths that are correct where it lives; only the copy that travels is rewritten.
 `model/meta.md` is `meta/core/CONVENTIONS.md`, then every `*-schema.md` in every unit under
 `meta/`, each preceded by its own `<!-- entity: meta/<unit>/<file> -->` line. The singular
 entities travel too: `model/identity.md` and `model/vision.md` are copied whole, one file each,
-since there is nothing to consolidate — and they carry no marker, which
-`export/notebooklm-verify` already knows, claiming a marker-less `model/*.md` member as the
-entity `model/<basename>`.
+since there is nothing to consolidate — and they carry no marker, which `verify.py` already
+knows, claiming a marker-less `model/*.md` member as the entity `model/<basename>`.
 
 `<instance>/SKILL.md` carries frontmatter `name: <instance>` and a `description` built from the
 README tagline with Markdown link and emphasis syntax stripped to plain text (a link becomes its
@@ -158,8 +155,8 @@ pass because it holds the bundle against the model and not against the declarati
 
 ## Why the verifier is the assertion
 
-The assertion that both artifacts are the model, whole, is running `./export/notebooklm-verify`,
-not counting lines. A marker count cannot tell a file that carries no marker because it is
+The assertion that both artifacts are the model, whole, is running `verify.py`, not counting
+lines. A marker count cannot tell a file that carries no marker because it is
 copied whole from a file that carries no marker because an entity is missing, and it cannot tell
 a real `<!-- entity: … -->` from one a reading guide uses as a prose example of itself — a naive
 count of both artifacts against the repository raises exactly that false alarm on a correct

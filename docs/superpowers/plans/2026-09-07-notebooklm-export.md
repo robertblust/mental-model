@@ -4,7 +4,7 @@
 
 **Goal:** `companygraph-export` produces a second artifact, `dist/mental-model-notebooklm/`, carrying the whole model in a shape NotebookLM can cite — eleven Markdown sources, every entity reproduced exactly as it is written on disk — and verified against the model by a script.
 
-**Architecture:** One walk, two renderers. The existing skill already walks `model/` and counts entities; it gains a second rendering and a second output. The second rendering is `.claude/skills/companygraph-export/build.py`, a script rather than a procedure followed by hand, because the failure this artifact exists to catch is a bundle that went quietly stale and a rendering nobody can re-run cheaply will be stale again. It cuts the model by root type — one source per type folder under `model/`, one for `meta/`, one for each singular entity — which is the cut the agent bundle already makes, so a reader moving between the two artifacts meets the same names. Two documents ship beside those sources: the bundle's `AGENTS.md`, written here as `export/notebooklm-AGENTS.md`, and the repository's own `README.md`. A new `export/notebooklm-verify` asserts that the bundle is the model whole — that is the test, and it is written before the bundle exists.
+**Architecture:** One walk, two renderers. The existing skill already walks `model/` and counts entities; it gains a second rendering and a second output. The second rendering is `.claude/skills/companygraph-export/build.py`, a script rather than a procedure followed by hand, because the failure this artifact exists to catch is a bundle that went quietly stale and a rendering nobody can re-run cheaply will be stale again. It cuts the model by root type — one source per type folder under `model/`, one for `meta/`, one for each singular entity — which is the cut the agent bundle already makes, so a reader moving between the two artifacts meets the same names. Two documents ship beside those sources: the bundle's `AGENTS.md`, written here as `export/notebooklm-AGENTS.md`, and the repository's own `README.md`. A new `.claude/skills/companygraph-export/verify.py` asserts that the bundle is the model whole — that is the test, and it is written before the bundle exists.
 
 **Tech Stack:** Markdown, `sh`, `python3` (stdlib only — numpy is not installed on this machine). The export is a Claude skill procedure and `SKILL.md` is its implementation, with the NotebookLM rendering delegated to the one script inside it.
 
@@ -27,11 +27,11 @@
 ### Task 1: The verifier, failing
 
 **Files:**
-- Create: `export/notebooklm-verify`
+- Create: `.claude/skills/companygraph-export/verify.py`
 - Create: `export/README.md`
 
 **Interfaces:**
-- Produces: `export/notebooklm-verify [bundle-dir]`, default `dist/mental-model-notebooklm`. Exit 0 on pass, 1 on failure, printing one line per finding. Task 3 runs it as its green step.
+- Produces: `.claude/skills/companygraph-export/verify.py [bundle-dir]`, default `dist/mental-model-notebooklm`. Exit 0 on pass, 1 on failure, printing one line per finding. Task 3 runs it as its green step.
 
 - [ ] **Step 1: Write the verifier**
 
@@ -119,7 +119,7 @@ bundle would have to claim it to pass.
 - [ ] **Step 2: Make it executable and run it to verify it fails**
 
 ```bash
-cd ~/git/robertblust/mental-model && chmod +x export/notebooklm-verify && ./export/notebooklm-verify
+cd ~/git/robertblust/mental-model && chmod +x .claude/skills/companygraph-export/verify.py && python3 .claude/skills/companygraph-export/verify.py
 ```
 
 Expected: `FAIL  no bundle at .../dist/mental-model-notebooklm`, exit 1. This is the red state the rest of the plan turns green.
@@ -138,7 +138,7 @@ holds the procedure; this folder holds what is true of this instance and not of 
   and what a claim in the model rests on. A reader who opens a notebook cold has no other way
   to learn any of it. Every count it states is a `{{...}}` token the build substitutes with what
   it counted, so the guide cannot tell a reader 36 experiences beside a bundle holding 37.
-- `notebooklm-verify` — asserts a built bundle is the model, whole. Run it after every export;
+- `verify.py` — asserts a built bundle is the model, whole. Run it after every export;
   a bundle is worth nothing if it is quietly short, which is how the first one went stale.
 
 A `notebooklm-sources.md` beside these would group the entities into sources of the instance's
@@ -154,7 +154,7 @@ says what the folder holds, and the guide is the next thing to arrive in it.
 
 ```bash
 cd ~/git/robertblust/mental-model && sh conventions/conventions-check
-git add export/notebooklm-verify export/README.md
+git add .claude/skills/companygraph-export/verify.py export/README.md
 git commit -m "The bundle gets a verifier before it gets a builder"
 ```
 
@@ -305,7 +305,7 @@ git commit -m "The bundle carries the guide a stripped reader cannot do without"
 - Modify: `.claude/skills/companygraph-export/SKILL.md`
 
 **Interfaces:**
-- Consumes: `export/notebooklm-AGENTS.md` from Task 2 and the repository's `README.md` as the two documents, `export/notebooklm-verify` from Task 1 as the green step, and `export/notebooklm-sources.md` when an instance writes one — this one does not.
+- Consumes: `export/notebooklm-AGENTS.md` from Task 2 and the repository's `README.md` as the two documents, `.claude/skills/companygraph-export/verify.py` from Task 1 as the green step, and `export/notebooklm-sources.md` when an instance writes one — this one does not.
 - Produces: `dist/mental-model-skill.zip` unchanged, and `dist/mental-model-notebooklm/` — a flat folder of `.md` files, one per source, no archive.
 
 The script lives with the skill rather than in `export/`, because shape belongs to the tool and
@@ -431,7 +431,7 @@ its own reasoning about the `<!-- entity: … -->` marker in step 3 is where it 
    verifier would still pass because it holds the bundle against the model and not against the
    declaration.
 
-   Verify: `./export/notebooklm-verify` exits 0. It asserts every walked entity appears in
+   Verify: `python3 .claude/skills/companygraph-export/verify.py` exits 0. It asserts every walked entity appears in
    exactly one source, no source exceeds 500,000 words and the folder holds at most 50 files.
 ```
 
@@ -475,7 +475,7 @@ Expected, one line per file and the totals last:
 - [ ] **Step 6: Run the verifier and expect it to pass**
 
 ```bash
-cd ~/git/robertblust/mental-model && ./export/notebooklm-verify; echo "exit=$?"
+cd ~/git/robertblust/mental-model && python3 .claude/skills/companygraph-export/verify.py; echo "exit=$?"
 ```
 
 Expected: `PASS  11 sources, 133 entities, largest 15,383 words`, exit 0. 133 is 123 model entities plus the 10 Markdown files under `meta/`, and both numbers are `find model -name '*.md' ! -name README.md | wc -l` and `find meta -name '*.md' ! -name README.md | wc -l` on the day this was written. A different total is not a failure by itself — it means the model grew, and the verifier is asserting the new number against the bundle, which is its job. The word count moves with the model too.
@@ -553,7 +553,7 @@ The brief at `../communication/posts/2026-09-15-blust-ch/wip/notebooklm-context.
 
 - [ ] **Step 3: Replace the staleness check in the post's README**
 
-The two-command check in `../communication/posts/2026-09-15-blust-ch/wip/README.md` compares the skill bundle's experience count against the model. Replace it with `./export/notebooklm-verify`, which asserts the same thing and more, and now exists. Check the same file for source names the export no longer makes.
+The two-command check in `../communication/posts/2026-09-15-blust-ch/wip/README.md` compares the skill bundle's experience count against the model. Replace it with `python3 .claude/skills/companygraph-export/verify.py`, which asserts the same thing and more, and now exists. Check the same file for source names the export no longer makes.
 
 - [ ] **Step 4: Commit both repositories**
 

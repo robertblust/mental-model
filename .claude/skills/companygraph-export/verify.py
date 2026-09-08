@@ -13,7 +13,7 @@ paths can, because a path either belongs to the model or it does not.
 """
 import re, sys, pathlib, zipfile
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+ROOT = pathlib.Path(__file__).resolve().parent.parent.parent.parent
 INSTANCE = ROOT.name
 BUNDLE = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "dist/mental-model-notebooklm"
 ZIP = ROOT / f"dist/{INSTANCE}-skill.zip"

@@ -47,12 +47,13 @@ model did not move. Every member goes in in sorted order with the same fixed tim
 compression, and nothing is staged on disk: two runs over an unchanged model give two
 byte-identical zips, so a difference between two zips is a difference in the model.
 
-`export/notebooklm-verify` reads the paths each artifact actually carries — a marker in a bundle
-source, and in the zip either a marker or, for the two singular entities the zip copies whole,
-the file's own path — and compares them against the model's walk and against each other, failing
-by naming the path that is missing or extra rather than a bare number that cannot say which
-entity moved. **It should now never be able to find a disagreement, and it stays because that is
-a claim about the code and the artifacts are what get uploaded.** A raw count of `.md` files
+`.claude/skills/companygraph-export/verify.py` reads the paths each artifact actually carries —
+a marker in a bundle source, and in the zip either a marker or, for the two singular entities
+the zip copies whole, the file's own path — and compares them against the model's walk and
+against each other, failing by naming the path that is missing or extra rather than a bare
+number that cannot say which entity moved. **It should now never be able to find a
+disagreement, and it stays because that is a claim about the code and the artifacts are what
+get uploaded.** A raw count of `.md` files
 could not make the comparison at all: it cannot tell a file copied whole with no marker from one
 an entity went missing from, and it cannot tell a real marker from the one `AGENTS.md` uses as a
 prose example of itself, so it raises a false alarm on an export that is in fact correct: 131
@@ -153,10 +154,10 @@ still has sources inside the word cap, and would meet the source count long befo
 **A complete graph in one notebook is the case this serves, not the case it survives.** So the
 declaration is a refinement for an instance that has a narrative and has decided what it is,
 not a rung above a fallback. Where a declaration would produce more sources than the tier
-allows, nothing consolidates it: `export/notebooklm-verify` refuses a bundle of more than 50
-files, and the instance answers by rewriting its declaration. An export that regrouped on its
-own would hand back a bundle grouped the way the instance did not write, which is a worse
-answer than a build that stops and says the number.
+allows, nothing consolidates it: `.claude/skills/companygraph-export/verify.py` refuses a bundle
+of more than 50 files, and the instance answers by rewriting its declaration. An export that
+regrouped on its own would hand back a bundle grouped the way the instance did not write, which
+is a worse answer than a build that stops and says the number.
 
 ## What the rendering does
 
