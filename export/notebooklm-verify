@@ -52,7 +52,7 @@ def zip_entities(zip_path):
     `<instance>/SKILL.md` is the bundle's own front matter, not an entity, and is skipped. Every
     other `.md` member is scanned for markers the same way a bundle source is; a member that
     holds none is an entity only when it sits directly under `<instance>/model/` — the singular
-    entities step 4 of the skill copies whole — and its path is `model/<its basename>`, the name
+    entities the export copies whole — and its path is `model/<its basename>`, the name
     it would have carried had it kept its marker.
     """
     seen = {}
