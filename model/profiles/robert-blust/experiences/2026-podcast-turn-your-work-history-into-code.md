@@ -6,6 +6,7 @@ end: 2026-09-06
 url: https://robertblust.substack.com/p/turn-your-work-history-into-code
 skills:
   - Context engineering
+  - Storytelling
 ---
 
 # Turn your work history into code
