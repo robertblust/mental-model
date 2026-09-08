@@ -1,25 +1,39 @@
 #!/usr/bin/env python3
-"""Render a CompanyGraph instance into a NotebookLM bundle: dist/<instance>-notebooklm/.
+"""Render a CompanyGraph instance into both of its export artifacts, from one walk of the model.
 
-The bundle is a flat folder of Markdown sources, because NotebookLM takes files and not an
-archive. A source is one content area of the model, named for the area, and it carries the
-model's own pages verbatim: an entity keeps the frontmatter, the H1 and the body it has on
-disk, so nothing a reader could be answered from is rewritten on the way out.
+`dist/<instance>-skill.zip` is uploadable as an organization or personal skill: `SKILL.md` at
+the root, `model/<type>.md` per root type folder, `model/meta.md`. `dist/<instance>-notebooklm/`
+is a flat folder of Markdown sources, one per content area, because NotebookLM takes files and
+no archive among them. Both carry the model's own pages verbatim: an entity keeps the
+frontmatter, the H1 and the body it has on disk, so nothing a reader could be answered from is
+rewritten on the way out.
 
-This is a script rather than a procedure an agent follows by hand: the failure the second
-artifact exists to catch is a bundle that went quietly stale, and a rendering nobody can
-re-run cheaply is a rendering that will be stale again. Run it from the instance root, or
-pass the root as the first argument.
+One program writes both because two implementations of the same intent diverge and neither one
+knows it: the rule that a folder's `README.md` is never an entity reached this rendering and
+the verifier while the other half of the export, a procedure followed by hand, kept the old
+asymmetric count for two more commits. A hand-followed procedure is also a different program
+each time somebody follows it, which is the other half of the same failure — the artifact
+nobody can reproduce is the artifact nobody can tell has gone stale.
+
+So the zip is written here rather than shelled out to `zip -r`, which embeds the current mtime
+in every member and gives back an archive that differs from the last one whatever the model
+did. Every member is added in sorted order with the same fixed `date_time`, `compress_type` and
+`external_attr`, and nothing is staged on disk: two runs over an unchanged model produce two
+byte-identical zips, so a difference between them is a difference in the model.
+
+Run it from the instance root, or pass the root as the first argument.
 
 Stdlib only. No third-party module is installed where this runs.
 """
 
 import glob
+import json
 import os
 import pathlib
 import re
 import shutil
 import sys
+import zipfile
 
 # Two documents ship as sources of their own, beside the sources that carry entities: the
 # reading guide the instance writes for this bundle, and the repository's own README. A
@@ -38,6 +52,23 @@ DOCUMENTS = (("AGENTS.md", "export/notebooklm-AGENTS.md"), ("README.md", "README
 # build that stops.
 TOKEN = re.compile(r"\{\{([a-z]+)(?::([^{}]+))?\}\}")
 
+# The zip's every member takes this timestamp instead of the file's own mtime. It is the
+# earliest the format can hold, which makes it obviously not a date anybody should read
+# anything into, and a constant is what makes two runs byte-identical: a member's mtime is
+# recorded in the archive, so an archive built from mtimes is new every time the model is
+# merely re-checked out.
+ZIP_DATE = (1980, 1, 1, 0, 0, 0)
+
+# A code span in a README that names a file, and a link into the repository. Both are correct
+# where the README lives and dangle where the zip puts it, so both are rewritten on the way in.
+SPAN = re.compile(r"`([^`]+)`")
+LINK = re.compile(r"\[([^\]]+)\]\((?!\w+:)[^)]*\)")
+
+# Markdown emphasis, as it is taken out of the description the zip's SKILL.md carries. YAML
+# holds a plain string; a reader of the skill list sees the marks and not the emphasis.
+EMPHASIS = ((re.compile(r"\*\*(.+?)\*\*"), r"\1"), (re.compile(r"__(.+?)__"), r"\1"),
+            (re.compile(r"\*(.+?)\*"), r"\1"), (re.compile(r"\b_(.+?)_\b"), r"\1"))
+
 
 def entities():
     """Every file the export walks, shallowest first and then in path order.
@@ -52,6 +83,9 @@ def entities():
     the bundle disagree with the model by every README a pattern happened to match. Under
     `meta/` as much as under `model/` — the vendored core has no README today, and a rule that
     holds by accident is one a core release can break without anything saying so.
+
+    This is the walk. Both artifacts are rendered from what it returns, so a root type added to
+    the model reaches both of them or neither, and there is no second traversal to keep true.
     """
     found = [p for p in pathlib.Path("model").rglob("*.md") if p.name != "README.md"]
     found += [p for p in pathlib.Path("meta").rglob("*.md") if p.name != "README.md"]
@@ -106,6 +140,16 @@ def root_type(path):
     if parts[0] != "model":
         return parts[0]
     return parts[1] if len(parts) > 2 else path.stem
+
+
+def singular(path):
+    """Whether a path is an entity that stands alone: `model/identity.md`, `model/vision.md`.
+
+    It has no folder and so nothing to consolidate with. In the zip it is copied whole and
+    carries no marker; `export/notebooklm-verify` knows that and claims a marker-less
+    `model/*.md` member as the entity `model/<basename>`.
+    """
+    return path.parts[0] == "model" and len(path.parts) == 2
 
 
 def title_of(name):
@@ -299,17 +343,190 @@ def render(path):
     The marker stays. NotebookLM strips comments, so it costs the reader nothing, and it is an
     unambiguous boundary where a bare `---` is not: the source holding 69 skills holds 138 lines
     reading `---`, two per entity, and an entity whose body carries a horizontal rule adds one
-    that nothing tells apart from a fence. It is also what `export/notebooklm-verify` reads
-    coverage from.
+    that nothing tells apart from a fence. A bare `---` also opens and closes every entity's own
+    frontmatter, so a consolidated file of 69 skills holds no line that says which of its `---`
+    are boundaries, and no program can split it at all. `<!--` collides with neither YAML nor
+    Markdown's own rule, it does not render, and the path gives back the provenance
+    consolidation throws away. It is also what `export/notebooklm-verify` reads coverage from.
     """
     return f"<!-- entity: {path.as_posix()} -->\n\n" + path.read_text(encoding="utf-8").strip("\n")
 
+
+# --- the agent skill zip -------------------------------------------------------------------
+
+def inlined(readme, carried):
+    """A folder README as it travels inside the zip, with its references made true there.
+
+    A README describes the repository's layout, and the zip has a different one: nine files
+    where the repository has folders. The paths it names are correct where it lives and dangle
+    where the zip puts it, so the copy that travels is rewritten and the source on disk is left
+    alone. `meta/<unit>/<type>-schema.md` becomes `model/meta.md`, which is where the zip keeps
+    the schema; `experiences/` becomes the plain word, because the zip carries no such folder
+    and the sentence is about the thing rather than the path; and a reference to anything the
+    zip holds no copy of is dropped rather than left pointing at nothing, on the argument that
+    a reader who cannot follow a path is better served by a sentence that does not offer one.
+    """
+    out = []
+    for line in readme.read_text(encoding="utf-8").strip("\n").splitlines():
+        dropped = []
+
+        def span(match):
+            target = match.group(1)
+            if re.fullmatch(r"meta/.+-schema\.md", target):
+                return "`model/meta.md`"
+            if target.rstrip("/") == "experiences":
+                return "experiences"
+            if ("/" in target or target.endswith(".md")) and target not in carried:
+                dropped.append(target)
+                return ""
+            return match.group(0)
+
+        new = SPAN.sub(span, LINK.sub(r"\1", line))
+        if dropped:
+            new = re.sub(r" {2,}", " ", new).rstrip()
+            new = re.sub(r" ([,.;:)])", r"\1", new)
+        out.append(new)
+    return "\n".join(out)
+
+
+def tagline():
+    """The root README's opening blockquote, joined into the one sentence it wraps across.
+
+    The description the zip's SKILL.md carries is what a reader of a skill list has to decide
+    from, and the tagline is the sentence the repository already wrote for that job. Taking one
+    wrapped line of it ends the description mid-clause.
+    """
+    lines = []
+    for line in pathlib.Path("README.md").read_text(encoding="utf-8").splitlines():
+        if line.startswith(">"):
+            lines.append(line[1:].strip())
+        elif lines:
+            break
+    return " ".join(line for line in lines if line)
+
+
+def plain(text):
+    """Markdown link and emphasis syntax as plain text: a link becomes its link text.
+
+    The description is a YAML string a reader sees rendered by nothing, so `[CompanyGraph](url)`
+    would reach them as its own source.
+    """
+    text = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", text)
+    for pattern, replacement in EMPHASIS:
+        text = pattern.sub(replacement, text)
+    return text
+
+
+def zip_body(paths, readme, carried):
+    """One consolidated `model/<type>.md`: its folder's README, then every entity it holds.
+
+    The README opens the file rather than a title of the export's own, because it already
+    carries the H1 the folder answers to and says which schema the pages under it are written
+    against. Entities follow in path order, each behind its marker.
+    """
+    parts = [inlined(readme, carried)] if readme else []
+    parts += [render(p) for p in paths]
+    return "\n\n".join(parts).rstrip() + "\n"
+
+
+def zip_skill(instance, table, version):
+    """`<instance>/SKILL.md`: what the agent loading the skill reads before the model.
+
+    Frontmatter it can be listed by, the instance's own intro when it wrote one, a table saying
+    what each file holds so a wrong count is visible without opening anything, and the one
+    paragraph that makes the consolidated files readable — where an entity begins, what its
+    name is, and where the rules are.
+    """
+    description = plain(tagline()).replace('"', '\\"')
+    parts = [f"---\nname: {instance}\ndescription: \"{description}\"\n---", f"# {instance}"]
+
+    intro = pathlib.Path("export/SKILL-intro.md")
+    if intro.is_file():
+        parts.append(intro.read_text(encoding="utf-8").strip("\n"))
+
+    rows = "\n".join(f"| `{name}` | {held} |" for name, held in table)
+    parts.append(f"| File | Entities |\n|---|---|\n{rows}")
+    parts.append(f"CompanyGraph core {version}.")
+    parts.append(
+        "Each entity begins at its `<!-- entity: … -->` line and its H1 is its name. References "
+        "between\nentities are by name, so a skill an experience lists is the skill page of that "
+        "name.\n`model/meta.md` holds the rules every page obeys.")
+    return "\n\n".join(parts) + "\n"
+
+
+def zip_members(walked, instance):
+    """Every member of the skill zip, as `{path inside the archive: text}`.
+
+    One `model/<folder>.md` per type folder under `model/`, with `model/profiles/` walked
+    recursively so experiences travel with their profile; `model/meta.md` holding
+    `meta/core/CONVENTIONS.md` and then every `*-schema.md` under `meta/`; and each singular
+    entity copied whole into a file of its own, carrying no marker because there is nothing in
+    it to bound.
+
+    Built in memory. A staging directory is a second copy of the model on disk that has to be
+    removed by whoever remembers to, and the zip is written from these strings instead.
+    """
+    groups = {}
+    for path in walked:
+        groups.setdefault(root_type(path), []).append(path)
+
+    carried = {"SKILL.md", "model/meta.md"}
+    carried |= {f"model/{name}.md" for name in groups}
+
+    members, table = {f"{instance}/SKILL.md": None}, []
+    for name in sorted(groups):
+        held = groups[name]
+        if len(held) == 1 and singular(held[0]):
+            body = held[0].read_text(encoding="utf-8").strip("\n") + "\n"
+        elif name == "meta":
+            # CONVENTIONS.md first: it is the rules the schemas are read under, and path order
+            # putting it first is an accident of a capital letter rather than a decision.
+            held = sorted(held, key=lambda p: (p.name != "CONVENTIONS.md", p.as_posix()))
+            body = zip_body(held, None, carried)
+        else:
+            # Path order, so a folder reads the way `ls` shows it. The NotebookLM rendering
+            # sorts shallowest first instead, because a source is read front to back and a
+            # profile has to lead the experiences it owns; a file an agent greps does not care.
+            held = sorted(held, key=lambda p: p.as_posix())
+            body = zip_body(held, readme_of(held, name), carried)
+        members[f"{instance}/model/{name}.md"] = body
+        table.append((f"model/{name}.md", len(held)))
+
+    version = json.loads(
+        pathlib.Path(".companygraph/manifest.json").read_text(encoding="utf-8"))["core"]["version"]
+    members[f"{instance}/SKILL.md"] = zip_skill(instance, table, version)
+    return members
+
+
+def write_zip(path, members):
+    """Write the archive so that two runs over an unchanged model are byte-identical.
+
+    `zip -r` cannot be: it records each member's mtime, so a fresh clone or a re-run of the
+    build gives back an archive that differs from the last one in every member while the model
+    did not move at all, and nothing can then tell a real change from a rebuild. So every member
+    takes the same fixed timestamp, mode and compression, and they are added in sorted order —
+    the three things besides the bytes themselves that a zip records. No directory entries: the
+    paths carry the folders, and a directory entry is one more thing with a timestamp on it.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(path, "w") as archive:
+        for name in sorted(members):
+            info = zipfile.ZipInfo(name, date_time=ZIP_DATE)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.create_system = 3          # Unix, whatever this is built on
+            info.external_attr = 0o644 << 16
+            archive.writestr(info, members[name].encode("utf-8"))
+
+
+# --- the run -------------------------------------------------------------------------------
 
 def main():
     if len(sys.argv) > 1:
         os.chdir(sys.argv[1])
     root = pathlib.Path.cwd()
-    out = root / "dist" / f"{root.name}-notebooklm"
+    instance = root.name
+    out = root / "dist" / f"{instance}-notebooklm"
+    archive = root / "dist" / f"{instance}-skill.zip"
 
     walked = entities()
     if not walked:
@@ -370,6 +587,10 @@ def main():
     if stale:
         return 1
 
+    # Both renderings are built in memory before either lands, so a failure in one does not
+    # leave the other half of the export newer than the model it was meant to agree with.
+    members = zip_members(walked, instance)
+
     # Written from scratch every run: a renamed heading would otherwise leave its old file
     # behind, and a bundle claiming an entity twice is the failure the verifier reports.
     if out.exists():
@@ -394,6 +615,9 @@ def main():
 
     print(f"{len(walked):4d} {'entity' if len(walked) == 1 else 'entities':<8}  in {written} "
           f"{'source' if written == 1 else 'sources'} under {out}")
+
+    write_zip(archive, members)
+    print(f"{len(members):4d} {'member' if len(members) == 1 else 'members':<8}  in {archive}")
     return 0
 
 

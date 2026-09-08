@@ -28,25 +28,38 @@ artifacts.
 
 ## Why one export and not a second skill
 
-The walk is the same walk. Both artifacts visit every type folder, recurse into `model/profiles/`
-so experiences travel with their profile, and count the entities as they go. A second skill
-would repeat that traversal, and the day a root type is added one of the two would keep
+**The walk is one walk, in one program, and both artifacts are rendered from what it returns.**
+It visits every type folder, recurses into `model/profiles/` so experiences travel with their
+profile, and counts the entities as it goes; the two renderings then differ in the container and
+the grouping and in nothing that decides what is carried. A second traversal would be a second
+implementation of the same intent, and the day a root type is added one of the two would keep
 forgetting it — silently, because neither would know what the other saw.
 
-**Because they share a walk they can be held to the same set of entity paths, and that is what
-stops them drifting.** `export/notebooklm-verify` reads the paths each artifact actually
-carries — a marker in a bundle source, and in the zip either a marker or, for the two singular
-entities step 4 of the skill copies whole, the file's own path — and compares them against the
-model's walk and against each other, failing by naming the path that is missing or extra
-rather than a bare number that cannot say which entity moved. A raw count of `.md` files
-cannot make that comparison: it cannot tell a file copied whole with no marker from one an
-entity went missing from, and it cannot tell a real marker from the one `AGENTS.md` uses as a
+That is not a hypothetical. The zip was built by hand from steps written in the skill while the
+NotebookLM bundle was built by script, and they diverged: the rule that a folder's `README.md`
+is never an entity landed in the script and in the verifier and not in the hand-run count, which
+kept the old asymmetric form for two more commits. A procedure followed by hand is also a
+different program each time somebody follows it, which is the same failure seen from the other
+side — an artifact nobody can reproduce is an artifact nobody can tell has gone stale. So the
+zip is written by the same script, with `zipfile` rather than `zip -r`, which records each
+member's mtime and hands back an archive differing from the last one in every member while the
+model did not move. Every member goes in in sorted order with the same fixed timestamp, mode and
+compression, and nothing is staged on disk: two runs over an unchanged model give two
+byte-identical zips, so a difference between two zips is a difference in the model.
+
+`export/notebooklm-verify` reads the paths each artifact actually carries — a marker in a bundle
+source, and in the zip either a marker or, for the two singular entities the zip copies whole,
+the file's own path — and compares them against the model's walk and against each other, failing
+by naming the path that is missing or extra rather than a bare number that cannot say which
+entity moved. **It should now never be able to find a disagreement, and it stays because that is
+a claim about the code and the artifacts are what get uploaded.** A raw count of `.md` files
+could not make the comparison at all: it cannot tell a file copied whole with no marker from one
+an entity went missing from, and it cannot tell a real marker from the one `AGENTS.md` uses as a
 prose example of itself, so it raises a false alarm on an export that is in fact correct: 131
 marks in a correctly built zip, 134 in a correctly built bundle, 133 in the repository, three
-different numbers from one walk and nothing wrong with any of them. Until the verifier read
-the zip too, nothing checked the zip at all — a hand-run count was the only assertion the
-procedure named there, and a check that cries wolf on a correct export is a check the next
-operator learns to skip.
+different numbers from one walk and nothing wrong with any of them. That count was for two
+commits the only assertion the procedure named for the zip, and a check that cries wolf on a
+correct export is a check the next operator learns to skip.
 
 The failure the design exists for is a true one: on Sep 7 the committed bundle had been built
 on Sep 5 and held 31 experiences against the model's 36, with a skills table that disagreed
@@ -147,12 +160,12 @@ answer than a build that stops and says the number.
 
 ## What the rendering does
 
-The rendering is a script, `.claude/skills/companygraph-export/build.py`, run by the procedure
-that also builds the skill bundle. It lives with the skill rather than in `export/`, because
-shape belongs to the tool and `export/` holds the instance's own inputs — the reading guide and
-the intro paragraph. It has to be a script and not a one-off pass: the failure this artifact
-exists to catch is a bundle going quietly stale, and a rendering nobody can re-run cheaply will
-be stale again.
+Both renderings are one script, `.claude/skills/companygraph-export/build.py`, and the export
+procedure is running it. It lives with the skill rather than in `export/`, because shape belongs
+to the tool and `export/` holds the instance's own inputs — the reading guide and the intro
+paragraph. It has to be a script and not a one-off pass: the failure this artifact exists to
+catch is a bundle going quietly stale, and a rendering nobody can re-run cheaply will be stale
+again.
 
 A source opens with its own name as an H1 and one sentence saying what it holds and when to
 read it, because that sentence is what the per-source summary is built from and the first thing
@@ -161,7 +174,9 @@ never as an entity: it says how the folder is laid out and against which schema 
 written, so it carries no marker and is counted by nothing. Its own H1 goes where it only
 repeats the title the source has just written and stays where it differs, because a heading that
 differs is saying something. Then the entities, shallowest path first, so a profile leads the
-experiences it owns.
+experiences it owns. The zip inlines the same README with its paths rewritten to where the zip
+keeps them, and orders a folder by path alone, because a source is read front to back where a
+consolidated file is grepped.
 
 **Each entity is preceded by its `<!-- entity: <path> -->` marker and then reproduced exactly
 as it is written on disk** — frontmatter fence, its own H1, body, no field dropped or reordered
