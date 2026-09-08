@@ -8,10 +8,9 @@ no archive among them. Both carry the model's own pages verbatim: an entity keep
 frontmatter, the H1 and the body it has on disk, so nothing a reader could be answered from is
 rewritten on the way out.
 
-One program writes both because two implementations of the same intent diverge and neither one
-knows it: the rule that a folder's `README.md` is never an entity reached this rendering and
-the verifier while the other half of the export, a procedure followed by hand, kept the old
-asymmetric count for two more commits. A hand-followed procedure is also a different program
+One program writes both because two implementations of the same intent drift apart one rule at
+a time: a rule lands in one of them, the other keeps the shape it had, and nothing anywhere says
+the two now disagree. A hand-followed procedure is also a different program
 each time somebody follows it, which is the other half of the same failure — the artifact
 nobody can reproduce is the artifact nobody can tell has gone stale.
 
