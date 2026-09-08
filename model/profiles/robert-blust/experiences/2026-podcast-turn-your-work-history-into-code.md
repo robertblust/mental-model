@@ -3,7 +3,7 @@ source: Local
 kind: Community
 start: 2026-09-06
 end: 2026-09-06
-url: https://robblust.substack.com/p/turn-your-work-history-into-code
+url: https://robertblust.substack.com/p/turn-your-work-history-into-code
 skills:
   - Context engineering
 ---
