@@ -17,8 +17,10 @@ model/                         the company — everything under here is an entit
   vision.md                    the future it works toward
   sources/                     where each page's facts are mastered
   proficiency-levels/          the four-rung ladder every skill claim uses
+  experience-kinds/            the five kinds an experience can be
   skills/                      one file per capability
   values/                      one file per value
+  surfaces/                    the rules for a surface no build writes
   profiles/robert-blust/       the profile, and the experiences it owns
 AGENTS.md                      the instance's own rules; every modeling rule is in meta/core/CONVENTIONS.md
 .claude/skills/companygraph-*  the portable skills: validate, add an entity, export as a skill
