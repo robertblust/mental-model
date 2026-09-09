@@ -13,8 +13,7 @@ url: https://www.linkedin.com/in/robertblust/
 - **Location** — the metropolitan area the network's own list offers for the identity's
   `location`.
 - **About** — the profile's `## Summary`, rewritten in this surface's register.
-- **Experience** — every experience that is not of kind `Project`, not of kind `Education` and
-  neither a talk nor a published piece.
+- **Experience** — the experiences of kind `Role`, kind `Independent` and kind `Community`.
 - **Projects** — the experiences of kind `Project`.
 - **Education** — the experiences of kind `Education`.
 - **Skills** — five skills of the profile's, chosen by the owner.
@@ -28,17 +27,29 @@ url: https://www.linkedin.com/in/robertblust/
   shows.
 - An entry carries the title and the period of the experience it was made from, and its body is
   written rather than copied. What the entry holds was written for a reader who came to read.
+- The model is a company of one, so an experience nobody commissioned or hosted was the
+  company's own work: an entry whose experience carries no `organization` names the identity.
+  The network asks for a company on every entry and this answers it from the model rather than
+  by inventing a name.
+- An entry's body runs to one paragraph, and an entry whose period is a single day runs to a
+  sentence or two. The dates say which an entry is, so no count is needed here, and the register
+  holds either way: the first sentence carries the point.
+- For a talk, an article or a published tool the address is most of what the entry is, so an
+  entry whose experience carries a `url` shows it. An entry whose experience carries none shows
+  no link: the model holds an address or it does not, and this surface invents none.
 - The About text is the profile's `## Summary` rewritten the same way. The sentence naming the
   security and compliance standards is not carried, because the LIKE MAGIC entry names those
   standards beside the work that met them, and a standard named without its work is a claim the
   reader cannot place.
-- The Experience unit groups its entries by `organization`, newest group first by the start of
-  its earliest entry, and inside a group newest first by `start`. An experience with no
-  `organization` joins one group of its own, which is where the network's requirement of a
-  company for every entry is met without inventing one.
-- The Experience unit turns on the kind and on the form of the output, never on who the
-  audience was. So a board seat, a working group and an open tool are Experience entries here,
-  though the model holds all three as kind `Community` because their audience is public.
+- Every dated unit runs newest first by `end`, with an experience that has none — a period still
+  running — above them all, and `start` breaking a tie. Not by `start`: a position starts once
+  and then runs for years, so ordering by it buries a long role under everything that began
+  while it was running, and a talk given during a job would stand above the job. What a reader
+  wants first is what ended last.
+- Every experience reaches a dated unit and each kind reaches one: `Role`, `Independent` and
+  `Community` are Experience, `Project` is Projects, `Education` is Education. Nothing here reads
+  what an experience produced or who it was for, because the kind already says both and the
+  model records nothing finer.
 - The Skills unit shows five because the network shows five on this account. Which five is the
   owner's choice at each rebuild and not a rule: the model holds seventy skills and no ordering
   among them, so nothing here could derive the five without inventing a ranking.
@@ -50,19 +61,14 @@ url: https://www.linkedin.com/in/robertblust/
 - The model's values and its vision reach no unit. The surface has no unit for a stated
   principle, and the About text is the only place one could go, where it would take the room
   that text has for the work the principle was held during.
+- An experience's `## References` and its `skills` reach no unit either. The references are the
+  documents a claim rests on, which a reader of the model follows and a reader of a profile does
+  not — the entry's own address is what they came for. The skills are already on the surface, as
+  the five the Skills unit carries, and a list per entry would be the same claim told longer.
 - Nothing else the model holds reaches this surface: the standing links of the profile's
   `## Also at`, the identity's `email`, the proficiency levels, the experience kinds, the
   sources and this file's own type. Each is either how the model is kept, or a way to reach the
   subject that the network already provides.
-
-- Whether a talk or a published piece reaches this surface is open and the owner's to decide.
-  The model holds eight of them, and no unit above takes one, so as this file stands they come
-  off the profile. Either the surface gains a unit for them or the model records that it shows
-  none.
-- Whether the sentence the headline carries becomes a fact of the model is open and the owner's
-  to decide. The model holds the claim, as the value Decide well over build fast, and it does
-  not hold that wording, which lives on the blust.ch landing page — so this surface takes its
-  first line from another surface rather than from an entity here.
 
 ## Constraints
 
