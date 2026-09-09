@@ -11,7 +11,7 @@ mechanical rules it would cover are done here by hand as well.
 ## Procedure
 
 1. Read `meta/core/CONVENTIONS.md` in full. The rules it states are what is being checked —
-   R0–R15 at core 0.14.0 — and nothing it does not state. The count is read from the file, not
+   R0–R17 at core 0.16.0 — and nothing it does not state. The count is read from the file, not
    from here: a core upgrade adds rules and this list goes stale.
 2. Read `.companygraph/manifest.json`. Every folder under `meta/` is a vendored unit —
    `core` always, a pack beside it — and each carries its own `manifest.json` naming the
@@ -44,6 +44,15 @@ mechanical rules it would cover are done here by hand as well.
    list-valued field written as a block sequence, one entry per line, never a flow sequence
    in brackets (R11); every required section present; for a `Table.` section, the header row
    equals the column table's columns and every `ref → <type>` cell resolves (R4).
+   Two types resolve on their own terms and both are checked here. A `ref? → <type>` value,
+   in a field or a cell, draws an edge when it equals the H1 of an entity of that type and
+   stays a fact when it does not, so neither reading is reported as a failure; what is
+   reported is which way each value went, because that is what decides whether the graph has
+   the edge (R9, R16). A `qualifier → <type>` cell must resolve exactly as a reference must
+   and is a failure when it does not, and it draws no edge of its own: it qualifies the edge
+   its own row drew from the reference column the table declares (R9, R16). Read the type off
+   the schema and never off the column's position — a qualifier is a column type only, and a
+   column table declares at most one reference.
 7. Owned types: every `experience` sits under `profiles/<profile>/experiences/` and nowhere
    else (R5, R10).
 8. Read each schema's `## Writing rules` and judge every entity of that type against them, one

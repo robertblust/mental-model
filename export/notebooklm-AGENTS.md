@@ -31,6 +31,7 @@ The rest carry its {{entities}} entities.
 | `experience-kinds.md` | the {{count:Experience kinds}} kinds an experience can be | Understand why a break, a talk or a degree is filed as it is |
 | `proficiency-levels.md` | the {{count:Proficiency levels}} rungs a skill is claimed on | Weigh what Expert or Competent means here |
 | `sources.md` | the {{count:Sources}} source the pages are mastered in | Check where a fact would be corrected |
+| `surfaces.md` | the {{count:Surfaces}} surface the model is published to by hand | Ask what reaches a published place and what is left out |
 | `identity.md` | who the model is about | Find the name, the location and the public addresses |
 | `vision.md` | the future the model works toward | Ask what the work is building toward |
 | `meta.md` | CompanyGraph core: its conventions and its schemas, {{count:Meta}} entities | Check what a page must carry and how a reference resolves |
