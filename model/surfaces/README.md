@@ -10,6 +10,13 @@ LinkedIn profile rather than a LinkedIn. The place is what `## Also at` on the p
 and the two are different things: one says the subject is reachable there, the other says what
 that page shows and how it is made.
 
+This folder is exported like every other type, and that is a decision rather than an oversight
+of the walk. A surface file carries the rules a reader needs in order to judge what a published
+place shows and what it leaves out, and an agent asked about the subject reaches a better answer
+holding them than not. It carries the open decisions and the constraints with them, including
+the one about the name, because a rule that is still being decided is a truer thing to publish
+than a silence.
+
 A file holds the rules — which of the model's facts reach the surface, in what shape, why
 anything is left out and what the published result has to satisfy — and never the surface's own
 state. A line saying what a surface shows today is true for a day and nothing here can see it
