@@ -26,7 +26,7 @@ skills:
 ## Achievements
 
 - Extracted the meta-model from two instances that never knew about each other, a company of 25 people and a company of one, which had arrived at the same shape: one Markdown file per entity, YAML frontmatter and a body, in a folder named for its type, with a folder of schemas beside it.
-- Published the core as one shipped unit — nine schemas and sixteen numbered conventions that make the graph checkable — with a worked example company and an instance parser, and released it 18 times to v0.14.0, a manifest per release.
+- Published the core as one shipped unit — ten schemas and eighteen numbered conventions that make the graph checkable — with a worked example company and an instance parser, and released it 20 times to v0.16.0, a manifest per release.
 - Wrote the conventions for the agents that would work in an instance, encoding the failure modes seen before: an unresolvable reference is an error rather than a warning, and every validation pass names what it did not check.
 - Built the reference instance from it: this profile, 36 experiences, 70 skills on a four-level ladder and 5 values, every claim traced to an experience that shows it.
 - Came to it the second time. The Flatland CDO Server carried a model of a company from 2014, served over an API and true for as long as the server ran; this one is Markdown a person reads and edits, in a repository with a history, true for as long as the files exist.

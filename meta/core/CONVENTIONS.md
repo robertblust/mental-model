@@ -102,6 +102,24 @@ already named.
 a reader meets both in the same file, and a vocabulary that spells its fields one way and its
 sentences another has no rule at all, only a habit with an exception.
 
+### R17 — The model is the master
+
+Everything made from the model — a page, a profile, a document, a bundle — shows the model's
+facts and none of its own. Where a made thing and the model disagree, the model is corrected
+and the thing rebuilt; the made thing is never edited on its own. A fact that lives only on
+something made from the model is a fact no reader of the model can find, and the next rebuild
+deletes it.
+
+A file in the model therefore records the rules by which something is made, and never the state
+of the thing made. "The published page currently shows June" is an observation: true on the day
+it was written, and unfalsifiable afterwards by anything in the repository. The line falls
+between the shape of a made thing and its content. That a place has a headline, and caps it at a
+length, is a condition the rules are written against, and it holds until the place itself
+changes; a shape recorded with where it was read is a fact like any other. That the headline
+currently reads one thing rather than another is what the next rebuild replaces. It belongs in
+the report a validation pass produces (R0). What belongs in a file is what stays true after the
+next rebuild.
+
 ## Schemas
 
 ### R8 — Enum values are listed in the schema
@@ -153,8 +171,18 @@ table, and a column table for a section not marked `Table.`, are both errors: ea
 means nothing without the other.
 
 Required is `Yes` or `No`. Types come from the closed vocabulary: `string`, `number`, `date`,
-`array`, `enum`, `ref → <type>`, `array of ref → <type>`. A reference names one entity, so
-the type it points at is singular: `ref → skill`, never `ref → skills`.
+`array`, `enum`, `ref → <type>`, `ref? → <type>`, `array of ref → <type>`,
+`qualifier → <type>`. A reference names
+one entity, so the type it points at is singular: `ref → skill`, never `ref → skills`.
+
+Some fields name a thing that is sometimes an entity and sometimes not — an employer that is
+the company itself, a client that is nobody here. `ref? → <type>` is how a schema says so: a
+value that resolves becomes an edge, a value that does not stays a string, and neither reading
+is an error.
+
+The `?` is not `Required`, though the two read as one thing on a first pass. `Required` says
+whether the field may be absent; `ref?` says whether a value that is present must resolve. A
+field can be both, and `organization` is.
 
 `date` is `YYYY`, `YYYY-MM` or `YYYY-MM-DD`. A date is written at the precision its source
 states and never at more; an author may deliberately record less. A shorter form is an
@@ -175,6 +203,27 @@ a column table the list types — `array` and `array of ref → <type>` — are 
 something to be read leniently, because there is nothing for them to mean: a column that
 references another entity is typed `ref → <type>`. A list of bare names stays a frontmatter
 field (R8); it never becomes a column.
+
+`ref? → <type>` is legal wherever `ref → <type>` is — a frontmatter field or a column — on the
+same terms. `array of ref?` is not a form: the `?` asks whether one value resolves, and a list
+has no single value to ask it of.
+
+`qualifier → <type>` is a column type and only a column type. A row of a column table is one
+fact about several things — a skill held at a level, with the evidence for it — and a fact
+like that is identified by the things it joins rather than by a name of its own. R2 names
+entities by their H1 and allows no two of a type to share one, so such a row cannot become an
+entity without being given a name nobody calls it. It stays a row: one column names what the
+row points at, and the rest qualify that reference. A qualifier must resolve, exactly as a
+reference must, and it draws no edge of its own; it reaches a reader as an attribute of the
+edge its row drew, already resolved to an id.
+
+So a column table declares at most one reference, and it is the first column; a table that
+qualifies anything declares the reference being qualified, because a qualifier with nothing to
+qualify is a cell whose value the parser would draw the edge from. That is what
+makes the edge a row draws a matter of the schema rather than of the order somebody typed the
+columns in — a parser that takes the first cell to resolve takes the declared reference, and
+a qualifier standing before it would quietly take its place. A table declaring no reference at
+all draws nothing and is data, which is a table's other legal shape.
 
 `## Purpose` and `## Writing rules` come last, after every table, and say what the shape above
 cannot: what the type is *for*, and what separates a good entity of it from one that merely
@@ -284,6 +333,32 @@ is that a rename cannot half-happen. An undeclared field resolves no reference a
 requirement — but it still renders, which is how a field left behind by a rename survives on
 the page under the old name while every other check reports green.
 
+### R16 — An instance is held to what its schema declares
+
+A field or column typed `ref → <type>` or `array of ref → <type>` draws an edge from every
+page that carries it. One typed `ref? → <type>` draws an edge when its value resolves, and
+stays a fact when it does not. One typed `qualifier → <type>` resolves and draws no edge: it
+qualifies the edge its own row drew, and reaches a reader in that edge's attributes. Typed
+anything else, a field draws no edge and its value resolves to nothing — and typed `number`,
+it is written as digits.
+
+The difference between a reference and a qualifier is not how hard it resolves; both must. It
+is what the row is saying. A row that names a skill and a level makes one claim about both, so
+one edge carries it and the level qualifies that edge. Two edges would say the page refers to
+the skill and, separately, to the level — and the second is a claim no row makes.
+
+`number` is about the written form, not a parsed type, and that is worth saying because a
+reader will otherwise take it for a bug. This is a model made of Markdown: every value in every
+file is text, and what a serializer turns that text into is the serializer's own business, not
+this vocabulary's. A rule reading "digits become a number" would say more than intended — it
+would turn a year-only date into an integer, and a date written `YYYY` is legal by R9.
+
+What the rule costs is that a schema's types stop being decoration: retype a field from
+`string` to `ref → <type>` and a page that used to hold a fact now holds an edge, on every
+instance that field carries it. What it buys is that nothing beyond the schema decides which
+fields to resolve — a parser reads the type once and knows, for every page of every type, which
+fields become edges and which stay facts.
+
 ## Working
 
 ### R0 — Validation runs before committing
@@ -292,16 +367,16 @@ Nothing is committed without a validation pass over the rules above. The pass is
 reading the files against these rules. A repository may also own a script that checks some of
 them; nothing here depends on having one.
 
-Which rules those scripts reach is worth stating plainly. In the CompanyGraph repository,
-`npm run verify` runs `verify/check.mjs`, which mechanically checks part of R4, R6, R9, R10,
-R11 and R12 against this repository's own files, plus a meta-check under R0 that fails if any
-check cites a rule this document does not define. `npm run test:instance` exercises the
+Which rules those scripts reach is worth stating plainly. In the CompanyGraph repository, `npm
+run verify` runs `verify/check.mjs`, which mechanically checks part of R4, R6, R9, R10, R11,
+R12, R15 and R16 against this repository's own files, plus a meta-check under R0 that fails if
+any check cites a rule this document does not define. `npm run test:instance` exercises the
 instance parser's implementation of the rules it cites — R2, R3, R4, R5, R6, R7, R9 and R13 —
 against fixtures rather than files, and `npm run test:rules` extends that meta-check to the
 rules the parser cites in its comments and error messages. No file is checked against R1, R2,
-R3, R5, R7 or R8; where a check happens to touch one, it is incidental to the rule that check
-cites. Treat all six as agent-enforced — which is by design, not by omission: the claim this
-model ships under is that schemas written as prose are enforceable by agents.
+R3, R5, R7, R8 or R17; where a check happens to touch one, it is incidental to the rule that
+check cites. Treat all seven as agent-enforced — which is by design, not by omission: the claim
+this model ships under is that schemas written as prose are enforceable by agents.
 
 Those scripts are this repository's own harness. Copying `CONVENTIONS.md` into a company
 brings the rules and not the scripts — there is no `verify` script there, and what these run
