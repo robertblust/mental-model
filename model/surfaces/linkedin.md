@@ -9,7 +9,7 @@ url: https://www.linkedin.com/in/robertblust/
 
 ## What it shows
 
-- **Headline** — the slogan the blust.ch landing page carries as its H1.
+- **Headline** — the slogan the blust.ch landing page carries as its H1, and nothing beside it.
 - **Location** — the metropolitan area the network's own list offers for the identity's
   `location`.
 - **About** — the profile's `## Summary`, rewritten in this surface's register.
@@ -22,13 +22,20 @@ url: https://www.linkedin.com/in/robertblust/
 
 ## Projection rules
 
-- An entry carries the title, the period and the `organization` of the experience it was made
-  from. Its body is written in this surface's register rather than copied from the entry, which
-  is written for a reader who came to read.
+- Everything written for this surface is in the prose register of `conventions/WRITING.md`,
+  aimed at a visitor who has not decided to stay: the first line carries the point, sentences
+  run short because the profile is read on a phone, and a claim it opens with is a claim it then
+  shows.
+- An entry carries the title and the period of the experience it was made from, and its body is
+  written rather than copied. What the entry holds was written for a reader who came to read.
 - The About text is the profile's `## Summary` rewritten the same way. The sentence naming the
   security and compliance standards is not carried, because the LIKE MAGIC entry names those
   standards beside the work that met them, and a standard named without its work is a claim the
   reader cannot place.
+- The Experience unit groups its entries by `organization`, newest group first by the start of
+  its earliest entry, and inside a group newest first by `start`. An experience with no
+  `organization` joins one group of its own, which is where the network's requirement of a
+  company for every entry is met without inventing one.
 - The Experience unit turns on the kind and on the form of the output, never on who the
   audience was. So a board seat, a working group and an open tool are Experience entries here,
   though the model holds all three as kind `Community` because their audience is public.
@@ -60,9 +67,11 @@ url: https://www.linkedin.com/in/robertblust/
 ## Constraints
 
 - Every unit that can travel on its own — the headline, a search result snippet, a share card —
-  pairs the name with a role, a domain, a project or a location. The name is shared with a
-  notable deceased academic, and a unit carrying the name and nothing else resolves to the
-  wrong person.
+  carries something beside the name that resolves it: a role, a domain, a project or a location.
+  The name is shared with a notable deceased academic, and a unit carrying the name and nothing
+  else resolves to the wrong person. The headline meets this through its subject rather than a
+  title: the slogan is a claim about building software, which the other holder of the name did
+  not make.
 - The headline is at most 220 characters, the network's limit, read from its editor on
   2026-09-09.
 - The About section is at most 2600 characters, read from the same editor on the same day.
