@@ -1,23 +1,24 @@
 {
   "tooling": "0.0.0",
   "core": {
-    "version": "0.14.0",
-    "shape": 1,
-    "source": "fetched:v0.14.0"
+    "version": "0.16.0",
+    "shape": 2,
+    "source": "fetched:v0.16.0"
   },
   "units": "meta",
   "packs": [],
   "files": {
-    "meta/core/CONVENTIONS.md": "sha256:825e7df31f204eb80012c4ab937db2e727de90cba0b49ad48325af1cba1ba995",
+    "meta/core/CONVENTIONS.md": "sha256:d904e40128062d8b764debd5f4ec36313b9efa9b86156d9ff8295519281720db",
     "meta/core/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "meta/core/experience-kind-schema.md": "sha256:d263d3eabfe8f092a67f2f1c3f2fffa4823dd276d0bbd747519cd30dbe049da0",
-    "meta/core/experience-schema.md": "sha256:a916058f8198f65dc7c55ba3a94479890123ff4aa16097a400d1277cc5cfff6d",
+    "meta/core/experience-schema.md": "sha256:a549b254ce8e32e94aedac8e77b3f8dc608046d1f07bbc629b3d2e53a3d8a6aa",
     "meta/core/identity-schema.md": "sha256:ad3237da43a69999b50b66f8e1081648c097b0b03a3c7dc670361e26a64e40f2",
-    "meta/core/manifest.json": "sha256:705e3a8c743cd65a81e5a5cbace80455d967f3f7c3cb56571101e2f1de4278fd",
+    "meta/core/manifest.json": "sha256:af8f35eef5b0372ab00b29c5a3b4c6f4c498920429bc47b3885cbcd8109cd562",
     "meta/core/proficiency-level-schema.md": "sha256:cae2c9ea6dd25a563a157d06321b16e9515de34ec534b8d3622259bc13a6fc8d",
-    "meta/core/profile-schema.md": "sha256:341accb0b3a1a8b1376bdd293f7f485137c0a14f616b584333e403f920ee067f",
+    "meta/core/profile-schema.md": "sha256:29a9672bec42c0895c38fb77a3066af6256daaa7cf673fbd2667e7f91efdc382",
     "meta/core/skill-schema.md": "sha256:1077de9b941395a235ada07b2073c95028209c0eceac1b40f27a31545b4dc187",
     "meta/core/source-schema.md": "sha256:d36e7983c37d0322756004ffd03832bdae60e246762d8a094fb5610f0009285f",
+    "meta/core/surface-schema.md": "sha256:5d71e54155133768626b64b2d44b893070571035cd40f2155de8993090610ec2",
     "meta/core/value-schema.md": "sha256:3a461bc5c9b294b01592b984251c0ed861b5b35e4efbbad08c625a428dd560c4",
     "meta/core/vision-schema.md": "sha256:3f0ea5d534444973b9e846bb97063b949983e876ac5a4db8e5c6091035af461f"
   }

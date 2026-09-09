@@ -23,7 +23,7 @@ rule lives in `meta/core/CONVENTIONS.md` and is not restated here; read it first
 ## What this is
 
 Robert Blust, described in CompanyGraph: one profile, its experiences, the skills and values
-it claims and the ladder it claims them on. `meta/core/` is core 0.14.0, vendored and never edited
+it claims and the ladder it claims them on. `meta/core/` is core 0.16.0, vendored and never edited
 here; `.companygraph/manifest.json` records which release and a hash per file.
 
 ## Checks
@@ -35,7 +35,7 @@ too, as in every other member: its research quotes the taxonomy labels it compar
 
 ## Before every commit
 
-Run the `companygraph-validate` skill. It reports per rule R1–R15 and names what it did not
+Run the `companygraph-validate` skill. It reports per rule R1–R17 and names what it did not
 check. A commit with an unresolved reference is not made.
 
 ## Mastership
