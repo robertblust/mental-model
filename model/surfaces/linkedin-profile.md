@@ -3,7 +3,7 @@ source: Local
 url: https://www.linkedin.com/in/robertblust/
 ---
 
-# LinkedIn
+# LinkedIn profile
 
 > The professional network profile a recruiter, a client or a former colleague reaches first, kept by hand.
 
