@@ -4,7 +4,7 @@ source: Local
 
 # Robert Blust
 
-> Technology executive and business architect — over 25 years building platforms and products from explicit models, now modeling the company itself so people and AI agents can both work inside it.
+> Building fast is solved. Deciding well is not.
 
 ## Skills
 
