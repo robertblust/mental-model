@@ -5,6 +5,7 @@ start: 2011-08
 end: 2014-12
 url: https://www.jug.ch/
 organization: JUG Switzerland
+role: Board member
 skills:
   - Community building
 ---

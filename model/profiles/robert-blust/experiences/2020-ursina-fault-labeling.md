@@ -4,6 +4,7 @@ kind: Project
 start: 2020-04
 end: 2020-07
 organization: 3AP AG
+role: Architect
 skills:
   - Solution architecture
   - Cloud architecture

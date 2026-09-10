@@ -4,6 +4,7 @@ kind: Project
 start: 2016-02
 end: 2016-09
 organization: Credit Suisse
+role: Lead Architect & Developer
 skills:
   - Model-driven engineering
   - Data governance

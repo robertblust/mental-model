@@ -5,6 +5,7 @@ start: 2010-10-28
 end: 2010-10-28
 url: https://wiki.eclipse.org/Eclipse_MDD_Day
 organization: Eclipse Foundation
+role: Co-Organizer & Speaker
 skills:
   - Model-driven engineering
   - Public speaking

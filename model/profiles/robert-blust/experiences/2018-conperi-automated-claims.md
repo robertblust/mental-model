@@ -4,6 +4,7 @@ kind: Project
 start: 2018-11
 end: 2020-10
 organization: 3AP AG
+role: Architect
 skills:
   - Solution architecture
   - Microservices architecture

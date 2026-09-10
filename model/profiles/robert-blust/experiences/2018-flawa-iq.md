@@ -5,6 +5,7 @@ start: 2018-07
 end: 2019-02
 url: https://3ap.ch/case_studies/networked-first-aid-kit/
 organization: Flawa
+role: Solution Architect
 skills:
   - Integration architecture
   - Solution architecture
