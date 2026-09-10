@@ -14,7 +14,7 @@ url: https://www.linkedin.com/in/robertblust/
   `location`.
 - **About** — the profile's `## Summary`, rewritten in this surface's register.
 - **Experience** — the experiences of kind `Role`, kind `Independent` and kind `Community`.
-- **Projects** — the experiences of kind `Project`, each with the role the entry names.
+- **Projects** — the experiences of kind `Project`.
 - **Education** — the experiences of kind `Education`.
 - **Skills** — five skills of the profile's, chosen by the owner.
 - **Languages** — the two languages `conventions/WRITING.md` names, English and Swiss German.
@@ -46,11 +46,14 @@ url: https://www.linkedin.com/in/robertblust/
   which the register already says by asking for short sentences on a phone, and a paragraph with
   no bound grows to the length of what an entry has to say rather than the length a reader will
   give it.
+- A sentence in a body carries one idea, as an achievement does, and runs to about twenty words.
+  Three sentences each carrying five facts is the same wall as one unbounded paragraph with the
+  breaks moved, and bounding the count without bounding the sentence is how a body gets there.
 - For a talk, an article or a published tool the address is most of what the entry is, so an
   entry whose experience carries a `url` shows it. An entry whose experience carries none shows
   no link: the model holds an address or it does not, and this surface invents none.
-- The About text is the profile's `## Summary` rewritten the same way. The sentence naming the
-  security and compliance standards is not carried whole, because the LIKE MAGIC entry names
+- The sentence of the `## Summary` naming the security and compliance standards is not carried
+  into the About text, because the LIKE MAGIC entry names
   those standards beside the work that met them, and a standard named without its work is a
   claim the reader cannot place. The claim that sentence also makes about AI goes with it, and
   is not restored elsewhere in the About text: the headline is that claim, and this surface does
@@ -62,17 +65,16 @@ url: https://www.linkedin.com/in/robertblust/
   wants first is what ended last. Where `end` and `start` both tie, the entry whose name sorts
   first in English comes first: an arbitrary choice, written down so that two producers make the
   same profile rather than each making one.
-- Every experience reaches a dated unit and each kind reaches one: `Role`, `Independent` and
-  `Community` are Experience, `Project` is Projects, `Education` is Education. Nothing here reads
-  what an experience produced or who it was for, because the kind already says both and the
-  model records nothing finer.
-- The Skills unit shows five because the network shows five on this account. Which five is the
-  owner's choice at each rebuild and not a rule: the model holds seventy skills and no ordering
-  among them, so nothing here could derive the five without inventing a ranking.
+- The three dated units take the five kinds between them and leave none over, and nothing here
+  reads what an experience produced or who it was for. The kind already says both, and the model
+  records nothing finer.
+- Five, because the network shows five on this account, and the owner's choice because nothing
+  here could derive them: the model holds seventy skills and no ordering among them, so any five
+  would be a ranking this surface invented.
 - The Skills unit carries no proficiency level. The surface shows names alone, and a level
   beside a name the surface does not explain reads as a grade.
-- The headline is the profile's tagline, carried whole. The tagline states the claim this work
-  makes rather than describing it, which core admits since 0.17.0 and holds to one condition:
+- The tagline the headline carries states the claim this work makes rather than describing it,
+  which core admits since 0.17.0 and holds to one condition:
   the claim is one the model keeps elsewhere. This one is, as the value Decide well over build
   fast, so a reader who wants the argument behind the line has somewhere to go.
 - The model's values and its vision reach no unit. The surface has no unit for a stated
@@ -89,10 +91,10 @@ url: https://www.linkedin.com/in/robertblust/
 
 ## Constraints
 
-- Every unit that can travel on its own — the headline, a search result snippet, a share card —
-  carries something beside the name that resolves it: a role, a domain, a project or a location.
-  The name is shared with a notable deceased academic, and a unit carrying the name and nothing
-  else resolves to the wrong person. The headline meets this through its subject rather than a
+- The headline carries something beside the name that resolves it: a role, a domain, a project
+  or a location. It is the one unit of this surface a reader meets without the rest of the page
+  around it, and the name is shared with a notable deceased academic, so a headline that resolved
+  to nothing would resolve to the wrong person. It meets this through its subject rather than a
   title: the slogan is a claim about building software, which the other holder of the name did
   not make.
 - The headline is at most 220 characters, the network's limit, read from its editor on
