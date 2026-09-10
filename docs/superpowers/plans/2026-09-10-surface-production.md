@@ -359,19 +359,21 @@ git commit -m "$(cat <<'MSG'
 Dates in the family's register, and who the work was for
 
 Two things every surface of this model wants the same way, so both are resolved here rather
-than in each surface's rules. A date is written the way the conventions write one — a closed
-en-dash, months in three letters — which is the rule a produced profile got wrong across
-twenty-eight ranges before the register was named. And an experience nobody commissioned or
-hosted still has an answer for who it was for: the instance describes a company, so the work
-was that company's own.
+than in each surface's rules. A date is written the way the conventions write one, a closed
+en-dash and months in three letters, because that rule belongs to the conventions and not to
+any surface. And an experience nobody commissioned or hosted still has an answer for who it
+was for: the instance describes a company, so the work was that company's own.
 
-Both are handed over with their provenance rather than flattened. A period still running leaves
-its right side empty because what a surface shows there is the surface's business, and the
-organization says whether it came from the field or from the identity, because a surface that
-prints a person's name where a company goes is making a choice this script does not make for it.
+Neither is flattened. A period still running gets its start and no marker beside it, because
+what a surface shows there — a dash, a word, nothing — is what two surfaces would reasonably
+want differently, and the absence of `end` in the fields is the fact a surface reads for
+itself. The organization says whether it came from the field or from the identity, and it is
+resolved only for a type whose entities name one somewhere, so a skill carries no such field
+rather than carrying the identity's name as noise.
 
 Verified: four date shapes asserted against the model — a month range, a single day, a running
-period and a year range — and the seven experiences that fall back to the identity counted.
+period and a year range — the seven experiences that fall back to the identity counted, and no
+type but experience carrying the field at all.
 
 Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
 MSG
