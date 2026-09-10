@@ -179,7 +179,7 @@ in_facts = sum(len(v) for v in d["types"].values()) + 1  # + the identity, poppe
 assert on_disk == in_facts, f"{on_disk} files on disk, {in_facts} in facts"
 e = [x for x in d["types"]["experience"] if x["name"] == "Co-Founder & Head of Technology"][0]
 assert e["fields"]["kind"] == "Role" and e["fields"]["start"] == "2022-04"
-assert e["sections"]["Achievements"].startswith("- Owned technology direction")
+assert e["sections"]["Achievements"].startswith("- Co-founder and Head of Technology of LIKE MAGIC AG.")
 assert d["identity"]["name"] == "Robert Blust"
 assert d["surfaces"][0]["name"] == "LinkedIn profile"
 s = [x for x in d["types"]["skill"] if x["name"] == "Java"][0]
