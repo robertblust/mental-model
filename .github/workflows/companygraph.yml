@@ -1,0 +1,8 @@
+name: companygraph
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  companygraph:
+    uses: companygraph/meta-model/.github/workflows/instance-check.yml@v0.20.0
