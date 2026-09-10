@@ -17,7 +17,7 @@ url: https://www.linkedin.com/in/robertblust/
 - **Projects** — the experiences of kind `Project`.
 - **Education** — the experiences of kind `Education`.
 - **Skills** — five skills of the profile's, chosen by the owner.
-- **Languages** — the two languages `conventions/WRITING.md` names, English and Swiss German.
+- **Languages** — the languages `conventions/WRITING.md` names.
 
 ## Projection rules
 
@@ -51,6 +51,8 @@ url: https://www.linkedin.com/in/robertblust/
   separates those and the title has said the second already. Where two carry evidence, the one a
   reader of this surface can act on wins: what was delivered and what changed, over how it was
   built.
+- A sentence is not spent on what another unit already carries. The headline, the About text and
+  an entry are read together, so a fact in two of them costs the room a second fact wanted.
 - A sentence in a body carries one idea, as an achievement does, and runs to about twenty words.
   Three sentences each carrying five facts is the same wall as one unbounded paragraph with the
   breaks moved, and bounding the count without bounding the sentence is how a body gets there.
@@ -70,12 +72,13 @@ url: https://www.linkedin.com/in/robertblust/
   wants first is what ended last. Where `end` and `start` both tie, the entry whose name sorts
   first in English comes first: an arbitrary choice, written down so that two producers make the
   same profile rather than each making one.
-- The three dated units take the five kinds between them and leave none over, and nothing here
-  reads what an experience produced or who it was for. The kind already says both, and the model
-  records nothing finer.
+- Every kind reaches a dated unit and none reaches two, so no experience is left over and none
+  is shown twice. Nothing here reads what an experience produced or who it was for: the kind
+  already says both, and the model records nothing finer.
 - The Skills unit takes five because the network shows five on this account, and which five is
-  the owner's because nothing here could derive them: the model holds seventy skills and no
-  ordering among them, so any five this surface chose would be a ranking it invented.
+  the owner's because nothing here could derive them: the model holds far more skills than the
+  unit shows and no ordering among them, so any five this surface chose would be a ranking it
+  invented.
 - The Skills unit carries no proficiency level. The surface shows names alone, and a level
   beside a name the surface does not explain reads as a grade.
 - The tagline the headline carries states the claim this work makes rather than describing it,
@@ -97,10 +100,10 @@ url: https://www.linkedin.com/in/robertblust/
 
 ## Constraints
 
-- The headline carries something beside the name that resolves it: a role, a domain, a project
-  or a location. It is the one unit a reader meets without the rest of the page around it, and
-  the name is shared with a notable deceased academic, so a headline resolving to nothing
-  resolves to the wrong person.
+- The headline carries something beside the name that resolves it: a role, a domain, a project,
+  a location, or a claim from a field the other holder of the name did not work in. It is the one
+  unit a reader meets without the rest of the page around it, and the name is shared with a
+  notable deceased academic, so a headline resolving to nothing resolves to the wrong person.
 - The headline is at most 220 characters, the network's limit, read from its editor on
   2026-09-09.
 - The About section is at most 2600 characters, read from the same editor on the same day.
