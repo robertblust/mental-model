@@ -13,7 +13,6 @@ rule the second copy — the one nobody reads.
 """
 import json
 import pathlib
-import re
 
 ROOT = pathlib.Path(".")
 OUT = ROOT / "dist" / "surfaces" / "facts.json"
@@ -90,8 +89,81 @@ def walk():
     return types
 
 
+MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+
+def when(value):
+    """One date in the family's register: `2012`, `Oct 2012`, `May 4, 2012`.
+
+    The register is `conventions/WRITING.md`'s and not any surface's, which is why it is
+    resolved here rather than left to the surface's own file.
+    """
+    parts = value.split("-")
+    if len(parts) == 1:
+        return parts[0]
+    month = MONTHS[int(parts[1]) - 1]
+    if len(parts) == 2:
+        return f"{month} {parts[0]}"
+    return f"{month} {int(parts[2])}, {parts[0]}"
+
+
+def span(fields):
+    """A period as the register writes one: a closed en-dash, or the start alone when the
+    period has no end.
+
+    `fields` already carries whether the period is still running — `end` is present or it is
+    not, and that absence is the fact a surface can read for itself. What a surface makes of an
+    open period — a dash, the word "Present", nothing at all — is exactly the kind of choice two
+    surfaces might reasonably make differently, so this hands back the formatted start alone and
+    leaves that choice to the surface's file.
+    """
+    start = fields.get("start")
+    if not start:
+        return None
+    end = fields.get("end")
+    if not end:
+        return when(start)
+    return when(start) if end == start else f"{when(start)}–{when(end)}"
+
+
+def where(fields, identity):
+    """Who an entity was done for, and where that answer came from.
+
+    An experience nobody commissioned or hosted carries no `organization`, and the model still
+    answers: this instance describes a company, so the work was that company's own. Both halves
+    are returned because a surface may want them apart — one that shows a person's name where a
+    company goes is making a choice, and this only supplies what the model holds.
+    """
+    named = fields.get("organization")
+    if named:
+        return named, "field"
+    return identity.get("name", ""), "identity"
+
+
+def has_organization(entities):
+    """Whether `organization` means anything for a type, decided from the type's own data.
+
+    Only some entities carry `organization` in their frontmatter, and the fallback belongs
+    beside them and nowhere else: handing every skill, value and vision an `organization` of
+    "Robert Blust" is not a fact about a skill, it is noise a surface's file would have to learn
+    to ignore. The line is drawn from what the type's own entities carry rather than from the
+    type's name, so the script stays free of any knowledge of what an experience is — a type
+    added to the model that starts naming organizations picks up the fallback the same way,
+    with nothing here changed for it.
+    """
+    return any(e["fields"].get("organization") for e in entities)
+
+
 def main():
     types = walk()
+    identity = types.get("identity", [{}])[0]
+    for entities in types.values():
+        for e in entities:
+            e["dates"] = span(e["fields"])
+        if has_organization(entities):
+            for e in entities:
+                e["organization"], e["organization_from"] = where(e["fields"], identity)
     identity = types.pop("identity", [{}])[0]
     data = {
         "instance": pathlib.Path.cwd().name,
