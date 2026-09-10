@@ -27,9 +27,11 @@ url: https://www.linkedin.com/in/robertblust/
   shows.
 - An entry carries the title and the period of the experience it was made from, and its body is
   written rather than copied. What the entry holds was written for a reader who came to read.
-- An experience's own tagline supplies the role an entry was played in, where it names one:
-  several read `3AP · Lead Architect & Developer` and no other field carries that, so without
-  this rule a reader learns what was delivered and never what part in it was yours.
+- An experience's own tagline supplies the role an entry was played in and the employer it was
+  held through, where it names them: several read `3AP · Lead Architect & Developer`, where
+  `3AP` is the employer and `organization` is the client the work was for. Both reach the entry,
+  because a role named beside a client and not beside its employer reads as though the client
+  employed you.
 - A body is written from the experience's `## Achievements`, and from its `## Ending` where the
   ending states a fact the achievements do not. An ending says why a period closed and what it
   left, and on some entries that is the only place the outcome is written down.
@@ -37,9 +39,9 @@ url: https://www.linkedin.com/in/robertblust/
   company's own work: an entry whose experience carries no `organization` names the identity.
   The network asks for a company on every entry and this answers it from the model rather than
   by inventing a name.
-- An entry's body runs to one paragraph, and an entry whose period is a single day runs to a
-  sentence or two. The dates say which an entry is, so no count is needed here, and the register
-  holds either way: the first sentence carries the point.
+- An entry's body runs to one paragraph, and an entry whose period is a single day or a single
+  month runs to a sentence or two. The dates say which an entry is, so no count is needed here,
+  and the register holds either way: the first sentence carries the point.
 - For a talk, an article or a published tool the address is most of what the entry is, so an
   entry whose experience carries a `url` shows it. An entry whose experience carries none shows
   no link: the model holds an address or it does not, and this surface invents none.
@@ -53,7 +55,9 @@ url: https://www.linkedin.com/in/robertblust/
   running — above them all, and `start` breaking a tie. Not by `start`: a position starts once
   and then runs for years, so ordering by it buries a long role under everything that began
   while it was running, and a talk given during a job would stand above the job. What a reader
-  wants first is what ended last.
+  wants first is what ended last. Where `end` and `start` both tie, the entry whose name sorts
+  first in English comes first: an arbitrary choice, written down so that two producers make the
+  same profile rather than each making one.
 - Every experience reaches a dated unit and each kind reaches one: `Role`, `Independent` and
   `Community` are Experience, `Project` is Projects, `Education` is Education. Nothing here reads
   what an experience produced or who it was for, because the kind already says both and the
