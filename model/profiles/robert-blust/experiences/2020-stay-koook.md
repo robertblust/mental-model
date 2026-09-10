@@ -5,6 +5,7 @@ start: 2020-03
 end: 2022-03
 url: https://3ap.ch/case_studies/hospitality-platform/
 organization: SV Group
+role: Lead Architect
 skills:
   - Cloud architecture
   - CI/CD

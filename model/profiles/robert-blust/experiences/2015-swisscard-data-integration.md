@@ -4,6 +4,7 @@ kind: Project
 start: 2015-12
 end: 2016-09
 organization: Swisscard
+role: Backend Engineer
 skills:
   - API design
   - Java

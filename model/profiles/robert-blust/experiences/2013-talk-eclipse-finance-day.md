@@ -5,6 +5,7 @@ start: 2013-11-05
 end: 2013-11-05
 url: https://wiki.eclipse.org/Eclipse_Finance_Day_2013/
 organization: Eclipse Foundation
+role: Speaker
 skills:
   - Integration architecture
   - Enterprise architecture

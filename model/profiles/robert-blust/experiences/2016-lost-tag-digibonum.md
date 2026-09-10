@@ -5,6 +5,7 @@ start: 2016-09
 end: 2021-11
 url: https://www.lost-tag.com
 organization: Digibonum AG
+role: Architect and hands-on lead
 skills:
   - Solution architecture
   - Software modeling (UML, SysML, C4)

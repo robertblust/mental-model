@@ -5,6 +5,7 @@ start: 2019-08
 end: 2020-09
 url: https://3ap.ch/case_studies/platform-for-digital-rental/
 organization: Aroov
+role: Backend & Integration Architect
 skills:
   - Cloud architecture
   - Database design

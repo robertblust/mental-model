@@ -5,6 +5,7 @@ start: 2022-10-06
 end: 2022-10-06
 url: https://page.camunda.com/camundacon-2022-on-demand
 organization: Camunda
+role: Speaker
 skills:
   - Process orchestration
   - Public speaking

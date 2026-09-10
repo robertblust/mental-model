@@ -5,6 +5,7 @@ start: 2021-06-03
 end: 2021-06-03
 url: https://engineering.3ap.ch/post/process-monitoring-with-bpmn/
 organization: 3AP AG
+role: Author
 skills:
   - Business process modeling (BPMN, DMN)
   - Process orchestration

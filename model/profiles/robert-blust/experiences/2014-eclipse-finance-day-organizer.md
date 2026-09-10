@@ -5,6 +5,7 @@ start: 2014-10
 end: 2014-10
 url: https://wiki.eclipse.org/Eclipse_Finance_Day_2014/
 organization: Eclipse Foundation
+role: Co-Organizer
 skills:
   - Community building
 ---

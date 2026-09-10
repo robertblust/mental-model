@@ -5,6 +5,7 @@ start: 2012-05-04
 end: 2012-05-04
 url: https://www.youtube.com/watch?v=53jrNcbd5N0
 organization: Eclipse Foundation
+role: Speaker
 skills:
   - Data modeling
   - Model-driven engineering
