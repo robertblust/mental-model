@@ -354,7 +354,7 @@ organization says whether it came from the field or from the identity, because a
 prints a person's name where a company goes is making a choice this script does not make for it.
 
 Verified: four date shapes asserted against the model — a month range, a single day, a running
-period and a year range — and the six experiences that fall back to the identity counted.
+period and a year range — and the seven experiences that fall back to the identity counted.
 
 Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
 MSG
