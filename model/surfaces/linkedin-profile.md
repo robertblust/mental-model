@@ -40,9 +40,12 @@ url: https://www.linkedin.com/in/robertblust/
   company's own work: an entry whose experience carries no `organization` names the identity.
   The network asks for a company on every entry and this answers it from the model rather than
   by inventing a name.
-- An entry's body runs to one paragraph, and an entry whose period is a single day or a single
-  month runs to a sentence or two. The dates say which an entry is, so no count is needed here,
-  and the register holds either way: the first sentence carries the point.
+- An entry's body is one paragraph of at most three sentences, and where an ending is carried it
+  is a second paragraph of one sentence. An entry whose period is a single day or a single month
+  is one sentence and no second paragraph. A reader takes the first sentence and skims the rest,
+  which the register already says by asking for short sentences on a phone, and a paragraph with
+  no bound grows to the length of what an entry has to say rather than the length a reader will
+  give it.
 - For a talk, an article or a published tool the address is most of what the entry is, so an
   entry whose experience carries a `url` shows it. An entry whose experience carries none shows
   no link: the model holds an address or it does not, and this surface invents none.
