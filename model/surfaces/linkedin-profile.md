@@ -9,12 +9,12 @@ url: https://www.linkedin.com/in/robertblust/
 
 ## What it shows
 
-- **Headline** — the slogan the blust.ch landing page carries as its H1, and nothing beside it.
+- **Headline** — the profile's tagline, and nothing beside it.
 - **Location** — the metropolitan area the network's own list offers for the identity's
   `location`.
 - **About** — the profile's `## Summary`, rewritten in this surface's register.
 - **Experience** — the experiences of kind `Role`, kind `Independent` and kind `Community`.
-- **Projects** — the experiences of kind `Project`.
+- **Projects** — the experiences of kind `Project`, each with the role the entry names.
 - **Education** — the experiences of kind `Education`.
 - **Skills** — five skills of the profile's, chosen by the owner.
 - **Languages** — the two languages `conventions/WRITING.md` names, English and Swiss German.
@@ -27,6 +27,12 @@ url: https://www.linkedin.com/in/robertblust/
   shows.
 - An entry carries the title and the period of the experience it was made from, and its body is
   written rather than copied. What the entry holds was written for a reader who came to read.
+- An experience's own tagline supplies the role an entry was played in, where it names one:
+  several read `3AP · Lead Architect & Developer` and no other field carries that, so without
+  this rule a reader learns what was delivered and never what part in it was yours.
+- A body is written from the experience's `## Achievements`, and from its `## Ending` where the
+  ending states a fact the achievements do not. An ending says why a period closed and what it
+  left, and on some entries that is the only place the outcome is written down.
 - The model is a company of one, so an experience nobody commissioned or hosted was the
   company's own work: an entry whose experience carries no `organization` names the identity.
   The network asks for a company on every entry and this answers it from the model rather than
@@ -38,9 +44,11 @@ url: https://www.linkedin.com/in/robertblust/
   entry whose experience carries a `url` shows it. An entry whose experience carries none shows
   no link: the model holds an address or it does not, and this surface invents none.
 - The About text is the profile's `## Summary` rewritten the same way. The sentence naming the
-  security and compliance standards is not carried, because the LIKE MAGIC entry names those
-  standards beside the work that met them, and a standard named without its work is a claim the
-  reader cannot place.
+  security and compliance standards is not carried whole, because the LIKE MAGIC entry names
+  those standards beside the work that met them, and a standard named without its work is a
+  claim the reader cannot place. The claim that sentence also makes about AI goes with it, and
+  is not restored elsewhere in the About text: the headline is that claim, and this surface does
+  not say one thing twice.
 - Every dated unit runs newest first by `end`, with an experience that has none — a period still
   running — above them all, and `start` breaking a tie. Not by `start`: a position starts once
   and then runs for years, so ordering by it buries a long role under everything that began
@@ -55,9 +63,10 @@ url: https://www.linkedin.com/in/robertblust/
   among them, so nothing here could derive the five without inventing a ranking.
 - The Skills unit carries no proficiency level. The surface shows names alone, and a level
   beside a name the surface does not explain reads as a grade.
-- The profile's tagline reaches no unit. It is the profile's `## Summary` compressed, the About
-  text is that Summary rewritten, and the headline states a value instead, so the tagline
-  wherever it landed would be the same claim a second time.
+- The headline is the profile's tagline, carried whole. The tagline states the claim this work
+  makes rather than describing it, which core admits since 0.17.0 and holds to one condition:
+  the claim is one the model keeps elsewhere. This one is, as the value Decide well over build
+  fast, so a reader who wants the argument behind the line has somewhere to go.
 - The model's values and its vision reach no unit. The surface has no unit for a stated
   principle, and the About text is the only place one could go, where it would take the room
   that text has for the work the principle was held during.
