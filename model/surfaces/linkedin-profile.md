@@ -25,8 +25,8 @@ url: https://www.linkedin.com/in/robertblust/
   aimed at a visitor who has not decided to stay: the first line carries the point, sentences
   run short because the profile is read on a phone, and a claim it opens with is a claim it then
   shows.
-- An entry carries the title and the period of the experience it was made from, and its body is
-  written rather than copied. What the entry holds was written for a reader who came to read.
+- An entry's body is written rather than copied. What the experience holds was written for a
+  reader who came to read, and this surface is read by one who has not decided to.
 - An entry names the part played and the employer it was held through, where the model holds
   them. The part is the experience's `role`, and the employer is the `organization` of the
   period that contains this one — a delivery ran inside the role it was done from, and the
@@ -43,9 +43,14 @@ url: https://www.linkedin.com/in/robertblust/
 - An entry's body is one paragraph of at most three sentences, and where an ending is carried it
   is a second paragraph of one sentence. An entry whose period is a single day or a single month
   is one sentence and no second paragraph. A reader takes the first sentence and skims the rest,
-  which the register already says by asking for short sentences on a phone, and a paragraph with
-  no bound grows to the length of what an entry has to say rather than the length a reader will
-  give it.
+  and a paragraph with no bound grows to the length of what an entry has to say rather than the
+  length a reader will give it.
+- Three sentences is a budget, and it is spent on what a recruiter, a client or a former
+  colleague could not have guessed from the title. Prefer the achievement carrying a number, a
+  named system or a named result over the one stating what was owned, since the schema already
+  separates those and the title has said the second already. Where two carry evidence, the one a
+  reader of this surface can act on wins: what was delivered and what changed, over how it was
+  built.
 - A sentence in a body carries one idea, as an achievement does, and runs to about twenty words.
   Three sentences each carrying five facts is the same wall as one unbounded paragraph with the
   breaks moved, and bounding the count without bounding the sentence is how a body gets there.
@@ -68,15 +73,16 @@ url: https://www.linkedin.com/in/robertblust/
 - The three dated units take the five kinds between them and leave none over, and nothing here
   reads what an experience produced or who it was for. The kind already says both, and the model
   records nothing finer.
-- Five, because the network shows five on this account, and the owner's choice because nothing
-  here could derive them: the model holds seventy skills and no ordering among them, so any five
-  would be a ranking this surface invented.
+- The Skills unit takes five because the network shows five on this account, and which five is
+  the owner's because nothing here could derive them: the model holds seventy skills and no
+  ordering among them, so any five this surface chose would be a ranking it invented.
 - The Skills unit carries no proficiency level. The surface shows names alone, and a level
   beside a name the surface does not explain reads as a grade.
 - The tagline the headline carries states the claim this work makes rather than describing it,
-  which core admits since 0.17.0 and holds to one condition:
-  the claim is one the model keeps elsewhere. This one is, as the value Decide well over build
-  fast, so a reader who wants the argument behind the line has somewhere to go.
+  which core admits since 0.17.0 on one condition: the claim is one the model keeps elsewhere.
+  This one is, as the value Decide well over build fast, so a reader who wants the argument
+  behind the line has somewhere to go, and so the headline resolves the name through its subject
+  rather than through a title.
 - The model's values and its vision reach no unit. The surface has no unit for a stated
   principle, and the About text is the only place one could go, where it would take the room
   that text has for the work the principle was held during.
@@ -92,11 +98,9 @@ url: https://www.linkedin.com/in/robertblust/
 ## Constraints
 
 - The headline carries something beside the name that resolves it: a role, a domain, a project
-  or a location. It is the one unit of this surface a reader meets without the rest of the page
-  around it, and the name is shared with a notable deceased academic, so a headline that resolved
-  to nothing would resolve to the wrong person. It meets this through its subject rather than a
-  title: the slogan is a claim about building software, which the other holder of the name did
-  not make.
+  or a location. It is the one unit a reader meets without the rest of the page around it, and
+  the name is shared with a notable deceased academic, so a headline resolving to nothing
+  resolves to the wrong person.
 - The headline is at most 220 characters, the network's limit, read from its editor on
   2026-09-09.
 - The About section is at most 2600 characters, read from the same editor on the same day.
