@@ -3,12 +3,12 @@
 > `companygraph-export` is one program because its transformation is mechanical. Producing a
 > surface is half mechanical and half prose, so this is one script and one procedure, and the
 > boundary between them is where judgment starts. This records what the script may resolve,
-> what only the surface's own file may decide, and why the output is never committed.
+> what only the surface's own file may decide and why the output is never committed.
 
 ## What the type is for, and what was missing
 
 A surface is a place the company publishes that no script writes. Its file records the rules by
-which the model becomes that place: what each unit shows, how the model's facts reach it, and
+which the model becomes that place: what each unit shows, how the model's facts reach it and
 what the published result must satisfy. The type shipped in core 0.16.0 and the reference
 instance holds one, the LinkedIn profile.
 
@@ -17,7 +17,7 @@ the surface, and rebuilding was six sessions of a person or an agent holding the
 the model and typing. That is the same failure the export skill was built to end, seen from the
 other side: a rendering nobody can re-run cheaply is a rendering that will be stale.
 
-**What producing it six times proved is that the file is not the problem.** Reading the file
+What producing it six times proved is that the file is not the problem. Reading the file
 against the model found nothing across two review rounds. Producing a profile from it found a
 missing rule every time — the register was named nowhere, the entries had no order, an experience
 with no `organization` had no company, a body had no length — and every one of those was a rule
@@ -31,7 +31,7 @@ nothing else performs.
 The export makes its case for a single program plainly: one intent implemented twice drifts
 apart one rule at a time, and a procedure followed by hand is a different program each time
 somebody follows it. Both hold here. Neither makes producing a surface scriptable, because no
-script writes a paragraph in a register, chooses which five skills a profile claims, or cuts a
+script writes a paragraph in a register, chooses which five skills a profile claims or cuts a
 body to the length its period earns.
 
 So the line is not drawn by taste. **Everything a machine can settle is the script's, and the
@@ -81,8 +81,8 @@ every surface, applied to the one artifact that renders a surface.
 
 Stated so a future script does not creep across it. The surface's file alone decides which units
 exist, which of the model's facts reach each one, what is left out and why, in what order entries
-run, what register the prose takes, and what the published result must satisfy. The script may
-resolve a fact, format it the way the family formats every fact, and hand it over. Where the two
+run, what register the prose takes and what the published result must satisfy. The script may
+resolve a fact, format it the way the family formats every fact and hand it over. Where the two
 would disagree, the file wins and the script has overreached.
 
 The test for a new resolution: could two different surfaces of the same model reasonably want it

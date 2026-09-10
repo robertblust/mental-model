@@ -23,7 +23,7 @@ model/                         the company — everything under here is an entit
   surfaces/                    the rules for a surface no build writes
   profiles/robert-blust/       the profile, and the experiences it owns
 AGENTS.md                      the instance's own rules; every modeling rule is in meta/core/CONVENTIONS.md
-.claude/skills/companygraph-*  the portable skills: validate, add an entity, export as a skill
+.claude/skills/companygraph-*  the portable skills: validate, add an entity, export as a skill, produce a surface
 ```
 
 The content is the whole professional portfolio, in English. Every page is mastered here —

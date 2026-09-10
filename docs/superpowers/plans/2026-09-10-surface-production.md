@@ -4,7 +4,7 @@
 
 **Goal:** A fifth skill, `companygraph-surface`, that produces the content of a surface into `dist/surfaces/` — a script for the facts and a procedure for the prose.
 
-**Architecture:** `facts.py` walks `model/` once and writes `dist/surfaces/facts.json`, resolving only what any surface would want the same way: an entity's dates in the family's register, its `organization` with the identity as the default, its address and the sections a body could be written from. It routes nothing and orders nothing. `SKILL.md` carries the procedure that applies a surface's own rules to those facts, writes each unit and checks the result against the surface's constraints.
+**Architecture:** `facts.py` walks `model/` once and writes `dist/surfaces/facts.json`, resolving only what any surface would want the same way: an entity's dates in the family's register, and — for a type whose entities name one somewhere in the model — its `organization` with the identity as the default. Everything else reaches the file as the entity's frontmatter and sections hold it, a `url` among them, carried and not resolved. It routes nothing and orders nothing. `SKILL.md` carries the procedure that applies a surface's own rules to those facts, writes each unit and checks the result against the surface's constraints.
 
 **Tech Stack:** Python 3 standard library only, matching `companygraph-export`. No test framework in this repository: a script is checked by running it and asserting its output, which is what `verify.py` does for the export.
 
@@ -16,7 +16,7 @@
 - **The script routes nothing and orders nothing.** Which kinds reach which unit and in what order are the surface's rules and its file is their only home. The test before adding any resolution: could two surfaces of the same model reasonably want it different? If yes it belongs to the file.
 - Output goes to `dist/surfaces/`, which is gitignored through `dist/`. Nothing this skill produces is ever committed, and the reason is R17 rather than the build directory.
 - Prose in `SKILL.md` follows `conventions/WRITING.md`: American English, spaced em-dashes, sentence case in headings, no serial comma. `sh conventions/conventions-check` enforces the spelling and dash rules.
-- Dates follow the family's register: `Oct 2012` for a month, `May 4, 2012` for a day, `2012` for a year, and a range closed with an en-dash and no spaces, `May 2012–Oct 2016`.
+- Dates follow the family's register: `Oct 2012` for a month, `May 4, 2012` for a day, `2012` for a year and a range closed with an en-dash and no spaces, `May 2012–Oct 2016`.
 - Nothing is committed unless the commands a task names have run and passed. Nothing is merged; each repository ends with a green pull request and stops.
 - The design and this plan are on `robertblust/mental-model#105`. Implementation lands on that same branch, `surface-production`, at the owner's request.
 
@@ -64,7 +64,6 @@ rule the second copy — the one nobody reads.
 """
 import json
 import pathlib
-import re
 
 ROOT = pathlib.Path(".")
 OUT = ROOT / "dist" / "surfaces" / "facts.json"
@@ -233,7 +232,7 @@ MSG
 
 **Interfaces:**
 - Consumes: the entity records from Task 1.
-- Produces: on every entity that carries a `start`, a `dates` string in the family's register; on every entity, `organization` and `organization_from`.
+- Produces: on every entity that carries a `start`, a `dates` string in the family's register; on every entity of a type that names an organization anywhere, `organization` and `organization_from`.
 
 - [ ] **Step 1: Write the date formatter**
 
@@ -248,8 +247,7 @@ def when(value):
     """One date in the family's register: `2012`, `Oct 2012`, `May 4, 2012`.
 
     The register is `conventions/WRITING.md`'s and not any surface's, which is why it is
-    resolved here — and it is the rule a produced profile got wrong across twenty-eight ranges
-    before the register was named in the surface's own file.
+    resolved here rather than left to the surface's own file.
     """
     parts = value.split("-")
     if len(parts) == 1:
@@ -261,22 +259,25 @@ def when(value):
 
 
 def span(fields):
-    """A period as the register writes one: a closed en-dash, and nothing where there is no end.
+    """A period as the register writes one: a closed en-dash, or the start alone when the
+    period has no end.
 
-    An entity with a `start` and no `end` is a period still running, and what a surface shows
-    for that — a word, a dash, nothing — is the surface's business, so this leaves the right
-    side empty rather than choosing one.
+    `fields` already carries whether the period is still running — `end` is present or it is
+    not, and that absence is the fact a surface can read for itself. What a surface makes of an
+    open period — a dash, the word "Present", nothing at all — is exactly the kind of choice two
+    surfaces might reasonably make differently, so this hands back the formatted start alone and
+    leaves that choice to the surface's file.
     """
     start = fields.get("start")
     if not start:
         return None
     end = fields.get("end")
     if not end:
-        return when(start) + "–"
+        return when(start)
     return when(start) if end == start else f"{when(start)}–{when(end)}"
 ```
 
-- [ ] **Step 2: Write the organization resolution**
+- [ ] **Step 2: Write the organization resolution and the gate on it**
 
 Add below `span()`:
 
@@ -293,6 +294,20 @@ def where(fields, identity):
     if named:
         return named, "field"
     return identity.get("name", ""), "identity"
+
+
+def has_organization(entities):
+    """Whether `organization` means anything for a type, decided from the type's own data.
+
+    Only some entities carry `organization` in their frontmatter, and the fallback belongs
+    beside them and nowhere else: handing every skill, value and vision an `organization` of
+    "Robert Blust" is not a fact about a skill, it is noise a surface's file would have to learn
+    to ignore. The line is drawn from what the type's own entities carry rather than from the
+    type's name, so the script stays free of any knowledge of what an experience is — a type
+    added to the model that starts naming organizations picks up the fallback the same way,
+    with nothing here changed for it.
+    """
+    return any(e["fields"].get("organization") for e in entities)
 ```
 
 - [ ] **Step 3: Apply both in `main()`**
@@ -305,7 +320,9 @@ Replace `types = walk()` in `main()` with:
     for entities in types.values():
         for e in entities:
             e["dates"] = span(e["fields"])
-            e["organization"], e["organization_from"] = where(e["fields"], identity)
+        if has_organization(entities):
+            for e in entities:
+                e["organization"], e["organization_from"] = where(e["fields"], identity)
 ```
 
 and leave the `identity = types.pop(...)` line that follows it as it is.
@@ -319,7 +336,7 @@ d = json.loads(pathlib.Path("dist/surfaces/facts.json").read_text())
 by = {x["name"]: x for x in d["types"]["experience"]}
 assert by["Co-Founder & Head of Technology"]["dates"] == "Apr 2022–May 2026"
 assert by["CamundaCon 2022"]["dates"] == "Oct 6, 2022"
-assert by["CompanyGraph"]["dates"] == "Aug 2026–"
+assert by["CompanyGraph"]["dates"] == "Aug 2026"
 assert by["Business Information Systems UAS"]["dates"] == "2002–2006"
 assert by["CompanyGraph"]["organization_from"] == "identity"
 assert by["CompanyGraph"]["organization"] == "Robert Blust"
@@ -396,40 +413,82 @@ allowed-tools: Bash(*), Read, Write, Edit, Glob, Grep
 # companygraph-surface
 
 A surface is a place the company publishes that no script writes, and its file records the rules
-by which the model becomes that place. This produces the place: one file per surface entity into
-`dist/surfaces/`, ready to paste.
+by which the model becomes that place. This produces the place: one run produces one surface
+entity into `dist/surfaces/`, named for that entity's own file and ready to paste.
 
 ## Procedure
 
 1. Run `python3 .claude/skills/companygraph-surface/facts.py` from the instance root.
-2. Read the surface entity whole — every unit its `## What it shows` names, every projection
-   rule and every constraint. It is the brief and nothing here repeats it.
+2. Name the surface this run produces, then read that entity whole — every unit its
+   `## What it shows` names, every projection rule and every constraint. It is the brief and
+   nothing here repeats it. `facts.json`'s `surfaces` lists every surface the model holds with
+   its `name` and its `path`: produce the one the request names, and where the request names
+   none and the list holds one, that one. A run produces a single surface, so a request naming
+   none against a model holding several is a question for the owner rather than a choice to
+   make.
 3. Read `conventions/WRITING.md` for the register the surface's file names.
 4. Produce each unit in the order `## What it shows` lists them, applying the projection rules
-   to the facts. Write to `dist/surfaces/<surface>.md`, one section per unit, labeled with the
-   unit's own name so a reader can match it against the editor in front of them.
+   to the facts. Write to `dist/surfaces/<stem>.md`, where `<stem>` is the file name of the
+   entity's own `path` in the model without its extension — `model/surfaces/linkedin-profile.md`
+   produces `dist/surfaces/linkedin-profile.md` — one section per unit, labeled with the
+   unit's own name so a reader can match it against the editor in front of them. A rule is a
+   stop and not a guess wherever it names something this run cannot settle: a source outside
+   the model — a page this repository does not hold, a network's own editor — or a decision the
+   surface's file leaves to the owner at each rebuild — which five skills the Skills unit
+   shows, say. A stopped unit's section holds one line and nothing else, `STOP: <what the rule
+   asks for> — <the source it would be read from, or whose decision it waits on>`, so nothing
+   downstream can mistake it for content. `STOP: five skill names — the owner chooses them at
+   each rebuild` is the form as much as a page outside the model is.
 5. Hold the result against every constraint the file states, one at a time, and report each as
-   passed or failed with its evidence measured rather than estimated.
+   passed or failed with its evidence measured rather than estimated. A constraint that governs
+   a stopped unit is reported rather than tested, and it is never passed: a character count
+   taken against a `STOP:` line is a real number measuring nothing, and a check that cannot
+   tell the difference is not evidence. A produced surface missing a unit has to fail loudly
+   rather than clear a gate.
 6. Report every place the file did not determine an answer, and say what you did instead.
+
+## What facts.json holds
+
+`facts.json` carries `identity`, the identity entity whole; `surfaces`, each surface's `name`
+and `path`; and `types`, one list per type — `experience`, `skill`, `value` and so on — each
+entry an entity in the same shape: `name`, `path`, `tagline`, `fields` (its frontmatter as
+written) and `sections` (its `##` bodies, keyed by heading). Where its type names an
+organization anywhere, an entity also carries `organization` with `organization_from`.
+
+Every entity carries `dates`, and on most of them it is null: only a `start` in the frontmatter
+makes a period, so the key is always there and its value often is not. Where there is one,
+`dates` is the period written for a reader, a bare date where the period is one unit long or
+still running, and `fields.end` is the fact that tells those two apart: a period that ended in
+the month it began and a period with no end read the same as prose, and only the frontmatter
+says which is which. A rule that turns on whether a period is running reads `fields`, never
+`dates`.
+
+A type is not a kind. `types["experience"]` is one list holding every experience regardless of
+what kind it is; `kind` is a field inside that entity's own `fields`, the value a rule in the
+surface's file routes by. A rule naming a kind asks the procedure to filter one of these lists
+on a field inside it, not to look for a list of its own.
 
 ## What the script decides, and what it must not
 
-The script resolves what any surface of this model would want the same way: an entity's dates in
-the family's register, its `organization` with the identity where the model names none, its
-address, and the sections a body could be written from. It routes nothing and orders nothing.
+The script resolves two things: an entity's dates into the family's register, and — for a type
+whose entities name one somewhere in the model — its `organization`, falling back to the
+identity for an entity that names none itself. A type no entity of it ever names an
+organization for carries no such field at all. Everything else reaches `facts.json` exactly as
+the entity's frontmatter and sections hold it: a `url` is carried, not resolved, the same as
+any other field. The script routes nothing and orders nothing.
 
-Which kinds reach which unit, in what order entries run, what is left out and why, and what
-register the prose takes are the surface's rules, and its file is their only home. A rule that
-moved into the script would be the second copy of itself, and the second copy is the one nobody
-reads. Before resolving anything new there, ask whether two surfaces of the same model could
-reasonably want it different: if they could, it belongs to the file.
+Which kinds reach which unit; in what order entries run; what is left out and why; and what
+register the prose takes: these are the surface's rules, and its file is their only home. A
+rule that moved into the script would be the second copy of itself, and the second copy is the
+one nobody reads. Before resolving anything new there, ask whether two surfaces of the same
+model could reasonably want it different: if they could, it belongs to the file.
 
 ## Why this one is a procedure and not a program
 
 `companygraph-export` is a single script and says why: one intent implemented twice drifts apart
 one rule at a time, and a procedure followed by hand is a different program each time somebody
 follows it. Both hold here, and neither makes this scriptable. No script writes a paragraph in a
-register, chooses which skills a profile claims, or cuts a body to the length its period earns.
+register, chooses which skills a profile claims or cuts a body to the length its period earns.
 
 So the line is not drawn by taste. Everything a machine can settle is the script's, and the
 procedure begins at the first thing it cannot.
@@ -443,12 +502,10 @@ pasted and thrown away, and the next production makes it again from the rules.
 
 ## Producing a surface is how a surface file gets checked
 
-Reading the reference instance's surface file against its model found nothing across two review
-rounds. Producing the profile from it found a missing rule every time, six times running — the
-register named nowhere, no order on the entries, no company for an experience without an
-`organization`, no length for a body — and every one was a rule about what to put in rather than
-what to leave out. A file is written by somebody deciding what to omit and reads that way until
-something tries to use it.
+A file is written by somebody deciding what to omit, and it reads as complete until something
+tries to use it. Producing a surface is that use: it is the check that finds what a surface's
+file fails to state, in a way reading the file against the model does not.
+`docs/specs/2026-09-10-surface-production.md` holds the evidence for that claim.
 
 So step 6 is not a courtesy. It is the only report that finds what a surface file lacks, and it
 belongs in the pull request that changes the file.
@@ -468,7 +525,7 @@ Expected: both print a `✓` line and exit 0.
 ls .claude/skills/ && head -5 .claude/skills/companygraph-surface/SKILL.md
 ```
 
-Expected: four skills listed, and the frontmatter's `name` matching the folder.
+Expected: five skills listed, and the frontmatter's `name` matching the folder.
 
 - [ ] **Step 5: Commit**
 
@@ -520,26 +577,52 @@ as written is followable.
 ls -la dist/surfaces/ && git status --short && git check-ignore -v dist/surfaces/linkedin-profile.md
 ```
 
-Expected: `facts.json` and `linkedin-profile.md` present, `git status` showing neither, and
+Expected: `facts.json` and `linkedin-profile.md` present, `git status` showing neither and
 `check-ignore` naming the `dist/` line that ignores them.
 
-- [ ] **Step 3: Check the five constraints, measured**
+- [ ] **Step 3: Check the two character limits, and fail on a unit that is not there**
 
 ```bash
 python3 - <<'PY'
-import pathlib, re
-t = pathlib.Path("dist/surfaces/linkedin-profile.md").read_text()
-head = re.search(r"(?ms)^## Headline\s*\n+(.+?)(?=\n#|\Z)", t).group(1).strip()
-about = re.search(r"(?ms)^## About\s*\n+(.+?)(?=\n## )", t).group(1).strip()
-print("headline", len(head), "of 220")
-print("about", len(about), "of 2600")
-assert len(head) <= 220 and len(about) <= 2600
+import pathlib, re, sys
+LIMITS = {"Headline": 220, "About": 2600}
+spec = pathlib.Path("model/surfaces/linkedin-profile.md").read_text()
+shows = re.search(r"(?ms)^## What it shows[ \t]*$\n(.*?)(?=^## |\Z)", spec).group(1)
+declared = re.findall(r"(?m)^- \*\*(.+?)\*\*", shows)
+text = pathlib.Path("dist/surfaces/linkedin-profile.md").read_text()
+produced = {m.group(1).strip(): m.group(2).strip()
+            for m in re.finditer(r"(?ms)^## (.+?)[ \t]*$\n(.*?)(?=^## |\Z)", text)}
+missing, stopped = [], []
+for name in declared:
+    body = produced.get(name)
+    lines = [l for l in (body or "").splitlines() if l.strip()]
+    if body is None:
+        missing.append(name)
+        print(f"{name}: missing — no section carries it")
+    elif not lines:
+        missing.append(name)
+        print(f"{name}: missing — its section is empty")
+    elif len(lines) == 1 and lines[0].startswith("STOP:"):
+        stopped.append(name)
+        print(f"{name}: not tested — {lines[0]}")
+    elif name in LIMITS:
+        print(f"{name}: {len(body)} of {LIMITS[name]}")
+        assert len(body) <= LIMITS[name], f"{name} is {len(body)}, over {LIMITS[name]}"
+print(f"{len(declared)} units declared, {len(missing)} missing, {len(stopped)} stopped")
+sys.exit(1 if missing or stopped else 0)
 PY
 ```
 
-Expected: both counts printed and under their limits. The other three constraints are read by
-the agent and reported in step 4, because a name pairing, a date agreeing with the model and a
-skill name matching an H1 are readings rather than measurements.
+The unit names come from the surface entity's `## What it shows`, which is where they are
+declared, so the check asks what should be there rather than counting what it finds. Expected on
+a surface produced whole: a count for the headline and a count for the About text, both under
+their limits, `8 units declared, 0 missing, 0 stopped`, and exit 0. Anything else exits 1. A
+stopped unit prints `not tested` with its own `STOP:` line, because a character count taken
+against a `STOP:` line is a real number measuring nothing; a unit the produced file has no
+section for, or has an empty section for, prints `missing`, because the two are different
+failures and the report in step 4 has to say which. The other three constraints are read by the
+agent and reported in step 4, because a name pairing, a date agreeing with the model and a skill
+name matching an H1 are readings rather than measurements.
 
 - [ ] **Step 4: Report**
 

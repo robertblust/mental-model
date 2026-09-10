@@ -7,24 +7,32 @@ allowed-tools: Bash(*), Read, Write, Edit, Glob, Grep
 # companygraph-surface
 
 A surface is a place the company publishes that no script writes, and its file records the rules
-by which the model becomes that place. This produces the place: one file per surface entity into
-`dist/surfaces/`, ready to paste.
+by which the model becomes that place. This produces the place: one run produces one surface
+entity into `dist/surfaces/`, named for that entity's own file and ready to paste.
 
 ## Procedure
 
 1. Run `python3 .claude/skills/companygraph-surface/facts.py` from the instance root.
-2. Read the surface entity whole — every unit its `## What it shows` names, every projection
-   rule and every constraint. It is the brief and nothing here repeats it.
+2. Name the surface this run produces, then read that entity whole — every unit its
+   `## What it shows` names, every projection rule and every constraint. It is the brief and
+   nothing here repeats it. `facts.json`'s `surfaces` lists every surface the model holds with
+   its `name` and its `path`: produce the one the request names, and where the request names
+   none and the list holds one, that one. A run produces a single surface, so a request naming
+   none against a model holding several is a question for the owner rather than a choice to
+   make.
 3. Read `conventions/WRITING.md` for the register the surface's file names.
 4. Produce each unit in the order `## What it shows` lists them, applying the projection rules
-   to the facts. Write to `dist/surfaces/<surface>.md`, one section per unit, labeled with the
+   to the facts. Write to `dist/surfaces/<stem>.md`, where `<stem>` is the file name of the
+   entity's own `path` in the model without its extension — `model/surfaces/linkedin-profile.md`
+   produces `dist/surfaces/linkedin-profile.md` — one section per unit, labeled with the
    unit's own name so a reader can match it against the editor in front of them. A rule is a
    stop and not a guess wherever it names something this run cannot settle: a source outside
    the model — a page this repository does not hold, a network's own editor — or a decision the
    surface's file leaves to the owner at each rebuild — which five skills the Skills unit
    shows, say. A stopped unit's section holds one line and nothing else, `STOP: <what the rule
-   asks for> — <where it would have to be read from>`, so nothing downstream can mistake it for
-   content.
+   asks for> — <the source it would be read from, or whose decision it waits on>`, so nothing
+   downstream can mistake it for content. `STOP: five skill names — the owner chooses them at
+   each rebuild` is the form as much as a page outside the model is.
 5. Hold the result against every constraint the file states, one at a time, and report each as
    passed or failed with its evidence measured rather than estimated. A constraint that governs
    a stopped unit is reported rather than tested, and it is never passed: a character count
@@ -38,8 +46,16 @@ by which the model becomes that place. This produces the place: one file per sur
 `facts.json` carries `identity`, the identity entity whole; `surfaces`, each surface's `name`
 and `path`; and `types`, one list per type — `experience`, `skill`, `value` and so on — each
 entry an entity in the same shape: `name`, `path`, `tagline`, `fields` (its frontmatter as
-written) and `sections` (its `##` bodies, keyed by heading). An entity also carries `dates` and,
-where its type has one, `organization` with `organization_from`.
+written) and `sections` (its `##` bodies, keyed by heading). Where its type names an
+organization anywhere, an entity also carries `organization` with `organization_from`.
+
+Every entity carries `dates`, and on most of them it is null: only a `start` in the frontmatter
+makes a period, so the key is always there and its value often is not. Where there is one,
+`dates` is the period written for a reader, a bare date where the period is one unit long or
+still running, and `fields.end` is the fact that tells those two apart: a period that ended in
+the month it began and a period with no end read the same as prose, and only the frontmatter
+says which is which. A rule that turns on whether a period is running reads `fields`, never
+`dates`.
 
 A type is not a kind. `types["experience"]` is one list holding every experience regardless of
 what kind it is; `kind` is a field inside that entity's own `fields`, the value a rule in the
