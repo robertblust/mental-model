@@ -27,11 +27,12 @@ url: https://www.linkedin.com/in/robertblust/
   shows.
 - An entry carries the title and the period of the experience it was made from, and its body is
   written rather than copied. What the entry holds was written for a reader who came to read.
-- An experience's own tagline supplies the role an entry was played in and the employer it was
-  held through, where it names them: several read `3AP · Lead Architect & Developer`, where
-  `3AP` is the employer and `organization` is the client the work was for. Both reach the entry,
-  because a role named beside a client and not beside its employer reads as though the client
-  employed you.
+- An entry names the part played and the employer it was held through, where the model holds
+  them. The part is the experience's `role`, and the employer is the `organization` of the
+  period that contains this one — a delivery ran inside the role it was done from, and the
+  dates say which. Both reach the entry, because a part named beside a client and not beside
+  its employer reads as though the client employed you. An experience carrying no `role` shows
+  none: its H1 is the part, or the model does not say.
 - A body is written from the experience's `## Achievements`, and from its `## Ending` where the
   ending states a fact the achievements do not. An ending says why a period closed and what it
   left, and on some entries that is the only place the outcome is written down.
