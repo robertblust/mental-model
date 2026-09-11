@@ -1,4 +1,4 @@
-# Robert Blust — mental model
+# Robert Blust — Mental Model
 
 > One person, described in [CompanyGraph](https://github.com/companygraph/meta-model): the
 > reference instance of the meta-model, a company of one.
