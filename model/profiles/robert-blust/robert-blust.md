@@ -1,5 +1,6 @@
 ---
 source: Local
+nature: human
 ---
 
 # Robert Blust
