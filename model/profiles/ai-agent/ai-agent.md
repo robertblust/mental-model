@@ -10,19 +10,18 @@ roles:
 
 # AI Agent
 
-> Whichever agent runs the family's seats today — held to the same rulebooks whichever model it is.
+> Drafts, translates, implements and reviews across the family, under a rulebook for each, and decides nothing.
 
 ## Skills
 
 | Skill | Level | Evidence |
 | --- | --- | --- |
 | Software engineering | Proficient | Implemented the meta-model's typed-resolution release task by task under review, tests first, with the same graph proven on every consumer. |
-| Software testing | Competent | Writes the failing test before the change on every task a brief orders it, and reports the red and the green. |
+| Software testing | Competent | Wrote the failing test before the change on every task of the meta-model's typed-resolution and role releases, and reported the red and the green in each task report. |
 | Technical writing | Proficient | Drafts every page, README and release note of the family under the writer's rulebook; the Owner reviews each on the branch and the rendered page. |
 
 ## Summary
 
-One profile for every agent the company runs — Claude today, another model tomorrow — so the
-seats have a holder and the rulebooks have a name to bind. What it claims it claims on
-evidence like anyone else; what its seats require and it cannot evidence is the gap the
-validation pass reports.
+Four seats, one session: the English of every page from a brief, the Swiss German of every
+reviewed element, the commit a task brief specifies, and the findings on a diff. Whichever model
+runs it, the rulebooks are the same and the Owner's word ends every question it parks.

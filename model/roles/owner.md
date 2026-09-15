@@ -4,6 +4,7 @@ requires:
   - Company vision and strategy
   - Consulting
   - Solution selling
+  - Technical writing
 ---
 
 # Owner

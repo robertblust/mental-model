@@ -19,7 +19,7 @@ nothing.
 ## What it produces
 
 The text in its file on the current branch, in the register the place calls for, and a reply
-naming what was written, what changed, and which claims could not be traced to the brief or
+naming what was written, what changed and which claims could not be traced to the brief or
 the repository.
 
 ## What it never does

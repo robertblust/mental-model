@@ -62,14 +62,14 @@ mechanical rules it would cover are done here by hand as well.
    One writing rule produces a report line rather than a failure, and the role schema says
    so: for every profile that lists roles, every skill a listed role `requires` that has no
    row in the profile's Skills table is a gap — `gap <profile>: <role> requires <skill>` —
-   reported once per skill and never counted as a failure. It says what the holder has to
+   reported once per role and skill and never counted as a failure. It says what the holder has to
    learn or the company has to hire.
 
 ## Report
 
 Per rule, `R1 ✓` or `R4 ✗ <file>: <reference> resolves to no <type>` — one line per failure,
 citing the rule. Then the writing rules per type, cited as the rule's own words and the file
-that breaks it. Then the gaps, one line each, under their own heading and outside the failure
+that breaks it. Then the gaps, one line each, after the failures and outside their
 count. Then the lines nothing else reaches and this pass judged by reading: whether
 each `Evidence` cell is a concrete fact, whether `## In practice` prose says what following and
 breaking the value looks like. End with **Not checked:** naming anything above that was

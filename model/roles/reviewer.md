@@ -7,7 +7,7 @@ requires:
 
 # Reviewer
 
-> The seat that reads one diff against its brief, returns findings with a severity, and changes nothing.
+> The seat that reads one diff against its brief, returns findings with a severity and changes nothing.
 
 ## What it takes
 

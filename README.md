@@ -11,7 +11,7 @@ meta-model's
 
 ```
 .companygraph/manifest.json    which units this vendors, and a hash per vendored file
-meta/core/                     core 0.21.0, copied whole and never edited here
+meta/core/                     core 0.23.0, copied whole and never edited here
 model/                         the company — everything under here is an entity, nothing else is
   identity.md                  who the company is
   vision.md                    the future it works toward
@@ -22,8 +22,10 @@ model/                         the company — everything under here is an entit
   experience-kinds/            the five kinds an experience can be
   skills/                      one file per capability
   values/                      one file per value
+  roles/                       one file per seat the company needs filled
   surfaces/                    the rules for a surface no build writes
-  profiles/robert-blust/       the profile, and the experiences it owns
+  profiles/robert-blust/       the person, and the experiences it owns
+  profiles/ai-agent/           the agent that holds four of the five seats; it owns no experiences yet
 AGENTS.md                      the instance's own rules; every modeling rule is in meta/core/CONVENTIONS.md
 .claude/skills/companygraph-*  the portable skills: validate, add an entity, export as a skill, produce a surface
 ```
