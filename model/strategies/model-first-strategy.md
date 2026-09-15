@@ -8,7 +8,7 @@ upholds:
   - Model it before you build it
 ---
 
-# AI Strategy
+# Model-First Strategy
 
 > Agents draft everything, inside conventions written down first, and I spend my time on the decisions they cannot make.
 
