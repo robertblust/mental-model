@@ -22,9 +22,10 @@ rule lives in `meta/core/CONVENTIONS.md` and is not restated here; read it first
 
 ## What this is
 
-Robert Blust, described in CompanyGraph: one profile, its experiences, the skills and values
-it claims and the ladder it claims them on. `meta/core/` is core 0.22.0, vendored and never edited
-here; `.companygraph/manifest.json` records which release and a hash per file.
+Robert Blust, described in CompanyGraph: two profiles — the person, with its experiences, and the
+agent that holds four of the five seats in `model/roles/` — the skills and values they claim and
+the ladder they claim them on. `meta/core/` is core 0.23.0, vendored and never edited here;
+`.companygraph/manifest.json` records which release and a hash per file.
 
 ## Checks
 

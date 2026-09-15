@@ -25,7 +25,8 @@ vendor, a product or a host, and telling them apart is reading, not parsing.
 1. For every experience, collect the names it could be cited by: its `organization` field and
    the proper nouns in its H1. Record which skills its `skills:` list declares.
 2. For every row of the profile's Skills table, take the set of experiences declaring that
-   skill, and the union of their names.
+   skill, and the union of their names. A profile that owns no experiences has no cells to
+   check and is skipped, and the report says so.
 3. Read the Evidence cell. For each name it mentions that is not in that union, decide by
    reading which of these it is:
    - **an engagement the cell claims** — the finding. The experience is missing the skill, or

@@ -1,5 +1,8 @@
 ---
 source: Local
+nature: human
+roles:
+  - Owner
 ---
 
 # Robert Blust
