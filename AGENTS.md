@@ -38,6 +38,13 @@ too, as in every other member: its research quotes the taxonomy labels it compar
 Run the `companygraph-validate` skill. It reports per rule R1–R17 and names what it did not
 check. A commit with an unresolved reference is not made.
 
+The skill lives in `.claude/skills/` here, so it loads only for a session rooted in this
+repository. A session rooted above it — at `~/git/robertblust/`, say, where every member is a
+subdirectory — sees no skill of this repository's at all, and the failure is silent: the skill is
+simply absent rather than reported missing. Where that happens the pass is still owed, by hand
+and against `meta/core/CONVENTIONS.md`, and the commit says which of the two ran. A `Verified:`
+line naming a skill that did not load is the one outcome this paragraph exists to prevent.
+
 ## Mastership
 
 - Every page is mastered here. `source: Local` on all of them, and a correction is made in this
