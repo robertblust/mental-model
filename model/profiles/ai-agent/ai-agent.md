@@ -23,5 +23,5 @@ roles:
 ## Summary
 
 Four seats, one session: the English of every page from a brief, the Swiss German of every
-reviewed element, the commit a task brief specifies, and the findings on a diff. Whichever model
+reviewed element, the commit a task brief specifies and the findings on a diff. Whichever model
 runs it, the rulebooks are the same and the Owner's word ends every question it parks.
