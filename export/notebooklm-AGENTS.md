@@ -34,6 +34,8 @@ The rest carry its {{entities}} entities.
 | `surfaces.md` | the {{count:Surfaces}} surface the model is published to by hand | Ask what reaches a published place and what is left out |
 | `identity.md` | who the model is about | Find the name, the location and the public addresses |
 | `vision.md` | the future the model works toward | Ask what the work is building toward |
+| `strategic-objectives.md` | the {{count:Strategic objectives}} objective the vision needs made true | Ask what he is trying to make true, and how he would know |
+| `strategies.md` | the {{count:Strategies}} strategy pursuing it | Ask how the work is actually done, and what it refuses |
 | `meta.md` | CompanyGraph core: its conventions and its schemas, {{count:Meta}} entities | Check what a page must carry and how a reference resolves |
 
 ## How to read the model
