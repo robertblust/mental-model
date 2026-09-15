@@ -11,10 +11,12 @@ meta-model's
 
 ```
 .companygraph/manifest.json    which units this vendors, and a hash per vendored file
-meta/core/                     core 0.19.0, copied whole and never edited here
+meta/core/                     core 0.21.0, copied whole and never edited here
 model/                         the company — everything under here is an entity, nothing else is
   identity.md                  who the company is
   vision.md                    the future it works toward
+  strategic-objectives/        what must become true for the vision to be reached
+  strategies/                  how one gets reached, and what the route rules out
   sources/                     where each page's facts are mastered
   proficiency-levels/          the four-rung ladder every skill claim uses
   experience-kinds/            the five kinds an experience can be

@@ -17,12 +17,13 @@ upholds:
 AI drafts and it checks; it never decides and it never publishes. That is the position, and
 everything below exists to hold it: the constraint moved from building quickly to deciding
 correctly, so the scarce thing is judgment, and judgment is protected by making every decision
-leave a written artifact that a person put their name to. A fact enters the model from a
-document, never from a model's recall, and nothing goes out under my name that I have not read
-against its sources.
+leave a written artifact that a person put their name to. A fact enters the model from me or
+from a document, never from a model's recall, and nothing goes out under my name that I have not
+read against its sources.
 
-Every change starts as a written thing: a brief naming the audience and the facts it may claim,
-a spec that keeps the finding that led to the decision, then a plan. Agents draft against those
+A change of consequence starts as a written thing: a brief naming the audience and the facts it
+may claim, a spec that keeps the finding that led to the decision, then a plan. A smaller one
+still leaves a pull request, which is where its reason is written. Agents draft against those
 and against the schemas; I review on the branch, in the diff and on the rendered page. The
 conventions the agents work under are themselves files — how I write, how I work with git,
 what each repository is — vendored into every repository at a pinned release, so a rule improves
@@ -30,8 +31,8 @@ in one place and reaches all of them. Roles are files too: the writer and the tr
 briefs, invoked as subagents, and neither commits.
 
 Checks carry the load I would otherwise carry by reading. An unresolvable reference is an error
-rather than a warning, a pin that drifts fails a build, and every validation pass ends by naming
-what it did not check — because the failure mode of an agent-written repository is a green check
+rather than a warning, a pin that drifts fails a build, and the instance checker ends by naming
+what it did not reach — because the failure mode of an agent-written repository is a green check
 over an unread claim.
 
 ## What it rules out
@@ -42,8 +43,8 @@ so the conversation is not where it lives. Nothing is hand-maintained that could
 second copy of a fact is the thing this model exists to end. No tool enters the chain before the
 convention it works under is written, because a tool adopted first sets the rules by what it
 happens to do. And no fact reaches a published surface because a model produced it fluently: a
-claim arrives from a document or it does not arrive, and an agent that cannot find the document
-says so instead of writing around the gap.
+claim arrives from me or from a document or it does not arrive, and an agent that cannot find
+its source says so instead of writing around the gap.
 
 ## What would show it is working
 
