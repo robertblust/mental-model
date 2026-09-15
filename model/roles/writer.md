@@ -34,5 +34,5 @@ the repository.
 
 | What | URL |
 | --- | --- |
-| Glossary | https://github.com/robertblust/conventions/blob/main/GLOSSARY.md |
-| Rulebook | https://github.com/robertblust/conventions/blob/main/WRITER.md |
+| Glossary | https://github.com/robertblust/conventions/blob/main/conventions/GLOSSARY.md |
+| Rulebook | https://github.com/robertblust/conventions/blob/main/conventions/WRITER.md |
