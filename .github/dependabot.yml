@@ -1,0 +1,23 @@
+# GitHub Actions only, because a workflow is all this repository runs. It calls two reusable
+# workflows, and each bump is a signal rather than a chore:
+#
+# - The conventions check. Dependabot moves only the check.yml@ line, so its pull request goes
+#   red against conventions.json, and the red says this repository is behind a conventions
+#   release. Finish it on its own branch — move the tag in conventions.json, run
+#   `sh conventions/conventions-sync sync` — rather than closing it.
+# - The meta-model's instance check. A bump of instance-check.yml@ is a new meta-model release,
+#   and its checks may hold the model to rules it did not face before, so read that pull request
+#   before merging it.
+#
+# Without this file nothing said so, and this repository fell behind unseen while its siblings
+# were told.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      actions:
+        patterns:
+          - "*"
