@@ -1,8 +1,6 @@
 ---
 source: Local
 owner: Owner
-supported-by:
-  - Reviewer
 ---
 
 # Delivery
