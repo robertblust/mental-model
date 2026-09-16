@@ -1,9 +1,9 @@
 {
-  "tooling": "0.25.0",
+  "tooling": "0.25.1",
   "core": {
-    "version": "0.25.0",
+    "version": "0.25.1",
     "shape": 2,
-    "source": "fetched:v0.25.0"
+    "source": "fetched:v0.25.1"
   },
   "units": "meta",
   "packs": [],
@@ -13,7 +13,7 @@
     "meta/core/experience-kind-schema.md": "sha256:dabd3cf5972093da7a329d27baf394d4448a9f862b54b1f96a75c8425acb4da5",
     "meta/core/experience-schema.md": "sha256:a5739b4e49c7ed5e4f3df8bd03f3d34645f6e936615a428722e4068afe38aeb7",
     "meta/core/identity-schema.md": "sha256:681c7e9b23cff6979fa167822005a0e4199d2bd17738f2ac406c2f2b00662c24",
-    "meta/core/manifest.json": "sha256:009c14f9cc40b31f8e23c4266dab6cf0bc2d3577a6e4e1d634e6278ad1096084",
+    "meta/core/manifest.json": "sha256:d7e52e088414a5333f733b06e43f9e3b9d49fe1bfab7204b310f15a3fbd144bd",
     "meta/core/phase-schema.md": "sha256:c2a56c0ef6390721af10f114b545bac5f086d8b35ba40b20105a0a86f1d84428",
     "meta/core/process-schema.md": "sha256:d62f354a2abff9dc02f34330eeabb2404474a073941745537c4f73f0aa8ecb03",
     "meta/core/proficiency-level-schema.md": "sha256:cae2c9ea6dd25a563a157d06321b16e9515de34ec534b8d3622259bc13a6fc8d",
