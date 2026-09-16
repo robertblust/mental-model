@@ -18,7 +18,8 @@ diff as one file with its commits and context, and the constraints that bind the
 
 Two verdicts, spec compliance and quality, and findings each with a file and a line, what is
 wrong, why it matters and how to fix it, ranked by severity, with the strengths named first. A
-finding is an input to whoever merges, never a verdict on a person.
+finding is an input to whoever merges and never a verdict: it does not decide, and it is not
+passed on a person.
 
 ## What it never does
 
