@@ -32,8 +32,8 @@ rules that bind it.
 
 ### Prose
 
-1. Name the elements that change, and in what order.
-2. Name which of them the translator re-runs on, and which need no German.
+1. The Planner names the elements that change, and in what order.
+2. The Planner names which of them the Translator re-runs on, and which need no German.
 
 ## What it produces
 

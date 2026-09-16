@@ -2,9 +2,9 @@
 source: Local
 owner: Owner
 executed-by:
-  - Owner
-supported-by:
+  - Controller
   - Reviewer
+  - Owner
 gate-approvers:
   - Owner
 escalation-authority: Owner

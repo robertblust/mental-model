@@ -31,9 +31,10 @@ A classified request, the model the change must not contradict, and whatever it 
 
 ### Prose
 
-1. Name the audience, the one point, and the facts the text may claim with where each is shown.
-2. Name the file and the place it lands, and the register the place calls for.
-3. Name the claims it may not make.
+1. The Specifier names the audience, the one point, and the facts the text may claim with
+   where each is shown.
+2. The Specifier names the file and the place it lands, and the register the place calls for.
+3. The Specifier names the claims it may not make.
 
 ## What it produces
 

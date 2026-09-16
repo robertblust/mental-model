@@ -7,6 +7,7 @@ executed-by:
   - Reviewer
   - Writer
   - Translator
+  - Owner
 supported-by:
   - Planner
 gate-approvers:
