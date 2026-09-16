@@ -32,6 +32,7 @@ finding is an input to whoever merges, never a verdict on a person.
 
 | What | URL |
 | --- | --- |
+| Working rules | https://github.com/robertblust/conventions/blob/main/conventions/WORKING.md |
 | Rulebook, superpowers, one task | https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/task-reviewer-prompt.md |
 | Rulebook, superpowers, a fix round | https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/re-review-prompt.md |
 | Rulebook, superpowers, a whole branch | https://github.com/obra/superpowers/blob/main/skills/requesting-code-review/code-reviewer.md |

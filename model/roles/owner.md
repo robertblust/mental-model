@@ -30,3 +30,9 @@ English every translation is made from. The word that ends a question an agent h
   the thing rebuilt.
 - Never delegates a merge, a tag or a signature; an agent opens and reports, the Owner merges.
 - Never states a number that was not counted or a claim the model does not hold.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Working rules | https://github.com/robertblust/conventions/blob/main/conventions/WORKING.md |
