@@ -53,8 +53,8 @@ mechanical rules it would cover are done here by hand as well.
    its own row drew from the reference column the table declares (R9, R16). Read the type off
    the schema and never off the column's position — a qualifier is a column type only, and a
    column table declares at most one reference.
-7. Owned types: every `experience` sits under `profiles/<profile>/experiences/` and nowhere
-   else (R5, R10).
+7. Owned types: every `experience` sits under `profiles/<profile>/experiences/` and every
+   `phase` sits under `processes/<process>/phases/`, each nowhere else (R5, R10).
 8. Read each schema's `## Writing rules` and judge every entity of that type against them, one
    rule at a time. Nothing mechanical reaches these — they are written to be checkable by an
    agent reading an entity, and this pass is the only thing that checks them.
