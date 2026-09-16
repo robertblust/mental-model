@@ -24,11 +24,11 @@ rules that bind it.
 
 ### Code
 
-1. Map the files the change creates and modifies, and what each is responsible for.
-2. Cut the work into task briefs, each the whole of its own requirements.
-3. Name the interfaces each brief produces and consumes, so no brief depends on a conversation
-   its holder did not have.
-4. Order them so each can be worked, tested and committed on its own.
+1. The Planner maps the files the change creates and modifies, and what each is responsible for.
+2. The Planner cuts the work into task briefs, each the whole of its own requirements.
+3. The Planner names the interfaces each brief produces and consumes, so no brief depends on a
+   conversation its holder did not have.
+4. The Planner orders them so each can be worked, tested and committed on its own.
 
 ### Prose
 

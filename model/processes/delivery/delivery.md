@@ -7,7 +7,7 @@ supported-by:
 
 # Delivery
 
-> How anything the company ships is shaped, specified, made and merged, in code and in prose.
+> How anything the company ships is shaped, specified, planned, made and merged, in code and in prose.
 
 ## Tracks
 

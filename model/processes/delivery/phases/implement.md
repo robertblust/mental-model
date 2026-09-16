@@ -18,7 +18,7 @@ gate-to: Integrate
 
 # Implement
 
-> Make the thing, one piece at a time, and have every piece read before the next one starts.
+> Make the thing, and let nothing go forward unread.
 
 ## What it takes
 
@@ -65,7 +65,7 @@ An approved plan, a branch, and for each task the brief that is the whole of its
 
 To leave Implement, all of these hold:
 
-- Every task's findings are resolved, or parked with the Owner's word on them.
+- Every task's findings are resolved, or parked for the Owner and named in the pull request.
 - The repository's checks pass on the branch.
 - The branch does what the specification said, and nothing else.
 

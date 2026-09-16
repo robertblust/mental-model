@@ -20,12 +20,12 @@ have to agree with, read rather than remembered.
 
 ## Activities
 
-1. State the request as one sentence.
-2. Classify it: a question whose output is an answer, a bounded change to something already
-   here to read, or a change to how things fit together.
-3. Name the track it runs on.
-4. Say which phases write a document and which are satisfied in conversation.
-5. Name what is explicitly not being changed.
+1. The Owner states the request as one sentence.
+2. The Owner classifies it: a question whose output is an answer, a bounded change to something
+   already here to read, or a change to how things fit together.
+3. The Owner names the track it runs on.
+4. The Owner says which phases write a document and which are satisfied in conversation.
+5. The Owner names what is explicitly not being changed.
 
 ## What it produces
 

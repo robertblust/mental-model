@@ -23,11 +23,12 @@ A classified request, the model the change must not contradict, and whatever it 
 
 ### Code
 
-1. Read the model and the code the change lands in, before proposing anything.
-2. Name the approaches worth considering, with their trade-offs, and recommend one.
-3. Write the specification: the gap, the decisions and their reasons, what was rejected and why,
-   and what is explicitly not being done.
-4. Park every question that is the Owner's, rather than answering it conveniently.
+1. The Specifier reads the model and the code the change lands in, before proposing anything.
+2. The Specifier names the approaches worth considering, with their trade-offs, and recommends
+   one.
+3. The Specifier writes the specification: the gap, the decisions and their reasons, what was
+   rejected and why, and what is explicitly not being done.
+4. The Specifier parks every question that is the Owner's, rather than answering it conveniently.
 
 ### Prose
 
