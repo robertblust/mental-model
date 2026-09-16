@@ -20,11 +20,11 @@ A branch that left Implement with its checks green, and the specification it was
 
 ## Activities
 
-1. Review the whole branch against the specification, not task by task.
-2. Open the pull request and stop.
+1. The Reviewer reviews the whole branch against the specification, not task by task.
+2. The Controller opens the pull request and stops.
 3. The Owner reads the diff and the rendered page, and merges.
-4. Where a release is due, tag it and publish it.
-5. Move every pin that names the release, and delete the branch as its own step.
+4. Where a release is due, the Owner tags it and publishes it.
+5. The Owner moves every pin that names the release, and deletes the branch as its own step.
 
 ## What it produces
 
