@@ -2,7 +2,7 @@
 """Assert that both export artifacts are the model, whole.
 
 Coverage is the whole point of the second artifact, and it is checkable only because each
-inlined entity keeps its `<!-- entity: <path> -->` marker: NotebookLM strips the comment, and
+inlined entity keeps its `<!-- entity: <path> -->` marker: Gemini Notebook strips the comment, and
 this script reads the file from disk where it survives. The zip is checkable the same way,
 read straight from the archive with `zipfile`: two of its files, `model/identity.md` and
 `model/vision.md`, are singular entities copied whole and carry no marker, so those are
@@ -15,9 +15,9 @@ import re, sys, pathlib, zipfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent.parent
 INSTANCE = ROOT.name
-BUNDLE = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "dist/mental-model-notebooklm"
+BUNDLE = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "dist/mental-model-gemini-notebook"
 ZIP = ROOT / f"dist/{INSTANCE}-skill.zip"
-SOURCE_CAP, WORD_CAP = 50, 500_000          # NotebookLM, free tier, per notebook and per source
+SOURCE_CAP, WORD_CAP = 50, 500_000          # Gemini Notebook, free tier, per notebook and per source
 
 # Two sources carry documents about the model rather than entities of it: the reading guide the
 # bundle ships as `AGENTS.md` and the repository's own `README.md`. They count against the source

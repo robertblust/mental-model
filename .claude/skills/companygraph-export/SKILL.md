@@ -1,6 +1,6 @@
 ---
 name: companygraph-export
-description: Package this CompanyGraph instance twice — dist/<instance>-skill.zip for an agent, dist/<instance>-notebooklm/ for NotebookLM. One walk, two renderings, the same entity count asserted against both.
+description: Package this CompanyGraph instance twice — dist/<instance>-skill.zip for an agent, dist/<instance>-gemini-notebook/ for Gemini Notebook. One walk, two renderings, the same entity count asserted against both.
 allowed-tools: Bash(*)
 ---
 
@@ -9,7 +9,7 @@ allowed-tools: Bash(*)
 Two artifacts from one walk of the model, because the two readers want the same facts in
 different shapes. `dist/mental-model-skill.zip` is uploadable as an organization or personal
 skill: `SKILL.md` at the root, `model/<type>.md` per root type folder, `model/meta.md`.
-`dist/mental-model-notebooklm/` is a flat folder of Markdown sources, one per content area,
+`dist/mental-model-gemini-notebook/` is a flat folder of Markdown sources, one per content area,
 carrying the model's own pages as they are written.
 
 ## Procedure
@@ -76,9 +76,9 @@ table of `model/` files with the entity count per type and the core version; the
 on how to read the model — each entity begins at its `<!-- entity: … -->` line, its H1 is its
 name, references are by name, `model/meta.md` holds the rules.
 
-## What the script writes into the NotebookLM bundle
+## What the script writes into the Gemini Notebook bundle
 
-A folder and not an archive, because NotebookLM accepts Word, plain text, Markdown, PDF, CSV,
+A folder and not an archive, because Gemini Notebook accepts Word, plain text, Markdown, PDF, CSV,
 PowerPoint, ePub, images, audio and URLs, and no archive among them.
 
 One source per content area, named for the area — one per type folder under `model/`, one for
@@ -90,7 +90,7 @@ editorial decision taken by a glob. A title raises the folder name's first lette
 rest as the folder spells it, because the title is what a citation carries.
 
 An instance with a narrative to make declares its own grouping in
-`export/notebooklm-sources.md`, and the mechanism stays for it: each `##` heading is a source's
+`export/gemini-notebook-sources.md`, and the mechanism stays for it: each `##` heading is a source's
 title and its H1, the file name is that title lowercased with whitespace turned to dashes, so a
 `##` heading cannot reintroduce a capital any more than a folder name does, the paths under it
 claim entities and may glob, the paragraph under it opens the file, and an entity no heading
@@ -99,7 +99,7 @@ because `model/profiles/` is the one folder the walk recurses into, so the root 
 not the entity's type. This instance ships no declaration.
 
 Two documents ship as sources beside the sources that carry entities:
-`export/notebooklm-AGENTS.md` as the bundle's `AGENTS.md`, and the repository's own `README.md`,
+`export/gemini-notebook-AGENTS.md` as the bundle's `AGENTS.md`, and the repository's own `README.md`,
 both copied whole. The reading guide is what tells a reader that references between entities are
 by name and what a claim rests on, and a guide that lives outside the bundle is a guide this
 reader never sees. Neither is an entity, neither carries a marker, and a declared source may not
@@ -122,7 +122,7 @@ Each source is then written as:
   `experience-kinds.md`, because a space or a capital in a file name is awkward to type, to quote
   in a shell and to read in a directory listing. A name the export invents this way is spelled
   the way the folder it came from spells it, so the file name and that folder are the same
-  string. The sentence is what NotebookLM's per-source summary is built from and the first thing
+  string. The sentence is what Gemini Notebook's per-source summary is built from and the first thing
   a reader of the source list sees. Where the instance declares its own grouping the sentence is
   the one the declaration wrote;
 - the folder's `README.md` when there is one, less an opening H1 that only repeats the title the

@@ -2,8 +2,8 @@
 """Render a CompanyGraph instance into both of its export artifacts, from one walk of the model.
 
 `dist/<instance>-skill.zip` is uploadable as an organization or personal skill: `SKILL.md` at
-the root, `model/<type>.md` per root type folder, `model/meta.md`. `dist/<instance>-notebooklm/`
-is a flat folder of Markdown sources, one per content area, because NotebookLM takes files and
+the root, `model/<type>.md` per root type folder, `model/meta.md`. `dist/<instance>-gemini-notebook/`
+is a flat folder of Markdown sources, one per content area, because Gemini Notebook takes files and
 no archive among them. Both carry the model's own pages verbatim: an entity keeps the
 frontmatter, the H1 and the body it has on disk, so nothing a reader could be answered from is
 rewritten on the way out.
@@ -40,7 +40,7 @@ import zipfile
 # are by name, and a guide that lives outside the bundle is a guide that reader never sees.
 # Neither is an entity and neither carries a marker; `verify.py` counts them as sources and
 # looks for no coverage in them.
-DOCUMENTS = (("AGENTS.md", "export/notebooklm-AGENTS.md"), ("README.md", "README.md"))
+DOCUMENTS = (("AGENTS.md", "export/gemini-notebook-AGENTS.md"), ("README.md", "README.md"))
 
 # A count a document states in prose is a count nothing checks: the guide would tell a reader
 # 36 experiences while the bundle held 37, and the verifier would pass, because a document is
@@ -173,7 +173,7 @@ def filename_of(title):
     folder it came from spells it: `title_of` raises the folder name's first letter for the
     title, this lowers it back for the file name, and the file name and the folder are the
     same string again. The same rule holds for a title a declaration writes in
-    `export/notebooklm-sources.md`, so the two paths that produce a title can never
+    `export/gemini-notebook-sources.md`, so the two paths that produce a title can never
     reintroduce a space or a capital into a file name.
     """
     return re.sub(r"\s+", "-", title.replace("/", "-").strip()).lower() + ".md"
@@ -218,7 +218,7 @@ def opening(name, paths):
     Written by the export rather than by the instance because this is the shape an instance
     gets before it has declared one, and a sentence the tool writes is a sentence that stays
     true as the model grows. An instance with a narrative to make writes its own, in
-    `export/notebooklm-sources.md`.
+    `export/gemini-notebook-sources.md`.
     """
     topic = name.replace("-", " ").replace("_", " ")
     if len(paths) == 1:
@@ -276,7 +276,7 @@ def assign(walked, sources):
         held = sorted(groups[name], key=order)
         if declared:
             prose = (f"The `{name}` entities that no heading in "
-                     f"`export/notebooklm-sources.md` claims, gathered here so the bundle "
+                     f"`export/gemini-notebook-sources.md` claims, gathered here so the bundle "
                      f"carries the model whole.")
         else:
             prose = opening(name, held)
@@ -339,7 +339,7 @@ def render(path):
     prose made from it is a thousand characters nobody reads to the end of. The reader here
     handles Markdown; it does not need the model translated for it.
 
-    The marker stays. NotebookLM strips comments, so it costs the reader nothing, and it is an
+    The marker stays. Gemini Notebook strips comments, so it costs the reader nothing, and it is an
     unambiguous boundary where a bare `---` is not: the source holding 69 skills holds 138 lines
     reading `---`, two per entity, and an entity whose body carries a horizontal rule adds one
     that nothing tells apart from a fence. A bare `---` also opens and closes every entity's own
@@ -483,7 +483,7 @@ def zip_members(walked, instance):
             held = sorted(held, key=lambda p: (p.name != "CONVENTIONS.md", p.as_posix()))
             body = zip_body(held, None, carried)
         else:
-            # Path order, so a folder reads the way `ls` shows it. The NotebookLM rendering
+            # Path order, so a folder reads the way `ls` shows it. The Gemini Notebook rendering
             # sorts shallowest first instead, because a source is read front to back and a
             # profile has to lead the experiences it owns; a file an agent greps does not care.
             held = sorted(held, key=lambda p: p.as_posix())
@@ -524,7 +524,7 @@ def main():
         os.chdir(sys.argv[1])
     root = pathlib.Path.cwd()
     instance = root.name
-    out = root / "dist" / f"{instance}-notebooklm"
+    out = root / "dist" / f"{instance}-gemini-notebook"
     archive = root / "dist" / f"{instance}-skill.zip"
 
     walked = entities()
@@ -532,7 +532,7 @@ def main():
         print(f"FAIL  no entity under {root}/model")
         return 1
 
-    declared = pathlib.Path("export/notebooklm-sources.md")
+    declared = pathlib.Path("export/gemini-notebook-sources.md")
     sources, dead = assign(walked, declaration(declared) if declared.is_file() else [])
 
     # A pattern that matches nothing is a source about to go missing: the folder it named was
@@ -540,7 +540,7 @@ def main():
     # line, and the verifier still passes because it holds the bundle against the model rather
     # than against the declaration. So the build says which pattern died and writes nothing.
     for title, pattern in dead:
-        print(f"FAIL  {title}: nothing matches `{pattern}` in export/notebooklm-sources.md")
+        print(f"FAIL  {title}: nothing matches `{pattern}` in export/gemini-notebook-sources.md")
     if dead:
         return 1
     sources = [s for s in sources if s["entities"]]
@@ -559,7 +559,7 @@ def main():
         name = filename_of(source["title"])
         if name in names:
             print(f"FAIL  two sources want {name}: give one a heading of its own in "
-                  f"export/notebooklm-sources.md")
+                  f"export/gemini-notebook-sources.md")
             clash = True
         names.add(name)
         source["file"] = name

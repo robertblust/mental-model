@@ -1,12 +1,12 @@
-# NotebookLM export implementation plan
+# Gemini Notebook export implementation plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** `companygraph-export` produces a second artifact, `dist/mental-model-notebooklm/`, carrying the whole model in a shape NotebookLM can cite — eleven Markdown sources, every entity reproduced exactly as it is written on disk — and verified against the model by a script.
+**Goal:** `companygraph-export` produces a second artifact, `dist/mental-model-gemini-notebook/`, carrying the whole model in a shape Gemini Notebook can cite — eleven Markdown sources, every entity reproduced exactly as it is written on disk — and verified against the model by a script.
 
-**Architecture:** One walk, two renderers. The existing skill already walks `model/` and counts entities; it gains a second rendering and a second output. The second rendering is `.claude/skills/companygraph-export/build.py`, a script rather than a procedure followed by hand, because the failure this artifact exists to catch is a bundle that went quietly stale and a rendering nobody can re-run cheaply will be stale again. It cuts the model by root type — one source per type folder under `model/`, one for `meta/`, one for each singular entity — which is the cut the agent bundle already makes, so a reader moving between the two artifacts meets the same names. Two documents ship beside those sources: the bundle's `AGENTS.md`, written here as `export/notebooklm-AGENTS.md`, and the repository's own `README.md`. A new `.claude/skills/companygraph-export/verify.py` asserts that the bundle is the model whole — that is the test, and it is written before the bundle exists.
+**Architecture:** One walk, two renderers. The existing skill already walks `model/` and counts entities; it gains a second rendering and a second output. The second rendering is `.claude/skills/companygraph-export/build.py`, a script rather than a procedure followed by hand, because the failure this artifact exists to catch is a bundle that went quietly stale and a rendering nobody can re-run cheaply will be stale again. It cuts the model by root type — one source per type folder under `model/`, one for `meta/`, one for each singular entity — which is the cut the agent bundle already makes, so a reader moving between the two artifacts meets the same names. Two documents ship beside those sources: the bundle's `AGENTS.md`, written here as `export/gemini-notebook-AGENTS.md`, and the repository's own `README.md`. A new `.claude/skills/companygraph-export/verify.py` asserts that the bundle is the model whole — that is the test, and it is written before the bundle exists.
 
-**Tech Stack:** Markdown, `sh`, `python3` (stdlib only — numpy is not installed on this machine). The export is a Claude skill procedure and `SKILL.md` is its implementation, with the NotebookLM rendering delegated to the one script inside it.
+**Tech Stack:** Markdown, `sh`, `python3` (stdlib only — numpy is not installed on this machine). The export is a Claude skill procedure and `SKILL.md` is its implementation, with the Gemini Notebook rendering delegated to the one script inside it.
 
 **Spec:** `docs/specs/2026-09-07-notebooklm-export.md`
 
@@ -16,9 +16,9 @@
 - `sh conventions/conventions-check` must pass before every commit. `docs/superpowers/` is excluded from it; `docs/specs/` and `export/` are not.
 - Run the mechanical validation before every commit — vendored hashes, one H1 per entity, R12 filenames. Nothing here touches `model/` or `meta/`, so the schema and reference rules cannot change state.
 - `dist/` is gitignored. Neither artifact is ever committed.
-- Coverage is identical in both artifacts. Cutting content from the NotebookLM bundle is out of scope by decision of the spec.
+- Coverage is identical in both artifacts. Cutting content from the Gemini Notebook bundle is out of scope by decision of the spec.
 - **Nothing below the source title is rewritten.** The rendering decides the grouping, the file names and the sentence that opens each file; an entity travels from disk byte for byte — frontmatter fence, its own H1, body. This reader parses Markdown, so a page translated on the way out is a second version of the model that has to be kept true, and it answers from it less well than from the page itself.
-- No declaration file ships. This instance takes the root-type cut, and `export/notebooklm-sources.md` stays a mechanism `build.py` carries for an instance that has a narrative to make. A grouping keyed to anything the instance has not declared for every entity is a cut made by whatever a pattern happens to match.
+- No declaration file ships. This instance takes the root-type cut, and `export/gemini-notebook-sources.md` stays a mechanism `build.py` carries for an instance that has a narrative to make. A grouping keyed to anything the instance has not declared for every entity is a cut made by whatever a pattern happens to match.
 - Prose in `export/*.md` follows `conventions/WRITING.md`: sentence case headings, spaced em-dash, curly quotes, no serial comma, American English, a reason beside every rule.
 - mental-model is the handmade reference instance. Nothing here is proposed to `companygraph/meta-model` until the export has run and its output has been read.
 
@@ -31,23 +31,23 @@
 - Create: `export/README.md`
 
 **Interfaces:**
-- Produces: `.claude/skills/companygraph-export/verify.py [bundle-dir]`, default `dist/mental-model-notebooklm`. Exit 0 on pass, 1 on failure, printing one line per finding. Task 3 runs it as its green step.
+- Produces: `.claude/skills/companygraph-export/verify.py [bundle-dir]`, default `dist/mental-model-gemini-notebook`. Exit 0 on pass, 1 on failure, printing one line per finding. Task 3 runs it as its green step.
 
 - [ ] **Step 1: Write the verifier**
 
 ```python
 #!/usr/bin/env python3
-"""Assert that a NotebookLM bundle is the model, whole.
+"""Assert that a Gemini Notebook bundle is the model, whole.
 
 Coverage is the whole point of the second artifact, and it is checkable only because each
-inlined entity keeps its `<!-- entity: <path> -->` marker: NotebookLM strips the comment, and
+inlined entity keeps its `<!-- entity: <path> -->` marker: Gemini Notebook strips the comment, and
 this script reads the file from disk where it survives.
 """
 import re, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-BUNDLE = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "dist/mental-model-notebooklm"
-SOURCE_CAP, WORD_CAP = 50, 500_000          # NotebookLM, free tier, per notebook and per source
+BUNDLE = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "dist/mental-model-gemini-notebook"
+SOURCE_CAP, WORD_CAP = 50, 500_000          # Gemini Notebook, free tier, per notebook and per source
 
 # Two sources carry documents about the model rather than entities of it: the reading guide the
 # bundle ships as `AGENTS.md` and the repository's own `README.md`. They count against the source
@@ -110,7 +110,7 @@ sys.exit(main())
 Two of the bundle's files carry a document about the model rather than entities of it, so
 `DOCUMENTS` names them and the coverage scan skips them: they hold no marker, and a stray
 `<!-- entity: … -->` in either would otherwise be reported as an entity the model does not
-have. They still count against the source cap, because NotebookLM counts them.
+have. They still count against the source cap, because Gemini Notebook counts them.
 
 A README is excluded on both halves of the walk. `meta/` carries none today, so leaving it in
 matched nothing and the asymmetry was invisible — until a core release adds one, when the
@@ -122,7 +122,7 @@ bundle would have to claim it to pass.
 cd ~/git/robertblust/mental-model && chmod +x .claude/skills/companygraph-export/verify.py && python3 .claude/skills/companygraph-export/verify.py
 ```
 
-Expected: `FAIL  no bundle at .../dist/mental-model-notebooklm`, exit 1. This is the red state the rest of the plan turns green.
+Expected: `FAIL  no bundle at .../dist/mental-model-gemini-notebook`, exit 1. This is the red state the rest of the plan turns green.
 
 - [ ] **Step 3: Write `export/README.md`**
 
@@ -133,7 +133,7 @@ What `companygraph-export` reads from the instance when it builds the two artifa
 holds the procedure; this folder holds what is true of this instance and not of CompanyGraph.
 
 - `SKILL-intro.md` — the paragraph that opens the agent skill, in the instance's own voice.
-- `notebooklm-AGENTS.md` — the reading guide the NotebookLM bundle ships as its `AGENTS.md`:
+- `gemini-notebook-AGENTS.md` — the reading guide the Gemini Notebook bundle ships as its `AGENTS.md`:
   what the notebook is, what each source holds, that references between entities are by name,
   and what a claim in the model rests on. A reader who opens a notebook cold has no other way
   to learn any of it. Every count it states is a `{{...}}` token the build substitutes with what
@@ -141,13 +141,13 @@ holds the procedure; this folder holds what is true of this instance and not of 
 - `verify.py` — asserts a built bundle is the model, whole. Run it after every export;
   a bundle is worth nothing if it is quietly short, which is how the first one went stale.
 
-A `notebooklm-sources.md` beside these would group the entities into sources of the instance's
+A `gemini-notebook-sources.md` beside these would group the entities into sources of the instance's
 own naming, one `##` heading per source. This instance writes none, so the export cuts the
 model by its own root types: a grouping keyed to anything the model has not declared for every
 entity is a cut made by whatever a pattern happens to match.
 ```
 
-The guide bullet names `export/notebooklm-AGENTS.md`, which Task 2 writes. The folder's README
+The guide bullet names `export/gemini-notebook-AGENTS.md`, which Task 2 writes. The folder's README
 says what the folder holds, and the guide is the next thing to arrive in it.
 
 - [ ] **Step 4: Check the prose and commit**
@@ -163,13 +163,13 @@ git commit -m "The bundle gets a verifier before it gets a builder"
 ### Task 2: The reading guide
 
 **Files:**
-- Create: `export/notebooklm-AGENTS.md`
+- Create: `export/gemini-notebook-AGENTS.md`
 
 **Interfaces:**
 - Consumes: nothing on disk. Every count it states is a `{{…}}` token that Task 3's build substitutes from what it counted on the run that ships the file.
 - Produces: the document the build copies into the bundle as `AGENTS.md`.
 
-NotebookLM strips comments, so the entity marker that tells an agent where a page begins says
+Gemini Notebook strips comments, so the entity marker that tells an agent where a page begins says
 nothing to this reader, and it has no convention to be told. What a reader who opens the
 notebook cold needs to know — that a source is a stack of whole pages, that an entity's H1 is
 its name, that references between entities are by name and not by link, and what a claim in
@@ -263,7 +263,7 @@ author can produce a document for, not as a claim with nothing behind it.
 - [ ] **Step 2: Check that every token names something the build can count**
 
 ```bash
-cd ~/git/robertblust/mental-model && grep -o '{{[^}]*}}' export/notebooklm-AGENTS.md | sort -u
+cd ~/git/robertblust/mental-model && grep -o '{{[^}]*}}' export/gemini-notebook-AGENTS.md | sort -u
 ```
 
 Expected, ten distinct tokens:
@@ -292,7 +292,7 @@ bundle with a token nothing resolves.
 
 ```bash
 cd ~/git/robertblust/mental-model && sh conventions/conventions-check
-git add export/notebooklm-AGENTS.md
+git add export/gemini-notebook-AGENTS.md
 git commit -m "The bundle carries the guide a stripped reader cannot do without"
 ```
 
@@ -305,8 +305,8 @@ git commit -m "The bundle carries the guide a stripped reader cannot do without"
 - Modify: `.claude/skills/companygraph-export/SKILL.md`
 
 **Interfaces:**
-- Consumes: `export/notebooklm-AGENTS.md` from Task 2 and the repository's `README.md` as the two documents, `.claude/skills/companygraph-export/verify.py` from Task 1 as the green step, and `export/notebooklm-sources.md` when an instance writes one — this one does not.
-- Produces: `dist/mental-model-skill.zip` unchanged, and `dist/mental-model-notebooklm/` — a flat folder of `.md` files, one per source, no archive.
+- Consumes: `export/gemini-notebook-AGENTS.md` from Task 2 and the repository's `README.md` as the two documents, `.claude/skills/companygraph-export/verify.py` from Task 1 as the green step, and `export/gemini-notebook-sources.md` when an instance writes one — this one does not.
+- Produces: `dist/mental-model-skill.zip` unchanged, and `dist/mental-model-gemini-notebook/` — a flat folder of `.md` files, one per source, no archive.
 
 The script lives with the skill rather than in `export/`, because shape belongs to the tool and
 `export/` holds the instance's own inputs.
@@ -336,7 +336,7 @@ and what a reviewer holds it to:
 Replace the `description` line with:
 
 ```
-description: Package this CompanyGraph instance twice — dist/<instance>-skill.zip for an agent, dist/<instance>-notebooklm/ for NotebookLM. One walk, two renderings, the same entity count asserted against both.
+description: Package this CompanyGraph instance twice — dist/<instance>-skill.zip for an agent, dist/<instance>-gemini-notebook/ for Gemini Notebook. One walk, two renderings, the same entity count asserted against both.
 ```
 
 And the paragraph under the `# companygraph-export` heading with:
@@ -345,18 +345,18 @@ And the paragraph under the `# companygraph-export` heading with:
 Two artifacts from one walk of the model, because the two readers want the same facts in
 different shapes. `dist/mental-model-skill.zip` is uploadable as an organization or personal
 skill: `SKILL.md` at the root, `model/<type>.md` per root type folder, `model/meta.md`.
-`dist/mental-model-notebooklm/` is a flat folder of Markdown sources, one per content area,
+`dist/mental-model-gemini-notebook/` is a flat folder of Markdown sources, one per content area,
 carrying the model's own pages as they are written.
 ```
 
 Steps 1 to 6 of the procedure are untouched. The agent bundle is unchanged by this plan, and
 its own reasoning about the `<!-- entity: … -->` marker in step 3 is where it was.
 
-- [ ] **Step 3: Add the NotebookLM rendering as a new step 7, before the current step 7**
+- [ ] **Step 3: Add the Gemini Notebook rendering as a new step 7, before the current step 7**
 
 ```markdown
-7. The NotebookLM rendering, from the same walk, into `dist/<instance>-notebooklm/` — a folder
-   and not an archive, because NotebookLM accepts Word, plain text, Markdown, PDF, CSV,
+7. The Gemini Notebook rendering, from the same walk, into `dist/<instance>-gemini-notebook/` — a folder
+   and not an archive, because Gemini Notebook accepts Word, plain text, Markdown, PDF, CSV,
    PowerPoint, ePub, images, audio and URLs, and no archive among them.
 
    Run `python3 .claude/skills/companygraph-export/build.py` from the instance root. It is a
@@ -374,7 +374,7 @@ its own reasoning about the `<!-- entity: … -->` marker in step 3 is where it 
    citation carries.
 
    An instance with a narrative to make declares its own grouping in
-   `export/notebooklm-sources.md`, and the mechanism stays for it: each `##` heading is a
+   `export/gemini-notebook-sources.md`, and the mechanism stays for it: each `##` heading is a
    source's file name, the paths under it claim entities and may glob, the paragraph under it
    opens the file, and an entity no heading claims goes to a source named for the folder it
    sits in — `experiences` and never `profiles`, because `model/profiles/` is the one folder
@@ -382,7 +382,7 @@ its own reasoning about the `<!-- entity: … -->` marker in step 3 is where it 
    no declaration.
 
    Two documents ship as sources beside the sources that carry entities:
-   `export/notebooklm-AGENTS.md` as the bundle's `AGENTS.md`, and the repository's own
+   `export/gemini-notebook-AGENTS.md` as the bundle's `AGENTS.md`, and the repository's own
    `README.md`, both copied whole. The reading guide is what tells a reader that references
    between entities are by name and what a claim rests on, and a guide that lives outside the
    bundle is a guide this reader never sees. Neither is an entity, neither carries a marker,
@@ -400,7 +400,7 @@ its own reasoning about the `<!-- entity: … -->` marker in step 3 is where it 
    Each source is then written as:
 
    - `# <the file's name without .md>`, and one sentence saying what the source holds and when
-     to read it. That sentence is what NotebookLM's per-source summary is built from and the
+     to read it. That sentence is what Gemini Notebook's per-source summary is built from and the
      first thing a reader of the source list sees. Where the instance declares its own grouping
      the sentence is the one the declaration wrote;
    - the folder's `README.md` when there is one, less an opening H1 that only repeats the title
@@ -469,7 +469,7 @@ Expected, one line per file and the totals last:
    1 entity    Sources.md
    5 entities  Values.md
    1 entity    Vision.md
- 133 entities  in 11 sources under /Users/rob/git/robertblust/mental-model/dist/mental-model-notebooklm
+ 133 entities  in 11 sources under /Users/rob/git/robertblust/mental-model/dist/mental-model-gemini-notebook
 ```
 
 - [ ] **Step 6: Run the verifier and expect it to pass**
@@ -483,8 +483,8 @@ Expected: `PASS  11 sources, 133 entities, largest 15,383 words`, exit 0. 133 is
 - [ ] **Step 7: Check the build is a function of the model and nothing else**
 
 ```bash
-cd ~/git/robertblust/mental-model && cp -R dist/mental-model-notebooklm /tmp/nb-first
-python3 .claude/skills/companygraph-export/build.py > /dev/null && diff -r /tmp/nb-first dist/mental-model-notebooklm && rm -rf /tmp/nb-first
+cd ~/git/robertblust/mental-model && cp -R dist/mental-model-gemini-notebook /tmp/nb-first
+python3 .claude/skills/companygraph-export/build.py > /dev/null && diff -r /tmp/nb-first dist/mental-model-gemini-notebook && rm -rf /tmp/nb-first
 ```
 
 Expected: no output. A rendering that differs between two runs over an unchanged model is a rendering whose output nobody can compare, which is the whole apparatus of this plan defeated.
@@ -492,24 +492,24 @@ Expected: no output. A rendering that differs between two runs over an unchanged
 - [ ] **Step 8: Check that no token reached the bundle, and that the guide arrived whole**
 
 ```bash
-cd ~/git/robertblust/mental-model && grep -rn '{{' dist/mental-model-notebooklm/ ; echo "tokens=$?"
-sed -n '1,12p' dist/mental-model-notebooklm/AGENTS.md
+cd ~/git/robertblust/mental-model && grep -rn '{{' dist/mental-model-gemini-notebook/ ; echo "tokens=$?"
+sed -n '1,12p' dist/mental-model-gemini-notebook/AGENTS.md
 ```
 
 Expected: `tokens=1`, grep finding nothing, and the guide's opening blockquote reading 36, 69, 133 and 11 as numbers. Then prove the failure works, because a check nobody has seen fail is a check nobody knows the state of:
 
 ```bash
-cd ~/git/robertblust/mental-model && printf '\n{{count:Skils}}\n' >> export/notebooklm-AGENTS.md
+cd ~/git/robertblust/mental-model && printf '\n{{count:Skils}}\n' >> export/gemini-notebook-AGENTS.md
 python3 .claude/skills/companygraph-export/build.py; echo "exit=$?"
-git checkout export/notebooklm-AGENTS.md
+git checkout export/gemini-notebook-AGENTS.md
 ```
 
-Expected: ``FAIL  export/notebooklm-AGENTS.md: nothing counts `{{count:Skils}}` ``, exit 1, and the bundle on disk untouched — the substitution and its check both run before the old folder is removed, so a failed build leaves the last good bundle in place.
+Expected: ``FAIL  export/gemini-notebook-AGENTS.md: nothing counts `{{count:Skils}}` ``, exit 1, and the bundle on disk untouched — the substitution and its check both run before the old folder is removed, so a failed build leaves the last good bundle in place.
 
 - [ ] **Step 9: Read one source end to end**
 
 ```bash
-cd ~/git/robertblust/mental-model && sed -n '1,40p' dist/mental-model-notebooklm/Profiles.md
+cd ~/git/robertblust/mental-model && sed -n '1,40p' dist/mental-model-gemini-notebook/Profiles.md
 ```
 
 The file opens `# Profiles`, then the export's own sentence saying what the source holds and when to read it, then `model/profiles/README.md` as context with its repeated `# Profiles` dropped, then the first marker and `model/profiles/robert-blust/robert-blust.md` exactly as it is on disk: the `---` fence, `source: Local`, the `# Robert Blust` H1, the `>` tagline, the Skills table. The profile leads the 36 experiences it owns because entities are ordered shallowest path first. If any of that is false, fix the script and re-run rather than patching the output.
@@ -528,7 +528,7 @@ git commit -m "The export renders the model twice, for two readers"
 
 **Files:**
 - Modify: `docs/specs/2026-09-07-notebooklm-export.md`
-- Modify: `../communication/posts/2026-09-15-blust-ch/wip/notebooklm-context.md`
+- Modify: `../communication/posts/2026-09-15-blust-ch/wip/gemini-notebook-context.md`
 - Modify: `../communication/posts/2026-09-15-blust-ch/wip/README.md`
 
 **Interfaces:**
@@ -542,14 +542,14 @@ The spec is the authority the rest of this plan argues from, and it is correct. 
 - the export cuts the model by root type, and a grouping keyed to anything the instance has not declared for every entity is a cut made by whatever a pattern happens to match;
 - an entity is preceded by its marker and reproduced exactly as it is written on disk, no field dropped or reordered and no heading moved;
 - the marker is kept and is the only thing between two entities, because on disk it is an unambiguous boundary where a bare `---` is not and it is what makes coverage checkable;
-- the declaration mechanism stays for an instance with a narrative to make, in `export/notebooklm-sources.md` and not `.json`, because the export is a procedure an agent follows rather than a program parsing config and Markdown lets each source carry the sentence saying why it is one source;
+- the declaration mechanism stays for an instance with a narrative to make, in `export/gemini-notebook-sources.md` and not `.json`, because the export is a procedure an agent follows rather than a program parsing config and Markdown lets each source carry the sentence saying why it is one source;
 - two documents ship as sources of their own, and every count a document states is generated on the run that ships it.
 
 No edit is expected. If one is needed, the spec is what changes and the code follows it.
 
 - [ ] **Step 2: Point the timeline brief at the sources the export makes**
 
-The brief at `../communication/posts/2026-09-15-blust-ch/wip/notebooklm-context.md` steers NotebookLM by naming sources, so a name that no longer exists is a source the hosts cannot open. Replace the paragraph naming sources with one naming the eleven this bundle holds, and keep the instruction that the source on how the model is built is quoted rather than summarized — that source is now `Meta.md`, with the kinds and the levels in `Experience kinds.md` and `Proficiency levels.md` beside it. `communication` is private, has no remote and never gets one.
+The brief at `../communication/posts/2026-09-15-blust-ch/wip/gemini-notebook-context.md` steers Gemini Notebook by naming sources, so a name that no longer exists is a source the hosts cannot open. Replace the paragraph naming sources with one naming the eleven this bundle holds, and keep the instruction that the source on how the model is built is quoted rather than summarized — that source is now `Meta.md`, with the kinds and the levels in `Experience kinds.md` and `Proficiency levels.md` beside it. `communication` is private, has no remote and never gets one.
 
 - [ ] **Step 3: Replace the staleness check in the post's README**
 
@@ -568,7 +568,7 @@ git commit -m "The timeline brief names the sources the export now makes"
 
 - [ ] **Step 5: Upload the bundle and read the source list**
 
-Drag every file from `dist/mental-model-notebooklm/` into a new notebook, `AGENTS.md` and `README.md` included. The test is whether the source list reads as a list of subjects a brief can steer with, and whether a host asked how a claim is evidenced follows a skill's name from `Skills.md` to the Evidence cell in `Profiles.md`. A host that cannot make that hop has met the failure the guide exists to prevent, and the fix is `export/notebooklm-AGENTS.md`.
+Drag every file from `dist/mental-model-gemini-notebook/` into a new notebook, `AGENTS.md` and `README.md` included. The test is whether the source list reads as a list of subjects a brief can steer with, and whether a host asked how a claim is evidenced follows a skill's name from `Skills.md` to the Evidence cell in `Profiles.md`. A host that cannot make that hop has met the failure the guide exists to prevent, and the fix is `export/gemini-notebook-AGENTS.md`.
 
 - [ ] **Step 6: Report the branch and stop**
 

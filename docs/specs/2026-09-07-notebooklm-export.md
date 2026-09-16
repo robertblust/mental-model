@@ -1,6 +1,6 @@
 # One walk, two bundles — design
 
-> `companygraph-export` produces a loadable agent skill, and NotebookLM has been fed the same
+> `companygraph-export` produces a loadable agent skill, and Gemini Notebook has been fed the same
 > zip. It is the wrong container for that reader, which takes files and no archive among them.
 > This records what the second artifact is, why it comes out of the same export rather than a
 > second skill, why it carries the model's pages exactly as they are written, and the rule that
@@ -13,7 +13,7 @@ will hold to it: `<!-- entity: <path> -->` marks a boundary, an H1 is a name, `m
 holds the rules. Consolidation by root type costs it nothing, because it reads the file it
 needs and the path in the comment gives back the provenance consolidation threw away.
 
-NotebookLM is read by two synthetic hosts and a person listening to them. It strips comments,
+Gemini Notebook is read by two synthetic hosts and a person listening to them. It strips comments,
 so every entity marker is gone before a host sees it. It has no convention to be told; what it
 has is a source list, and a source's title is the name a citation carries and the handle a
 prompt steers with. Its published caps are 500,000 words or 200 MB per source and 50 sources on
@@ -36,7 +36,7 @@ implementation of the same intent, and the day a root type is added one of the t
 forgetting it — silently, because neither would know what the other saw.
 
 That is not a hypothetical. The zip was built by hand from steps written in the skill while the
-NotebookLM bundle was built by script, and they diverged: the rule that a folder's `README.md`
+Gemini Notebook bundle was built by script, and they diverged: the rule that a folder's `README.md`
 is never an entity landed in the script and in the verifier and not in the hand-run count, which
 kept the old asymmetric form for two more commits. A procedure followed by hand is also a
 different program each time somebody follows it, which is the same failure seen from the other
@@ -70,7 +70,7 @@ model that no longer existed.
 ## Shape differs, coverage never does
 
 Both artifacts carry the whole model, including `meta.md`. Cutting the schema from the
-NotebookLM bundle was considered and refused: it is the model's own account of how it is built,
+Gemini Notebook bundle was considered and refused: it is the model's own account of how it is built,
 `experience-kinds.md` inside it holds the argument that a career break spent building products
 is neither a role nor a project, and an artifact that drops it is no longer the model. Steering
 a reader away from a source is the prompt's job, not the export's — a brief can say quote this
@@ -82,12 +82,12 @@ assertion is identical for both.
 
 ## The container is part of the optimization
 
-A skill is uploaded as an archive. NotebookLM does not accept one — its list is Word, plain
+A skill is uploaded as an archive. Gemini Notebook does not accept one — its list is Word, plain
 text, Markdown, PDF, CSV, PowerPoint, ePub, images, audio and URLs, and an archive is not on
 it. So the artifacts differ in the form they leave in:
 
 - `dist/<instance>-skill.zip`, as now.
-- `dist/<instance>-notebooklm/`, a plain folder of `.md` files, dragged in as they are.
+- `dist/<instance>-gemini-notebook/`, a plain folder of `.md` files, dragged in as they are.
 
 Zipping the second and telling the reader to extract it would be a step that exists only
 because the first one needed it.
@@ -107,7 +107,7 @@ most questions are about, was then the hardest one to cite, and nobody had decid
 there: the pattern language had. The model files an experience by year and kind, not by
 employer, and a cut is only ever as good as what the model declares.
 
-An instance with a narrative to make declares one anyway, in `export/notebooklm-sources.md`,
+An instance with a narrative to make declares one anyway, in `export/gemini-notebook-sources.md`,
 and the mechanism stays for it. It is Markdown and not JSON because the export is a procedure
 an agent follows rather than a program parsing config, and Markdown lets each source carry the
 sentence saying why it is one source — which is the sentence the rendering then uses to open
@@ -147,7 +147,7 @@ A model of one person and a model of a company take the same cut, and the number
 scales. The company graph measured for this holds 342 entities across 20 root types — 104
 customers, 71 features, 42 KPIs, 27 roles, 26 people — and ships as 20 sources against a cap of
 50 on the free tier, its largest source 23,563 words against a per-source cap of 500,000, a
-twentieth of it. It is in production use with NotebookLM in that shape. The room is worth
+twentieth of it. It is in production use with Gemini Notebook in that shape. The room is worth
 naming because it says where the limit is not: an instance twenty times the size of that one
 still has sources inside the word cap, and would meet the source count long before it met it.
 
@@ -197,7 +197,7 @@ is also what makes coverage checkable without re-deriving the grouping, which is
 the second artifact exists to make.
 
 Two documents ship as sources of their own beside the nine that carry entities: the
-repository's `README.md`, and `export/notebooklm-AGENTS.md` as the bundle's `AGENTS.md`. The
+repository's `README.md`, and `export/gemini-notebook-AGENTS.md` as the bundle's `AGENTS.md`. The
 guide is the answer to what a stripped bundle cannot say for itself — that references between
 entities are by name, that an experience's `skills:` list names skills living in another source
 and a claim's Evidence cell names experiences living in this one — and it carries the
