@@ -34,4 +34,5 @@ the Controller acts on.
 | What | URL |
 | --- | --- |
 | Working rules | https://github.com/robertblust/conventions/blob/main/conventions/WORKING.md |
-| Rulebook | https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/implementer-prompt.md |
+| Rulebook, superpowers | https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/implementer-prompt.md |
+| Rulebook, spec-kit, one agent holding this seat and the Controller | https://github.com/guestgraph/engine/blob/main/.claude/skills/speckit-implement/SKILL.md |

@@ -33,4 +33,6 @@ order is the order they can be worked in, not the order they were thought of.
 | What | URL |
 | --- | --- |
 | Working rules | https://github.com/robertblust/conventions/blob/main/conventions/WORKING.md |
-| Rulebook | https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md |
+| Rulebook, superpowers | https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md |
+| Rulebook, spec-kit, the plan | https://github.com/guestgraph/engine/blob/main/.claude/skills/speckit-plan/SKILL.md |
+| Rulebook, spec-kit, the tasks | https://github.com/guestgraph/engine/blob/main/.claude/skills/speckit-tasks/SKILL.md |

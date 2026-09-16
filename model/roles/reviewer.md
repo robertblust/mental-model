@@ -32,6 +32,7 @@ finding is an input to whoever merges, never a verdict on a person.
 
 | What | URL |
 | --- | --- |
-| Rulebook, one task | https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/task-reviewer-prompt.md |
-| Rulebook, a fix round | https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/re-review-prompt.md |
-| Rulebook, a whole branch | https://github.com/obra/superpowers/blob/main/skills/requesting-code-review/code-reviewer.md |
+| Rulebook, superpowers, one task | https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/task-reviewer-prompt.md |
+| Rulebook, superpowers, a fix round | https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/re-review-prompt.md |
+| Rulebook, superpowers, a whole branch | https://github.com/obra/superpowers/blob/main/skills/requesting-code-review/code-reviewer.md |
+| Rulebook, spec-kit, the artifacts | https://github.com/guestgraph/engine/blob/main/.claude/skills/speckit-analyze/SKILL.md |

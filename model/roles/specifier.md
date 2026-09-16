@@ -34,4 +34,6 @@ done. Where a decision is the Owner's, the seat names the options and parks the 
 | What | URL |
 | --- | --- |
 | Working rules | https://github.com/robertblust/conventions/blob/main/conventions/WORKING.md |
-| Rulebook | https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md |
+| Rulebook, superpowers | https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md |
+| Rulebook, spec-kit, the specification | https://github.com/guestgraph/engine/blob/main/.claude/skills/speckit-specify/SKILL.md |
+| Rulebook, spec-kit, the open questions | https://github.com/guestgraph/engine/blob/main/.claude/skills/speckit-clarify/SKILL.md |
