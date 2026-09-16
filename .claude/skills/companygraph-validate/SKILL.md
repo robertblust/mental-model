@@ -60,10 +60,13 @@ mechanical rules it would cover are done here by hand as well.
    agent reading an entity, and this pass is the only thing that checks them.
 
    One writing rule produces a report line rather than a failure, and the role schema says
-   so: for every profile that lists roles, every skill a listed role `requires` that has no
-   row in the profile's Skills table is a gap — `gap <profile>: <role> requires <skill>` —
-   reported once per role and skill and never counted as a failure. It says what the holder has to
-   learn or the company has to hire.
+   so: for every profile whose nature is `human` and that lists roles, every skill a listed
+   role `requires` that has no row in the profile's Skills table is a gap —
+   `gap <profile>: <role> requires <skill>` — reported once per role and skill and never
+   counted as a failure. It says what the holder has to learn or the company has to hire. A
+   profile whose nature is `agent` claims no skill and carries no Skills table, so a seat it
+   holds reports no gap: what that seat requires is answered by its rulebook, not by a row
+   the agent wrote about itself.
 
 ## Report
 
