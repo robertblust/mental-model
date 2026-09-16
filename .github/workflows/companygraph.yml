@@ -5,4 +5,4 @@ on:
   pull_request:
 jobs:
   companygraph:
-    uses: companygraph/meta-model/.github/workflows/instance-check.yml@v0.25.0
+    uses: companygraph/meta-model/.github/workflows/instance-check.yml@v0.25.1
