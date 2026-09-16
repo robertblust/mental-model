@@ -1,9 +1,9 @@
 {
-  "tooling": "0.23.0",
+  "tooling": "0.24.0",
   "core": {
-    "version": "0.23.0",
+    "version": "0.24.0",
     "shape": 2,
-    "source": "fetched:v0.23.0"
+    "source": "fetched:v0.24.0"
   },
   "units": "meta",
   "packs": [],
@@ -13,10 +13,10 @@
     "meta/core/experience-kind-schema.md": "sha256:dabd3cf5972093da7a329d27baf394d4448a9f862b54b1f96a75c8425acb4da5",
     "meta/core/experience-schema.md": "sha256:a5739b4e49c7ed5e4f3df8bd03f3d34645f6e936615a428722e4068afe38aeb7",
     "meta/core/identity-schema.md": "sha256:681c7e9b23cff6979fa167822005a0e4199d2bd17738f2ac406c2f2b00662c24",
-    "meta/core/manifest.json": "sha256:7ee79dcdf98579e5e531edc21c3a471b2e6885228e32a2ee5a43823b69d168f5",
+    "meta/core/manifest.json": "sha256:bfa2aceffbaed9623f768007d458286ea59230355d5f992a2fbea4e3aca9508e",
     "meta/core/proficiency-level-schema.md": "sha256:cae2c9ea6dd25a563a157d06321b16e9515de34ec534b8d3622259bc13a6fc8d",
-    "meta/core/profile-schema.md": "sha256:fdb8e1b6fcabfd496643cdc6e1223377cfef5cf180fae83cfd7359eea32f3a5e",
-    "meta/core/role-schema.md": "sha256:25859120d1eb2f8f5f27b9dfcfa06f8bf086f9d01394803c43792959cdfcf65b",
+    "meta/core/profile-schema.md": "sha256:17529839897b57b7e1f4a483f56e275f14a649ede975f36f8fb7f1bc15d724b6",
+    "meta/core/role-schema.md": "sha256:9758f2a487cf92d57406ec1f66f50d758f370c32082035d4a396a8e57f3298b8",
     "meta/core/skill-schema.md": "sha256:d5d6f5f036e511871343bd119fe0c69db040104a0b0ded504cb8b48de2b3a5fd",
     "meta/core/source-schema.md": "sha256:d36e7983c37d0322756004ffd03832bdae60e246762d8a094fb5610f0009285f",
     "meta/core/strategic-objective-schema.md": "sha256:c7f416eeac4d81a24c053bbb19ec19071154f7a9b94b1431185bf1a126db4a24",
