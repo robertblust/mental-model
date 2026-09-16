@@ -35,6 +35,8 @@ An approved plan, a branch, and for each task the brief that is the whole of its
    and a severity, strengths named first.
 4. The Controller decides: fix, accept, or park for the Owner.
 5. The task is committed before the next one is dispatched.
+6. A finding against a task already committed comes back as its own brief; the commit
+   stands and the fix is a new one.
 
 ### Prose
 

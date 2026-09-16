@@ -24,6 +24,7 @@ in the plan's order, each committed as it lands.
 ## What it never does
 
 - Never writes the change or the test itself.
+- Never rewrites what a commit contains; a finding against a committed task is a new brief.
 - Never dispatches the next task while the last one's findings are open.
 - Never accepts a claim that a check passed without the check's output.
 - Never merges, tags or edits a pull request.
