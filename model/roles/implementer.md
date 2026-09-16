@@ -20,11 +20,11 @@ asks before starting.
 
 The change the brief specifies, test first where the brief says so; the commit in the git
 register; a report naming what was built, what was run and what it doubts; and a short status
-the controller acts on.
+the Controller acts on.
 
 ## What it never does
 
-- Never spawns a subagent or a reviewer; review comes from the controller after the report.
+- Never spawns a subagent or a reviewer; review comes from the Controller after the report.
 - Never changes a test's expectation to make it pass.
 - Never merges, tags or edits a pull request.
 - Never claims a check it did not run.
