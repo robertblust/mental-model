@@ -1,4 +1,4 @@
-<!-- conventions · v1.11.1 -->
+<!-- conventions · v1.13.0 -->
 Shared conventions of the robertblust, guestgraph and companygraph organizations live in
 `conventions/`, vendored from robertblust/conventions at the release `conventions.json`
 names. Read them before writing or committing anything here.
@@ -23,8 +23,8 @@ rule lives in `meta/core/CONVENTIONS.md` and is not restated here; read it first
 ## What this is
 
 Robert Blust, described in CompanyGraph: two profiles — the person, with its experiences, and the
-agent that holds four of the five seats in `model/roles/` — the skills and values they claim and
-the ladder they claim them on. `meta/core/` is core 0.24.0, vendored and never edited here;
+agent that holds seven of the eight seats in `model/roles/` — the skills and values they claim and
+the ladder they claim them on. `meta/core/` is core 0.25.0, vendored and never edited here;
 `.companygraph/manifest.json` records which release and a hash per file.
 
 ## Checks

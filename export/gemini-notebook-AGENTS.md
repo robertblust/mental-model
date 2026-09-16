@@ -36,6 +36,8 @@ The rest carry its {{entities}} entities.
 | `vision.md` | the future the model works toward | Ask what the work is building toward |
 | `strategic-objectives.md` | the {{count:Strategic objectives}} objective the vision needs made true | Ask what he is trying to make true, and how he would know |
 | `strategies.md` | the {{count:Strategies}} strategy pursuing it | Ask how the work is actually done, and what it refuses |
+| `roles.md` | the {{count:Roles}} seats the company needs filled, each with what it takes, produces and never does | Ask what a seat is responsible for, and what it refuses |
+| `processes.md` | the process and its phases, {{count:Processes}} entities | Ask how a change gets made, phase by phase |
 | `meta.md` | CompanyGraph core: its conventions and its schemas, {{count:Meta}} entities | Check what a page must carry and how a reference resolves |
 
 ## How to read the model

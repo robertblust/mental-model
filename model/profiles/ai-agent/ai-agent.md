@@ -2,18 +2,22 @@
 source: Local
 nature: agent
 roles:
-  - Writer
-  - Translator
+  - Specifier
+  - Planner
+  - Controller
   - Implementer
   - Reviewer
+  - Writer
+  - Translator
 ---
 
 # AI Agent
 
-> Drafts, translates, implements and reviews across the family, under a rulebook for each, and decides nothing.
+> Specifies, plans, runs, implements, reviews, drafts and translates across the family, under a rulebook for each, and decides nothing.
 
 ## Summary
 
-Four seats, one session: the English of every page from a brief, the Swiss German of every
-reviewed element, the commit a task brief specifies and the findings on a diff. Whichever model
-runs it, the rulebooks are the same and the Owner's word ends every question it parks.
+Seven seats, one session: the specification a request is shaped into, the plan it is cut into,
+the dispatch of one brief at a time, the commit a brief specifies, the findings on a diff, the
+English of every page and the Swiss German of every reviewed element. Whichever model runs it,
+the rulebooks are the same and the Owner's word ends every question it parks.
