@@ -29,10 +29,13 @@ the ladder they claim them on. `meta/core/` is core 0.24.0, vendored and never e
 
 ## Checks
 
-The only job is `conventions`, called from robertblust/conventions at the pinned tag; the
-ruleset on `main` requires it. `meta/` is excluded from the prose check because it is core,
-vendored and never edited here; its words are core's to hold. `docs/superpowers/` is excluded
-too, as in every other member: its research quotes the taxonomy labels it compares.
+Two jobs, both required by the ruleset on `main`: `companygraph`, which calls meta-model's
+`instance-check.yml` at the release named in the workflow and is shown by GitHub as
+`companygraph / companygraph`, and `conventions`, called from robertblust/conventions at the
+pinned tag and shown as `conventions / conventions`. `meta/` is excluded from the prose check
+because it is core, vendored and never edited here; its words are core's to hold.
+`docs/superpowers/` is excluded too, as in every other member: its research quotes the taxonomy
+labels it compares.
 
 ## Before every commit
 
