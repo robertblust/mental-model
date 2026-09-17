@@ -16,7 +16,12 @@ skills:
 
 ## Achievements
 
+### Context
+
 - Board member of the Swiss Eclipse User Group — the Eclipse Special Interest Group within JUG Switzerland — from 2011 to 2014.
+
+### Sharing
+
 - Co-organized the annual Eclipse DemoCamp (Zürich) and Eclipse Finance Day.
 
 ## References

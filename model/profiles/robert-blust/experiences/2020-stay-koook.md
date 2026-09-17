@@ -28,17 +28,31 @@ skills:
 
 ## Achievements
 
+### Context
+
 - A digital hospitality platform for SV Group (“Stay KooooK”) putting the entire guest journey in one app — book, pay, check in, open the room, check out — replacing manual reception and paper processes (a 63-room hotel runs on just 2.4 FTE, ex-housekeeping).
+
+### Leadership
+
 - Owned the complete architecture, front to back, built to 3AP's microservice reference architecture and the last project to be: React and TypeScript frontend, MUI from 2021; reactive Spring Boot WebFlux backend publishing and consuming through Spring Cloud Stream over Pub/Sub; Camunda (Zeebe) process orchestration; Google Cloud, Kubernetes and PostgreSQL.
-- Modeled the guest journey from booking to check-out in Camunda BPMN, the model the Zeebe engine ran and LIKE MAGIC later carried over.
+- Presented the solution architecture at the winning pitch.
+
+### Architecture
+
 - Designed the software architecture and the microservice cut, each microservice holding its own schema in PostgreSQL.
-- Wrote the integration and security parts of the reactive Spring Boot WebFlux backend in Java.
+- Modeled the guest journey from booking to check-out in Camunda BPMN, the model the Zeebe engine ran and LIKE MAGIC later carried over.
 - Designed the event-driven architecture: integration services took external events in over webhooks and WebSockets, transformed them into internal events and published them to Google Cloud Pub/Sub.
 - Designed the event streams themselves on Spring Cloud Stream, bindings declared per service so the transport underneath could be swapped: the topic layout, redelivery handling and consumers that processed each event once.
-- Ran it on a delivery pipeline from the first week, three days after the repository opened.
 - Gave the platform its own API surface from the first commit — REST specified contract-first in OpenAPI, secured by OAuth 2.0 — which is the one LIKE MAGIC later published.
+
+### Engineering
+
+- Wrote the integration and security parts of the reactive Spring Boot WebFlux backend in Java.
+- Ran it on a delivery pipeline from the first week, three days after the repository opened.
 - Built the integrations into Apaleo PMS and Salto KS smart-door access.
-- Presented the solution architecture at the winning pitch.
+
+### Results
+
 - Won Best Use of Technology at the Serviced Apartment Awards 2021; was nominated for the Best Swiss Web Award 2021 (Innovation).
 - The platform became LIKE MAGIC, a spin-off from SV Group, and co-founding it was the reason for leaving 3AP.
 - As likeMagic, the platform won gold for Best Digital Transformation and silver for Customer Driven Business Change and Transformation at the European Customer Experience Awards 2022.

@@ -14,7 +14,12 @@ skills:
 
 ## Achievements
 
+### Context
+
 - Earned a four-year part-time degree awarded by the University of Applied Sciences of Argovia (Fachhochschule Aargau) and taught at AKAD, carrying the protected title Dipl. Wirtschaftsinformatiker FH.
 - Majored in Technology Engineering: software and web engineering, systems and network programming, IT management.
 - Combined computer science, business administration and project management.
+
+### Sharing
+
 - Wrote the degree dissertation on Model-Driven Architecture (MDA) for component-based and service-oriented architecture (SOA).
