@@ -27,8 +27,8 @@ still leaves a pull request, which is where its reason is written. Agents draft 
 and against the schemas; I review on the branch, in the diff and on the rendered page. The
 conventions the agents work under are themselves files — how I write, how I work with git, what
 each repository is — vendored into every repository at a pinned release, so a rule improves in
-one place and reaches all of them. Roles are files too, in `model/roles/`: eight seats, one held
-by me and seven by an agent, each saying what it takes, what it produces and what it never does.
+one place and reaches all of them. Roles are files too, in `model/roles/`: one seat held by me
+and every other by an agent, each saying what it takes, what it produces and what it never does.
 The Implementer commits what its brief specifies and never on its own initiative; none of the
 other agent-held seats commits at all.
 

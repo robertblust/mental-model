@@ -23,8 +23,8 @@ rule lives in `meta/core/CONVENTIONS.md` and is not restated here; read it first
 ## What this is
 
 Robert Blust, described in CompanyGraph: two profiles — the person, with its experiences, and the
-agent that holds seven of the eight seats in `model/roles/` — the skills and values they claim and
-the ladder they claim them on. `meta/core/` is core 0.26.0, vendored and never edited here;
+agent that holds every seat in `model/roles/` but the Owner's — the skills and values they claim
+and the ladder they claim them on. `meta/core/` is core, vendored and never edited here;
 `.companygraph/manifest.json` records which release and a hash per file.
 
 ## Checks
@@ -39,7 +39,7 @@ labels it compares.
 
 ## Before every commit
 
-Run the `companygraph-validate` skill. It reports per rule R1–R17 and names what it did not
+Run the `companygraph-validate` skill. It reports per numbered rule and names what it did not
 check. A commit with an unresolved reference is not made.
 
 The skill lives in `.claude/skills/` here, so it loads only for a session rooted in this
@@ -48,6 +48,21 @@ subdirectory — sees no skill of this repository's at all, and the failure is s
 simply absent rather than reported missing. Where that happens the pass is still owed, by hand
 and against `meta/core/CONVENTIONS.md`, and the commit says which of the two ran. A `Verified:`
 line naming a skill that did not load is the one outcome this paragraph exists to prevent.
+
+## Numbers that move
+
+A count or a version of something that still changes is not written down here: not the types,
+releases or rules of core, not the release this repository vendors, not the experiences, skills,
+values, seats or tools the model holds. Such a number is true on the day it is written, and
+nothing in this repository fails when it stops being true, so it goes stale without a sound;
+refreshing it only resets the clock, which is how the same entry went stale twice. Say where
+the number is read instead — the manifest for the release, the folder for the entities, the list
+the sentence sits beside — or say it without the number.
+
+A number fixed by a closed period stays, because nothing will move it: 25 people at a company
+the period ended with, 12 of 25 applications in a search that is over. Where a quantity that
+still moves has to be said, a floor that stays true is the form, “over 25 years”. Before a
+commit, read the diff for digits and number words and ask of each whether it can change.
 
 ## Mastership
 
