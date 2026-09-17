@@ -12,5 +12,10 @@ organization: UBS AG
 
 ## Achievements
 
+### Context
+
 - Completed UBS's IT-Developer program: an eight-month course from October 1999, followed by a ten-month internship, graduating in March 2001.
+
+### Results
+
 - Laid the foundation for nearly 14 further years and three roles within UBS Group IT.

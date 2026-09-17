@@ -24,13 +24,27 @@ skills:
 
 ## Achievements
 
+### Context
+
 - A digital-first self-service platform for complementary health insurance — customers and brokers configure products, calculate quotes and purchase policies across two integrated apps over one backend.
-- Built its signature automated health-insurer switching service: AXA sells only complementary insurance, not the mandatory basic insurance (which, by Swiss law, every resident must hold and no insurer may refuse). The service compares basic-insurance premiums each year and automatically moves AXA's complementary-insurance customers to the cheapest basic insurer — saving about CHF 426 per year on average, with AXA taking no basic-insurance commission to keep the advice neutral.
+
+### Leadership
+
 - Diagnosed what the core insurance system Adcubum Syrius allowed an integration to do before advising on it.
 - Owned the complete integration architecture and its implementation, including the integration with Syrius.
-- Built the Java/Spring Boot and Node.js backend with GraphQL APIs over MongoDB, to 3AP's microservice reference architecture and its delivery pipeline.
+
+### Architecture
+
 - Designed the platform's software architecture: the microservice cut behind the two apps, the API both front ends were built against and the MongoDB data model beneath them.
+
+### Engineering
+
+- Built its signature automated health-insurer switching service: AXA sells only complementary insurance, not the mandatory basic insurance (which, by Swiss law, every resident must hold and no insurer may refuse). The service compares basic-insurance premiums each year and automatically moves AXA's complementary-insurance customers to the cheapest basic insurer — saving about CHF 426 per year on average, with AXA taking no basic-insurance commission to keep the advice neutral.
+- Built the Java/Spring Boot and Node.js backend with GraphQL APIs over MongoDB, to 3AP's microservice reference architecture and its delivery pipeline.
 - Built the React/Next.js frontend on AXA's own on-premise OpenShift — a platform the insurer ran itself, so the architecture had its elasticity without its managed services.
+
+### Results
+
 - Won the work in a competitive pitch, presenting the solution architecture as the people who would build it.
 - Placed 3rd at the 2017 Swiss Insurance Innovation Prize.
 

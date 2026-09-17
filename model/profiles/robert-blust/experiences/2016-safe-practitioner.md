@@ -14,5 +14,10 @@ skills:
 
 ## Achievements
 
+### Context
+
 - Completed the SAFe 4.0 for Teams course and passed the SAFe Practitioner certification, effective October 18, 2016 (certificate 28616437–8064).
+
+### Results
+
 - The certification was valid through October 18, 2017 and was not renewed; the practice it taught still shapes how delivery is run.

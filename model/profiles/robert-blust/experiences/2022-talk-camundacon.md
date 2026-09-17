@@ -17,8 +17,16 @@ skills:
 
 ## Achievements
 
+### Context
+
 - Co-presented *“From 'Intrapreneurs' to 'Entrepreneurs' in 6 months with user-centric innovation – Powered by Camunda”* with Markus Feller at CamundaCon 2022 in Berlin on October 5–6, 2022: how SV Group launched a new hotel brand through the crisis and turned it into a white-label SaaS business, LIKE MAGIC, on Camunda Platform 8.
+
+### Sharing
+
 - Took the orchestration part of the talk: how the platform ran and monitored the guest journey on Camunda.
+
+### Results
+
 - Featured in Camunda's video *“Talking Process Orchestration with likeMagic's Robert Blust”*.
 
 ## References

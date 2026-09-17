@@ -1,19 +1,20 @@
 {
-  "tooling": "0.27.0",
+  "tooling": "0.28.0",
   "core": {
-    "version": "0.27.0",
-    "shape": 2,
-    "source": "fetched:v0.27.0"
+    "version": "0.28.0",
+    "shape": 3,
+    "source": "fetched:v0.28.0"
   },
   "units": "meta",
   "packs": [],
   "files": {
-    "meta/core/CONVENTIONS.md": "sha256:e7ff158b299faec721e90693b49a3679c246c1183e10d0b6ccd654e351820262",
+    "meta/core/CONVENTIONS.md": "sha256:b69c85360d07dad09c67f0d5fe6dbb93ae82c7767ed1bd32ee4262ef68afd434",
     "meta/core/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "meta/core/achievement-kind-schema.md": "sha256:8a80dcc381462cb2362762ddcf67636d75cc81b22761a9a13f864972821f7b5b",
     "meta/core/experience-kind-schema.md": "sha256:3bc9984910600dab4b186fc58fd7c9234ff09724cd78578a5fe7f584352fc2f9",
-    "meta/core/experience-schema.md": "sha256:0cf88098f800f56e3ed1c41e5956fc784b2a7673ff9616a66b047509ec826894",
+    "meta/core/experience-schema.md": "sha256:7eba8295dd08e84bc614af1ebdc0172f1b27507d9b5a4f042314aa3ece9794d9",
     "meta/core/identity-schema.md": "sha256:1fb78df3a1684abfa2ca9d5cf4f7edf51fb470b0dc06ff975631f1c65b84e16a",
-    "meta/core/manifest.json": "sha256:b34dbf0fca9ac18f3a308248647359fed661fe42cb650f7875d10145caea1397",
+    "meta/core/manifest.json": "sha256:c4b3d562076de595351594d6366868d9d0f7e8ad0124913dbbfdadefe17ca038",
     "meta/core/phase-schema.md": "sha256:1dc1eb73620796d2e2f26072c19a5a41a58ca2fe24e8bda1ce4e25960b1b0a10",
     "meta/core/process-schema.md": "sha256:b0a6f94fc82ea97a7b306cba75a70f2fdbdff3e35d6a83fcb0099bc142277d11",
     "meta/core/proficiency-level-schema.md": "sha256:d1e195fce8130ca306e6fad483612ce70f7befb2a90bf82a089dab14846b54ec",

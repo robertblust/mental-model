@@ -17,7 +17,12 @@ skills:
 
 ## Achievements
 
+### Context
+
 - Represented UBS in a cross-industry Eclipse Foundation initiative to build an integrated, open-source modeling toolchain — contributing alongside Airbus, Alcatel-Lucent, Atos, CEA LIST, Ericsson, Euranova, Fraunhofer FOKUS, Geensys, Generic Concept, itemis, Obeo, SBB and SWIFT.
+
+### Sharing
+
 - Presented how UBS used the platform, in June 2010: one shared enterprise model assembled from Ecore metamodels designed one per problem domain (business capabilities, concepts, processes, actors, components, interfaces, data types), constrained in OCL and governed as it changed.
 - Showed each project refining that model and initializing its development and continuous integration from the design and a reference architecture by model-to-model and model-to-text transformation.
 
