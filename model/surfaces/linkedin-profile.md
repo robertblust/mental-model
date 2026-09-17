@@ -1,5 +1,6 @@
 ---
 source: Local
+production: written
 url: https://www.linkedin.com/in/robertblust/
 ---
 

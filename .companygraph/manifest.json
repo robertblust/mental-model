@@ -1,9 +1,9 @@
 {
-  "tooling": "0.25.2",
+  "tooling": "0.26.0",
   "core": {
-    "version": "0.25.2",
+    "version": "0.26.0",
     "shape": 2,
-    "source": "fetched:v0.25.2"
+    "source": "fetched:v0.26.0"
   },
   "units": "meta",
   "packs": [],
@@ -13,7 +13,7 @@
     "meta/core/experience-kind-schema.md": "sha256:dabd3cf5972093da7a329d27baf394d4448a9f862b54b1f96a75c8425acb4da5",
     "meta/core/experience-schema.md": "sha256:a5739b4e49c7ed5e4f3df8bd03f3d34645f6e936615a428722e4068afe38aeb7",
     "meta/core/identity-schema.md": "sha256:681c7e9b23cff6979fa167822005a0e4199d2bd17738f2ac406c2f2b00662c24",
-    "meta/core/manifest.json": "sha256:7adf3075137b9fc9e083ae02d80213808ad7147e812ff16c24e9950e320115ff",
+    "meta/core/manifest.json": "sha256:a8281ee0d74aaa3441c1fb05f05e75e19dd456ba82d27e1dc8efc54d3bb0c948",
     "meta/core/phase-schema.md": "sha256:c2a56c0ef6390721af10f114b545bac5f086d8b35ba40b20105a0a86f1d84428",
     "meta/core/process-schema.md": "sha256:569d3ba2a8c450f1fca1065154911a4e7dddb3a27af7a15cb2823b9797f6aac3",
     "meta/core/proficiency-level-schema.md": "sha256:cae2c9ea6dd25a563a157d06321b16e9515de34ec534b8d3622259bc13a6fc8d",
@@ -23,7 +23,7 @@
     "meta/core/source-schema.md": "sha256:d36e7983c37d0322756004ffd03832bdae60e246762d8a094fb5610f0009285f",
     "meta/core/strategic-objective-schema.md": "sha256:c7f416eeac4d81a24c053bbb19ec19071154f7a9b94b1431185bf1a126db4a24",
     "meta/core/strategy-schema.md": "sha256:14ccc6ee4d38800a1fad611a1f4f6ceb60824eaaa601e663e1a910bf30d7b46a",
-    "meta/core/surface-schema.md": "sha256:5d71e54155133768626b64b2d44b893070571035cd40f2155de8993090610ec2",
+    "meta/core/surface-schema.md": "sha256:f107b23fc25c8988d6d3e1f99c29bc6efb452d9615639d046e44e083cf3ce1bb",
     "meta/core/value-schema.md": "sha256:3f4b2f9f2a65866c10fdbb7f9c87585eaf35a8e332928a0f6d28f86fd8f5b8ff",
     "meta/core/vision-schema.md": "sha256:6b9160708bc8e8543289b127522c33c9e8497dde42d9eaf64b5b32dd69da54a0"
   }

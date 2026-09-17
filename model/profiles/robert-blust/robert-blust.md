@@ -93,6 +93,7 @@ Technology executive with over 25 years building digital platforms, scaling engi
 
 | Where | URL |
 | --- | --- |
+| blust.ch | https://blust.ch |
 | GitHub | https://github.com/robertblust |
 | LinkedIn | https://www.linkedin.com/in/robertblust/ |
 | Substack | https://substack.com/@robertblust |
