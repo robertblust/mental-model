@@ -10,9 +10,9 @@ mechanical rules it would cover are done here by hand as well.
 
 ## Procedure
 
-1. Read `meta/core/CONVENTIONS.md` in full. The rules it states are what is being checked —
-   R0–R17 at core 0.25.0 — and nothing it does not state. The count is read from the file, not
-   from here: a core upgrade adds rules and this list goes stale.
+1. Read `meta/core/CONVENTIONS.md` in full. The rules it states are what is being checked,
+   and nothing it does not state. They are read from the file and not listed
+   here, because a core upgrade adds rules.
 2. Read `.companygraph/manifest.json`. Every folder under `meta/` is a vendored unit —
    `core` always, a pack beside it — and each carries its own `manifest.json` naming the
    release it is. For every path in `files`, compute its sha256 and compare. Report a mismatch — it is not a failure (upgrade's business), but it is said.

@@ -1,7 +1,7 @@
 # Skills
 
 One file per skill, written against `meta/core/skill-schema.md` and its writing rules.
-Sixty-nine skills, ours; ten groups.
+Every skill is ours, and each belongs to one group.
 
 | Skill | Group |
 | --- | --- |
