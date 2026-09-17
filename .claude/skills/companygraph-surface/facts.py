@@ -40,11 +40,19 @@ def read(path):
                     fields[key] = value
     name = tagline = ""
     sections, current = {}, None
+    # The tagline is the first blockquote paragraph after the H1, as core's parser reads it: a
+    # run of `>` lines joined with spaces, ended by a blank line or a bare `>`.
+    in_tagline = False
     for line in body.splitlines():
+        if in_tagline and line.startswith("> ") and line[2:].strip():
+            tagline += " " + line[2:].strip()
+            continue
+        in_tagline = False
         if line.startswith("# ") and not name:
             name = line[2:].strip()
         elif line.startswith("> ") and name and not tagline and current is None:
             tagline = line[2:].strip()
+            in_tagline = True
         elif line.startswith("## "):
             current = line[3:].strip()
             sections[current] = []
