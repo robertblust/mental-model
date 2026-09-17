@@ -1,30 +1,30 @@
 {
-  "tooling": "0.26.0",
+  "tooling": "0.27.0",
   "core": {
-    "version": "0.26.0",
+    "version": "0.27.0",
     "shape": 2,
-    "source": "fetched:v0.26.0"
+    "source": "fetched:v0.27.0"
   },
   "units": "meta",
   "packs": [],
   "files": {
-    "meta/core/CONVENTIONS.md": "sha256:d59da2dbd01ef16862ce708d27b8404c7525c68264fd7e0e16ff8a8a2316cc52",
+    "meta/core/CONVENTIONS.md": "sha256:e7ff158b299faec721e90693b49a3679c246c1183e10d0b6ccd654e351820262",
     "meta/core/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-    "meta/core/experience-kind-schema.md": "sha256:dabd3cf5972093da7a329d27baf394d4448a9f862b54b1f96a75c8425acb4da5",
-    "meta/core/experience-schema.md": "sha256:a5739b4e49c7ed5e4f3df8bd03f3d34645f6e936615a428722e4068afe38aeb7",
-    "meta/core/identity-schema.md": "sha256:681c7e9b23cff6979fa167822005a0e4199d2bd17738f2ac406c2f2b00662c24",
-    "meta/core/manifest.json": "sha256:a8281ee0d74aaa3441c1fb05f05e75e19dd456ba82d27e1dc8efc54d3bb0c948",
-    "meta/core/phase-schema.md": "sha256:c2a56c0ef6390721af10f114b545bac5f086d8b35ba40b20105a0a86f1d84428",
-    "meta/core/process-schema.md": "sha256:569d3ba2a8c450f1fca1065154911a4e7dddb3a27af7a15cb2823b9797f6aac3",
-    "meta/core/proficiency-level-schema.md": "sha256:cae2c9ea6dd25a563a157d06321b16e9515de34ec534b8d3622259bc13a6fc8d",
-    "meta/core/profile-schema.md": "sha256:17529839897b57b7e1f4a483f56e275f14a649ede975f36f8fb7f1bc15d724b6",
-    "meta/core/role-schema.md": "sha256:9758f2a487cf92d57406ec1f66f50d758f370c32082035d4a396a8e57f3298b8",
-    "meta/core/skill-schema.md": "sha256:d5d6f5f036e511871343bd119fe0c69db040104a0b0ded504cb8b48de2b3a5fd",
-    "meta/core/source-schema.md": "sha256:d36e7983c37d0322756004ffd03832bdae60e246762d8a094fb5610f0009285f",
-    "meta/core/strategic-objective-schema.md": "sha256:c7f416eeac4d81a24c053bbb19ec19071154f7a9b94b1431185bf1a126db4a24",
-    "meta/core/strategy-schema.md": "sha256:14ccc6ee4d38800a1fad611a1f4f6ceb60824eaaa601e663e1a910bf30d7b46a",
-    "meta/core/surface-schema.md": "sha256:f107b23fc25c8988d6d3e1f99c29bc6efb452d9615639d046e44e083cf3ce1bb",
-    "meta/core/value-schema.md": "sha256:3f4b2f9f2a65866c10fdbb7f9c87585eaf35a8e332928a0f6d28f86fd8f5b8ff",
-    "meta/core/vision-schema.md": "sha256:6b9160708bc8e8543289b127522c33c9e8497dde42d9eaf64b5b32dd69da54a0"
+    "meta/core/experience-kind-schema.md": "sha256:3bc9984910600dab4b186fc58fd7c9234ff09724cd78578a5fe7f584352fc2f9",
+    "meta/core/experience-schema.md": "sha256:0cf88098f800f56e3ed1c41e5956fc784b2a7673ff9616a66b047509ec826894",
+    "meta/core/identity-schema.md": "sha256:1fb78df3a1684abfa2ca9d5cf4f7edf51fb470b0dc06ff975631f1c65b84e16a",
+    "meta/core/manifest.json": "sha256:b34dbf0fca9ac18f3a308248647359fed661fe42cb650f7875d10145caea1397",
+    "meta/core/phase-schema.md": "sha256:1dc1eb73620796d2e2f26072c19a5a41a58ca2fe24e8bda1ce4e25960b1b0a10",
+    "meta/core/process-schema.md": "sha256:b0a6f94fc82ea97a7b306cba75a70f2fdbdff3e35d6a83fcb0099bc142277d11",
+    "meta/core/proficiency-level-schema.md": "sha256:d1e195fce8130ca306e6fad483612ce70f7befb2a90bf82a089dab14846b54ec",
+    "meta/core/profile-schema.md": "sha256:8603dc4f4c4aa2e9a838e2e937235891f944bcdb74cb1088bdcf3f4469c7eaa7",
+    "meta/core/role-schema.md": "sha256:33abde562fa8c3d41a339dbdfe0ccaf8d1154cf6e076352f4471759312e5e6fc",
+    "meta/core/skill-schema.md": "sha256:ad6715f8a19c8f8d7b24403c4ff34a641c4e4a75046eca4a900000362bb51dec",
+    "meta/core/source-schema.md": "sha256:7b9da1120e9bfbfbc9b3c06d0e52d2740d45de8f3b01220adb35c273700de1a7",
+    "meta/core/strategic-objective-schema.md": "sha256:5bebcd23b20906c8e681b9a9fc818b27b44b22c32088e4d07ac30384e0e3fc8d",
+    "meta/core/strategy-schema.md": "sha256:dd7ab877ae2feff9193f004389cd15dc9dded698cab7e82be5e6fa46256b787d",
+    "meta/core/surface-schema.md": "sha256:11bdac8fc08b87bd0731fcd3a51a83f52b2c44322caf44cfb2c8daa25978c05a",
+    "meta/core/value-schema.md": "sha256:34ecfd79ddd0b25feb0d08a0dfb958f66f4ef67858e27584e6fac6a91dca337b",
+    "meta/core/vision-schema.md": "sha256:e1480bca669657943a01daa525148de1c8e8ee5549643f087eff022124331711"
   }
 }
