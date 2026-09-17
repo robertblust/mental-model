@@ -17,6 +17,8 @@ skills:
   - Solution selling
   - Company vision and strategy
   - Public speaking
+  - AI tool integration (MCP)
+  - Infrastructure as code
 ---
 
 # CompanyGraph
@@ -29,6 +31,7 @@ skills:
 - Published the core as one shipped unit — ten schemas and eighteen numbered conventions that make the graph checkable — with a worked example company and an instance parser, and released it 20 times to v0.16.0, a manifest per release.
 - Wrote the conventions for the agents that would work in an instance, encoding the failure modes seen before: an unresolvable reference is an error rather than a warning, and every validation pass names what it did not check.
 - Built the reference instance from it: this profile, 36 experiences, 70 skills on a four-level ladder and 5 values, every claim traced to an experience that shows it.
+- Wrote an MCP server that serves any instance to an agent through seven read-only tools, every answer naming the model commit it was read from, and deployed it for the reference instance at mcp.blust.ch, listed in the MCP Registry.
 - Came to it the second time. The Flatland CDO Server carried a model of a company from 2014, served over an API and true for as long as the server ran; this one is Markdown a person reads and edits, in a repository with a history, true for as long as the files exist.
 - Published it under Apache 2.0 as open core with a billing model and a narrated introduction talk in German and English, and put it in front of a professional network with a stated outcome each way.
 
@@ -36,4 +39,5 @@ skills:
 
 | What | URL |
 | --- | --- |
+| MCP server repository | https://github.com/companygraph/mcp-server |
 | Source repository | https://github.com/companygraph/meta-model |
