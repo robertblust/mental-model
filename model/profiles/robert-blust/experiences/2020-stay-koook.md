@@ -32,7 +32,7 @@ skills:
 - Owned the complete architecture, front to back, built to 3AP's microservice reference architecture and the last project to be: React and TypeScript frontend, MUI from 2021; reactive Spring Boot WebFlux backend publishing and consuming through Spring Cloud Stream over Pub/Sub; Camunda (Zeebe) process orchestration; Google Cloud, Kubernetes and PostgreSQL.
 - Modeled the guest journey from booking to check-out in Camunda BPMN, the model the Zeebe engine ran and LIKE MAGIC later carried over.
 - Designed the software architecture and the microservice cut, each microservice holding its own schema in PostgreSQL.
-- Wrote part of the reactive Spring Boot WebFlux backend in Java.
+- Wrote the integration and security parts of the reactive Spring Boot WebFlux backend in Java.
 - Designed the event-driven architecture: integration services took external events in over webhooks and WebSockets, transformed them into internal events and published them to Google Cloud Pub/Sub.
 - Designed the event streams themselves on Spring Cloud Stream, bindings declared per service so the transport underneath could be swapped: the topic layout, redelivery handling and consumers that processed each event once.
 - Ran it on a delivery pipeline from the first week, three days after the repository opened.
