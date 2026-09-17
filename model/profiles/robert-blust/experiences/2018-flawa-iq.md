@@ -36,7 +36,7 @@ skills:
 - Designed the MongoDB data model the device uplinks and configuration events were held in.
 - Transformed the raw telemetry on the platform's side into the data the ERP needed, then pushed it to the ERP.
 - Designed the backend's deployment on Swisscom Application Cloud, Swisscom's Cloud Foundry: each service pushed with a manifest, with the message broker and the database bound to it as managed services rather than run beside it.
-- Won the work in a competitive pitch, on a solution architecture for a problem the client had described rather than specified.
+- Won the work in a competitive pitch, presenting the solution architecture for a problem the client had described rather than specified.
 - Won the “smart IoT” Award 2021, University of St. Gallen.
 
 ## References
