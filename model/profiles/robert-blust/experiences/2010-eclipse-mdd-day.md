@@ -20,6 +20,8 @@ skills:
 
 - Co-organized Eclipse MDD Day on October 28, 2010 and hosted it at UBS in Zürich-Altstetten, with itemis co-supporting — the first of the Eclipse events brought to UBS.
 - Presented “User Story: Models as First Class Citizens in the Enterprise”, on a program with Ed Merks (EMF project lead), Sven Efftinge (Xtext project lead), Eike Stepper (CDO project lead) and practitioners from SAP, Robert Bosch, RWE and Nord/LB.
+- Argued that requirements, analysis and design belong in formal models rather than prose, and demonstrated a proof-of-concept SDLC modeling platform on CDO and EMF.
+- Named what the proof of concept had shown the Eclipse Modeling Platform still lacked: compare and merge for parallel work, traceability across metamodels and metamodel evolution that migrates existing instances.
 
 ## References
 

@@ -27,6 +27,7 @@ skills:
 - Modeled the system before building it and kept the model with it — the two actors, the use cases each of them has, the domain classes and a component view naming every service and the interface it offers, in UML alongside the code rather than in a document beside it.
 - Cut the platform into Spring Boot services behind a gateway with service discovery, generated from JHipster so that a new service arrived with its build, its tests and its security already wired.
 - Carried the same product into a browser, a hybrid mobile application and a native iOS app with a barcode scanner, all against one set of service interfaces, and released the iOS app to the store from a scripted pipeline.
+- Designed those service interfaces so the finder and the owner reached each other through them without either one's contact details reaching the other.
 - Delivered it in five languages, Georgian among them, and integrated the shop the tags are sold through rather than building a second one.
 - Ran it on Cloud Foundry for the first years and saw it through to Kubernetes on Google Cloud, a platform outliving two runtimes underneath it.
 - Stayed with it for five years and 621 commits, from the first setup to the last rebrand, which is the part a proof of concept never tests.

@@ -8,9 +8,9 @@ organization: Eclipse Foundation
 role: Speaker
 skills:
   - Integration architecture
-  - Software modeling (UML, SysML, C4)
   - Model-driven engineering
   - Public speaking
+  - Domain-specific language design
 ---
 
 # Eclipse Finance Day 2012
@@ -21,6 +21,7 @@ skills:
 
 - Presented “Interface Management in a Large Enterprise” at Eclipse Finance Day on October 16, 2012 in Zürich, on UBS's Integration Architecture initiative: an end-to-end process and tooling to identify, specify, design and govern the interfaces between parts of the IT system.
 - The published abstract describes what the toolchain did: capture actual communication patterns through source-code analysis, produce EMF-based graphs that identify non-conformant interactions, hold platform-independent data types and interface specifications with policies, check conformance to architectural rules, generate XML-Schema and WSDL and run governance through a central repository with role-based reviews.
+- Demonstrated the toolchain live: the textual language projects wrote their data types and components in, built on Xtext, and the enterprise repository on CDO holding the UBS component model at about 25,000 objects and 50,000 references, around 1% of them changing daily.
 
 ## References
 

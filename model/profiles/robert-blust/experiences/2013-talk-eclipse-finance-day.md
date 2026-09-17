@@ -20,6 +20,7 @@ skills:
 
 - Presented “UBS Integration Architecture Tool Chain” at Eclipse Finance Day on November 5, 2013 at the Credit Suisse Tower in Zürich — the integration and interface toolchain built for UBS Wealth Management & Swiss Bank.
 - Where the 2012 talk was the initiative, this one was the toolchain's design: coarse-grained interfaces defined and maintained platform-independently with code generators producing the platform-specific implementations, a clear separation of interface definition from implementation from instantiation, versioning and ownership and cross-references as properties of the artifacts themselves and continuous integration over the models.
+- Presented the standardized interface layer between the front applications and the core banking system as a design and governance matter at enterprise level, every model owned by a component of the UBS component model and cross-referenceable from another context only where marked shared.
 
 ## References
 

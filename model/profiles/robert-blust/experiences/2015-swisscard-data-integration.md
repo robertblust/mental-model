@@ -8,10 +8,8 @@ role: Backend Engineer
 skills:
   - API design
   - Java
-  - Software testing
-  - Database design
-  - CI/CD
   - Legacy modernization
+  - Integration architecture
 ---
 
 # Swisscard data integration rewrite
