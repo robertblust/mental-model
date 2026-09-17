@@ -24,14 +24,14 @@ skills:
 
 ## Achievements
 
-- Designed the engine from three written specifications — core identity resolution, probabilistic matching and the guest timeline — each reviewed before its plan and its build, and built by an AI coding agent working to them under a written agent file.
-- Built it through the agent seats the model defines, specifier, planner, controller, implementer, reviewer, writer and translator, each under its own rulebook and none deciding, with the Owner reviewing and merging.
+- Designed the engine from three written specifications — core identity resolution, probabilistic matching and the guest timeline — each reviewed before its plan and its build.
+- Built it through the agent seats the model defines, each under its own rulebook and none of them deciding, with the Owner reviewing and merging.
 - Built it as a layered confidence model: strong identifiers merge deterministically with transitive closure, everything else is scored against a threshold the tenant chose, and what falls between goes to a human steward, whose split becomes a do-not-merge rule that new evidence cannot cross.
 - Split probabilistic matching into blocking and scoring, because a database index answers only equality: phonetic keys find candidates that share no identifier, then a weighted feature vector grades them, damped when few signals were observed and penalized when birthdates conflict.
 - Kept every source record immutable and every merge explainable, so a guest can be asked why two records are one person and the answer is the decision chain.
 - Shipped it as a Spring Boot service on PostgreSQL with Flyway migrations and a REST API, runnable from one compose file, designed for managed platform services and agnostic of which cloud runs them — so adopting it is not also adopting a provider.
-- Designed and implemented the engine's and the connector's REST APIs contract-first in OpenAPI, the engine's exposing why two records are one guest, undoing a wrong merge and the review queue for uncertain matches as resources of their own.
-- Held the engine and the connector to the same gates on every change: the Maven build with its tests, a job that regenerates the entity-relationship diagram from the Flyway migrations and fails when the committed one is stale, and a check that each service carries every item of the service conventions at their pinned release.
+- Designed and implemented the engine's and the connector's REST APIs contract-first in OpenAPI, the engine's exposing a merge's explanation, its undoing and the review of uncertain matches as resources of their own.
+- Held the engine and the connector to the same gates on every change: the Maven build with its tests, a check that each service carries every item of the service conventions at their pinned release and a job that regenerates the entity-relationship diagram from the Flyway migrations and fails when the committed one is stale.
 - Published it under Apache 2.0 as open core, with a billing model on one meter, arrivals, and a narrated introduction talk in German and English with a PDF in each.
 - Put it in front of a professional network with a stated outcome each way, a clean no included.
 

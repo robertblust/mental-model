@@ -34,7 +34,7 @@ skills:
 - Developed methodology and guidance for service and data modeling (Rational Method Composer, UML) — how a requirement was elicited, written and carried into a design the delivery teams worked from.
 - Kept that guidance in Rational Method Composer and published it as the division's SDLC instance, the one place project teams looked up how a discipline was done.
 - Architected and built “DynaRep – Dynamic Repository”, a repository-based modeling tool for managing UBS mainframe service interfaces — Eclipse plugins, web services and code generators producing the COBOL/Java service implementations (Java, SOAP, Oracle, MDSD).
-- Designed the domain-specific language DynaRep's interfaces were modeled in, implemented in Java as an Eclipse plugin with a graphical editor, and the generators that turned each model into its service implementation.
+- Designed the domain-specific language DynaRep's interfaces were modeled in, implemented in Java as an Eclipse plugin with a graphical editor.
 - Took on software-architect and project-management responsibility for the DynaRep platform, leading its project team of ten.
 - Defined the department-wide role model — each role with its tasks and the competencies it carried — and put it through a formal consultation before it took effect.
 - Worked with the Eclipse Modeling project from inside the methodology work — bringing requirements to it, reviewing concepts and building prototypes — and the cross-industry working group grew out of that cooperation.

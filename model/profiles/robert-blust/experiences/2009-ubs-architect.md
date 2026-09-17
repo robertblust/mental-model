@@ -36,10 +36,10 @@ skills:
 - The conformance part analyzed source code across the estate, the mainframe included, producing EMF graphs held in the CDO model repository and an automated metric for the technical coupling of software components and applications, which identified interactions between subsystems not conforming to the architecture's specifications.
 - Built the whole on Eclipse EMF, Xcore, Xtext and Xtend with a CDO model repository, drawing on outcomes from the Eclipse Modeling Platform Working Group.
 - Designed the textual language, built on Xtext, that projects defined their data types, interfaces and components in.
-- Had each project's build and continuous integration generated from its design and the reference architecture, on the Jenkins and Sonar the toolchain provided.
+- Generated each project's build and continuous integration from its design and the reference architecture, on the Jenkins and Sonar the toolchain provided.
 - Managed the tool portfolio supporting the software development process.
 - Drove the division's business architecture and capability modeling on EMF/Ecore, representing UBS internationally in the Eclipse Modeling Platform Working Group alongside Airbus, Ericsson, Alcatel-Lucent, SBB and SWIFT among others.
-- Modeled the division's business capabilities, concepts, processes and actors as parts of one enterprise model, which architects used to steer new projects toward the right architectural decision.
+- Modeled the division's business capabilities, concepts, processes and actors as parts of one enterprise model, which architects used to steer new projects toward decisions that fit the enterprise model.
 - Partitioned the application architecture into application domains, which classified each application system template and fixed the principles that delineated one from another.
 - Co-organized the Eclipse events that brought the open-source modeling community to UBS in Zürich — MDD Day in 2010, then the Eclipse Finance Days, the Swiss forum for cross-company exchange on open source in financial services, in 2012 and 2014.
 - Built UBS's network into open-source communities and their standards, assessing where the firm could adopt them.

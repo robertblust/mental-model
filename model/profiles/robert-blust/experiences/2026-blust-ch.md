@@ -22,7 +22,7 @@ skills:
 - Built the model and timeline pages from the mental-model repository at a pinned commit, so the page shows what the model says and a corrected fact is one commit in one place.
 - Held every page to a rendered check rather than a diff: browser assertions on every page, share cards compared against the pages they were rendered from, and a pin guard that fails the build when a dependency is behind its release.
 - Required one shared conventions check beside each repository's own suite on every default branch in the family, called from one reusable workflow at a pinned tag.
-- Built it through the agent seats the model defines, specifier, planner, controller, implementer, reviewer, writer and translator, each under its own rulebook and none deciding, with the Owner reviewing and merging.
-- Set the family's written voice and rules in WRITING.md, and briefed and reviewed every page the Writer seat drafted to them.
+- Built it through the agent seats the model defines, each under its own rulebook and none of them deciding, with the Owner reviewing and merging.
+- Set the family's written voice and rules in `WRITING.md`, and briefed and reviewed every page the Writer seat drafted to those rules.
 - Generated the narration from the speaker notes on a content hash, so editing one note regenerates one clip.
 - Shared its typography, chrome and page checks with guestgraph.io and companygraph.io through one design system, released over 50 times in its first week and taken by every site by pin.

@@ -36,7 +36,7 @@ skills:
 - Made the deployment prove itself by calling a tool over the live endpoint, since the platform answers a health path on its own.
 - Added a test that fails the build when the lockfile resolves an older release than the pin names, after a stale one had built green.
 - Wrote a reviewed specification before every plan and every build, for the meta-model, its tooling and this instance, so what was asked for was settled before an agent built it.
-- Built it through the agent seats the model defines, specifier, planner, controller, implementer, reviewer, writer and translator, each under its own rulebook and none deciding, with the Owner reviewing and merging.
+- Built it through the agent seats the model defines, each under its own rulebook and none of them deciding, with the Owner reviewing and merging.
 - Came to it the second time. The Flatland CDO Server carried a model of a company from 2014, served over an API and true for as long as the server ran; this one is Markdown a person reads and edits, in a repository with a history, true for as long as the files exist.
 - Published it under Apache 2.0 as open core with a billing model and a narrated introduction talk in German and English, and put it in front of a professional network with a stated outcome each way.
 

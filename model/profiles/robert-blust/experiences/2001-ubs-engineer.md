@@ -17,6 +17,7 @@ skills:
 ## Achievements
 
 - Developed intranet and internet web portals on IBM Portal Server (Java Portlets, JSP, XML).
-- Created the software architecture of the WPS Portal application and led its development and project delivery, including its maintenance and extension.
+- Created the software architecture of the WPS Portal application.
+- Led its development and project delivery, including its maintenance and extension.
 - Developed features of the ACE Foundation, the base that UBS Quotes and the Client Advisor Workbench were built on.
 - Onboarded Java developers onto the portal.

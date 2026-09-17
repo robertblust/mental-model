@@ -19,7 +19,7 @@ skills:
 
 # Ursina
 
-> 3AP · Architect — the runtime, the path into a broadband operator's network and the authentication boundary of a tool that turns network faults into a labeled training set.
+> 3AP · Architect — the software architecture, the path into a broadband operator's network and the authentication boundary of a tool that turns network faults into a labeled training set.
 
 ## Achievements
 
