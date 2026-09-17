@@ -6,7 +6,6 @@ end: 2006
 organization: Fachhochschule Aargau
 skills:
   - Model-driven engineering
-  - Software architecture
 ---
 
 # Business Information Systems UAS

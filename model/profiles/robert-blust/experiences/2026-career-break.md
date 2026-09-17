@@ -6,7 +6,6 @@ end: 2026-09
 skills:
   - Agentic AI development
   - Spec-driven development
-  - Technical writing
 ---
 
 # Career break
@@ -22,7 +21,7 @@ skills:
 - Learned what the declines and the rounds said. An employer reads a former CTO applying for an engineering role as a flight risk unless the stay is stated first — three employers in 27 years. The story of going back near the code has to be told as a choice and not as a step down. And an honest line on what I do not have, no TOGAF, no AWS, no Kotlin, costs fit on paper and buys credibility in the room.
 - Asked four former colleagues, one of them a former direct report, for written feedback on my strengths and the role they see me in, and wrote a self-assessment from the same material before deciding. All four named depth, knowledge sharing and caring about the people; two of them, independently, named the cost of caring too much as the thing to work on.
 - Decided on values over pay: an 80% architect role in a product company outside finance, chosen while three processes in finance were still open, with the fifth day kept for formal education in how AI is led and governed in an organization.
-- Built the products and the applications with AI coding agents as the primary tool, spec-driven — a reviewed specification before every plan and build — under written conventions vendored into eleven repositories and a design system shared by three sites, released and pinned like any other dependency.
+- Built the products and the applications through agent seats, specifier, planner, controller, implementer, reviewer, writer and translator, each under its own rulebook and none deciding, spec-driven — a reviewed specification before every plan and build — under written conventions vendored into every repository in the family and a design system every site pins, released and pinned like any other dependency.
 
 ## Ending
 

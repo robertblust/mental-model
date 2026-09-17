@@ -7,7 +7,6 @@ organization: UBS AG
 skills:
   - Java
   - Software engineering
-  - Mentoring and coaching
   - Software architecture
 ---
 
@@ -18,6 +17,6 @@ skills:
 ## Achievements
 
 - Developed intranet and internet web portals on IBM Portal Server (Java Portlets, JSP, XML).
-- Led development and project delivery of the WPS Portal application, including its maintenance and extension.
-- Co-developed the ACE Foundation, the base that UBS Quotes and the Client Advisor Workbench were built on.
+- Created the software architecture of the WPS Portal application and led its development and project delivery, including its maintenance and extension.
+- Developed features of the ACE Foundation, the base that UBS Quotes and the Client Advisor Workbench were built on.
 - Onboarded Java developers onto the portal.

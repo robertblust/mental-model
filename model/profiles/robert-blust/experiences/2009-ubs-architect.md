@@ -8,7 +8,6 @@ skills:
   - Enterprise architecture
   - Business architecture
   - Domain-driven design
-  - Agile delivery
   - Model-driven engineering
   - Domain-specific language design
   - Integration architecture
@@ -19,8 +18,9 @@ skills:
   - CI/CD
   - Engineering leadership
   - Software process engineering
-  - Public speaking
   - Community building
+  - Software architecture
+  - Mentoring and coaching
 ---
 
 # IT Architect — Software Development Lifecycle Toolchain
@@ -35,14 +35,20 @@ skills:
 - The data model part held the canonical model itself and the platform-independent definitions of data types, interfaces and service contracts, generated the XML-Schema and WSDL artifacts from them, kept the central API and interface-portfolio repository and ran the role-based review every team's interfaces had to pass.
 - The conformance part analyzed source code across the estate, the mainframe included, producing EMF graphs held in the CDO model repository and an automated metric for the technical coupling of software components and applications, which identified interactions between subsystems not conforming to the architecture's specifications.
 - Built the whole on Eclipse EMF, Xcore, Xtext and Xtend with a CDO model repository, drawing on outcomes from the Eclipse Modeling Platform Working Group.
+- Designed the textual language, built on Xtext, that projects defined their data types, interfaces and components in.
+- Had each project's build and continuous integration generated from its design and the reference architecture, on the Jenkins and Sonar the toolchain provided.
 - Managed the tool portfolio supporting the software development process.
 - Drove the division's business architecture and capability modeling on EMF/Ecore, representing UBS internationally in the Eclipse Modeling Platform Working Group alongside Airbus, Ericsson, Alcatel-Lucent, SBB and SWIFT among others.
+- Modeled the division's business capabilities, concepts, processes and actors as parts of one enterprise model, which architects used to steer new projects toward the right architectural decision.
+- Partitioned the application architecture into application domains, which classified each application system template and fixed the principles that delineated one from another.
 - Co-organized the Eclipse events that brought the open-source modeling community to UBS in Zürich — MDD Day in 2010, then the Eclipse Finance Days, the Swiss forum for cross-company exchange on open source in financial services, in 2012 and 2014.
 - Built UBS's network into open-source communities and their standards, assessing where the firm could adopt them.
 - Continued on the division's Java Chief Developer committee, co-leading it for five years — the forum in which its lead engineers set common practice.
 - Led the team that implemented the tooling platform, an integrated Eclipse Modeling Framework stack built for model-based engineering, scalability and collaboration.
 - Scrum Master and technical lead in central WM&SB initiatives.
 - Spoke at UBS-internal brown-bag sessions on modeling, toolchain and architecture.
+- Ran workshops with the engineering teams on the concepts behind the Integration Architecture Tool Chain.
+- Helped build the UBS Academy's education on the software development lifecycle, integration architecture one part of it.
 
 ## Ending
 

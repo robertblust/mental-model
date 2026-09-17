@@ -10,7 +10,6 @@ skills:
   - Domain-specific language design
   - Data modeling
   - Frontend development
-  - Organization design
   - API design
   - Identity and access management
   - Java
