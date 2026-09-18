@@ -2,7 +2,7 @@
 source: Local
 production: built
 built-by: https://github.com/robertblust/mcp-blust-ch
-url: https://mcp.blust.ch/mcp
+url: https://mcp.blust.ch
 ---
 
 # mcp.blust.ch MCP server
@@ -12,6 +12,8 @@ url: https://mcp.blust.ch/mcp
 
 ## What it shows
 
+- **Endpoint** — `/mcp` on this address, the only path that speaks the protocol and the one a
+  client is given. The registry listing's remote is this.
 - **Title** — the identity's name.
 - **Instructions** — the vision's tagline and the identity's tagline, then the commit and core
   release the answers are read from.
