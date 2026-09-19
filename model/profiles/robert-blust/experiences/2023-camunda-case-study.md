@@ -26,3 +26,9 @@ skills:
 ### Results
 
 - The case study cites a 95% self-check-in rate, 9.0/10 guest happiness and 7,000 process instances per month.
+
+## References
+
+| What | URL |
+| --- | --- |
+| Case study | https://camunda.com/case-studies/likemagic |

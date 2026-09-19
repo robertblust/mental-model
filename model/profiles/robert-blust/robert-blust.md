@@ -172,7 +172,7 @@ roles:
 | Engineering leadership | Owned the frame 3AP's engineering happened in as CTO, the organization and its roles, the reference architecture and stack and the approvals every engagement passed, through its scale to about 70 people, a near-shore team in Serbia among them. | Co-Founder & CTO |
 | Engineering leadership | Set LIKE MAGIC's technology direction and developed its technical leadership as the company grew from 5 to 25 people, holding the platform and AI budget. | Co-Founder & Head of Technology |
 | Enterprise architecture | Architected the Integration Architecture Tool Chain for UBS Wealth Management & Swiss Bank around a canonical data model, with a central API and interface-portfolio repository and a role-based review every team's interfaces passed. | IT Architect — Software Development Lifecycle Toolchain |
-| Enterprise architecture | Presented its design to the Swiss financial-services community at Eclipse Finance Day. | Eclipse Finance Day 2013 |
+| Enterprise architecture | Presented the UBS Integration Architecture Tool Chain's design to the Swiss financial-services community at Eclipse Finance Day. | Eclipse Finance Day 2013 |
 | Enterprise architecture | Set the principles and reference architecture every 3AP client platform was built to, the service cut, the stack and the delivery pipeline decided once for all of them. | Co-Founder & CTO |
 | Enterprise architecture | Mapped LIKE MAGIC's 12 business domains to the capabilities under each and set the platform's direction along that map, API-first with an event and data hub. | Co-Founder & Head of Technology |
 | Event streaming | Ran Kafka as the streaming backbone of Conperi's processing pipeline, one topic per stage so each service consumed the output of the stage before it. | Conperi |
@@ -286,7 +286,7 @@ roles:
 | Software process engineering | Owned the Analysis & Design discipline in the Rational Unified Process and Enterprise Unified Process rollout at UBS Wealth Management & Business Banking, replacing the proprietary process with a market standard, its methodology written in Rational Method Composer, published as the division's SDLC instance and coached into the project teams. | Solution Manager, Software Engineering — Analysis & Design |
 | Software process engineering | Architected the division's SDLC toolchain. | IT Architect — Software Development Lifecycle Toolchain |
 | Software testing | Made unit and integration tests part of how a feature was finished across 3AP's client engagements, new behavior covered at the level that catches its regression. | Co-Founder & CTO |
-| Software testing | Ran them on every LIKE MAGIC pipeline on GitHub Actions. | Co-Founder & Head of Technology |
+| Software testing | Ran unit and integration tests on every LIKE MAGIC pipeline on GitHub Actions. | Co-Founder & Head of Technology |
 | Software testing | Held every blust.ch page to browser assertions and its share cards to comparison against the pages they were rendered from. | blust.ch |
 | Solution architecture | Led 3AP's client bids on solution architecture, public tenders under Swiss procurement law included. | Co-Founder & CTO |
 | Solution architecture | Designed Flawa iQ's RFID and LoRaWAN solution, delivered as 10 working prototypes. | Flawa iQ |

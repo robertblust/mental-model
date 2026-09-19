@@ -23,7 +23,9 @@ skills:
 
 ### Sharing
 
-- Took the orchestration part of the talk: how the platform ran and monitored the guest journey on Camunda.
+- Took the orchestration part of the talk: each reservation a process instance, and the BPMN model the one truth, created and validated with the business and executed at runtime to monitor the guest journey.
+- Showed that no client-identifying data entered Camunda's context, so monitoring the journey raised no GDPR issue.
+- Set out the next step: orchestrating the journey with one custom BPMN model per tenant, executed at runtime front to back.
 
 ### Results
 
@@ -33,4 +35,4 @@ skills:
 
 | What | URL |
 | --- | --- |
-| Video | https://page.camunda.com/talking-process-orchestration-with-likemagics-robert-blust |
+| Video and slides | https://page.camunda.com/talking-process-orchestration-with-likemagics-robert-blust |
