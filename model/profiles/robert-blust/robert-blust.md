@@ -51,7 +51,7 @@ roles:
 | Integration architecture | Expert |
 | IoT architecture | Competent |
 | IT governance | Proficient |
-| IT strategy | Proficient |
+| IT strategy | Expert |
 | Java | Expert |
 | Knowledge management | Proficient |
 | Legacy modernization | Proficient |
@@ -74,7 +74,7 @@ roles:
 | Software architecture | Expert |
 | Software engineering | Expert |
 | Software modeling (UML, SysML, C4) | Expert |
-| Software process engineering | Expert |
+| Software process engineering | Proficient |
 | Software testing | Competent |
 | Solution architecture | Expert |
 | Solution selling | Proficient |
