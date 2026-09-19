@@ -13,6 +13,7 @@ skills:
   - API design
   - Identity and access management
   - Java
+  - UX design
 ---
 
 # Flatland CDO Server

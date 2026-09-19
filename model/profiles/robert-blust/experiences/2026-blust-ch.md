@@ -7,7 +7,7 @@ skills:
   - Agentic AI development
   - Public speaking
   - Technical writing
-  - Frontend development
+  - UX design
   - CI/CD
   - Software testing
 ---
@@ -25,6 +25,7 @@ skills:
 ### Architecture
 
 - Built the model and timeline pages from the mental-model repository at a pinned commit, so the page shows what the model says and a corrected fact is one commit in one place.
+- Conceived and designed the pages of all three sites and the design system they share, from layout and typography to the graph view, and had the agent seats build them to that design.
 - Shared its typography, chrome and page checks with guestgraph.io and companygraph.io through one design system, released over 50 times in its first week and taken by every site by pin.
 
 ### Engineering

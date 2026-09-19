@@ -22,6 +22,7 @@ Every skill is ours, and each belongs to one group.
 | Public speaking | Leadership |
 | Community building | Leadership |
 | Organization design | Leadership |
+| Storytelling | Leadership |
 | Enterprise architecture | Architecture |
 | Business architecture | Architecture |
 | Solution architecture | Architecture |
@@ -59,6 +60,7 @@ Every skill is ours, and each belongs to one group.
 | Software engineering | Software development |
 | Java | Software development |
 | Frontend development | Software development |
+| UX design | Software development |
 | Software testing | Software development |
 | Open-source stewardship | Software development |
 | Software modeling (UML, SysML, C4) | Modeling and process |

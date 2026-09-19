@@ -14,6 +14,7 @@ skills:
   - Software architecture
   - Frontend development
   - Data modeling
+  - UX design
 ---
 
 # Credit Suisse Master Data Repository

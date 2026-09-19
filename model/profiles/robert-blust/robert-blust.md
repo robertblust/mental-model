@@ -82,6 +82,7 @@ roles:
 | Stakeholder management | Competent |
 | Storytelling | Proficient |
 | Technical writing | Expert |
+| UX design | Competent |
 | Vendor management | Proficient |
 
 ## Evidence
@@ -308,6 +309,9 @@ roles:
 | Technical writing | Published an article on process monitoring with BPMN, with the runnable sample it describes. | Process Monitoring with BPMN |
 | Technical writing | Wrote the developer documentation for LIKE MAGIC's public API, which conversational AI providers and other partners integrated against without LIKE MAGIC building the integration. | Co-Founder & Head of Technology |
 | Technical writing | Wrote CompanyGraph's conventions, design specs and worked example, prose other people follow for readers who were not in the room. | CompanyGraph |
+| UX design | Designed the Flatland CDO Server's model browser to show any model the server holds, so a new metamodel is explorable without a screen built for it. | Flatland CDO Server |
+| UX design | Gave Credit Suisse's Master Data Repository a front end on the design of the Flatland CDO Server's generic model browser, following its metamodel rather than a screen built per type. | Credit Suisse Master Data Repository |
+| UX design | Designed the pages of blust.ch, companygraph.io and guestgraph.io and the design system they share, and had the agent seats build them, each page checked rendered in the browser. | blust.ch |
 | Vendor management | Ran LIKE MAGIC's AI and automation tooling as a managed portfolio: Claude Code team licenses, multi-provider tooling across Claude, Gemini and Copilot and the call to self-host n8n on its own Kubernetes rather than take the hosted service. | Co-Founder & Head of Technology |
 | Vendor management | Led the call on Camunda at contract renewal, where the platform used a fraction of the engine and the choice was to build on it or leave it, recommending building on it before the decision went to removal (2022–2023). | Co-Founder & Head of Technology |
 
