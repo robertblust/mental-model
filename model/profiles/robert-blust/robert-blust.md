@@ -191,7 +191,6 @@ roles:
 | Frontend development | Carried Lost-Tag into a browser, a hybrid mobile application and a native iOS app in AngularJS. | Lost-Tag |
 | Frontend development | Built AXA Health's React and Next.js frontend. | AXA Health digital insurance platform |
 | Frontend development | Built a React front end for Flawa iQ's sensor MVP. | Flawa iQ |
-| Frontend development | Owned Stay KooooK's React and TypeScript frontend. | Stay KooooK |
 | Identity and access management | Wrote a plugin authenticating the Flatland CDO Server against LDAP, later taking bearer tokens at the REST boundary. | Flatland CDO Server |
 | Identity and access management | Put OAuth 2.0 at the boundary of every service in 3AP's reference architecture. | Co-Founder & CTO |
 | Identity and access management | Made identity 3AP's platform concern rather than each service's, Keycloak issuing tokens, social sign-in trusted into it and the gateway verifying before routing. | 3AP Platform |
