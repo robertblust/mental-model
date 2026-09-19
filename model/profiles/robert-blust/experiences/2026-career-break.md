@@ -21,7 +21,7 @@ skills:
 ### Ways of working
 
 - Asked four former colleagues, one of them a former direct report, for written feedback on my strengths and the role they see me in, and wrote a self-assessment from the same material before deciding. All four named depth, knowledge sharing and caring about the people; two of them, independently, named the cost of caring too much as the thing to work on.
-- Built the products and the applications through the agent seats the model defines, each under its own rulebook and none of them deciding.
+- Built the products and the applications through the agent seats the model defines, each under a rulebook I wrote for it and none of them deciding.
 - Worked spec-driven, a reviewed specification before every plan and build, under written conventions vendored into every repository in the family and a design system every site pins like any other dependency.
 
 ### Results

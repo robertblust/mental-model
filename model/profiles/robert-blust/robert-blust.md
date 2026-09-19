@@ -112,7 +112,7 @@ roles:
 | Business process modeling (BPMN, DMN) | Published the guest-journey model as the subject of an article on monitoring a process by the message it is still waiting for. | Process Monitoring with BPMN |
 | Business process modeling (BPMN, DMN) | Carried Stay KooooK's guest-journey model into LIKE MAGIC and extended it there, running the journey until the orchestration was replaced (2022–2023). | Co-Founder & Head of Technology |
 | Change management | Replaced UBS Wealth Management & Business Banking's proprietary engineering process with a market-standard one as owner of its Analysis & Design discipline, coaching project teams into it. | Solution Manager, Software Engineering — Analysis & Design |
-| Change management | Drove LIKE MAGIC's productive rollout of AI assistants across planning, delivery and operations. | Co-Founder & Head of Technology |
+| Change management | Drove LIKE MAGIC's rollout of AI assistants across planning, delivery and operations, training the teams, working through resistance with their leads and tracking adoption after go-live. | Co-Founder & Head of Technology |
 | CI/CD | Put Jenkins and Sonar in the SDLC toolchain UBS Wealth Management & Swiss Bank released inside, each project's build and continuous integration generated from its design and the reference architecture. | IT Architect — Software Development Lifecycle Toolchain |
 | CI/CD | Wrote the delivery pipeline into 3AP's reference architecture so a project inherited it rather than arranging its own, moving it from Jenkins at Flawa iQ and Lost-Tag through CircleCI at Conperi and Ursina to GitHub Actions. | Co-Founder & CTO |
 | CI/CD | Released Lost-Tag's iOS app to the App Store from a scripted pipeline. | Lost-Tag |
@@ -286,7 +286,7 @@ roles:
 | Software process engineering | Owned the Analysis & Design discipline in the Rational Unified Process and Enterprise Unified Process rollout at UBS Wealth Management & Business Banking, replacing the proprietary process with a market standard, its methodology written in Rational Method Composer, published as the division's SDLC instance and coached into the project teams. | Solution Manager, Software Engineering — Analysis & Design |
 | Software process engineering | Architected the division's SDLC toolchain. | IT Architect — Software Development Lifecycle Toolchain |
 | Software testing | Made unit and integration tests part of how a feature was finished across 3AP's client engagements, new behavior covered at the level that catches its regression. | Co-Founder & CTO |
-| Software testing | Ran unit and integration tests on every LIKE MAGIC pipeline on GitHub Actions. | Co-Founder & Head of Technology |
+| Software testing | Set unit and integration tests on every pipeline as part of the CI/CD standards LIKE MAGIC's platform ran under, on GitHub Actions. | Co-Founder & Head of Technology |
 | Software testing | Held every blust.ch page to browser assertions and its share cards to comparison against the pages they were rendered from. | blust.ch |
 | Solution architecture | Led 3AP's client bids on solution architecture, public tenders under Swiss procurement law included. | Co-Founder & CTO |
 | Solution architecture | Designed Flawa iQ's RFID and LoRaWAN solution, delivered as 10 working prototypes. | Flawa iQ |

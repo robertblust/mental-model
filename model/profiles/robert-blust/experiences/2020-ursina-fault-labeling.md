@@ -7,7 +7,6 @@ organization: 3AP AG
 role: Architect
 skills:
   - Solution architecture
-  - Cloud architecture
   - Integration architecture
   - Identity and access management
   - Java

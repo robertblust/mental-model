@@ -20,7 +20,6 @@ skills:
   - Model-driven engineering
   - Domain-specific language design
   - Software architecture
-  - Integration architecture
   - Legacy modernization
 ---
 
