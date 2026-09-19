@@ -7,9 +7,9 @@ description: Check the profile's Evidence table against the Skills table and the
 
 This instance's own skill, not one of the portable `companygraph-*` set. The profile's evidence
 is a table of its own, one row per fact, and its `Experience` column is a qualifier the checker
-resolves: a filled cell that names no experience already fails by name. What the checker does
-not reach are the joins the profile schema states as writing rules and says outright that no
-rule checks. This skill checks those.
+resolves and holds to its owner: a filled cell that names no experience, or one another profile
+owns, already fails by name. What the checker does not reach are the joins the profile schema
+states as writing rules and says no rule checks. This skill checks those.
 
 ## Why it is not in `companygraph-validate`
 
@@ -24,16 +24,13 @@ type, and the schema chose to leave them written rather than break that.
    is reported and skipped.
 2. **Every claim has something under it.** Each Skills row has at least one Evidence row with
    the same skill, and each Evidence row's skill has a Skills row. Report either miss.
-3. **The experience is this profile's own.** Each filled `Experience` names an experience in this
-   profile's `experiences/` folder. The checker resolves the name across the whole model, so a
-   name another profile's experience carries would pass it and be wrong.
-4. **The experience lists the skill.** The experience a row names carries the row's skill in its
+3. **The experience lists the skill.** The experience a row names carries the row's skill in its
    `skills:` list. A miss has two repairs that claim different things, adding the skill to the
    experience or naming another one, so report it and apply neither.
-5. **The year is not a copy.** A row that names an experience and ends in a year in parentheses
+4. **The year is not a copy.** A row that names an experience and ends in a year in parentheses
    keeps that year only when it marks a period shorter than the experience's own. Report a year
    that equals the experience's period, since it is a second copy nothing keeps true.
-6. **The open rows.** List every row whose `Experience` is blank, with its sentence. A blank cell
+5. **The open rows.** List every row whose `Experience` is blank, with its sentence. A blank cell
    is allowed, for a claim resting on no period of its own, so these are not failures. They are
    the rows a reader weighs with nothing to follow, and the owner decides each: name one
    experience, split the sentence into a row per experience, or leave it blank on purpose.
