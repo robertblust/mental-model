@@ -43,7 +43,7 @@ roles:
 | Event streaming | Proficient |
 | Event-driven architecture | Expert |
 | FinOps | Proficient |
-| Frontend development | Proficient |
+| Frontend development | Competent |
 | Identity and access management | Proficient |
 | Incident management | Proficient |
 | Information security management | Competent |
@@ -186,11 +186,8 @@ roles:
 | FinOps | Held LIKE MAGIC's cloud and AI budget, governing spend across dev, test and production with consumption KPIs in the Mental Model and weekly actuals from the Google Cloud billing API routed to owners by role. | Co-Founder & Head of Technology |
 | FinOps | Held platform cost flat as volume grew to 89M+ events a year, through database and code optimization rather than added capacity. | Co-Founder & Head of Technology |
 | Frontend development | Built the model browser published with the Flatland CDO Server in AngularJS. | Flatland CDO Server |
-| Frontend development | Built the Swisscom delivery cockpit's React front end. | Swisscom agile delivery cockpit |
 | Frontend development | Built the Angular front end over Credit Suisse's Master Data Repository. | Credit Suisse Master Data Repository |
 | Frontend development | Carried Lost-Tag into a browser, a hybrid mobile application and a native iOS app in AngularJS. | Lost-Tag |
-| Frontend development | Built AXA Health's React and Next.js frontend. | AXA Health digital insurance platform |
-| Frontend development | Built a React front end for Flawa iQ's sensor MVP. | Flawa iQ |
 | Identity and access management | Wrote a plugin authenticating the Flatland CDO Server against LDAP, later taking bearer tokens at the REST boundary. | Flatland CDO Server |
 | Identity and access management | Put OAuth 2.0 at the boundary of every service in 3AP's reference architecture. | Co-Founder & CTO |
 | Identity and access management | Made identity 3AP's platform concern rather than each service's, Keycloak issuing tokens, social sign-in trusted into it and the gateway verifying before routing. | 3AP Platform |
