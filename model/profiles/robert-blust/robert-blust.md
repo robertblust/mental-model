@@ -105,11 +105,11 @@ roles:
 | API design | Led LIKE MAGIC's API-first strategy to a partner API documented in the open, REST on OpenAPI 3.1 with webhook subscriptions and OAuth 2.0 scopes over property, reservation, guest, messaging, door access and task resources. | Co-Founder & Head of Technology |
 | API design | Designed and implemented GuestGraph's engine and connector APIs contract-first in OpenAPI, with a merge's explanation, its undoing and the review of uncertain matches as resources of their own. | GuestGraph |
 | Business architecture | Modeled UBS Wealth Management & Swiss Bank's business capabilities, concepts, processes and actors as one enterprise model on EMF/Ecore, which architects used to steer new projects toward decisions that fit the enterprise model. | IT Architect — Software Development Lifecycle Toolchain |
-| Business architecture | Presented that enterprise model to the Eclipse Modeling Platform Working Group, its business capabilities, concepts, processes and actors each a metamodel of one shared model (2010). | Eclipse Modeling Platform Working Group |
+| Business architecture | Presented UBS's enterprise model to the Eclipse Modeling Platform Working Group, its business capabilities, concepts, processes and actors each a metamodel of one shared model (2010). | Eclipse Modeling Platform Working Group |
 | Business architecture | Mapped LIKE MAGIC's 12 business domains as concepts with the capabilities under each, and cut the platform and the product strategy along that map. | Co-Founder & Head of Technology |
 | Business process modeling (BPMN, DMN) | Modeled the guest journey from booking to check-out in Camunda BPMN for Stay KooooK. | Stay KooooK |
-| Business process modeling (BPMN, DMN) | Published the model as the subject of an article on monitoring a process by the message it is still waiting for. | Process Monitoring with BPMN |
-| Business process modeling (BPMN, DMN) | Carried the model into LIKE MAGIC and extended it there, running the journey until the orchestration was replaced (2022–2023). | Co-Founder & Head of Technology |
+| Business process modeling (BPMN, DMN) | Published the guest-journey model as the subject of an article on monitoring a process by the message it is still waiting for. | Process Monitoring with BPMN |
+| Business process modeling (BPMN, DMN) | Carried Stay KooooK's guest-journey model into LIKE MAGIC and extended it there, running the journey until the orchestration was replaced (2022–2023). | Co-Founder & Head of Technology |
 | Change management | Replaced UBS Wealth Management & Business Banking's proprietary engineering process with a market-standard one as owner of its Analysis & Design discipline, coaching project teams into it. | Solution Manager, Software Engineering — Analysis & Design |
 | Change management | Drove LIKE MAGIC's productive rollout of AI assistants across planning, delivery and operations. | Co-Founder & Head of Technology |
 | CI/CD | Put Jenkins and Sonar in the SDLC toolchain UBS Wealth Management & Swiss Bank released inside, each project's build and continuous integration generated from its design and the reference architecture. | IT Architect — Software Development Lifecycle Toolchain |
@@ -124,7 +124,7 @@ roles:
 | Cloud architecture | Ran 3AP's notification services on Swisscom's Cloud Foundry and Google Kubernetes Engine at the same time, one binding a broker as a managed service and the other running it as a container (2019). | 3AP Platform |
 | Cloud architecture | Owned LIKE MAGIC's production platform on Google Cloud. | Co-Founder & Head of Technology |
 | Community building | Built internal communities of practice at UBS and led the division's Java Chief Developer committee for two years. | Solution Manager, Software Engineering — Analysis & Design |
-| Community building | Co-led that committee for a further five years, the forum in which the division's lead engineers set common practice. | IT Architect — Software Development Lifecycle Toolchain |
+| Community building | Co-led the division's Java Chief Developer committee for five years, the forum in which the division's lead engineers set common practice. | IT Architect — Software Development Lifecycle Toolchain |
 | Community building | Co-organized the three Eclipse events UBS hosted in Zürich, MDD Day 2010 and Finance Day 2012 and 2014 (2010–2014). | IT Architect — Software Development Lifecycle Toolchain |
 | Community building | Served on the board of the Swiss Eclipse User Group within JUG Switzerland. | Swiss Eclipse User Group board |
 | Company vision and strategy | Co-founded 3AP and sat on the management team that took it from 5 to about 70 people. | Co-Founder & CTO |
@@ -136,10 +136,10 @@ roles:
 | Container orchestration (Kubernetes) | Built Conperi's platform on Google Kubernetes Engine from cluster creation up, GPU nodes included. | Conperi |
 | Container orchestration (Kubernetes) | Ran the LIKE MAGIC platform on Google Kubernetes Engine. | Co-Founder & Head of Technology |
 | Context engineering | Built the LIKE MAGIC Mental Model as the organization's shared context layer and shipped it as a skill into the company's Claude environment. | Co-Founder & Head of Technology |
-| Context engineering | Generalized the approach into CompanyGraph, a published meta-model for describing a company as a graph both people and agents can read. | CompanyGraph |
+| Context engineering | Generalized the LIKE MAGIC Mental Model's approach into CompanyGraph, a published meta-model for describing a company as a graph both people and agents can read. | CompanyGraph |
 | Context engineering | Briefed a podcast episode on the career break from the model's own files and read the generated result against its sources before publishing it. | Turn your work history into code |
-| Context engineering | Briefed the film Build the model first from the same files, rebuilding the export bundle first because it stood five experiences behind the model. | Build the model first |
-| Context engineering | Wrote the film Governance as data from the same files and published it under a description carrying no count, naming instead where the model states its own size. | Governance as data |
+| Context engineering | Briefed the film Build the model first from this model's own files, rebuilding the export bundle first because it stood five experiences behind the model. | Build the model first |
+| Context engineering | Wrote the film Governance as data from this model's own files and published it under a description carrying no count, naming instead where the model states its own size. | Governance as data |
 | Conversational AI | Opened LIKE MAGIC's API to conversational AI providers rather than running language models in the platform, so d3x, ailean and onsai integrated themselves into the staff solution, unified multi-channel guest messaging with AI agents answering, guest insights and staff collaboration. | Co-Founder & Head of Technology |
 | Data engineering | Fed Credit Suisse's Master Data Repository by consuming the bank's existing source-code analysis and reading, transforming and loading the database schemas of its core systems. | Credit Suisse Master Data Repository |
 | Data engineering | Transformed Flawa iQ's LoRaWAN telemetry into the data its ERP needed and pushed it there. | Flawa iQ |
@@ -176,7 +176,7 @@ roles:
 | Enterprise architecture | Mapped LIKE MAGIC's 12 business domains to the capabilities under each and set the platform's direction along that map, API-first with an event and data hub. | Co-Founder & Head of Technology |
 | Event streaming | Ran Kafka as the streaming backbone of Conperi's processing pipeline, one topic per stage so each service consumed the output of the stage before it. | Conperi |
 | Event streaming | Designed Stay KooooK's topic layout, redelivery handling and consumers that processed each event once, on Spring Cloud Stream over a Google Cloud Pub/Sub binder with bindings declared per service so the transport stayed swappable. | Stay KooooK |
-| Event streaming | Carried that into LIKE MAGIC at 89M+ platform events a year. | Co-Founder & Head of Technology |
+| Event streaming | Published and consumed LIKE MAGIC's events through Spring Cloud Stream over a Pub/Sub binder at 89M+ events a year, each service declaring its bindings over a swappable transport. | Co-Founder & Head of Technology |
 | Event-driven architecture | Built Flawa iQ to consume LoRaWAN device uplinks over AMQP. | Flawa iQ |
 | Event-driven architecture | Ran Conperi's pipeline over a Kafka backbone. | Conperi |
 | Event-driven architecture | Separated accepting a message from delivering one on 3AP's platform, a queue per channel, so a slow vendor delays delivery instead of failing the caller. | 3AP Platform |
@@ -217,7 +217,7 @@ roles:
 | Java | Wrote Java on LIKE MAGIC's Spring Boot and WebFlux platform, including the reference implementation of each pattern its architecture used. | Co-Founder & Head of Technology |
 | Knowledge management | Established communities of practice at UBS and kept the division's methodology and guidance in Rational Method Composer, published as its SDLC instance. | Solution Manager, Software Engineering — Analysis & Design |
 | Knowledge management | Built the LIKE MAGIC Mental Model as the organization's shared context layer. | Co-Founder & Head of Technology |
-| Knowledge management | Published CompanyGraph so the same layer can be kept as Markdown in a repository with a history. | CompanyGraph |
+| Knowledge management | Published CompanyGraph so a shared context layer like the Mental Model can be kept as Markdown in a repository with a history. | CompanyGraph |
 | Legacy modernization | Architected DynaRep, generating COBOL and Java implementations for UBS mainframe service interfaces. | Solution Manager, Software Engineering — Analysis & Design |
 | Legacy modernization | Replaced Swisscard's proprietary SOAP data-integration layer with Spring Boot behind the same WSDL contract, so no consumer had to change. | Swisscard data integration rewrite |
 | Machine learning | Architected the pipeline, the labeling tool and the serving path for Conperi, 3AP's applied-research proof of concept with ZHAW for reading health-insurance invoices, and followed ZHAW's modeling closely enough to supply what it needed — GPU training nodes and a labeled dataset where none existed. | Conperi |
@@ -231,7 +231,7 @@ roles:
 | Microservices architecture | Designed the microservice cut of Conperi's processing pipeline. | Conperi |
 | Microservices architecture | Designed the microservice cut of Aroov's backend. | Aroov digital rental platform |
 | Microservices architecture | Cut Stay KooooK into microservices, each holding its own schema in PostgreSQL. | Stay KooooK |
-| Microservices architecture | Carried the architecture into LIKE MAGIC as the platform's own, cut along its 12 business domains with booking, guest, payment and door access among the services, each contract-first and every vendor behind its own connector with a fallback path. | Co-Founder & Head of Technology |
+| Microservices architecture | Cut LIKE MAGIC's platform into services along its 12 business domains with booking, guest, payment and door access among the services, each contract-first and every vendor behind its own connector with a fallback path. | Co-Founder & Head of Technology |
 | MLOps | Set up Conperi's training and serving split — a training service, a registry versioning each model with the metadata to reproduce it and a separate serving service — so a model could be replaced without redeploying its consumers, in a proof of concept that never ran drift, rollback or retraining in production. | Conperi |
 | Model-driven engineering | Wrote the degree dissertation on Model-Driven Architecture for component-based and service-oriented architecture. | Business Information Systems UAS |
 | Model-driven engineering | Built UBS's DynaRep model-driven repository and code generator. | Solution Manager, Software Engineering — Analysis & Design |
@@ -257,7 +257,7 @@ roles:
 | Platform engineering | Owned the LIKE MAGIC platform as the product every team built on, self-service so a team added a service, schemas or tables and the platform's CI/CD and infrastructure as code carried them to production. | Co-Founder & Head of Technology |
 | Process orchestration | Owned the Camunda (Zeebe) orchestration of the guest journey at Stay KooooK. | Stay KooooK |
 | Process orchestration | Published a runnable sample of the journey on Zeebe with the article on monitoring it. | Process Monitoring with BPMN |
-| Process orchestration | Carried the orchestration into LIKE MAGIC, then led the reassessment at contract renewal, recommending building on the engine properly before the decision went to removal (2022–2023). | Co-Founder & Head of Technology |
+| Process orchestration | Carried Stay KooooK's Camunda orchestration of the guest journey into LIKE MAGIC, then led the reassessment at contract renewal, recommending building on the engine properly before the decision went to removal (2022–2023). | Co-Founder & Head of Technology |
 | Process orchestration | Co-presented the platform at CamundaCon in Berlin, speaking to how it ran and monitored the guest journey on Camunda. | CamundaCon 2022 |
 | Process orchestration | Featured in Camunda's published case study citing a 95% self-check-in rate and 7,000 process instances per month. | Camunda case study on LIKE MAGIC |
 | Product discovery | Put GuestGraph in front of a professional network with a talk and a stated outcome each way, a clean no included. | GuestGraph |
@@ -313,7 +313,7 @@ roles:
 | Technical writing | Wrote the developer documentation for LIKE MAGIC's public API, which conversational AI providers and other partners integrated against without LIKE MAGIC building the integration. | Co-Founder & Head of Technology |
 | Technical writing | Wrote CompanyGraph's conventions, design specs and worked example, prose other people follow for readers who were not in the room. | CompanyGraph |
 | Vendor management | Ran LIKE MAGIC's AI and automation tooling as a managed portfolio: Claude Code team licenses, multi-provider tooling across Claude, Gemini and Copilot and the call to self-host n8n on its own Kubernetes rather than take the hosted service. | Co-Founder & Head of Technology |
-| Vendor management | Led the same call on Camunda at contract renewal, where the platform used a fraction of the engine and the choice was to build on it or leave it, recommending building on it before the decision went to removal (2022–2023). | Co-Founder & Head of Technology |
+| Vendor management | Led the call on Camunda at contract renewal, where the platform used a fraction of the engine and the choice was to build on it or leave it, recommending building on it before the decision went to removal (2022–2023). | Co-Founder & Head of Technology |
 
 ## Summary
 
