@@ -51,9 +51,9 @@ the handle everything else uses.
 
 **References between entities are by name, not by link.** An experience's `skills:` list names
 skill entities that live in `skills.md`, spelled exactly as their headings spell them. The
-Skills table in the profile in `profiles.md` claims each of those skills at a level and gives an
-Evidence cell naming the experiences that show it, one sentence per experience, in the order
-they happened. A skill page itself claims nothing about him: it defines the capability and says
+Skills table in the profile in `profiles.md` claims each of those skills at a level, and the
+Evidence table under it gives the facts the claim rests on, one row each, in the order they
+happened, most of them naming the experience they came from. A skill page itself claims nothing about him: it defines the capability and says
 what practicing it looks like, because the level and the evidence are one person's and belong in
 the profile. To follow a claim, take the name and find the heading.
 

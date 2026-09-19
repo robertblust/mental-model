@@ -13,6 +13,7 @@ skills:
   - API design
   - Identity and access management
   - Java
+  - UX design
 ---
 
 # Flatland CDO Server
@@ -27,7 +28,7 @@ skills:
 
 ### Architecture
 
-- Published a client beside it that browses any model the server holds rather than one model in particular, so a new metamodel is explorable without a screen built for it, and the organization above was worked with through that client.
+- Published a client beside it, in AngularJS, that browses any model the server holds rather than one model in particular, so a new metamodel is explorable without a screen built for it, and the organization above was worked with through that client.
 - Made the REST interface generic by going through EMF's reflective API rather than generated accessors, so a model added to the repository is readable and writable the same day without an endpoint written for its types.
 - Designed a base vocabulary every model on top inherits — identity, naming, description, comments, hyperlinks, free-form properties, ratings and a global search marker — so the models above it describe their own domain and nothing else.
 - Wrote the base vocabulary and the organization metamodel in Xcore, so a derived figure such as free capacity is a feature of the language rather than code beside it.

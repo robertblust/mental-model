@@ -6,10 +6,8 @@ end: 2016-09
 organization: Swisscard
 role: Backend Engineer
 skills:
-  - API design
   - Java
   - Legacy modernization
-  - Integration architecture
 ---
 
 # Swisscard data integration rewrite

@@ -10,7 +10,6 @@ skills:
   - Java
   - API design
   - Software engineering
-  - Frontend development
 ---
 
 # Swisscom agile delivery cockpit
@@ -26,5 +25,5 @@ skills:
 ### Engineering
 
 - Integrated and aggregated data from Rally (agile ALM) and HP Quality Center (test management) via MuleSoft (Mule ESB): the Agile Release Train broken down into sprints per project/team, and test coverage against Quality Center.
-- Built with MuleSoft and the Rally and Quality Center REST/SOAP APIs, with a React front end putting the release train on a wall-mounted screen.
+- Built with MuleSoft and the Rally and Quality Center REST/SOAP APIs, for a cockpit putting the release train on a wall-mounted screen.
 - Built the backend on Spring Boot in Java over a CDO model repository: the Mule flows transformed the Rally and Quality Center data into facts held in CDO, and an API designed for the cockpit exposed those facts to the React front end.

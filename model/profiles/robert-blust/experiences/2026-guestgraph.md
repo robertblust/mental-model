@@ -26,10 +26,11 @@ skills:
 
 ### Leadership
 
-- Published it under Apache 2.0 as open core, with a billing model on one meter, arrivals, and a narrated introduction talk in German and English with a PDF in each.
+- Published it under Apache 2.0 as open core, with a billing model on one meter, arrivals, and a narrated introduction talk in German and English with a deck and a PDF in each.
 
 ### Architecture
 
+- Designed the identity graph's data model: guests, their source records and the merge decisions between them.
 - Built it as a layered confidence model: strong identifiers merge deterministically with transitive closure, everything else is scored against a threshold the tenant chose, and what falls between goes to a human steward, whose split becomes a do-not-merge rule that new evidence cannot cross.
 - Split probabilistic matching into blocking and scoring, because a database index answers only equality: phonetic keys find candidates that share no identifier, then a weighted feature vector grades them, damped when few signals were observed and penalized when birthdates conflict.
 - Kept every source record immutable and every merge explainable, so a guest can be asked why two records are one person and the answer is the decision chain.

@@ -92,15 +92,17 @@ The rules are in `docs/superpowers/specs/2026-08-26-skills-reference-design.md` 
 the definition starts with the thing itself, never “The practice of”; `## In practice` is in
 the imperative without a subject and names no person, employer, date or number; products
 appear only in a closing `Typical tools:` clause. A skill is claimed in a profile's Skills
-table — that is where one person's level and evidence live, never in the skill file.
+table and evidenced in the Evidence table under it — that is where one person's level and
+evidence live, never in the skill file.
 
 ## Sync slot
 
 Instance-owned skills live at `.claude/skills/mental-model-*/`, and one does:
-`mental-model-evidence-coverage` checks the Skills table's evidence cells against the
-experiences that carry them. It is here rather than in `companygraph-validate` because every
-check there cites a numbered rule from `CONVENTIONS.md` and there is none for this — the
-profile schema types `Evidence` as a string, so R4 never reaches inside it.
+`mental-model-evidence-coverage` checks the joins the profile schema leaves to whoever writes:
+that the experience an Evidence row names lists the row's skill, and that every claim has a row
+under it. That the experience is this profile's own is held by the instance checks. The skill
+is here rather than in `companygraph-validate` because every check there cites a numbered rule
+from `CONVENTIONS.md`, and the schema's own writing rules say that no rule checks these.
 
 The `companygraph-*` skills are the portable ones from the tooling spec, carried here until the
 tooling installs them. No skill syncs content into this repository; the content was written by

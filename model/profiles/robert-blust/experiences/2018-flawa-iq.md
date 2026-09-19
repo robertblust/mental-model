@@ -14,7 +14,6 @@ skills:
   - Event-driven architecture
   - IoT architecture
   - Data engineering
-  - Frontend development
   - Java
   - Database design
   - Cloud architecture
@@ -41,7 +40,6 @@ skills:
 ### Engineering
 
 - Together with comtac AG (a canton-Zürich LoRaWAN electronics specialist), delivered an MVP of 10 working prototypes (RFID modules + LoRaWAN, backend on Swisscom Application Cloud).
-- Built a small React front end for the MVP so the sensor readings could be seen rather than inferred from the telemetry.
 - Built the backend to 3AP's microservice reference architecture on Spring and Java 11, released through a Jenkins pipeline — consuming device uplink and configuration events over AMQP from Swisscom's LoRaWAN broker, holding them in a reactive MongoDB repository, pushing them on to the client as server-sent events and feeding the data into the ERP over an API, which closes the loop so consumed or expired modules trigger automatic reordering.
 - Transformed the raw telemetry on the platform's side into the data the ERP needed, then pushed it to the ERP.
 
