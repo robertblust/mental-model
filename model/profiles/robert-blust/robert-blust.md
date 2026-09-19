@@ -210,7 +210,7 @@ roles:
 | Java | Built UBS's web portals in Java Portlets and JSP on IBM Portal Server. | Software Engineer / IT Developer |
 | Java | Built DynaRep's Eclipse plugins, web services and generators in Java. | Solution Manager, Software Engineering — Analysis & Design |
 | Java | Built the Flatland CDO Server as an OSGi product in Java. | Flatland CDO Server |
-| Java | Put Java and Spring Boot into 3AP's reference architecture so every platform built to it ran on them, AXA Health, Flawa iQ, Conperi, Aroov and Stay KooooK. | Co-Founder & CTO |
+| Java | Developed the reference sample of 3AP's architecture in Java and Spring Boot and explained it to each team, the platforms built to it including AXA Health, Flawa iQ, Conperi, Aroov and Stay KooooK. | Co-Founder & CTO |
 | Java | Wrote Java on LIKE MAGIC's Spring Boot and WebFlux platform, including the reference implementation of each pattern its architecture used. | Co-Founder & Head of Technology |
 | Knowledge management | Established communities of practice at UBS and kept the division's methodology and guidance in Rational Method Composer, published as its SDLC instance. | Solution Manager, Software Engineering — Analysis & Design |
 | Knowledge management | Built the LIKE MAGIC Mental Model as the organization's shared context layer. | Co-Founder & Head of Technology |

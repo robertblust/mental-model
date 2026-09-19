@@ -9,7 +9,6 @@ skills:
   - Solution architecture
   - Microservices architecture
   - Cloud architecture
-  - Java
   - Database design
   - Container orchestration (Kubernetes)
   - Platform engineering

@@ -30,7 +30,7 @@ skills:
 ### Architecture
 
 - Modeled the system before building it and kept the model with it — the two actors, the use cases each of them has, the domain classes and a component view naming every service and the interface it offers, in UML alongside the code rather than in a document beside it.
-- Cut the platform into Spring Boot services behind a gateway with service discovery, generated from JHipster so that a new service arrived with its build, its tests and its security already wired.
+- Cut the platform into Spring Boot services behind a gateway with service discovery and wrote them in Java, each generated from JHipster so that a new service arrived with its build, its tests and its security already wired.
 - Designed the service interfaces so the finder and the owner reached each other through them without either one's contact details reaching the other.
 
 ### Engineering
