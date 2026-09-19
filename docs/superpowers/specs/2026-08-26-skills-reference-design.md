@@ -219,7 +219,6 @@ repository.
 
 One file each, H1 = the name below; texts as in the comparison's third table.
 
-
 **Strategy**
 
 | Skill |
