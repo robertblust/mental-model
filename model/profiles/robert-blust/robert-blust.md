@@ -51,7 +51,7 @@ roles:
 | Integration architecture | Expert |
 | IoT architecture | Competent |
 | IT governance | Proficient |
-| IT strategy | Expert |
+| IT strategy | Proficient |
 | Java | Expert |
 | Knowledge management | Proficient |
 | Legacy modernization | Proficient |
@@ -69,7 +69,7 @@ roles:
 | Product discovery | Familiar |
 | Product management | Competent |
 | Public speaking | Proficient |
-| Requirements engineering | Expert |
+| Requirements engineering | Proficient |
 | Site reliability engineering | Proficient |
 | Software architecture | Expert |
 | Software engineering | Expert |
