@@ -74,6 +74,6 @@ Per rule, `R1 ✓` or `R4 ✗ <file>: <reference> resolves to no <type>` — one
 citing the rule. Then the writing rules per type, cited as the rule's own words and the file
 that breaks it. Then the gaps, one line each, after the failures and outside their
 count. Then the lines nothing else reaches and this pass judged by reading: whether
-each `Evidence` cell is a concrete fact, whether `## In practice` prose says what following and
+each Evidence row's `What it shows` is a concrete fact, whether `## In practice` prose says what following and
 breaking the value looks like. End with **Not checked:** naming anything above that was
 skipped, so a clean report is never read as more than it is.
