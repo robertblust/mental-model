@@ -147,8 +147,8 @@ Frontmatter is for short facts.
 So a list of *bare names* stays in frontmatter, typed `array of ref → <type>`; a list of
 *records* becomes a table in the body. The same reference therefore appears in both places and
 that is not an inconsistency — an experience naming the skills it used is a list of names and
-nothing more, while a profile's claim on a skill carries a level and its evidence. What decides
-the shape is whether the edge has attributes of its own.
+nothing more, while a profile's claim on a skill carries a level. What decides the shape is
+whether the edge has attributes of its own.
 
 ### R9 — Schema files have a fixed shape
 
@@ -244,8 +244,8 @@ same terms. `array of ref?` is not a form: the `?` asks whether one value resolv
 has no single value to ask it of.
 
 `qualifier → <type>` is a column type and only a column type. A row of a column table is one
-fact about several things — a skill held at a level, with the evidence for it — and a fact
-like that is identified by the things it joins rather than by a name of its own. R2 names
+fact about several things — a skill held at a level — and a fact like that is identified by
+the things it joins rather than by a name of its own. R2 names
 entities by their H1 and allows no two of a type to share one, so such a row cannot become an
 entity without being given a name nobody calls it. It stays a row: one column names what the
 row points at, and the rest qualify that reference. A qualifier must resolve, exactly as a
@@ -406,15 +406,18 @@ reading the files against these rules. A repository may also own a script that c
 them; nothing here depends on having one.
 
 Which rules those scripts reach is worth stating plainly. In the CompanyGraph repository, `npm
-run verify` runs `verify/check.mjs`, which mechanically checks part of R4, R6, R8, R9, R10, R11,
-R12, R15 and R16 against this repository's own files, plus a meta-check under R0 that fails if
+run verify` runs `verify/check.mjs`, which mechanically checks part of R3, R4, R5, R6, R8, R9,
+R10, R11, R12, R15 and R16 against this repository's own files, plus a meta-check under R0 that fails if
 any check cites a rule this document does not define. `npm run test:instance` exercises the
 instance parser's implementation of the rules it cites — R2, R4, R5, R6, R7, R9, R11, R13 and R16 —
 against fixtures rather than files, and `npm run test:rules` extends that meta-check to the
-rules the parser cites in its comments and error messages. No file is checked against R1, R2,
-R3, R5, R7 or R17; where a check happens to touch one, it is incidental to the rule that
-check cites. Treat all six as agent-enforced — which is by design, not by omission: the claim
-this model ships under is that schemas written as prose are enforceable by agents.
+rules the parser cites in its comments and error messages. Part is the word that matters. Of
+R3 a script reads one thing, a link from an entity to a file of the model, and of R5 that an
+owner's table of what it owns agrees with its folder; that a name written in prose is the
+canonical one, no script can tell. No file is checked against R1, R2, R7 or R17; where a check
+happens to touch one, it is incidental to the rule that check cites. Treat these, and the rest of
+every rule a script reads in part, as agent-enforced — which is by design, not by omission: the
+claim this model ships under is that schemas written as prose are enforceable by agents.
 
 Those scripts are this repository's own harness. Copying `CONVENTIONS.md` into a company
 brings the rules and not the scripts — there is no `verify` script there, and what these run

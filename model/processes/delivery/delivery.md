@@ -16,11 +16,13 @@ owner: Owner
 
 ## Phases
 
-1. [Shape](phases/shape.md)
-2. [Spec](phases/spec.md)
-3. [Plan](phases/plan.md)
-4. [Implement](phases/implement.md)
-5. [Integrate](phases/integrate.md)
+| Phase |
+| --- |
+| Shape |
+| Spec |
+| Plan |
+| Implement |
+| Integrate |
 
 ## What it never does
 
