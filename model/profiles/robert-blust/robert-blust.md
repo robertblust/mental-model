@@ -91,7 +91,7 @@ roles:
 | --- | --- | --- |
 | Agentic AI development | Built LIKE MAGIC's internal AI marketplace on Claude, giving teams governed access to assistants and agents grounded in the Mental Model. | Co-Founder & Head of Technology |
 | Agentic AI development | Defined the agents that ran a job search, one rating each posting against the experience and colleagues' feedback, one writing the application on a go and one checking the process and the correspondence. | Application tooling |
-| Agentic AI development | Built GuestGraph's engine and connector through the agent seats the model defines, each under its own rulebook and none of them deciding, from three specifications reviewed before each build. | GuestGraph |
+| Agentic AI development | Built GuestGraph through the agent seats the model defines, each under its own rulebook and none of them deciding, its engine from three specifications reviewed before each build. | GuestGraph |
 | Agentic AI development | Built CompanyGraph through the agent seats the model defines, each under its own rulebook, and wrote its agent conventions: an unresolvable reference is an error rather than a warning, and every validation pass names what it did not check. | CompanyGraph |
 | Agentic AI development | Built blust.ch through the agent seats the model defines, each under its own rulebook, and briefed and reviewed every page the Writer seat drafted. | blust.ch |
 | Agile delivery | Ran every 3AP project in Scrum, agile delivery being what the company's name stood for: As Agile As Possible. | Co-Founder & CTO |
@@ -130,14 +130,14 @@ roles:
 | Community building | Served on the board of the Swiss Eclipse User Group within JUG Switzerland. | Swiss Eclipse User Group board |
 | Company vision and strategy | Co-founded 3AP and sat on the management team that took it from 5 to about 70 people. | Co-Founder & CTO |
 | Company vision and strategy | Co-founded LIKE MAGIC and set its product, platform and AI strategy. | Co-Founder & Head of Technology |
-| Company vision and strategy | Put GuestGraph up for scrutiny as open core, with a billing model on one meter, arrivals, and a stated outcome each way, a clean no included. | GuestGraph |
-| Company vision and strategy | Put CompanyGraph up for scrutiny as open core, with a billing model and a stated outcome each way. | CompanyGraph |
-| Consulting | Created the technical concepts, proposals and pitches for 3AP's client work as CTO and advised Credit Suisse, Swisscard, AXA and Mobiliar on the architecture behind theirs, diagnosing the current system before recommending anything, as with Adcubum Syrius for AXA Health and Garaio REM for Aroov. | Co-Founder & CTO |
+| Company vision and strategy | Published GuestGraph as open core with a billing model on one meter, arrivals. | GuestGraph |
+| Company vision and strategy | Published CompanyGraph as open core with a billing model beside it. | CompanyGraph |
+| Consulting | Created the technical concepts, proposals and pitches for 3AP's client work as CTO and advised Credit Suisse, Swisscard, AXA and Mobiliar on the architecture behind theirs, diagnosing the current system before recommending anything. | Co-Founder & CTO |
 | Container orchestration (Kubernetes) | Engineered the reference deployment of 3AP's architecture on Google Kubernetes Engine. | Co-Founder & CTO |
 | Container orchestration (Kubernetes) | Built Conperi's platform on Google Kubernetes Engine from cluster creation up, GPU nodes included. | Conperi |
 | Container orchestration (Kubernetes) | Ran the LIKE MAGIC platform on Google Kubernetes Engine. | Co-Founder & Head of Technology |
 | Context engineering | Built the LIKE MAGIC Mental Model as the organization's shared context layer and shipped it as a skill into the company's Claude environment. | Co-Founder & Head of Technology |
-| Context engineering | Generalized the LIKE MAGIC Mental Model's approach into CompanyGraph, a published meta-model for describing a company as a graph both people and agents can read. | CompanyGraph |
+| Context engineering | Extracted CompanyGraph, a published meta-model describing a company as a graph people and agents can both read, from two instances that had arrived at the same shape. | CompanyGraph |
 | Context engineering | Briefed a podcast episode on the career break from the model's own files and read the generated result against its sources before publishing it. | Turn your work history into code |
 | Context engineering | Briefed the film Build the model first from this model's own files, rebuilding the export bundle first because it stood five experiences behind the model. | Build the model first |
 | Context engineering | Wrote the film Governance as data from this model's own files and published it under a description carrying no count, naming instead where the model states its own size. | Governance as data |
@@ -169,7 +169,7 @@ roles:
 | Domain-specific language design | Designed a reusable base vocabulary in Xcore for the Flatland CDO Server and an organization metamodel on top of it, where a derived feature is part of the language rather than code beside it. | Flatland CDO Server |
 | Engineering leadership | Owned the Analysis & Design discipline in UBS Wealth Management & Business Banking and led the DynaRep project team of ten. | Solution Manager, Software Engineering — Analysis & Design |
 | Engineering leadership | Led the team that built UBS Wealth Management & Swiss Bank's Eclipse-based tooling platform and architected the SDLC toolchain several hundred engineers released inside. | IT Architect — Software Development Lifecycle Toolchain |
-| Engineering leadership | Owned the frame 3AP's engineering happened in as CTO, the organization and its roles, the reference architecture and stack and the approvals every engagement passed, through its scale to about 70 people in two countries. | Co-Founder & CTO |
+| Engineering leadership | Owned the frame 3AP's engineering happened in as CTO, the organization and its roles, the reference architecture and stack and the approvals every engagement passed, through its scale to about 70 people, a near-shore team in Serbia among them. | Co-Founder & CTO |
 | Engineering leadership | Set LIKE MAGIC's technology direction and developed its technical leadership as the company grew from 5 to 25 people, holding the platform and AI budget. | Co-Founder & Head of Technology |
 | Enterprise architecture | Architected the Integration Architecture Tool Chain for UBS Wealth Management & Swiss Bank around a canonical data model, with a central API and interface-portfolio repository and a role-based review every team's interfaces passed. | IT Architect — Software Development Lifecycle Toolchain |
 | Enterprise architecture | Presented its design to the Swiss financial-services community at Eclipse Finance Day. | Eclipse Finance Day 2013 |
@@ -210,7 +210,7 @@ roles:
 | Java | Built UBS's web portals in Java Portlets and JSP on IBM Portal Server. | Software Engineer / IT Developer |
 | Java | Built DynaRep's Eclipse plugins, web services and generators in Java. | Solution Manager, Software Engineering — Analysis & Design |
 | Java | Built the Flatland CDO Server as an OSGi product in Java. | Flatland CDO Server |
-| Java | Put Java and Spring Boot into 3AP's reference architecture so every platform built to it ran on them, AXA Health, Flawa iQ on Java 11, Conperi, Aroov and Stay KooooK. | Co-Founder & CTO |
+| Java | Put Java and Spring Boot into 3AP's reference architecture so every platform built to it ran on them, AXA Health, Flawa iQ, Conperi, Aroov and Stay KooooK. | Co-Founder & CTO |
 | Java | Wrote Java on LIKE MAGIC's Spring Boot and WebFlux platform, including the reference implementation of each pattern its architecture used. | Co-Founder & Head of Technology |
 | Knowledge management | Established communities of practice at UBS and kept the division's methodology and guidance in Rational Method Composer, published as its SDLC instance. | Solution Manager, Software Engineering — Analysis & Design |
 | Knowledge management | Built the LIKE MAGIC Mental Model as the organization's shared context layer. | Co-Founder & Head of Technology |
@@ -233,7 +233,7 @@ roles:
 | Model-driven engineering | Wrote the degree dissertation on Model-Driven Architecture for component-based and service-oriented architecture. | Business Information Systems UAS |
 | Model-driven engineering | Built UBS's DynaRep model-driven repository and code generator. | Solution Manager, Software Engineering — Analysis & Design |
 | Model-driven engineering | Built the Eclipse-based Integration Architecture Tool Chain for UBS Wealth Management & Swiss Bank on EMF, Xcore, Xtext and Xtend with a CDO repository. | IT Architect — Software Development Lifecycle Toolchain |
-| Model-driven engineering | Presented UBS's enterprise model and its generation path to the Eclipse Modeling Platform Working Group. | Eclipse MDD Day 2010 |
+| Model-driven engineering | Argued at Eclipse MDD Day that requirements, analysis and design belong in formal models, and demonstrated a proof-of-concept SDLC modeling platform on CDO and EMF. | Eclipse MDD Day 2010 |
 | Model-driven engineering | Spoke on models as the enterprise's first-class artifacts at Eclipse MDD Day. | Eclipse MDD Day 2010 |
 | Model-driven engineering | Presented Eclipse data modeling at enterprise scale at Eclipse Day Florence. | Eclipse Day Florence 2012 |
 | Model-driven engineering | Built the Flatland CDO Server, an Eclipse CDO model repository serving any model over REST without code written for that model. | Flatland CDO Server |
@@ -278,7 +278,7 @@ roles:
 | Software architecture | Designed GuestGraph's identity-resolution engine from three written specifications. | GuestGraph |
 | Software engineering | Built UBS's intranet and internet portals and developed features of the ACE Foundation beneath UBS Quotes. | Software Engineer / IT Developer |
 | Software engineering | Architected and built DynaRep's Eclipse plugins, web services and code generators. | Solution Manager, Software Engineering — Analysis & Design |
-| Software engineering | Built the Swisscom delivery cockpit end to end. | Swisscom agile delivery cockpit |
+| Software engineering | Built the Swisscom delivery cockpit's backend on Spring Boot in Java over a CDO model repository, fed by Mule flows from Rally and Quality Center. | Swisscom agile delivery cockpit |
 | Software engineering | Wrote the reference implementation of each pattern on LIKE MAGIC's Spring Boot WebFlux platform, so a team built a new service from working code, unit and integration tests running on every pipeline. | Co-Founder & Head of Technology |
 | Software modeling (UML, SysML, C4) | Owned the Analysis & Design discipline in the Rational Unified Process rollout at UBS Wealth Management & Business Banking, its service-modeling methodology in Rational Method Composer and UML. | Solution Manager, Software Engineering — Analysis & Design |
 | Software modeling (UML, SysML, C4) | Modeled Lost-Tag's actors, use cases, domain classes and components in UML in the repository, beside the code they describe. | Lost-Tag |

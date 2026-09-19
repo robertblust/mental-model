@@ -26,7 +26,7 @@ skills:
 
 ### Leadership
 
-- Published it under Apache 2.0 as open core, with a billing model on one meter, arrivals, and a narrated introduction talk in German and English with a PDF in each.
+- Published it under Apache 2.0 as open core, with a billing model on one meter, arrivals, and a narrated introduction talk in German and English with a deck and a PDF in each.
 
 ### Architecture
 

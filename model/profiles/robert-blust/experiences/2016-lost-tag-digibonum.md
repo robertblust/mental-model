@@ -35,7 +35,7 @@ skills:
 
 ### Engineering
 
-- Carried the same product into a browser, a hybrid mobile application and a native iOS app with a barcode scanner, all against one set of service interfaces, and released the iOS app to the store from a scripted pipeline.
+- Carried the same product, in AngularJS, into a browser, a hybrid mobile application and a native iOS app with a barcode scanner, all against one set of service interfaces, and released the iOS app to the store from a scripted pipeline.
 - Delivered it in five languages, Georgian among them, and integrated the shop the tags are sold through rather than building a second one.
 - Ran it on Cloud Foundry for the first years and saw it through to Kubernetes on Google Cloud, a platform outliving two runtimes underneath it.
 

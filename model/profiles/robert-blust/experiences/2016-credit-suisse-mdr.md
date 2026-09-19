@@ -37,7 +37,7 @@ skills:
 
 ### Engineering
 
-- Implemented on the Flatland CDO Server rather than on stock Eclipse CDO — the model repository published as open source two years earlier, brought to a bank as the foundation of paid work — with a front end built along the same lines as the generic model browser published beside that server, and fed by static source-code analysis and several data sources to discover and connect the model.
+- Implemented on the Flatland CDO Server rather than on stock Eclipse CDO — the model repository published as open source two years earlier, brought to a bank as the foundation of paid work — with an Angular front end built along the same lines as the generic model browser published beside that server, and fed by static source-code analysis and several data sources to discover and connect the model.
 - Built the ingestion that filled it from two sources: the output of the bank's existing source-code analysis and the database schemas of the core systems, both read and transformed on the way in.
 
 ### Results

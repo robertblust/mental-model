@@ -33,7 +33,7 @@ skills:
 
 ### Leadership
 
-- Published it under Apache 2.0 as open core with a billing model and a narrated introduction talk in German and English with a PDF in each, and put it in front of a professional network with a stated outcome each way.
+- Published it under Apache 2.0 as open core with a billing model and a narrated introduction talk in German and English with a deck and a PDF in each, and put it in front of a professional network with a stated outcome each way.
 
 ### Engineering
 

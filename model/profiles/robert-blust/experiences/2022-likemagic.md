@@ -81,7 +81,7 @@ skills:
 
 ### Architecture
 
-- Put every customer on one shared infrastructure rather than a stack per customer, for lower operating cost and a single deployment, and paid for it up front: each tenant isolated by a discriminator built into the platform's framework and again by row-level security in the database.
+- Put every customer on one shared infrastructure rather than a stack per customer, for lower operating cost and a single deployment, and paid for it up front: each tenant isolated by a discriminator built into the platform's framework and again by row-level security in the shared PostgreSQL, reached reactively through R2DBC and jOOQ.
 - Specified the public API in OpenAPI 3.1 over property, reservation, guest, messaging, door access and task resources, with webhook subscriptions and OAuth 2.0 scopes.
 - Cut the platform into services along its 12 business domains and the capabilities under each — booking, guest, profile, payment, door access, messaging, operation and analytics among them — each stateless, self-contained, horizontally scalable and contract-first.
 - Reached every integrated vendor through its own connector, with a fallback path behind the realtime one.
@@ -90,9 +90,9 @@ skills:
 
 ### Engineering
 
-- Wrote Java on the platform, including the reference implementation of each pattern the architecture used, so a team built a new service from working code rather than from a description.
+- Wrote Java on the platform's Spring Boot WebFlux services, including the reference implementation of each pattern the architecture used, so a team built a new service from working code rather than from a description.
 - Drove process orchestration with Camunda for the end-to-end guest journey (Booking → Check-in → Stay → Check-out), carried over from Stay KooooK and run until 2023, its BPMN model extended as the platform grew.
-- Owned the production cloud platform (site reliability engineering, incident management, performance), built as infrastructure as code on Google Cloud with DevOps and CI/CD standards, unit and integration tests running on every pipeline.
+- Owned the production cloud platform (site reliability engineering, incident management, performance), built as infrastructure as code on Google Cloud and run on Google Kubernetes Engine, with DevOps and CI/CD standards on GitHub Actions, unit and integration tests running on every pipeline.
 - Instrumented it on Cloud Monitoring and Cloud Trace with alerting driven by defined SLOs, end-to-end traceability and continuous monitoring being architecture principles the services were built to rather than instrumentation added afterward.
 - Built the LIKE MAGIC Mental Model — a structured organizational knowledge base (roles, processes, features, strategies, architecture decisions) that serves as the shared context layer for AI-assisted operations.
 - Shipped the Mental Model as a skill into the company's Claude environment, so every assistant worked from the same context.
