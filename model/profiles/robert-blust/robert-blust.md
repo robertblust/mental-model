@@ -90,7 +90,9 @@ roles:
 | --- | --- | --- |
 | Agentic AI development | Built LIKE MAGIC's internal AI marketplace on Claude, giving teams governed access to assistants and agents grounded in the Mental Model. | Co-Founder & Head of Technology |
 | Agentic AI development | Defined the agents that ran a job search, one rating each posting against the experience and colleagues' feedback, one writing the application on a go and one checking the process and the correspondence. | Application tooling |
-| Agentic AI development | Built CompanyGraph, GuestGraph and blust.ch through the agent seats the model defines, each under its own rulebook, and wrote CompanyGraph's agent conventions to encode the failure modes: an unresolvable reference is an error rather than a warning, and every validation pass names what it did not check (2026). |  |
+| Agentic AI development | Built GuestGraph's engine and connector through the agent seats the model defines, each under its own rulebook and none of them deciding, from three specifications reviewed before each build. | GuestGraph |
+| Agentic AI development | Built CompanyGraph through the agent seats the model defines, each under its own rulebook, and wrote its agent conventions: an unresolvable reference is an error rather than a warning, and every validation pass names what it did not check. | CompanyGraph |
+| Agentic AI development | Built blust.ch through the agent seats the model defines, each under its own rulebook, and briefed and reviewed every page the Writer seat drafted. | blust.ch |
 | Agile delivery | Ran every 3AP project in Scrum, agile delivery being what the company's name stood for: As Agile As Possible. | Co-Founder & CTO |
 | AI governance | Defined LIKE MAGIC's AI governance and held the company to it: a Human Oversight principle, guardrails against training external LLMs on internal context, multi-provider tooling and cost governance. | Co-Founder & Head of Technology |
 | AI strategy | Authored and executed LIKE MAGIC's company-wide AI strategy, from the internal rollout of assistants across planning, delivery and operations to customer-facing AI delivered by opening the platform's API to d3x, ailean and onsai rather than running language models in it. | Co-Founder & Head of Technology |
@@ -115,26 +117,27 @@ roles:
 | CI/CD | Released Lost-Tag's iOS app to the App Store from a scripted pipeline. | Lost-Tag |
 | CI/CD | Made the build the gate on 3AP's platform, every branch analyzed on SonarCloud with coverage attached and a green mainline deploying itself to the cluster. | 3AP Platform |
 | CI/CD | Set LIKE MAGIC's standards on GitHub Actions, with unit and integration tests on every run. | Co-Founder & Head of Technology |
-| CI/CD | Required one shared conventions check beside each repository's own suite on every default branch in the family (2026). |  |
-| CI/CD | Added a pin test to the MCP server's deployment once a stale lockfile had built green on an older release than its pin named (2026). |  |
+| CI/CD | Required one shared conventions check beside each repository's own suite on every default branch in the family. | blust.ch |
+| CI/CD | Added a pin test to the MCP server's deployment once a stale lockfile had built green on an older release than its pin named. | CompanyGraph |
 | Cloud architecture | Targeted 3AP's reference architecture at Kubernetes and no cloud in particular, so a client's platform was a deployment decision, Google Cloud at Aroov and Stay KooooK and AXA's own on-premise OpenShift. | Co-Founder & CTO |
 | Cloud architecture | Designed Flawa iQ's deployment on Swisscom's Cloud Foundry, services pushed with a manifest and the broker and database bound as managed services. | Flawa iQ |
 | Cloud architecture | Ran 3AP's notification services on Swisscom's Cloud Foundry and Google Kubernetes Engine at the same time, one binding a broker as a managed service and the other running it as a container (2019). | 3AP Platform |
 | Cloud architecture | Owned LIKE MAGIC's production platform on Google Cloud. | Co-Founder & Head of Technology |
 | Community building | Built internal communities of practice at UBS and led the division's Java Chief Developer committee for two years. | Solution Manager, Software Engineering — Analysis & Design |
 | Community building | Co-led that committee for a further five years, the forum in which the division's lead engineers set common practice. | IT Architect — Software Development Lifecycle Toolchain |
-| Community building | Co-organized the three Eclipse events UBS hosted in Zürich, MDD Day 2010 and Finance Day 2012 and 2014 (2010–2014). |  |
+| Community building | Co-organized the three Eclipse events UBS hosted in Zürich, MDD Day 2010 and Finance Day 2012 and 2014 (2010–2014). | IT Architect — Software Development Lifecycle Toolchain |
 | Community building | Served on the board of the Swiss Eclipse User Group within JUG Switzerland. | Swiss Eclipse User Group board |
 | Company vision and strategy | Co-founded 3AP and sat on the management team that took it from 5 to about 70 people. | Co-Founder & CTO |
 | Company vision and strategy | Co-founded LIKE MAGIC and set its product, platform and AI strategy. | Co-Founder & Head of Technology |
-| Company vision and strategy | Put two open-core products up for scrutiny with a billing model and a stated outcome each, a clean no included (2026). |  |
+| Company vision and strategy | Put GuestGraph up for scrutiny as open core, with a billing model on one meter, arrivals, and a stated outcome each way, a clean no included. | GuestGraph |
+| Company vision and strategy | Put CompanyGraph up for scrutiny as open core, with a billing model and a stated outcome each way. | CompanyGraph |
 | Consulting | Created the technical concepts, proposals and pitches for 3AP's client work as CTO and advised Credit Suisse, Swisscard, AXA and Mobiliar on the architecture behind theirs, diagnosing the current system before recommending anything, as with Adcubum Syrius for AXA Health and Garaio REM for Aroov. | Co-Founder & CTO |
 | Container orchestration (Kubernetes) | Engineered the reference deployment of 3AP's architecture on Google Kubernetes Engine. | Co-Founder & CTO |
 | Container orchestration (Kubernetes) | Built Conperi's platform on Google Kubernetes Engine from cluster creation up, GPU nodes included. | Conperi |
 | Container orchestration (Kubernetes) | Ran the LIKE MAGIC platform on Google Kubernetes Engine. | Co-Founder & Head of Technology |
 | Context engineering | Built the LIKE MAGIC Mental Model as the organization's shared context layer and shipped it as a skill into the company's Claude environment. | Co-Founder & Head of Technology |
-| Context engineering | Generalized the approach into CompanyGraph, a published meta-model for describing a company as a graph both people and agents can read (2026). |  |
-| Context engineering | Briefed a podcast episode on the career break from the model's own files and read the generated result against its sources before publishing it (2026). |  |
+| Context engineering | Generalized the approach into CompanyGraph, a published meta-model for describing a company as a graph both people and agents can read. | CompanyGraph |
+| Context engineering | Briefed a podcast episode on the career break from the model's own files and read the generated result against its sources before publishing it. | Turn your work history into code |
 | Context engineering | Briefed the film Build the model first from the same files, rebuilding the export bundle first because it stood five experiences behind the model. | Build the model first |
 | Context engineering | Wrote the film Governance as data from the same files and published it under a description carrying no count, naming instead where the model states its own size. | Governance as data |
 | Conversational AI | Opened LIKE MAGIC's API to conversational AI providers rather than running language models in the platform, so d3x, ailean and onsai integrated themselves into the staff solution, unified multi-channel guest messaging with AI agents answering, guest insights and staff collaboration. | Co-Founder & Head of Technology |
@@ -243,7 +246,8 @@ roles:
 | Observability | Published a way to monitor a business process by its own model, a receive task and a timer per milestone, so a stalled journey announces itself. | Process Monitoring with BPMN |
 | Observability | Instrumented LIKE MAGIC's production platform on Cloud Monitoring and Cloud Trace with alerting driven by defined SLOs, traceability being a principle the services were built to rather than instrumentation added afterward. | Co-Founder & Head of Technology |
 | Open-source stewardship | Published the Flatland CDO Server under the Eclipse Public License in 2014 and kept it public since, forked by strangers building on it and used as the foundation of Credit Suisse's Master Data Repository. | Flatland CDO Server |
-| Open-source stewardship | Published CompanyGraph and GuestGraph as open core under Apache 2.0, a license saying what is open and what could be paid for, with a release contract of tags and manifests (2026). |  |
+| Open-source stewardship | Published GuestGraph as open core under Apache 2.0, saying what is open and what could be paid for. | GuestGraph |
+| Open-source stewardship | Published CompanyGraph as open core under Apache 2.0, saying what is open and what could be paid for, with a release contract of tags and a manifest per release. | CompanyGraph |
 | Organization design | Defined UBS's department-wide role model, each role with its tasks and competencies, put through a formal consultation before it took effect. | Solution Manager, Software Engineering — Analysis & Design |
 | Organization design | Designed 3AP's structure of circles and roles as the company scaled to about 70 people, and kept it as a model on the Flatland CDO Server. | Co-Founder & CTO |
 | Organization design | Defined LIKE MAGIC's technology roles, the technical architect, the business architect and the site reliability engineer, and led the functional team they formed. | Co-Founder & Head of Technology |
@@ -256,14 +260,16 @@ roles:
 | Process orchestration | Carried the orchestration into LIKE MAGIC, then led the reassessment at contract renewal, recommending building on the engine properly before the decision went to removal (2022–2023). | Co-Founder & Head of Technology |
 | Process orchestration | Co-presented the platform at CamundaCon in Berlin, speaking to how it ran and monitored the guest journey on Camunda. | CamundaCon 2022 |
 | Process orchestration | Featured in Camunda's published case study citing a 95% self-check-in rate and 7,000 process instances per month. | Camunda case study on LIKE MAGIC |
-| Product discovery | Put CompanyGraph and GuestGraph up for scrutiny in the open, each with a talk, a billing model and a stated outcome including a clean no (2026). |  |
+| Product discovery | Put GuestGraph in front of a professional network with a talk and a stated outcome each way, a clean no included. | GuestGraph |
+| Product discovery | Put CompanyGraph in front of a professional network with a talk and a stated outcome each way. | CompanyGraph |
 | Product management | Defined and executed LIKE MAGIC's product and platform strategy as co-founder and Head of Technology, API-first with a managed public API, an event and data hub and three conversational AI providers integrating themselves into the staff solution through that API. | Co-Founder & Head of Technology |
 | Public speaking | Spoke at Eclipse MDD Day on models as the enterprise's first-class artifacts. | Eclipse MDD Day 2010 |
 | Public speaking | Spoke at Eclipse Day Florence on data modeling at enterprise scale. | Eclipse Day Florence 2012 |
 | Public speaking | Spoke at Eclipse Finance Day on interface management in a large enterprise. | Eclipse Finance Day 2012 |
 | Public speaking | Spoke at Eclipse Finance Day on the UBS Integration Architecture Tool Chain. | Eclipse Finance Day 2013 |
 | Public speaking | Co-presented at CamundaCon in Berlin on how SV Group became a SaaS business on Camunda. | CamundaCon 2022 |
-| Public speaking | Published a narrated introduction talk each on CompanyGraph and GuestGraph, deck, PDF and audio in German and English (2026). |  |
+| Public speaking | Published a narrated introduction talk on GuestGraph, deck, PDF and audio in German and English. | GuestGraph |
+| Public speaking | Published a narrated introduction talk on CompanyGraph, deck, PDF and audio in German and English. | CompanyGraph |
 | Requirements engineering | Owned the Analysis & Design discipline in UBS Wealth Management & Business Banking's RUP rollout, replacing the proprietary process with a market-standard one, writing its modeling methodology in Rational Method Composer and coaching the division's teams into it. | Solution Manager, Software Engineering — Analysis & Design |
 | Requirements engineering | Modeled Lost-Tag's actors and their use cases before the platform was built. | Lost-Tag |
 | Site reliability engineering | Owned site reliability for LIKE MAGIC's production platform, instrumented on Cloud Monitoring and Cloud Trace with alerting driven by defined SLOs and automated by severity to the people responsible. | Co-Founder & Head of Technology |
@@ -287,12 +293,17 @@ roles:
 | Software testing | Held every blust.ch page to browser assertions and its share cards to comparison against the pages they were rendered from. | blust.ch |
 | Solution architecture | Led 3AP's client bids on solution architecture, public tenders under Swiss procurement law included. | Co-Founder & CTO |
 | Solution architecture | Designed Flawa iQ's RFID and LoRaWAN solution, delivered as 10 working prototypes. | Flawa iQ |
-| Solution architecture | Designed Ursina's path into the operator's network and its authentication boundary. | Ursina |
 | Solution architecture | Owned Stay KooooK's solution architecture front to back and presented it at the winning pitch. | Stay KooooK |
+| Solution architecture | Designed Ursina's path into the operator's network and its authentication boundary. | Ursina |
 | Solution selling | Led 3AP's client bids on solution architecture, from technical concept to proposal and pitch, public tenders under Swiss procurement law included. | Co-Founder & CTO |
 | Solution selling | Won Credit Suisse without a tender, a problem known inside the bank reached through the network and a proposed architecture rather than a specification. | Credit Suisse Master Data Repository |
-| Solution selling | Won AXA Health, Flawa iQ, Aroov and Stay KooooK by presenting the solution architecture in the pitch as the people who would build it (2017–2020). |  |
-| Spec-driven development | Built GuestGraph's identity-resolution engine and CompanyGraph, meta-model, tooling design and this reference instance, from written specifications, each reviewed before its plan and build, under written conventions every repository in the family vendors (2026). |  |
+| Solution selling | Won AXA Health's platform in a competitive pitch, presenting the solution architecture as the people who would build it. | AXA Health digital insurance platform |
+| Solution selling | Won Flawa iQ in a competitive pitch, presenting the solution architecture for a problem the client had described rather than specified. | Flawa iQ |
+| Solution selling | Presented the solution architecture in the pitch that won Aroov's rental platform. | Aroov digital rental platform |
+| Solution selling | Presented the solution architecture in the pitch that won Stay KooooK. | Stay KooooK |
+| Spec-driven development | Worked spec-driven across the family, under written conventions vendored into every repository and a design system every site pins like any other dependency. | Career break |
+| Spec-driven development | Designed GuestGraph's identity-resolution engine from three written specifications — core identity resolution, probabilistic matching and the guest timeline — each reviewed before its plan and its build. | GuestGraph |
+| Spec-driven development | Wrote a reviewed specification before every plan and every build of CompanyGraph, for the meta-model, its tooling and this reference instance. | CompanyGraph |
 | Stakeholder management | Advised clients including Credit Suisse, Swisscard, AXA and Mobiliar as 3AP's CTO and joined each project's ramp-up to negotiate with the client's security and platform organizations. | Co-Founder & CTO |
 | Storytelling | Briefed a podcast episode on the career break, fixing the story in outline and the threads the hosts had to cover before anything was generated, then holding the result to its sources and naming the one place it strayed. | Turn your work history into code |
 | Storytelling | Briefed the film Build the model first as one story across three organizations and one person, five threads each tied to a source, then wrote its published description to avoid the two places the narration strays. | Build the model first |
