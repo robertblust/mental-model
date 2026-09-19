@@ -137,7 +137,6 @@ Nothing else in the schema changes.
 > specs at all. Kept as written, with this note, because a spec that quietly acquires the
 > conclusion it argued against is worth less than one that shows where it was wrong.
 
-
 No `kind` field, no per-kind date rules, no conditional requiredness. Three reasons, and the
 third is the one that needs a decision before that spec can be written:
 
