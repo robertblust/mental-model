@@ -218,6 +218,16 @@ rules when a page writes it ungrouped although the instance does. A section mark
 with no heading table, and a heading table for a section not marked `Grouped.`, are both
 errors, as with `Table.`.
 
+A section that holds a list may declare which kind, because the two kinds mean different
+things: a numbered list is a sequence, the order a phase's work is done in, and a bulleted list
+is a set. Its Description begins with `Bulleted.` or `Numbered.`, or carries the word directly
+after `Grouped.` where the list stands under headings — `Grouped. Numbered.` — and never after
+`Table.`, since a table holds rows. The kind governs the list and not the section: a section may
+open its list with a sentence and close it with a paragraph, as a gate does, and only the items
+are held. A section that declares neither is held to nothing, as one that says neither `Table.`
+nor `Grouped.` is prose: a page's own sections, and numbered steps inside a paragraph of
+reasoning, are nobody's to judge. R16 says what an instance is held to.
+
 Required is `Yes` or `No`. Types come from the closed vocabulary: `string`, `number`, `date`,
 `array`, `enum`, `ref → <type>`, `ref? → <type>`, `array of ref → <type>`,
 `qualifier → <type>`. A reference names
@@ -235,6 +245,12 @@ is an error.
 The `?` is not `Required`, though the two read as one thing on a first pass. `Required` says
 whether the field may be absent; `ref?` says whether a value that is present must resolve. A
 field can be both, and `organization` is.
+
+A required list that is present and empty is absent in every sense that matters: nothing
+resolves, no edge is drawn, and the page reads as though it had answered a question it did not.
+So a required field typed `array` or `array of ref → <type>` carries at least one entry. An
+optional list written empty is how an author says none yet, and that is theirs to say, since
+the field could have been left out.
 
 `date` is `YYYY`, `YYYY-MM` or `YYYY-MM-DD`. A date is written at the precision its source
 states and never at more; an author may deliberately record less. A shorter form is an
@@ -280,6 +296,22 @@ a row draws is a matter of the schema, never of the order somebody typed the col
 parser draws from the declared column wherever it is. A table declaring no reference at all
 draws nothing and is data, which is a table's other legal shape.
 
+A schema may declare two joins between what its tables hold, each as the opening of a
+Description, where a reader and a check both find it, as R8 has an enum's values. A column typed
+`qualifier → <type>` whose Description opens with a field in backticks, the word `lists` and a
+column in backticks — `` `skills` lists `Skill`. `` — declares that the entity the cell names
+carries, in that field, the entity the same row's column names. The field is one the qualifier's
+type declares `ref → <type>` or `array of ref → <type>`, the column is one of this table typed
+to the same type, and a declaration naming anything else is an error in the schema. A section
+whose Description goes on from `Table.` with `` Under `## <Section>`. `` declares that its table
+and the one it names reference the same entities, both ways: no row here stands under something
+the other never names, and nothing named there is left without a row here. Both sections are
+table sections of the one schema, and each has its reference to the same type; which column is
+meant is not said, because a column table declares at most one. R16 says what an instance is
+held to. A Description that opens any other way declares nothing, so a declaration misspelled
+is prose and switches nothing on: a schema that means one is read back once after it is
+written, by running the checks against a page that breaks it.
+
 `## Purpose` and `## Writing rules` come last, after every table, and say what the shape above
 cannot: what the type is *for*, and what separates a good entity of it from one that merely
 has the shape. Purpose is one paragraph — the sentence someone needs before writing their
@@ -296,6 +328,13 @@ you write for a type of your own may leave them out, and every schema in `core/`
 reader that checks the shape stops at the tables, so nothing that reads a schema mechanically
 sees them; the agent pass does, which is the point of putting them in the schema rather than
 in a document beside it.
+
+A schema declares the references its type makes and none it receives. Which types reference
+this one is read from the tables of every other schema, so a sentence here saying that nothing
+does, or that one edge is the only one, is a second copy of a fact held elsewhere, and it stops
+being true the day another schema declares a reference and nobody rereads this one. Prose may
+name a referrer to explain a design — a skill outlives the profile that claims it — and never
+says that the ones it names are all there are.
 
 A table's separator row cells are plain dashes — `| --- |` — never alignment colons such as
 `:---`, `---:` or `:---:`.
@@ -400,6 +439,20 @@ it is written as digits.
 A heading declared `ref → <type>` draws an edge from the page to the entity each `###` heading
 in that section names, via `<Section>.<Heading>`, and a heading that names nothing of its type
 is R4.
+
+Where a section declares its list `Bulleted.` or `Numbered.` (R9), every item at the left
+margin of that section carries the declared marker. An indented item is a sub-point of the one
+above it and may be of either kind, and what stands in a fenced block is not the page's list. A
+section that is required and declares a kind carries at least one item, as a required list field
+carries at least one entry.
+
+Where a column declares that a field `lists` another column (R9), a filled cell is held to it:
+the entity it names carries the row's other entity in that field, read within the owner the page
+is written in where the type is owned (R4). A blank cell names nothing and is held to nothing.
+Where a section is declared `Under` another, every entity either table references has a row in
+the other, and a page that carries the table above and leaves out the one under it has every
+row above reported, since leaving the section out is how nothing gets written under a claim.
+Both hold what a schema says and name no type themselves.
 
 The difference between a reference and a qualifier is not how hard it resolves; both must. It
 is what the row is saying. A row that names a skill and a level makes one claim about both, so

@@ -1,6 +1,6 @@
 ---
 name: mental-model-evidence-coverage
-description: Check the profile's Evidence table against the Skills table and the experiences, and report the joins the schema leaves to whoever writes. Run when an Evidence row, a Skills row or an experience's skills list is written or rewritten.
+description: Read the profile's Evidence table for what the instance checks cannot judge, a year that copies its experience's period and the rows that name no experience. Run when an Evidence row is written or rewritten.
 ---
 
 # mental-model-evidence-coverage
@@ -8,29 +8,30 @@ description: Check the profile's Evidence table against the Skills table and the
 This instance's own skill, not one of the portable `companygraph-*` set. The profile's evidence
 is a table of its own, one row per fact, and its `Experience` column is a qualifier the checker
 resolves and holds to its owner: a filled cell that names no experience, or one another profile
-owns, already fails by name. What the checker does not reach are the joins the profile schema
-states as writing rules and says no rule checks. This skill checks those.
+owns, already fails by name. The two joins under that are the checker's as well: the profile
+schema declares that `## Evidence` stands under `## Skills` and that an experience's `skills`
+lists the row's skill, and the instance checks hold both (R16). What no check reaches is
+judgment, and this skill is what is left of it.
 
 ## Why it is not in `companygraph-validate`
 
 Every check in that pass and in the package's checks cites a numbered rule from
-`CONVENTIONS.md`. These joins have none: each would be the first rule in the checker to name a
-type, and the schema chose to leave them written rather than break that.
+`CONVENTIONS.md`, and can fail. Neither step here can: whether a year is a copy depends on what
+the sentence means by it, and a blank cell is legal, so both end in a list for the owner and
+not in a finding.
 
 ## Procedure
 
-1. For every profile that owns experiences, read its `## Skills` and `## Evidence` tables, and
-   for every experience it owns, its H1 and its `skills:` list. A profile with no Evidence table
-   is reported and skipped.
-2. **Every claim has something under it.** Each Skills row has at least one Evidence row with
-   the same skill, and each Evidence row's skill has a Skills row. Report either miss.
-3. **The experience lists the skill.** The experience a row names carries the row's skill in its
-   `skills:` list. A miss has two repairs that claim different things, adding the skill to the
-   experience or naming another one, so report it and apply neither.
-4. **The year is not a copy.** A row that names an experience and ends in a year in parentheses
+1. Run the instance checks first. A claim with no row, a row under no claim and an experience
+   that does not list the row's skill are theirs to report, and a miss of the last kind has two
+   repairs that claim different things, adding the skill to the experience or naming another
+   one, so report it and apply neither.
+2. For every profile that owns experiences, read its `## Evidence` table, and for every
+   experience it owns, its H1 and its `start` and `end`.
+3. **The year is not a copy.** A row that names an experience and ends in a year in parentheses
    keeps that year only when it marks a period shorter than the experience's own. Report a year
    that equals the experience's period, since it is a second copy nothing keeps true.
-5. **The open rows.** List every row whose `Experience` is blank, with its sentence. A blank cell
+4. **The open rows.** List every row whose `Experience` is blank, with its sentence. A blank cell
    is allowed, for a claim resting on no period of its own, so these are not failures. They are
    the rows a reader weighs with nothing to follow, and the owner decides each: name one
    experience, split the sentence into a row per experience, or leave it blank on purpose.
