@@ -9,10 +9,10 @@ owner: Owner
 
 ## Tracks
 
-| Track | Produces |
-| --- | --- |
-| Code | A merged change to a repository of the family, with its checks green |
-| Prose | A published page or post in reviewed English, and the Swiss German where the place carries it |
+| Track |
+| --- |
+| Code |
+| Prose |
 
 ## Phases
 
