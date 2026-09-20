@@ -28,7 +28,7 @@ operation and an orphaned experience is unrepresentable.
 | `# [Name]` | Yes | The person's canonical name. Everything references the profile by this exact string. |
 | `> [Tagline]` | Yes | One-paragraph summary of the person: what they do, or the claim their work makes |
 | `## Skills` | No | Table. One row per skill claimed; its columns are declared below. |
-| `## Evidence` | No | Table. One row per fact a claim rests on; its columns are declared below. |
+| `## Evidence` | No | Table. Under `## Skills`. One row per fact a claim rests on; its columns are declared below. |
 | `## Summary` | No | A paragraph of context |
 | `## Also at` | No | Table. One row per presence the person maintains elsewhere; its columns are declared below. |
 
@@ -50,13 +50,14 @@ and declares its columns here exactly as a frontmatter field does.
 | --- | --- | --- | --- |
 | `Skill` | Yes | ref → skill | The claim this row stands under — the H1 of a file in `skills/` |
 | `What it shows` | Yes | string | One sentence naming the thing done, concrete enough that a reader could check it |
-| `Experience` | No | qualifier → experience | The period the fact comes from — the H1 of a file in this profile's `experiences/` |
+| `Experience` | No | qualifier → experience | `skills` lists `Skill`. The period the fact comes from — the H1 of a file in this profile's `experiences/` |
 
 Evidence is a table of its own rather than a third column of `## Skills` because a claim rests
 on more than one thing and a cell holds one line. A paragraph listing four engagements cannot be
-counted, and the rule for reading a level is a rule about counting: evidence that names one
-engagement supports a lower rung than evidence that names three. One fact per row is what makes
-that rule readable by anyone, including a machine.
+counted, and breadth is one of the things a level is read from: a capability shown in three
+engagements has held where the people, the constraints and the stakes changed, which one
+engagement cannot show however well it went. One fact per row is what makes that breadth
+readable by anyone, including a machine.
 
 `Experience` is the optional column and sits last. It is optional because a claim at the lower
 rungs can rest on having been near work rather than on having owned a period of it, and such a
@@ -110,15 +111,19 @@ on this evidence.
   stays in it.
 - Rows run in the order the Skills table lists the skills, and chronologically within a skill.
 - A level is weighed against the rows under it and the rung's own definition, not against how
-  long the person has done it. One row supports a lower rung than three.
+  long the person has done it. Rows that name different experiences show breadth, and breadth
+  is what the count is read for; the count never outranks the definition. Three rows that show
+  less than the rung asks for do not reach it, and one row that shows it does.
 - One row per skill claimed in `## Skills`, and every claim has at least one row under it in
   `## Evidence`. A skill the person can name but not evidence has no row in either: the table
-  is the claim, and a claim needs something under it.
+  is the claim, and a claim needs something under it. The sections table declares it, `Under`,
+  and the instance checks hold it both ways (R16).
 - An `Experience` names a period this profile owns, and that experience lists this skill in its
-  `skills` field. The first is held by the instance checks, which hold every name of an owned
-  type to its owner from what the schemas declare. The second is not: it would be the first
-  rule in the checker to name a type, and the schemas drive every rule there today, so it is
-  kept by whoever writes.
+  `skills` field. Both are held by the instance checks from what the schemas declare: the
+  first as every name of an owned type is held to its owner, the second because the column
+  declares it, `skills` lists `Skill`. A miss has two repairs that claim different things,
+  adding the skill to the experience or naming another period, and which is true is the
+  writer's to say.
 - The Skills table is where a person's history with a skill lives. The skill file stays
   person-neutral, so nothing here belongs there and nothing there belongs here.
 - One row per place in `## Also at`, and a place the person no longer maintains has no row:
