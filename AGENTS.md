@@ -99,11 +99,14 @@ evidence live, never in the skill file.
 ## Sync slot
 
 Instance-owned skills live at `.claude/skills/mental-model-*/`, and one does:
-`mental-model-evidence-coverage` checks the joins the profile schema leaves to whoever writes:
-that the experience an Evidence row names lists the row's skill, and that every claim has a row
-under it. That the experience is this profile's own is held by the instance checks. The skill
-is here rather than in `companygraph-validate` because every check there cites a numbered rule
-from `CONVENTIONS.md`, and the schema's own writing rules say that no rule checks these.
+`mental-model-evidence-coverage` reads the profile's Evidence table for what no check can
+judge: a year in a sentence that copies its experience's period, and the rows that name no
+experience, which the owner decides one by one. The joins under the table are the instance
+checks', because the profile schema declares them: that every claim has a row
+under it, that no row stands under a claim nobody made, and that the experience a row names
+lists the row's skill. The skill is here rather than in `companygraph-validate` because every
+check there cites a numbered rule from `CONVENTIONS.md` and can fail, and these two steps end
+in a list for the owner.
 
 The `companygraph-*` skills are the portable ones from the tooling spec, carried here until the
 tooling installs them. No skill syncs content into this repository; the content was written by
