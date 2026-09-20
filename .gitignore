@@ -3,7 +3,7 @@
 node_modules
 .vscode
 .claudian
+.superpowers
 
 dist/
-.superpowers/
 .obsidian/
