@@ -1,22 +1,22 @@
 {
-  "tooling": "0.31.2",
+  "tooling": "0.33.0",
   "core": {
-    "version": "0.31.1",
+    "version": "0.33.0",
     "shape": 3,
-    "source": "fetched:v0.31.1"
+    "source": "fetched:v0.33.0"
   },
   "units": "meta",
   "packs": [],
   "files": {
-    "meta/core/CONVENTIONS.md": "sha256:e0bafa9d8aac526007cafd481f6ff46929913d1952eb31119a50402329e81d8e",
+    "meta/core/CONVENTIONS.md": "sha256:c07249a90f56c4baf19f75d30f2611e6ceb99de91c14d66725c16ca0f8851af8",
     "meta/core/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "meta/core/achievement-kind-schema.md": "sha256:8a80dcc381462cb2362762ddcf67636d75cc81b22761a9a13f864972821f7b5b",
     "meta/core/experience-kind-schema.md": "sha256:3bc9984910600dab4b186fc58fd7c9234ff09724cd78578a5fe7f584352fc2f9",
     "meta/core/experience-schema.md": "sha256:7eba8295dd08e84bc614af1ebdc0172f1b27507d9b5a4f042314aa3ece9794d9",
     "meta/core/identity-schema.md": "sha256:1fb78df3a1684abfa2ca9d5cf4f7edf51fb470b0dc06ff975631f1c65b84e16a",
-    "meta/core/manifest.json": "sha256:38f4324638b9347872a547cca4fd1e2ef01ec0e8a34d9f0dce6664d52761fe62",
-    "meta/core/phase-schema.md": "sha256:30537e75f084a4fbf63c19884aae6d4125394dde15186beacc81cc1938a98f80",
-    "meta/core/process-schema.md": "sha256:c41d2a82ae0e5dc887674180fa0571d2fe2e63c6273d42245aca1d8413822e8b",
+    "meta/core/manifest.json": "sha256:013661cafda4f2dc849ae028396a99085a8d5a3556a3f078291b35248dc0c40a",
+    "meta/core/phase-schema.md": "sha256:8ec359836e978f49919a3900c1f80aa317fee6c1d889a84b34965b4d0b605852",
+    "meta/core/process-schema.md": "sha256:596c14b851594b90b5bbbee9602efe7422c24b07c6b2f7eaf65e97e66ecb2ee1",
     "meta/core/proficiency-level-schema.md": "sha256:d1e195fce8130ca306e6fad483612ce70f7befb2a90bf82a089dab14846b54ec",
     "meta/core/profile-schema.md": "sha256:076792e976b764be761f6d77f555c862e43fea5b0507fa758e6e31596431c6d1",
     "meta/core/role-schema.md": "sha256:33abde562fa8c3d41a339dbdfe0ccaf8d1154cf6e076352f4471759312e5e6fc",
@@ -25,6 +25,7 @@
     "meta/core/strategic-objective-schema.md": "sha256:5bebcd23b20906c8e681b9a9fc818b27b44b22c32088e4d07ac30384e0e3fc8d",
     "meta/core/strategy-schema.md": "sha256:dd7ab877ae2feff9193f004389cd15dc9dded698cab7e82be5e6fa46256b787d",
     "meta/core/surface-schema.md": "sha256:11bdac8fc08b87bd0731fcd3a51a83f52b2c44322caf44cfb2c8daa25978c05a",
+    "meta/core/track-schema.md": "sha256:de964e848d0929a8b92adaa02a55e1b24ca97ca3cf4e7739c9a05f691aa75fb4",
     "meta/core/value-schema.md": "sha256:34ecfd79ddd0b25feb0d08a0dfb958f66f4ef67858e27584e6fac6a91dca337b",
     "meta/core/vision-schema.md": "sha256:e1480bca669657943a01daa525148de1c8e8ee5549643f087eff022124331711"
   }
