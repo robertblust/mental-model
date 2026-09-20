@@ -25,10 +25,12 @@
 ### Task 1: The walk, the parse and the emit
 
 **Files:**
+
 - Create: `.claude/skills/companygraph-surface/facts.py`
 - Test: run it and assert against the model
 
 **Interfaces:**
+
 - Produces: `dist/surfaces/facts.json` with the shape below. Task 2 adds resolutions to the same entity records, Task 3's procedure reads them.
 
 ```json
@@ -227,10 +229,12 @@ MSG
 ### Task 2: The two resolutions
 
 **Files:**
+
 - Modify: `.claude/skills/companygraph-surface/facts.py`
 - Test: run it and assert both resolutions
 
 **Interfaces:**
+
 - Consumes: the entity records from Task 1.
 - Produces: on every entity that carries a `start`, a `dates` string in the family's register; on every entity of a type that names an organization anywhere, `organization` and `organization_from`.
 
@@ -385,10 +389,12 @@ MSG
 ### Task 3: The procedure
 
 **Files:**
+
 - Create: `.claude/skills/companygraph-surface/SKILL.md`
 - Test: `sh conventions/conventions-check`
 
 **Interfaces:**
+
 - Consumes: `dist/surfaces/facts.json` from Tasks 1 and 2.
 - Produces: the procedure Task 4 follows.
 
@@ -561,10 +567,12 @@ MSG
 The acceptance. Until a surface comes out of it, the skill is a claim.
 
 **Files:**
+
 - Writes: `dist/surfaces/linkedin-profile.md`, which is gitignored and committed by nothing
 - Test: the surface's own five constraints
 
 **Interfaces:**
+
 - Consumes: everything the three previous tasks built.
 
 - [ ] **Step 1: Follow the procedure**

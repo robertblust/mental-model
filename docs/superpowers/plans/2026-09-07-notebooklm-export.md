@@ -27,10 +27,12 @@
 ### Task 1: The verifier, failing
 
 **Files:**
+
 - Create: `.claude/skills/companygraph-export/verify.py`
 - Create: `export/README.md`
 
 **Interfaces:**
+
 - Produces: `.claude/skills/companygraph-export/verify.py [bundle-dir]`, default `dist/mental-model-gemini-notebook`. Exit 0 on pass, 1 on failure, printing one line per finding. Task 3 runs it as its green step.
 
 - [ ] **Step 1: Write the verifier**
@@ -163,9 +165,11 @@ git commit -m "The bundle gets a verifier before it gets a builder"
 ### Task 2: The reading guide
 
 **Files:**
+
 - Create: `export/gemini-notebook-AGENTS.md`
 
 **Interfaces:**
+
 - Consumes: nothing on disk. Every count it states is a `{{…}}` token that Task 3's build substitutes from what it counted on the run that ships the file.
 - Produces: the document the build copies into the bundle as `AGENTS.md`.
 
@@ -301,10 +305,12 @@ git commit -m "The bundle carries the guide a stripped reader cannot do without"
 ### Task 3: The export builds both artifacts
 
 **Files:**
+
 - Create: `.claude/skills/companygraph-export/build.py`
 - Modify: `.claude/skills/companygraph-export/SKILL.md`
 
 **Interfaces:**
+
 - Consumes: `export/gemini-notebook-AGENTS.md` from Task 2 and the repository's `README.md` as the two documents, `.claude/skills/companygraph-export/verify.py` from Task 1 as the green step, and `export/gemini-notebook-sources.md` when an instance writes one — this one does not.
 - Produces: `dist/mental-model-skill.zip` unchanged, and `dist/mental-model-gemini-notebook/` — a flat folder of `.md` files, one per source, no archive.
 
@@ -527,11 +533,13 @@ git commit -m "The export renders the model twice, for two readers"
 ### Task 4: Settle the spec and the brief
 
 **Files:**
+
 - Modify: `docs/specs/2026-09-07-notebooklm-export.md`
 - Modify: `../communication/posts/2026-09-15-blust-ch/wip/gemini-notebook-context.md`
 - Modify: `../communication/posts/2026-09-15-blust-ch/wip/README.md`
 
 **Interfaces:**
+
 - Consumes: the bundle from Task 3.
 
 - [ ] **Step 1: Hold the spec against what shipped**
