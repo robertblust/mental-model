@@ -9,7 +9,4 @@ group: Leadership
 
 ## In practice
 
-Identify stakeholders and understand their interests, concerns and level of influence.
-Communicate progress, negotiate expectations and resolve conflicting priorities across those
-groups. Keep relationships productive over time so decisions get the input and support they
-need.
+Identify stakeholders and understand their interests, concerns and level of influence. Communicate progress, negotiate expectations and resolve conflicting priorities across those groups. Keep relationships productive over time so decisions get the input and support they need.

@@ -9,6 +9,4 @@ group: Leadership
 
 ## In practice
 
-Evaluate and select suppliers, negotiate contracts and service levels and monitor ongoing
-performance against them. Manage the relationship day to day, resolving issues and
-renegotiating terms as needs change. Balance cost, quality and risk across the supplier base.
+Evaluate and select suppliers, negotiate contracts and service levels and monitor ongoing performance against them. Manage the relationship day to day, resolving issues and renegotiating terms as needs change. Balance cost, quality and risk across the supplier base.

@@ -9,7 +9,4 @@ group: Strategy
 
 ## In practice
 
-Define who can make which technology decisions and set the policies, standards and controls
-those decisions must follow. Run governance forums that review risk, compliance and investment
-choices, and track adherence to agreed frameworks. Adjust the governance structure as the
-organization and its regulatory context evolve.
+Define who can make which technology decisions and set the policies, standards and controls those decisions must follow. Run governance forums that review risk, compliance and investment choices, and track adherence to agreed frameworks. Adjust the governance structure as the organization and its regulatory context evolve.

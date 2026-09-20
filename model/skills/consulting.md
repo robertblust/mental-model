@@ -9,7 +9,4 @@ group: Advisory
 
 ## In practice
 
-Diagnose a client's problem through structured analysis, interviews and data review. Develop
-and present recommendations, weighing options against the client's constraints and priorities.
-Support the client through implementation or handoff, adjusting recommendations as new
-information emerges.
+Diagnose a client's problem through structured analysis, interviews and data review. Develop and present recommendations, weighing options against the client's constraints and priorities. Support the client through implementation or handoff, adjusting recommendations as new information emerges.

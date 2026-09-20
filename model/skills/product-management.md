@@ -9,6 +9,4 @@ group: Strategy
 
 ## In practice
 
-Gather user and market insight to define product vision, priorities and roadmap. Translate that
-vision into requirements and backlog items, working closely with design and engineering to ship
-increments. Track outcomes after release and adjust priorities based on what is learned.
+Gather user and market insight to define product vision, priorities and roadmap. Translate that vision into requirements and backlog items, working closely with design and engineering to ship increments. Track outcomes after release and adjust priorities based on what is learned.

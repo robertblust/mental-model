@@ -9,7 +9,4 @@ group: Cloud and platform
 
 ## In practice
 
-Define how containerized workloads are packaged, scheduled and scaled across a cluster.
-Configure networking, storage and access controls that let services run reliably alongside each
-other. Monitor cluster health and respond to failures so workloads recover automatically rather
-than needing manual intervention. Typical tools: Kubernetes, Helm, Docker.
+Define how containerized workloads are packaged, scheduled and scaled across a cluster. Configure networking, storage and access controls that let services run reliably alongside each other. Monitor cluster health and respond to failures so workloads recover automatically rather than needing manual intervention. Typical tools: Kubernetes, Helm, Docker.

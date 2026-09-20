@@ -9,8 +9,4 @@ group: Cloud and platform
 
 ## In practice
 
-Design and build the golden paths, templates and self-service tools that other engineering
-teams use to provision infrastructure and deploy applications. Gather requirements from those
-internal teams and treat the platform itself as a product with its own roadmap. Balance
-standardization, which reduces support burden, against flexibility for teams with unusual
-needs.
+Design and build the golden paths, templates and self-service tools that other engineering teams use to provision infrastructure and deploy applications. Gather requirements from those internal teams and treat the platform itself as a product with its own roadmap. Balance standardization, which reduces support burden, against flexibility for teams with unusual needs.

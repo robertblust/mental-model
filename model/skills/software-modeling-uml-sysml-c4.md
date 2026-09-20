@@ -9,8 +9,4 @@ group: Modeling and process
 
 ## In practice
 
-Choose a notation appropriate to the audience and purpose, such as UML for software structure,
-SysML for systems engineering or C4 for architecture at different zoom levels. Produce diagrams
-that capture components, interactions or processes and keep them consistent with the system as
-it evolves. Use the models to communicate design intent to other engineers or stakeholders and
-to reason about a design before it is built.
+Choose a notation appropriate to the audience and purpose, such as UML for software structure, SysML for systems engineering or C4 for architecture at different zoom levels. Produce diagrams that capture components, interactions or processes and keep them consistent with the system as it evolves. Use the models to communicate design intent to other engineers or stakeholders and to reason about a design before it is built.
