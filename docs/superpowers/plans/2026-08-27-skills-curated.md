@@ -35,11 +35,13 @@
 ### Task 1: Generate the 60 skill files, replace the 23, index them
 
 **Files:**
+
 - Create: `skills/*.md` (60), `skills/README.md` (rewritten)
 - Delete: `skills/*.md` (23 old)
 - Modify: `AGENTS.md`
 
 **Interfaces:**
+
 - Consumes: the third table of `docs/superpowers/research/2026-08-26-skill-sources-compared.md` (rows `| **Name** | definition | in practice |`) and the appendix of the spec (group headers `**Group**` followed by `| Name |` rows).
 - Produces: 60 H1s, listed in `skills/README.md`, that Tasks 2 and 3 reference verbatim.
 
@@ -171,9 +173,11 @@ git push -u origin skills-curated
 ### Task 2: Re-cut the profile's Skills table
 
 **Files:**
+
 - Modify: `profiles/robert-blust/robert-blust.md` — the `## Skills` table only
 
 **Interfaces:**
+
 - Consumes: the 60 H1s (`grep -h '^# ' skills/*.md`), the four level H1s (`Familiar`, `Competent`, `Proficient`, `Expert`), the CV at `~/git/robertblust/rob-cv/content/` (profile.yaml, experience/, projects/, education/, community/).
 - Produces: the set of claimed skills, which Task 3 must keep consistent with the experiences.
 
@@ -237,9 +241,11 @@ EOF
 ### Task 3: Re-point the experiences
 
 **Files:**
+
 - Modify: `profiles/robert-blust/experiences/*.md` — the `skills:` line of each (20 files)
 
 **Interfaces:**
+
 - Consumes: the 60 H1s, spec §4 mapping, the profile's claimed set (Task 2).
 - Produces: every claimed skill evidenced by at least one experience.
 
@@ -288,9 +294,11 @@ git push
 ### Task 4: Validate, export, and the review PR
 
 **Files:**
+
 - Modify: whatever validate reports (content only, never `meta/`)
 
 **Interfaces:**
+
 - Consumes: everything above.
 
 - [ ] **Step 1: Run the validate skill**

@@ -1,4 +1,9 @@
+# What every member of the family ignores: installed packages, and the state an editor
+# or a tool keeps beside the work.
+node_modules
+.vscode
+.claudian
+
 dist/
 .superpowers/
 .obsidian/
-.claudian/
