@@ -9,7 +9,4 @@ group: Data
 
 ## In practice
 
-Define who owns and is accountable for different data domains and set standards for quality,
-definitions and lifecycle. Establish policies for access, retention and use of data, including
-master or reference data that many systems share. Run processes that monitor data quality and
-resolve inconsistencies across systems.
+Define who owns and is accountable for different data domains and set standards for quality, definitions and lifecycle. Establish policies for access, retention and use of data, including master or reference data that many systems share. Run processes that monitor data quality and resolve inconsistencies across systems.

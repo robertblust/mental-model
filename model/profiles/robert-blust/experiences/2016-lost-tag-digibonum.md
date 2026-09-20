@@ -45,6 +45,4 @@ skills:
 
 ## Ending
 
-Left it after the last rebrand in November 2021, running and selling tags without me. Five
-years on one product was the closest 3AP's client business came to product work, and
-LIKE MAGIC was the chance to do it fully.
+Left it after the last rebrand in November 2021, running and selling tags without me. Five years on one product was the closest 3AP's client business came to product work, and LIKE MAGIC was the chance to do it fully.

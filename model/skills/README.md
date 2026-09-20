@@ -1,7 +1,6 @@
 # Skills
 
-One file per skill, written against `meta/core/skill-schema.md` and its writing rules.
-Every skill is ours, and each belongs to one group.
+One file per skill, written against `meta/core/skill-schema.md` and its writing rules. Every skill is ours, and each belongs to one group.
 
 | Skill | Group |
 | --- | --- |

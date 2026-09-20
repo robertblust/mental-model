@@ -9,7 +9,4 @@ group: Architecture
 
 ## In practice
 
-Elicit needs from stakeholders through interviews, workshops or observation and turn them into
-clear, testable requirements. Organize and prioritize those requirements, trace them through
-design and delivery and manage changes as understanding evolves. Validate delivered
-functionality against the original requirements to confirm the need was actually met.
+Elicit needs from stakeholders through interviews, workshops or observation and turn them into clear, testable requirements. Organize and prioritize those requirements, trace them through design and delivery and manage changes as understanding evolves. Validate delivered functionality against the original requirements to confirm the need was actually met.

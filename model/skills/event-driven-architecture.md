@@ -9,8 +9,4 @@ group: Architecture
 
 ## In practice
 
-Identify the events that matter to a system and design the producers, consumers and channels
-that carry events between them. Make decisions about ordering, delivery guarantees and how
-components stay decoupled while still working together. Design for failure modes specific to
-asynchronous systems, such as duplicate or out-of-order events. Typical tools: Kafka, RabbitMQ,
-AWS EventBridge.
+Identify the events that matter to a system and design the producers, consumers and channels that carry events between them. Make decisions about ordering, delivery guarantees and how components stay decoupled while still working together. Design for failure modes specific to asynchronous systems, such as duplicate or out-of-order events. Typical tools: Kafka, RabbitMQ, AWS EventBridge.

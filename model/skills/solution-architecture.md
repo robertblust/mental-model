@@ -9,7 +9,4 @@ group: Architecture
 
 ## In practice
 
-Translate business and functional requirements into a technical design spanning applications,
-integrations and infrastructure. Evaluate design options against constraints such as
-performance, security and cost, and choose an approach that fits the surrounding architecture.
-Guide implementation teams through the design and adjust it as issues surface during build.
+Translate business and functional requirements into a technical design spanning applications, integrations and infrastructure. Evaluate design options against constraints such as performance, security and cost, and choose an approach that fits the surrounding architecture. Guide implementation teams through the design and adjust it as issues surface during build.

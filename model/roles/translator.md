@@ -10,15 +10,11 @@ requires:
 
 ## What it takes
 
-The reviewed English of the elements the task names, and the glossary. Reviewed means the
-Owner has said the English is done; a draft is not reviewed, and the seat says so. Where the
-task names no elements, the seat names the gap and writes nothing.
+The reviewed English of the elements the task names, and the glossary. Reviewed means the Owner has said the English is done; a draft is not reviewed, and the seat says so. Where the task names no elements, the seat names the gap and writes nothing.
 
 ## What it produces
 
-The German in the element's own place, de-CH in the forms Switzerland uses, and beside each
-element a back-translation in English, so a reviewer with a minute can read what the German
-says.
+The German in the element's own place, de-CH in the forms Switzerland uses, and beside each element a back-translation in English, so a reviewer with a minute can read what the German says.
 
 ## What it never does
 

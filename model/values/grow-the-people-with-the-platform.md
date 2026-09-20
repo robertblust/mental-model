@@ -8,8 +8,6 @@ source: Local
 
 ## In practice
 
-I grow the organization as deliberately as the platform — hiring, practices, ownership — so
-that every part of the system has someone who could be woken up for it and would know what
-to do. I judge a platform by the team that can run it without me.
+I grow the organization as deliberately as the platform — hiring, practices, ownership — so that every part of the system has someone who could be woken up for it and would know what to do. I judge a platform by the team that can run it without me.
 
 I never let five people know everything while twenty wait for them.

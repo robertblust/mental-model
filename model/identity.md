@@ -11,13 +11,9 @@ url: https://blust.ch
 
 ## What it is
 
-One person, described in CompanyGraph as a company would be. The work is technology
-leadership, business architecture and model-driven engineering — lately turned on the business
-itself, so that a company is legible to the people who run it and to the agents that
-increasingly work alongside them.
+One person, described in CompanyGraph as a company would be. The work is technology leadership, business architecture and model-driven engineering — lately turned on the business itself, so that a company is legible to the people who run it and to the agents that increasingly work alongside them.
 
-This instance is both the description and the proof: the same discipline sold to a company,
-applied first to its author.
+This instance is both the description and the proof: the same discipline sold to a company, applied first to its author.
 
 ## Also at
 

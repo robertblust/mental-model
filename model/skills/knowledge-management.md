@@ -9,7 +9,4 @@ group: Advisory
 
 ## In practice
 
-Capture knowledge from people and projects and organize it so others can find and reuse it.
-Design processes and tools that make contributing and searching knowledge easy enough that
-people actually do it. Review content over time for accuracy and relevance and retire or update
-material that has gone stale.
+Capture knowledge from people and projects and organize it so others can find and reuse it. Design processes and tools that make contributing and searching knowledge easy enough that people actually do it. Review content over time for accuracy and relevance and retire or update material that has gone stale.

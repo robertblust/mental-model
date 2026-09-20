@@ -17,8 +17,7 @@ gate-to: Implement
 
 ## What it takes
 
-A specification or brief the Owner has approved, and the repository the work lands in with the
-rules that bind it.
+A specification or brief the Owner has approved, and the repository the work lands in with the rules that bind it.
 
 ## Activities
 
@@ -56,5 +55,4 @@ To leave Plan, all of these hold:
 - Every brief states how its holder can tell the task is done.
 - The order is one the briefs can actually be worked in.
 
-Where they cannot be met, the Owner decides whether the plan is recut or the specification
-reopened.
+Where they cannot be met, the Owner decides whether the plan is recut or the specification reopened.

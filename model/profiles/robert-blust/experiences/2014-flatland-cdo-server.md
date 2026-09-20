@@ -47,9 +47,7 @@ skills:
 
 ## Ending
 
-Left it in March 2022 with 3AP, whose organization was the model it served. The repository
-stays public as it is, and the idea came back four years later as CompanyGraph, in Markdown
-rather than on a server.
+Left it in March 2022 with 3AP, whose organization was the model it served. The repository stays public as it is, and the idea came back four years later as CompanyGraph, in Markdown rather than on a server.
 
 ## References
 

@@ -9,7 +9,4 @@ group: Architecture
 
 ## In practice
 
-Map current business capabilities, data and technology landscapes and define target-state
-architectures that close identified gaps. Set architecture principles and standards that guide
-individual projects and technology choices. Review proposed initiatives for alignment with the
-target architecture and adjust it as strategy or constraints change.
+Map current business capabilities, data and technology landscapes and define target-state architectures that close identified gaps. Set architecture principles and standards that guide individual projects and technology choices. Review proposed initiatives for alignment with the target architecture and adjust it as strategy or constraints change.

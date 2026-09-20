@@ -9,7 +9,4 @@ group: Data
 
 ## In practice
 
-Design topics or streams, partitioning and retention policies that fit how data will be
-produced and consumed. Build producers and consumers that handle ordering, delivery guarantees
-and backpressure correctly. Monitor stream throughput and lag to catch consumers falling behind
-before it affects downstream systems. Typical tools: Kafka, Kinesis, Pulsar.
+Design topics or streams, partitioning and retention policies that fit how data will be produced and consumed. Build producers and consumers that handle ordering, delivery guarantees and backpressure correctly. Monitor stream throughput and lag to catch consumers falling behind before it affects downstream systems. Typical tools: Kafka, Kinesis, Pulsar.

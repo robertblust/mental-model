@@ -9,7 +9,4 @@ group: Cloud and platform
 
 ## In practice
 
-Triage incoming alerts to assess severity and impact and coordinate the people needed to
-investigate and restore service. Communicate status to affected stakeholders throughout the
-incident and decide when it can be declared resolved. Run or contribute to a post-incident
-review that captures root cause and follow-up actions.
+Triage incoming alerts to assess severity and impact and coordinate the people needed to investigate and restore service. Communicate status to affected stakeholders throughout the incident and decide when it can be declared resolved. Run or contribute to a post-incident review that captures root cause and follow-up actions.
