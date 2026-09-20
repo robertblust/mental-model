@@ -28,7 +28,7 @@ model/                         the company — everything under here is an entit
   profiles/robert-blust/       the person, and the experiences it owns
   profiles/ai-agent/           the agent that holds every seat but the Owner's; it owns no experiences yet
 AGENTS.md                      the instance's own rules; every modeling rule is in meta/core/CONVENTIONS.md
-.claude/skills/companygraph-*  the portable skills: validate, add an entity, export as a skill, produce a surface
+.claude/skills/companygraph-*  the portable skills: validate, export as a skill, produce a surface
 ```
 
 The content is the whole professional portfolio, in English. Every page is mastered here —
