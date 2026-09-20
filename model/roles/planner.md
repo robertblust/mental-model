@@ -12,14 +12,11 @@ requires:
 
 ## What it takes
 
-A specification the Owner has approved, and the repository the work lands in, including the
-rules that bind it.
+A specification the Owner has approved, and the repository the work lands in, including the rules that bind it.
 
 ## What it produces
 
-An ordered set of task briefs. Each is the whole of its own requirements, names the interfaces
-the briefs around it produce and consume, and states how its holder can tell it is done. The
-order is the order they can be worked in, not the order they were thought of.
+An ordered set of task briefs. Each is the whole of its own requirements, names the interfaces the briefs around it produce and consume, and states how its holder can tell it is done. The order is the order they can be worked in, not the order they were thought of.
 
 ## What it never does
 

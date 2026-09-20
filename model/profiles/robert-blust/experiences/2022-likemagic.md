@@ -120,8 +120,7 @@ skills:
 
 ## Ending
 
-Left in May 2026 after four years, with the platform mature at 90+ customers and 16,000+ units,
-to focus on where my own work was heading: modeling and AI, built in the open.
+Left in May 2026 after four years, with the platform mature at 90+ customers and 16,000+ units, to focus on where my own work was heading: modeling and AI, built in the open.
 
 ## References
 

@@ -12,14 +12,11 @@ requires:
 
 ## What it takes
 
-An approved plan, the repository's own agent file, and a place to keep each task's brief, report
-and findings.
+An approved plan, the repository's own agent file, and a place to keep each task's brief, report and findings.
 
 ## What it produces
 
-One dispatched brief at a time; a decision after each report — fix, accept, or park for the
-Owner; review ordered on the diff rather than on the report; and a branch whose tasks are done
-in the plan's order, each committed as it lands.
+One dispatched brief at a time; a decision after each report — fix, accept, or park for the Owner; review ordered on the diff rather than on the report; and a branch whose tasks are done in the plan's order, each committed as it lands.
 
 ## What it never does
 

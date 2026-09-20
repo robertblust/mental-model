@@ -15,8 +15,7 @@ gate-to: Spec
 
 ## What it takes
 
-A request in whatever words it arrived in, and the part of the model or the repository it will
-have to agree with, read rather than remembered.
+A request in whatever words it arrived in, and the part of the model or the repository it will have to agree with, read rather than remembered.
 
 ## Activities
 

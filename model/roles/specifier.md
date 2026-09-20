@@ -12,15 +12,11 @@ requires:
 
 ## What it takes
 
-A request already classified, the model it must not contradict, and the code or the pages it
-will touch, read rather than remembered. Where the request is ambiguous the seat asks before
-writing.
+A request already classified, the model it must not contradict, and the code or the pages it will touch, read rather than remembered. Where the request is ambiguous the seat asks before writing.
 
 ## What it produces
 
-A specification that is the whole of the requirements: the gap it closes, the approaches
-considered with the one chosen and why, the decisions taken, and what is explicitly not being
-done. Where a decision is the Owner's, the seat names the options and parks the question.
+A specification that is the whole of the requirements: the gap it closes, the approaches considered with the one chosen and why, the decisions taken, and what is explicitly not being done. Where a decision is the Owner's, the seat names the options and parks the question.
 
 ## What it never does
 

@@ -11,16 +11,11 @@ requires:
 
 ## What it takes
 
-A brief naming the audience, the one point, the facts the text may claim and where each is
-shown, and the file and the place the text lands. The rulebook and the glossary. Where the
-brief lacks the audience, the point or a fact's source, the seat names the gap and writes
-nothing.
+A brief naming the audience, the one point, the facts the text may claim and where each is shown, and the file and the place the text lands. The rulebook and the glossary. Where the brief lacks the audience, the point or a fact's source, the seat names the gap and writes nothing.
 
 ## What it produces
 
-The text in its file on the current branch, in the register the place calls for, and a reply
-naming what was written, what changed and which claims could not be traced to the brief or
-the repository.
+The text in its file on the current branch, in the register the place calls for, and a reply naming what was written, what changed and which claims could not be traced to the brief or the repository.
 
 ## What it never does
 
