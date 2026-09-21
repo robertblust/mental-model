@@ -207,7 +207,7 @@ roles:
 | IT governance | Ran delivery governance and technology-stack approvals at 3AP. | Co-Founder & CTO |
 | IT strategy | Owned technology strategy and the reference architecture every engagement had to fit as 3AP's CTO. | Co-Founder & CTO |
 | IT strategy | Defined LIKE MAGIC's platform strategy, API-first with a managed public API and an event and data hub, evolving toward an MCP-server layer so agents consume the platform directly, and led the Camunda reassessment at renewal, recommending building on the engine before the decision went to removal. | Co-Founder & Head of Technology |
-| Java | Built UBS's web portals in Java Portlets and JSP on IBM Portal Server. | Software Engineer / IT Developer |
+| Java | Built UBS's web portals in Java Portlets and JSP on IBM Portal Server. | Application Engineer |
 | Java | Built DynaRep's Eclipse plugins, web services and generators in Java. | Solution Manager, Software Engineering — Analysis & Design |
 | Java | Built the Flatland CDO Server as an OSGi product in Java. | Flatland CDO Server |
 | Java | Developed the reference sample of 3AP's architecture in Java and Spring Boot and explained it to each team, the platforms built to it including AXA Health, Flawa iQ, Conperi, Aroov and Stay KooooK. | Co-Founder & CTO |
@@ -270,13 +270,13 @@ roles:
 | Requirements engineering | Owned the Analysis & Design discipline in UBS Wealth Management & Business Banking's RUP rollout, replacing the proprietary process with a market-standard one, writing its modeling methodology in Rational Method Composer and coaching the division's teams into it. | Solution Manager, Software Engineering — Analysis & Design |
 | Requirements engineering | Modeled Lost-Tag's actors and their use cases before the platform was built. | Lost-Tag |
 | Site reliability engineering | Owned site reliability for LIKE MAGIC's production platform, instrumented on Cloud Monitoring and Cloud Trace with alerting driven by defined SLOs and automated by severity to the people responsible. | Co-Founder & Head of Technology |
-| Software architecture | Created the software architecture of UBS's WPS Portal application and led its development and delivery. | Software Engineer / IT Developer |
+| Software architecture | Created the software architecture of UBS's WPS Portal application and led its development and delivery. | Application Engineer |
 | Software architecture | Took software-architect responsibility for UBS's DynaRep platform. | Solution Manager, Software Engineering — Analysis & Design |
 | Software architecture | Set the reference architecture every 3AP engagement was built to. | Co-Founder & CTO |
 | Software architecture | Owned Stay KooooK's complete front-to-back architecture on reactive Spring Boot WebFlux. | Stay KooooK |
 | Software architecture | Owned LIKE MAGIC's architecture decisions and wrote the reference implementation of each pattern its architecture used. | Co-Founder & Head of Technology |
 | Software architecture | Designed GuestGraph's identity-resolution engine from three written specifications. | GuestGraph |
-| Software engineering | Built UBS's intranet and internet portals and developed features of the ACE Foundation beneath UBS Quotes. | Software Engineer / IT Developer |
+| Software engineering | Built UBS's intranet and internet portals and developed features of the ACE Foundation beneath UBS Quotes. | Application Engineer |
 | Software engineering | Architected and built DynaRep's Eclipse plugins, web services and code generators. | Solution Manager, Software Engineering — Analysis & Design |
 | Software engineering | Built the Swisscom delivery cockpit's backend on Spring Boot in Java over a CDO model repository, fed by Mule flows from Rally and Quality Center. | Swisscom agile delivery cockpit |
 | Software engineering | Wrote the reference implementation of each pattern on LIKE MAGIC's Spring Boot WebFlux platform, so a team built a new service from working code, unit and integration tests running on every pipeline. | Co-Founder & Head of Technology |

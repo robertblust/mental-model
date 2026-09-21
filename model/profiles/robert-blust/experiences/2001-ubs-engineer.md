@@ -10,7 +10,7 @@ skills:
   - Software architecture
 ---
 
-# Software Engineer / IT Developer
+# Application Engineer
 
 > Built UBS's intranet and internet web portals on IBM Portal Server, and led delivery of the WPS Portal application.
 
