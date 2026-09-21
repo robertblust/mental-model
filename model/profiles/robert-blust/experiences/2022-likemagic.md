@@ -132,7 +132,7 @@ Left in May 2026 after four years, with the platform mature at 90+ customers and
 | Customer story | https://apaleo.com/customer-stories/hotel-groups-chains/mcdreams-adopts-apaleo |
 | Developer documentation for the public API | https://api-docs.likemagic.tech/ |
 | Marketplace listing | https://www.mews.com/en/products/marketplace/likemagic |
-| Partner page | https://www.ailean.io/ailean_for_hospitality |
+| Partner page | https://ailean.io/ |
 | Software integration page | https://www.masunt.com/en/software-integrations/like-magic/ |
 | Technology partner page | https://saltosystems.com/en-us/technology-partners/magic/ |
 | The company | https://likemagic.tech/ |
