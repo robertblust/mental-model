@@ -15,7 +15,7 @@ import re, sys, pathlib, zipfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent.parent
 INSTANCE = ROOT.name
-BUNDLE = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "dist/mental-model-gemini-notebook"
+BUNDLE = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / f"dist/{INSTANCE}-gemini-notebook"
 ZIP = ROOT / f"dist/{INSTANCE}-skill.zip"
 SOURCE_CAP, WORD_CAP = 50, 500_000          # Gemini Notebook, free tier, per notebook and per source
 
