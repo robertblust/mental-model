@@ -4,18 +4,15 @@
 > grain the market hires for, each defined here, person-neutral. Public vocabularies were
 > consulted to find the grain; none is cited in the model.
 
-Status: design agreed, nothing built. Instance-owned: nothing here changes `meta/` or the
-meta-model. What it teaches core is in §8 and is proposed to the meta-model separately.
+Status: design agreed, nothing built. Instance-owned: nothing here changes `meta/` or the meta-model. What it teaches core is in §8 and is proposed to the meta-model separately.
 
-Supersedes an earlier draft of this spec that filed all 147 SFIA skills. That draft is in the
-branch history; §2 says why it was dropped.
+Supersedes an earlier draft of this spec that filed all 147 SFIA skills. That draft is in the branch history; §2 says why it was dropped.
 
 ---
 
 ## 1. What the first cut got wrong
 
-The first 23 skills were cut from the CV's tag cloud by feel, and every `## In practice` was
-written as what one person did with the skill. Two defects, one cause:
+The first 23 skills were cut from the CV's tag cloud by feel, and every `## In practice` was written as what one person did with the skill. Two defects, one cause:
 
 - **A skill is shared.** Many profiles claim the same skill, each with its own level and
   evidence; the schema already puts that claim in the profile's Skills table. A skill file that
@@ -30,11 +27,7 @@ Both are core findings (§8). The instance fixes them by adopting a vocabulary �
 
 ## 2. The vocabulary: ours
 
-Four public sources were compared row by row — SFIA 9, ESCO v1.2, O*NET, Lightcast Open
-Skills — against 69 candidates drawn from the CV's `skills.yaml`, the 16 job postings under
-`applications/`, and the first 23 skills. The comparison, with every source's name for every
-row and each source's license, is
-[`docs/superpowers/research/2026-08-26-skill-sources-compared.md`](../research/2026-08-26-skill-sources-compared.md).
+Four public sources were compared row by row — SFIA 9, ESCO v1.2, O*NET, Lightcast Open Skills — against 69 candidates drawn from the CV's `skills.yaml`, the 16 job postings under `applications/`, and the first 23 skills. The comparison, with every source's name for every row and each source's license, is [`docs/superpowers/research/2026-08-26-skill-sources-compared.md`](../research/2026-08-26-skill-sources-compared.md).
 
 What it showed:
 
@@ -47,23 +40,15 @@ What it showed:
 - **Lightcast** has the market grain for almost every row and a license that is not open.
 - **O*NET** is products.
 
-So the decision: **the skill set is curated by us, at the grain the postings use.** Every
-definition and every `In practice` is written here, in our words. The four sources were
-consulted to find that grain and to check nothing obvious was missing; none is cited in a
-skill file. Nothing is vendored, nothing is copied, nothing is referenced — the license
-question disappears with the copying, and the model does not depend on a vocabulary it does
-not own.
+So the decision: **the skill set is curated by us, at the grain the postings use.** Every definition and every `In practice` is written here, in our words. The four sources were consulted to find that grain and to check nothing obvious was missing; none is cited in a skill file. Nothing is vendored, nothing is copied, nothing is referenced — the license question disappears with the copying, and the model does not depend on a vocabulary it does not own.
 
-Seventy-three skills (appendix). The rule for adding one: a capability a profile can claim with
-evidence, at the grain a job posting would name it, distinct from its neighbors in what
-someone doing it does — not in which product they use.
+Seventy-three skills (appendix). The rule for adding one: a capability a profile can claim with evidence, at the grain a job posting would name it, distinct from its neighbors in what someone doing it does — not in which product they use.
 
 ---
 
 ## 3. The skill file
 
-Unchanged schema (`meta/skill-schema.md`): `source`, optional `group`, H1, `>` definition,
-optional `## In practice`. Every file here has all of them. The rules this spec adds:
+Unchanged schema (`meta/skill-schema.md`): `source`, optional `group`, H1, `>` definition, optional `## In practice`. Every file here has all of them. The rules this spec adds:
 
 ```markdown
 ---
@@ -98,9 +83,7 @@ the new one without losing a row. Typical tools: PostgreSQL, Oracle, MSSQL, Mong
 
 Filename: kebab-case of the H1, as R2 and the existing files already do.
 
-The drafted texts for all 60 — definition and In practice — are the third table of
-the comparison document. They were reviewed row by row before this spec was approved and are
-written into the files as they stand there; the build does not redraft them.
+The drafted texts for all 60 — definition and In practice — are the third table of the comparison document. They were reviewed row by row before this spec was approved and are written into the files as they stand there; the build does not redraft them.
 
 ---
 
@@ -132,8 +115,7 @@ written into the files as they stand there; the build does not redraft them.
 | Identity and access management | Identity and access management |
 | Agile delivery | Agile delivery |
 
-The 23 files are deleted; nothing keeps the old names. A profile claim that mapped to several
-skills becomes one row per skill the CV evidences — the evidence decides, not the mapping.
+The 23 files are deleted; nothing keeps the old names. A profile claim that mapped to several skills becomes one row per skill the CV evidences — the evidence decides, not the mapping.
 
 ---
 
@@ -153,8 +135,7 @@ skills becomes one row per skill the CV evidences — the evidence decides, not 
 
 ## 6. Levels: the rubric for this profile
 
-Written down because the first build's reviewer found two rows contradicting the rubric the
-implementer had in their head.
+Written down because the first build's reviewer found two rows contradicting the rubric the implementer had in their head.
 
 - **Expert** — owned the skill across two or more roles or projects, and the CV shows an
   outcome others depended on (a platform in production, an organization scaled, a standard
@@ -165,8 +146,7 @@ implementer had in their head.
 - **Familiar** — named in the CV's skills list with no role evidencing it. Such a row is
   normally *omitted* rather than claimed at Familiar; the table is for claims with evidence.
 
-The owner overrides any row in the review PR. The rubric makes the draft consistent; it does
-not make it right.
+The owner overrides any row in the review PR. The rubric makes the draft consistent; it does not make it right.
 
 ---
 
@@ -189,9 +169,7 @@ not make it right.
 
 ## 8. Findings for the meta-model
 
-Recorded here; proposed to the meta-model as its own spec (a section per schema stating its
-purpose and the rules for writing an entity of that type). Nothing in core changes from this
-repository.
+Recorded here; proposed to the meta-model as its own spec (a section per schema stating its purpose and the rules for writing an entity of that type). Nothing in core changes from this repository.
 
 - **Core, `skill-schema.md`** — `## In practice` is described as "what someone using this skill
   actually does", which every first-cut file read as *what this person did*. A skill many

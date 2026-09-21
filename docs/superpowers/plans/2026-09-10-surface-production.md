@@ -351,9 +351,7 @@ print("resolutions ok")
 PY
 ```
 
-Expected: `resolutions ok`. The seven are the career break, the three products, Flatland CDO Server,
-the podcast episode and the application tooling — counted from the model rather than assumed, because
-an earlier count of six was made by reading one unit's entries and missing the two outside it.
+Expected: `resolutions ok`. The seven are the career break, the three products, Flatland CDO Server, the podcast episode and the application tooling — counted from the model rather than assumed, because an earlier count of six was made by reading one unit's entries and missing the two outside it.
 
 - [ ] **Step 5: Commit**
 
@@ -577,9 +575,7 @@ The acceptance. Until a surface comes out of it, the skill is a claim.
 
 - [ ] **Step 1: Follow the procedure**
 
-Run the skill's own procedure end to end against `model/surfaces/linkedin-profile.md`. Do not
-shortcut it by reading this plan for the answers: the point of the step is whether the procedure
-as written is followable.
+Run the skill's own procedure end to end against `model/surfaces/linkedin-profile.md`. Do not shortcut it by reading this plan for the answers: the point of the step is whether the procedure as written is followable.
 
 - [ ] **Step 2: Check the output exists and is not tracked**
 
@@ -587,8 +583,7 @@ as written is followable.
 ls -la dist/surfaces/ && git status --short && git check-ignore -v dist/surfaces/linkedin-profile.md
 ```
 
-Expected: `facts.json` and `linkedin-profile.md` present, `git status` showing neither and
-`check-ignore` naming the `dist/` line that ignores them.
+Expected: `facts.json` and `linkedin-profile.md` present, `git status` showing neither and `check-ignore` naming the `dist/` line that ignores them.
 
 - [ ] **Step 3: Check the two character limits, and fail on a unit that is not there**
 
@@ -623,27 +618,15 @@ sys.exit(1 if missing or stopped else 0)
 PY
 ```
 
-The unit names come from the surface entity's `## What it shows`, which is where they are
-declared, so the check asks what should be there rather than counting what it finds. Expected on
-a surface produced whole: a count for the headline and a count for the About text, both under
-their limits, `8 units declared, 0 missing, 0 stopped`, and exit 0. Anything else exits 1. A
-stopped unit prints `not tested` with its own `STOP:` line, because a character count taken
-against a `STOP:` line is a real number measuring nothing; a unit the produced file has no
-section for, or has an empty section for, prints `missing`, because the two are different
-failures and the report in step 4 has to say which. The other three constraints are read by the
-agent and reported in step 4, because a name pairing, a date agreeing with the model and a skill
-name matching an H1 are readings rather than measurements.
+The unit names come from the surface entity's `## What it shows`, which is where they are declared, so the check asks what should be there rather than counting what it finds. Expected on a surface produced whole: a count for the headline and a count for the About text, both under their limits, `8 units declared, 0 missing, 0 stopped`, and exit 0. Anything else exits 1. A stopped unit prints `not tested` with its own `STOP:` line, because a character count taken against a `STOP:` line is a real number measuring nothing; a unit the produced file has no section for, or has an empty section for, prints `missing`, because the two are different failures and the report in step 4 has to say which. The other three constraints are read by the agent and reported in step 4, because a name pairing, a date agreeing with the model and a skill name matching an H1 are readings rather than measurements.
 
 - [ ] **Step 4: Report**
 
-Write the report the procedure's step 6 asks for: every constraint passed or failed with its
-evidence, and every place the surface's file did not determine an answer. This is the output the
-owner reads, and it is what says whether the file or the skill needs the next change.
+Write the report the procedure's step 6 asks for: every constraint passed or failed with its evidence, and every place the surface's file did not determine an answer. This is the output the owner reads, and it is what says whether the file or the skill needs the next change.
 
 - [ ] **Step 5: Commit nothing, and say so**
 
-There is nothing to commit. The produced surface is gitignored by design, and the three previous
-tasks carry the skill. Confirm with `git status --short` and report the run instead.
+There is nothing to commit. The produced surface is gitignored by design, and the three previous tasks carry the skill. Confirm with `git status --short` and report the run instead.
 
 ---
 

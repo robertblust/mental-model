@@ -5,20 +5,11 @@ description: Read the profile's Evidence table for what the instance checks cann
 
 # mental-model-evidence-coverage
 
-This instance's own skill, not one of the portable `companygraph-*` set. The profile's evidence
-is a table of its own, one row per fact, and its `Experience` column is a qualifier the checker
-resolves and holds to its owner: a filled cell that names no experience, or one another profile
-owns, already fails by name. The two joins under that are the checker's as well: the profile
-schema declares that `## Evidence` stands under `## Skills` and that an experience's `skills`
-lists the row's skill, and the instance checks hold both (R16). What no check reaches is
-judgment, and this skill is what is left of it.
+This instance's own skill, not one of the portable `companygraph-*` set. The profile's evidence is a table of its own, one row per fact, and its `Experience` column is a qualifier the checker resolves and holds to its owner: a filled cell that names no experience, or one another profile owns, already fails by name. The two joins under that are the checker's as well: the profile schema declares that `## Evidence` stands under `## Skills` and that an experience's `skills` lists the row's skill, and the instance checks hold both (R16). What no check reaches is judgment, and this skill is what is left of it.
 
 ## Why it is not in `companygraph-validate`
 
-Every check in that pass and in the package's checks cites a numbered rule from
-`CONVENTIONS.md`, and can fail. Neither step here can: whether a year is a copy depends on what
-the sentence means by it, and a blank cell is legal, so both end in a list for the owner and
-not in a finding.
+Every check in that pass and in the package's checks cites a numbered rule from `CONVENTIONS.md`, and can fail. Neither step here can: whether a year is a copy depends on what the sentence means by it, and a blank cell is legal, so both end in a list for the owner and not in a finding.
 
 ## Procedure
 
@@ -38,11 +29,8 @@ not in a finding.
 
 ## What this does not check
 
-Whether a row is *true*. This checks that each fact stands on the entries the model holds, which
-is a weaker thing. The other direction is not a fault either: an experience listing a skill that
-no Evidence row names is a fact the table chose not to summarize.
+Whether a row is *true*. This checks that each fact stands on the entries the model holds, which is a weaker thing. The other direction is not a fault either: an experience listing a skill that no Evidence row names is a fact the table chose not to summarize.
 
 ## Not checked
 
-Say so in the report: this reads the tables and the frontmatter, not the prose of the
-experiences, so a row whose sentence claims more than its experience says passes here.
+Say so in the report: this reads the tables and the frontmatter, not the prose of the experiences, so a row whose sentence claims more than its experience says passes here.
