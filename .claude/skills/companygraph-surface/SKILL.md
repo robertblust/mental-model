@@ -6,9 +6,7 @@ allowed-tools: Bash(*), Read, Write, Edit, Glob, Grep
 
 # companygraph-surface
 
-A surface is a place the company publishes that no script writes, and its file records the rules
-by which the model becomes that place. This produces the place: one run produces one surface
-entity into `dist/surfaces/`, named for that entity's own file and ready to paste.
+A surface is a place the company publishes that no script writes, and its file records the rules by which the model becomes that place. This produces the place: one run produces one surface entity into `dist/surfaces/`, named for that entity's own file and ready to paste.
 
 ## Procedure
 
@@ -43,63 +41,30 @@ entity into `dist/surfaces/`, named for that entity's own file and ready to past
 
 ## What facts.json holds
 
-`facts.json` carries `identity`, the identity entity whole; `surfaces`, each surface's `name`
-and `path`; and `types`, one list per type — `experience`, `skill`, `value` and so on — each
-entry an entity in the same shape: `name`, `path`, `tagline`, `fields` (its frontmatter as
-written) and `sections` (its `##` bodies, keyed by heading). Where its type names an
-organization anywhere, an entity also carries `organization` with `organization_from`.
+`facts.json` carries `identity`, the identity entity whole; `surfaces`, each surface's `name` and `path`; and `types`, one list per type — `experience`, `skill`, `value` and so on — each entry an entity in the same shape: `name`, `path`, `tagline`, `fields` (its frontmatter as written) and `sections` (its `##` bodies, keyed by heading). Where its type names an organization anywhere, an entity also carries `organization` with `organization_from`.
 
-Every entity carries `dates`, and on most of them it is null: only a `start` in the frontmatter
-makes a period, so the key is always there and its value often is not. Where there is one,
-`dates` is the period written for a reader, a bare date where the period is one unit long or
-still running, and `fields.end` is the fact that tells those two apart: a period that ended in
-the month it began and a period with no end read the same as prose, and only the frontmatter
-says which is which. A rule that turns on whether a period is running reads `fields`, never
-`dates`.
+Every entity carries `dates`, and on most of them it is null: only a `start` in the frontmatter makes a period, so the key is always there and its value often is not. Where there is one, `dates` is the period written for a reader, a bare date where the period is one unit long or still running, and `fields.end` is the fact that tells those two apart: a period that ended in the month it began and a period with no end read the same as prose, and only the frontmatter says which is which. A rule that turns on whether a period is running reads `fields`, never `dates`.
 
-A type is not a kind. `types["experience"]` is one list holding every experience regardless of
-what kind it is; `kind` is a field inside that entity's own `fields`, the value a rule in the
-surface's file routes by. A rule naming a kind asks the procedure to filter one of these lists
-on a field inside it, not to look for a list of its own.
+A type is not a kind. `types["experience"]` is one list holding every experience regardless of what kind it is; `kind` is a field inside that entity's own `fields`, the value a rule in the surface's file routes by. A rule naming a kind asks the procedure to filter one of these lists on a field inside it, not to look for a list of its own.
 
 ## What the script decides, and what it must not
 
-The script resolves two things: an entity's dates into the family's register, and — for a type
-whose entities name one somewhere in the model — its `organization`, falling back to the
-identity for an entity that names none itself. A type no entity of it ever names an
-organization for carries no such field at all. Everything else reaches `facts.json` exactly as
-the entity's frontmatter and sections hold it: a `url` is carried, not resolved, the same as
-any other field. The script routes nothing and orders nothing.
+The script resolves two things: an entity's dates into the family's register, and — for a type whose entities name one somewhere in the model — its `organization`, falling back to the identity for an entity that names none itself. A type no entity of it ever names an organization for carries no such field at all. Everything else reaches `facts.json` exactly as the entity's frontmatter and sections hold it: a `url` is carried, not resolved, the same as any other field. The script routes nothing and orders nothing.
 
-Which kinds reach which unit; in what order entries run; what is left out and why; and what
-register the prose takes: these are the surface's rules, and its file is their only home. A
-rule that moved into the script would be the second copy of itself, and the second copy is the
-one nobody reads. Before resolving anything new there, ask whether two surfaces of the same
-model could reasonably want it different: if they could, it belongs to the file.
+Which kinds reach which unit; in what order entries run; what is left out and why; and what register the prose takes: these are the surface's rules, and its file is their only home. A rule that moved into the script would be the second copy of itself, and the second copy is the one nobody reads. Before resolving anything new there, ask whether two surfaces of the same model could reasonably want it different: if they could, it belongs to the file.
 
 ## Why this one is a procedure and not a program
 
-`companygraph-export` is a single script and says why: one intent implemented twice drifts apart
-one rule at a time, and a procedure followed by hand is a different program each time somebody
-follows it. Both hold here, and neither makes this scriptable. No script writes a paragraph in a
-register, chooses which skills a profile claims or cuts a body to the length its period earns.
+`companygraph-export` is a single script and says why: one intent implemented twice drifts apart one rule at a time, and a procedure followed by hand is a different program each time somebody follows it. Both hold here, and neither makes this scriptable. No script writes a paragraph in a register, chooses which skills a profile claims or cuts a body to the length its period earns.
 
-So the line is not drawn by taste. Everything a machine can settle is the script's, and the
-procedure begins at the first thing it cannot.
+So the line is not drawn by taste. Everything a machine can settle is the script's, and the procedure begins at the first thing it cannot.
 
 ## The output is never committed
 
-`dist/` is gitignored, so nothing this produces enters the repository. The reason is R17 rather
-than the build directory: a file in the model records the rules by which something is made and
-never the state of the thing made, and a produced surface is that state. It is produced, read,
-pasted and thrown away, and the next production makes it again from the rules.
+`dist/` is gitignored, so nothing this produces enters the repository. The reason is R17 rather than the build directory: a file in the model records the rules by which something is made and never the state of the thing made, and a produced surface is that state. It is produced, read, pasted and thrown away, and the next production makes it again from the rules.
 
 ## Producing a surface is how a surface file gets checked
 
-A file is written by somebody deciding what to omit, and it reads as complete until something
-tries to use it. Producing a surface is that use: it is the check that finds what a surface's
-file fails to state, in a way reading the file against the model does not.
-`docs/specs/2026-09-10-surface-production.md` holds the evidence for that claim.
+A file is written by somebody deciding what to omit, and it reads as complete until something tries to use it. Producing a surface is that use: it is the check that finds what a surface's file fails to state, in a way reading the file against the model does not. `docs/specs/2026-09-10-surface-production.md` holds the evidence for that claim.
 
-So step 6 is not a courtesy. It is the only report that finds what a surface file lacks, and it
-belongs in the pull request that changes the file.
+So step 6 is not a courtesy. It is the only report that finds what a surface file lacks, and it belongs in the pull request that changes the file.

@@ -32,54 +32,33 @@
 > Still open, unchanged: `organisation` means four things by kind, and the closed type
 > vocabulary still has no URI type.
 
-Status: proposed when written; shipped in core 0.9.0 and filled in here. Changes `meta/core/experience-schema.md` only, so it is made
-upstream in the CompanyGraph repository and comes back through a re-vendor. Nothing in this
-repository changes until it does.
+Status: proposed when written; shipped in core 0.9.0 and filled in here. Changes `meta/core/experience-schema.md` only, so it is made upstream in the CompanyGraph repository and comes back through a re-vendor. Nothing in this repository changes until it does.
 
-Third of three, and named as the smallest remaining gap by both of the others —
-[`2026-09-02-date-precision.md`](2026-09-02-date-precision.md) §9 and
-[`2026-09-02-experience-kind.md`](2026-09-02-experience-kind.md) §6. Independent of both.
+Third of three, and named as the smallest remaining gap by both of the others — [`2026-09-02-date-precision.md`](2026-09-02-date-precision.md) §9 and [`2026-09-02-experience-kind.md`](2026-09-02-experience-kind.md) §6. Independent of both.
 
 ---
 
 ## 1. Where the links are now
 
-Sixteen links belong to the 24 experiences. They have three different fates, and the third is
-the one that should worry a reader:
+Sixteen links belong to the 24 experiences. They have three different fates, and the third is the one that should worry a reader:
 
-**Eight are carried as prose.** Every `community` entry states its link inside an achievement
-bullet — *"Recording: https://page.camunda.com/camundacon-2022-on-demand"*, the four Eclipse
-wiki pages, the JUG board's jug.ch, the published Camunda case study. rob-cv holds each of
-these in a `url:` field. The model receives the fact and stores it as a sentence.
+**Eight are carried as prose.** Every `community` entry states its link inside an achievement bullet — *"Recording: https://page.camunda.com/camundacon-2022-on-demand"*, the four Eclipse wiki pages, the JUG board's jug.ch, the published Camunda case study. rob-cv holds each of these in a `url:` field. The model receives the fact and stores it as a sentence.
 
-**Four are gone.** rob-cv states a `url:` on four project pages — the 3ap.ch case studies for
-AXA Health, Stay KooooK, Flawa iQ and Aroov — and the model carries none of them. Not in prose:
-absent. `2017-axa-health-platform`, `2020-stay-koook`, `2018-flawa-iq` and
-`2019-aroov-realestate` contain no link at all.
+**Four are gone.** rob-cv states a `url:` on four project pages — the 3ap.ch case studies for AXA Health, Stay KooooK, Flawa iQ and Aroov — and the model carries none of them. Not in prose: absent. `2017-axa-health-platform`, `2020-stay-koook`, `2018-flawa-iq` and `2019-aroov-realestate` contain no link at all.
 
-**Four have no field anywhere.** The two zefix register entries added on 2026-09-02 and
-companygraph.io / guestgraph.io in `2026-career-break` are prose in the model *and* prose in the
-master, because rob-cv's `url:` holds one link and means "this page's own address" — which is
-not what a register record is.
+**Four have no field anywhere.** The two zefix register entries added on 2026-09-02 and companygraph.io / guestgraph.io in `2026-career-break` are prose in the model *and* prose in the master, because rob-cv's `url:` holds one link and means "this page's own address" — which is not what a register record is.
 
-The first two are the same defect as in the other two specs: a fact the master states, with
-nowhere in the model to land. The third says the master has the gap too, so the model should not
-copy its shape.
+The first two are the same defect as in the other two specs: a fact the master states, with nowhere in the model to land. The third says the master has the gap too, so the model should not copy its shape.
 
 ## 2. Two different links, and the test between them
 
 The sixteen are not one kind of thing.
 
-`https://wiki.eclipse.org/Eclipse_Finance_Day_2012/` **is** the entry — it is where that
-conference lives on the web. `https://www.zefix.ch/en/search/entity/list/firm/1201727` is not
-3AP's page; 3ap.ch is. The register entry is there to let a reader check one claim the entry
-makes, namely that the company was founded in November 2014.
+`https://wiki.eclipse.org/Eclipse_Finance_Day_2012/` **is** the entry — it is where that conference lives on the web. `https://www.zefix.ch/en/search/entity/list/firm/1201727` is not 3AP's page; 3ap.ch is. The register entry is there to let a reader check one claim the entry makes, namely that the company was founded in November 2014.
 
 The test: **does the link identify the entry, or support a claim inside it?**
 
-Core already models the first half. `identity` carries `url`, typed `string`, described as *"The
-company's own address on the web"*. An experience wants exactly that field for exactly that
-reason, and the description transfers with one word changed.
+Core already models the first half. `identity` carries `url`, typed `string`, described as *"The company's own address on the web"*. An experience wants exactly that field for exactly that reason, and the description transfers with one word changed.
 
 ## 3. The change
 
@@ -106,29 +85,17 @@ reason, and the description transfers with one word changed.
 
 ### Why a table and not a list of URLs
 
-R8 decides it: *"A field whose value is a list of records is a table wearing YAML: put it in the
-body as a Markdown table and declare its columns in the schema."* And, two paragraphs on: *"a
-list of* bare names *stays in frontmatter, typed `array of ref → <type>`; a list of* records
-*becomes a table in the body. […] What decides the shape is whether the edge has attributes of
-its own."*
+R8 decides it: *"A field whose value is a list of records is a table wearing YAML: put it in the body as a Markdown table and declare its columns in the schema."* And, two paragraphs on: *"a list of* bare names *stays in frontmatter, typed `array of ref → <type>`; a list of* records *becomes a table in the body. […] What decides the shape is whether the edge has attributes of its own."*
 
-A reference is a record, and the evidence is that the label already exists. `2022-talk-camundacon`
-does not write the bare URL — it writes *"Recording: …"*, because a naked
-`page.camunda.com/camundacon-2022-on-demand` does not say what it is. Strip the label into an
-array and that information is destroyed; keep it and the pair is a record. The profile's
-`## Skills` table is the same shape for the same reason: an edge with attributes of its own.
+A reference is a record, and the evidence is that the label already exists. `2022-talk-camundacon` does not write the bare URL — it writes *"Recording: …"*, because a naked `page.camunda.com/camundacon-2022-on-demand` does not say what it is. Strip the label into an array and that information is destroyed; keep it and the pair is a record. The profile's `## Skills` table is the same shape for the same reason: an edge with attributes of its own.
 
-The one entry with two links today, `2026-career-break`, also shows why a single field will not
-do. Two products, two addresses, neither of them "the entry's own".
+The one entry with two links today, `2026-career-break`, also shows why a single field will not do. Two products, two addresses, neither of them "the entry's own".
 
 ## 4. Mastership: what copies and what is added
 
-Twelve values copy mechanically — rob-cv's `url:` becomes the model's `url`, eight of them
-replacing a prose sentence and four filling a hole.
+Twelve values copy mechanically — rob-cv's `url:` becomes the model's `url`, eight of them replacing a prose sentence and four filling a hole.
 
-Reference rows are different and the spec should be honest about it. The `What` column is not a
-value rob-cv states; it is a classification the model adds. That is acceptable only under a rule
-that keeps it a fact rather than an opinion, and the schema should carry one as a writing rule:
+Reference rows are different and the spec should be honest about it. The `What` column is not a value rob-cv states; it is a classification the model adds. That is acceptable only under a rule that keeps it a fact rather than an opinion, and the schema should carry one as a writing rule:
 
 > `What` names the kind of document, not its significance. "Commercial register entry" is a
 > fact about the link; "proof that the company existed" is a reading of it.
@@ -176,26 +143,15 @@ that keeps it a fact rather than an opinion, and the schema should carry one as 
 | `2026-career-break` | Product | companygraph.io |
 | `2026-career-break` | Product | guestgraph.io |
 
-Every one of these is `source: rob-cv` except the career break, so each is corrected in rob-cv
-first and copied down — which for the two zefix rows means rob-cv needs somewhere structured to
-put them too, and today it has only prose. That is a rob-cv question, not a core one, and it is
-the reason those links went into a sentence this morning.
+Every one of these is `source: rob-cv` except the career break, so each is corrected in rob-cv first and copied down — which for the two zefix rows means rob-cv needs somewhere structured to put them too, and today it has only prose. That is a rob-cv question, not a core one, and it is the reason those links went into a sentence this morning.
 
 ## 7. Verification, and the class of defect it cannot catch
 
-The mechanical pass gains little: `url` is an optional string, and a `Table.` section is already
-checked for its header row and its column types by R9.
+The mechanical pass gains little: `url` is an optional string, and a `Table.` section is already checked for its header row and its column types by R9.
 
-What it cannot catch is exactly what happened to the four project links. **An absent optional
-field is indistinguishable from a fact that does not exist.** No pass over the instance can tell
-"this project has no case study" from "this project's case study was dropped in the copy". The
-only thing that finds it is comparing the model against its master field by field — which is
-what found it here, and which nothing in the repository does routinely.
+What it cannot catch is exactly what happened to the four project links. **An absent optional field is indistinguishable from a fact that does not exist.** No pass over the instance can tell "this project has no case study" from "this project's case study was dropped in the copy". The only thing that finds it is comparing the model against its master field by field — which is what found it here, and which nothing in the repository does routinely.
 
-That is worth stating plainly because it generalizes: for every optional field, mastership is
-enforced by nobody. A drift check between rob-cv and the model — every `source: rob-cv` page,
-every field the master states — is a tooling question rather than a schema one, and it is the
-obvious fourth piece of work.
+That is worth stating plainly because it generalizes: for every optional field, mastership is enforced by nobody. A drift check between rob-cv and the model — every `source: rob-cv` page, every field the master states — is a tooling question rather than a schema one, and it is the obvious fourth piece of work.
 
 ## 8. Findings
 
@@ -209,24 +165,12 @@ obvious fourth piece of work.
 
 ## The organization link, taken on the cheap
 
-§6 held `company_url` back: 3ap.ch and likemagic.tech link to the *organization*, not to the
-entry or to a claim in it, and where they belong waits on whether `organisation` stays one
-string meaning an employer, a client, a host and an awarding body at once.
+§6 held `company_url` back: 3ap.ch and likemagic.tech link to the *organization*, not to the entry or to a claim in it, and where they belong waits on whether `organisation` stays one string meaning an employer, a client, a host and an awarding body at once.
 
-They are in `## References` now anyway, as "The company", on the two entries whose organization
-Robert Blust founded. That is a decision to take the link now and pay for the modeling later,
-made with the cost known rather than missed.
+They are in `## References` now anyway, as "The company", on the two entries whose organization Robert Blust founded. That is a decision to take the link now and pay for the modeling later, made with the cost known rather than missed.
 
-The cost is what a reference row means. Every other row on this profile is something a reader
-opens to check a claim the entry makes — a register record, a case study, an award, the API
-documentation. A homepage checks nothing the entry says: 3AP's entry claims a company that
-scaled to about seventy people and led bids under Swiss procurement law, and 3ap.ch supports
-none of it. So the column now means "links belonging to this entry" rather than "evidence for
-it", and nothing distinguishes the two kinds by looking.
+The cost is what a reference row means. Every other row on this profile is something a reader opens to check a claim the entry makes — a register record, a case study, an award, the API documentation. A homepage checks nothing the entry says: 3AP's entry claims a company that scaled to about seventy people and led bids under Swiss procurement law, and 3ap.ch supports none of it. So the column now means "links belonging to this entry" rather than "evidence for it", and nothing distinguishes the two kinds by looking.
 
-It is deliberately narrow. Only the two companies Robert Blust founded, not every client or
-host, because a client's homepage would be someone else's marketing on a page about him.
+It is deliberately narrow. Only the two companies Robert Blust founded, not every client or host, because a client's homepage would be someone else's marketing on a page about him.
 
-The proper answer is still §6's: decide whether `organisation` stays a plain string, and if it
-does not, give it somewhere structured to carry an address. When that lands these two rows come
-out.
+The proper answer is still §6's: decide whether `organisation` stays a plain string, and if it does not, give it somewhere structured to carry an address. When that lands these two rows come out.

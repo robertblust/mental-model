@@ -11,51 +11,24 @@
 
 ## Why the arrow was pointing the other way
 
-rob-cv was written to generate tailored application dossiers, bilingual, from one set of facts.
-The model was built from it, so the CV was the master and every page here was a copy — which is
-why `AGENTS.md` said to correct a fact there first and copy it down, and why 23 experiences
-carried a `source-id` pointing into its folders.
+rob-cv was written to generate tailored application dossiers, bilingual, from one set of facts. The model was built from it, so the CV was the master and every page here was a copy — which is why `AGENTS.md` said to correct a fact there first and copy it down, and why 23 experiences carried a `source-id` pointing into its folders.
 
-The role that repository was written to find starts on 1 October 2026. What it did — one source
-of facts, many rendered forms — is work this model can carry itself, and rebuilding that on top
-of the graph is a separate project that is deliberately not part of the model. So the CV is
-archived, and an archived master is not a master.
+The role that repository was written to find starts on 1 October 2026. What it did — one source of facts, many rendered forms — is work this model can carry itself, and rebuilding that on top of the graph is a separate project that is deliberately not part of the model. So the CV is archived, and an archived master is not a master.
 
 ## What the flip decided beyond the field value
 
-**`source-id` goes, rather than staying as a trace.** The source schema says the field is the
-page's identifier inside its source and is absent where the source issues none, “as a repository
-does not”. Sixteen of the 23 differed from their filename — they were rob-cv's own ids, undated
-because it filed projects and community entries in separate folders — so they pointed into a
-tree that stops resolving. A field that claims a live pointer and has none is worse than no
-field.
+**`source-id` goes, rather than staying as a trace.** The source schema says the field is the page's identifier inside its source and is absent where the source issues none, “as a repository does not”. Sixteen of the 23 differed from their filename — they were rob-cv's own ids, undated because it filed projects and community entries in separate folders — so they pointed into a tree that stops resolving. A field that claims a live pointer and has none is worse than no field.
 
-**Nothing about the content changed.** The prose here was already the copy. Only the direction
-of the arrow was upstream, which is the whole reason this is written down: a reader finding
-`source: Local` on every page has no way to see that it once did not, and every convention
-around it was drafted while it pointed the other way.
+**Nothing about the content changed.** The prose here was already the copy. Only the direction of the arrow was upstream, which is the whole reason this is written down: a reader finding `source: Local` on every page has no way to see that it once did not, and every convention around it was drafted while it pointed the other way.
 
-**The `docs/specs/` entries that describe the old arrangement stay as they are.** Four of them
-name rob-cv as the master. They are dated records of decisions made while that held, and
-rewriting them would falsify the history rather than update it.
+**The `docs/specs/` entries that describe the old arrangement stay as they are.** Four of them name rob-cv as the master. They are dated records of decisions made while that held, and rewriting them would falsify the history rather than update it.
 
 ## The rule that narrowed by accident
 
-`AGENTS.md`'s house style said “claim only what the CV states”. With the CV archived that
-sentence had no referent, and the flip rewrote it as “claim only what something outside this
-repository can confirm — a document, a record, a published page”.
+`AGENTS.md`'s house style said “claim only what the CV states”. With the CV archived that sentence had no referent, and the flip rewrote it as “claim only what something outside this repository can confirm — a document, a record, a published page”.
 
-That is not what the old rule meant. The CV was Robert Blust's own account of himself, so his
-word was always the primary source and a document was the corroboration. The rewrite inverted that
-without anyone noticing, because it reads like a tightening and tightening a rule about
-invention feels safe.
+That is not what the old rule meant. The CV was Robert Blust's own account of himself, so his word was always the primary source and a document was the corroboration. The rewrite inverted that without anyone noticing, because it reads like a tightening and tightening a rule about invention feels safe.
 
-It surfaced when a skill claim rested on Robert Blust describing his own practice, which the new
-wording refused and the old wording had always allowed. The rule now reads “claim only what
-Robert Blust states or a document shows”, and names what the guard is actually against:
-invention by whoever is
-editing, not first-hand testimony.
+It surfaced when a skill claim rested on Robert Blust describing his own practice, which the new wording refused and the old wording had always allowed. The rule now reads “claim only what Robert Blust states or a document shows”, and names what the guard is actually against: invention by whoever is editing, not first-hand testimony.
 
-The finding is more general than the sentence. A rule whose referent is removed cannot simply be
-reworded around the gap — what it meant has to be recovered first, and the recovery is not
-obvious from the words that are left.
+The finding is more general than the sentence. A rule whose referent is removed cannot simply be reworded around the gap — what it meant has to be recovered first, and the recovery is not obvious from the words that are left.

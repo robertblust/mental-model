@@ -109,14 +109,9 @@ def main():
 sys.exit(main())
 ```
 
-Two of the bundle's files carry a document about the model rather than entities of it, so
-`DOCUMENTS` names them and the coverage scan skips them: they hold no marker, and a stray
-`<!-- entity: … -->` in either would otherwise be reported as an entity the model does not
-have. They still count against the source cap, because Gemini Notebook counts them.
+Two of the bundle's files carry a document about the model rather than entities of it, so `DOCUMENTS` names them and the coverage scan skips them: they hold no marker, and a stray `<!-- entity: … -->` in either would otherwise be reported as an entity the model does not have. They still count against the source cap, because Gemini Notebook counts them.
 
-A README is excluded on both halves of the walk. `meta/` carries none today, so leaving it in
-matched nothing and the asymmetry was invisible — until a core release adds one, when the
-bundle would have to claim it to pass.
+A README is excluded on both halves of the walk. `meta/` carries none today, so leaving it in matched nothing and the asymmetry was invisible — until a core release adds one, when the bundle would have to claim it to pass.
 
 - [ ] **Step 2: Make it executable and run it to verify it fails**
 
@@ -149,8 +144,7 @@ model by its own root types: a grouping keyed to anything the model has not decl
 entity is a cut made by whatever a pattern happens to match.
 ```
 
-The guide bullet names `export/gemini-notebook-AGENTS.md`, which Task 2 writes. The folder's README
-says what the folder holds, and the guide is the next thing to arrive in it.
+The guide bullet names `export/gemini-notebook-AGENTS.md`, which Task 2 writes. The folder's README says what the folder holds, and the guide is the next thing to arrive in it.
 
 - [ ] **Step 4: Check the prose and commit**
 
@@ -173,18 +167,9 @@ git commit -m "The bundle gets a verifier before it gets a builder"
 - Consumes: nothing on disk. Every count it states is a `{{…}}` token that Task 3's build substitutes from what it counted on the run that ships the file.
 - Produces: the document the build copies into the bundle as `AGENTS.md`.
 
-Gemini Notebook strips comments, so the entity marker that tells an agent where a page begins says
-nothing to this reader, and it has no convention to be told. What a reader who opens the
-notebook cold needs to know — that a source is a stack of whole pages, that an entity's H1 is
-its name, that references between entities are by name and not by link, and what a claim in
-this model rests on — has to be in the notebook, because a guide that lives outside the bundle
-is a guide that reader never sees. So the guide is a source.
+Gemini Notebook strips comments, so the entity marker that tells an agent where a page begins says nothing to this reader, and it has no convention to be told. What a reader who opens the notebook cold needs to know — that a source is a stack of whole pages, that an entity's H1 is its name, that references between entities are by name and not by link, and what a claim in this model rests on — has to be in the notebook, because a guide that lives outside the bundle is a guide that reader never sees. So the guide is a source.
 
-It is the instance's own file rather than something the export writes, because the mastership
-rules it carries are this repository's, drawn from its own `AGENTS.md`. What the export owns is
-the arithmetic: a count stated in prose is a count nothing checks, since a document holds no
-marker and the verifier has no opinion about it, so a guide could say 36 experiences beside a
-bundle holding 37 and pass. Every number is therefore a token.
+It is the instance's own file rather than something the export writes, because the mastership rules it carries are this repository's, drawn from its own `AGENTS.md`. What the export owns is the arithmetic: a count stated in prose is a count nothing checks, since a document holds no marker and the verifier has no opinion about it, so a guide could say 36 experiences beside a bundle holding 37 and pass. Every number is therefore a token.
 
 - [ ] **Step 1: Write the guide**
 
@@ -285,12 +270,7 @@ Expected, ten distinct tokens:
 {{sources}}
 ```
 
-Seven of them name a source by the title the export will give it, which is the folder name with
-its first letter raised. One names a path under the repository root, and it exists for the one
-number no source holds: `Profiles.md` carries 37 entities, and the guide says a profile and the
-36 experiences it owns. The remaining two are the totals. A misspelled title is not caught by
-this grep and is not meant to be — it is caught in Task 3, where the build refuses to write a
-bundle with a token nothing resolves.
+Seven of them name a source by the title the export will give it, which is the folder name with its first letter raised. One names a path under the repository root, and it exists for the one number no source holds: `Profiles.md` carries 37 entities, and the guide says a profile and the 36 experiences it owns. The remaining two are the totals. A misspelled title is not caught by this grep and is not meant to be — it is caught in Task 3, where the build refuses to write a bundle with a token nothing resolves.
 
 - [ ] **Step 3: Check the prose and commit**
 
@@ -314,15 +294,11 @@ git commit -m "The bundle carries the guide a stripped reader cannot do without"
 - Consumes: `export/gemini-notebook-AGENTS.md` from Task 2 and the repository's `README.md` as the two documents, `.claude/skills/companygraph-export/verify.py` from Task 1 as the green step, and `export/gemini-notebook-sources.md` when an instance writes one — this one does not.
 - Produces: `dist/mental-model-skill.zip` unchanged, and `dist/mental-model-gemini-notebook/` — a flat folder of `.md` files, one per source, no archive.
 
-The script lives with the skill rather than in `export/`, because shape belongs to the tool and
-`export/` holds the instance's own inputs.
+The script lives with the skill rather than in `export/`, because shape belongs to the tool and `export/` holds the instance's own inputs.
 
 - [ ] **Step 1: Write the renderer**
 
-The renderer is `.claude/skills/companygraph-export/build.py`, 377 lines, and it is not copied
-here. A plan that pastes a file the repository already holds is a second copy nothing keeps in
-step, which is the drift this whole branch was written to close. Read it there. What it must do,
-and what a reviewer holds it to:
+The renderer is `.claude/skills/companygraph-export/build.py`, 377 lines, and it is not copied here. A plan that pastes a file the repository already holds is a second copy nothing keeps in step, which is the drift this whole branch was written to close. Read it there. What it must do, and what a reviewer holds it to:
 
 - Cut by root type when no declaration exists: one source per type folder under `model/`, one
   for `meta/`, one per singular entity, plus `AGENTS.md` and `README.md` as documents.
@@ -355,8 +331,7 @@ skill: `SKILL.md` at the root, `model/<type>.md` per root type folder, `model/me
 carrying the model's own pages as they are written.
 ```
 
-Steps 1 to 6 of the procedure are untouched. The agent bundle is unchanged by this plan, and
-its own reasoning about the `<!-- entity: … -->` marker in step 3 is where it was.
+Steps 1 to 6 of the procedure are untouched. The agent bundle is unchanged by this plan, and its own reasoning about the `<!-- entity: … -->` marker in step 3 is where it was.
 
 - [ ] **Step 3: Add the Gemini Notebook rendering as a new step 7, before the current step 7**
 

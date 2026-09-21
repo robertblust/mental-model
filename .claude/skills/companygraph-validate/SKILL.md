@@ -5,8 +5,7 @@ description: Validate this CompanyGraph instance against meta/core/CONVENTIONS.m
 
 # companygraph-validate
 
-The R0 agent pass. `companygraph check` — the CLI — does not exist in this instance, so the
-mechanical rules it would cover are done here by hand as well.
+The R0 agent pass. `companygraph check` — the CLI — does not exist in this instance, so the mechanical rules it would cover are done here by hand as well.
 
 ## Procedure
 
@@ -70,10 +69,4 @@ mechanical rules it would cover are done here by hand as well.
 
 ## Report
 
-Per rule, `R1 ✓` or `R4 ✗ <file>: <reference> resolves to no <type>` — one line per failure,
-citing the rule. Then the writing rules per type, cited as the rule's own words and the file
-that breaks it. Then the gaps, one line each, after the failures and outside their
-count. Then the lines nothing else reaches and this pass judged by reading: whether
-each Evidence row's `What it shows` is a concrete fact, whether `## In practice` prose says what following and
-breaking the value looks like. End with **Not checked:** naming anything above that was
-skipped, so a clean report is never read as more than it is.
+Per rule, `R1 ✓` or `R4 ✗ <file>: <reference> resolves to no <type>` — one line per failure, citing the rule. Then the writing rules per type, cited as the rule's own words and the file that breaks it. Then the gaps, one line each, after the failures and outside their count. Then the lines nothing else reaches and this pass judged by reading: whether each Evidence row's `What it shows` is a concrete fact, whether `## In practice` prose says what following and breaking the value looks like. End with **Not checked:** naming anything above that was skipped, so a clean report is never read as more than it is.
