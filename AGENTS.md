@@ -12,52 +12,27 @@ Everything below this block is this repository's own. `sh conventions/convention
 
 # AGENTS.md
 
-Guidance for agents working in this repository — the instance's own rules. Every modeling
-rule lives in `meta/core/CONVENTIONS.md` and is not restated here; read it first.
+Guidance for agents working in this repository — the instance's own rules. Every modeling rule lives in `meta/core/CONVENTIONS.md` and is not restated here; read it first.
 
 ## What this is
 
-Robert Blust, described in CompanyGraph: two profiles — the person, with its experiences, and the
-agent that holds every seat in `model/roles/` but the Owner's — the skills and values they claim
-and the ladder they claim them on. `meta/core/` is core, vendored and never edited here;
-`.companygraph/manifest.json` records which release and a hash per file.
+Robert Blust, described in CompanyGraph: two profiles — the person, with its experiences, and the agent that holds every seat in `model/roles/` but the Owner's — the skills and values they claim and the ladder they claim them on. `meta/core/` is core, vendored and never edited here; `.companygraph/manifest.json` records which release and a hash per file.
 
 ## Checks
 
-Two jobs, both required by the ruleset on `main`: `companygraph`, which calls meta-model's
-`instance-check.yml` at the release named in the workflow and is shown by GitHub as
-`companygraph / companygraph`, and `conventions`, called from robertblust/conventions at the
-pinned tag and shown as `conventions / conventions`. `meta/` is excluded from the prose check
-because it is core, vendored and never edited here; its words are core's to hold.
-`docs/superpowers/` is excluded too, as in every other member: its research quotes the taxonomy
-labels it compares.
+Two jobs, both required by the ruleset on `main`: `companygraph`, which calls meta-model's `instance-check.yml` at the release named in the workflow and is shown by GitHub as `companygraph / companygraph`, and `conventions`, called from robertblust/conventions at the pinned tag and shown as `conventions / conventions`. `meta/` is excluded from the prose check because it is core, vendored and never edited here; its words are core's to hold. `docs/superpowers/` is excluded too, as in every other member: its research quotes the taxonomy labels it compares.
 
 ## Before every commit
 
-Run the `companygraph-validate` skill. It reports per numbered rule and names what it did not
-check. A commit with an unresolved reference is not made.
+Run the `companygraph-validate` skill. It reports per numbered rule and names what it did not check. A commit with an unresolved reference is not made.
 
-The skill lives in `.claude/skills/` here, so it loads only for a session rooted in this
-repository. A session rooted above it — at `~/git/robertblust/`, say, where every member is a
-subdirectory — sees no skill of this repository's at all, and the failure is silent: the skill is
-simply absent rather than reported missing. Where that happens the pass is still owed, by hand
-and against `meta/core/CONVENTIONS.md`, and the commit says which of the two ran. A `Verified:`
-line naming a skill that did not load is the one outcome this paragraph exists to prevent.
+The skill lives in `.claude/skills/` here, so it loads only for a session rooted in this repository. A session rooted above it — at `~/git/robertblust/`, say, where every member is a subdirectory — sees no skill of this repository's at all, and the failure is silent: the skill is simply absent rather than reported missing. Where that happens the pass is still owed, by hand and against `meta/core/CONVENTIONS.md`, and the commit says which of the two ran. A `Verified:` line naming a skill that did not load is the one outcome this paragraph exists to prevent.
 
 ## Numbers that move
 
-A count or a version of something that still changes is not written down here: not the types,
-releases or rules of core, not the release this repository vendors, not the experiences, skills,
-values, seats or tools the model holds. Such a number is true on the day it is written, and
-nothing in this repository fails when it stops being true, so it goes stale without a sound;
-refreshing it only resets the clock, which is how the same entry went stale twice. Say where
-the number is read instead — the manifest for the release, the folder for the entities, the list
-the sentence sits beside — or say it without the number.
+A count or a version of something that still changes is not written down here: not the types, releases or rules of core, not the release this repository vendors, not the experiences, skills, values, seats or tools the model holds. Such a number is true on the day it is written, and nothing in this repository fails when it stops being true, so it goes stale without a sound; refreshing it only resets the clock, which is how the same entry went stale twice. Say where the number is read instead — the manifest for the release, the folder for the entities, the list the sentence sits beside — or say it without the number.
 
-A number fixed by a closed period stays, because nothing will move it: 25 people at a company
-the period ended with, 12 of 25 applications in a search that is over. Where a quantity that
-still moves has to be said, a floor that stays true is the form, “over 25 years”. Before a
-commit, read the diff for digits and number words and ask of each whether it can change.
+A number fixed by a closed period stays, because nothing will move it: 25 people at a company the period ended with, 12 of 25 applications in a search that is over. Where a quantity that still moves has to be said, a floor that stays true is the form, “over 25 years”. Before a commit, read the diff for digits and number words and ask of each whether it can change.
 
 ## Mastership
 
@@ -78,30 +53,14 @@ commit, read the diff for digits and number words and ask of each whether it can
   are shown on request. So an entry whose evidence is private carries the fact and no link, and
   the missing link is the decision rather than a gap to fill.
 
-Why the model masters itself, and what that decided beyond the field value, is in
-`docs/specs/2026-09-04-mastership-flip.md`.
+Why the model masters itself, and what that decided beyond the field value, is in `docs/specs/2026-09-04-mastership-flip.md`.
 
 ## Writing a skill
 
-The rules are in `docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. In short:
-the definition starts with the thing itself, never “The practice of”; `## In practice` is in
-the imperative without a subject and names no person, employer, date or number; products
-appear only in a closing `Typical tools:` clause. A skill is claimed in a profile's Skills
-table and evidenced in the Evidence table under it — that is where one person's level and
-evidence live, never in the skill file.
+The rules are in `docs/superpowers/specs/2026-08-26-skills-reference-design.md` §3. In short: the definition starts with the thing itself, never “The practice of”; `## In practice` is in the imperative without a subject and names no person, employer, date or number; products appear only in a closing `Typical tools:` clause. A skill is claimed in a profile's Skills table and evidenced in the Evidence table under it — that is where one person's level and evidence live, never in the skill file.
 
 ## Sync slot
 
-Instance-owned skills live at `.claude/skills/mental-model-*/`, and one does:
-`mental-model-evidence-coverage` reads the profile's Evidence table for what no check can
-judge: a year in a sentence that copies its experience's period, and the rows that name no
-experience, which the owner decides one by one. The joins under the table are the instance
-checks', because the profile schema declares them: that every claim has a row
-under it, that no row stands under a claim nobody made, and that the experience a row names
-lists the row's skill. The skill is here rather than in `companygraph-validate` because every
-check there cites a numbered rule from `CONVENTIONS.md` and can fail, and these two steps end
-in a list for the owner.
+Instance-owned skills live at `.claude/skills/mental-model-*/`, and one does: `mental-model-evidence-coverage` reads the profile's Evidence table for what no check can judge: a year in a sentence that copies its experience's period, and the rows that name no experience, which the owner decides one by one. The joins under the table are the instance checks', because the profile schema declares them: that every claim has a row under it, that no row stands under a claim nobody made, and that the experience a row names lists the row's skill. The skill is here rather than in `companygraph-validate` because every check there cites a numbered rule from `CONVENTIONS.md` and can fail, and these two steps end in a list for the owner.
 
-The `companygraph-*` skills are the portable ones from the tooling spec, carried here until the
-tooling installs them. No skill syncs content into this repository; the content was written by
-hand.
+The `companygraph-*` skills are the portable ones from the tooling spec, carried here until the tooling installs them. No skill syncs content into this repository; the content was written by hand.
