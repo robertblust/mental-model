@@ -18,5 +18,7 @@ url: https://blust.ch
 - **Principles** — the vision and the values.
 - **Team** — the process's phases as a board of the roles that own, execute, support and
   approve each, and the profiles that hold those roles.
+- **Surfaces** — every surface the model records and how each is made, by hand or by a build
+  that reads a pinned commit.
 - **Structured data** — the person, the dataset and the site that every page describes to a
   crawler, with the person's addresses from the profile's `## Also at`.
