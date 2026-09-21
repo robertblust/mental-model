@@ -1,9 +1,9 @@
 {
-  "tooling": "0.37.0",
+  "tooling": "0.40.0",
   "core": {
     "version": "0.37.0",
     "shape": 3,
-    "source": "fetched:v0.37.0"
+    "source": "bundled"
   },
   "units": "meta",
   "packs": [],
