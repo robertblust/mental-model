@@ -21,6 +21,10 @@ model/                         the company — everything under here is an entit
   roles/                       one file per seat the company needs filled
   processes/                   how the company does its one kind of work, phase by phase
   surfaces/                    one file per place the model is published
+  domains/                     one file per area of the company, named by its products and its concepts
+  products/                    one file per thing the company puts in front of people
+  features/                    one file per thing a product lets someone do
+  concepts/                    one file per word the company means something exact by
   profiles/robert-blust/       the person, and the experiences it owns
   profiles/ai-agent/           the agent that holds every seat but the Owner's; it owns no experiences yet
 AGENTS.md                      the instance's own rules; every modeling rule is in meta/core/CONVENTIONS.md
