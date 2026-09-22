@@ -9,7 +9,7 @@ concepts:
 
 # The model is read on the web
 
-> Anyone reads my work in a browser, in English or Swiss German, without cloning a repository and without asking me.
+> Anyone reads my work in a browser, in English or Swiss Standard German, without cloning a repository and without asking me.
 
 ## Description
 
