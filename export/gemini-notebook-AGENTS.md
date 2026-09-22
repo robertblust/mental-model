@@ -1,11 +1,12 @@
 # Robert Blust — mental model
 
 > One person described in CompanyGraph: a profile and the {{count:model/profiles/robert-blust/experiences}} experiences it owns, the {{count:Skills}}
-> skills those experiences evidence, the values the work is held to and the schema underneath
-> all of it. This notebook is that model whole — {{entities}} entities across {{sources}} sources, every page
+> skills those experiences evidence, the values the work is held to, the product the company
+> of one ships with the features it lets someone do and the words it means something exact
+> by, and the schema underneath all of it. This notebook is that model whole — {{entities}} entities across {{sources}} sources, every page
 > as it is written in the repository it is mastered in.
 
-The model answers questions about one working life. What he built and where, what a period contained and what came out of it, which capability a piece of work shows, at what level a skill is claimed and on what evidence, why a career break is filed as an experience rather than a gap, and what he holds to while deciding. A question about a claim is the one this model is shaped for: every skill claimed names the work that shows it, and every experience names the skills it evidences, so the answer to “on what basis” is in the model rather than in a summary of it.
+The model answers questions about one working life. What he built and where, what a period contained and what came out of it, which capability a piece of work shows, at what level a skill is claimed and on what evidence, why a career break is filed as an experience rather than a gap, and what he holds to while deciding. A question about a claim is the one this model is shaped for: every skill claimed names the work that shows it, and every experience names the skills it evidences, so the answer to “on what basis” is in the model rather than in a summary of it. The model also says what the company of one ships: one product, the features it lets someone do, and the concepts those features operate on, each on a page of its own.
 
 What is not here is not withheld and not hidden. There is no salary, no assessment written by anyone else and no scan of a diploma or an employment reference, for the reason the last section gives.
 
@@ -23,13 +24,18 @@ Two of these sources carry documents about the model — this guide and the repo
 | `experience-kinds.md` | the {{count:Experience kinds}} kinds an experience can be | Understand why a break, a talk or a degree is filed as it is |
 | `proficiency-levels.md` | the {{count:Proficiency levels}} rungs a skill is claimed on | Weigh what Expert or Competent means here |
 | `sources.md` | the {{count:Sources}} source the pages are mastered in | Check where a fact would be corrected |
-| `surfaces.md` | the {{count:Surfaces}} surface the model is published to by hand | Ask what reaches a published place and what is left out |
+| `surfaces.md` | the {{count:Surfaces}} surfaces the model is published to by hand | Ask what reaches a published place and what is left out |
 | `identity.md` | who the model is about | Find the name, the location and the public addresses |
 | `vision.md` | the future the model works toward | Ask what the work is building toward |
 | `strategic-objectives.md` | the {{count:Strategic objectives}} objective the vision needs made true | Ask what he is trying to make true, and how he would know |
 | `strategies.md` | the {{count:Strategies}} strategy pursuing it | Ask how the work is actually done, and what it refuses |
 | `roles.md` | the {{count:Roles}} seats the company needs filled, each with what it takes, produces and never does | Ask what a seat is responsible for, and what it refuses |
 | `processes.md` | the process and its phases, {{count:Processes}} entities | Ask how a change gets made, phase by phase |
+| `achievement-kinds.md` | the {{count:Achievement kinds}} kinds an achievement is filed under | See which side of the work an achievement counts toward |
+| `domains.md` | the {{count:Domains}} domain the products and the concepts name | Find which area of the company a product or a word belongs to |
+| `products.md` | the {{count:Products}} product the company of one puts in front of people | Ask what he ships, and to whom |
+| `features.md` | the {{count:Features}} features that product lets someone do | Ask what someone can do with the product, and on which concepts |
+| `concepts.md` | the {{count:Concepts}} words the company means something exact by | Look up what a claim, a decider, evidence or a master is here |
 | `meta.md` | CompanyGraph core: its conventions and its schemas, {{count:Meta}} entities | Check what a page must carry and how a reference resolves |
 
 ## How to read the model
