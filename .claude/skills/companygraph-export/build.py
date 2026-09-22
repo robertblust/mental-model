@@ -28,6 +28,7 @@ Stdlib only. No third-party module is installed where this runs.
 import glob
 import json
 import os
+import posixpath
 import pathlib
 import re
 import shutil
@@ -43,7 +44,7 @@ import zipfile
 DOCUMENTS = (("AGENTS.md", "export/gemini-notebook-AGENTS.md"), ("README.md", "README.md"))
 
 # A count a document states in prose is a count nothing checks: the guide would tell a reader
-# 36 experiences while the bundle held 37, and the verifier would pass, because a document is
+# one count of experiences while the bundle held one more, and the verifier would pass, because a document is
 # not an entity and holds no marker. So a document writes `{{entities}}`, `{{sources}}` or
 # `{{count:<source title>}}` / `{{count:<path under the root>}}` where a number goes, and the
 # build substitutes what it counted on this run. A token that resolves to nothing is left
@@ -57,6 +58,16 @@ TOKEN = re.compile(r"\{\{([a-z]+)(?::([^{}]+))?\}\}")
 # recorded in the archive, so an archive built from mtimes is new every time the model is
 # merely re-checked out.
 ZIP_DATE = (1980, 1, 1, 0, 0, 0)
+
+
+def units():
+    """The folder the vendored units sit in, as the manifest names it: `meta` unless `init` was
+    told otherwise. Read when asked rather than at import, because the run changes into the
+    instance root first. Whatever it is called on disk, the group it forms in both artifacts is
+    `meta`, since that is what it is.
+    """
+    manifest = json.loads(pathlib.Path(".companygraph/manifest.json").read_text(encoding="utf-8"))
+    return manifest.get("units", "meta")
 
 # A code span in a README that names a file, and a link into the repository. Both are correct
 # where the README lives and dangle where the zip puts it, so both are rewritten on the way in.
@@ -73,9 +84,9 @@ def entities():
     """Every file the export walks, shallowest first and then in path order.
 
     Shallowest first because a folder that owns another holds the entity the others belong to:
-    `model/profiles/robert-blust/robert-blust.md` is the profile that owns everything under
+    `model/profiles/<profile>/<profile>.md` is the profile that owns everything under
     `experiences/`, and path order alone would open the source on the first experience and
-    reach the profile 36 entities later.
+    reach the profile only after every experience it owns.
 
     A folder's README.md describes the repository's layout rather than a thing in the model,
     so it is not an entity here and never carries an entity marker: claiming one would make
@@ -87,7 +98,7 @@ def entities():
     the model reaches both of them or neither, and there is no second traversal to keep true.
     """
     found = [p for p in pathlib.Path("model").rglob("*.md") if p.name != "README.md"]
-    found += [p for p in pathlib.Path("meta").rglob("*.md") if p.name != "README.md"]
+    found += [p for p in pathlib.Path(units()).rglob("*.md") if p.name != "README.md"]
     return sorted(found, key=order)
 
 
@@ -136,6 +147,8 @@ def root_type(path):
     looking for.
     """
     parts = path.parts
+    if path.as_posix().startswith(f"{units()}/"):
+        return "meta"
     if parts[0] != "model":
         return parts[0]
     return parts[1] if len(parts) > 2 else path.stem
@@ -184,14 +197,14 @@ def folder_of(paths, name=None):
 
     Its type folder where the source is one root type, because that is the folder whose README
     describes it and the path a reader would go to: `model/profiles/` and not
-    `model/profiles/robert-blust/`, which is only where this instance's entities happen to
+    `model/profiles/<profile>/`, which is only where one profile's entities happen to
     share a parent. Otherwise the folder the entities do share.
     """
     if name:
         found = pathlib.Path("model") / name
         if found.is_dir():
             return found.as_posix()
-    return os.path.commonpath([p.parent.as_posix() for p in paths])
+    return posixpath.commonpath([p.parent.as_posix() for p in paths])
 
 
 def readme_of(paths, name=None):
@@ -334,7 +347,7 @@ def render(path):
     """One entity, ready to be inlined: its marker, then the page exactly as it is on disk.
 
     Verbatim because every rewriting loses something a reader could have been answered from,
-    and the frontmatter loses the most: a role naming 45 skills carries them as a YAML list one
+    and the frontmatter loses the most: a role naming its skills carries them as a YAML list one
     entry per line, which is a list a reader can follow to the skills that hold each claim, and
     prose made from it is a thousand characters nobody reads to the end of. The reader here
     handles Markdown; it does not need the model translated for it.
@@ -371,7 +384,7 @@ def inlined(readme, carried):
 
         def span(match):
             target = match.group(1)
-            if re.fullmatch(r"meta/.+-schema\.md", target):
+            if re.fullmatch(rf"{re.escape(units())}/.+-schema\.md", target):
                 return "`model/meta.md`"
             if target.rstrip("/") == "experiences":
                 return "experiences"
@@ -597,7 +610,7 @@ def main():
     out.mkdir(parents=True)
 
     for name, origin, text in documents:
-        (out / name).write_text(text, encoding="utf-8")
+        (out / name).write_text(text, encoding="utf-8", newline="\n")
         print(f"{'':>4} {'document':<8}  {name}")
 
     for source in sources:
@@ -608,7 +621,7 @@ def main():
         if readme:
             parts.append(context(readme, source["title"]))
         parts += [render(p) for p in source["entities"]]
-        (out / source["file"]).write_text("\n\n".join(parts).rstrip() + "\n", encoding="utf-8")
+        (out / source["file"]).write_text("\n\n".join(parts).rstrip() + "\n", encoding="utf-8", newline="\n")
         held = len(source["entities"])
         print(f"{held:4d} {'entity' if held == 1 else 'entities':<8}  {source['file']}")
 
