@@ -7,8 +7,8 @@ url: https://blust.ch
 
 # blust.ch website
 
-> The owner's own site, in English and Swiss German, that a visitor, a search engine or an
-> agent reaches at the owner's address, rebuilt from a pinned commit of the model.
+> The owner's own site, in English and Swiss Standard German, that a visitor, a search engine
+> or an agent reaches at the owner's address, rebuilt from a pinned commit of the model.
 
 ## What it shows
 
