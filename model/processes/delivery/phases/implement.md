@@ -43,7 +43,7 @@ An approved plan, a branch, and for each task the brief that is the whole of its
 1. The Writer drafts the English from the brief, on the branch, and reports which claims it
    could not trace to the brief or the repository.
 2. The Owner reviews on the branch, in the diff and on the rendered page.
-3. The Translator makes the Swiss German from the reviewed English only, one element at a time,
+3. The Translator makes the Swiss Standard German from the reviewed English only, one element at a time,
    with the glossary open, and hands back a back-translation beside each element.
 4. An English edit re-runs the Translator on that element alone.
 
@@ -53,7 +53,7 @@ An approved plan, a branch, and for each task the brief that is the whole of its
 | --- | --- |
 | Reviewed commits | One per task, on the branch, with every finding resolved or parked |
 | Reviewed English | For prose: the draft the Owner has read on the branch and on the page |
-| Swiss German | For prose: made from the reviewed English, with its back-translation |
+| Swiss Standard German | For prose: made from the reviewed English, with its back-translation |
 
 ## What it never does
 
