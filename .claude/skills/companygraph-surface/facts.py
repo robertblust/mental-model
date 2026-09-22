@@ -78,9 +78,9 @@ def walk():
     type — `identity.md` is the identity — because a type with one entity is a file (R6).
 
     The middle branch is R6's other half: an entity that owns collections is a folder holding a
-    file named for itself, so `profiles/robert-blust/robert-blust.md` sits in a folder named for
+    file named for itself, so `profiles/<profile>/<profile>.md` sits in a folder named for
     the entity and not for the type. Its type is the folder above that one. Taking the parent
-    blindly would make a type called `robert-blust` with one member and lose the profile.
+    blindly would make a type named for the profile, with one member, and lose the profile.
     """
     types = {}
     for path in sorted((ROOT / "model").rglob("*.md")):
@@ -104,7 +104,7 @@ MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
 def when(value):
     """One date in the family's register: `2012`, `Oct 2012`, `May 4, 2012`.
 
-    The register is `conventions/WRITING.md`'s and not any surface's, which is why it is
+    The register is one every surface shares and not any single surface's, which is why it is
     resolved here rather than left to the surface's own file.
     """
     parts = value.split("-")
@@ -154,7 +154,7 @@ def has_organization(entities):
 
     Only some entities carry `organization` in their frontmatter, and the fallback belongs
     beside them and nowhere else: handing every skill, value and vision an `organization` of
-    "Robert Blust" is not a fact about a skill, it is noise a surface's file would have to learn
+    the company's own name is not a fact about a skill, it is noise a surface's file would have to learn
     to ignore. The line is drawn from what the type's own entities carry rather than from the
     type's name, so the script stays free of any knowledge of what an experience is — a type
     added to the model that starts naming organizations picks up the fallback the same way,
@@ -180,7 +180,7 @@ def main():
         "types": types,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    OUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     counts = ", ".join(f"{len(v)} {k}" for k, v in sorted(types.items()))
     print(f"  wrote {OUT}: {counts}")
 

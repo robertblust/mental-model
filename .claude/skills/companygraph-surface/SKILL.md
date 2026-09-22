@@ -18,11 +18,11 @@ A surface is a place the company publishes that no script writes, and its file r
    none and the list holds one, that one. A run produces a single surface, so a request naming
    none against a model holding several is a question for the owner rather than a choice to
    make.
-3. Read `conventions/WRITING.md` for the register the surface's file names.
+3. Read whatever the surface's file names for its register, where it names one.
 4. Produce each unit in the order `## What it shows` lists them, applying the projection rules
    to the facts. Write to `dist/surfaces/<stem>.md`, where `<stem>` is the file name of the
-   entity's own `path` in the model without its extension — `model/surfaces/linkedin-profile.md`
-   produces `dist/surfaces/linkedin-profile.md` — one section per unit, labeled with the
+   entity's own `path` in the model without its extension — `model/surfaces/website.md`
+   produces `dist/surfaces/website.md` — one section per unit, labeled with the
    unit's own name so a reader can match it against the editor in front of them. A rule is a
    stop and not a guess wherever it names something this run cannot settle: a source outside
    the model — a page this repository does not hold, a network's own editor — or a decision the
@@ -65,6 +65,6 @@ So the line is not drawn by taste. Everything a machine can settle is the script
 
 ## Producing a surface is how a surface file gets checked
 
-A file is written by somebody deciding what to omit, and it reads as complete until something tries to use it. Producing a surface is that use: it is the check that finds what a surface's file fails to state, in a way reading the file against the model does not. `docs/specs/2026-09-10-surface-production.md` holds the evidence for that claim.
+A file is written by somebody deciding what to omit, and it reads as complete until something tries to use it. Producing a surface is that use: it is the check that finds what a surface's file fails to state, in a way reading the file against the model does not.
 
 So step 6 is not a courtesy. It is the only report that finds what a surface file lacks, and it belongs in the pull request that changes the file.
