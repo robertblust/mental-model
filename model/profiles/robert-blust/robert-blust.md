@@ -3,6 +3,7 @@ source: Local
 nature: human
 roles:
   - Owner
+image: robert-blust.jpg
 ---
 
 # Robert Blust
