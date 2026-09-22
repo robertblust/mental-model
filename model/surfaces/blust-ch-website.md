@@ -20,5 +20,6 @@ url: https://blust.ch
   approve each, and the profiles that hold those roles.
 - **Surfaces** — every surface the model records and how each is made, by hand or by a build
   that reads a pinned commit.
+- **Chat** — the button at the foot of every prose page and the panel it opens, answered by the chat.blust.ch chat.
 - **Structured data** — the person, the dataset and the site that every page describes to a
   crawler, with the person's addresses from the profile's `## Also at`.
