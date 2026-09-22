@@ -1,14 +1,14 @@
 {
-  "tooling": "0.42.0",
+  "tooling": "0.44.0",
   "core": {
-    "version": "0.38.0",
+    "version": "0.39.0",
     "shape": 3,
     "source": "bundled"
   },
   "units": "meta",
   "packs": [],
   "files": {
-    "meta/core/CONVENTIONS.md": "sha256:9596e280acfbba1df2652391d22eb57b0ba70132999840064c88fb7b525ff3ea",
+    "meta/core/CONVENTIONS.md": "sha256:4484c03b68cef08e855d898db779a2463dbffd764299771fee7e4c2b8c1fa854",
     "meta/core/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "meta/core/achievement-kind-schema.md": "sha256:f843ef3ddfbe620fc3a3c8664d0fca79990920120d6d93f3a7bb5d6dcd546c6c",
     "meta/core/concept-schema.md": "sha256:9c27db9bfae25a7a492fcb5e8d3f46be7fe03edc399ab64ce5ddb627394927fe",
@@ -17,7 +17,7 @@
     "meta/core/experience-schema.md": "sha256:6c00f65ebcb4355f3b6fd988f510a37b8d077af806c0ad997390d6f7613d393e",
     "meta/core/feature-schema.md": "sha256:25d5ad258f1b15f67caed86d5ad63a6cc9fcb67831e09fb1e4b2180bb30cfd59",
     "meta/core/identity-schema.md": "sha256:7b7e6f277d53eb1f28613f2390907c3b0f925900646b779367f61fe4a2f32bbb",
-    "meta/core/manifest.json": "sha256:f99e84d4cd04c723618707fe36a5ca1d1386462bb8c46aa300a009348c1aa752",
+    "meta/core/manifest.json": "sha256:b2b198a8ce6551f3399691a9c5beb4ae44359983c64efa98d3a4cf44e70c920c",
     "meta/core/phase-schema.md": "sha256:a13357ce09164ff52f9e6b71def63cd4bae6786c582f281bdcb9639e467e3675",
     "meta/core/process-schema.md": "sha256:60fee75d640c2e233ca872dd922077c07f0608a6a0086db4774273dfa3333c27",
     "meta/core/product-schema.md": "sha256:64a931893b8559700fce2660de0f227ef4e2093788d460cc7195b8eb415b25b1",
@@ -31,6 +31,13 @@
     "meta/core/surface-schema.md": "sha256:9033ed89d4211a606870a7c1517cd62070eec723ee38919c90b36798032c0c53",
     "meta/core/track-schema.md": "sha256:431ad2272e4bfec7dbc5f54bbcd93d13eeadd2f28f53cadb54a5b39a41f72961",
     "meta/core/value-schema.md": "sha256:c4f353022f8e0a1dcd79b52d439c263d074d7b3b478b45c47da35848a14b5e84",
-    "meta/core/vision-schema.md": "sha256:72f6d87197eb3fd61fb38c6e86fac78e7b88d7dae1efaf0b702f8518b20f2414"
+    "meta/core/vision-schema.md": "sha256:72f6d87197eb3fd61fb38c6e86fac78e7b88d7dae1efaf0b702f8518b20f2414",
+    ".claude/skills/companygraph-export/SKILL.md": "sha256:b2825853242297b6c687bd48aee6dc0b8a015664fbb2ba3934ca51d538acac46",
+    ".claude/skills/companygraph-export/build.py": "sha256:43a9f8039e72f7873f1c27aa79132063576c197763046c9636d83a7623ed5e22",
+    ".claude/skills/companygraph-export/verify.py": "sha256:a692c18adab1514ada243b2b6d00cc2c12b5e38d3bf98cd0284e4e57ecd5b61d",
+    ".claude/skills/companygraph-profile/SKILL.md": "sha256:7a7f0394c45a535910af4773da888b2a80297fdd62cd20182e5e61ef9cbdc74c",
+    ".claude/skills/companygraph-surface/SKILL.md": "sha256:f0392a90eda6f7baea77bfb74d860d4619262053e1f80b35e7997e175024d58b",
+    ".claude/skills/companygraph-surface/facts.py": "sha256:5d6423c26fca9036a463cb2b6e0c83105a0da11ff0224a44d6e9202adc0cae3a",
+    ".claude/skills/companygraph-validate/SKILL.md": "sha256:e3815edb16b97feb2987a4c92a6b40161d413e2f027d70985aaebe77f88e26ef"
   }
 }
