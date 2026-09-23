@@ -19,7 +19,7 @@ url: https://blust.ch
 - **Surfaces** — every surface the model records and how each is made, by hand or by a build
   that reads a pinned commit.
 - **Ideas** — the profile's ongoing community experiences that are open core, each with what it has shipped, which part is open and which one part could earn, and the questions their validation has to answer.
-- **Model** — the model's entities and edges, drawn as a graph from `model.json`.
+- **Model** — the company of one, drawn: the model's entities and edges as a graph from `model.json`.
 - **Timeline** — the profile's experiences, drawn from `model.json`.
 - **Talks** — the narrated talks the blust.ch experience names, each in both languages with a PDF.
 - **Privacy** — what leaves a visitor's browser and what stays in it, listed in full.
@@ -30,8 +30,8 @@ url: https://blust.ch
 
 ## Constraints
 
-- No page sets a cookie.
-- No page loads an analytics script, and nothing counts a visit.
+- The site collects nothing: no page sets a cookie, no page loads an analytics script, and
+  nothing counts a visit.
 - Every request a page makes on its own goes to the site's own origin; the one request to
   another address is the chat's, and only after the visitor has pressed send.
 - Everything a page keeps in the browser is named on the privacy page, with its key and what
