@@ -34,6 +34,7 @@ skills:
 ### Leadership
 
 - Published it under Apache 2.0 as open core with a billing model and a narrated introduction talk in German and English with a deck and a PDF in each, and put it in front of a professional network with a stated outcome each way.
+- Put it up for validation in the open as one of two ideas: the meta-model, the graph of Markdown, the tooling with the server and the talks with the example are the open substance, and consulting is the one part that could ever earn; whether it will is the experiment.
 
 ### Engineering
 
