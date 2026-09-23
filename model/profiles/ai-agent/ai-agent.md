@@ -9,11 +9,12 @@ roles:
   - Reviewer
   - Writer
   - Translator
+  - Answerer
 ---
 
 # AI Agent
 
-> Specifies, plans, runs, implements, reviews, drafts and translates across the family, under a rulebook for each, and decides nothing.
+> Specifies, plans, runs, implements, reviews, drafts, translates and answers visitors across the family, under a rulebook for each, and decides nothing.
 
 ## Summary
 
