@@ -44,7 +44,7 @@ skills:
 
 ### Ways of working
 
-- Designed the engine from three written specifications — core identity resolution, probabilistic matching and the guest timeline — each reviewed before its plan and its build.
+- Designed the engine and the connector slice by slice, each from a written specification reviewed before its plan and its build, beginning with core identity resolution, probabilistic matching and the guest timeline.
 - Built it through the agent seats the model defines, each under its own rulebook and none of them deciding, with the Owner reviewing and merging.
 
 ### Results
