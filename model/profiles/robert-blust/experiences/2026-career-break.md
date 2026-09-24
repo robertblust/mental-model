@@ -20,7 +20,6 @@ skills:
 
 ### Ways of working
 
-- Asked four former colleagues, one of them a former direct report, for written feedback on my strengths and the role they see me in, and wrote a self-assessment from the same material before deciding. All four named depth, knowledge sharing and caring about the people; two of them, independently, named the cost of caring too much as the thing to work on.
 - Built the products and the applications through the agent seats the model defines, each under a rulebook I wrote for it and none of them deciding.
 - Set the two questions the ideas' validation has to answer before either was put in front of anyone: how much of an idea must exist before it can be validated, and what that costs in hours and focus; and what a realistic outcome is, revenue, learning or a clean no. The answers are published in the open as they arrive, and a no is worth more than a polite yes.
 - Worked spec-driven, a reviewed specification before every plan and build, under written conventions vendored into every repository in the family and a design system every site pins like any other dependency.
