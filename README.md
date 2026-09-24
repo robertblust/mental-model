@@ -25,6 +25,7 @@ model/                         the company — everything under here is an entit
   products/                    one file per thing the company puts in front of people
   features/                    one file per thing a product lets someone do
   concepts/                    one file per word the company means something exact by
+  questions/                   one file per question visitors ask, and the entities its answer rests on
   profiles/robert-blust/       the person, and the experiences it owns
   profiles/ai-agent/           the agent that holds every seat but the Owner's; it owns no experiences yet
 AGENTS.md                      the instance's own rules; every modeling rule is in meta/core/CONVENTIONS.md
