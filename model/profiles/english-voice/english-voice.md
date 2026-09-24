@@ -21,8 +21,6 @@ Its one seat, one language: each slide's English note becomes a clip beside the 
 | Voice | Brian — Deep, Resonant and Comforting |
 | Voice ID | `nPczCjzI2devNBz1zQrb` |
 | Kind | Premade, from the ElevenLabs voice library |
-| Described as | Middle-aged man with a resonant and comforting tone. |
-| Accent | American |
 | Model | `eleven_v3` |
 
 ElevenLabs recommends it for narration. How it delivers — stability, similarity, style — is set in the rulebook and not repeated here.

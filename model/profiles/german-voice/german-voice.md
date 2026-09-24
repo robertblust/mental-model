@@ -21,8 +21,6 @@ Its one seat, one language: each slide's German note becomes a clip beside the d
 | Voice | Charlie — Deep, Confident, Energetic |
 | Voice ID | `IKne3meq5aSn9XLyUdCD` |
 | Kind | Premade, from the ElevenLabs voice library |
-| Described as | A young Australian male with a confident and energetic voice. |
-| Accent | Australian |
 | Model | `eleven_v3` |
 
-ElevenLabs lists it as an English voice; it speaks German through the multilingual model, and was chosen for how it carries German. How it delivers — stability, similarity, style — is set in the rulebook and not repeated here.
+Chosen for how it carries German. How it delivers — stability, similarity, style — is set in the rulebook and not repeated here.
