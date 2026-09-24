@@ -41,6 +41,7 @@ skills:
 
 - Shipped it as a Spring Boot service on PostgreSQL with Flyway migrations and a REST API, runnable from one compose file, designed for managed platform services and agnostic of which cloud runs them — so adopting it is not also adopting a provider.
 - Held the engine and the connector to the same gates on every change: the Maven build with its tests, a check that each service carries every item of the service conventions at their pinned release and a job that regenerates the entity-relationship diagram from the Flyway migrations and fails when the committed one is stale.
+- Described GuestGraph in CompanyGraph's vocabulary as the first instance whose product is not about modeling, drawn on guestgraph.io's model pages and served to agents at mcp.guestgraph.io and to visitors through its chat.
 
 ### Ways of working
 
@@ -55,4 +56,5 @@ skills:
 
 | What | URL |
 | --- | --- |
+| Model repository | https://github.com/guestgraph/mental-model |
 | Source repository | https://github.com/guestgraph/engine |

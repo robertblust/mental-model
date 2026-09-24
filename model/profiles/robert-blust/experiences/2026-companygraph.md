@@ -45,6 +45,10 @@ skills:
 - Gated the instance on the checks the meta-model ships as a reusable workflow, so a change that breaks a rule cannot merge.
 - Made the deployment prove itself by calling a tool over the live endpoint, since the platform answers a health path on its own.
 - Added a test that fails the build when the lockfile resolves an older release than the pin names, after a stale one had built green.
+- Shipped the tooling inside the meta-model as one command that, run bare, opens a menu: it makes an instance that passes the checks on its first day, checks it, moves its vendored core to a newer release and installs the Obsidian plugin.
+- Wrote the Obsidian plugin, which bundles the meta-model's own checker, so a page shows what breaks while it is edited and a new rule in core reaches the editor without code of its own.
+- Described CompanyGraph in its own vocabulary as a second instance, the first with no person in it, drawn on companygraph.io and served at mcp.companygraph.io.
+- Wrote a chat over any instance's MCP host that answers a visitor from what the tools return, naming and linking the entity each claim rests on, and put it on every prose page of blust.ch, companygraph.io and guestgraph.io.
 
 ### Ways of working
 
@@ -56,5 +60,8 @@ skills:
 
 | What | URL |
 | --- | --- |
+| Chat server repository | https://github.com/companygraph/chat-server |
 | MCP server repository | https://github.com/companygraph/mcp-server |
+| Model repository | https://github.com/companygraph/mental-model |
+| Obsidian plugin repository | https://github.com/companygraph/obsidian-plugin |
 | Source repository | https://github.com/companygraph/meta-model |
