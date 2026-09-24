@@ -19,7 +19,7 @@ model/                         the company — everything under here is an entit
   skills/                      one file per capability
   values/                      one file per value
   roles/                       one file per seat the company needs filled
-  processes/                   how the company does its one kind of work, phase by phase
+  processes/                   how the company does its work, phase by phase
   surfaces/                    one file per place the model is published
   domains/                     one file per area of the company, named by its products and its concepts
   products/                    one file per thing the company puts in front of people
@@ -27,7 +27,8 @@ model/                         the company — everything under here is an entit
   concepts/                    one file per word the company means something exact by
   questions/                   one file per question visitors ask, and the entities its answer rests on
   profiles/robert-blust/       the person, and the experiences it owns
-  profiles/ai-agent/           the agent that holds every seat but the Owner's; it owns no experiences yet
+  profiles/ai-agent/           the agent that drafts, builds, reviews and answers; it owns no experiences yet
+  profiles/*-voice/            the agents that speak the talks, one per language
 AGENTS.md                      the instance's own rules; every modeling rule is in meta/core/CONVENTIONS.md
 .claude/skills/companygraph-*  the tooling's skills: validate, export as a skill, produce a surface, build a profile from documents
 ```

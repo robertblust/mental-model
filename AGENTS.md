@@ -17,7 +17,7 @@ Guidance for agents working in this repository — the instance's own rules. Eve
 
 ## What this is
 
-Robert Blust, described in CompanyGraph: two profiles — the person, with its experiences, and the agent that holds every seat in `model/roles/` but the Owner's — the skills and values they claim and the ladder they claim them on. `meta/core/` is core, vendored and never edited here; `.companygraph/manifest.json` records which release and a hash per file.
+Robert Blust, described in CompanyGraph: the person, with its experiences, and the agents that hold the other seats in `model/roles/` — the skills and values they claim and the ladder they claim them on. `meta/core/` is core, vendored and never edited here; `.companygraph/manifest.json` records which release and a hash per file.
 
 ## Checks
 
