@@ -21,7 +21,7 @@ url: https://blust.ch
 - **Ideas** — the profile's ongoing community experiences that are open core, each with what it has shipped, which part is open and which one part could earn, and the questions their validation has to answer.
 - **Model** — the company of one, drawn: the model's entities and edges as a graph from `model.json`.
 - **Timeline** — the profile's experiences, drawn from `model.json`.
-- **Talks** — the narrated talks the blust.ch experience names, each in both languages with a PDF.
+- **Talks** — the narrated talks this site serves, each an experience of the profile, in both languages with a PDF.
 - **Privacy** — what leaves a visitor's browser and what stays in it, listed in full.
 - **model.json** — the parsed model at the pinned commit, published as a dataset.
 - **Chat** — the button at the foot of every prose page and the panel it opens, answered by the chat.blust.ch chat.

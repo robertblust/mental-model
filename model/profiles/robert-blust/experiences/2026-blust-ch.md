@@ -14,13 +14,13 @@ skills:
 
 # blust.ch
 
-> Ongoing. A profile page built from the model, and two talks that say what the model is for.
+> Ongoing. A profile page built from the model, and the talks that say what the model is for.
 
 ## Achievements
 
 ### Context
 
-- Published the profile page, a principles page, an ideas page and two narrated talks, The Mental Model and Essential Complexity — each bilingual with a PDF, self-contained and presentable from a file with no server running.
+- Published the profile page, a principles page, an ideas page and the narrated talks, each an entry of its own here, bilingual with a PDF, self-contained and presentable from a file with no server running.
 
 ### Architecture
 

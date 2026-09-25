@@ -266,8 +266,11 @@ image: robert-blust.jpg
 | Public speaking | Spoke at Eclipse Finance Day on interface management in a large enterprise. | Eclipse Finance Day 2012 |
 | Public speaking | Spoke at Eclipse Finance Day on the UBS Integration Architecture Tool Chain. | Eclipse Finance Day 2013 |
 | Public speaking | Co-presented at CamundaCon in Berlin on how SV Group became a SaaS business on Camunda. | CamundaCon 2022 |
-| Public speaking | Published a narrated introduction talk on GuestGraph, deck, PDF and audio in German and English. | GuestGraph |
-| Public speaking | Published a narrated introduction talk on CompanyGraph, deck, PDF and audio in German and English. | CompanyGraph |
+| Public speaking | Gave a narrated talk on describing a problem in its essential complexity, the standard held for fifteen years and what AI changed about the cost of meeting it. | Essential Complexity |
+| Public speaking | Gave a narrated talk on the Mental Model, a company's knowledge as one graph that its people and its agents both rely on. | The Mental Model |
+| Public speaking | Published a narrated introduction talk on GuestGraph, deck, PDF and audio in German and English. | GuestGraph — an introduction |
+| Public speaking | Published a narrated introduction talk on CompanyGraph, deck, PDF and audio in German and English. | CompanyGraph — an introduction |
+| Public speaking | Gave a narrated talk that sums up the career break, every figure counted to a fixed cutoff and read from a file beside the deck. | Building fast is solved. Deciding well is not. |
 | Requirements engineering | Owned the Analysis & Design discipline in UBS Wealth Management & Business Banking's RUP rollout, replacing the proprietary process with a market-standard one, writing its modeling methodology in Rational Method Composer and coaching the division's teams into it. | Solution Manager, Software Engineering — Analysis & Design |
 | Requirements engineering | Modeled Lost-Tag's actors and their use cases before the platform was built. | Lost-Tag |
 | Site reliability engineering | Owned site reliability for LIKE MAGIC's production platform, instrumented on Cloud Monitoring and Cloud Trace with alerting driven by defined SLOs and automated by severity to the people responsible. | Co-Founder & Head of Technology |
@@ -306,6 +309,8 @@ image: robert-blust.jpg
 | Storytelling | Briefed a podcast episode on the career break, fixing the story in outline and the threads the hosts had to cover before anything was generated, then holding the result to its sources and naming the one place it strayed. | Turn your work history into code |
 | Storytelling | Briefed the film Build the model first as one story across three organizations and one person, five threads each tied to a source, then wrote its published description to avoid the two places the narration strays. | Build the model first |
 | Storytelling | Wrote the story for the film Governance as data before anything was generated, naming what the film may state and what it must not, then held the narration to it and kept all four departures out of the published description. | Governance as data |
+| Storytelling | Held the resolution of the Essential Complexity talk back on purpose, the tension first and the punchline late, and said the punchline without the claim that hallucinations disappear. | Essential Complexity |
+| Storytelling | Told the career break as claim, proof and answer, fixed before drafting what the talk may say, and put every figure where a listener can check it. | Building fast is solved. Deciding well is not. |
 | Technical writing | Wrote the Analysis & Design methodology and guidance a UBS division worked to. | Solution Manager, Software Engineering — Analysis & Design |
 | Technical writing | Published an article on process monitoring with BPMN, with the runnable sample it describes. | Process Monitoring with BPMN |
 | Technical writing | Wrote the developer documentation for LIKE MAGIC's public API, which conversational AI providers and other partners integrated against without LIKE MAGIC building the integration. | Co-Founder & Head of Technology |
