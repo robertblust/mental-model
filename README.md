@@ -13,9 +13,11 @@ model/                         the company — everything under here is an entit
   vision.md                    the future it works toward
   strategic-objectives/        what must become true for the vision to be reached
   strategies/                  how one gets reached, and what the route rules out
+  kpis/                        one file per quantity the company has chosen to watch
   sources/                     where each page's facts are mastered
   proficiency-levels/          the four-rung ladder every skill claim uses
   experience-kinds/            the five kinds an experience can be
+  achievement-kinds/           the kinds an achievement is filed under
   skills/                      one file per capability
   values/                      one file per value
   roles/                       one file per seat the company needs filled

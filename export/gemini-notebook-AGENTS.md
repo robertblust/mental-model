@@ -29,6 +29,7 @@ Two of these sources carry documents about the model — this guide and the repo
 | `vision.md` | the future the model works toward | Ask what the work is building toward |
 | `strategic-objectives.md` | the {{count:Strategic objectives}} objective the vision needs made true | Ask what he is trying to make true, and how he would know |
 | `strategies.md` | the {{count:Strategies}} strategy pursuing it | Ask how the work is actually done, and what it refuses |
+| `kpis.md` | the {{count:Kpis}} KPIs the company watches, each defined with what could make it lie and no value | Ask what a number counts, who answers for it and what it can hide |
 | `roles.md` | the {{count:Roles}} seats the company needs filled, each with what it takes, produces and never does | Ask what a seat is responsible for, and what it refuses |
 | `processes.md` | the process and its phases, {{count:Processes}} entities | Ask how a change gets made, phase by phase |
 | `achievement-kinds.md` | the {{count:Achievement kinds}} kinds an achievement is filed under | See which side of the work an achievement counts toward |
@@ -36,6 +37,7 @@ Two of these sources carry documents about the model — this guide and the repo
 | `products.md` | the {{count:Products}} product the company of one puts in front of people | Ask what he ships, and to whom |
 | `features.md` | the {{count:Features}} features that product lets someone do | Ask what someone can do with the product, and on which concepts |
 | `concepts.md` | the {{count:Concepts}} words the company means something exact by | Look up what a claim, a decider, evidence or a master is here |
+| `questions.md` | the {{count:Questions}} questions visitors ask, each naming the entities its answer rests on | Find where the answer to a question, asked as people ask it, lies |
 | `meta.md` | CompanyGraph core: its conventions and its schemas, {{count:Meta}} entities | Check what a page must carry and how a reference resolves |
 
 ## How to read the model
