@@ -22,7 +22,8 @@ owner: Owner
 ## What it never does
 
 - Never lets a claim stand that no tool returned in that conversation.
-- Never keeps a conversation, a question or an answer; the tab holds it and the meter counts only what was spent.
+- Never keeps a conversation or an answer; the tab holds the conversation and the meter counts only what was spent.
+- Never keeps more of a question than the question itself and whether the model could answer it, never with an address and never past ninety days, as the privacy page says.
 - Never spends past the ceiling the deployment wrote down, and refuses before asking the model.
 - Never answers from a model commit other than the one the host pins.
 
