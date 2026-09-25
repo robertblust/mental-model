@@ -17,6 +17,7 @@ model/                         the company — everything under here is an entit
   sources/                     where each page's facts are mastered
   proficiency-levels/          the four-rung ladder every skill claim uses
   experience-kinds/            the five kinds an experience can be
+  achievement-kinds/           the kinds an achievement is filed under
   skills/                      one file per capability
   values/                      one file per value
   roles/                       one file per seat the company needs filled
