@@ -9,7 +9,7 @@ skills:
   - Storytelling
 ---
 
-# Your team isn't slow. It's undecided.
+# Deciding well
 
 > A podcast episode in which two hosts argue out the talk that closed the career break, generated from the model's own export and a story written for it, and read against both before it went out under the talk's title.
 
