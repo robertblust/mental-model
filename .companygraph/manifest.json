@@ -1,5 +1,5 @@
 {
-  "tooling": "0.51.0",
+  "tooling": "0.52.0",
   "core": {
     "version": "0.44.0",
     "shape": 3,
@@ -38,14 +38,12 @@
     "meta/core/track-schema.md": "sha256:431ad2272e4bfec7dbc5f54bbcd93d13eeadd2f28f53cadb54a5b39a41f72961",
     "meta/core/value-schema.md": "sha256:c4f353022f8e0a1dcd79b52d439c263d074d7b3b478b45c47da35848a14b5e84",
     "meta/core/vision-schema.md": "sha256:72f6d87197eb3fd61fb38c6e86fac78e7b88d7dae1efaf0b702f8518b20f2414",
-    ".claude/skills/companygraph-company/SKILL.md": "sha256:2bb73107cae8cff02e724d76ec136c93ff738e2d64c796bc310a219e0c75b8a5",
+    ".claude/skills/companygraph-company/SKILL.md": "sha256:694a5816c576ed5af94478b37ccf6dce41064c18a4e81631659a6330dc57401a",
     ".claude/skills/companygraph-consent/SKILL.md": "sha256:ad2d803fb23a4678d2b9c6ed25ff6bb96cf9d437f180c81811c6aef9371aed61",
     ".claude/skills/companygraph-export/SKILL.md": "sha256:c396617079ea60378ad4c7c252c72f9328519d953ca1410a2f91893fa43f1558",
-    ".claude/skills/companygraph-export/__pycache__/build.cpython-314.pyc": "sha256:fb1db87e260d2cc1feb00c49f4b5d88889184725956cc68a04264e8de7100300",
-    ".claude/skills/companygraph-export/__pycache__/verify.cpython-314.pyc": "sha256:c017f25338257d66294d2cf36e171c31575af6e41417c2959551f8e1ab9aa183",
     ".claude/skills/companygraph-export/build.py": "sha256:53608b775f0f53dc2b02024fa71d096512ec66c0768eb6176a3523959d58af99",
     ".claude/skills/companygraph-export/verify.py": "sha256:19c0df245013a422b4697b7f0f33c87f5a0916989cd6eaa457c195233a1ebcde",
-    ".claude/skills/companygraph-profile/SKILL.md": "sha256:adfec38a124ad8e9888f9eab161def02cc785784329d5bb58b2c653955b97ffb",
+    ".claude/skills/companygraph-profile/SKILL.md": "sha256:292074a418b640ef7d938492f06608b43f7d813f08669c85d0b60cbfaddf067d",
     ".claude/skills/companygraph-surface/SKILL.md": "sha256:f0392a90eda6f7baea77bfb74d860d4619262053e1f80b35e7997e175024d58b",
     ".claude/skills/companygraph-surface/facts.py": "sha256:5d6423c26fca9036a463cb2b6e0c83105a0da11ff0224a44d6e9202adc0cae3a",
     ".claude/skills/companygraph-validate/SKILL.md": "sha256:e3815edb16b97feb2987a4c92a6b40161d413e2f027d70985aaebe77f88e26ef"
