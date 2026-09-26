@@ -11,6 +11,7 @@ meta/core/                     core at the release .companygraph/manifest.json n
 model/                         the company — everything under here is an entity, nothing else is
   identity.md                  who the company is
   vision.md                    the future it works toward
+  brand.md                     what it looks and sounds like, as meaning; the values live where its References point
   strategic-objectives/        what must become true for the vision to be reached
   strategies/                  how one gets reached, and what the route rules out
   kpis/                        one file per quantity the company has chosen to watch
