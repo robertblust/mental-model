@@ -13,4 +13,5 @@ source: Local
 | experience | Career break | Robert Blust | why, and what it found |
 | experience | CompanyGraph | Robert Blust | the first product |
 | experience | GuestGraph | Robert Blust | the second product |
-| experience | Deciding well is solved. For me. | Robert Blust | the decision that ended it |
+| decision | An 80% architect role in a product company, chosen over pay | | the decision that ended it |
+| experience | Deciding well is solved. For me. | Robert Blust | how that decision was reached |
