@@ -13,3 +13,4 @@ source: Local
 | experience | Career break | Robert Blust | why, and what it found |
 | experience | CompanyGraph | Robert Blust | the first product |
 | experience | GuestGraph | Robert Blust | the second product |
+| decision | An 80% architect role in a product company, chosen over pay | | the decision that ended it |
