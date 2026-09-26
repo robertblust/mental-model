@@ -16,7 +16,7 @@ read-with:
 
 A deployment is a merge to `main` in a repository whose workflows publish one of this model's surfaces: the blust.ch website, which GitHub Pages publishes, and the mcp.blust.ch MCP server and the chat.blust.ch chat, which that repository's deploy and chat workflows publish. A merge counts once, however many of its workflows publish. The MCP Registry listing, republished when a release is tagged, and the LinkedIn profile, kept by hand, are not deployments.
 
-The deployments of a calendar month made because something in production was wrong, a revert, a hotfix or an emergency re-pin, divided by all deployments of that month. Whether a deployment is rework is read from why it was made, which its pull request says, not from its size.
+The deployments of a calendar month in UTC made because something in production was wrong, a revert, a hotfix or an emergency re-pin, divided by all deployments of that month. Deployments and their times are read from the merges to `main` in the GitHub history of robertblust/robertblust.github.io and robertblust/mcp-blust-ch; their publishing runs are GitHub Pages' own `pages-build-deployment` runs for the site and mcp-blust-ch's `deploy` and `chat` workflow runs on `main`. Whether a deployment is rework is read from why it was made, which its pull request says, not from its size.
 
 ## What it can hide
 
