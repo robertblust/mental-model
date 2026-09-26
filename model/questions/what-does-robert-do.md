@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Career
 ---
 
 # What does Robert do?

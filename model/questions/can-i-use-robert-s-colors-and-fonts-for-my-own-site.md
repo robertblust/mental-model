@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Brand
 ---
 
 # Can I use Robert's colors and fonts for my own site?

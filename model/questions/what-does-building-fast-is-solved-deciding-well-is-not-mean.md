@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Ideas
 ---
 
 # What does "Building fast is solved. Deciding well is not." mean?

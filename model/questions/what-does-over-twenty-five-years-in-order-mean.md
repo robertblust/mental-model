@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Ideas
 ---
 
 # What does "over twenty-five years, in order" mean?

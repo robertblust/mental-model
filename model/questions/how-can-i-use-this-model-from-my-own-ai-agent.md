@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Model and chat
 ---
 
 # How can I use this model from my own AI agent?

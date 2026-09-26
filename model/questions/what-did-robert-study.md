@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Career
 ---
 
 # What did Robert study?

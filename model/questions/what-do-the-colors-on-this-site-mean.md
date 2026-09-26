@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Brand
 ---
 
 # What do the colors on this site mean?

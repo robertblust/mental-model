@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Ideas
 ---
 
 # What problem does modeling a company solve?

@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Career
 ---
 
 # What is Robert's history with Eclipse and modeling?

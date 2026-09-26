@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Model and chat
 ---
 
 # How do I know a claim here is true?

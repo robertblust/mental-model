@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Career
 ---
 
 # Can Robert still write code himself?

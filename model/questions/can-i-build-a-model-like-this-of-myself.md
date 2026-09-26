@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Model and chat
 ---
 
 # Can I build a model like this of myself?
