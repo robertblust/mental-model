@@ -26,6 +26,7 @@ skills:
 
 - Worked it with an AI coding agent under a written agent file: the honesty line it may not cross, the two trackers it must keep in step, and the traps in the template it must not fall into.
 - Defined agents for each step of an application: one analyzed a posting against the experience and the feedback from colleagues and rated the match; another wrote the application when the rating was a go; a third checked the process and the correspondence.
+- Gave every go myself, after reading the rating, and sent every application myself, so no agent decided where or whether to apply.
 - Held the same honesty line in every dossier: no certification claimed that was not held, no cloud named that had not been run, a gap stated rather than covered.
 
 ### Results
