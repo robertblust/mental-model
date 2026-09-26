@@ -4,7 +4,7 @@ source: Local
 
 # Why is there a career break, and what happened in it?
 
-> The career break says why it was taken and what it found, and CompanyGraph and GuestGraph are the two products it built in the open.
+> The career break says why it was taken and what it found, CompanyGraph and GuestGraph are the two products it built in the open, and a blog post walks the decision that ended it.
 
 ## Rests on
 
@@ -14,3 +14,4 @@ source: Local
 | experience | CompanyGraph | Robert Blust | the first product |
 | experience | GuestGraph | Robert Blust | the second product |
 | decision | An 80% architect role in a product company, chosen over pay | | the decision that ended it |
+| experience | Deciding well is solved. For me. | Robert Blust | how that decision was reached |
