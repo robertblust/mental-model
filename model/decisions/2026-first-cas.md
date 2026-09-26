@@ -4,6 +4,8 @@ decided: 2026-09-02
 kind: Career
 status: Proposed
 by: Owner
+serves:
+  - A continuing-education master's in AI leadership
 ---
 
 # The first CAS is AI Innovation at HWZ

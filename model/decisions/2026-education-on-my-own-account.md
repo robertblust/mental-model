@@ -36,3 +36,4 @@ A fifth of the pay and the course fees carried privately for as long as the educ
 | Type | Entity | Owner | How |
 | --- | --- | --- | --- |
 | decision | An 80% architect role in a product company, chosen over pay | | settled its workload model |
+| strategic-objective | A continuing-education master's in AI leadership | | made it |

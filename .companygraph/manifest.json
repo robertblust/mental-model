@@ -1,7 +1,7 @@
 {
-  "tooling": "0.49.0",
+  "tooling": "0.51.0",
   "core": {
-    "version": "0.43.0",
+    "version": "0.44.0",
     "shape": 3,
     "source": "bundled"
   },
@@ -14,7 +14,7 @@
     "meta/core/brand-schema.md": "sha256:e389a338fb565c3206d7d77386fedf5c039ea2bd117d09e94fd07e35f47c33b4",
     "meta/core/concept-schema.md": "sha256:9c27db9bfae25a7a492fcb5e8d3f46be7fe03edc399ab64ce5ddb627394927fe",
     "meta/core/decision-kind-schema.md": "sha256:f58989585ca60209f4ed0d55b8587234790cde4e549fe32b9d491714e43aeacd",
-    "meta/core/decision-schema.md": "sha256:eb6cd39a156c4d8e7873017f503d2769d345f44e7af9f225abdaa20307a8a6c4",
+    "meta/core/decision-schema.md": "sha256:9bf6bb558f3e99cb3afb03455a0d2389676689e5bf56f88143d9593d63638ac7",
     "meta/core/decision-status-schema.md": "sha256:62a3662c3d09a3a57824f6c89503423aa968407396aa9fdf58745846af17e864",
     "meta/core/domain-schema.md": "sha256:8939b14184f9751e9698d595b21dc559d41c2c858783e102f3f35ae59cf45f78",
     "meta/core/experience-kind-schema.md": "sha256:8663e8b0cc0f2ea901a752fbba7e26431141e03adf5052221ca5dbab99e79ef6",
@@ -22,7 +22,7 @@
     "meta/core/feature-schema.md": "sha256:25d5ad258f1b15f67caed86d5ad63a6cc9fcb67831e09fb1e4b2180bb30cfd59",
     "meta/core/identity-schema.md": "sha256:7b7e6f277d53eb1f28613f2390907c3b0f925900646b779367f61fe4a2f32bbb",
     "meta/core/kpi-schema.md": "sha256:c107baeacc0eac4f3c53e16577bd8a3d2eb8ad6035af7ea59b1be7964fe4d8e6",
-    "meta/core/manifest.json": "sha256:5355fd5f6d6e2568d48fd63f286980670247acb61cdd6a08d656c9bbe6ade38a",
+    "meta/core/manifest.json": "sha256:6f2f7122ec30f3aaf18e9a4ae0b398c20756c09ff629aea60655df516ad029cf",
     "meta/core/phase-schema.md": "sha256:a13357ce09164ff52f9e6b71def63cd4bae6786c582f281bdcb9639e467e3675",
     "meta/core/process-schema.md": "sha256:60fee75d640c2e233ca872dd922077c07f0608a6a0086db4774273dfa3333c27",
     "meta/core/product-schema.md": "sha256:64a931893b8559700fce2660de0f227ef4e2093788d460cc7195b8eb415b25b1",
@@ -38,12 +38,14 @@
     "meta/core/track-schema.md": "sha256:431ad2272e4bfec7dbc5f54bbcd93d13eeadd2f28f53cadb54a5b39a41f72961",
     "meta/core/value-schema.md": "sha256:c4f353022f8e0a1dcd79b52d439c263d074d7b3b478b45c47da35848a14b5e84",
     "meta/core/vision-schema.md": "sha256:72f6d87197eb3fd61fb38c6e86fac78e7b88d7dae1efaf0b702f8518b20f2414",
+    ".claude/skills/companygraph-company/SKILL.md": "sha256:2bb73107cae8cff02e724d76ec136c93ff738e2d64c796bc310a219e0c75b8a5",
+    ".claude/skills/companygraph-consent/SKILL.md": "sha256:ad2d803fb23a4678d2b9c6ed25ff6bb96cf9d437f180c81811c6aef9371aed61",
     ".claude/skills/companygraph-export/SKILL.md": "sha256:c396617079ea60378ad4c7c252c72f9328519d953ca1410a2f91893fa43f1558",
     ".claude/skills/companygraph-export/__pycache__/build.cpython-314.pyc": "sha256:fb1db87e260d2cc1feb00c49f4b5d88889184725956cc68a04264e8de7100300",
     ".claude/skills/companygraph-export/__pycache__/verify.cpython-314.pyc": "sha256:c017f25338257d66294d2cf36e171c31575af6e41417c2959551f8e1ab9aa183",
     ".claude/skills/companygraph-export/build.py": "sha256:53608b775f0f53dc2b02024fa71d096512ec66c0768eb6176a3523959d58af99",
     ".claude/skills/companygraph-export/verify.py": "sha256:19c0df245013a422b4697b7f0f33c87f5a0916989cd6eaa457c195233a1ebcde",
-    ".claude/skills/companygraph-profile/SKILL.md": "sha256:7a7f0394c45a535910af4773da888b2a80297fdd62cd20182e5e61ef9cbdc74c",
+    ".claude/skills/companygraph-profile/SKILL.md": "sha256:adfec38a124ad8e9888f9eab161def02cc785784329d5bb58b2c653955b97ffb",
     ".claude/skills/companygraph-surface/SKILL.md": "sha256:f0392a90eda6f7baea77bfb74d860d4619262053e1f80b35e7997e175024d58b",
     ".claude/skills/companygraph-surface/facts.py": "sha256:5d6423c26fca9036a463cb2b6e0c83105a0da11ff0224a44d6e9202adc0cae3a",
     ".claude/skills/companygraph-validate/SKILL.md": "sha256:e3815edb16b97feb2987a4c92a6b40161d413e2f027d70985aaebe77f88e26ef"
