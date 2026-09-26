@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Career
 ---
 
 # How does Robert measure delivery?

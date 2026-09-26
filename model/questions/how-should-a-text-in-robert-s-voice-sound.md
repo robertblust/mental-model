@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Brand
 ---
 
 # How should a text in Robert's voice sound?

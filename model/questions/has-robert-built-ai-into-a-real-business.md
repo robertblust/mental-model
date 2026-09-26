@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Career
 ---
 
 # Has Robert built AI into a real business?

@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Model and chat
 ---
 
 # Is what I type here stored?

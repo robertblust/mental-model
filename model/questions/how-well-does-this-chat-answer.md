@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Model and chat
 ---
 
 # How well does this chat answer?

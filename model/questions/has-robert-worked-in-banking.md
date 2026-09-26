@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Career
 ---
 
 # Has Robert worked in banking?

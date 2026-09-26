@@ -1,5 +1,6 @@
 ---
 source: Local
+kind: Career
 ---
 
 # Why is there a career break, and what happened in it?
