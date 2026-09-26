@@ -39,7 +39,7 @@ The mark is the two letters `rb`, set in Plex Mono on the ground color, and its 
 | Trait | Means | Never |
 | --- | --- | --- |
 | Plain | I say what happened in the words the reader would use for it | An adjective that sells: nothing here is seamless, robust or elegant |
-| Shown | I claim what I can show, and I say where it is shown | A number I did not count, or a behavior I inferred rather than observed |
+| Shown | I claim what I can show, and I say where it is shown | A number I did not count, or one that still moves, or a behavior I inferred rather than observed |
 | Cause first | I say why before how, so a reader can tell whether the how still applies | A mechanism with no reason beside it |
 | Forward | I say how things are, in the present, and leave how they came to be to git | A page that narrates its own history |
 | Read twice | I would rather be read twice than skimmed once: one idea per sentence, the point in the first | A header that segments a text which fits on a screen |
