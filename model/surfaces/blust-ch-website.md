@@ -22,7 +22,7 @@ url: https://blust.ch
 - **Model** — the company of one, drawn: the model's entities and edges as a graph from `model.json`.
 - **Timeline** — the profile's experiences, drawn from `model.json`.
 - **Talks** — the narrated talks this site serves, each an experience of the profile, in both languages with a PDF.
-- **Blog** — the posts this site serves, each an experience of the profile, in both languages.
+- **Blog** — the blog: longer writing, posts in both languages, each post also an experience of the profile.
 - **Privacy** — what leaves a visitor's browser and what stays in it, listed in full.
 - **model.json** — the parsed model at the pinned commit, published as a dataset.
 - **Chat** — the button at the foot of every prose page and the panel it opens, answered by the chat.blust.ch chat.
