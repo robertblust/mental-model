@@ -1,6 +1,6 @@
 ---
 source: Local
-decided: 2026-09
+decided: 2026-09-02
 kind: Career
 status: Standing
 by: Owner
