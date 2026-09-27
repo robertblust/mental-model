@@ -12,7 +12,7 @@ skills:
 
 # Deciding well is solved. For me.
 
-> The talk kept the claim open for everyone else. This is the one case I can close, because the decision is written down and you can read it.
+> I took a four-month career break to answer one question, then chose an architect role at 80%. How I decided is the one case I can call solved.
 
 ## Achievements
 
@@ -26,6 +26,6 @@ skills:
 
 ### Results
 
-- Showed the talk's method run once on one decision: the question written before the first application, the facts kept in one record, three agents rating, writing and checking under written files and never choosing, the evidence read by track, and the choice made against a criterion that existed before the offers did.
+- Showed the talk's method run once on one decision: the question written before the first application, the facts kept in one record, three agents rating, writing and checking under written files and never choosing, the evidence read by track, and the choice made against a criterion that existed before the offer did.
 - Kept the claim as the talk made it: one person and one decision prove nothing about a team, so the proposal stays a proposal, and the post closes by asking where it breaks.
 - Named at the post's foot what it rests on, each an experience of this model opened on the site's timeline, in its place among the others: the career break, the application tooling, the talk and the two podcasts, so the post carries no address of its own beyond theirs.

@@ -16,7 +16,7 @@ skills:
 
 ### Context
 
-- Gave the break one question: what I like doing, rather than what I am used to being hired for. The answer came out as modeling, and AI used with responsibility inside a company rather than merely used; the role that fits it is an architect's, and it is the more lasting one: with the right guardrails an agent writes code faster than any team, so pure development will change, while deciding what gets built, and within which boundaries, will not.
+- Gave the break one question: what I like doing, rather than what I am used to being hired for. The answer came out as modeling how a business works, and AI used with responsibility inside a company rather than merely used; the role that fits it is an architect's, and it is the more lasting one: with the right guardrails an agent writes code faster than any team, so pure development will change, while deciding what gets built, and within which boundaries, will not.
 
 ### Ways of working
 
