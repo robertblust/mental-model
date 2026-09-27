@@ -1,6 +1,6 @@
 ---
 source: Local
-kind: Model and chat
+kind: Cost
 ---
 
 # What does it cost to run this?
