@@ -48,6 +48,10 @@ A source is a stack of whole pages. Each one begins at a line reading `<!-- enti
 
 `meta.md` holds the rules every entity obeys — which fields a page of each type must carry, how a date is written, and the rule that a reference naming something that does not exist is an error rather than a note. Read it when an answer turns on whether the model is allowed to say something, not on what it says.
 
+## The model, live
+
+This notebook is the model at one commit. The same model is served to agents at `https://mcp.blust.ch/mcp`, an MCP server that reads a pinned commit of it and adds nothing, and every answer it gives names that commit. A person opening that address in a browser gets a page listing what it answers. When an answer here may be out of date, that server is where the current one is; `surfaces.md` describes it as one of the places the model is published to.
+
 ## What a claim rests on
 
 Every page here is mastered in this repository. There is no upstream system to correct first: a fact that is wrong is corrected here and nowhere else, which is why every page carries `source: Local`.
