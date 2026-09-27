@@ -39,4 +39,11 @@ A deck whose English notes are reviewed and whose German notes were made from th
 - The Owner has listened to every new clip.
 - Every clip's stamp matches the note on its slide.
 
-Where a clip cannot be made to sound right, the Owner decides whether the note changes, back through Delivery, or the voice does.
+## If not met
+
+| Outcome | Leads to |
+| --- | --- |
+| voice changes | Narrate |
+| note changes | |
+
+A note that changes goes back through Delivery.

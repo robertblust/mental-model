@@ -46,4 +46,10 @@ Answer is the only phase. An answer has left it when:
 - Where the tools did not say, it says the model does not say.
 - It was written inside the fence: the rounds, the output length and the share.
 
-Where they cannot be met, the Owner closes the chat at its switch, corrects the rules or the model, and opens it again; no answer is corrected after the fact, because none is kept.
+## If not met
+
+| Outcome | Leads to |
+| --- | --- |
+| chat closed | |
+
+The rules or the model are corrected through Delivery, and the chat opens again; no answer is corrected after the fact, because none is kept.
