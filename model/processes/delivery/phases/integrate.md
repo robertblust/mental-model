@@ -49,4 +49,9 @@ Integrate is the last phase. The work is done when all of these hold:
 - The Owner has merged it.
 - Every pin that names the release has moved with it.
 
-Where they cannot be met, the Owner decides whether the change is reverted or the release held.
+## If not met
+
+| Outcome | Leads to |
+| --- | --- |
+| release held | Integrate |
+| reverted | |

@@ -55,4 +55,9 @@ To leave Plan, all of these hold:
 - Every brief states how its holder can tell the task is done.
 - The order is one the briefs can actually be worked in.
 
-Where they cannot be met, the Owner decides whether the plan is recut or the specification reopened.
+## If not met
+
+| Outcome | Leads to |
+| --- | --- |
+| recut | Plan |
+| specification reopened | Spec |

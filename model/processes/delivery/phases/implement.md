@@ -71,4 +71,9 @@ To leave Implement, all of these hold:
 - The repository's checks pass on the branch.
 - The branch does what the specification said, and nothing else.
 
-Where they cannot be met, the Owner decides whether the branch is reworked or abandoned.
+## If not met
+
+| Outcome | Leads to |
+| --- | --- |
+| reworked | Implement |
+| abandoned | |

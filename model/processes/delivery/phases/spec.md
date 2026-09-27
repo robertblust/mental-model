@@ -59,4 +59,10 @@ To leave Spec, all of these hold:
 - What is explicitly not being done is written down.
 - Every parked question has the Owner's word on it.
 
-Where they cannot be met, the Owner decides whether the change is reshaped, narrowed or dropped.
+## If not met
+
+| Outcome | Leads to |
+| --- | --- |
+| reshaped | Shape |
+| narrowed | Spec |
+| dropped | |
