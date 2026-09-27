@@ -20,7 +20,7 @@ Which CAS opens the path to the MAS, and with it which track the master's takes:
 
 | Option | Why not |
 | --- | --- |
-| The OST CAS Machine Learning for Software Engineers in Rapperswil, about 15 ECTS over a year | It is the developer track, and the profile's claim is the other one: the break's finding was modeling and AI used with responsibility inside a company, and a CAS in machine learning would picture a gap in the competence the role hires me for. |
+| The OST CAS Machine Learning for Software Engineers in Rapperswil, about 15 ECTS over a year | It is the developer track, and the profile's claim is the other one: the break's finding was modeling how a business works and AI used with responsibility inside a company, and a CAS in machine learning would picture a gap in the competence the role hires me for. |
 | The ZHAW CAS Machine Intelligence in Winterthur, 12 ECTS over five months | The same track, shorter; it settles nothing the OST option does not, and counts toward a different MAS. |
 | A CAS in enterprise or data architecture | I can do both already; naming either as further education would show a need to catch up in exactly what I was hired for. |
 

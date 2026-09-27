@@ -26,7 +26,7 @@ Which offer to take, with one in hand and three processes in finance still open,
 
 ## Why
 
-The break had answered its question: what I like doing is modeling, and AI used with responsibility inside a company rather than merely used, and the role that fits that is an architect's, the more lasting one. Of the offers, the architect role in a product company was the one where the interviews showed a culture I would choose, and choosing on values over pay is the whole of what deciding well means when the two disagree.
+The break had answered its question: what I like doing is modeling how a business works, and AI used with responsibility inside a company rather than merely used, and the role that fits that is an architect's, the more lasting one. Of the offers, the architect role in a product company was the one where the interviews showed a culture I would choose, and choosing on values over pay is the whole of what deciding well means when the two disagree.
 
 ## Consequences
 
