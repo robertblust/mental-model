@@ -50,7 +50,7 @@ A source is a stack of whole pages. Each one begins at a line reading `<!-- enti
 
 ## The model, live
 
-This notebook is the model at one commit. The same model is served to agents at `https://mcp.blust.ch/mcp`, an MCP server that reads a pinned commit of it and adds nothing, and every answer it gives names that commit. A person opening that address in a browser gets a page listing what it answers. When an answer here may be out of date, that server is where the current one is; `surfaces.md` describes it as one of the places the model is published to.
+This notebook is the model at one commit. The same model is served to agents at `https://mcp.blust.ch/mcp`, an MCP server that reads a pinned commit of it and adds nothing, and every answer it gives names that commit. A person opening `https://mcp.blust.ch` in a browser gets a page listing what it answers and the address to give a client. When an answer here may be out of date, that server is where the current one is; `surfaces.md` describes it as one of the places the model is published to.
 
 ## What a claim rests on
 
