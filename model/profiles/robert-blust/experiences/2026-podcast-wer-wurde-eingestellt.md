@@ -9,7 +9,7 @@ skills:
   - Storytelling
 ---
 
-# Wer wurde eingestellt – ich oder mein Modell?
+# Wer wurde eingestellt? Ich oder mein Modell?
 
 > A podcast episode in German in which two hosts read the model as a company of one and argue about it, ending on whether the person or the model he built was hired, published with a description that names what the hosts get wrong.
 
