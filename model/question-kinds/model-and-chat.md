@@ -11,4 +11,4 @@ rank: 40
 
 A question about the tool rather than the person: the chat, its seat and its measure, what happens to what a visitor types, how a claim is evidenced, and how a person or an agent can use the model or build one like it.
 
-A question about Robert that the chat happens to answer is the kind of what it asks about, not this one.
+A question about Robert that the chat happens to answer is the kind of what it asks about, not this one, and a question about what the chat costs to run is Cost.

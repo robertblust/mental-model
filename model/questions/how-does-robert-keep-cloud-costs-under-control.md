@@ -1,6 +1,6 @@
 ---
 source: Local
-kind: Career
+kind: Cost
 ---
 
 # How does Robert keep cloud costs under control?
