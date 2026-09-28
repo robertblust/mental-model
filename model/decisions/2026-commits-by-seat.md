@@ -1,7 +1,7 @@
 ---
 source: Local
 decided: 2026-09-28
-kind: Portfolio
+kind: Architecture
 status: Standing
 by: Owner
 upholds:
