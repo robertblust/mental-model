@@ -1,0 +1,7 @@
+{
+  "pins": [
+    { "kind": "conventions", "file": "conventions.json", "repo": "robertblust/conventions" },
+    { "kind": "core-release", "file": ".companygraph/manifest.json", "repo": "companygraph/meta-model", "move": "npx --yes 'github:companygraph/meta-model#v{version}' upgrade" }
+  ],
+  "verify": ["npx --yes \"github:companygraph/meta-model#v$(node -p \"require('./.companygraph/manifest.json').tooling\")\" check ."]
+}
