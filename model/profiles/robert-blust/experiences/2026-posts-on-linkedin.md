@@ -2,7 +2,7 @@
 source: Local
 kind: Community
 start: 2026-09
-url: https://www.linkedin.com/in/robertblust/recent-activity/all/
+url: https://www.linkedin.com/in/robertblust/recent-activity/all
 skills:
   - Storytelling
   - Technical writing
@@ -32,8 +32,8 @@ skills:
 
 | What | URL |
 | --- | --- |
-| Post on building fast and deciding well | https://www.linkedin.com/posts/robertblust_companygraph-guestgraph-agenticai-share-7509184159257452544-F7Zf/ |
-| Post on CompanyGraph, asked of its own model | https://www.linkedin.com/posts/robertblust_companygraph-aiagents-activity-7506632174431821825-zyEr |
-| Post on one model, true everywhere | https://www.linkedin.com/posts/robertblust_companygraph-guestgraph-modeling-share-7505536799079870465-sDNE |
-| Post on the career break | https://www.linkedin.com/posts/robertblust_turn-your-work-history-into-code-share-7503346236196839425-_TC9 |
-| Post on your company not compiling | https://www.linkedin.com/posts/robertblust_companygraph-guestgraph-knowledgemanagement-share-7510336004667498496-y7_-/ |
+| Post of Sep 9, 2026, on the career break | https://www.linkedin.com/posts/robertblust_turn-your-work-history-into-code-share-7503346236196839425-_TC9 |
+| Post of Sep 15, 2026, on one model, true everywhere | https://www.linkedin.com/posts/robertblust_companygraph-guestgraph-modeling-share-7505536799079870465-sDNE |
+| Post of Sep 18, 2026, on CompanyGraph, asked of its own model | https://www.linkedin.com/posts/robertblust_companygraph-aiagents-activity-7506632174431821825-zyEr |
+| Post of Sep 25, 2026, on building fast and deciding well | https://www.linkedin.com/posts/robertblust_companygraph-guestgraph-agenticai-share-7509184159257452544-F7Zf |
+| Post of Sep 28, 2026, on your company not compiling | https://www.linkedin.com/posts/robertblust_companygraph-guestgraph-knowledgemanagement-share-7510336004667498496-y7_- |
