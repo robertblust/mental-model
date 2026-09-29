@@ -8,9 +8,9 @@ skills:
   - Technical writing
 ---
 
-# Posts on LinkedIn
+# The career break experiment on LinkedIn
 
-> Ongoing. A sequence of posts that tells the career break and what it built, from the question it started with to the answer, each post making one point and pointing to one episode, film or talk that shows it.
+> Ongoing. A sequence of posts that tells the career break experiment and what it built, from the question it started with to the answer, each post making one point and pointing to one episode, film or talk that shows it.
 
 ## Achievements
 
