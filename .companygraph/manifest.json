@@ -1,7 +1,7 @@
 {
-  "tooling": "0.63.0",
+  "tooling": "0.64.0",
   "core": {
-    "version": "0.47.0",
+    "version": "0.48.0",
     "shape": 3,
     "source": "bundled"
   },
@@ -21,8 +21,8 @@
     "meta/core/experience-schema.md": "sha256:6c00f65ebcb4355f3b6fd988f510a37b8d077af806c0ad997390d6f7613d393e",
     "meta/core/feature-schema.md": "sha256:c6f60010d16429b9fe558863511129f643afc1316fb21fd5c62a8cb8b4fe355a",
     "meta/core/identity-schema.md": "sha256:a02c84993321f5b62dc71e786338d474ce31a091fcba271c94a68b2703ada91e",
-    "meta/core/kpi-schema.md": "sha256:c107baeacc0eac4f3c53e16577bd8a3d2eb8ad6035af7ea59b1be7964fe4d8e6",
-    "meta/core/manifest.json": "sha256:dc4ce8dd3531c5ca0fd1337a438243db6b1c6b81aa92aeb0e6280aceae06253b",
+    "meta/core/kpi-schema.md": "sha256:8bf1bf72137c56605fe9830f24cd3374db6ab8013e90331e816703d72a332089",
+    "meta/core/manifest.json": "sha256:83760bb13b06128cfecab0fe9489e562a8cc390b3cecfa9f80b3bc57cb0d1261",
     "meta/core/phase-schema.md": "sha256:36da2c7d3d76139b355faf1b1059fb4f2c1d970755b1ffea2a9101c5ed40bbbf",
     "meta/core/process-schema.md": "sha256:60fee75d640c2e233ca872dd922077c07f0608a6a0086db4774273dfa3333c27",
     "meta/core/product-schema.md": "sha256:f3dcbe7ddcec6484376cd603962a021e662cc2aecddd424fd1108e8ac985b9d2",
