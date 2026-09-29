@@ -6,6 +6,8 @@ unit: deployments per week
 direction: higher
 read-with:
   - Change Fail Rate
+can-cost:
+  - Decide well over build fast
 ---
 
 # Deployment Frequency
