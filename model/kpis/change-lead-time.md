@@ -6,6 +6,8 @@ unit: hours
 direction: lower
 read-with:
   - Change Fail Rate
+can-cost:
+  - Decide well over build fast
 ---
 
 # Change Lead Time
