@@ -3,6 +3,7 @@ source: Local
 nature: human
 roles:
   - Owner
+email: robert@blust.ch
 image: robert-blust.jpg
 ---
 
