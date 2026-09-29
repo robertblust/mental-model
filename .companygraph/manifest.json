@@ -1,5 +1,5 @@
 {
-  "tooling": "0.62.0",
+  "tooling": "0.63.0",
   "core": {
     "version": "0.47.0",
     "shape": 3,
@@ -8,7 +8,7 @@
   "units": "meta",
   "packs": [],
   "files": {
-    "meta/core/CONVENTIONS.md": "sha256:c23bcad63cdd94c0c2d87c4a2e0b05eed2ebd2a66adf17d556e7494648e49de1",
+    "meta/core/CONVENTIONS.md": "sha256:afea12e902aa553a363278742bddbafc8d9a2f6549567b760f36389fdcc0e897",
     "meta/core/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "meta/core/achievement-kind-schema.md": "sha256:23e892e9b42df267049c3b447e25281f619167306432c9aaeb202c26a8b4423f",
     "meta/core/brand-schema.md": "sha256:e389a338fb565c3206d7d77386fedf5c039ea2bd117d09e94fd07e35f47c33b4",
