@@ -35,4 +35,4 @@ skills:
 
 ## Ending
 
-Ended in September 2026 with a decision, not only an offer: an IT Architect role at 80% from October, in a company whose culture was the criterion. The two products stay published and keep their history, and the education starts in 2027.
+Ended in September 2026 with a decision, not only an offer: an IT Architect role at 80% at Läderach from October, a company whose culture was the criterion. The two products stay published and keep their history, and the education starts in 2027.
