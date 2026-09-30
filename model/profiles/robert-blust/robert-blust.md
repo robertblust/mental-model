@@ -322,11 +322,13 @@ image: robert-blust.jpg
 | Storytelling | Titled an episode on the meta-model's rules as a provocation and wrote its description to end on one question for the listener, how many errors their company would throw if it had to compile tonight. | Your company doesn't compile |
 | Storytelling | Wrote the German sibling of an English episode as its own story rather than a translation, leaning on what the English one left out and ending on whether an agent reading a company's wiki would say what its people say. | Dein Unternehmen kompiliert nicht |
 | Storytelling | Planned a sequence of posts as one story, the question, what was built and the answer, each post making one point with one asset and one link to the work that shows it. | The career break experiment on LinkedIn |
+| Storytelling | Told a validation not yet decided as one question answered and one still open, closing on what would settle it and an ask. | One question answered. One still open. |
 | Technical writing | Wrote the Analysis & Design methodology and guidance a UBS division worked to. | Solution Manager, Software Engineering — Analysis & Design |
 | Technical writing | Published an article on process monitoring with BPMN, with the runnable sample it describes. | Process Monitoring with BPMN |
 | Technical writing | Wrote the developer documentation for LIKE MAGIC's public API, which conversational AI providers and other partners integrated against without LIKE MAGIC building the integration. | Co-Founder & Head of Technology |
 | Technical writing | Wrote CompanyGraph's conventions, design specs and worked example, prose other people follow for readers who were not in the room. | CompanyGraph |
 | Technical writing | Wrote a brief before every post naming its reader, its one point and where each claim is shown, and kept the text as posted beside the draft. | The career break experiment on LinkedIn |
+| Technical writing | Wrote a blog post that answers the ideas page's two questions with every figure checked against its source and every claim linked where it stands. | One question answered. One still open. |
 | UX design | Designed the Flatland CDO Server's model browser to show any model the server holds, so a new metamodel is explorable without a screen built for it. | Flatland CDO Server |
 | UX design | Gave Credit Suisse's Master Data Repository a front end on the design of the Flatland CDO Server's generic model browser, following its metamodel rather than a screen built per type. | Credit Suisse Master Data Repository |
 | UX design | Designed the pages of blust.ch, companygraph.io and guestgraph.io and the design system they share, and had the agent seats build them, each page checked rendered in the browser. | blust.ch |
