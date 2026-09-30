@@ -1,4 +1,5 @@
 ---
+id: 01a0e179-0968-76e5-b689-385af0488e7a
 source: Local
 decided: 2026-09-27
 kind: Spending

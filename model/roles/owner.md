@@ -1,4 +1,5 @@
 ---
+id: 01a0a6f1-f188-70b0-9317-126308ad1e41
 source: Local
 requires:
   - Company vision and strategy

@@ -1,4 +1,5 @@
 ---
+id: 01a0dd50-37a8-72d9-96d5-554cc76a5bb3
 source: Local
 decided: 2026-06
 kind: Career

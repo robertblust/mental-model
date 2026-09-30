@@ -1,4 +1,5 @@
 ---
+id: 01a0ae1c-fb10-7f67-b75b-326452827ff1
 source: Local
 production: built
 built-by: https://github.com/robertblust/mcp-blust-ch
