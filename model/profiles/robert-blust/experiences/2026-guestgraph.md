@@ -1,4 +1,5 @@
 ---
+id: 01a077ab-1d50-7dfa-a291-6eae678cc84b
 source: Local
 kind: Community
 start: 2026-07

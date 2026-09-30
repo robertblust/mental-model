@@ -1,4 +1,5 @@
 ---
+id: 01a04556-7890-7543-8c70-4b0d0e87ae8e
 source: Local
 kind: Independent
 start: 2026-06
