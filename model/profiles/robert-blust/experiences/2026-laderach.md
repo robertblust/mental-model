@@ -14,4 +14,4 @@ organization: Läderach (Schweiz) AG
 
 | What | URL |
 | --- | --- |
-| Läderach | https://laderach.com/ch-de/ |
+| Läderach | https://laderach.com/ |
