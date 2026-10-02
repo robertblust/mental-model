@@ -1,14 +1,14 @@
 {
-  "tooling": "0.66.0",
+  "tooling": "0.68.0",
   "core": {
-    "version": "0.50.0",
+    "version": "0.51.0",
     "shape": 3,
     "source": "bundled"
   },
   "units": "meta",
   "packs": [],
   "files": {
-    "meta/core/CONVENTIONS.md": "sha256:7691960cc56678b2f7b96a98e76a4916d0381a3dba57128275645e222163c140",
+    "meta/core/CONVENTIONS.md": "sha256:f5fae06659654ea62361c1cea9b83f6728a0a8c75bd910f64bbaa790427bc9a9",
     "meta/core/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "meta/core/achievement-kind-schema.md": "sha256:4fd1524d43bac709800e48ac64c3dc0ff5b6d8ab25ef4c0a94359f2a3aeaebaa",
     "meta/core/brand-schema.md": "sha256:08ec27212f9dbda0095b54410a843661285249964ffe74af656b0986c202372d",
@@ -24,7 +24,7 @@
     "meta/core/identity-schema.md": "sha256:c8dceb1c341ef254da5b3eb2eb728639d0834fff386287a48afa3bcf59a286d4",
     "meta/core/kpi-schema.md": "sha256:274a840321e5c2e53eacf9c33b7a302cd1d8c3a8c03371996aa842edc79fbeff",
     "meta/core/localization-schema.md": "sha256:1584cd1742a75495457744f28878bb81f9b7a4746870f305a0a6185d5d469adb",
-    "meta/core/manifest.json": "sha256:5c5d627aff2f539e23ef921ec18884ac038447aeb80bc64b691d5f6ee42657f3",
+    "meta/core/manifest.json": "sha256:4d3adc662af9427b40185c4f9b0900d9962632bb939ad42689eae1c2ecd84209",
     "meta/core/phase-schema.md": "sha256:c3723a5455a09b6e50ce094bac23d9a81e89e336896bc07493e6cb2af2f5c348",
     "meta/core/process-schema.md": "sha256:1e3af98ff7ff2822a2a4256d6610b369b6724c0c896dc1fc3b45b89fceb75f1e",
     "meta/core/product-schema.md": "sha256:755c0f1309e91a67f3c3deef66cc94a18fb4a00886f0236bb39de40c5bb88de4",
