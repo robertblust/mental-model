@@ -1,5 +1,5 @@
 {
-  "tooling": "0.69.0",
+  "tooling": "0.70.0",
   "core": {
     "version": "0.52.0",
     "shape": 3,
@@ -7,6 +7,10 @@
   },
   "units": "meta",
   "packs": [],
+  "exclude": [
+    "dist",
+    "meta"
+  ],
   "files": {
     "meta/core/CONVENTIONS.md": "sha256:218eed2443db6ecd4a6829337cc7f01ebde63492a823e9cc3ebf0f542105e04a",
     "meta/core/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
