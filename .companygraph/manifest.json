@@ -1,7 +1,7 @@
 {
-  "tooling": "0.70.0",
+  "tooling": "0.71.0",
   "core": {
-    "version": "0.52.0",
+    "version": "0.53.0",
     "shape": 3,
     "source": "bundled"
   },
@@ -17,6 +17,7 @@
     "meta/core/achievement-kind-schema.md": "sha256:4fd1524d43bac709800e48ac64c3dc0ff5b6d8ab25ef4c0a94359f2a3aeaebaa",
     "meta/core/brand-schema.md": "sha256:08ec27212f9dbda0095b54410a843661285249964ffe74af656b0986c202372d",
     "meta/core/concept-schema.md": "sha256:8f1ad77159df716c62ad18cb877f166295a3f431e5ab8800a00a70e854fb1971",
+    "meta/core/control-schema.md": "sha256:d173bfd3381df340c02593cb8c84aa208e85f0740211ddb7e142001c34cfcb7e",
     "meta/core/decision-kind-schema.md": "sha256:afe98b96cc34c0b85a01c98ccf2876af1e67d54f22755b2482eab3a589dac420",
     "meta/core/decision-schema.md": "sha256:50ae72ffd56ea8ad69d142017195e0953f5a11a1931989bfd46d4756f765ac40",
     "meta/core/decision-status-schema.md": "sha256:855879b49ce27fa9e52d4b18cd134fd2aedde8f21adcaecace534a3646b59efd",
@@ -28,7 +29,7 @@
     "meta/core/identity-schema.md": "sha256:c8dceb1c341ef254da5b3eb2eb728639d0834fff386287a48afa3bcf59a286d4",
     "meta/core/kpi-schema.md": "sha256:274a840321e5c2e53eacf9c33b7a302cd1d8c3a8c03371996aa842edc79fbeff",
     "meta/core/localization-schema.md": "sha256:eee2ccb28a92dc1eb0e7b031304986955ede3d028964c8fc8905b771327f4425",
-    "meta/core/manifest.json": "sha256:3158bcfc7a295af14e8b64aba8a4d5fc8638d58e1c0341fac5b59288ebb9ca75",
+    "meta/core/manifest.json": "sha256:2e1adf83c1e0f58e37c066ce27861fa1a0b22e00679c13c7d0eb58e879878da5",
     "meta/core/phase-schema.md": "sha256:c3723a5455a09b6e50ce094bac23d9a81e89e336896bc07493e6cb2af2f5c348",
     "meta/core/process-schema.md": "sha256:1e3af98ff7ff2822a2a4256d6610b369b6724c0c896dc1fc3b45b89fceb75f1e",
     "meta/core/product-schema.md": "sha256:755c0f1309e91a67f3c3deef66cc94a18fb4a00886f0236bb39de40c5bb88de4",
@@ -36,7 +37,9 @@
     "meta/core/profile-schema.md": "sha256:0d0e079ade68a4be58757032c218f90634eb3b0400dcd9b123695ea1cc27c738",
     "meta/core/question-kind-schema.md": "sha256:2cfceb3077ae0edc0c0514f2de59a7b78ae776a90ff117d029ff8ecf19f09f2e",
     "meta/core/question-schema.md": "sha256:8b7fb3f406bbff4fa6ad55ecb7200bf58b514a7bfce012bca109140391f1a530",
+    "meta/core/risk-schema.md": "sha256:147b437c158a19bb13df890f2263ad1e8f5d2ecb6fb39f5f2a3c3390a92082ce",
     "meta/core/role-schema.md": "sha256:a084e10010dfad089afb9dc2c28f1b3c3efaee1c98c9b02eebf12d8c27fb5ea9",
+    "meta/core/rule-schema.md": "sha256:a0e63ad93f8d741a69924d8c56f8d39ec8c4e108a653af00aee1fba9dfec8a53",
     "meta/core/skill-schema.md": "sha256:4420360b3666d672bd8087f6ebb4c87bc7818454236b1ca7b975fe2768f5ec2a",
     "meta/core/source-schema.md": "sha256:01ad631cace0a8e918dace0e766f142e8e1f1ea598e92962ed47d5b98180dd00",
     "meta/core/strategic-objective-schema.md": "sha256:1eb55c0d7ab620e1a664534ea044571c8d00bf2942be8b55f1ea53c14d933f36",
