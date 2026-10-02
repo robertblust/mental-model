@@ -1,18 +1,18 @@
 {
-  "tooling": "0.68.0",
+  "tooling": "0.69.0",
   "core": {
-    "version": "0.51.0",
+    "version": "0.52.0",
     "shape": 3,
     "source": "bundled"
   },
   "units": "meta",
   "packs": [],
   "files": {
-    "meta/core/CONVENTIONS.md": "sha256:f5fae06659654ea62361c1cea9b83f6728a0a8c75bd910f64bbaa790427bc9a9",
+    "meta/core/CONVENTIONS.md": "sha256:218eed2443db6ecd4a6829337cc7f01ebde63492a823e9cc3ebf0f542105e04a",
     "meta/core/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "meta/core/achievement-kind-schema.md": "sha256:4fd1524d43bac709800e48ac64c3dc0ff5b6d8ab25ef4c0a94359f2a3aeaebaa",
     "meta/core/brand-schema.md": "sha256:08ec27212f9dbda0095b54410a843661285249964ffe74af656b0986c202372d",
-    "meta/core/concept-schema.md": "sha256:d7cab91f106f89ad6edad596b1647e52d33798d2304ed986c9d337deed5fb67d",
+    "meta/core/concept-schema.md": "sha256:8f1ad77159df716c62ad18cb877f166295a3f431e5ab8800a00a70e854fb1971",
     "meta/core/decision-kind-schema.md": "sha256:afe98b96cc34c0b85a01c98ccf2876af1e67d54f22755b2482eab3a589dac420",
     "meta/core/decision-schema.md": "sha256:50ae72ffd56ea8ad69d142017195e0953f5a11a1931989bfd46d4756f765ac40",
     "meta/core/decision-status-schema.md": "sha256:855879b49ce27fa9e52d4b18cd134fd2aedde8f21adcaecace534a3646b59efd",
@@ -23,8 +23,8 @@
     "meta/core/identifier-schema.md": "sha256:7018c22051c0ecbadafab2db47762cb7176560ded35b81594d507acabd50ffff",
     "meta/core/identity-schema.md": "sha256:c8dceb1c341ef254da5b3eb2eb728639d0834fff386287a48afa3bcf59a286d4",
     "meta/core/kpi-schema.md": "sha256:274a840321e5c2e53eacf9c33b7a302cd1d8c3a8c03371996aa842edc79fbeff",
-    "meta/core/localization-schema.md": "sha256:1584cd1742a75495457744f28878bb81f9b7a4746870f305a0a6185d5d469adb",
-    "meta/core/manifest.json": "sha256:4d3adc662af9427b40185c4f9b0900d9962632bb939ad42689eae1c2ecd84209",
+    "meta/core/localization-schema.md": "sha256:eee2ccb28a92dc1eb0e7b031304986955ede3d028964c8fc8905b771327f4425",
+    "meta/core/manifest.json": "sha256:3158bcfc7a295af14e8b64aba8a4d5fc8638d58e1c0341fac5b59288ebb9ca75",
     "meta/core/phase-schema.md": "sha256:c3723a5455a09b6e50ce094bac23d9a81e89e336896bc07493e6cb2af2f5c348",
     "meta/core/process-schema.md": "sha256:1e3af98ff7ff2822a2a4256d6610b369b6724c0c896dc1fc3b45b89fceb75f1e",
     "meta/core/product-schema.md": "sha256:755c0f1309e91a67f3c3deef66cc94a18fb4a00886f0236bb39de40c5bb88de4",
@@ -41,14 +41,14 @@
     "meta/core/track-schema.md": "sha256:8c9e3ff78a8e68e4f72206ee2110749ad3cebe5a449e01ffed733a45384bc8e5",
     "meta/core/value-schema.md": "sha256:a3ee34ab1b244c189ae403e45970fda5300e484fb1d90004d117a1c377dfb601",
     "meta/core/vision-schema.md": "sha256:cd2b2ab5d8dd8cbdc84051a33d69eaa3e6eae84025d578200273fd71c3fffc1d",
-    ".claude/skills/companygraph-company/SKILL.md": "sha256:597861ee717b168ae5c6cdd352d706b5b48aa28235c0ecd03a6516a325fd6b7d",
+    ".claude/skills/companygraph-company/SKILL.md": "sha256:22f18eb0970277a95ade1da329787333b22b041411daa53fcb680295ef09f3e2",
     ".claude/skills/companygraph-consent/SKILL.md": "sha256:ad2d803fb23a4678d2b9c6ed25ff6bb96cf9d437f180c81811c6aef9371aed61",
     ".claude/skills/companygraph-export/SKILL.md": "sha256:24f12111ec7b1526253145ec59645767e2756da40034f6d7fcfb3ce1e155c8a3",
     ".claude/skills/companygraph-export/build.py": "sha256:7c942cdc209f67f4e3bcb12360cff1567b700b81bd3a7def0259cd04ad7c9f40",
     ".claude/skills/companygraph-export/verify.py": "sha256:14ca8a9c68935cc6f770d96c03b3e1da50f1229fe346440692752b82ad3049bb",
-    ".claude/skills/companygraph-profile/SKILL.md": "sha256:1ad1c8163757c23718fb4b3c9c3cebbedb7c7fe7087cfeb803c2d22b72e7f15a",
+    ".claude/skills/companygraph-profile/SKILL.md": "sha256:45362f5cbf2aee13739f2407285851489e8267e2defc8070acaaa18beb724bb5",
     ".claude/skills/companygraph-surface/SKILL.md": "sha256:f0392a90eda6f7baea77bfb74d860d4619262053e1f80b35e7997e175024d58b",
     ".claude/skills/companygraph-surface/facts.py": "sha256:5d6423c26fca9036a463cb2b6e0c83105a0da11ff0224a44d6e9202adc0cae3a",
-    ".claude/skills/companygraph-validate/SKILL.md": "sha256:3a3a9b53d2e15d49e67e25dfdfe9ea8a683d5cb42f9e0761b97129fc63886d57"
+    ".claude/skills/companygraph-validate/SKILL.md": "sha256:7269c4f8ce95e138c1061131f736b27ebc00852e38e45943f997b0b27d93deec"
   }
 }
