@@ -28,7 +28,6 @@ owner: Owner
 ## What it never does
 
 - Never begins a phase whose predecessor's gate the Owner has not approved.
-- Never makes the German from English the Owner has not reviewed.
 
 ## References
 
