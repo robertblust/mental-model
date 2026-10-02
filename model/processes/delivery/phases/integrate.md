@@ -23,8 +23,8 @@ A branch that left Implement with its checks green, and the specification it was
 
 1. The Reviewer reviews the whole branch against the specification, not task by task.
 2. The Controller opens the pull request and stops.
-3. The Owner reads the diff and the rendered page, and merges.
-4. Where a release is due, the Owner tags it and publishes it.
+3. The Owner reads the diff and the rendered page and gives the word; the merge follows.
+4. Where a release is due, it is tagged and published on the Owner's word.
 5. The Owner moves every pin that names the release, and deletes the branch as its own step.
 
 ## What it produces
@@ -36,7 +36,6 @@ A branch that left Implement with its checks green, and the specification it was
 
 ## What it never does
 
-- Never merges without the Owner; an agent opens and reports.
 - Never chains a branch delete after a merge, because a failed merge would still run the delete
   and close the pull request.
 - Never leaves a member pinned to a release that no longer exists.
@@ -47,7 +46,7 @@ A branch that left Implement with its checks green, and the specification it was
 Integrate is the last phase. The work is done when all of these hold:
 
 - The checks pass on the pull request.
-- The Owner has merged it.
+- It is merged on the Owner's word.
 - Every pin that names the release has moved with it.
 
 ## If not met

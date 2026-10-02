@@ -28,7 +28,6 @@ owner: Owner
 ## What it never does
 
 - Never begins a phase whose predecessor's gate the Owner has not approved.
-- Never lets an agent merge, tag or sign anything.
 - Never makes the German from English the Owner has not reviewed.
 - Never counts a check nobody ran as a check that passed.
 - Never lets a made thing outlive a disagreement with the model; the model is corrected and the
