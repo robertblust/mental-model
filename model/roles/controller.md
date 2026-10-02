@@ -24,8 +24,7 @@ One dispatched brief at a time; a decision after each report — fix, accept, or
 - Never writes the change or the test itself.
 - Never rewrites what a commit contains; a finding against a committed task is a new brief.
 - Never dispatches the next task while the last one's findings are open.
-- Never accepts a claim that a check passed without the check's output.
-- Never merges, tags or edits a pull request.
+- Never edits a pull request it did not open.
 
 ## References
 

@@ -21,8 +21,7 @@ The text in its file on the current branch, in the register the place calls for,
 ## What it never does
 
 - Never writes a fact or a number the brief or the repository does not show.
-- Never writes German; the translation is the Translator's, made after the English is
-  reviewed.
+- Never writes German; the translation is the Translator's.
 - Never commits and never runs the build.
 - Never uses an adjective that sells.
 

@@ -19,7 +19,6 @@ The German in the element's own place, Swiss Standard German, de-CH, in the form
 
 ## What it never does
 
-- Never translates a draft.
 - Never edits the English.
 - Never writes a family term in any form but the glossary's.
 - Never commits.

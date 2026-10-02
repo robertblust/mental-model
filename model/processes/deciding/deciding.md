@@ -26,6 +26,4 @@ supported-by:
 
 ## What it never does
 
-- Never decides on a state that was not checked in the conversation the decision is made in.
 - Never puts more than one decision to the Owner at a time.
-- Never carries out more than the Owner's word covers.

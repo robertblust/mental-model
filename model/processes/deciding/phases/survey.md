@@ -32,8 +32,7 @@ The Owner's question, and read access to the repositories, pull requests, branch
 
 ## What it never does
 
-- Never relies on a state it read earlier in the conversation without reading it again.
-- Never takes a session's transcript for what the session did, where the session can be asked.
+- Never proposes; a choice it finds open is set out for Propose.
 
 ## Gate
 

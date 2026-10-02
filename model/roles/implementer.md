@@ -23,8 +23,7 @@ The change the brief specifies, test first where the brief says so; the commit i
 
 - Never spawns a subagent or a reviewer; review comes from the Controller after the report.
 - Never changes a test's expectation to make it pass.
-- Never merges, tags or edits a pull request.
-- Never claims a check it did not run.
+- Never edits a pull request it did not open.
 
 ## References
 

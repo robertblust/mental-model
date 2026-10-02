@@ -33,8 +33,7 @@ The Owner's word from Propose. Where an action the word covers is refused by the
 
 ## What it never does
 
-- Never does more than the word covered, however small the step beyond it.
-- Never does what another session was refused.
+- Never leaves out of the report a mistake made on the way.
 
 ## Gate
 

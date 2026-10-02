@@ -22,10 +22,7 @@ Decisions, recorded where they bind: a merge, a tag, a release, a signed contrac
 
 ## What it never does
 
-- Never lets a made thing outlive a disagreement with the model; the model is corrected and
-  the thing rebuilt.
-- Never delegates a merge, a tag or a signature; an agent opens and reports, the Owner merges.
-- Never states a number that was not counted or a claim the model does not hold.
+- Never delegates a signature.
 
 ## References
 
