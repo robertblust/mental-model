@@ -6,4 +6,4 @@ locale: en-US
 
 # Languages
 
-> This model is written in American English; the German its site and chat offer is translated from it and is not yet part of the model.
+> This model is written in American English; the German its site and chat offer is translated from it, outside the model.
