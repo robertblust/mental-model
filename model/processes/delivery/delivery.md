@@ -29,8 +29,6 @@ owner: Owner
 
 - Never begins a phase whose predecessor's gate the Owner has not approved.
 - Never makes the German from English the Owner has not reviewed.
-- Never lets a made thing outlive a disagreement with the model; the model is corrected and the
-  thing rebuilt.
 
 ## References
 

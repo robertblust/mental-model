@@ -49,7 +49,6 @@ A classified request, the model the change must not contradict, and whatever it 
 
 - Never writes the change it specifies.
 - Never decides a question that is the Owner's; it names the options and parks it.
-- Never states a fact the model does not hold.
 - Never leaves a question unasked because an assumption would be convenient.
 
 ## Gate

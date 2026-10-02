@@ -39,7 +39,6 @@ A branch that left Implement with its checks green, and the specification it was
 - Never chains a branch delete after a merge, because a failed merge would still run the delete
   and close the pull request.
 - Never leaves a member pinned to a release that no longer exists.
-- Never releases a change the model disagrees with.
 
 ## Gate
 
