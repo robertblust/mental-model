@@ -10,7 +10,7 @@ serves:
 
 # Nothing claims what the model does not hold
 
-> No spec, page or statement made for me claims a fact or a number the model does not hold.
+> No spec, page or statement made for me claims a fact or a number about me or my work that the model does not hold; a fact about code, such as a command's flags, is taken from the repository that holds the code.
 
 ## Why
 
@@ -22,4 +22,5 @@ The model is where a fact about me is mastered, with its evidence; a claim made 
 | --- | --- | --- |
 | role | Owner | |
 | role | Specifier | |
+| role | Writer | |
 | phase | Spec | Delivery |
