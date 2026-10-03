@@ -28,6 +28,7 @@ skills:
 - Posted CompanyGraph on Sep 18, 2026 by asking my own model to finish the sentence "whoever asks about my work", its answer shown as a recording and the film Governance as data in the comment.
 - Posted the closing talk's claim on Sep 25, 2026, building fast is solved and deciding well is not, with the October decision in one line and a thanks by name to the former colleagues whose feedback every application was read against.
 - Posted Your company doesn't compile on Sep 28, 2026 with its episode, a first comment that sets the hosts' closing question right and opens the chat on companygraph.io, and a second that invites the reader to try the command line.
+- Posted the decision on Oct 3, 2026, the architect role the career break ended in named as Läderach and chosen for the culture the interviews showed, as the text of LinkedIn's new-position share.
 
 ## References
 
@@ -38,3 +39,4 @@ skills:
 | Post of Sep 18, 2026, on CompanyGraph, asked of its own model | https://www.linkedin.com/posts/robertblust_companygraph-aiagents-activity-7506632174431821825-zyEr |
 | Post of Sep 25, 2026, on building fast and deciding well | https://www.linkedin.com/posts/robertblust_companygraph-guestgraph-agenticai-share-7509184159257452544-F7Zf |
 | Post of Sep 28, 2026, on your company not compiling | https://www.linkedin.com/posts/robertblust_companygraph-guestgraph-knowledgemanagement-share-7510336004667498496-y7_- |
+| Post of Oct 3, 2026, on the role at Läderach | https://www.linkedin.com/posts/robertblust_companygraph-guestgraph-architecture-share-7512034116159340544-wqUB |
