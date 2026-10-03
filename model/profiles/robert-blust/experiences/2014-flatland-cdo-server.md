@@ -29,18 +29,19 @@ skills:
 
 ### Architecture
 
-- Published a client beside it, in AngularJS, that browses any model the server holds rather than one model in particular, so a new metamodel is explorable without a screen built for it, and the organization above was worked with through that client.
 - Made the REST interface generic by going through EMF's reflective API rather than generated accessors, so a model added to the repository is readable and writable the same day without an endpoint written for its types.
 - Designed a base vocabulary every model on top inherits — identity, naming, description, comments, hyperlinks, free-form properties, ratings and a global search marker — so the models above it describe their own domain and nothing else.
 - Wrote the base vocabulary and the organization metamodel in Xcore, so a derived figure such as free capacity is a feature of the language rather than code beside it.
-- Described 3AP's own organization in that vocabulary: circles nested inside circles, roles carrying responsibilities and an assignment joining a person to a role in a circle with a capacity and a validity window, which is what makes the structure answerable by date rather than only as it stands today.
-- Kept two kinds of time apart, which is what makes the model answerable rather than merely current. A role assignment carries the dates it was in force, and every derived figure has a by-date twin, so the organization can be asked what it looked like on a given day. Underneath, the repository keeps every revision and the interface takes a point in time, so it can also be asked what it said on a given day — and refuses a write against a past one, because history is not a thing to correct.
+- Described 3AP's own organization in that vocabulary: circles nested inside circles, roles carrying responsibilities and an assignment joining a person to a role in a circle with a capacity and a validity window, which is what makes the structure answerable by date rather than only as it stands today, and worked with through the client published beside the repository.
 - Derived the questions a management team actually asks from that model instead of maintaining answers by hand — a circle's capacity including everything nested under it, who leads or deputizes where, which roles are assigned but unmatched and which are defined and unfilled.
+- Kept two kinds of time apart, which is what makes the model answerable rather than merely current. A role assignment carries the dates it was in force, and every derived figure has a by-date twin, so the organization can be asked what it looked like on a given day. Underneath, the repository keeps every revision and the interface takes a point in time, so it can also be asked what it said on a given day — and refuses a write against a past one, because history is not a thing to correct.
+- Published a client beside it, in AngularJS, that browses any model the server holds rather than one model in particular, so a new metamodel is explorable without a screen built for it.
 
 ### Engineering
 
 - Shipped it as something to run rather than assemble — an OSGi product with its own target platform, build and product tests, packaged as a container image — because a model repository that takes a week to stand up is one nobody tries.
-- Wrote a plugin authenticating CDO sessions against LDAP, and later took bearer tokens at the REST boundary, so the repository could sit behind the same identity as everything around it.
+- Wrote a plugin authenticating CDO sessions against LDAP, so the repository could sit behind the same identity as everything around it.
+- Later took bearer tokens at the REST boundary, so the REST interface sat behind that identity too.
 
 ### Results
 

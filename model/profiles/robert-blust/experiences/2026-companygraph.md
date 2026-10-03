@@ -40,9 +40,9 @@ skills:
 
 - Published the core as one shipped unit — a schema per type and numbered conventions that make the graph checkable — with a worked example company and an instance parser, released by tag with a manifest per release.
 - Built the reference instance from it: this profile, its experiences, its skills on a proficiency ladder and its values, every claim traced to an experience that shows it.
+- Gated the instance on the checks the meta-model ships as a reusable workflow, so a change that breaks a rule cannot merge.
 - Wrote an MCP server that serves any instance to an agent through read-only tools, every answer naming the model commit it was read from, and deployed it for the reference instance at mcp.blust.ch, listed in the MCP Registry, its name, description and instructions written from the model rather than by hand.
 - Defined that deployment on Google Cloud in Terraform, planned on every pull request and applied by GitHub Actions on merge, with only a one-time bootstrap applied by hand.
-- Gated the instance on the checks the meta-model ships as a reusable workflow, so a change that breaks a rule cannot merge.
 - Made the deployment prove itself by calling a tool over the live endpoint, since the platform answers a health path on its own.
 - Added a test that fails the build when the lockfile resolves an older release than the pin names, after a stale one had built green.
 - Shipped the tooling inside the meta-model as one command that, run bare, opens a menu: it makes an instance that passes the checks on its first day, checks it, moves its vendored core to a newer release and installs the Obsidian plugin.
