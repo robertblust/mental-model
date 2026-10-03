@@ -65,21 +65,22 @@ skills:
 
 ### Leadership
 
-- Owned the technology direction and developed the technical leadership as the company grew from 5 to 25 people.
+- Developed the technical leadership as the company grew from 5 to 25 people.
 - Held the technology gate at intake, discovery and delivery of the product cycle, arguing in each review what had to change for a decision to fit the architecture.
 - Led the Change Advisory Board that ISO 27001 requires, arguing in each review what had to change for a decision to stay compliant.
 - Used each gate and board review to coach the engineers who brought the decision.
-- Owned the platform's architecture decisions, each recorded with its status.
+- Recorded the platform's architecture decisions, each with its status.
 - Defined the technology roles, technical architect, business architect and site reliability engineer.
 - Led the functional team those roles formed.
-- Developed and executed the company-wide AI strategy — governance under a Human Oversight principle, organizational knowledge management and the productive rollout of AI assistants across plan, change and run; data-privacy guardrails (no internal context used to train external LLMs), multi-provider tooling (Claude, Gemini, Copilot, n8n) and cost governance.
+- Developed and executed the company-wide AI strategy across plan, change and run: governance under a Human Oversight principle, organizational knowledge management and the productive rollout of AI assistants.
+- Set the data-privacy guardrail that no internal context is used to train external LLMs.
 - Took the teams through the AI rollout rather than only switching it on: trained them, worked through the resistance with their leads and tracked adoption after go-live.
 - Managed the AI and automation tooling as a portfolio: Claude Code team licenses, multi-provider tooling across Claude, Gemini and Copilot and self-hosting n8n on the platform's own Kubernetes rather than taking the hosted service.
 - Defined and executed the product and platform strategy across 12 business domains (L0 concepts, L1 capabilities) — API-first, with a managed public API and event/data hub, evolving toward an MCP-server layer so AI agents consume the platform directly.
 - Led the reassessment when the Camunda contract came up for renewal: the platform used a fraction of what the engine offered, so the choice was to build on it properly or take it out. Recommended building on it; the decision went to removal, and the orchestration was replaced with the platform's own in April 2023.
 - Held the budget for the cloud platform and AI tooling, forecasting and governing spend across dev, test and production.
 - Generated weekly actuals automatically from the Google Cloud billing API against consumption KPIs defined in the Mental Model, routed to owners by role when a threshold was breached.
-- Built information-security management: ISO 27001 (in progress), GDPR compliance and zero-trust API boundaries.
+- Built information-security management toward ISO 27001 (in progress) and GDPR compliance.
 - Set up the escalation board for critical, security-relevant incidents inside the information-security management.
 - Set LIKE MAGIC up as processor, with the hotels as controllers and a data processing agreement in every customer contract.
 
@@ -94,17 +95,17 @@ skills:
 
 ### Engineering
 
-- Wrote Java on the platform's Spring Boot WebFlux services, including the reference implementation of each pattern the architecture used, so a team built a new service from working code rather than from a description.
-- Drove process orchestration with Camunda for the end-to-end guest journey (Booking → Check-in → Stay → Check-out), carried over from Stay KooooK and run until 2023, its BPMN model extended as the platform grew.
 - Owned the production cloud platform, built as infrastructure as code on Google Cloud and run on Google Kubernetes Engine, through site reliability engineering, incident management and performance work.
 - Set its DevOps and CI/CD standards on GitHub Actions, unit and integration tests required on every pipeline.
 - Instrumented it on Cloud Monitoring and Cloud Trace with alerting driven by defined SLOs, end-to-end traceability and continuous monitoring being architecture principles the services were built to rather than instrumentation added afterward.
+- Automated production monitoring and alerting by severity under site reliability engineering, notifying the people responsible by email, SMS and Slack.
+- Wrote Java on the platform's Spring Boot WebFlux services, including the reference implementation of each pattern the architecture used, so a team built a new service from working code rather than from a description.
+- Drove process orchestration with Camunda for the end-to-end guest journey (Booking → Check-in → Stay → Check-out), carried over from Stay KooooK and run until 2023, its BPMN model extended as the platform grew.
 - Built the LIKE MAGIC Mental Model — a structured organizational knowledge base (roles, processes, features, strategies, architecture decisions) that serves as the shared context layer for AI-assisted operations.
 - Shipped the Mental Model as a skill into the company's Claude environment, so every assistant worked from the same context.
 - Kept it in step with the systems it described through MCP rather than bespoke integrations — Atlassian, Google Drive and Slack servers wired into the agent that maintained it, reading and writing Confluence pages, Jira issues, Google Docs and Sheets, each command scoped to a named allowlist of the tools it was allowed to call.
 - Built an internal AI marketplace on Claude (Claude Cowork) — giving teams governed access to AI assistants and agents, grounded in the Mental Model.
 - Made every API boundary check its caller: partners on the public API held OAuth 2.0 tokens scoped to the resources they were granted, and guests and employees held role-based tokens.
-- Automated production monitoring and alerting by severity under site reliability engineering, notifying the people responsible by email, SMS and Slack.
 - Built the event and data hub every service published its business events to — ingesting them into BigQuery for analytics, idempotent on the event id so a redelivery cannot double-count and serving them back as a queryable event log with webhook subscriptions for systems that needed them pushed.
 
 ### Ways of working

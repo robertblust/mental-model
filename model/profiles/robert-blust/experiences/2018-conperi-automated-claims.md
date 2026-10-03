@@ -41,9 +41,9 @@ skills:
 
 ### Engineering
 
-- Put every service on a build pipeline from the first commit, including the rule that stops a build when nothing in its own subdirectory changed — a monorepo of eight services otherwise rebuilds all of them for one edit.
 - Built and ran the platform underneath it on Google Kubernetes Engine, from cluster creation to the Kafka backbone, the document store, distributed tracing, the OAuth gateway in front of the services and GPU nodes in the one region that had them so models could be trained where the data already was.
 - Made that platform self-service for ZHAW's researchers: they deployed a new model service and trained on the GPU nodes on their own, without asking 3AP.
+- Put every service on a build pipeline from the first commit, including the rule that stops a build when nothing in its own subdirectory changed — a monorepo of eight services otherwise rebuilds all of them for one edit.
 - Built the labeling tool that made training possible: a browser application for drawing regions over an invoice and naming what each one held. Labeled invoices were the bottleneck the whole project ran into, and none existed before this.
 
 ### Results

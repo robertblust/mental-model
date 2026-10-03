@@ -36,9 +36,9 @@ skills:
 
 - Made identity the platform's job rather than each service's: Keycloak issuing the tokens, social sign-in trusted into it and the gateway verifying the token before routing, so a service behind it receives requests already authenticated and no service holds a login of its own.
 - Gave the organization model an interface a normal application can use: a GraphQL service reading the CDO repository through its client, which is what turned circles, roles and assignments from something only a modeling tool could open into something a front end could ask questions of.
-- A notification service any project could call instead of integrating messaging vendors of its own: one authenticated POST, delivered as e-mail, SMS or a Slack message, with the vendor behind each channel a detail of the platform rather than of the project.
+- Gave the platform a notification service any project could call instead of integrating messaging vendors of its own: one authenticated POST, delivered as e-mail, SMS or a Slack message, with the vendor behind each channel a detail of the platform rather than of the project.
 - Separated accepting a message from delivering one — the receiving service publishes to a queue for each channel and a service per channel consumes it — so a vendor that is slow or down delays delivery instead of failing the caller.
-- Modeled both platforms' own vocabularies side by side in PlantUML beside the code — organization, space, application and a bound service on one; project, cluster, pod and an exposing service on the other — so that what the two call the same thing, and where they genuinely differ, could be read rather than argued about.
+- Modeled both platforms' own vocabularies, Cloud Foundry's and Kubernetes', side by side in PlantUML beside the code — organization, space, application and a bound service on one; project, cluster, pod and an exposing service on the other — so that what the two call the same thing, and where they genuinely differ, could be read rather than argued about.
 
 ### Engineering
 

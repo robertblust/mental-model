@@ -45,8 +45,7 @@ skills:
 - Made the conformance part analyze source code across the estate, the mainframe included, into EMF graphs held in the CDO model repository.
 - Derived from those graphs an automated metric for the technical coupling of software components and applications, which identified interactions between subsystems not conforming to the architecture's specifications.
 - Designed the textual language, built on Xtext, that projects defined their data types, interfaces and components in.
-- Drove the division's business architecture and capability modeling on EMF/Ecore.
-- Modeled the division's business capabilities, concepts, processes and actors as parts of one enterprise model, which architects used to steer new projects toward decisions that fit the enterprise model.
+- Modeled the division's business capabilities, concepts, processes and actors on EMF/Ecore as parts of one enterprise model, which architects used to steer new projects toward decisions that fit the enterprise model.
 - Partitioned the application architecture into application domains, which classified each application system template and fixed the principles that delineated one from another.
 - Represented UBS internationally in the Eclipse Modeling Platform Working Group, alongside Airbus, Ericsson, Alcatel-Lucent, SBB and SWIFT among others.
 

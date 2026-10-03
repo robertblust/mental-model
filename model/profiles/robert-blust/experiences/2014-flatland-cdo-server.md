@@ -39,7 +39,7 @@ skills:
 
 ### Engineering
 
-- Shipped it as something to run rather than assemble — an OSGi product with its own target platform, build and product tests, packaged as a container image — because a model repository that takes a week to stand up is one nobody tries.
+- Shipped it as something to run rather than assemble — an OSGi product in Java with its own target platform, build and product tests, packaged as a container image — because a model repository that takes a week to stand up is one nobody tries.
 - Wrote a plugin authenticating CDO sessions against LDAP, so the repository could sit behind the same identity as everything around it.
 - Later took bearer tokens at the REST boundary, so the REST interface sat behind that identity too.
 

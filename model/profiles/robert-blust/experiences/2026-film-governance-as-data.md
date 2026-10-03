@@ -18,7 +18,8 @@ skills:
 
 ### Ways of working
 
-- Wrote the story first, as the one source the notebook was given: sixteen scenes, then a section naming the facts the film may state and a section naming what it must not say. The failure this film was prone to was implying breadth, because the vocabulary it describes is wide and only part of it ships, and a reader who finds that gap themselves trusts nothing else in the piece afterward. One scene carries the three limits alone and was the first to check in the transcript.
+- Wrote the story first, as the one source the notebook was given: sixteen scenes, then a section naming the facts the film may state and a section naming what it must not say. The failure this film was prone to was implying breadth, because the vocabulary it describes is wide and only part of it ships, and a reader who finds that gap themselves trusts nothing else in the piece afterward.
+- Gave the three limits a scene of their own and checked it first in the transcript.
 - Read the transcript against the sources and recorded four places where the narration left the story, none carried into the published description: a claim that data cannot be silently lost, where the sources say only that a broken reference is an error; an intensifier the voice rules forbid; culture, which appears nowhere in the sources; and two of the story's four questions going unspoken.
 - Found the film's figures already passed by the model within days of the render and wrote the description to carry no count at all — what exists, and where the model states its own size — rather than a fresher number that would go stale the same way. It was the first published piece written under the rule the model had adopted for itself the week before.
 
