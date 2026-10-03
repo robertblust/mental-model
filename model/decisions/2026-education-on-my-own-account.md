@@ -5,8 +5,6 @@ decided: 2026-09-08
 kind: Career
 status: Standing
 by: Owner
-upholds:
-  - Decide well over build fast
 ---
 
 # The education is on my own account, and the fifth day stays mine

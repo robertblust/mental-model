@@ -7,7 +7,7 @@ horizon: 2029
 
 # A continuing-education master's in AI leadership
 
-> By the horizon I hold a MAS, a continuing-education master's, in AI leadership, earned beside the architect role and on my own account.
+> By the horizon I hold a MAS, a continuing-education master's, in AI leadership.
 
 ## What it makes true
 

@@ -6,7 +6,7 @@ kind: Career
 
 # Has Robert worked in insurance?
 
-> Two projects at 3AP say it: the AXA Health platform for complementary health insurance, and Conperi, which read health-insurance invoices into claims.
+> The AXA Health insurance platform and the Conperi claims proof of concept, both 3AP projects, say what he built for insurers.
 
 ## Rests on
 

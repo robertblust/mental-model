@@ -23,3 +23,9 @@ Claude Code's permission layer, before the agent's command runs: it judges the a
 | role | Implementer | |
 | role | Surveyor | |
 | phase | Integrate | Delivery |
+
+## References
+
+| What | URL |
+| --- | --- |
+| Claude Code permissions and auto mode | https://code.claude.com/docs/en/permissions |

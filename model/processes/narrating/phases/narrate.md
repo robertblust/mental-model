@@ -44,7 +44,7 @@ A deck whose English notes are reviewed and whose German notes were made from th
 
 | Outcome | Leads to |
 | --- | --- |
-| voice changes | Narrate |
-| note changes | |
+| re-voiced | Narrate |
+| note revised | |
 
-A note that changes goes back through Delivery.
+A revised note goes back through Delivery.
