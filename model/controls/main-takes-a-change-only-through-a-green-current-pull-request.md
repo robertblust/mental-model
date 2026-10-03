@@ -14,7 +14,7 @@ enforces:
 
 ## How it is carried out
 
-GitHub's ruleset on each repository's default branch, on every attempt to change it: it refuses a direct push, a force push and a deletion, allows a pull request to be merged only with a merge commit where the repository says so, requires the named checks to pass, and requires the branch to be up to date with the default branch, so a pull request whose base has moved shows as behind until main is merged into it.
+GitHub's ruleset on each repository's default branch, on every attempt to change it: it refuses a direct push, a force push and a deletion, allows a pull request to be merged only with a merge commit where the repository says so, requires the named checks to pass, and requires the branch to be up to date with the default branch, so a pull request whose base has moved shows as behind until main is merged into it. The ruleset lets a repository admin bypass it.
 
 ## Applies to
 
