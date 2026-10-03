@@ -28,7 +28,7 @@ image: robert-blust.jpg
 | CI/CD | Expert |
 | Cloud architecture | Expert |
 | Community building | Expert |
-| Company vision and strategy | Proficient |
+| Company vision and strategy | Competent |
 | Consulting | Proficient |
 | Container orchestration (Kubernetes) | Proficient |
 | Context engineering | Expert |
@@ -57,7 +57,7 @@ image: robert-blust.jpg
 | IT strategy | Expert |
 | Java | Expert |
 | Knowledge management | Proficient |
-| Legacy modernization | Proficient |
+| Legacy modernization | Competent |
 | Machine learning | Familiar |
 | Mentoring and coaching | Proficient |
 | Microservices architecture | Expert |
@@ -131,8 +131,6 @@ image: robert-blust.jpg
 | Community building | Co-led the division's Java Chief Developer committee for five years, the forum in which the division's lead engineers set common practice. | IT Architect — Software Development Lifecycle Toolchain |
 | Community building | Co-organized the three Eclipse events UBS hosted in Zürich, MDD Day 2010 and Finance Day 2012 and 2014 (2010–2014). | IT Architect — Software Development Lifecycle Toolchain |
 | Community building | Served on the board of the Swiss Eclipse User Group within JUG Switzerland. | Swiss Eclipse User Group board |
-| Company vision and strategy | Co-founded 3AP and sat on the management team that took it from 5 to about 70 people. | Co-Founder & CTO |
-| Company vision and strategy | Co-founded LIKE MAGIC and set its product, platform and AI strategy. | Co-Founder & Head of Technology |
 | Company vision and strategy | Published GuestGraph as open core with a billing model on one meter, arrivals. | GuestGraph |
 | Company vision and strategy | Published CompanyGraph as open core with a billing model beside it. | CompanyGraph |
 | Consulting | Created the technical concepts, proposals and pitches for 3AP's client work as CTO and advised Credit Suisse, Swisscard, AXA and Mobiliar on the architecture behind theirs, diagnosing the current system before recommending anything. | Co-Founder & CTO |
@@ -222,11 +220,9 @@ image: robert-blust.jpg
 | Knowledge management | Established communities of practice at UBS and kept the division's methodology and guidance in Rational Method Composer, published as its SDLC instance. | Solution Manager, Software Engineering — Analysis & Design |
 | Knowledge management | Built the LIKE MAGIC Mental Model as the organization's shared context layer. | Co-Founder & Head of Technology |
 | Knowledge management | Published CompanyGraph so a shared context layer like the Mental Model can be kept as Markdown in a repository with a history. | CompanyGraph |
-| Legacy modernization | Architected DynaRep, generating COBOL and Java implementations for UBS mainframe service interfaces. | Solution Manager, Software Engineering — Analysis & Design |
 | Legacy modernization | Replaced Swisscard's proprietary SOAP data-integration layer with Spring Boot behind the same WSDL contract, so no consumer had to change. | Swisscard data integration rewrite |
 | Machine learning | Architected the pipeline, the labeling tool and the serving path for Conperi, 3AP's applied-research proof of concept with ZHAW for reading health-insurance invoices, and followed ZHAW's modeling closely enough to supply what it needed — GPU training nodes and a labeled dataset where none existed. | Conperi |
 | Mentoring and coaching | Coached UBS project teams in the Analysis & Design methodology and built internal communities of practice. | Solution Manager, Software Engineering — Analysis & Design |
-| Mentoring and coaching | Ran workshops with UBS engineering teams on the concepts of the Integration Architecture Tool Chain and helped build the UBS Academy's education on the software development lifecycle. | IT Architect — Software Development Lifecycle Toolchain |
 | Mentoring and coaching | Mentored 3AP's engineers through the reference architecture as the company scaled to about 70 people, developing its reference sample, explaining it to each team and guiding the developers building on it. | Co-Founder & CTO |
 | Mentoring and coaching | Coached LIKE MAGIC's engineers through the technology gate and the Change Advisory Board, arguing in each review what a decision had to change to fit the architecture and stay compliant. | Co-Founder & Head of Technology |
 | Microservices architecture | Authored 3AP's microservice reference architecture and built AXA Health to it: event-driven, 12-factor, the service cut driven by business capability. | Co-Founder & CTO |
@@ -330,7 +326,6 @@ image: robert-blust.jpg
 | Technical writing | Wrote a brief before every post naming its reader, its one point and where each claim is shown, and kept the text as posted beside the draft. | The career break experiment on LinkedIn |
 | Technical writing | Wrote a blog post that answers the ideas page's two questions with every figure checked against its source and every claim linked where it stands. | One question answered. One still open. |
 | UX design | Designed the Flatland CDO Server's model browser to show any model the server holds, so a new metamodel is explorable without a screen built for it. | Flatland CDO Server |
-| UX design | Gave Credit Suisse's Master Data Repository a front end on the design of the Flatland CDO Server's generic model browser, following its metamodel rather than a screen built per type. | Credit Suisse Master Data Repository |
 | UX design | Designed the pages of blust.ch, companygraph.io and guestgraph.io and the design system they share, and had the agent seats build them, each page checked rendered in the browser. | blust.ch |
 | Vendor management | Ran LIKE MAGIC's AI and automation tooling as a managed portfolio: Claude Code team licenses, multi-provider tooling across Claude, Gemini and Copilot and the call to self-host n8n on its own Kubernetes rather than take the hosted service. | Co-Founder & Head of Technology |
 | Vendor management | Led the call on Camunda at contract renewal, where the platform used a fraction of the engine and the choice was to build on it or leave it, recommending building on it before the decision went to removal (2022–2023). | Co-Founder & Head of Technology |

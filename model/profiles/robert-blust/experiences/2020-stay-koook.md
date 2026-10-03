@@ -34,7 +34,7 @@ skills:
 
 ### Leadership
 
-- Owned the complete architecture, front to back, built to 3AP's microservice reference architecture and the last project to be: React and TypeScript frontend, MUI from 2021; reactive Spring Boot WebFlux backend publishing and consuming through Spring Cloud Stream over Pub/Sub; Camunda (Zeebe) process orchestration; Google Cloud, Kubernetes and PostgreSQL.
+- Owned the complete architecture, front to back, a React and TypeScript front end over a reactive Spring Boot backend, on the last project built to 3AP's microservice reference architecture.
 - Presented the solution architecture at the winning pitch.
 
 ### Architecture
@@ -54,7 +54,7 @@ skills:
 ### Results
 
 - Won Best Use of Technology at the Serviced Apartment Awards 2021; was nominated for the Best Swiss Web Award 2021 (Innovation).
-- The platform became LIKE MAGIC, a spin-off from SV Group, and co-founding it was the reason for leaving 3AP.
+- The platform became LIKE MAGIC, a spin-off from SV Group.
 - As likeMagic, the platform won gold for Best Digital Transformation and silver for Customer Driven Business Change and Transformation at the European Customer Experience Awards 2022.
 
 ## References

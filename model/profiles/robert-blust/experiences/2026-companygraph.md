@@ -15,7 +15,6 @@ skills:
   - Open-source stewardship
   - Product discovery
   - Company vision and strategy
-  - Public speaking
   - AI tool integration (MCP)
   - Infrastructure as code
   - CI/CD

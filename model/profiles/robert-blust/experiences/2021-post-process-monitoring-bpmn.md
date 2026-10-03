@@ -32,7 +32,7 @@ skills:
 
 ### Engineering
 
-- Published a runnable sample alongside it, still public: a Spring Boot service taking the webhooks behind an OpenAPI description, a Zeebe engine and Camunda Operate in one Docker Compose file and the guest-journey model itself, Stay KooooK's own.
+- Published a runnable sample alongside it, still public: a Spring Boot service in Java taking the webhooks behind an OpenAPI description, a Zeebe engine and Camunda Operate in one Docker Compose file and the guest-journey model itself, Stay KooooK's own.
 
 ### Results
 

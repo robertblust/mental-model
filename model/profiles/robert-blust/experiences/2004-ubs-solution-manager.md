@@ -21,7 +21,6 @@ skills:
   - Model-driven engineering
   - Domain-specific language design
   - Software architecture
-  - Legacy modernization
 ---
 
 # Solution Manager, Software Engineering — Analysis & Design
@@ -36,20 +35,24 @@ skills:
 
 ### Leadership
 
-- Took on software-architect and project-management responsibility for the DynaRep platform, leading its project team of ten.
+- Led DynaRep's project team of ten as its architect and project manager.
 - Defined the department-wide role model — each role with its tasks and the competencies it carried — and put it through a formal consultation before it took effect.
 - Joined the division's Java Chief Developer committee and led it for two years.
-- Coached project teams in applying the methodology and built internal communities of practice.
+- Coached project teams in applying the methodology.
 
 ### Architecture
 
-- Architected and built “DynaRep – Dynamic Repository”, a repository-based modeling tool for managing UBS mainframe service interfaces — Eclipse plugins, web services and code generators producing the COBOL/Java service implementations (Java, SOAP, Oracle, MDSD).
+- Architected and built “DynaRep – Dynamic Repository”, a repository-based modeling tool for managing UBS mainframe service interfaces — Eclipse plugins, web services and code generators producing the COBOL/Java service implementations.
 - Designed the domain-specific language DynaRep's interfaces were modeled in, implemented in Java as an Eclipse plugin with a graphical editor.
 
 ### Ways of working
 
 - Developed methodology and guidance for service and data modeling (Rational Method Composer, UML) — how a requirement was elicited, written and carried into a design the delivery teams worked from.
 - Kept that guidance in Rational Method Composer and published it as the division's SDLC instance, the one place project teams looked up how a discipline was done.
+
+### Sharing
+
+- Built internal communities of practice around the methodology.
 
 ### Results
 

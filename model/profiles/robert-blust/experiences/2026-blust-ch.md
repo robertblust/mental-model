@@ -6,7 +6,6 @@ start: 2026-08
 url: https://blust.ch
 skills:
   - Agentic AI development
-  - Public speaking
   - Technical writing
   - UX design
   - CI/CD

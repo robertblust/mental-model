@@ -41,8 +41,8 @@ skills:
 ### Engineering
 
 - Together with comtac AG (a canton-Zürich LoRaWAN electronics specialist), delivered an MVP of 10 working prototypes (RFID modules + LoRaWAN, backend on Swisscom Application Cloud).
-- Built the backend to 3AP's microservice reference architecture on Spring and Java 11, released through a Jenkins pipeline — consuming device uplink and configuration events over AMQP from Swisscom's LoRaWAN broker, holding them in a reactive MongoDB repository, pushing them on to the client as server-sent events and feeding the data into the ERP over an API, which closes the loop so consumed or expired modules trigger automatic reordering.
-- Transformed the raw telemetry on the platform's side into the data the ERP needed, then pushed it to the ERP.
+- Built the backend to 3AP's microservice reference architecture on Spring and Java 11, released through a Jenkins pipeline.
+- Closed the reorder loop: device uplinks consumed over AMQP from Swisscom's LoRaWAN broker, held in a reactive MongoDB repository, pushed to the client as server-sent events and transformed into the data the ERP needed, so a consumed or expired module triggers its reorder.
 
 ### Results
 
