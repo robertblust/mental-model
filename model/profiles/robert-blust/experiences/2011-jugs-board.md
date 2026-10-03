@@ -23,7 +23,8 @@ skills:
 
 ### Sharing
 
-- Co-organized the annual Eclipse DemoCamp (Zürich) and Eclipse Finance Day.
+- Co-organized the annual Eclipse DemoCamp in Zürich.
+- Co-organized Eclipse Finance Day.
 
 ## References
 

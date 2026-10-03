@@ -26,9 +26,6 @@ skills:
 ### Context
 
 - Built the Master Data Repository (MDR) for Credit Suisse Client Data Management — managing data items and classifying their source systems so data stewards could be assigned, and mapping the distribution of data across the core systems (golden source vs. slave), identified and visualized for governance.
-
-### Leadership
-
 - Delivered to satisfy a FINMA regulatory requirement.
 
 ### Architecture
@@ -37,7 +34,8 @@ skills:
 
 ### Engineering
 
-- Implemented on the Flatland CDO Server rather than on stock Eclipse CDO — the model repository published as open source two years earlier, brought to a bank as the foundation of paid work — with an Angular front end built along the same lines as the generic model browser published beside that server, and fed by static source-code analysis and several data sources to discover and connect the model.
+- Implemented it on the Flatland CDO Server rather than on stock Eclipse CDO — the model repository published as open source two years earlier, brought to a bank as the foundation of paid work.
+- Built its Angular front end along the same lines as the generic model browser published beside that server.
 - Built the ingestion that filled it from two sources: the output of the bank's existing source-code analysis and the database schemas of the core systems, both read and transformed on the way in.
 
 ### Results

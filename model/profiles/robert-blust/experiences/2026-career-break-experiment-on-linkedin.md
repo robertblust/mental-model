@@ -6,7 +6,6 @@ start: 2026-09
 url: https://www.linkedin.com/in/robertblust/recent-activity/all
 skills:
   - Storytelling
-  - Technical writing
 ---
 
 # The career break experiment on LinkedIn

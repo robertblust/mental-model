@@ -5,6 +5,7 @@ kind: Role
 start: 1999-10
 end: 2001-03
 organization: UBS AG
+role: Trainee
 ---
 
 # UBS IT-Developer Program

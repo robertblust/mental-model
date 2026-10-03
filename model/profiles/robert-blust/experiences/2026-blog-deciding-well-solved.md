@@ -23,7 +23,9 @@ skills:
 
 ### Ways of working
 
-- Built the section the way the family builds anything: a reviewed specification and a plan before the pages, the index list lifted into the design package as a block rather than copied, and the German made by the four roles the conventions define, translator, editor, back-reader and fidelity, each an agent seat under its written file and none of them deciding; the owner picked among the flagged sentences.
+- Built the blog section from a reviewed specification and a plan before the pages.
+- Lifted the index list into the design package as a block rather than copying it.
+- Had the German made by the four roles the conventions define, translator, editor, back-reader and fidelity, each an agent seat under its written file and none of them deciding; the owner picked among the flagged sentences.
 
 ### Results
 

@@ -34,7 +34,8 @@ skills:
 - Showed the deciding half by how far the same work can be counted: 95 specs and 105 plans, every change through five phases with a gate the Owner approves before the next begins, an agent opening and reporting and the Owner merging, and 1,360 decisions read out of the specs by agents and kept only where the quote is found in its spec, because the model has no type for a decision yet and the slide says so.
 - Offered CompanyGraph as the answer to the gap: agents build fast and lack what was decided and why, so a company writes its knowledge down once as one graph, read by people and agents alike, and three instances each in git and each served three ways, as a site, an MCP server and a chat.
 - Closed on a proposal rather than a result: decide well with a mental model and agentic AI, offered for validation and not yet proven, with the risk named that all of it rests on a few providers and their prices and terms.
-- Published it as a self-contained bilingual deck with a transport bar, narration recorded from the speaker notes in each language and a PDF of each, and a cost page beside it that prices the same result as a Swiss delivery team and as it happened, the owner's hours counted in both.
+- Published it as a self-contained bilingual deck with a transport bar, narration recorded from the speaker notes in each language and a PDF of each.
+- Put a cost page beside it that prices the same result as a Swiss delivery team and as it happened, the owner's hours counted in both.
 
 ## References
 

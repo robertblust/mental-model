@@ -19,7 +19,8 @@ skills:
 ### Ways of working
 
 - Generated the episode with Gemini Notebook from CompanyGraph's own model and the meta-model's conventions, so the hosts argue from the rules themselves: that an unresolvable reference fails the check rather than warning, that a field the schema does not declare is an error so a rename cannot half-happen, that a decision keeps the alternatives that lost, that every KPI names what it can hide, and that an agent opens the pull request while the Owner merges.
-- Read the transcript against the model and the vendored core before publishing and kept every place where the hosts stray, to be named before anyone else names them. The one that would mislead a listener is answered in the published description: the hosts close by asking whether the business is a projection of the model, where R17 makes the model the master of what is made from it and not of the company it describes.
+- Read the transcript against the model and the vendored core before publishing and kept every place where the hosts stray, to be named before anyone else names them.
+- Answered in the published description the one stray that would mislead a listener: the hosts close by asking whether the business is a projection of the model, where R17 makes the model the master of what is made from it and not of the company it describes.
 
 ### Sharing
 

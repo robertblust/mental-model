@@ -14,7 +14,6 @@ skills:
   - Open-source stewardship
   - Product discovery
   - Company vision and strategy
-  - Public speaking
   - CI/CD
   - Data governance
 ---

@@ -19,8 +19,8 @@ skills:
 
 ### Context
 
-- One of 3AP's first client mandates: replaced a proprietary Informatica Data Services SOAP layer fronting the core platform with a Spring Boot / Spring WS implementation — preserving the existing WSDL contract so no consumer had to change.
+- One of 3AP's first client mandates: a proprietary Informatica Data Services SOAP layer fronted the core platform.
 
 ### Engineering
 
-- Built on Spring Boot / Spring Data / Spring WS with Jenkins, JUnit and MSSQL.
+- Replaced that SOAP layer with a Spring Boot / Spring WS implementation over MSSQL through Spring Data, preserving the existing WSDL contract so no consumer had to change, with JUnit tests run on Jenkins.

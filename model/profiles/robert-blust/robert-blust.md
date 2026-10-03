@@ -323,7 +323,6 @@ image: robert-blust.jpg
 | Technical writing | Published an article on process monitoring with BPMN, with the runnable sample it describes. | Process Monitoring with BPMN |
 | Technical writing | Wrote the developer documentation for LIKE MAGIC's public API, which conversational AI providers and other partners integrated against without LIKE MAGIC building the integration. | Co-Founder & Head of Technology |
 | Technical writing | Wrote CompanyGraph's conventions, design specs and worked example, prose other people follow for readers who were not in the room. | CompanyGraph |
-| Technical writing | Wrote a brief before every post naming its reader, its one point and where each claim is shown, and kept the text as posted beside the draft. | The career break experiment on LinkedIn |
 | Technical writing | Wrote a blog post that answers the ideas page's two questions with every figure checked against its source and every claim linked where it stands. | One question answered. One still open. |
 | UX design | Designed the Flatland CDO Server's model browser to show any model the server holds, so a new metamodel is explorable without a screen built for it. | Flatland CDO Server |
 | UX design | Designed the pages of blust.ch, companygraph.io and guestgraph.io and the design system they share, and had the agent seats build them, each page checked rendered in the browser. | blust.ch |

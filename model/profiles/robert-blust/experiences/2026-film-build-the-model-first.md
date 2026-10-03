@@ -19,8 +19,11 @@ skills:
 ### Ways of working
 
 - Fixed the film in a written brief before anything was generated: one point — a career is worth modeling rather than described, so a claim can be checked instead of believed — five threads each tied to the source file that carries it, an ending on the invitation in my words, and the constraints: no company, person or school from the 2026 job search, no salary figure, no AI vendor named, the figures in the sources used as they are and none added.
-- Rebuilt the export bundle before generating anything, because the generator reads a build and not the model: the committed bundle was five experiences behind, 31 against the model's 36, and its skills table disagreed too, so the brief's counts and the sources under them would have contradicted each other. Checked every entity off disk against the model before uploading.
-- Read the transcript against the sources before publishing and found two places where the narration strays: it says “Dynarap” for DynaRep and merges it with the Integration Architecture Tool Chain, a different thing five years later, and it says the central model blocked an unapproved connection, where the conformance part measured technical coupling and identified what did not conform and interfaces passed a role-based review. Wrote the published title, subtitle and description to avoid both, and verified the pull quotes against the transcript.
+- Rebuilt the export bundle before generating anything, because the generator reads a build and not the model: the committed bundle was five experiences behind, 31 against the model's 36, and its skills table disagreed too, so the brief's counts and the sources under them would have contradicted each other.
+- Checked every entity off disk against the model before uploading.
+- Read the transcript against the sources before publishing and found two places where the narration strays: it says “Dynarap” for DynaRep and merges it with the Integration Architecture Tool Chain, a different thing five years later, and it says the central model blocked an unapproved connection, where the conformance part measured technical coupling and identified what did not conform and interfaces passed a role-based review.
+- Wrote the published title, subtitle and description to avoid both.
+- Verified the pull quotes against the transcript.
 
 ### Sharing
 

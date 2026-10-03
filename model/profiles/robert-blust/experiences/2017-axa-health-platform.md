@@ -35,8 +35,8 @@ skills:
 
 ### Engineering
 
-- Built its signature automated health-insurer switching service: AXA sells only complementary insurance, not the mandatory basic insurance (which, by Swiss law, every resident must hold and no insurer may refuse). The service compares basic-insurance premiums each year and automatically moves AXA's complementary-insurance customers to the cheapest basic insurer — saving about CHF 426 per year on average, with AXA taking no basic-insurance commission to keep the advice neutral.
 - Built the Java/Spring Boot and Node.js backend with GraphQL APIs over MongoDB, to 3AP's microservice reference architecture and its delivery pipeline.
+- Built its signature automated health-insurer switching service: AXA sells only complementary insurance, not the mandatory basic insurance (which, by Swiss law, every resident must hold and no insurer may refuse). The service compares basic-insurance premiums each year and automatically moves AXA's complementary-insurance customers to the cheapest basic insurer — saving about CHF 426 per year on average, with AXA taking no basic-insurance commission to keep the advice neutral.
 - Designed the platform for AXA's own on-premise OpenShift — a platform the insurer ran itself, so the architecture had its elasticity without its managed services.
 
 ### Results

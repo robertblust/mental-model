@@ -42,12 +42,12 @@ skills:
 - Cut it into three parts along the roles that used it: the canonical data model and the conformance measurement, both for the business domain architects who governed that model, and interface design for the developers and software architects who specified their interfaces against it.
 - Generated the XML-Schema and WSDL artifacts from the canonical data model's platform-independent definitions of data types, interfaces and service contracts.
 - Ran the role-based review every team's interfaces had to pass, against a central API and interface-portfolio repository.
-- The conformance part analyzed source code across the estate, the mainframe included, producing EMF graphs held in the CDO model repository and an automated metric for the technical coupling of software components and applications, which identified interactions between subsystems not conforming to the architecture's specifications.
+- Made the conformance part analyze source code across the estate, the mainframe included, into EMF graphs held in the CDO model repository.
+- Derived from those graphs an automated metric for the technical coupling of software components and applications, which identified interactions between subsystems not conforming to the architecture's specifications.
 - Designed the textual language, built on Xtext, that projects defined their data types, interfaces and components in.
-- Drove the division's business architecture and capability modeling on EMF/Ecore.
-- Represented UBS internationally in the Eclipse Modeling Platform Working Group, alongside Airbus, Ericsson, Alcatel-Lucent, SBB and SWIFT among others.
-- Modeled the division's business capabilities, concepts, processes and actors as parts of one enterprise model, which architects used to steer new projects toward decisions that fit the enterprise model.
+- Modeled the division's business capabilities, concepts, processes and actors on EMF/Ecore as parts of one enterprise model, which architects used to steer new projects toward decisions that fit the enterprise model.
 - Partitioned the application architecture into application domains, which classified each application system template and fixed the principles that delineated one from another.
+- Represented UBS internationally in the Eclipse Modeling Platform Working Group, alongside Airbus, Ericsson, Alcatel-Lucent, SBB and SWIFT among others.
 
 ### Engineering
 
