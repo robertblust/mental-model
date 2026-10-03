@@ -2,8 +2,8 @@
 id: 01a0c5ad-aa40-72f0-b730-daf51669e89b
 source: Local
 kind: Education
-start: 2008
-end: 2008
+start: 2008-03
+end: 2008-05
 organization: UBS AG
 ---
 

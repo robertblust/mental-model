@@ -28,14 +28,10 @@ skills:
 
 - A digital-first self-service platform for complementary health insurance — customers and brokers configure products, calculate quotes and purchase policies across two integrated apps over one backend.
 
-### Leadership
-
-- Diagnosed what the core insurance system Adcubum Syrius allowed an integration to do before advising on it.
-- Owned the complete integration architecture and its implementation, including the integration with Syrius.
-
 ### Architecture
 
 - Designed the platform's software architecture: the microservice cut behind the two apps, the API both front ends were built against and the MongoDB data model beneath them.
+- Designed and built the platform's integration into the core insurance system Adcubum Syrius, after first establishing what Syrius allowed an integration to do.
 
 ### Engineering
 

@@ -28,14 +28,12 @@ skills:
 ### Context
 
 - An applied-research proof of concept for AXA Health: reading scanned invoices well enough to process a health-insurance claim without a person retyping it, built by 3AP with ZHAW as research partner.
-
-### Leadership
-
 - ZHAW made the modeling calls. The computer-vision work and the classifier that read a claim's positions were theirs; the pipeline they ran inside, the data that fed them and the path their output took to a consumer were 3AP's.
 
 ### Architecture
 
-- Architected the processing pipeline to 3AP's microservice reference architecture, on MongoDB and as Kafka-streamed services — Java and Spring Boot for the entry point, the gateway and the dataset management, Python inside the four services that did the modeling, which is the polyglot half of that architecture actually used — region detection over the scanned page, extraction of what was found, classification of the extracted positions and a quality gate before anything downstream trusted the result.
+- Architected the processing pipeline as four stages: region detection over the scanned page, extraction of what was found, classification of the extracted positions and a quality gate before anything downstream trusted the result.
+- Built it on the polyglot half of 3AP's microservice reference architecture: Java and Spring Boot for the entry point, the gateway and the dataset management, Python inside the four services that did the modeling.
 - Designed the microservice cut of the pipeline, one service per pipeline stage.
 - Designed the streams as one Kafka topic per pipeline stage, so each service consumed the output of the stage before it and no stage called another directly.
 - Designed the MongoDB data model the pipeline held its claims and datasets in.

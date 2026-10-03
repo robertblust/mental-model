@@ -49,7 +49,6 @@ skills:
   - Incident management
   - Change management
   - Mentoring and coaching
-  - Company vision and strategy
   - Organization design
   - Software architecture
 ---

@@ -23,8 +23,7 @@ skills:
 
 ### Leadership
 
-- Led the WPS Portal application's development and project delivery, including its maintenance and extension.
-- Onboarded Java developers onto the portal.
+- Led the WPS Portal's development and delivery as the portal every business domain, financial instruments, partner management and reference data among them, put its end-user interface on, and onboarded each domain team's Java developers to build on it.
 
 ### Architecture
 

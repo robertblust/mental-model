@@ -2,10 +2,10 @@
 id: 01a06198-3c50-7ae4-9e50-771c9ba3c2f3
 source: Local
 kind: Community
-start: 2014-10
-end: 2014-10
+start: 2014-10-31
+end: 2014-10-31
 url: https://wiki.eclipse.org/Eclipse_Finance_Day_2014/
-organization: Eclipse Foundation
+organization: JUG Switzerland
 role: Co-Organizer
 skills:
   - Community building
