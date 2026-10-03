@@ -28,7 +28,7 @@ A question held open by one person is answered by that person's habits. Held ope
 
 ## Consequences
 
-Twenty-five applications between June 9 and August 20, 2026, and an outcome that could be read by track: every leadership application led to an interview, fewer than half of the engineering ones did, two of the five architect ones did, and the offer taken was one of those two. The three leadership applications were a check on the premise, whether what I was used to being hired for still held, and not a third track; the one business engineer application sat between the two tracks. What it cost was the story: a former CTO applying for an engineering role is read as a flight risk unless the stay is stated first, and going back near the code had to be told as a choice and not a step down.
+Twenty-five applications between June 9 and August 20, 2026, and an outcome that could be read by track: every leadership application led to an interview, fewer than half of the engineering ones did, two of the five architect ones did, and the offer taken was one of those two. The three leadership applications were a check on the premise, whether what I was used to being hired for still held, and not a third track; the one business engineer application sat between the two tracks. What it cost was the story: a former CTO applying for an engineering role is read as a flight risk unless the stay is stated first, and going back near the code had to be told as a choice and not a step down. The call stays right for as long as the answer is read from who called back, what the rounds asked and which offer arrived, and not from the role I would have picked at the desk.
 
 ## Bears on
 

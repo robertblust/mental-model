@@ -47,6 +47,6 @@ An overview that has passed Survey. Where the overview is older than the questio
 | Outcome | Leads to |
 | --- | --- |
 | surveyed again | Survey |
-| waits | |
+| deferred | |
 
-A wait is a decision too, and the process ends with nothing carried out.
+Deferring is a decision too, and the process ends with nothing carried out.

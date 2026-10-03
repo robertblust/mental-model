@@ -6,7 +6,7 @@ kind: Cost
 
 # What does it cost to run this?
 
-> Each paid cloud service has a monthly cap and each subscription a tier, set in the Spending decisions and read by two KPIs; what was actually spent is not kept in the model. What building all of it cost is priced in the talk "Building fast is solved. Deciding well is not."
+> Each paid cloud service has a monthly cap and each subscription a tier, set in the Spending decisions and read by the Cap Use and Plan Fit KPIs; what was actually spent is not kept in the model. What building all of it cost is priced in the talk "Building fast is solved. Deciding well is not."
 
 ## Rests on
 
