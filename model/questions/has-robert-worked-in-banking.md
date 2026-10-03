@@ -6,7 +6,7 @@ kind: Career
 
 # Has Robert worked in banking?
 
-> His roles at UBS say what he did inside a bank, from the developer program to the architect's role, and two later projects say what he built for Swisscard and Credit Suisse.
+> His roles at UBS say what he did inside a bank, from the developer program to the architect's role, and later projects say what he built for Swisscard and Credit Suisse.
 
 ## Rests on
 
