@@ -2,12 +2,11 @@
 id: 01a0dda0-8e10-7d01-a25b-a3cc16e69728
 source: Local
 adopted: 2026-09-08
-horizon: 2029
 ---
 
 # A continuing-education master's in AI leadership
 
-> By the horizon I hold a MAS, a continuing-education master's, in AI leadership.
+> I hold a MAS, a continuing-education master's, in AI leadership.
 
 ## What it makes true
 
