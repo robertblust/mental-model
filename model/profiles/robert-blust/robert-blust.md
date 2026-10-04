@@ -325,8 +325,8 @@ image: robert-blust.jpg
 | Technical writing | Wrote a blog post that answers the ideas page's two questions with every figure checked against its source and every claim linked where it stands. | One question answered. One still open. |
 | UX design | Designed the Flatland CDO Server's model browser to show any model the server holds, so a new metamodel is explorable without a screen built for it. | Flatland CDO Server |
 | UX design | Designed the pages of blust.ch, companygraph.io and guestgraph.io and the design system they share, and had the agent seats build them, each page checked rendered in the browser. | blust.ch |
-| Vendor management | Ran LIKE MAGIC's AI and automation tooling as a managed portfolio: Claude Code team licenses, multi-provider tooling across Claude, Gemini and Copilot and the call to self-host n8n on its own Kubernetes rather than take the hosted service. | Co-Founder & Head of Technology |
 | Vendor management | Led the call on Camunda at contract renewal, where the platform used a fraction of the engine and the choice was to build on it or leave it, recommending building on it before the decision went to removal (2022–2023). | Co-Founder & Head of Technology |
+| Vendor management | Ran LIKE MAGIC's AI and automation tooling as a managed portfolio: Claude Code team licenses, multi-provider tooling across Claude, Gemini and Copilot and the call to self-host n8n on its own Kubernetes rather than take the hosted service. | Co-Founder & Head of Technology |
 
 ## Summary
 

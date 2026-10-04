@@ -41,7 +41,7 @@ skills:
 
 ### Engineering
 
-- Built and ran the platform underneath it on Google Kubernetes Engine, from cluster creation to the Kafka backbone, the document store, distributed tracing, the OAuth gateway in front of the services and GPU nodes in the one region that had them so models could be trained where the data already was.
+- Built and ran the platform underneath the pipeline on Google Kubernetes Engine, from cluster creation to the Kafka backbone, the document store, distributed tracing, the OAuth gateway in front of the services and GPU nodes in the one region that had them so models could be trained where the data already was.
 - Made that platform self-service for ZHAW's researchers: they deployed a new model service and trained on the GPU nodes on their own, without asking 3AP.
 - Put every service on a build pipeline from the first commit.
 - Stopped a service's build when nothing in its own subdirectory changed, so one edit in the eight-service monorepo rebuilt one service rather than all eight.
