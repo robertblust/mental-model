@@ -6,7 +6,7 @@ kind: Career
 
 # Where has Robert spoken?
 
-> His talks are experiences of the profile, the conference talks of the Eclipse years and at CamundaCon and the narrated talks on his own sites; each says what it argued and where to watch it, and Public speaking is the skill they evidence.
+> His talks are experiences of the profile, conference talks and narrated talks on his own sites; each says what it argued, where it was given and where to watch it, and Public speaking is the skill they evidence.
 
 ## Rests on
 
