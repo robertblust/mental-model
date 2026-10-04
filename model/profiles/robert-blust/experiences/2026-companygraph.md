@@ -29,7 +29,7 @@ skills:
 
 ### Context
 
-- Extracted the meta-model from two instances that never knew about each other, a company of 25 people and a company of one, which had arrived at the same shape: one Markdown file per entity, YAML frontmatter and a body, in a folder named for its type, with a folder of schemas beside it.
+- Extracted the meta-model from two instances that never knew about each other, a multi-person company and a company of one, which had arrived at the same shape: one Markdown file per entity, YAML frontmatter and a body, in a folder named for its type, with a folder of schemas beside it.
 - Came to it the second time. The Flatland CDO Server carried a model of a company from 2014, served over an API and true for as long as the server ran; this one is Markdown a person reads and edits, in a repository with a history, true for as long as the files exist.
 
 ### Leadership
@@ -48,7 +48,7 @@ skills:
 - Added a test that fails the build when the lockfile resolves an older release than the pin names, after a stale one had built green.
 - Shipped the tooling inside the meta-model as one command that, run bare, opens a menu: it makes an instance that passes the checks on its first day, checks it, moves its vendored core to a newer release and installs the Obsidian plugin.
 - Wrote the Obsidian plugin, which bundles the meta-model's own checker, so a page shows what breaks while it is edited and a new rule in core reaches the editor without code of its own.
-- Described CompanyGraph in its own vocabulary as a second instance, the first with no person in it, drawn on companygraph.io and served at mcp.companygraph.io.
+- Described CompanyGraph in its own vocabulary as a second instance, whose subject is a company rather than a person, drawn on companygraph.io and served at mcp.companygraph.io.
 - Wrote a chat over any instance's MCP host that answers a visitor from what the tools return, naming and linking the entity each claim rests on, and put it on every prose page of blust.ch, companygraph.io and guestgraph.io.
 
 ### Ways of working
