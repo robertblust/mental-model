@@ -1,7 +1,7 @@
 {
-  "tooling": "0.76.0",
+  "tooling": "0.77.0",
   "core": {
-    "version": "0.56.0",
+    "version": "0.57.0",
     "shape": 3,
     "source": "bundled"
   },
@@ -23,13 +23,13 @@
     "meta/core/decision-status-schema.md": "sha256:9d4fa5bf946f9f64967fcaeb75401e3afc6c8c003ff3cb0d52636bb9bf9ad9cb",
     "meta/core/domain-schema.md": "sha256:1d84087efa0c182f095f838801b3017a5ec9bda5311d6bb421d3c3b424229721",
     "meta/core/experience-kind-schema.md": "sha256:421cc45220d75e8849f3d1edd18308764300076bdd79cc423cd3450b7c30c415",
-    "meta/core/experience-schema.md": "sha256:34ec6724fc72212528bf99b47ee00504adc49ce29aa952767604ae53bec34d88",
+    "meta/core/experience-schema.md": "sha256:21cc7157aa2d8d459122ff4d10db5b38137da16518eb5e66aaefcaa100c35e5e",
     "meta/core/feature-schema.md": "sha256:6be7fa5aad53e7b978a25563b66ebb97930117bb375adcd85929cb8783a956c9",
     "meta/core/identifier-schema.md": "sha256:da1d8a40ad0ea6a218e7545731ce2ad2889f0ad29514784a5c785964a491df77",
     "meta/core/identity-schema.md": "sha256:d53b1414f6c457374d8af800a5bc832ae80bb839446d334c7060dd1eea0bed30",
     "meta/core/kpi-schema.md": "sha256:3069d5a246630d595c0735325e67f1101573525497539a4f26b99a4782a202d4",
     "meta/core/localization-schema.md": "sha256:6d5ef97f36d10b4bde890c52d97a01c19d1529c3fb92956ed26a0dab9eb0950a",
-    "meta/core/manifest.json": "sha256:26cf62d53bfe99d393e48bdf899211371c91174ba1434eb9b4035bfd0e466a0e",
+    "meta/core/manifest.json": "sha256:94c7fe2cebc787d16aac91b058cb0169856f68e7b586623873d64f834cc293c3",
     "meta/core/phase-schema.md": "sha256:e8f09d7ebff4ba2b862b92e88ac635c38561cc4375db3871065f447b2e75dbcf",
     "meta/core/process-schema.md": "sha256:3b27dda5375531ca88f44c4daffed9f0ff17191f4e3896c508e17e79c6a38696",
     "meta/core/product-schema.md": "sha256:ffaa028ff73d01b45aac84225ee95d0f5483b7ae11da752b934f4c33010eb77b",
@@ -53,9 +53,10 @@
     ".claude/skills/companygraph-export/SKILL.md": "sha256:24f12111ec7b1526253145ec59645767e2756da40034f6d7fcfb3ce1e155c8a3",
     ".claude/skills/companygraph-export/build.py": "sha256:7c942cdc209f67f4e3bcb12360cff1567b700b81bd3a7def0259cd04ad7c9f40",
     ".claude/skills/companygraph-export/verify.py": "sha256:14ca8a9c68935cc6f770d96c03b3e1da50f1229fe346440692752b82ad3049bb",
+    ".claude/skills/companygraph-judge/SKILL.md": "sha256:a098bd102a96a36ac5a7e3a39586d0012a389ef29bbb57826a958b51fde085f9",
     ".claude/skills/companygraph-profile/SKILL.md": "sha256:45362f5cbf2aee13739f2407285851489e8267e2defc8070acaaa18beb724bb5",
     ".claude/skills/companygraph-surface/SKILL.md": "sha256:f0392a90eda6f7baea77bfb74d860d4619262053e1f80b35e7997e175024d58b",
     ".claude/skills/companygraph-surface/facts.py": "sha256:5d6423c26fca9036a463cb2b6e0c83105a0da11ff0224a44d6e9202adc0cae3a",
-    ".claude/skills/companygraph-validate/SKILL.md": "sha256:8efabcd70844601a4e908b6776acbd4769299c1908db347fbe7d70824e28e34a"
+    ".claude/skills/companygraph-validate/SKILL.md": "sha256:3cf562226acba3fb63186997ee9a8ececa2685e6f00992c75f97f921338160e5"
   }
 }
