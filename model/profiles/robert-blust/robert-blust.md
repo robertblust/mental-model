@@ -272,6 +272,7 @@ image: robert-blust.jpg
 | Public speaking | Published a narrated introduction talk on GuestGraph, deck, PDF and audio in German and English. | GuestGraph — an introduction |
 | Public speaking | Published a narrated introduction talk on CompanyGraph, deck, PDF and audio in German and English. | CompanyGraph — an introduction |
 | Public speaking | Gave a narrated talk that sums up the career break, every figure counted to a fixed cutoff and read from a file beside the deck. | Building fast is solved. Deciding well is not. |
+| Public speaking | Gave a narrated talk in which CompanyGraph describes its own Obsidian plugin from the pages its model holds about it, in German and English with a PDF of each. | CompanyGraph explains its own Obsidian plugin |
 | Public speaking | Gave a narrated talk on which of the five things called a model a company keeps and which it can replace, in German and English with a PDF of each. | What stays when the model changes |
 | Requirements engineering | Owned the Analysis & Design discipline in UBS Wealth Management & Business Banking's RUP rollout, replacing the proprietary process with a market-standard one, writing its modeling methodology in Rational Method Composer and coaching the division's teams into it. | Solution Manager, Software Engineering — Analysis & Design |
 | Requirements engineering | Modeled Lost-Tag's actors and their use cases before the platform was built. | Lost-Tag |
@@ -314,6 +315,7 @@ image: robert-blust.jpg
 | Storytelling | Briefed the film Build the model first as one story across three organizations and one person, five threads each tied to a source, then wrote its published description to avoid the two places the narration strays. | Build the model first |
 | Storytelling | Wrote the story for the film Governance as data before anything was generated, naming what it may and must not state, then held the narration to it and the four departures out of the description. | Governance as data |
 | Storytelling | Told the career break as claim, proof and answer, fixed before drafting what the talk may say, and put every figure where a listener can check it. | Building fast is solved. Deciding well is not. |
+| Storytelling | Let the product describe its own feature, every claim taken from the plugin's page or a page it names and the pages named on each slide, with the windows said to be reconstructions. | CompanyGraph explains its own Obsidian plugin |
 | Storytelling | Told five meanings of one word as four layers under one rule, fixed one decision at a time before the deck, and closed on the line the talk is named for. | What stays when the model changes |
 | Storytelling | Wrote the story for a debate episode on the deciding-well talk, three challenges each with its answer in the sources and a list of what the hosts must not say, then named the two places the hosts strayed. | Deciding well |
 | Storytelling | Titled a German episode with the question its hosts close on and wrote its description to build to the provocation the episode leaves open, why a company cannot say what one person can. | Wer wurde eingestellt? Ich oder mein Modell? |
