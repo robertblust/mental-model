@@ -6,7 +6,7 @@ kind: Career
 
 # Why is there a career break, and what happened in it?
 
-> The career break says why it was taken and what it found, the decisions that opened it say what it was given to find out and how the next role was looked for, CompanyGraph and GuestGraph are the two products it built in the open, and a blog post walks the decision that ended it.
+> The career break says why it was taken and what it found, the decisions that opened it say what it was given to find out and how the next role was looked for, CompanyGraph and GuestGraph are the two products it built, and a blog post walks the decision that ended it.
 
 ## Rests on
 
