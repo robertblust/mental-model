@@ -20,11 +20,12 @@ skills:
 
 ### Context
 
-- Gave it on Sep 24, 2026 as the third talk on blust.ch, in three parts, the claim, the proof and the answer, with every figure on a slide read from a snapshot counted to a fixed cutoff, Sep 24, 2026 at 22:21 Swiss time, so a later run gives the same numbers.
+- Gave it on Sep 24, 2026 as the third talk on blust.ch, in three parts: the claim, the proof and the answer.
 
 ### Ways of working
 
 - Fixed what the talk may say before it was drafted: no employer named, a figure from git or not at all, and every claim placed where a listener can check it, the values quoted as they stand in the model and the counts in a file beside the deck with the script that wrote them.
+- Read every figure on a slide from a snapshot counted to a fixed cutoff, Sep 24, 2026 at 22:21 Swiss time, so a later run gives the same numbers.
 - Read the slides against the model's own entries and corrected the one line the application record did not carry, on what the architect's role was chosen over, in the deck and in the career-break entry at once.
 
 ### Sharing

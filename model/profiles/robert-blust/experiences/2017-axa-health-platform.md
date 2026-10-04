@@ -27,6 +27,7 @@ skills:
 ### Context
 
 - A digital-first self-service platform for complementary health insurance — customers and brokers configure products, calculate quotes and purchase policies across two integrated apps over one backend.
+- AXA sells only complementary insurance; basic insurance is mandatory in Switzerland and no insurer may refuse it.
 
 ### Architecture
 
@@ -36,7 +37,7 @@ skills:
 ### Engineering
 
 - Built the Java/Spring Boot and Node.js backend with GraphQL APIs over MongoDB, to 3AP's microservice reference architecture and its delivery pipeline.
-- Built its signature automated health-insurer switching service: AXA sells only complementary insurance, not the mandatory basic insurance (which, by Swiss law, every resident must hold and no insurer may refuse). The service compares basic-insurance premiums each year and automatically moves AXA's complementary-insurance customers to the cheapest basic insurer — saving about CHF 426 per year on average, with AXA taking no basic-insurance commission to keep the advice neutral.
+- Built the platform's automated insurer-switching service, which each year compares basic-insurance premiums and moves AXA's complementary-insurance customers to the cheapest basic insurer, saving them about CHF 426 a year on average.
 - Designed the platform for AXA's own on-premise OpenShift — a platform the insurer ran itself, so the architecture had its elasticity without its managed services.
 
 ### Results

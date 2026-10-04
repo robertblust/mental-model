@@ -26,7 +26,7 @@ skills:
 ### Context
 
 - Digital rental platform — applicants apply for apartments in a few clicks; property managers get automated workflows and radically simpler applicant communication.
-- Founded by Mobiliar and Garaio REM (2019), merged with market leader flatfox.ch (2021).
+- Founded in 2019 by Mobiliar and Garaio REM.
 
 ### Leadership
 
@@ -43,6 +43,7 @@ skills:
 ### Results
 
 - One of four winners of the Digital Top 10 2021, voted by over 5,000 participants ahead of the Digital Real Estate Summit.
+- Aroov merged with flatfox.ch, the market leader, in 2021.
 
 ## References
 

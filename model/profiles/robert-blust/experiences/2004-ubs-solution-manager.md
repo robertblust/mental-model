@@ -54,4 +54,4 @@ skills:
 
 ### Results
 
-- Worked with the Eclipse Modeling project from inside the methodology work — bringing requirements to it, reviewing concepts and building prototypes — and the cross-industry working group grew out of that cooperation.
+- Grew the cooperation with the Eclipse Modeling project — requirements, concept reviews and prototypes brought from the methodology work — into the cross-industry Eclipse Modeling Platform Working Group.

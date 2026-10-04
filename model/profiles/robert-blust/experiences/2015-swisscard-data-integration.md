@@ -23,4 +23,5 @@ skills:
 
 ### Engineering
 
-- Replaced that SOAP layer with a Spring Boot / Spring WS implementation over MSSQL through Spring Data, preserving the existing WSDL contract so no consumer had to change, with JUnit tests run on Jenkins.
+- Replaced that SOAP layer with a Spring Boot / Spring WS implementation over MSSQL through Spring Data, preserving the existing WSDL contract so no consumer had to change.
+- Covered the replacement with JUnit tests run on Jenkins.
