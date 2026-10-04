@@ -9,7 +9,7 @@ source: Local
 
 ## What it takes
 
-A question, in whatever words and language they have. Nothing else: the seat is filled by whoever turns up, and nobody is asked who they are.
+A question, in whatever words and language they have. Nothing else: the seat is filled by whoever turns up, nobody is asked who they are, and nobody is asked to know the model's words, since meeting theirs is the company's work.
 
 ## What it produces
 
@@ -17,5 +17,5 @@ A question, and where the answer sends them, a click on the entity it rests on: 
 
 ## What it never does
 
-- Never has to know the model's vocabulary to be answered; meeting their words is the company's work.
-- Never leaves anything behind: the conversation lives in their tab and ends with it.
+- Never writes to the model; a question changes no page.
+- Never reads another visitor's conversation; theirs lives in their tab and ends with it.
