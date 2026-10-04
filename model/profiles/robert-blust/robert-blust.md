@@ -30,7 +30,7 @@ image: robert-blust.jpg
 | Community building | Expert |
 | Company vision and strategy | Competent |
 | Consulting | Proficient |
-| Container orchestration (Kubernetes) | Proficient |
+| Container orchestration | Proficient |
 | Context engineering | Expert |
 | Conversational AI | Competent |
 | Data engineering | Proficient |
@@ -134,9 +134,9 @@ image: robert-blust.jpg
 | Company vision and strategy | Published GuestGraph as open core with a billing model on one meter, arrivals. | GuestGraph |
 | Company vision and strategy | Published CompanyGraph as open core with a billing model beside it. | CompanyGraph |
 | Consulting | Created the technical concepts, proposals and pitches for 3AP's client work as CTO and advised Credit Suisse, Swisscard, AXA and Mobiliar on the architecture behind theirs, diagnosing the current system before recommending anything. | Co-Founder & CTO |
-| Container orchestration (Kubernetes) | Engineered the reference deployment of 3AP's architecture on Google Kubernetes Engine. | Co-Founder & CTO |
-| Container orchestration (Kubernetes) | Built Conperi's platform on Google Kubernetes Engine from cluster creation up, GPU nodes included. | Conperi |
-| Container orchestration (Kubernetes) | Ran the LIKE MAGIC platform on Google Kubernetes Engine. | Co-Founder & Head of Technology |
+| Container orchestration | Engineered the reference deployment of 3AP's architecture on Google Kubernetes Engine. | Co-Founder & CTO |
+| Container orchestration | Built Conperi's platform on Google Kubernetes Engine from cluster creation up, GPU nodes included. | Conperi |
+| Container orchestration | Ran the LIKE MAGIC platform on Google Kubernetes Engine. | Co-Founder & Head of Technology |
 | Context engineering | Built the LIKE MAGIC Mental Model as the organization's shared context layer and shipped it as a skill into the company's Claude environment. | Co-Founder & Head of Technology |
 | Context engineering | Extracted CompanyGraph, a published meta-model describing a company as a graph people and agents can both read, from two instances that had arrived at the same shape. | CompanyGraph |
 | Context engineering | Briefed a podcast episode on the career break from the model's own files and read the generated result against its sources before publishing it. | Turn your work history into code |

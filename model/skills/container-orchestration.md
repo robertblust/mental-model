@@ -4,7 +4,7 @@ source: Local
 group: Cloud and platform
 ---
 
-# Container orchestration (Kubernetes)
+# Container orchestration
 
 > Managing the deployment, scaling and healing of containerized applications across a cluster of machines.
 

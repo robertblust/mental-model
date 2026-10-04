@@ -19,7 +19,7 @@ skills:
   - Multi-tenant SaaS architecture
   - Microservices architecture
   - Cloud architecture
-  - Container orchestration (Kubernetes)
+  - Container orchestration
   - Platform engineering
   - Database design
   - Integration architecture

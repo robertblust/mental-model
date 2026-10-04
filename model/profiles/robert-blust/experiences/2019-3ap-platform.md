@@ -15,7 +15,7 @@ skills:
   - Event-driven architecture
   - Integration architecture
   - API design
-  - Container orchestration (Kubernetes)
+  - Container orchestration
   - CI/CD
   - Observability
   - Software modeling (UML, SysML, C4)
