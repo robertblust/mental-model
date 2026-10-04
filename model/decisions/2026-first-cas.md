@@ -31,7 +31,7 @@ The question the education answers is how AI is led and governed in an organizat
 
 ## Consequences
 
-Once made, at least sixteen study days over at most two years, on the fifth day, and the fees carried privately, the CAS fee and the eight required seminar days first. The model's sentences that say the education is in how AI is led and governed stand as they are. What has to stay true is that the seminars keep answering that question rather than drifting toward tooling; the day they do, the developer track would have been the honest choice. Nothing is committed until enrollment; a proposed call is not acted on.
+Once made, at least sixteen study days over at most two years, on the fifth day, and the fees carried privately, the CAS fee and the eight required seminar days first. What it gives up is the hands-on machine-learning track, and the master's programs the OST and ZHAW certificates would have counted toward. The model's sentences that say the education is in how AI is led and governed stand as they are. What has to stay true is that the seminars keep answering that question rather than drifting toward tooling; the day they do, the developer track would have been the honest choice. Nothing is committed until enrollment; a proposed call is not acted on.
 
 ## References
 

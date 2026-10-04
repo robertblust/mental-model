@@ -30,4 +30,4 @@ The plan is sized to the heaviest weeks of building, and whether those weeks con
 
 ## Consequences
 
-Each month's peak use is read by hand from the plan's usage page, since the plan offers no other reading. Several months under the smaller tier's share make a move to it a new decision that names this one.
+Each month's peak use is read by hand from the plan's usage page, since the plan offers no other reading. What it gives up is the price difference to Max 5x in every month the larger allowance is kept, and what has to stay true is that a month's use still needs that allowance. Several months under the smaller tier's share make a move to it a new decision that names this one.
