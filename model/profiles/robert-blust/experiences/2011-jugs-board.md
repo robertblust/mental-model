@@ -4,7 +4,6 @@ source: Local
 kind: Community
 start: 2011-08
 end: 2014-12
-url: https://www.jug.ch/
 organization: JUG Switzerland
 role: Board member
 skills:
@@ -32,3 +31,4 @@ skills:
 | --- | --- |
 | Event page, Eclipse DemoCamp 2015 | https://wiki.eclipse.org/Eclipse_DemoCamps_Mars_2015/Zurich |
 | Event page, Eclipse Finance Day 2014 | https://wiki.eclipse.org/Eclipse_Finance_Day_2014/ |
+| Organization site, JUG Switzerland | https://www.jug.ch/ |
