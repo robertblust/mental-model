@@ -30,7 +30,7 @@ skills:
 
 ### Context
 
-- A digital hospitality platform for SV Group (“Stay KooooK”) putting the entire guest journey in one app — book, pay, check in, open the room, check out — replacing manual reception and paper processes (a 63-room hotel runs on just 2.4 FTE, ex-housekeeping).
+- A digital hospitality platform for SV Group (“Stay KooooK”) putting the entire guest journey in one app — book, pay, check in, open the room, check out — replacing manual reception and paper processes.
 
 ### Leadership
 
@@ -53,6 +53,7 @@ skills:
 
 ### Results
 
+- Ran a 63-room hotel on 2.4 FTE, housekeeping excluded.
 - Won Best Use of Technology at the Serviced Apartment Awards 2021.
 - Was nominated for the Best Swiss Web Award 2021 (Innovation).
 - The platform became LIKE MAGIC, a spin-off from SV Group.

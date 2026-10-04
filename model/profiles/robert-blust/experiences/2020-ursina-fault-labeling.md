@@ -13,7 +13,6 @@ skills:
   - Java
   - Software architecture
   - Microservices architecture
-  - Database design
   - Software engineering
 ---
 
@@ -29,7 +28,7 @@ skills:
 
 ### Architecture
 
-- Designed the software architecture, the microservice cut and the database design, on 3AP's reference architecture.
+- Cut the labeling tool into microservices on 3AP's reference architecture.
 - Designed the path from a public cloud application to the operator's own data platform — device telemetry read from an HBase cluster on their network and the labeled set held in their PostgreSQL — over tunnels that kept both databases unexposed.
 
 ### Engineering

@@ -40,7 +40,7 @@ skills:
 
 ### Results
 
-- Won without a tender: the problem was known inside the bank and reached 3AP through its network, and the work followed a proposed solution architecture rather than a specification.
+- Won the mandate without a tender: the problem was known inside the bank, reached 3AP through its network, and 3AP answered it with a proposed solution architecture rather than a bid against a specification.
 
 ## References
 

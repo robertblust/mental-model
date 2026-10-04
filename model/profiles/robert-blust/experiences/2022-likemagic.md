@@ -73,7 +73,6 @@ skills:
 - Used each gate and board review to coach the engineers who brought the decision.
 - Recorded the platform's architecture decisions, each with its status.
 - Defined the technology roles, technical architect, business architect and site reliability engineer.
-- Led the functional team those roles formed.
 - Developed and executed the company-wide AI strategy across plan, change and run: governance under a Human Oversight principle, organizational knowledge management and the productive rollout of AI assistants.
 - Set the data-privacy guardrail that no internal context is used to train external LLMs.
 - Took the teams through the AI rollout rather than only switching it on: trained them, worked through the resistance with their leads and tracked adoption after go-live.
@@ -95,18 +94,18 @@ skills:
 
 ### Engineering
 
-- Ran the production cloud platform as infrastructure as code on Google Cloud and Google Kubernetes Engine, carrying its reliability, incidents and performance.
+- Ran the production cloud platform as infrastructure as code on Google Cloud and Google Kubernetes Engine.
 - Set its DevOps and CI/CD standards on GitHub Actions, unit and integration tests required on every pipeline.
 - Instrumented it on Cloud Monitoring and Cloud Trace with alerting driven by defined SLOs, end-to-end traceability and continuous monitoring being architecture principles the services were built to rather than instrumentation added afterward.
 - Automated production monitoring and alerting by severity under site reliability engineering, notifying the people responsible by email, SMS and Slack.
 - Wrote Java on the platform's Spring Boot WebFlux services, including the reference implementation of each pattern the architecture used, so a team built a new service from working code rather than from a description.
 - Drove process orchestration with Camunda for the end-to-end guest journey (Booking → Check-in → Stay → Check-out), carried over from Stay KooooK and run until 2023, its BPMN model extended as the platform grew.
+- Made every API boundary check its caller: partners on the public API held OAuth 2.0 tokens scoped to the resources they were granted, and guests and employees held role-based tokens.
+- Built the event and data hub every service published its business events to — ingesting them into BigQuery for analytics, idempotent on the event id so a redelivery cannot double-count and serving them back as a queryable event log with webhook subscriptions for systems that needed them pushed.
 - Built the LIKE MAGIC Mental Model — a structured organizational knowledge base (roles, processes, features, strategies, architecture decisions) that serves as the shared context layer for AI-assisted operations.
 - Shipped the Mental Model as a skill into the company's Claude environment, so every assistant worked from the same context.
 - Kept it in step with the systems it described through MCP rather than bespoke integrations — Atlassian, Google Drive and Slack servers wired into the agent that maintained it, reading and writing Confluence pages, Jira issues, Google Docs and Sheets, each command scoped to a named allowlist of the tools it was allowed to call.
 - Built an internal AI marketplace on Claude (Claude Cowork) — giving teams governed access to AI assistants and agents, grounded in the Mental Model.
-- Made every API boundary check its caller: partners on the public API held OAuth 2.0 tokens scoped to the resources they were granted, and guests and employees held role-based tokens.
-- Built the event and data hub every service published its business events to — ingesting them into BigQuery for analytics, idempotent on the event id so a redelivery cannot double-count and serving them back as a queryable event log with webhook subscriptions for systems that needed them pushed.
 
 ### Ways of working
 

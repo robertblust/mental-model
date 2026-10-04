@@ -30,11 +30,12 @@ skills:
 
 ### Context
 
-- A platform of the company's own, so that a project or an internal system started from a running gateway, a running identity provider and shared capabilities rather than from an empty cluster — one architecture, drawn in the repository, with everything reaching the internet through a single reverse proxy that terminates TLS and enforces strict transport security.
+- A platform of the company's own, so that a project or an internal system started from a running gateway, a running identity provider and shared capabilities rather than from an empty cluster, one architecture drawn in the repository.
 
 ### Architecture
 
 - Made identity the platform's job rather than each service's: Keycloak issuing the tokens, social sign-in trusted into it and the gateway verifying the token before routing, so a service behind it receives requests already authenticated and no service holds a login of its own.
+- Put everything that reaches the internet behind a single reverse proxy that terminates TLS and enforces strict transport security.
 - Gave the organization model an interface a normal application can use: a GraphQL service reading the CDO repository through its client, which is what turned circles, roles and assignments from something only a modeling tool could open into something a front end could ask questions of.
 - Gave the platform a notification service any project could call instead of integrating messaging vendors of its own: one authenticated POST, delivered as e-mail, SMS or a Slack message, with the vendor behind each channel a detail of the platform rather than of the project.
 - Separated accepting a message from delivering one — the receiving service publishes to a queue for each channel and a service per channel consumes it — so a vendor that is slow or down delays delivery instead of failing the caller.
