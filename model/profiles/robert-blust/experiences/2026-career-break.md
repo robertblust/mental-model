@@ -17,7 +17,7 @@ skills:
 
 ### Context
 
-- Gave the break one question: what I like doing, rather than what I am used to being hired for. The answer came out as modeling how a business works, and AI used with responsibility inside a company rather than merely used; the role that fits it is an architect's, and it is the more lasting one: with the right guardrails an agent writes code faster than any team, so pure development will change, while deciding what gets built, and within which boundaries, will not.
+- Gave the break one question: what I like doing, rather than what I am used to being hired for.
 
 ### Ways of working
 
@@ -29,6 +29,7 @@ skills:
 
 ### Results
 
+- Answered it: modeling how a business works, and AI used with responsibility inside a company rather than merely used; the role that fits it is an architect's, and it is the more lasting one: with the right guardrails an agent writes code faster than any team, so pure development will change, while deciding what gets built, and within which boundaries, will not.
 - Held the question open across two tracks at once, hands-on engineering and architecture, and let the market answer it: 25 applications between Jun 9 and Aug 20, 2026 — 16 for senior engineering roles, 5 for architect roles, 3 for leadership roles and 1 for a business engineer.
 - Reached an interview or an invitation to one in 12 of the 25, and an offer in one, accepted.
 - Withdrew from 7 processes myself, each at an interview stage, one of them the week before a final round of five people.
