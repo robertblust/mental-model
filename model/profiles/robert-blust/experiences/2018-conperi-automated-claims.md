@@ -11,7 +11,7 @@ skills:
   - Microservices architecture
   - Cloud architecture
   - Database design
-  - Container orchestration (Kubernetes)
+  - Container orchestration
   - Platform engineering
   - MLOps
   - Machine learning

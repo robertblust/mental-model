@@ -11,7 +11,7 @@ concepts:
 
 # An agent answers from the model
 
-> Someone asks their own agent about my work and gets what the model says at one commit, named in the answer, instead of what the agent recalls.
+> Someone asks their own agent about my work and gets what the model says, with the version it read named in the answer, instead of what the agent recalls.
 
 ## Description
 

@@ -5,6 +5,7 @@ kind: Community
 start: 2026-09-06
 end: 2026-09-06
 url: https://robertblust.substack.com/p/turn-your-work-history-into-code
+role: Producer
 skills:
   - Context engineering
   - Storytelling

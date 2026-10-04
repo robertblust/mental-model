@@ -58,7 +58,6 @@ skills:
 
 - Co-organized the Eclipse events that brought the open-source modeling community to UBS in Zürich — MDD Day in 2010, then the Eclipse Finance Days, the Swiss forum for cross-company exchange on open source in financial services, in 2012 and 2014.
 - Built UBS's network into open-source communities and their standards, assessing where the firm could adopt them.
-- Spoke at UBS-internal brown-bag sessions on modeling, toolchain and architecture.
 - Ran workshops with the engineering teams on the concepts behind the Integration Architecture Tool Chain.
 - Helped build the UBS Academy's education on the software development lifecycle, integration architecture one part of it.
 

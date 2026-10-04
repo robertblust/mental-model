@@ -4,6 +4,7 @@ source: Local
 kind: Community
 start: 2026-08
 url: https://companygraph.io
+role: Founder and Architect
 skills:
   - Agentic AI development
   - Context engineering

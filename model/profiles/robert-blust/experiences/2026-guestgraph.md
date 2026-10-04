@@ -4,6 +4,7 @@ source: Local
 kind: Community
 start: 2026-07
 url: https://guestgraph.io
+role: Founder and Architect
 skills:
   - Agentic AI development
   - Software architecture
@@ -26,7 +27,8 @@ skills:
 
 ### Leadership
 
-- Published it under Apache 2.0 as open core, with a billing model on one meter, arrivals, and a narrated introduction talk in German and English with a deck and a PDF in each.
+- Published it under Apache 2.0 as open core.
+- Set its billing model on one meter, arrivals.
 - Put it up for validation in the open as one of two ideas: the engine, the guest graph with its API, the explain-and-undo and the connectors are the open substance, and the hosted service is the one part that could ever earn; whether it will is the experiment.
 
 ### Architecture

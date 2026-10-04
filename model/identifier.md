@@ -6,4 +6,4 @@ format: uuidv7
 
 # Entity id
 
-> An entity keeps this id through every rename and every language it is written in, so whatever holds one outside the model still finds the entity.
+> An entity keeps this id through every rename and every language it is written in, so an agent asking the MCP server, or a link somebody wrote down, still finds the entity.

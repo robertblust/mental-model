@@ -42,7 +42,7 @@ One file per skill, written against `meta/core/skill-schema.md` and its writing 
 | Context engineering | AI |
 | Conversational AI | AI |
 | Cloud architecture | Cloud and platform |
-| Container orchestration (Kubernetes) | Cloud and platform |
+| Container orchestration | Cloud and platform |
 | Infrastructure as code | Cloud and platform |
 | CI/CD | Cloud and platform |
 | DevOps | Cloud and platform |

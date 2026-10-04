@@ -5,6 +5,7 @@ kind: Community
 start: 2026-09-15
 end: 2026-09-15
 url: https://robertblust.substack.com/p/build-the-model-first
+role: Producer
 skills:
   - Context engineering
   - Storytelling

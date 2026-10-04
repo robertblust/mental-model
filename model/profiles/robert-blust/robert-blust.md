@@ -30,7 +30,7 @@ image: robert-blust.jpg
 | Community building | Expert |
 | Company vision and strategy | Competent |
 | Consulting | Proficient |
-| Container orchestration (Kubernetes) | Proficient |
+| Container orchestration | Proficient |
 | Context engineering | Expert |
 | Conversational AI | Competent |
 | Data engineering | Proficient |
@@ -134,9 +134,9 @@ image: robert-blust.jpg
 | Company vision and strategy | Published GuestGraph as open core with a billing model on one meter, arrivals. | GuestGraph |
 | Company vision and strategy | Published CompanyGraph as open core with a billing model beside it. | CompanyGraph |
 | Consulting | Created the technical concepts, proposals and pitches for 3AP's client work as CTO and advised Credit Suisse, Swisscard, AXA and Mobiliar on the architecture behind theirs, diagnosing the current system before recommending anything. | Co-Founder & CTO |
-| Container orchestration (Kubernetes) | Engineered the reference deployment of 3AP's architecture on Google Kubernetes Engine. | Co-Founder & CTO |
-| Container orchestration (Kubernetes) | Built Conperi's platform on Google Kubernetes Engine from cluster creation up, GPU nodes included. | Conperi |
-| Container orchestration (Kubernetes) | Ran the LIKE MAGIC platform on Google Kubernetes Engine. | Co-Founder & Head of Technology |
+| Container orchestration | Engineered the reference deployment of 3AP's architecture on Google Kubernetes Engine. | Co-Founder & CTO |
+| Container orchestration | Built Conperi's platform on Google Kubernetes Engine from cluster creation up, GPU nodes included. | Conperi |
+| Container orchestration | Ran the LIKE MAGIC platform on Google Kubernetes Engine. | Co-Founder & Head of Technology |
 | Context engineering | Built the LIKE MAGIC Mental Model as the organization's shared context layer and shipped it as a skill into the company's Claude environment. | Co-Founder & Head of Technology |
 | Context engineering | Extracted CompanyGraph, a published meta-model describing a company as a graph people and agents can both read, from two instances that had arrived at the same shape. | CompanyGraph |
 | Context engineering | Briefed a podcast episode on the career break from the model's own files and read the generated result against its sources before publishing it. | Turn your work history into code |
@@ -165,7 +165,7 @@ image: robert-blust.jpg
 | Database design | Designed Aroov's PostgreSQL schema. | Aroov digital rental platform |
 | Database design | Gave each Stay KooooK microservice its own PostgreSQL schema. | Stay KooooK |
 | Database design | Put every LIKE MAGIC tenant on one shared PostgreSQL, each tenant's rows isolated by a discriminator built into the platform's framework and again by row-level security in the database, reached reactively through R2DBC and jOOQ. | Co-Founder & Head of Technology |
-| DevOps | Wrote the delivery pipeline into 3AP's reference architecture so a project inherited it rather than arranging its own, and established the company's delivery process and stack approvals. | Co-Founder & CTO |
+| DevOps | Wrote the delivery pipeline into 3AP's reference architecture so a project inherited it rather than arranging its own, and established the stack approval a client engagement had to pass. | Co-Founder & CTO |
 | DevOps | Built and ran LIKE MAGIC's production platform on Google Cloud as infrastructure as code, GitHub Actions running unit and integration tests on every change and the same team building and operating it. | Co-Founder & Head of Technology |
 | Domain-driven design | Partitioned UBS Wealth Management & Swiss Bank's application architecture into application domains, a taxonomy that classified every application system template and fixed the principles delineating one from another. | IT Architect — Software Development Lifecycle Toolchain |
 | Domain-driven design | Cut LIKE MAGIC's platform along its 12 business domains and the capabilities under each, so service boundaries followed the domain rather than the technical layering. | Co-Founder & Head of Technology |
@@ -229,7 +229,7 @@ image: robert-blust.jpg
 | Microservices architecture | Cut Lost-Tag into Spring Boot services behind a gateway with service discovery. | Lost-Tag |
 | Microservices architecture | Designed the microservice cut of Flawa iQ's backend. | Flawa iQ |
 | Microservices architecture | Designed the microservice cut of Conperi's processing pipeline. | Conperi |
-| Microservices architecture | Designed the microservice cut of Aroov's backend. | Aroov digital rental platform |
+| Microservices architecture | Built Aroov's backend on 3AP's microservice reference architecture in its event-driven form. | Aroov digital rental platform |
 | Microservices architecture | Cut Stay KooooK into microservices, each holding its own schema in PostgreSQL. | Stay KooooK |
 | Microservices architecture | Cut LIKE MAGIC's platform into services along its 12 business domains with booking, guest, payment and door access among the services, each contract-first and every vendor behind its own connector with a fallback path. | Co-Founder & Head of Technology |
 | MLOps | Set up Conperi's training and serving split, with a registry versioning each model with what reproduces it, so a model could be replaced without redeploying its consumers; drift, rollback and retraining never ran in production. | Conperi |
@@ -310,6 +310,7 @@ image: robert-blust.jpg
 | Stakeholder management | Advised clients including Credit Suisse, Swisscard, AXA and Mobiliar as 3AP's CTO and joined each project's ramp-up to negotiate with the client's security and platform organizations. | Co-Founder & CTO |
 | Storytelling | Held the resolution of the Essential Complexity talk back on purpose, the tension first and the punchline late, and said the punchline without the claim that hallucinations disappear. | Essential Complexity |
 | Storytelling | Briefed a podcast episode on the career break, fixing the story in outline and the threads the hosts had to cover before anything was generated, then holding the result to its sources and naming the one place it strayed. | Turn your work history into code |
+| Storytelling | Planned a sequence of posts as one story, the question, what was built and the answer, each post making one point with one asset and one link to the work that shows it. | The career break experiment on LinkedIn |
 | Storytelling | Briefed the film Build the model first as one story across three organizations and one person, five threads each tied to a source, then wrote its published description to avoid the two places the narration strays. | Build the model first |
 | Storytelling | Wrote the story for the film Governance as data before anything was generated, naming what it may and must not state, then held the narration to it and the four departures out of the description. | Governance as data |
 | Storytelling | Told the career break as claim, proof and answer, fixed before drafting what the talk may say, and put every figure where a listener can check it. | Building fast is solved. Deciding well is not. |
@@ -317,7 +318,6 @@ image: robert-blust.jpg
 | Storytelling | Titled a German episode with the question its hosts close on and wrote its description to build to the provocation the episode leaves open, why a company cannot say what one person can. | Wer wurde eingestellt? Ich oder mein Modell? |
 | Storytelling | Titled an episode on the meta-model's rules as a provocation and wrote its description to end on one question for the listener, how many errors their company would throw if it had to compile tonight. | Your company doesn't compile |
 | Storytelling | Wrote the German sibling of an English episode as its own story, not a translation, leaning on what the English one left out and ending on whether an agent reading a wiki would say what the people say. | Dein Unternehmen kompiliert nicht |
-| Storytelling | Planned a sequence of posts as one story, the question, what was built and the answer, each post making one point with one asset and one link to the work that shows it. | The career break experiment on LinkedIn |
 | Storytelling | Told a validation not yet decided as one question answered and one still open, closing on what would settle it and an ask. | One question answered. One still open. |
 | Technical writing | Wrote the Analysis & Design methodology and guidance a UBS division worked to. | Solution Manager, Software Engineering — Analysis & Design |
 | Technical writing | Published an article on process monitoring with BPMN, with the runnable sample it describes. | Process Monitoring with BPMN |

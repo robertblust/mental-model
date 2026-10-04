@@ -2,22 +2,24 @@
 id: 01a0ef1d-3198-7312-b9b3-40f2328abefd
 source: Local
 kind: Community
-start: 2026-09
-url: https://www.linkedin.com/in/robertblust/recent-activity/all
+start: 2026-09-09
+end: 2026-10-03
+role: Author
 skills:
   - Storytelling
 ---
 
 # The career break experiment on LinkedIn
 
-> Ongoing. A sequence of posts that tells the career break experiment and what it built, from the question it started with to the answer, each post making one point and pointing to one episode, film or talk that shows it.
+> A sequence of posts that told the career break experiment and what it built, from the question it started with to the answer, each post making one point and pointing to one episode, film or talk that shows it.
 
 ## Achievements
 
 ### Ways of working
 
 - Planned the posts as one sequence before the first went out, the question, what was built and the answer in that order, and gave each post one point, one asset and one link, so a reader meets a claim and the work that shows it in the same place.
-- Wrote a brief before every draft, naming the reader, the one point, what the post may claim and where each claim is shown, and kept the text as posted beside the draft, so an edit made at the last minute stays visible.
+- Wrote a brief before every draft, naming the reader, the one point, what the post may claim and where each claim is shown.
+- Kept the text as posted beside the draft, so an edit made at the last minute stays visible.
 - Answered in a post's first comment where the generated episode it carries overreaches, in words a reader who has not heard the episode can follow, before anyone else names it.
 
 ### Sharing
@@ -28,6 +30,10 @@ skills:
 - Posted the closing talk's claim on Sep 25, 2026, building fast is solved and deciding well is not, with the October decision in one line and a thanks by name to the former colleagues whose feedback every application was read against.
 - Posted Your company doesn't compile on Sep 28, 2026 with its episode, a first comment that sets the hosts' closing question right and opens the chat on companygraph.io, and a second that invites the reader to try the command line.
 - Posted the decision on Oct 3, 2026, the architect role the career break ended in named as Läderach and chosen for the culture the interviews showed, as the text of LinkedIn's new-position share.
+
+## Ending
+
+Ended in October 2026 with the post that named the role the career break ended in, at Läderach. The posts stay up as the record of how the answer was reached.
 
 ## References
 

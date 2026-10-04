@@ -14,7 +14,7 @@ direction: target
 
 ## How it is measured
 
-A subscription is a service billed the same whatever it carries: a plan with an allowance of use, storage or features. For each, the month's peak use is read by hand from the provider's own usage page and taken as a share of the plan's allowance. The band is a subscription's own: its top is the plan's limit, where use is being refused and the plan is too small, and its bottom is the share of this plan that the next tier down allows, under which the smaller tier would have carried the month. A plan whose smaller tier is free, or that shows no meter, is read as whether the month used anything only the plan provides.
+A subscription is a service billed the same whatever it carries: a plan with an allowance of use, storage or features. For each, the month's peak use is read by hand from the provider's own usage page and taken as a share of the plan's allowance. Where a plan has several allowances, the share is the highest of them that month, since that is the one that would refuse use first. The band is a subscription's own: its top is the plan's limit, where use is being refused and the plan is too small, and its bottom is the share of this plan that the next tier down allows, under which the smaller tier would have carried the month. A plan whose smaller tier is free, or that shows no meter, is read as whether the month used anything only the plan provides.
 
 ## What it can hide
 
