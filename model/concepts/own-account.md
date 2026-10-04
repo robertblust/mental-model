@@ -6,7 +6,7 @@ domain: Portfolio
 
 # Own account
 
-> What I say of my own work from having done it, which enters the model as a fact and not as a claim awaiting a source, because in a model of one person the person is where the measurement comes from.
+> What I say of my own work from having done it, rather than what someone else reports of it or a document shows.
 
 ## Also known as
 
