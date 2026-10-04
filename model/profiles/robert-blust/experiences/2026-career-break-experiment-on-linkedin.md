@@ -18,7 +18,8 @@ skills:
 ### Ways of working
 
 - Planned the posts as one sequence before the first went out, the question, what was built and the answer in that order, and gave each post one point, one asset and one link, so a reader meets a claim and the work that shows it in the same place.
-- Wrote a brief before every draft, naming the reader, the one point, what the post may claim and where each claim is shown, and kept the text as posted beside the draft, so an edit made at the last minute stays visible.
+- Wrote a brief before every draft, naming the reader, the one point, what the post may claim and where each claim is shown.
+- Kept the text as posted beside the draft, so an edit made at the last minute stays visible.
 - Answered in a post's first comment where the generated episode it carries overreaches, in words a reader who has not heard the episode can follow, before anyone else names it.
 
 ### Sharing
