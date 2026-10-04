@@ -11,7 +11,6 @@ skills:
   - Technical writing
   - Change management
   - Organization design
-  - Mentoring and coaching
   - Community building
   - Software process engineering
   - Engineering leadership

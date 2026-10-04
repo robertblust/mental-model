@@ -222,7 +222,6 @@ image: robert-blust.jpg
 | Knowledge management | Published CompanyGraph so a shared context layer like the Mental Model can be kept as Markdown in a repository with a history. | CompanyGraph |
 | Legacy modernization | Replaced Swisscard's proprietary SOAP data-integration layer with Spring Boot behind the same WSDL contract, so no consumer had to change. | Swisscard data integration rewrite |
 | Machine learning | Architected the pipeline, the labeling tool and the serving path for Conperi, a proof of concept with ZHAW for reading health-insurance invoices, and supplied ZHAW's modeling with GPU training nodes and the first labeled dataset. | Conperi |
-| Mentoring and coaching | Coached UBS project teams in the Analysis & Design methodology and built internal communities of practice. | Solution Manager, Software Engineering — Analysis & Design |
 | Mentoring and coaching | Mentored 3AP's engineers through the reference architecture as the company scaled to about 70 people, developing its reference sample, explaining it to each team and guiding the developers building on it. | Co-Founder & CTO |
 | Mentoring and coaching | Coached LIKE MAGIC's engineers through the technology gate and the Change Advisory Board, arguing in each review what a decision had to change to fit the architecture and stay compliant. | Co-Founder & Head of Technology |
 | Microservices architecture | Authored 3AP's microservice reference architecture and built AXA Health to it: event-driven, 12-factor, the service cut driven by business capability. | Co-Founder & CTO |
