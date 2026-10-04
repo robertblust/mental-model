@@ -12,7 +12,7 @@ source: Local
 The mark is the two letters `rb`, set in Plex Mono on the ground color, and its master is `favicon.svg` in the site's repository; every other render, a tile a host is handed, the lockup on the profile photo, is made from that file and never drawn again. The mark's colors are the design tokens' ground and accent.
 
 - A tile is a full-bleed square with no rounded corner, because the host rounds it and a transparent corner shows as a checkerboard.
-- The mark fills about 60% of the tile, so it survives a circular crop.
+- The mark keeps clear of the tile's edges, so it survives a circular crop.
 - A change to the mark is made in the favicon first and rendered everywhere else after.
 - Where a render carries values other than the tokens', the favicon included, the tokens are the master and the render follows.
 
