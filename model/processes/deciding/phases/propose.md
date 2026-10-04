@@ -49,4 +49,4 @@ An overview that has passed Survey. Where the overview is older than the questio
 | surveyed again | Survey |
 | deferred | |
 
-Deferring is a decision too, and the process ends with nothing carried out.
+Deferring is a decision too.
