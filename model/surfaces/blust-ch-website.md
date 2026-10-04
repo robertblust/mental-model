@@ -24,7 +24,7 @@ url: https://blust.ch
 - **Timeline** — the profile's experiences, drawn from `model.json`.
 - **Talks** — the narrated talks this site serves, each an experience of the profile, in both languages with a PDF.
 - **Blog** — the blog: longer writing, posts in both languages, each post also an experience of the profile.
-- **Privacy** — what leaves a visitor's browser and what stays in it, listed in full.
+- **Privacy** — what leaves a visitor's browser and what stays in it, listed in full from the model's data processors, processing activities and stored items.
 - **model.json** — the parsed model at the pinned commit, published as a dataset.
 - **Ask the model** — the button at the foot of every prose page and the panel it opens, answered by the chat.blust.ch chat.
 - **Structured data** — the person, the dataset and the site that every page describes to a
