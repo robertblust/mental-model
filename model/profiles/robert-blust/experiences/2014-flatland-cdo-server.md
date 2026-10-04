@@ -36,7 +36,7 @@ skills:
 - Described 3AP's own organization in that vocabulary: circles nested inside circles, roles carrying responsibilities and an assignment joining a person to a role in a circle with a capacity and a validity window, which is what makes the structure answerable by date rather than only as it stands today, and worked with through the client published beside the repository.
 - Derived the questions a management team actually asks from that model instead of maintaining answers by hand — a circle's capacity including everything nested under it, who leads or deputizes where, which roles are assigned but unmatched and which are defined and unfilled.
 - Kept two kinds of time apart, which is what makes the model answerable rather than merely current. A role assignment carries the dates it was in force, and every derived figure has a by-date twin, so the organization can be asked what it looked like on a given day. Underneath, the repository keeps every revision and the interface takes a point in time, so it can also be asked what it said on a given day — and refuses a write against a past one, because history is not a thing to correct.
-- Published a client beside it, in AngularJS, that browses any model the server holds rather than one model in particular, so a new metamodel is explorable without a screen built for it.
+- Designed and published a client beside it, in AngularJS, that browses any model the server holds rather than one model in particular, so a new metamodel is explorable without a screen built for it.
 
 ### Engineering
 
