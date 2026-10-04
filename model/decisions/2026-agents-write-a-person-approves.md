@@ -17,7 +17,7 @@ upholds:
 
 ## The question
 
-Who writes my model, and who lets a change into it. Agents already draft and implement under the seats my processes name, and CompanyGraph decided on September 29, 2026 that a company's model is written this way. It had to be decided for my model then too, because the model is what a client or an employer reads about me, and a claim that entered unread would be read as mine.
+Who writes my model, and who lets a change into it. Agents already draft and implement under the seats my processes name, and CompanyGraph decided on September 29, 2026 that a company's model is written this way. It had to be decided for my model then too, because CompanyGraph's call left open whether my own model followed it.
 
 ## Alternatives
 
@@ -28,7 +28,7 @@ Who writes my model, and who lets a change into it. Agents already draft and imp
 
 ## Why
 
-The one thing an agent cannot supply about me is whether a claim is true, and it is the one thing a decider reading my model relies on. So the agents write and I approve: my time goes to the judgment, not the typing.
+The one thing an agent cannot supply about me is whether a claim is true, and it is the one thing a decider reading my model relies on: the model is what a client or an employer reads about me, and a claim that entered unread would be read as mine. So the agents write and I approve: my time goes to the judgment, not the typing.
 
 ## Consequences
 
