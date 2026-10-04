@@ -30,6 +30,7 @@ skills:
 - Published it under Apache 2.0 as open core.
 - Set its billing model on one meter, arrivals.
 - Put it up for validation in the open as one of two ideas: the engine, the guest graph with its API, the explain-and-undo and the connectors are the open substance, and the hosted service is the one part that could ever earn; whether it will is the experiment.
+- Put it in front of a professional network with a stated outcome each way, a clean no included.
 
 ### Architecture
 
@@ -49,10 +50,6 @@ skills:
 
 - Designed the engine and the connector slice by slice, each from a written specification reviewed before its plan and its build, beginning with core identity resolution, probabilistic matching and the guest timeline.
 - Built it through the agent seats the model defines, each under its own rulebook and none of them deciding, with the Owner reviewing and merging.
-
-### Results
-
-- Put it in front of a professional network with a stated outcome each way, a clean no included.
 
 ## References
 

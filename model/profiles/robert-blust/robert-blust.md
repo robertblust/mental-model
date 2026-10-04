@@ -249,7 +249,7 @@ image: robert-blust.jpg
 | Open-source stewardship | Published CompanyGraph as open core under Apache 2.0, saying what is open and what could be paid for, with a release contract of tags and a manifest per release. | CompanyGraph |
 | Organization design | Defined UBS's department-wide role model, each role with its tasks and competencies, put through a formal consultation before it took effect. | Solution Manager, Software Engineering — Analysis & Design |
 | Organization design | Designed 3AP's structure of circles and roles as the company scaled to about 70 people, and kept it as a model on the Flatland CDO Server. | Co-Founder & CTO |
-| Organization design | Defined LIKE MAGIC's technology roles, the technical architect, the business architect and the site reliability engineer, and led the functional team they formed. | Co-Founder & Head of Technology |
+| Organization design | Defined LIKE MAGIC's technology roles, the technical architect, the business architect and the site reliability engineer. | Co-Founder & Head of Technology |
 | Platform engineering | Architected the SDLC toolchain for UBS Wealth Management & Swiss Bank, Jira, Confluence, GitHub Enterprise, Maven, Jenkins and Sonar. | IT Architect — Software Development Lifecycle Toolchain |
 | Platform engineering | Built Conperi's platform from cluster creation to the Kafka backbone, tracing, the OAuth gateway and GPU nodes, and made it self-service so ZHAW's researchers deployed model services and trained without asking 3AP. | Conperi |
 | Platform engineering | Built the platform 3AP's own projects and internal systems started from, a running gateway, an identity provider and shared capabilities rather than an empty cluster. | 3AP Platform |

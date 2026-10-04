@@ -33,8 +33,7 @@ skills:
 ### Architecture
 
 - Ran the initial sensing research — how to detect the absence of an item within a defined volume — and selected RFID-tagged modules as the approach.
-- Evaluated LoRaWAN against GSM for the sensors' connectivity.
-- Built the MVP on Swisscom's LoRaWAN network, with GSM selected for the later production version.
+- Chose the sensors' connectivity after evaluating LoRaWAN against GSM: LoRaWAN on Swisscom's network for the MVP, GSM for the later production version.
 - Designed the microservice cut of the backend, separating the telemetry ingestion from the communication with the ERP.
 - Designed the MongoDB data model the device uplinks and configuration events were held in.
 - Designed the backend's deployment on Swisscom Application Cloud, Swisscom's Cloud Foundry: each service pushed with a manifest, with the message broker and the database bound to it as managed services rather than run beside it.

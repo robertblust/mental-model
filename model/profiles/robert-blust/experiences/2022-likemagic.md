@@ -73,7 +73,6 @@ skills:
 - Used each gate and board review to coach the engineers who brought the decision.
 - Recorded the platform's architecture decisions, each with its status.
 - Defined the technology roles, technical architect, business architect and site reliability engineer.
-- Led the functional team those roles formed.
 - Developed and executed the company-wide AI strategy across plan, change and run: governance under a Human Oversight principle, organizational knowledge management and the productive rollout of AI assistants.
 - Set the data-privacy guardrail that no internal context is used to train external LLMs.
 - Took the teams through the AI rollout rather than only switching it on: trained them, worked through the resistance with their leads and tracked adoption after go-live.
@@ -95,7 +94,7 @@ skills:
 
 ### Engineering
 
-- Ran the production cloud platform as infrastructure as code on Google Cloud and Google Kubernetes Engine, carrying its reliability, incidents and performance.
+- Ran the production cloud platform as infrastructure as code on Google Cloud and Google Kubernetes Engine.
 - Set its DevOps and CI/CD standards on GitHub Actions, unit and integration tests required on every pipeline.
 - Instrumented it on Cloud Monitoring and Cloud Trace with alerting driven by defined SLOs, end-to-end traceability and continuous monitoring being architecture principles the services were built to rather than instrumentation added afterward.
 - Automated production monitoring and alerting by severity under site reliability engineering, notifying the people responsible by email, SMS and Slack.
