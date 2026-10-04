@@ -26,7 +26,7 @@ url: https://blust.ch
 - **Blog** — the blog: longer writing, posts in both languages, each post also an experience of the profile.
 - **Privacy** — what leaves a visitor's browser and what stays in it, listed in full.
 - **model.json** — the parsed model at the pinned commit, published as a dataset.
-- **Chat** — the button at the foot of every prose page and the panel it opens, answered by the chat.blust.ch chat.
+- **Ask the model** — the button at the foot of every prose page and the panel it opens, answered by the chat.blust.ch chat.
 - **Structured data** — the person, the dataset and the site that every page describes to a
   crawler, with the person's addresses from the profile's `## Also at`.
 
