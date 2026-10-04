@@ -95,7 +95,7 @@ skills:
 
 ### Engineering
 
-- Owned the production cloud platform, built as infrastructure as code on Google Cloud and run on Google Kubernetes Engine, through site reliability engineering, incident management and performance work.
+- Ran the production cloud platform as infrastructure as code on Google Cloud and Google Kubernetes Engine, carrying its reliability, incidents and performance.
 - Set its DevOps and CI/CD standards on GitHub Actions, unit and integration tests required on every pipeline.
 - Instrumented it on Cloud Monitoring and Cloud Trace with alerting driven by defined SLOs, end-to-end traceability and continuous monitoring being architecture principles the services were built to rather than instrumentation added afterward.
 - Automated production monitoring and alerting by severity under site reliability engineering, notifying the people responsible by email, SMS and Slack.

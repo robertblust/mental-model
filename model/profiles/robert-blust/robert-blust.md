@@ -165,7 +165,7 @@ image: robert-blust.jpg
 | Database design | Designed Aroov's PostgreSQL schema. | Aroov digital rental platform |
 | Database design | Gave each Stay KooooK microservice its own PostgreSQL schema. | Stay KooooK |
 | Database design | Put every LIKE MAGIC tenant on one shared PostgreSQL, each tenant's rows isolated by a discriminator built into the platform's framework and again by row-level security in the database, reached reactively through R2DBC and jOOQ. | Co-Founder & Head of Technology |
-| DevOps | Wrote the delivery pipeline into 3AP's reference architecture so a project inherited it rather than arranging its own, and established the company's delivery process and stack approvals. | Co-Founder & CTO |
+| DevOps | Wrote the delivery pipeline into 3AP's reference architecture so a project inherited it rather than arranging its own, and established the stack approval a client engagement had to pass. | Co-Founder & CTO |
 | DevOps | Built and ran LIKE MAGIC's production platform on Google Cloud as infrastructure as code, GitHub Actions running unit and integration tests on every change and the same team building and operating it. | Co-Founder & Head of Technology |
 | Domain-driven design | Partitioned UBS Wealth Management & Swiss Bank's application architecture into application domains, a taxonomy that classified every application system template and fixed the principles delineating one from another. | IT Architect — Software Development Lifecycle Toolchain |
 | Domain-driven design | Cut LIKE MAGIC's platform along its 12 business domains and the capabilities under each, so service boundaries followed the domain rather than the technical layering. | Co-Founder & Head of Technology |
@@ -229,7 +229,7 @@ image: robert-blust.jpg
 | Microservices architecture | Cut Lost-Tag into Spring Boot services behind a gateway with service discovery. | Lost-Tag |
 | Microservices architecture | Designed the microservice cut of Flawa iQ's backend. | Flawa iQ |
 | Microservices architecture | Designed the microservice cut of Conperi's processing pipeline. | Conperi |
-| Microservices architecture | Designed the microservice cut of Aroov's backend. | Aroov digital rental platform |
+| Microservices architecture | Built Aroov's backend on 3AP's microservice reference architecture in its event-driven form. | Aroov digital rental platform |
 | Microservices architecture | Cut Stay KooooK into microservices, each holding its own schema in PostgreSQL. | Stay KooooK |
 | Microservices architecture | Cut LIKE MAGIC's platform into services along its 12 business domains with booking, guest, payment and door access among the services, each contract-first and every vendor behind its own connector with a fallback path. | Co-Founder & Head of Technology |
 | MLOps | Set up Conperi's training and serving split, with a registry versioning each model with what reproduces it, so a model could be replaced without redeploying its consumers; drift, rollback and retraining never ran in production. | Conperi |

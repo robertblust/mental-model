@@ -38,7 +38,6 @@ skills:
 - Led DynaRep's project team of ten as its architect and project manager.
 - Defined the department-wide role model — each role with its tasks and the competencies it carried — and put it through a formal consultation before it took effect.
 - Joined the division's Java Chief Developer committee and led it for two years.
-- Coached project teams in applying the methodology.
 
 ### Architecture
 

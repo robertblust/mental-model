@@ -34,7 +34,7 @@ skills:
 
 ### Leadership
 
-- Owned the complete architecture, front to back, a React and TypeScript front end over a reactive Spring Boot backend, on the last project built to 3AP's microservice reference architecture.
+- Built the whole application, a React and TypeScript front end over a reactive Spring Boot backend, as the last project on 3AP's microservice reference architecture.
 - Presented the solution architecture at the winning pitch.
 
 ### Architecture
