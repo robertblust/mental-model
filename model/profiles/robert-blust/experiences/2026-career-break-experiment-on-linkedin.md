@@ -2,8 +2,8 @@
 id: 01a0ef1d-3198-7312-b9b3-40f2328abefd
 source: Local
 kind: Community
-start: 2026-09
-end: 2026-10
+start: 2026-09-09
+end: 2026-10-03
 role: Author
 skills:
   - Storytelling
