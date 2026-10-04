@@ -5,6 +5,7 @@ kind: Community
 start: 2014-08
 end: 2022-03
 url: https://github.com/robertblust/cdo-server
+role: Architect and Engineer
 skills:
   - Open-source stewardship
   - Model-driven engineering

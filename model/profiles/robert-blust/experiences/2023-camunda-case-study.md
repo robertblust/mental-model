@@ -6,6 +6,7 @@ start: 2023-04
 end: 2023-04
 url: https://camunda.com/case-studies/likemagic
 organization: Camunda
+role: Featured architect
 skills:
   - Process orchestration
 ---

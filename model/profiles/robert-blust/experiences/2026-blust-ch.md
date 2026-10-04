@@ -4,6 +4,7 @@ source: Local
 kind: Community
 start: 2026-08
 url: https://blust.ch
+role: Architect and Engineer
 skills:
   - Agentic AI development
   - Technical writing
