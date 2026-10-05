@@ -4,6 +4,7 @@ source: Local
 legal-name: Anthropic Ireland, Limited
 countries:
   - US
+processing: any
 retention: Within 30 days of receipt or generation, under its own terms
 sub-processor-authorization: general
 ---
