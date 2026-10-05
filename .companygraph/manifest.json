@@ -1,7 +1,7 @@
 {
-  "tooling": "0.80.0",
+  "tooling": "0.81.0",
   "core": {
-    "version": "0.60.0",
+    "version": "0.61.0",
     "shape": 3,
     "source": "bundled"
   },
@@ -18,7 +18,7 @@
     "meta/core/brand-schema.md": "sha256:85a0d0cfcd2a6ba3dd89a4abafd82cf3e1adbda354e53b69f8088d5b191f59ec",
     "meta/core/concept-schema.md": "sha256:a25f009db6f40b3e49e5648634f102613a1d6f8f719c7d7d801b1f44ccc0213a",
     "meta/core/control-schema.md": "sha256:ecc21b48fe9bf942c0dce960266b23e7da54d352e19dbae983bc1d9350fc6b1a",
-    "meta/core/data-processor-schema.md": "sha256:c1ddb2c437059263fff5820cccd65816e4834ada0938001e8d56d6e40a565ea5",
+    "meta/core/data-processor-schema.md": "sha256:e3caa9b7e9982cfcb129d5aecbff602f1576fae225cf660b0e09c0a1f80329e9",
     "meta/core/decision-kind-schema.md": "sha256:27e75a70777698921386a6c970f8f9d8cfe81d8c758dae719b7b7c5065f83107",
     "meta/core/decision-schema.md": "sha256:f05c433c95bfeac62022ab17f51005a9b737b887668103f16c92634af767a85a",
     "meta/core/decision-status-schema.md": "sha256:9d4fa5bf946f9f64967fcaeb75401e3afc6c8c003ff3cb0d52636bb9bf9ad9cb",
@@ -30,7 +30,7 @@
     "meta/core/identity-schema.md": "sha256:d53b1414f6c457374d8af800a5bc832ae80bb839446d334c7060dd1eea0bed30",
     "meta/core/kpi-schema.md": "sha256:3069d5a246630d595c0735325e67f1101573525497539a4f26b99a4782a202d4",
     "meta/core/localization-schema.md": "sha256:6d5ef97f36d10b4bde890c52d97a01c19d1529c3fb92956ed26a0dab9eb0950a",
-    "meta/core/manifest.json": "sha256:24a61b2219c026ef18c25fec450c5a54ff1f95804109486cd772e33c1f3a7f78",
+    "meta/core/manifest.json": "sha256:2d63390148577e4b243f2d7c0dbbbc408c0c576ddd37768d3c8135d7b6e4dc74",
     "meta/core/phase-schema.md": "sha256:e8f09d7ebff4ba2b862b92e88ac635c38561cc4375db3871065f447b2e75dbcf",
     "meta/core/process-schema.md": "sha256:3b27dda5375531ca88f44c4daffed9f0ff17191f4e3896c508e17e79c6a38696",
     "meta/core/processing-activity-schema.md": "sha256:6d8d18b2ae1e2b97d6685ee4c88141b963df679a3f418ed125945b8ae6208243",
