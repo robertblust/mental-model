@@ -26,3 +26,4 @@ surfaces:
 | --- | --- |
 | Google Cloud | The messages and the visitor's address, on the way to the answer |
 | Anthropic | The message and the earlier messages of the same conversation |
+| TypeSafe | The answer's sentences and the parts of the model's pages they rest on |
