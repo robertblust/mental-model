@@ -21,7 +21,7 @@ model/                         the company — everything under here is an entit
   achievement-kinds/           the kinds an achievement is filed under
   skills/                      one file per capability
   values/                      one file per value
-  roles/                       one file per seat the company needs filled
+  seats/                       one file per seat the company needs filled
   processes/                   how the company does its work, phase by phase
   surfaces/                    one file per place the model is published
   domains/                     one file per area of the company, named by its products and its concepts

@@ -30,7 +30,7 @@ Two of these sources carry documents about the model — this guide and the repo
 | `strategic-objectives.md` | the {{count:Strategic objectives}} objective the vision needs made true | Ask what he is trying to make true, and how he would know |
 | `strategies.md` | the {{count:Strategies}} strategy pursuing it | Ask how the work is actually done, and what it refuses |
 | `kpis.md` | the {{count:Kpis}} KPIs the company watches, each defined with what could make it lie and no value | Ask what a number counts, who answers for it and what it can hide |
-| `roles.md` | the {{count:Roles}} seats the company needs filled, each with what it takes, produces and never does | Ask what a seat is responsible for, and what it refuses |
+| `seats.md` | the {{count:Seats}} seats the company needs filled, each with what it takes, produces and never does | Ask what a seat is responsible for, and what it refuses |
 | `processes.md` | the process and its phases, {{count:Processes}} entities | Ask how a change gets made, phase by phase |
 | `achievement-kinds.md` | the {{count:Achievement kinds}} kinds an achievement is filed under | See which side of the work an achievement counts toward |
 | `domains.md` | the {{count:Domains}} domain the products and the concepts name | Find which area of the company a product or a word belongs to |
