@@ -23,7 +23,7 @@ Whose name an agent's commit carries. My processes name the seats that execute e
 | --- | --- |
 | My name on every commit, as before | The history could not say which seat did the work, or in which process. |
 | My name as the author, and the seat only in a trailer | GitHub and `git shortlog` group by author, so every report by seat would need tooling to read a trailer, and my own commits could not be told from an agent's at a glance. |
-| An email field on each seat | A second copy of what the model already derives from the role's name and the identity's `url`, free to drift from it. |
+| An email field on each seat | A second copy of what the model already derives from the seat's name and the identity's `url`, free to drift from it. |
 | An `owner@` address for my own commits | My name already means me, and a report tells people from agents by exactly that difference. |
 | A Claude Code hook refusing a commit made without `--author` | It would guard one agent and be a rule no other agent sees, where the `commit-msg` hook is the one every agent meets. |
 

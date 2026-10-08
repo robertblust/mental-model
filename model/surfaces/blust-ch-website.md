@@ -14,8 +14,8 @@ url: https://blust.ch
 ## What it shows
 
 - **Home** — the profile's tagline, the identity's name, and the way into the talks and the ideas.
-- **Team** — the process's phases as a board of the roles that own, execute, support and
-  approve each, and the profiles that hold those roles.
+- **Team** — the process's phases as a board of the seats that own, execute, support and
+  approve each, and the profiles that hold those seats.
 - **Principles** — the vision and the values.
 - **Surfaces** — every surface the model records and how each is made, by hand or by a build
   that reads a pinned commit.

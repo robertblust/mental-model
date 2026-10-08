@@ -28,13 +28,13 @@ url: https://www.linkedin.com/in/robertblust/
 - An entry's body is written rather than copied. What the experience holds was written for a
   reader who came to read, and this surface is read by one who has not decided to.
 - An entry names the part played and the employer it was held through, where the model holds
-  them. The part is the experience's `role`, and the employer is the `organization` of the
+  them. The part is the experience's `capacity`, and the employer is the `organization` of the
   containing period of kind `Role`, since that is the kind that names an employer; where no such
   period contains it, or more than one does, the entry names no employer. It reaches only a unit
   with somewhere to put it: a qualification names the body that issued it and never an employer,
   which the model does not say paid for it or knew of it. Both reach the entry,
   because a part named beside a client and not beside
-  its employer reads as though the client employed you. An experience carrying no `role` shows
+  its employer reads as though the client employed you. An experience carrying no `capacity` shows
   none: its H1 is the part, or the model does not say.
 - A body is written from the experience's `## Achievements`, and from its `## Ending` where the
   ending states a fact the achievements do not. An ending says why a period closed and what it
