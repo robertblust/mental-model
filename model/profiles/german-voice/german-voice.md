@@ -2,7 +2,7 @@
 id: 01a0d4d8-08f8-733b-92de-5654fbd0e4d6
 source: Local
 nature: agent
-roles:
+seats:
   - Narrator
 ---
 

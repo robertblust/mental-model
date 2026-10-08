@@ -5,7 +5,7 @@ kind: Project
 start: 2020-04
 end: 2020-07
 organization: 3AP AG
-role: Architect
+capacity: Architect
 skills:
   - Solution architecture
   - Integration architecture

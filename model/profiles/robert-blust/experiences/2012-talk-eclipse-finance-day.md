@@ -6,7 +6,7 @@ start: 2012-10-16
 end: 2012-10-16
 url: https://wiki.eclipse.org/Eclipse_Finance_Day_2012/
 organization: Eclipse Foundation
-role: Speaker
+capacity: Speaker
 skills:
   - Integration architecture
   - Model-driven engineering

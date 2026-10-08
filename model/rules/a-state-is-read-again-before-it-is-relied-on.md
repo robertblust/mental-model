@@ -18,6 +18,6 @@ Several sessions and people move the same repositories at once. On October 2, 20
 
 | Type | Entity | Owner |
 | --- | --- | --- |
-| role | Surveyor | |
+| seat | Surveyor | |
 | process | Deciding | |
 | phase | Integrate | Delivery |

@@ -5,7 +5,7 @@ kind: Community
 start: 2026-09-26
 end: 2026-09-26
 url: https://blust.ch/blog/deciding-well-solved/
-role: Author
+capacity: Author
 skills:
   - Agentic AI development
   - Spec-driven development

@@ -18,7 +18,7 @@ A translation of a draft is translated twice: once now and again when the Englis
 
 | Type | Entity | Owner |
 | --- | --- | --- |
-| role | Translator | |
-| role | Writer | |
+| seat | Translator | |
+| seat | Writer | |
 | process | Delivery | |
 | phase | Implement | Delivery |

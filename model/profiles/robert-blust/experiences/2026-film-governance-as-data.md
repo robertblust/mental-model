@@ -5,7 +5,7 @@ kind: Community
 start: 2026-09-18
 end: 2026-09-18
 url: https://robertblust.substack.com/p/governance-as-data
-role: Producer
+capacity: Producer
 skills:
   - Context engineering
   - Storytelling

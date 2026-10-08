@@ -5,7 +5,7 @@ kind: Project
 start: 2015-09
 end: 2015-11
 organization: Swisscom
-role: Integration Architect & Engineer
+capacity: Integration Architect & Engineer
 skills:
   - Integration architecture
   - Java

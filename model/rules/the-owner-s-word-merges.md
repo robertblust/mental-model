@@ -20,9 +20,9 @@ A change binds once it is merged, tagged or released, and it is the one step who
 
 | Type | Entity | Owner |
 | --- | --- | --- |
-| role | Controller | |
-| role | Implementer | |
-| role | Surveyor | |
+| seat | Controller | |
+| seat | Implementer | |
+| seat | Surveyor | |
 | phase | Integrate | Delivery |
 | phase | Carry | Deciding |
 

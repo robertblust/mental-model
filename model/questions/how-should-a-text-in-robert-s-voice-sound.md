@@ -13,4 +13,4 @@ kind: Brand
 | Type | Entity | Owner | For |
 | --- | --- | --- | --- |
 | brand | blust.ch | | the traits and what a sentence without each one does |
-| role | Writer | | the rulebook and the brief a text starts from |
+| seat | Writer | | the rulebook and the brief a text starts from |

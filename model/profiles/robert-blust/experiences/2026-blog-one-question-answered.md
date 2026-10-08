@@ -5,7 +5,7 @@ kind: Community
 start: 2026-09-30
 end: 2026-09-30
 url: https://blust.ch/blog/one-question-answered/
-role: Author
+capacity: Author
 skills:
   - Technical writing
   - Storytelling

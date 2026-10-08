@@ -19,9 +19,9 @@ Claude Code's permission layer, before the agent's command runs: it judges the a
 
 | Type | Entity | Owner |
 | --- | --- | --- |
-| role | Controller | |
-| role | Implementer | |
-| role | Surveyor | |
+| seat | Controller | |
+| seat | Implementer | |
+| seat | Surveyor | |
 | phase | Integrate | Delivery |
 
 ## References

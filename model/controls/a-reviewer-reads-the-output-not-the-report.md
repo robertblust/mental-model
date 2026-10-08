@@ -20,7 +20,7 @@ The Reviewer, after each task in Implement and once over the whole branch before
 
 | Type | Entity | Owner |
 | --- | --- | --- |
-| role | Reviewer | |
+| seat | Reviewer | |
 | phase | Implement | Delivery |
 
 ## References

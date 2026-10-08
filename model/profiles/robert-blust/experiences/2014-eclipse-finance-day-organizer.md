@@ -6,7 +6,7 @@ start: 2014-10-31
 end: 2014-10-31
 url: https://wiki.eclipse.org/Eclipse_Finance_Day_2014/
 organization: JUG Switzerland
-role: Co-Organizer
+capacity: Co-Organizer
 skills:
   - Community building
 ---

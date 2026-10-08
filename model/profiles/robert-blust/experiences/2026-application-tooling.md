@@ -4,7 +4,7 @@ source: Local
 kind: Project
 start: 2026-06-09
 end: 2026-09-04
-role: Architect and Engineer
+capacity: Architect and Engineer
 skills:
   - Agentic AI development
   - Context engineering

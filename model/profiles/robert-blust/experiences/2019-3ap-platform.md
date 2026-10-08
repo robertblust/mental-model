@@ -5,7 +5,7 @@ kind: Project
 start: 2019-04
 end: 2021-10
 organization: 3AP AG
-role: Architect and Engineer
+capacity: Architect and Engineer
 skills:
   - Platform engineering
   - Cloud architecture
