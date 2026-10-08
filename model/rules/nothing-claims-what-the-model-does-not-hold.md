@@ -20,7 +20,7 @@ The model is where a fact about me is mastered, with its evidence; a claim made 
 
 | Type | Entity | Owner |
 | --- | --- | --- |
-| role | Owner | |
-| role | Specifier | |
-| role | Writer | |
+| seat | Owner | |
+| seat | Specifier | |
+| seat | Writer | |
 | phase | Spec | Delivery |

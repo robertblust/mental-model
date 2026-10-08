@@ -5,7 +5,7 @@ kind: Community
 start: 2026-09-24
 end: 2026-09-24
 url: https://blust.ch/talks/deciding-well/
-role: Speaker
+capacity: Speaker
 skills:
   - Public speaking
   - Storytelling

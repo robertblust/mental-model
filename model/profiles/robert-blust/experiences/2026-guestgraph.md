@@ -4,7 +4,7 @@ source: Local
 kind: Community
 start: 2026-07
 url: https://guestgraph.io
-role: Founder and Architect
+capacity: Founder and Architect
 skills:
   - Agentic AI development
   - Software architecture

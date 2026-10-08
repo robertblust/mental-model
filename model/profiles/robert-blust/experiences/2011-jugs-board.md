@@ -5,7 +5,7 @@ kind: Community
 start: 2011-08
 end: 2014-12
 organization: JUG Switzerland
-role: Board member
+capacity: Board member
 skills:
   - Community building
 ---

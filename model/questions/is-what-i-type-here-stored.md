@@ -12,5 +12,5 @@ kind: Model and chat
 
 | Type | Entity | Owner | For |
 | --- | --- | --- | --- |
-| role | Answerer | | that the seat keeps nothing |
+| seat | Answerer | | that the seat keeps nothing |
 | surface | blust.ch website | | where the privacy page lists the rest |

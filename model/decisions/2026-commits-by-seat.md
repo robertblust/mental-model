@@ -39,12 +39,12 @@ Every seat that commits needs an address on the domain, a mail alias onto my mai
 
 | Type | Entity | Owner | How |
 | --- | --- | --- | --- |
-| role | Specifier | | changed it |
-| role | Planner | | changed it |
-| role | Implementer | | changed it |
-| role | Writer | | changed it |
-| role | Translator | | changed it |
-| role | Narrator | | changed it |
+| seat | Specifier | | changed it |
+| seat | Planner | | changed it |
+| seat | Implementer | | changed it |
+| seat | Writer | | changed it |
+| seat | Translator | | changed it |
+| seat | Narrator | | changed it |
 
 ## References
 

@@ -5,7 +5,7 @@ kind: Community
 start: 2026-09-27
 end: 2026-09-27
 url: https://robertblust.substack.com/p/wer-wurde-eingestellt-ich-oder-mein
-role: Producer
+capacity: Producer
 skills:
   - Context engineering
   - Storytelling

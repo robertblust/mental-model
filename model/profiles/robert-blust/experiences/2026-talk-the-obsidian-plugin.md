@@ -5,7 +5,7 @@ kind: Community
 start: 2026-09-30
 end: 2026-09-30
 url: https://companygraph.io/talks/obsidian-plugin/
-role: Speaker
+capacity: Speaker
 skills:
   - Public speaking
   - Storytelling

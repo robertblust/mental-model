@@ -5,7 +5,7 @@ kind: Community
 start: 2026-08
 end: 2026-08
 url: https://guestgraph.io/talks/intro/
-role: Speaker
+capacity: Speaker
 skills:
   - Public speaking
   - Storytelling

@@ -12,6 +12,6 @@ kind: Model and chat
 
 | Type | Entity | Owner | For |
 | --- | --- | --- | --- |
-| role | Answerer | | who answers, and what it may never do |
+| seat | Answerer | | who answers, and what it may never do |
 | process | Answering | | how an answer is made |
 | surface | chat.blust.ch chat | | what it reads from |

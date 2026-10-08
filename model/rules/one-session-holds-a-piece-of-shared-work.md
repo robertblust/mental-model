@@ -18,6 +18,6 @@ On October 2, 2026, five sessions released and re-pinned the same repositories i
 
 | Type | Entity | Owner |
 | --- | --- | --- |
-| role | Surveyor | |
+| seat | Surveyor | |
 | phase | Integrate | Delivery |
 | phase | Carry | Deciding |

@@ -20,6 +20,6 @@ Everything I publish is drawn from one model, so a thing fixed by hand and left 
 
 | Type | Entity | Owner |
 | --- | --- | --- |
-| role | Owner | |
+| seat | Owner | |
 | process | Delivery | |
 | phase | Integrate | Delivery |

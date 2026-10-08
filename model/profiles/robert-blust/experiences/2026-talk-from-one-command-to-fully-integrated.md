@@ -5,7 +5,7 @@ kind: Community
 start: 2026-10-02
 end: 2026-10-02
 url: https://companygraph.io/talks/levels/
-role: Speaker
+capacity: Speaker
 skills:
   - Public speaking
   - Storytelling

@@ -5,7 +5,7 @@ kind: Community
 start: 2026-09-25
 end: 2026-09-25
 url: https://robertblust.substack.com/p/building-fast-is-solved-deciding
-role: Producer
+capacity: Producer
 skills:
   - Context engineering
   - Storytelling

@@ -5,7 +5,7 @@ kind: Community
 start: 2026-09-28
 end: 2026-09-28
 url: https://robertblust.substack.com/p/dein-unternehmen-kompiliert-nicht
-role: Producer
+capacity: Producer
 skills:
   - Context engineering
   - Storytelling

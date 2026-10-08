@@ -5,7 +5,7 @@ kind: Community
 start: 2026-10-04
 end: 2026-10-04
 url: https://companygraph.io/talks/what-stays/
-role: Speaker
+capacity: Speaker
 skills:
   - Public speaking
   - Storytelling

@@ -4,7 +4,7 @@ source: Local
 kind: Community
 start: 2026-09-09
 end: 2026-10-03
-role: Author
+capacity: Author
 skills:
   - Storytelling
 ---
