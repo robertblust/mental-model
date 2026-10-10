@@ -1,7 +1,7 @@
 {
-  "tooling": "0.89.0",
+  "tooling": "0.91.0",
   "core": {
-    "version": "0.65.0",
+    "version": "0.66.0",
     "shape": 3,
     "source": "bundled"
   },
@@ -30,7 +30,7 @@
     "meta/core/identity-schema.md": "sha256:d53b1414f6c457374d8af800a5bc832ae80bb839446d334c7060dd1eea0bed30",
     "meta/core/kpi-schema.md": "sha256:518e260893a012028855a5e82cb33b93c17171b254107428fb69d99b77a8fff0",
     "meta/core/localization-schema.md": "sha256:6d5ef97f36d10b4bde890c52d97a01c19d1529c3fb92956ed26a0dab9eb0950a",
-    "meta/core/manifest.json": "sha256:104a351d9b27bcbf4a0a2f9505e7874b2000da72a549094c204d8473a42dcead",
+    "meta/core/manifest.json": "sha256:f7230abf6c5d879a697826a6811c0e7b3c6e49ea3681b0e0b53520c6f98ac96c",
     "meta/core/phase-schema.md": "sha256:e1b5adcc33360c2a5081e919b18ae8166f3f04e53d83f55a77c2158af3f60d9c",
     "meta/core/process-schema.md": "sha256:65a8ee2446a97455e77d2640634686e94969a895c0b5d4d7237f77dcd7a5bf27",
     "meta/core/processing-activity-schema.md": "sha256:6d8d18b2ae1e2b97d6685ee4c88141b963df679a3f418ed125945b8ae6208243",
