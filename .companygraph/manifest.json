@@ -1,7 +1,7 @@
 {
-  "tooling": "0.92.0",
+  "tooling": "0.94.0",
   "core": {
-    "version": "0.67.0",
+    "version": "0.69.0",
     "shape": 3,
     "source": "bundled"
   },
@@ -12,7 +12,7 @@
     "meta"
   ],
   "files": {
-    "meta/core/CONVENTIONS.md": "sha256:2788ace5f67825b8ba19a7e6ca55418cb8244c8e53f6de645ca9d74685c48906",
+    "meta/core/CONVENTIONS.md": "sha256:dd5dfc1a23f67f800f17a36589ab7e5e060727c6a4e6212200381d9492b58eed",
     "meta/core/LICENSE": "sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "meta/core/achievement-kind-schema.md": "sha256:7697cbd987d7a5ca330341d62a3cee306f9c6bc9db81ed5b742b3d2b5c8a1fc2",
     "meta/core/brand-schema.md": "sha256:85a0d0cfcd2a6ba3dd89a4abafd82cf3e1adbda354e53b69f8088d5b191f59ec",
@@ -30,7 +30,7 @@
     "meta/core/identity-schema.md": "sha256:d53b1414f6c457374d8af800a5bc832ae80bb839446d334c7060dd1eea0bed30",
     "meta/core/kpi-schema.md": "sha256:518e260893a012028855a5e82cb33b93c17171b254107428fb69d99b77a8fff0",
     "meta/core/localization-schema.md": "sha256:6d5ef97f36d10b4bde890c52d97a01c19d1529c3fb92956ed26a0dab9eb0950a",
-    "meta/core/manifest.json": "sha256:9ad604cd1a6a8def1e01460208bea67e21642cac97addfc7574202130cb108b9",
+    "meta/core/manifest.json": "sha256:897ddd5a1c8b04ffd14e0bd6c91e874ba8da9644d768d4d84cb0b83dc5f47214",
     "meta/core/phase-schema.md": "sha256:e1b5adcc33360c2a5081e919b18ae8166f3f04e53d83f55a77c2158af3f60d9c",
     "meta/core/process-schema.md": "sha256:65a8ee2446a97455e77d2640634686e94969a895c0b5d4d7237f77dcd7a5bf27",
     "meta/core/processing-activity-schema.md": "sha256:6d8d18b2ae1e2b97d6685ee4c88141b963df679a3f418ed125945b8ae6208243",
