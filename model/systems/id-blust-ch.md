@@ -12,6 +12,12 @@ serves:
 
 > Signs readers in to the chat on blust.ch, and to the chats on companygraph.io and guestgraph.io, with ZITADEL, the identity service the company runs at https://id.blust.ch in its Google Cloud project blust-ch-mcp in the Zurich region, where accounts are by invitation only, and issues the token from which each chat reads the models a reader may choose.
 
+## Connects to
+
+| System | As | Service | Carries | Via |
+| --- | --- | --- | --- | --- |
+| Sign in with Google | OpenID Connect | | | HTTPS |
+
 ## References
 
 | What | URL |
