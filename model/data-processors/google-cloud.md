@@ -9,7 +9,7 @@ sub-processor-authorization: general
 
 # Google Cloud
 
-> Runs the chat service and the MCP server in its Zürich region, and keeps the chat's log of questions there.
+> Runs the chat service, the MCP server and the identity service id.blust.ch, which is ZITADEL, in its Zurich region, and keeps there the chat's log of questions, the readers' accounts and each signed-in reader's month.
 
 ## References
 

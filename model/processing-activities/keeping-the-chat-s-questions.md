@@ -17,7 +17,7 @@ surfaces:
 
 ## Personal data
 
-- The question a visitor sent, kept without their address and without the answer
+- The question a visitor sent, kept without their address, their sign-in or the answer
 
 ## Processors
 
