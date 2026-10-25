@@ -19,10 +19,12 @@ surfaces:
 
 - The reader's name and email address, which their account at id.blust.ch holds
 - The roles granted to the reader, which name the models they may choose
+- For a reader who signs in with Google, the link to their Google account, its id and email address, which their account at id.blust.ch keeps until the link or the account is removed
 - The tokens the sign-in issues, kept in the reader's browser, and the access token each message carries to the chat, which checks it
 
 ## Processors
 
 | Processor | Receives |
 | --- | --- |
-| Google Cloud | The reader's name, email address and roles, held by id.blust.ch in its Zurich region, and the access token each message carries |
+| Google Cloud | The reader's name, email address and roles, and the link to their Google account where they made one, held by id.blust.ch in its Zurich region, and the access token each message carries |
+| Google | That the reader signs in to id.blust.ch, only when they choose to sign in with Google |
