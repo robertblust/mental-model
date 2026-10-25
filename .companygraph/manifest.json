@@ -6,7 +6,9 @@
     "source": "bundled"
   },
   "units": "meta",
-  "packs": [],
+  "packs": [
+    "landscape"
+  ],
   "exclude": [
     "dist",
     "meta"
@@ -52,6 +54,13 @@
     "meta/core/track-schema.md": "sha256:54d8798cda708a1e14d333179435513c78b2c29480f01db1afc2fb5f4df582ae",
     "meta/core/value-schema.md": "sha256:d09c13d14aa6c804bf26368bc770ef6668b35e229753180d41432a15d6ca6f27",
     "meta/core/vision-schema.md": "sha256:bdadaf15113582d76d20357897959c2c15d1fd068d317d47c8710829efbaa4ef",
+    "meta/landscape/README.md": "sha256:b43b20102446715f72ac9aaef1ae6d5957a78d7c1256be9700d05d0fa7e77e6e",
+    "meta/landscape/data-object-schema.md": "sha256:c81877776c7ad44c27a9b08ffc0a05b58fcd91154f90bd2522c65ef98edc8ccf",
+    "meta/landscape/environment-schema.md": "sha256:890fc2a6a4b348181814e38452ac9531ebeff2cb1a13281b2e5dd79fc4582542",
+    "meta/landscape/manifest.json": "sha256:e3b0acd8df373c4a3acded40b4644ead7102914e24deec4b5bf31f327e5af214",
+    "meta/landscape/service-schema.md": "sha256:b76123238945e1643480deabe26c56a0d6ac790f4ba14113cccf0dd1a15940f9",
+    "meta/landscape/system-kind-schema.md": "sha256:7153e5470bda61bb230e605b0470ac8d86237b6d4b8022a8f5578c50595dd050",
+    "meta/landscape/system-schema.md": "sha256:5d048686f975eb031d9eaef3858f5348a69baeaa0e5c7dadedc46ccb1f2d856c",
     ".claude/skills/companygraph-company/SKILL.md": "sha256:20c98ef47a903de3f5ae762c423692a8e22d5fe96c063a425090d295e3c62d26",
     ".claude/skills/companygraph-consent/SKILL.md": "sha256:ad2d803fb23a4678d2b9c6ed25ff6bb96cf9d437f180c81811c6aef9371aed61",
     ".claude/skills/companygraph-export/SKILL.md": "sha256:b637d333bcb143ce13ee342843bf4762e6893e22745e95e0494bdb44acf4fea3",
