@@ -5,6 +5,8 @@ kind: preventive
 mode: automated
 enforces:
   - The Owner's word merges
+compensated-by:
+  - An agent's permissions refuse a merge it was not given
 ---
 
 # Only the Owner's account changes main
@@ -13,7 +15,7 @@ enforces:
 
 ## How it is carried out
 
-GitHub's permissions on a repository under a personal account, on every push and every merge into it: such a repository takes a push only from its owner and the collaborators the owner invites, and mine invite none, so anyone else can fork a repository and open a pull request but cannot merge it. A personal account cannot restrict who may push beyond that, as an organization's branch protection can, so the day a collaborator is invited this control no longer holds. An agent working under my account passes it, so what holds an agent to the Owner's word is An agent's permissions refuse a merge it was not given.
+GitHub's permissions on a repository under a personal account, on every push and every merge into it: such a repository takes a push only from its owner and the collaborators the owner invites, and mine invite none, so anyone else can fork a repository and open a pull request but cannot merge it. A personal account cannot restrict who may push beyond that, as an organization's branch protection can, so the day a collaborator is invited this control no longer holds. An agent working under my account passes it, so a merge an agent attempts is held to the Owner's word by the agent's permission layer and not by this control.
 
 ## Applies to
 
