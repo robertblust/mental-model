@@ -25,9 +25,11 @@ skills:
 ### Sharing
 
 - Published it on Sep 27, 2026 as the first episode in German, about sixteen minutes, under the question the hosts close on, with a description in Swiss Standard German that calls the company of one a fictional company, sets CompanyGraph against it as the structure that describes any company, and hands the listener the provocation the episode builds to: if one person can say why they decided what they decided, why a company with a thousand people cannot.
+- Posted it on LinkedIn on Nov 7, 2026, a month into the new role, opening on the hosts' suspicion that the model was the one hired, and put the chat on blust.ch in the first comment with a question already waiting, so a reader can ask the model rather than take the hosts' word for it.
 
 ## References
 
 | What | URL |
 | --- | --- |
 | CompanyGraph and the chat that answers only from the model | https://companygraph.io |
+| Post on LinkedIn of Nov 7, 2026 | https://www.linkedin.com/posts/robertblust_companygraph-share-7524752980898717696-6juJ |
