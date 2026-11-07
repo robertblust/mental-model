@@ -17,6 +17,7 @@ serves:
 | System | As | Service | Carries | Via |
 | --- | --- | --- | --- | --- |
 | Sign in with Google | OpenID Connect | | | HTTPS |
+| Sign in with Microsoft | OpenID Connect | | | HTTPS |
 
 ## References
 
