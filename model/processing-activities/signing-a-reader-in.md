@@ -20,6 +20,7 @@ surfaces:
 
 - The reader's name and email address, which their account at id.blust.ch holds
 - Where the reader's address is not verified, the code the login mails there, which the reader enters before the account is used; an address Google or Microsoft proved needs none
+- The mail id.blust.ch sends to the reader's address, the code that verifies it or the owner's invitation, which greets the reader by name and is kept as a sent mail until the owner deletes it
 - The roles the owner grants the reader, which name the models they may choose; an account holds none until the owner grants one
 - For a reader who signs in with Google, the link to their Google account, its id and email address, which their account at id.blust.ch keeps until the link or the account is removed
 - For a reader who signs in with Microsoft, the link to their Microsoft account, its id and the email address it names, which their account at id.blust.ch keeps until the link or the account is removed
@@ -34,4 +35,5 @@ surfaces:
 | --- | --- |
 | Google Cloud | The reader's name, email address and roles, the link to their Google or Microsoft account where they made one, what their account keeps of a password, passkey, security key or authenticator app they set up and the code that verifies an address until it is entered, held by id.blust.ch in its Zurich region, and the access token each message carries; also what the link check reads of each sign-in with Google or Microsoft, in the same region and kept nowhere |
 | Google | That the reader signs in to id.blust.ch, only when they choose to sign in with Google |
+| Google Workspace | The reader's address, their name as the mail greets them and the mail itself, the code that verifies their address or the owner's invitation, sent through Gmail from no-reply@blust.ch and kept as a sent mail until the owner deletes it |
 | Microsoft | That the reader signs in to id.blust.ch, only when they choose to sign in with Microsoft, and, while that account is not yet linked, the access token of that sign-in, with which the link check asks Microsoft about the account and its organization |
