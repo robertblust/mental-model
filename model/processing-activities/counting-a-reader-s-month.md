@@ -9,11 +9,11 @@ surfaces:
 
 # Counting a reader's month
 
-> Counting what a signed-in reader's answers cost in the month, so that no reader spends more of the chat's month than their own share.
+> Counting what the answers of a signed-in reader with a role on blust.ch cost in the month, so that no reader spends more of the chat's month than their own share.
 
 ## Data subjects
 
-- Readers who sign in to the chat and send a message
+- Readers who sign in to the chat with a role on blust.ch and send a message
 
 ## Personal data
 

@@ -9,7 +9,7 @@ processing: any
 
 # Google
 
-> Signs a reader the owner has invited in to id.blust.ch with their Google account, when the reader chooses Sign in with Google, and tells id.blust.ch the account's id, its profile and its email address, with whether Google verified it; it may process the sign-in in any country it chooses.
+> Signs a reader in to id.blust.ch with their Google account, when the reader chooses Sign in with Google, and tells id.blust.ch the account's id, its profile and its email address, with whether Google verified it; it may process the sign-in in any country it chooses.
 
 ## Own purposes
 
