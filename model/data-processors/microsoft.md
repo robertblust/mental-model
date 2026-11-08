@@ -9,7 +9,7 @@ processing: any
 
 # Microsoft
 
-> Signs a reader the owner has invited in to id.blust.ch with their Microsoft account, a personal one or one their organization gives them, when the reader chooses Sign in with Microsoft, and tells id.blust.ch the account's id, its name and the email address the account names and, for a sign-in not yet linked to an account there, whether the account is a personal one or which domains the reader's organization has verified with Microsoft, an answer id.blust.ch asks for once with that sign-in's access token, uses only to decide whether to link the account and keeps nowhere; it may process the sign-in in any country it chooses.
+> Signs a reader the owner has invited in to id.blust.ch with their Microsoft account, a personal one or one their organization gives them, when the reader chooses Sign in with Microsoft, and tells id.blust.ch the account's id, its name and the email address the account names and, for a sign-in not yet linked to an account there, whether the account is a personal one or which domains the reader's organization has verified with Microsoft, an answer id.blust.ch asks for with that sign-in's access token, uses only to decide whether to link the account and keeps nowhere; it may process the sign-in in any country it chooses.
 
 ## Own purposes
 
